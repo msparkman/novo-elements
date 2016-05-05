@@ -1,83 +1,30 @@
 webpackJsonp([2],{
 
-/***/ 223:
+/***/ 225:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
-	exports.NOVO_DROPDOWN_ELEMENTS = exports.Dropdown = undefined;
 	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	var _Header = __webpack_require__(226);
 	
-	var _dec, _class;
-	
-	var _core = __webpack_require__(2);
-	
-	var _OutsideClick2 = __webpack_require__(70);
-	
-	var _KeyCodes = __webpack_require__(46);
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Dropdown = exports.Dropdown = (_dec = (0, _core.Component)({
-	    selector: 'novo-dropdown',
-	    template: '\n        <ng-content select="button"></ng-content>\n        <div class="dropdown-container">\n            <ng-content></ng-content>\n        </div>\n    ',
-	    host: {
-	        '(keydown)': 'onKeyDown($event)',
-	        '[class.active]': 'active'
-	    }
-	}), _dec(_class = function (_OutsideClick) {
-	    _inherits(Dropdown, _OutsideClick);
-	
-	    function Dropdown(element) {
-	        _classCallCheck(this, Dropdown);
-	
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Dropdown).call(this, element));
-	
-	        _this.clickHandler = _this.toggleActive.bind(_this);
-	        return _this;
-	    }
-	
-	    _createClass(Dropdown, [{
-	        key: 'ngOnInit',
-	        value: function ngOnInit() {
-	            var button = this.element.nativeElement.querySelector('button');
-	            button.addEventListener('click', this.clickHandler);
-	        }
-	    }, {
-	        key: 'ngOnDestroy',
-	        value: function ngOnDestroy() {
-	            var button = this.element.nativeElement.querySelector('button');
-	            button.removeEventListener('click', this.clickHandler);
-	        }
-	    }, {
-	        key: 'onKeyDown',
-	        value: function onKeyDown(event) {
-	            if (this.active && (event.keyCode === _KeyCodes.KeyCodes.ESC || event.keyCode === _KeyCodes.KeyCodes.ENTER)) {
-	                this.toggleActive();
-	            }
-	        }
-	    }]);
-	
-	    return Dropdown;
-	}(_OutsideClick2.OutsideClick)) || _class);
-	Reflect.defineMetadata('design:paramtypes', [_core.ElementRef], Dropdown);
-	var NOVO_DROPDOWN_ELEMENTS = exports.NOVO_DROPDOWN_ELEMENTS = [Dropdown];
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9kcm9wZG93bi9Ecm9wZG93bi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOzs7Ozs7OztJQWVhLFEsV0FBQSxRLFdBYloscUJBQVU7QUFDUCxjQUFVLGVBREg7QUFFUCwwS0FGTztBQVFQLFVBQU07QUFDRixxQkFBYSxtQkFEWDtBQUVGLDBCQUFrQjtBQUZoQjtBQVJDLENBQVYsQzs7O0FBY0csc0JBQVksT0FBWixFQUFnQztBQUFBOztBQUFBLGdHQUN0QixPQURzQjs7QUFFNUIsY0FBSyxZQUFMLEdBQW9CLE1BQUssWUFBTCxDQUFrQixJQUFsQixPQUFwQjtBQUY0QjtBQUcvQjs7OzttQ0FFVTtBQUNQLGdCQUFJLFNBQVMsS0FBSyxPQUFMLENBQWEsYUFBYixDQUEyQixhQUEzQixDQUF5QyxRQUF6QyxDQUFiO0FBQ0EsbUJBQU8sZ0JBQVAsQ0FBd0IsT0FBeEIsRUFBaUMsS0FBSyxZQUF0QztBQUNIOzs7c0NBRWE7QUFDVixnQkFBSSxTQUFTLEtBQUssT0FBTCxDQUFhLGFBQWIsQ0FBMkIsYUFBM0IsQ0FBeUMsUUFBekMsQ0FBYjtBQUNBLG1CQUFPLG1CQUFQLENBQTJCLE9BQTNCLEVBQW9DLEtBQUssWUFBekM7QUFDSDs7O2tDQUVTLEssRUFBTztBQUNiLGdCQUFJLEtBQUssTUFBTCxLQUFnQixNQUFNLE9BQU4sS0FBa0IsbUJBQVMsR0FBM0IsSUFBa0MsTUFBTSxPQUFOLEtBQWtCLG1CQUFTLEtBQTdFLENBQUosRUFBeUY7QUFDckYscUJBQUssWUFBTDtBQUNIO0FBQ0o7Ozs7O2dFQXBCUSxRO0FBdUJOLElBQU0sMERBQXlCLENBQUMsUUFBRCxDQUEvQiIsImZpbGUiOiJEcm9wZG93bi5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvYmgvbm92by9hcHBzL25vdm8tZWxlbWVudHMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIEVsZW1lbnRSZWYgfSBmcm9tICdhbmd1bGFyMi9jb3JlJztcbmltcG9ydCB7IE91dHNpZGVDbGljayB9IGZyb20gJy4vLi4vLi4vdXRpbHMvb3V0c2lkZS1jbGljay9PdXRzaWRlQ2xpY2snO1xuaW1wb3J0IHsgS2V5Q29kZXMgfSBmcm9tICcuLy4uLy4uL3V0aWxzL2tleS1jb2Rlcy9LZXlDb2Rlcyc7XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnbm92by1kcm9wZG93bicsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPG5nLWNvbnRlbnQgc2VsZWN0PVwiYnV0dG9uXCI+PC9uZy1jb250ZW50PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiZHJvcGRvd24tY29udGFpbmVyXCI+XG4gICAgICAgICAgICA8bmctY29udGVudD48L25nLWNvbnRlbnQ+XG4gICAgICAgIDwvZGl2PlxuICAgIGAsXG4gICAgaG9zdDoge1xuICAgICAgICAnKGtleWRvd24pJzogJ29uS2V5RG93bigkZXZlbnQpJyxcbiAgICAgICAgJ1tjbGFzcy5hY3RpdmVdJzogJ2FjdGl2ZSdcbiAgICB9XG59KVxuZXhwb3J0IGNsYXNzIERyb3Bkb3duIGV4dGVuZHMgT3V0c2lkZUNsaWNrIHtcbiAgICBjb25zdHJ1Y3RvcihlbGVtZW50OkVsZW1lbnRSZWYpIHtcbiAgICAgICAgc3VwZXIoZWxlbWVudCk7XG4gICAgICAgIHRoaXMuY2xpY2tIYW5kbGVyID0gdGhpcy50b2dnbGVBY3RpdmUuYmluZCh0aGlzKTtcbiAgICB9XG5cbiAgICBuZ09uSW5pdCgpIHtcbiAgICAgICAgbGV0IGJ1dHRvbiA9IHRoaXMuZWxlbWVudC5uYXRpdmVFbGVtZW50LnF1ZXJ5U2VsZWN0b3IoJ2J1dHRvbicpO1xuICAgICAgICBidXR0b24uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCB0aGlzLmNsaWNrSGFuZGxlcik7XG4gICAgfVxuXG4gICAgbmdPbkRlc3Ryb3koKSB7XG4gICAgICAgIGxldCBidXR0b24gPSB0aGlzLmVsZW1lbnQubmF0aXZlRWxlbWVudC5xdWVyeVNlbGVjdG9yKCdidXR0b24nKTtcbiAgICAgICAgYnV0dG9uLnJlbW92ZUV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgdGhpcy5jbGlja0hhbmRsZXIpO1xuICAgIH1cblxuICAgIG9uS2V5RG93bihldmVudCkge1xuICAgICAgICBpZiAodGhpcy5hY3RpdmUgJiYgKGV2ZW50LmtleUNvZGUgPT09IEtleUNvZGVzLkVTQyB8fCBldmVudC5rZXlDb2RlID09PSBLZXlDb2Rlcy5FTlRFUikpIHtcbiAgICAgICAgICAgIHRoaXMudG9nZ2xlQWN0aXZlKCk7XG4gICAgICAgIH1cbiAgICB9XG59XG5cbmV4cG9ydCBjb25zdCBOT1ZPX0RST1BET1dOX0VMRU1FTlRTID0gW0Ryb3Bkb3duXTtcbiJdfQ==
+	Object.defineProperty(exports, 'NOVO_HEADER_ELEMENTS', {
+	  enumerable: true,
+	  get: function get() {
+	    return _Header.NOVO_HEADER_ELEMENTS;
+	  }
+	});
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9oZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7bUJBQVMsb0IiLCJmaWxlIjoiaGVhZGVyLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qZ29kaS9iaC9ub3ZvL2FwcHMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IE5PVk9fSEVBREVSX0VMRU1FTlRTIH0gZnJvbSAnLi9oZWFkZXIvSGVhZGVyJztcbiJdfQ==
 
 /***/ },
 
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(10);
+	module.exports = __webpack_require__(9);
 
 
 /***/ },
@@ -196,7 +143,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Button = __webpack_require__(213);
+	var _Button = __webpack_require__(214);
 	
 	Object.defineProperty(exports, 'NOVO_BUTTON_ELEMENTS', {
 	  enumerable: true,
@@ -305,7 +252,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Loading = __webpack_require__(226);
+	var _Loading = __webpack_require__(229);
 	
 	Object.defineProperty(exports, 'NOVO_LOADING_ELEMENTS', {
 	  enumerable: true,
@@ -317,7 +264,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 213:
+/***/ 214:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -333,7 +280,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -371,7 +318,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 214:
+/***/ 215:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -380,7 +327,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Card = __webpack_require__(215);
+	var _Card = __webpack_require__(216);
 	
 	Object.defineProperty(exports, 'NOVO_CARD_ELEMENTS', {
 	  enumerable: true,
@@ -389,7 +336,7 @@ webpackJsonp([2],{
 	  }
 	});
 	
-	var _CardExtras = __webpack_require__(216);
+	var _CardExtras = __webpack_require__(217);
 	
 	Object.defineProperty(exports, 'NOVO_CARD_EXTRA_ELEMENTS', {
 	  enumerable: true,
@@ -401,7 +348,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 215:
+/***/ 216:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -417,7 +364,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	var _button = __webpack_require__(69);
 	
@@ -483,7 +430,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 216:
+/***/ 217:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -493,18 +440,18 @@ webpackJsonp([2],{
 	});
 	exports.NOVO_CARD_EXTRA_ELEMENTS = undefined;
 	
-	var _CardBestTime = __webpack_require__(217);
+	var _CardBestTime = __webpack_require__(218);
 	
-	var _CardDonutChart = __webpack_require__(218);
+	var _CardDonutChart = __webpack_require__(219);
 	
-	var _CardTimeline = __webpack_require__(219);
+	var _CardTimeline = __webpack_require__(220);
 	
 	var NOVO_CARD_EXTRA_ELEMENTS = exports.NOVO_CARD_EXTRA_ELEMENTS = [_CardBestTime.CardBestTime, _CardDonutChart.CardDonutChart, _CardTimeline.CardTimeline];
 	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9jYXJkL2V4dHJhcy9DYXJkRXh0cmFzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFDQTs7QUFFTyxJQUFNLDhEQUEyQix3RkFBakMiLCJmaWxlIjoiQ2FyZEV4dHJhcy5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvYmgvbm92by9hcHBzL25vdm8tZWxlbWVudHMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDYXJkQmVzdFRpbWUgfSBmcm9tICcuL2Jlc3QtdGltZS9DYXJkQmVzdFRpbWUnO1xuaW1wb3J0IHsgQ2FyZERvbnV0Q2hhcnQgfSBmcm9tICcuL2RvbnV0LWNoYXJ0L0NhcmREb251dENoYXJ0JztcbmltcG9ydCB7IENhcmRUaW1lbGluZSB9IGZyb20gJy4vdGltZWxpbmUvQ2FyZFRpbWVsaW5lJztcblxuZXhwb3J0IGNvbnN0IE5PVk9fQ0FSRF9FWFRSQV9FTEVNRU5UUyA9IFtDYXJkQmVzdFRpbWUsIENhcmREb251dENoYXJ0LCBDYXJkVGltZWxpbmVdO1xuIl19
 
 /***/ },
 
-/***/ 217:
+/***/ 218:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -520,7 +467,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -589,7 +536,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 218:
+/***/ 219:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -671,7 +618,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 219:
+/***/ 220:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -687,7 +634,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -717,7 +664,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 220:
+/***/ 221:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -726,7 +673,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Drawer = __webpack_require__(221);
+	var _Drawer = __webpack_require__(222);
 	
 	Object.defineProperty(exports, 'NOVO_DRAWER_ELEMENTS', {
 	  enumerable: true,
@@ -738,7 +685,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 221:
+/***/ 222:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -960,7 +907,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 222:
+/***/ 223:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -969,7 +916,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Dropdown = __webpack_require__(223);
+	var _Dropdown = __webpack_require__(224);
 	
 	Object.defineProperty(exports, 'NOVO_DROPDOWN_ELEMENTS', {
 	  enumerable: true,
@@ -981,7 +928,81 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 10:
+/***/ 224:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.NOVO_DROPDOWN_ELEMENTS = exports.Dropdown = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _dec, _class;
+	
+	var _core = __webpack_require__(2);
+	
+	var _OutsideClick2 = __webpack_require__(70);
+	
+	var _KeyCodes = __webpack_require__(46);
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Dropdown = exports.Dropdown = (_dec = (0, _core.Component)({
+	    selector: 'novo-dropdown',
+	    template: '\n        <ng-content select="button"></ng-content>\n        <div class="dropdown-container">\n            <ng-content></ng-content>\n        </div>\n    ',
+	    host: {
+	        '(keydown)': 'onKeyDown($event)',
+	        '[class.active]': 'active'
+	    }
+	}), _dec(_class = function (_OutsideClick) {
+	    _inherits(Dropdown, _OutsideClick);
+	
+	    function Dropdown(element) {
+	        _classCallCheck(this, Dropdown);
+	
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Dropdown).call(this, element));
+	
+	        _this.clickHandler = _this.toggleActive.bind(_this);
+	        return _this;
+	    }
+	
+	    _createClass(Dropdown, [{
+	        key: 'ngOnInit',
+	        value: function ngOnInit() {
+	            var button = this.element.nativeElement.querySelector('button');
+	            button.addEventListener('click', this.clickHandler);
+	        }
+	    }, {
+	        key: 'ngOnDestroy',
+	        value: function ngOnDestroy() {
+	            var button = this.element.nativeElement.querySelector('button');
+	            button.removeEventListener('click', this.clickHandler);
+	        }
+	    }, {
+	        key: 'onKeyDown',
+	        value: function onKeyDown(event) {
+	            if (this.active && (event.keyCode === _KeyCodes.KeyCodes.ESC || event.keyCode === _KeyCodes.KeyCodes.ENTER)) {
+	                this.toggleActive();
+	            }
+	        }
+	    }]);
+	
+	    return Dropdown;
+	}(_OutsideClick2.OutsideClick)) || _class);
+	Reflect.defineMetadata('design:paramtypes', [_core.ElementRef], Dropdown);
+	var NOVO_DROPDOWN_ELEMENTS = exports.NOVO_DROPDOWN_ELEMENTS = [Dropdown];
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9kcm9wZG93bi9Ecm9wZG93bi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOzs7Ozs7OztJQWVhLFEsV0FBQSxRLFdBYloscUJBQVU7QUFDUCxjQUFVLGVBREg7QUFFUCwwS0FGTztBQVFQLFVBQU07QUFDRixxQkFBYSxtQkFEWDtBQUVGLDBCQUFrQjtBQUZoQjtBQVJDLENBQVYsQzs7O0FBY0csc0JBQVksT0FBWixFQUFnQztBQUFBOztBQUFBLGdHQUN0QixPQURzQjs7QUFFNUIsY0FBSyxZQUFMLEdBQW9CLE1BQUssWUFBTCxDQUFrQixJQUFsQixPQUFwQjtBQUY0QjtBQUcvQjs7OzttQ0FFVTtBQUNQLGdCQUFJLFNBQVMsS0FBSyxPQUFMLENBQWEsYUFBYixDQUEyQixhQUEzQixDQUF5QyxRQUF6QyxDQUFiO0FBQ0EsbUJBQU8sZ0JBQVAsQ0FBd0IsT0FBeEIsRUFBaUMsS0FBSyxZQUF0QztBQUNIOzs7c0NBRWE7QUFDVixnQkFBSSxTQUFTLEtBQUssT0FBTCxDQUFhLGFBQWIsQ0FBMkIsYUFBM0IsQ0FBeUMsUUFBekMsQ0FBYjtBQUNBLG1CQUFPLG1CQUFQLENBQTJCLE9BQTNCLEVBQW9DLEtBQUssWUFBekM7QUFDSDs7O2tDQUVTLEssRUFBTztBQUNiLGdCQUFJLEtBQUssTUFBTCxLQUFnQixNQUFNLE9BQU4sS0FBa0IsbUJBQVMsR0FBM0IsSUFBa0MsTUFBTSxPQUFOLEtBQWtCLG1CQUFTLEtBQTdFLENBQUosRUFBeUY7QUFDckYscUJBQUssWUFBTDtBQUNIO0FBQ0o7Ozs7O2dFQXBCUSxRO0FBdUJOLElBQU0sMERBQXlCLENBQUMsUUFBRCxDQUEvQiIsImZpbGUiOiJEcm9wZG93bi5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvYmgvbm92by9hcHBzL25vdm8tZWxlbWVudHMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIEVsZW1lbnRSZWYgfSBmcm9tICdhbmd1bGFyMi9jb3JlJztcbmltcG9ydCB7IE91dHNpZGVDbGljayB9IGZyb20gJy4vLi4vLi4vdXRpbHMvb3V0c2lkZS1jbGljay9PdXRzaWRlQ2xpY2snO1xuaW1wb3J0IHsgS2V5Q29kZXMgfSBmcm9tICcuLy4uLy4uL3V0aWxzL2tleS1jb2Rlcy9LZXlDb2Rlcyc7XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnbm92by1kcm9wZG93bicsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPG5nLWNvbnRlbnQgc2VsZWN0PVwiYnV0dG9uXCI+PC9uZy1jb250ZW50PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiZHJvcGRvd24tY29udGFpbmVyXCI+XG4gICAgICAgICAgICA8bmctY29udGVudD48L25nLWNvbnRlbnQ+XG4gICAgICAgIDwvZGl2PlxuICAgIGAsXG4gICAgaG9zdDoge1xuICAgICAgICAnKGtleWRvd24pJzogJ29uS2V5RG93bigkZXZlbnQpJyxcbiAgICAgICAgJ1tjbGFzcy5hY3RpdmVdJzogJ2FjdGl2ZSdcbiAgICB9XG59KVxuZXhwb3J0IGNsYXNzIERyb3Bkb3duIGV4dGVuZHMgT3V0c2lkZUNsaWNrIHtcbiAgICBjb25zdHJ1Y3RvcihlbGVtZW50OkVsZW1lbnRSZWYpIHtcbiAgICAgICAgc3VwZXIoZWxlbWVudCk7XG4gICAgICAgIHRoaXMuY2xpY2tIYW5kbGVyID0gdGhpcy50b2dnbGVBY3RpdmUuYmluZCh0aGlzKTtcbiAgICB9XG5cbiAgICBuZ09uSW5pdCgpIHtcbiAgICAgICAgbGV0IGJ1dHRvbiA9IHRoaXMuZWxlbWVudC5uYXRpdmVFbGVtZW50LnF1ZXJ5U2VsZWN0b3IoJ2J1dHRvbicpO1xuICAgICAgICBidXR0b24uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCB0aGlzLmNsaWNrSGFuZGxlcik7XG4gICAgfVxuXG4gICAgbmdPbkRlc3Ryb3koKSB7XG4gICAgICAgIGxldCBidXR0b24gPSB0aGlzLmVsZW1lbnQubmF0aXZlRWxlbWVudC5xdWVyeVNlbGVjdG9yKCdidXR0b24nKTtcbiAgICAgICAgYnV0dG9uLnJlbW92ZUV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgdGhpcy5jbGlja0hhbmRsZXIpO1xuICAgIH1cblxuICAgIG9uS2V5RG93bihldmVudCkge1xuICAgICAgICBpZiAodGhpcy5hY3RpdmUgJiYgKGV2ZW50LmtleUNvZGUgPT09IEtleUNvZGVzLkVTQyB8fCBldmVudC5rZXlDb2RlID09PSBLZXlDb2Rlcy5FTlRFUikpIHtcbiAgICAgICAgICAgIHRoaXMudG9nZ2xlQWN0aXZlKCk7XG4gICAgICAgIH1cbiAgICB9XG59XG5cbmV4cG9ydCBjb25zdCBOT1ZPX0RST1BET1dOX0VMRU1FTlRTID0gW0Ryb3Bkb3duXTtcbiJdfQ==
+
+/***/ },
+
+/***/ 9:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1003,7 +1024,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _tabs = __webpack_require__(231);
+	var _tabs = __webpack_require__(234);
 	
 	Object.keys(_tabs).forEach(function (key) {
 	    if (key === "default") return;
@@ -1015,7 +1036,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _toast = __webpack_require__(233);
+	var _toast = __webpack_require__(236);
 	
 	Object.keys(_toast).forEach(function (key) {
 	    if (key === "default") return;
@@ -1027,7 +1048,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _switch = __webpack_require__(229);
+	var _switch = __webpack_require__(232);
 	
 	Object.keys(_switch).forEach(function (key) {
 	    if (key === "default") return;
@@ -1039,7 +1060,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _card = __webpack_require__(214);
+	var _card = __webpack_require__(215);
 	
 	Object.keys(_card).forEach(function (key) {
 	    if (key === "default") return;
@@ -1063,7 +1084,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _select = __webpack_require__(227);
+	var _select = __webpack_require__(230);
 	
 	Object.keys(_select).forEach(function (key) {
 	    if (key === "default") return;
@@ -1075,7 +1096,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _dropdown = __webpack_require__(222);
+	var _dropdown = __webpack_require__(223);
 	
 	Object.keys(_dropdown).forEach(function (key) {
 	    if (key === "default") return;
@@ -1087,7 +1108,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _tooltip = __webpack_require__(236);
+	var _tooltip = __webpack_require__(239);
 	
 	Object.keys(_tooltip).forEach(function (key) {
 	    if (key === "default") return;
@@ -1099,7 +1120,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _drawer = __webpack_require__(220);
+	var _drawer = __webpack_require__(221);
 	
 	Object.keys(_drawer).forEach(function (key) {
 	    if (key === "default") return;
@@ -1111,7 +1132,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _header = __webpack_require__(224);
+	var _header = __webpack_require__(225);
 	
 	Object.keys(_header).forEach(function (key) {
 	    if (key === "default") return;
@@ -1123,7 +1144,19 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _Plural = __webpack_require__(238);
+	var _list = __webpack_require__(227);
+	
+	Object.keys(_list).forEach(function (key) {
+	    if (key === "default") return;
+	    Object.defineProperty(exports, key, {
+	        enumerable: true,
+	        get: function get() {
+	            return _list[key];
+	        }
+	    });
+	});
+	
+	var _Plural = __webpack_require__(241);
 	
 	Object.keys(_Plural).forEach(function (key) {
 	    if (key === "default") return;
@@ -1159,7 +1192,7 @@ webpackJsonp([2],{
 	    });
 	});
 	
-	var _Deferred = __webpack_require__(239);
+	var _Deferred = __webpack_require__(242);
 	
 	Object.keys(_Deferred).forEach(function (key) {
 	    if (key === "default") return;
@@ -1173,38 +1206,17 @@ webpackJsonp([2],{
 	
 	
 	// Pipes
-	var NOVO_ELEMENTS = exports.NOVO_ELEMENTS = [_button.NOVO_BUTTON_ELEMENTS, _tabs.NOVO_TAB_ELEMENTS, _toast.NOVO_TOAST_ELEMENTS, _switch.NOVO_SWITCH_ELEMENTS, _card.NOVO_CARD_ELEMENTS, _card.NOVO_CARD_EXTRA_ELEMENTS, _loading.NOVO_LOADING_ELEMENTS, _select.NOVO_SELECT_ELEMENTS, _dropdown.NOVO_DROPDOWN_ELEMENTS, _tooltip.NOVO_TOOLTIP_ELEMENTS, _drawer.NOVO_DRAWER_ELEMENTS, _header.NOVO_HEADER_ELEMENTS];
-	
-	// Utils
 	
 	
 	// Elements
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9ub3ZvLWVsZW1lbnRzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQTs7QUFhQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBWkE7O0FBYUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQVpBOztBQWFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFaQTs7QUFhQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBWkE7O0FBYUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQVpBOztBQWFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFWQTs7QUFXQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBVkE7O0FBV0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQWRBOztBQWVBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFkQTs7QUFlQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBWkE7O0FBYUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBR0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBR0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBRU8sSUFBTSx3Q0FBZ0IsdVdBQXRCIiwiZmlsZSI6Im5vdm8tZWxlbWVudHMuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL2JoL25vdm8vYXBwcy9ub3ZvLWVsZW1lbnRzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTk9WT19CVVRUT05fRUxFTUVOVFMgfSBmcm9tICcuL2VsZW1lbnRzL2J1dHRvbic7XG5pbXBvcnQgeyBOT1ZPX1RBQl9FTEVNRU5UUyB9IGZyb20gJy4vZWxlbWVudHMvdGFicyc7XG5pbXBvcnQgeyBOT1ZPX1RPQVNUX0VMRU1FTlRTIH0gZnJvbSAnLi9lbGVtZW50cy90b2FzdCc7XG5pbXBvcnQgeyBOT1ZPX1NXSVRDSF9FTEVNRU5UUyB9IGZyb20gJy4vZWxlbWVudHMvc3dpdGNoJztcbmltcG9ydCB7IE5PVk9fQ0FSRF9FTEVNRU5UUywgTk9WT19DQVJEX0VYVFJBX0VMRU1FTlRTIH0gZnJvbSAnLi9lbGVtZW50cy9jYXJkJztcbmltcG9ydCB7IE5PVk9fTE9BRElOR19FTEVNRU5UUyB9IGZyb20gJy4vZWxlbWVudHMvbG9hZGluZyc7XG5pbXBvcnQgeyBOT1ZPX1RPT0xUSVBfRUxFTUVOVFMgfSBmcm9tICcuL2VsZW1lbnRzL3Rvb2x0aXAnO1xuaW1wb3J0IHsgTk9WT19EUkFXRVJfRUxFTUVOVFMgfSBmcm9tICcuL2VsZW1lbnRzL2RyYXdlcic7XG5pbXBvcnQgeyBOT1ZPX1NFTEVDVF9FTEVNRU5UUyB9IGZyb20gJy4vZWxlbWVudHMvc2VsZWN0JztcbmltcG9ydCB7IE5PVk9fRFJPUERPV05fRUxFTUVOVFMgfSBmcm9tICcuL2VsZW1lbnRzL2Ryb3Bkb3duJztcbmltcG9ydCB7IE5PVk9fSEVBREVSX0VMRU1FTlRTIH0gZnJvbSAnLi9lbGVtZW50cy9oZWFkZXInO1xuXG4vLyBFbGVtZW50c1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy9idXR0b24nO1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy90YWJzJztcbmV4cG9ydCAqIGZyb20gJy4vZWxlbWVudHMvdG9hc3QnO1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy9zd2l0Y2gnO1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy9jYXJkJztcbmV4cG9ydCAqIGZyb20gJy4vZWxlbWVudHMvbG9hZGluZyc7XG5leHBvcnQgKiBmcm9tICcuL2VsZW1lbnRzL3NlbGVjdCc7XG5leHBvcnQgKiBmcm9tICcuL2VsZW1lbnRzL2Ryb3Bkb3duJztcbmV4cG9ydCAqIGZyb20gJy4vZWxlbWVudHMvdG9vbHRpcCc7XG5leHBvcnQgKiBmcm9tICcuL2VsZW1lbnRzL2RyYXdlcic7XG5leHBvcnQgKiBmcm9tICcuL2VsZW1lbnRzL2hlYWRlcic7XG5cbi8vIFBpcGVzXG5leHBvcnQgKiBmcm9tICcuL3BpcGVzL3BsdXJhbC9QbHVyYWwnO1xuXG4vLyBVdGlsc1xuZXhwb3J0ICogZnJvbSAnLi91dGlscy9vdXRzaWRlLWNsaWNrL091dHNpZGVDbGljayc7XG5leHBvcnQgKiBmcm9tICcuL3V0aWxzL2tleS1jb2Rlcy9LZXlDb2Rlcyc7XG5leHBvcnQgKiBmcm9tICcuL3V0aWxzL2RlZmVycmVkL0RlZmVycmVkJztcblxuZXhwb3J0IGNvbnN0IE5PVk9fRUxFTUVOVFMgPSBbXG4gICAgTk9WT19CVVRUT05fRUxFTUVOVFMsXG4gICAgTk9WT19UQUJfRUxFTUVOVFMsXG4gICAgTk9WT19UT0FTVF9FTEVNRU5UUyxcbiAgICBOT1ZPX1NXSVRDSF9FTEVNRU5UUyxcbiAgICBOT1ZPX0NBUkRfRUxFTUVOVFMsXG4gICAgTk9WT19DQVJEX0VYVFJBX0VMRU1FTlRTLFxuICAgIE5PVk9fTE9BRElOR19FTEVNRU5UUyxcbiAgICBOT1ZPX1NFTEVDVF9FTEVNRU5UUyxcbiAgICBOT1ZPX0RST1BET1dOX0VMRU1FTlRTLFxuICAgIE5PVk9fVE9PTFRJUF9FTEVNRU5UUyxcbiAgICBOT1ZPX0RSQVdFUl9FTEVNRU5UUyxcbiAgICBOT1ZPX0hFQURFUl9FTEVNRU5UU1xuXTtcbiJdfQ==
+	var NOVO_ELEMENTS = exports.NOVO_ELEMENTS = [_button.NOVO_BUTTON_ELEMENTS, _tabs.NOVO_TAB_ELEMENTS, _toast.NOVO_TOAST_ELEMENTS, _switch.NOVO_SWITCH_ELEMENTS, _card.NOVO_CARD_ELEMENTS, _card.NOVO_CARD_EXTRA_ELEMENTS, _loading.NOVO_LOADING_ELEMENTS, _select.NOVO_SELECT_ELEMENTS, _dropdown.NOVO_DROPDOWN_ELEMENTS, _tooltip.NOVO_TOOLTIP_ELEMENTS, _drawer.NOVO_DRAWER_ELEMENTS, _header.NOVO_HEADER_ELEMENTS, _list.NOVO_LIST_ELEMENTS];
+	
+	// Utils
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9ub3ZvLWVsZW1lbnRzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQTs7QUFjQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBYkE7O0FBY0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQWJBOztBQWNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFiQTs7QUFjQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBYkE7O0FBY0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQWJBOztBQWNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFYQTs7QUFZQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBWEE7O0FBWUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOztBQWZBOztBQWdCQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBZkE7O0FBZ0JBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFiQTs7QUFjQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBYkE7O0FBY0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBR0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBR0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7O0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOzs7Ozs7O0FBRU8sSUFBTSx3Q0FBZ0IsaVlBQXRCIiwiZmlsZSI6Im5vdm8tZWxlbWVudHMuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL2JoL25vdm8vYXBwcy9ub3ZvLWVsZW1lbnRzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTk9WT19CVVRUT05fRUxFTUVOVFMgfSBmcm9tICcuL2VsZW1lbnRzL2J1dHRvbic7XG5pbXBvcnQgeyBOT1ZPX1RBQl9FTEVNRU5UUyB9IGZyb20gJy4vZWxlbWVudHMvdGFicyc7XG5pbXBvcnQgeyBOT1ZPX1RPQVNUX0VMRU1FTlRTIH0gZnJvbSAnLi9lbGVtZW50cy90b2FzdCc7XG5pbXBvcnQgeyBOT1ZPX1NXSVRDSF9FTEVNRU5UUyB9IGZyb20gJy4vZWxlbWVudHMvc3dpdGNoJztcbmltcG9ydCB7IE5PVk9fQ0FSRF9FTEVNRU5UUywgTk9WT19DQVJEX0VYVFJBX0VMRU1FTlRTIH0gZnJvbSAnLi9lbGVtZW50cy9jYXJkJztcbmltcG9ydCB7IE5PVk9fTE9BRElOR19FTEVNRU5UUyB9IGZyb20gJy4vZWxlbWVudHMvbG9hZGluZyc7XG5pbXBvcnQgeyBOT1ZPX1RPT0xUSVBfRUxFTUVOVFMgfSBmcm9tICcuL2VsZW1lbnRzL3Rvb2x0aXAnO1xuaW1wb3J0IHsgTk9WT19EUkFXRVJfRUxFTUVOVFMgfSBmcm9tICcuL2VsZW1lbnRzL2RyYXdlcic7XG5pbXBvcnQgeyBOT1ZPX1NFTEVDVF9FTEVNRU5UUyB9IGZyb20gJy4vZWxlbWVudHMvc2VsZWN0JztcbmltcG9ydCB7IE5PVk9fRFJPUERPV05fRUxFTUVOVFMgfSBmcm9tICcuL2VsZW1lbnRzL2Ryb3Bkb3duJztcbmltcG9ydCB7IE5PVk9fSEVBREVSX0VMRU1FTlRTIH0gZnJvbSAnLi9lbGVtZW50cy9oZWFkZXInO1xuaW1wb3J0IHsgTk9WT19MSVNUX0VMRU1FTlRTIH0gZnJvbSAnLi9lbGVtZW50cy9saXN0JztcblxuLy8gRWxlbWVudHNcbmV4cG9ydCAqIGZyb20gJy4vZWxlbWVudHMvYnV0dG9uJztcbmV4cG9ydCAqIGZyb20gJy4vZWxlbWVudHMvdGFicyc7XG5leHBvcnQgKiBmcm9tICcuL2VsZW1lbnRzL3RvYXN0JztcbmV4cG9ydCAqIGZyb20gJy4vZWxlbWVudHMvc3dpdGNoJztcbmV4cG9ydCAqIGZyb20gJy4vZWxlbWVudHMvY2FyZCc7XG5leHBvcnQgKiBmcm9tICcuL2VsZW1lbnRzL2xvYWRpbmcnO1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy9zZWxlY3QnO1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy9kcm9wZG93bic7XG5leHBvcnQgKiBmcm9tICcuL2VsZW1lbnRzL3Rvb2x0aXAnO1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy9kcmF3ZXInO1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy9oZWFkZXInO1xuZXhwb3J0ICogZnJvbSAnLi9lbGVtZW50cy9saXN0JztcblxuLy8gUGlwZXNcbmV4cG9ydCAqIGZyb20gJy4vcGlwZXMvcGx1cmFsL1BsdXJhbCc7XG5cbi8vIFV0aWxzXG5leHBvcnQgKiBmcm9tICcuL3V0aWxzL291dHNpZGUtY2xpY2svT3V0c2lkZUNsaWNrJztcbmV4cG9ydCAqIGZyb20gJy4vdXRpbHMva2V5LWNvZGVzL0tleUNvZGVzJztcbmV4cG9ydCAqIGZyb20gJy4vdXRpbHMvZGVmZXJyZWQvRGVmZXJyZWQnO1xuXG5leHBvcnQgY29uc3QgTk9WT19FTEVNRU5UUyA9IFtcbiAgICBOT1ZPX0JVVFRPTl9FTEVNRU5UUyxcbiAgICBOT1ZPX1RBQl9FTEVNRU5UUyxcbiAgICBOT1ZPX1RPQVNUX0VMRU1FTlRTLFxuICAgIE5PVk9fU1dJVENIX0VMRU1FTlRTLFxuICAgIE5PVk9fQ0FSRF9FTEVNRU5UUyxcbiAgICBOT1ZPX0NBUkRfRVhUUkFfRUxFTUVOVFMsXG4gICAgTk9WT19MT0FESU5HX0VMRU1FTlRTLFxuICAgIE5PVk9fU0VMRUNUX0VMRU1FTlRTLFxuICAgIE5PVk9fRFJPUERPV05fRUxFTUVOVFMsXG4gICAgTk9WT19UT09MVElQX0VMRU1FTlRTLFxuICAgIE5PVk9fRFJBV0VSX0VMRU1FTlRTLFxuICAgIE5PVk9fSEVBREVSX0VMRU1FTlRTLFxuICAgIE5PVk9fTElTVF9FTEVNRU5UU1xuXTtcbiJdfQ==
 
 /***/ },
 
-/***/ 224:
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _Header = __webpack_require__(225);
-	
-	Object.defineProperty(exports, 'NOVO_HEADER_ELEMENTS', {
-	  enumerable: true,
-	  get: function get() {
-	    return _Header.NOVO_HEADER_ELEMENTS;
-	  }
-	});
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9oZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7bUJBQVMsb0IiLCJmaWxlIjoiaGVhZGVyLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qZ29kaS9iaC9ub3ZvL2FwcHMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IE5PVk9fSEVBREVSX0VMRU1FTlRTIH0gZnJvbSAnLi9oZWFkZXIvSGVhZGVyJztcbiJdfQ==
-
-/***/ },
-
-/***/ 225:
+/***/ 226:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1220,7 +1232,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	var _button = __webpack_require__(69);
 	
@@ -1267,7 +1279,120 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 226:
+/***/ 227:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _List = __webpack_require__(228);
+	
+	Object.defineProperty(exports, 'NOVO_LIST_ELEMENTS', {
+	  enumerable: true,
+	  get: function get() {
+	    return _List.NOVO_LIST_ELEMENTS;
+	  }
+	});
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9saXN0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O2lCQUFTLGtCIiwiZmlsZSI6Imxpc3QuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL2JoL25vdm8vYXBwcy9ub3ZvLWVsZW1lbnRzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHsgTk9WT19MSVNUX0VMRU1FTlRTIH0gZnJvbSAnLi9saXN0L0xpc3QnO1xuIl19
+
+/***/ },
+
+/***/ 228:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.NOVO_LIST_ELEMENTS = exports.ItemEnd = exports.ItemContent = exports.ItemTitle = exports.ItemAvatar = exports.NovoListItem = exports.NovoList = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _dec, _class, _dec2, _class2, _dec3, _class3, _dec4, _class4, _dec5, _class5, _dec6, _class6;
+	
+	var _core = __webpack_require__(2);
+	
+	var _common = __webpack_require__(7);
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var NovoList = exports.NovoList = (_dec = (0, _core.Component)({
+	    selector: 'novo-list',
+	    inputs: ['direction'],
+	    host: {
+	        '[class.vertical-list]': 'direction === "vertical"',
+	        '[class.horizontal-list]': 'direction === "horizontal"'
+	    },
+	    template: '\n        <ng-content></ng-content>\n    ',
+	    directives: [_common.CORE_DIRECTIVES, _common.NgFor]
+	}), _dec(_class = function NovoList() {
+	    _classCallCheck(this, NovoList);
+	}) || _class);
+	var NovoListItem = exports.NovoListItem = (_dec2 = (0, _core.Component)({
+	    selector: 'novo-list-item',
+	    template: '\n        <ng-content select="item-avatar"></ng-content>\n        <div>\n            <ng-content select="item-title"></ng-content>\n            <ng-content select="item-content"></ng-content>\n        </div>\n        <ng-content select="item-end"></ng-content>\n    ',
+	    directives: [_common.CORE_DIRECTIVES, _common.NgFor, _common.NgIf]
+	}), _dec2(_class2 = function NovoListItem() {
+	    _classCallCheck(this, NovoListItem);
+	}) || _class2);
+	var ItemAvatar = exports.ItemAvatar = (_dec3 = (0, _core.Component)({
+	    selector: 'item-avatar',
+	    inputs: ['icon'],
+	    template: '\n        <i *ngIf="iconClass" [ngClass]="classMap" theme="contained"></i>\n    ',
+	    directives: [_common.NgIf, _common.NgClass]
+	}), _dec3(_class3 = function () {
+	    function ItemAvatar() {
+	        _classCallCheck(this, ItemAvatar);
+	    }
+	
+	    _createClass(ItemAvatar, [{
+	        key: 'ngOnChanges',
+	        value: function ngOnChanges() {
+	            this.iconClass = this.icon ? 'bhi-' + this.icon : null;
+	            this.classMap = [this.iconClass, this.icon];
+	        }
+	    }, {
+	        key: 'ngOnInit',
+	        value: function ngOnInit() {
+	            this.ngOnChanges();
+	        }
+	    }]);
+	
+	    return ItemAvatar;
+	}()) || _class3);
+	var ItemTitle = exports.ItemTitle = (_dec4 = (0, _core.Component)({
+	    selector: 'item-title',
+	    template: '\n        <h3><ng-content></ng-content></h3>\n    '
+	}), _dec4(_class4 = function ItemTitle() {
+	    _classCallCheck(this, ItemTitle);
+	}) || _class4);
+	var ItemContent = exports.ItemContent = (_dec5 = (0, _core.Component)({
+	    selector: 'item-content',
+	    inputs: ['direction'],
+	    host: {
+	        '[class.vertical-list]': 'direction === "vertical"',
+	        '[class.horizontal-list]': 'direction === "horizontal"'
+	    },
+	    template: '\n        <ng-content></ng-content>\n    '
+	}), _dec5(_class5 = function ItemContent() {
+	    _classCallCheck(this, ItemContent);
+	}) || _class5);
+	var ItemEnd = exports.ItemEnd = (_dec6 = (0, _core.Component)({
+	    selector: 'item-end',
+	    template: '\n        <ng-content></ng-content>\n    '
+	}), _dec6(_class6 = function ItemEnd() {
+	    _classCallCheck(this, ItemEnd);
+	}) || _class6);
+	var NOVO_LIST_ELEMENTS = exports.NOVO_LIST_ELEMENTS = [NovoList, NovoListItem, ItemAvatar, ItemTitle, ItemContent, ItemEnd];
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9saXN0L0xpc3QuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7OztJQWNhLFEsV0FBQSxRLFdBWloscUJBQVU7QUFDUCxjQUFVLFdBREg7QUFFUCxZQUFRLENBQUMsV0FBRCxDQUZEO0FBR1AsVUFBTTtBQUNGLGlDQUF5QiwwQkFEdkI7QUFFRixtQ0FBMkI7QUFGekIsS0FIQztBQU9QLHlEQVBPO0FBVVAsZ0JBQVk7QUFWTCxDQUFWLEM7OztJQTBCWSxZLFdBQUEsWSxZQVpaLHFCQUFVO0FBQ1AsY0FBVSxnQkFESDtBQUVQLDBSQUZPO0FBVVAsZ0JBQVk7QUFWTCxDQUFWLEM7OztJQXNCWSxVLFdBQUEsVSxZQVJaLHFCQUFVO0FBQ1AsY0FBVSxhQURIO0FBRVAsWUFBUSxDQUFDLE1BQUQsQ0FGRDtBQUdQLGdHQUhPO0FBTVAsZ0JBQVk7QUFOTCxDQUFWLEM7Ozs7Ozs7c0NBU2lCO0FBQ1YsaUJBQUssU0FBTCxHQUFrQixLQUFLLElBQU4sWUFBcUIsS0FBSyxJQUExQixHQUFtQyxJQUFwRDtBQUNBLGlCQUFLLFFBQUwsR0FBZ0IsQ0FBQyxLQUFLLFNBQU4sRUFBaUIsS0FBSyxJQUF0QixDQUFoQjtBQUNIOzs7bUNBRVU7QUFDUCxpQkFBSyxXQUFMO0FBQ0g7Ozs7O0lBU1EsUyxXQUFBLFMsWUFOWixxQkFBVTtBQUNQLGNBQVUsWUFESDtBQUVQO0FBRk8sQ0FBVixDOzs7SUFtQlksVyxXQUFBLFcsWUFYWixxQkFBVTtBQUNQLGNBQVUsY0FESDtBQUVQLFlBQVEsQ0FBQyxXQUFELENBRkQ7QUFHUCxVQUFNO0FBQ0YsaUNBQXlCLDBCQUR2QjtBQUVGLG1DQUEyQjtBQUZ6QixLQUhDO0FBT1A7QUFQTyxDQUFWLEM7OztJQW1CWSxPLFdBQUEsTyxZQU5aLHFCQUFVO0FBQ1AsY0FBVSxVQURIO0FBRVA7QUFGTyxDQUFWLEM7OztBQVFNLElBQU0sa0RBQXFCLENBQUMsUUFBRCxFQUFXLFlBQVgsRUFBeUIsVUFBekIsRUFBcUMsU0FBckMsRUFBZ0QsV0FBaEQsRUFBNkQsT0FBN0QsQ0FBM0IiLCJmaWxlIjoiTGlzdC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvYmgvbm92by9hcHBzL25vdm8tZWxlbWVudHMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdhbmd1bGFyMi9jb3JlJztcbmltcG9ydCB7IENPUkVfRElSRUNUSVZFUywgTmdGb3IsIE5nSWYsIE5nQ2xhc3MgfSBmcm9tICdhbmd1bGFyMi9jb21tb24nO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ25vdm8tbGlzdCcsXG4gICAgaW5wdXRzOiBbJ2RpcmVjdGlvbiddLFxuICAgIGhvc3Q6IHtcbiAgICAgICAgJ1tjbGFzcy52ZXJ0aWNhbC1saXN0XSc6ICdkaXJlY3Rpb24gPT09IFwidmVydGljYWxcIicsXG4gICAgICAgICdbY2xhc3MuaG9yaXpvbnRhbC1saXN0XSc6ICdkaXJlY3Rpb24gPT09IFwiaG9yaXpvbnRhbFwiJ1xuICAgIH0sXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPG5nLWNvbnRlbnQ+PC9uZy1jb250ZW50PlxuICAgIGAsXG4gICAgZGlyZWN0aXZlczogW0NPUkVfRElSRUNUSVZFUywgTmdGb3JdXG59KVxuZXhwb3J0IGNsYXNzIE5vdm9MaXN0IHt9XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnbm92by1saXN0LWl0ZW0nLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgIDxuZy1jb250ZW50IHNlbGVjdD1cIml0ZW0tYXZhdGFyXCI+PC9uZy1jb250ZW50PlxuICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPG5nLWNvbnRlbnQgc2VsZWN0PVwiaXRlbS10aXRsZVwiPjwvbmctY29udGVudD5cbiAgICAgICAgICAgIDxuZy1jb250ZW50IHNlbGVjdD1cIml0ZW0tY29udGVudFwiPjwvbmctY29udGVudD5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxuZy1jb250ZW50IHNlbGVjdD1cIml0ZW0tZW5kXCI+PC9uZy1jb250ZW50PlxuICAgIGAsXG4gICAgZGlyZWN0aXZlczogW0NPUkVfRElSRUNUSVZFUywgTmdGb3IsIE5nSWZdXG59KVxuZXhwb3J0IGNsYXNzIE5vdm9MaXN0SXRlbSB7fVxuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ2l0ZW0tYXZhdGFyJyxcbiAgICBpbnB1dHM6IFsnaWNvbiddLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgIDxpICpuZ0lmPVwiaWNvbkNsYXNzXCIgW25nQ2xhc3NdPVwiY2xhc3NNYXBcIiB0aGVtZT1cImNvbnRhaW5lZFwiPjwvaT5cbiAgICBgLFxuICAgIGRpcmVjdGl2ZXM6IFtOZ0lmLCBOZ0NsYXNzXVxufSlcbmV4cG9ydCBjbGFzcyBJdGVtQXZhdGFyIHtcbiAgICBuZ09uQ2hhbmdlcygpIHtcbiAgICAgICAgdGhpcy5pY29uQ2xhc3MgPSAodGhpcy5pY29uKSA/IGBiaGktJHt0aGlzLmljb259YCA6IG51bGw7XG4gICAgICAgIHRoaXMuY2xhc3NNYXAgPSBbdGhpcy5pY29uQ2xhc3MsIHRoaXMuaWNvbl07XG4gICAgfVxuXG4gICAgbmdPbkluaXQoKSB7XG4gICAgICAgIHRoaXMubmdPbkNoYW5nZXMoKTtcbiAgICB9XG59XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnaXRlbS10aXRsZScsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPGgzPjxuZy1jb250ZW50PjwvbmctY29udGVudD48L2gzPlxuICAgIGBcbn0pXG5leHBvcnQgY2xhc3MgSXRlbVRpdGxlIHt9XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnaXRlbS1jb250ZW50JyxcbiAgICBpbnB1dHM6IFsnZGlyZWN0aW9uJ10sXG4gICAgaG9zdDoge1xuICAgICAgICAnW2NsYXNzLnZlcnRpY2FsLWxpc3RdJzogJ2RpcmVjdGlvbiA9PT0gXCJ2ZXJ0aWNhbFwiJyxcbiAgICAgICAgJ1tjbGFzcy5ob3Jpem9udGFsLWxpc3RdJzogJ2RpcmVjdGlvbiA9PT0gXCJob3Jpem9udGFsXCInXG4gICAgfSxcbiAgICB0ZW1wbGF0ZTogYFxuICAgICAgICA8bmctY29udGVudD48L25nLWNvbnRlbnQ+XG4gICAgYFxufSlcbmV4cG9ydCBjbGFzcyBJdGVtQ29udGVudCB7fVxuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ2l0ZW0tZW5kJyxcbiAgICB0ZW1wbGF0ZTogYFxuICAgICAgICA8bmctY29udGVudD48L25nLWNvbnRlbnQ+XG4gICAgYFxufSlcbmV4cG9ydCBjbGFzcyBJdGVtRW5kIHt9XG5cbmV4cG9ydCBjb25zdCBOT1ZPX0xJU1RfRUxFTUVOVFMgPSBbTm92b0xpc3QsIE5vdm9MaXN0SXRlbSwgSXRlbUF2YXRhciwgSXRlbVRpdGxlLCBJdGVtQ29udGVudCwgSXRlbUVuZF07XG4iXX0=
+
+/***/ },
+
+/***/ 229:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1281,7 +1406,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1300,7 +1425,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 227:
+/***/ 230:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1309,7 +1434,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Select = __webpack_require__(228);
+	var _Select = __webpack_require__(231);
 	
 	Object.defineProperty(exports, 'NOVO_SELECT_ELEMENTS', {
 	  enumerable: true,
@@ -1321,7 +1446,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 228:
+/***/ 231:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1337,7 +1462,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	var _OutsideClick2 = __webpack_require__(70);
 	
@@ -1520,7 +1645,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 229:
+/***/ 232:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1529,7 +1654,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Switch = __webpack_require__(230);
+	var _Switch = __webpack_require__(233);
 	
 	Object.defineProperty(exports, 'NOVO_SWITCH_ELEMENTS', {
 	  enumerable: true,
@@ -1541,7 +1666,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 230:
+/***/ 233:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1622,7 +1747,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 231:
+/***/ 234:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1631,7 +1756,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Tabs = __webpack_require__(232);
+	var _Tabs = __webpack_require__(235);
 	
 	Object.defineProperty(exports, 'NOVO_TAB_ELEMENTS', {
 	  enumerable: true,
@@ -1643,7 +1768,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 232:
+/***/ 235:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1659,7 +1784,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1903,7 +2028,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 233:
+/***/ 236:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1912,7 +2037,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Toast = __webpack_require__(234);
+	var _Toast = __webpack_require__(237);
 	
 	Object.defineProperty(exports, 'NOVO_TOAST_ELEMENTS', {
 	  enumerable: true,
@@ -1927,7 +2052,7 @@ webpackJsonp([2],{
 	  }
 	});
 	
-	var _ToastService = __webpack_require__(235);
+	var _ToastService = __webpack_require__(238);
 	
 	Object.defineProperty(exports, 'ToastService', {
 	  enumerable: true,
@@ -1939,7 +2064,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 234:
+/***/ 237:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1955,7 +2080,7 @@ webpackJsonp([2],{
 	
 	var _core = __webpack_require__(2);
 	
-	var _common = __webpack_require__(8);
+	var _common = __webpack_require__(7);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -2015,7 +2140,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 235:
+/***/ 238:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2179,7 +2304,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 236:
+/***/ 239:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2188,7 +2313,7 @@ webpackJsonp([2],{
 	  value: true
 	});
 	
-	var _Tooltip = __webpack_require__(237);
+	var _Tooltip = __webpack_require__(240);
 	
 	Object.defineProperty(exports, 'NOVO_TOOLTIP_ELEMENTS', {
 	  enumerable: true,
@@ -2200,7 +2325,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 237:
+/***/ 240:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2267,7 +2392,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 238:
+/***/ 241:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2547,7 +2672,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 239:
+/***/ 242:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2574,4 +2699,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=lib.2f83eb9c73fff5421a1d.bundle.map
+//# sourceMappingURL=lib.afe3159ff681f0101191.bundle.map
