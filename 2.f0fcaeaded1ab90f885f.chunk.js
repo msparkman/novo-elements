@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 789:
+/***/ 793:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 397:
+/***/ 400:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,25 +58,25 @@ webpackJsonp([2],{
 	
 	var _novoElements = __webpack_require__(163);
 	
-	var _CodeSnippet = __webpack_require__(789);
+	var _CodeSnippet = __webpack_require__(793);
 	
-	var _ButtonTabDemo = __webpack_require__(829);
+	var _ButtonTabDemo = __webpack_require__(837);
 	
 	var _ButtonTabDemo2 = _interopRequireDefault(_ButtonTabDemo);
 	
-	var _ColorDemo = __webpack_require__(830);
+	var _ColorDemo = __webpack_require__(838);
 	
 	var _ColorDemo2 = _interopRequireDefault(_ColorDemo);
 	
-	var _RouterDemo = __webpack_require__(831);
+	var _RouterDemo = __webpack_require__(839);
 	
 	var _RouterDemo2 = _interopRequireDefault(_RouterDemo);
 	
-	var _VerticalDemo = __webpack_require__(832);
+	var _VerticalDemo = __webpack_require__(840);
 	
 	var _VerticalDemo2 = _interopRequireDefault(_VerticalDemo);
 	
-	var _WhiteDemo = __webpack_require__(833);
+	var _WhiteDemo = __webpack_require__(841);
 	
 	var _WhiteDemo2 = _interopRequireDefault(_WhiteDemo);
 	
@@ -119,35 +119,35 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 829:
+/***/ 837:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"color\">\n    <novo-nav theme=\"color\" [outlet]=\"buttonTab\" type=\"button-bar\">\n        <novo-tab-button>Button 1</novo-tab-button>\n        <novo-tab-button>Button 2</novo-tab-button>\n        <novo-tab-button>Button 3</novo-tab-button>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #buttonTab>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 3 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n\n<header>\n    <novo-nav theme=\"white\" [outlet]=\"buttonTabWhite\" type=\"button-bar\">\n        <novo-tab-button>Button 1</novo-tab-button>\n        <novo-tab-button>Button 2</novo-tab-button>\n        <novo-tab-button>Button 3</novo-tab-button>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #buttonTabWhite>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 3 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 830:
+/***/ 838:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab>\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #colornav>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 831:
+/***/ 839:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"white\" router>\n        <novo-tab-link>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab-link>\n        <novo-tab-link>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab-link>\n    </novo-nav>\n</header>\n"
 
 /***/ },
 
-/***/ 832:
+/***/ 840:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-nav theme=\"white\" [outlet]=\"colorVert\" direction=\"vertical\">\n    <novo-tab>\n        <span>\n            <i class=\"bhi-person\"></i>Tab 1</span>\n    </novo-tab>\n    <novo-tab>\n        <span>\n            <i class=\"bhi-person\"></i>Tab 2</span>\n    </novo-tab>\n</novo-nav>\n\n<novo-nav-outlet #colorVert>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n\n        <p>\n            Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,\n            Portland keffiyeh aesthetic food truck sriracha cornhole\n            single-origin coffee church-key roof party. Leggings\n            ethical McSweeney's, normcore you probably haven't\n            heard of them Marfa organic squid. Slow-carb 90's\n            ennui Godard pug asymmetrical, narwhal VHS Tonx High\n            Life. Retro dreamcatcher synth Godard pickled Etsy\n            jean shorts beard, pour-over fanny pack mumblecore.\n            Quinoa retro aesthetic polaroid, Williamsburg American\n            Apparel plaid small batch. Blue Bottle Vice fanny\n            pack, Williamsburg roof party Wes Anderson mlkshk\n            seitan brunch before they sold out lo-fi XOXO tofu\n            scenester small batch.\n        </p>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n\n        <p>\n            Synth polaroid bitters chillwave pickled.\n        </p>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 833:
+/***/ 841:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"white\" [outlet]=\"whitenav\">\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab>\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #whitenav>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
