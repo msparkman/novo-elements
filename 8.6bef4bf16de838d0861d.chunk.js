@@ -1,4 +1,4 @@
-webpackJsonp([6],{
+webpackJsonp([8],{
 
 /***/ 831:
 /***/ function(module, exports, __webpack_require__) {
@@ -58,15 +58,15 @@ webpackJsonp([6],{
 	
 	var _CodeSnippet = __webpack_require__(831);
 	
-	var _TooltipOptionsDemo = __webpack_require__(895);
+	var _TooltipOptionsDemo = __webpack_require__(897);
 	
 	var _TooltipOptionsDemo2 = _interopRequireDefault(_TooltipOptionsDemo);
 	
-	var _TooltipPlacementDemo = __webpack_require__(896);
+	var _TooltipPlacementDemo = __webpack_require__(898);
 	
 	var _TooltipPlacementDemo2 = _interopRequireDefault(_TooltipPlacementDemo);
 	
-	var _TooltipTypesDemo = __webpack_require__(897);
+	var _TooltipTypesDemo = __webpack_require__(899);
 	
 	var _TooltipTypesDemo2 = _interopRequireDefault(_TooltipTypesDemo);
 	
@@ -90,21 +90,21 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 895:
+/***/ 897:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ALWAYS\" tooltipAlways=\"true\">Always Shown</span>\n<span tooltip=\"ROUNDED\" tooltipRounded=\"true\">Rounded</span>\n<span tooltip=\"NO ANIMATE\" tooltipNoAnimate=\"true\">No Animation</span>\n<span tooltip=\"BOUNCE\" tooltipBounce=\"true\">Bounce</span>\n"
 
 /***/ },
 
-/***/ 896:
+/***/ 898:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"left\" tooltipPosition=\"left\">Left</span>\n<span tooltip=\"right\" tooltipPosition=\"right\">Right</span>\n<span tooltip=\"top\" tooltipPosition=\"top\">Top</span>\n<span tooltip=\"bottom\" tooltipPosition=\"bottom\">Bottom</span>\n"
 
 /***/ },
 
-/***/ 897:
+/***/ 899:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ERROR\" tooltipType=\"error\">Error</span>\n<span tooltip=\"INFO\" tooltipType=\"info\">Info</span>\n<span tooltip=\"WARNING\" tooltipType=\"warning\">Warning</span>\n<span tooltip=\"SUCCESS\" tooltipType=\"success\">Success</span>\n"
@@ -112,4 +112,4 @@ webpackJsonp([6],{
 /***/ }
 
 });
-//# sourceMappingURL=6.6bef4bf16de838d0861d.bundle.map
+//# sourceMappingURL=8.6bef4bf16de838d0861d.bundle.map
