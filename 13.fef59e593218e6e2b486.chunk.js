@@ -1,6 +1,6 @@
 webpackJsonp([13],{
 
-/***/ 831:
+/***/ 832:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -54,15 +54,15 @@ webpackJsonp([13],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(171);
+	var _novoElements = __webpack_require__(13);
 	
-	var _CodeSnippet = __webpack_require__(831);
+	var _CodeSnippet = __webpack_require__(832);
 	
-	var _LoadingCircleDemo = __webpack_require__(869);
+	var _LoadingCircleDemo = __webpack_require__(870);
 	
 	var _LoadingCircleDemo2 = _interopRequireDefault(_LoadingCircleDemo);
 	
-	var _LoadingLineDemo = __webpack_require__(870);
+	var _LoadingLineDemo = __webpack_require__(871);
 	
 	var _LoadingLineDemo2 = _interopRequireDefault(_LoadingLineDemo);
 	
@@ -86,14 +86,14 @@ webpackJsonp([13],{
 
 /***/ },
 
-/***/ 869:
+/***/ 870:
 /***/ function(module, exports) {
 
 	module.exports = "<section>\n    <div class=\"whiteBg\">\n        <novo-spinner theme=\"multicolor\"></novo-spinner>\n    </div>\n    <div class=\"grayBg\">\n        <novo-spinner></novo-spinner>\n    </div>\n</section>\n<section>\n    <div class=\"blueBg\">\n        <novo-spinner inverse></novo-spinner>\n    </div>\n    <div class=\"darkBlueBg\">\n        <novo-spinner theme=\"bittersweet\"></novo-spinner>\n    </div>\n</section>\n"
 
 /***/ },
 
-/***/ 870:
+/***/ 871:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-loading></novo-loading>\n</header>\n<header class=\"color-container\">\n    <novo-loading inverse></novo-loading>\n</header>\n"

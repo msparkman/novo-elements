@@ -1,6 +1,6 @@
 webpackJsonp([5],{
 
-/***/ 831:
+/***/ 832:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56,27 +56,27 @@ webpackJsonp([5],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(171);
+	var _novoElements = __webpack_require__(13);
 	
-	var _CodeSnippet = __webpack_require__(831);
+	var _CodeSnippet = __webpack_require__(832);
 	
-	var _AttributeCardDemo = __webpack_require__(841);
+	var _AttributeCardDemo = __webpack_require__(842);
 	
 	var _AttributeCardDemo2 = _interopRequireDefault(_AttributeCardDemo);
 	
-	var _FullConfigCardDemo = __webpack_require__(845);
+	var _FullConfigCardDemo = __webpack_require__(846);
 	
 	var _FullConfigCardDemo2 = _interopRequireDefault(_FullConfigCardDemo);
 	
-	var _ExtrasTimelineDemo = __webpack_require__(844);
+	var _ExtrasTimelineDemo = __webpack_require__(845);
 	
 	var _ExtrasTimelineDemo2 = _interopRequireDefault(_ExtrasTimelineDemo);
 	
-	var _ExtrasBestTimeDemo = __webpack_require__(842);
+	var _ExtrasBestTimeDemo = __webpack_require__(843);
 	
 	var _ExtrasBestTimeDemo2 = _interopRequireDefault(_ExtrasBestTimeDemo);
 	
-	var _ExtrasChartDemoDemo = __webpack_require__(843);
+	var _ExtrasChartDemoDemo = __webpack_require__(844);
 	
 	var _ExtrasChartDemoDemo2 = _interopRequireDefault(_ExtrasChartDemoDemo);
 	
@@ -191,35 +191,35 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 841:
+/***/ 842:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card [title]=\"'All Attributes'\"\n           icon=\"activity\"\n           [loading]=\"loading\"\n           [message]=\"message\"\n           [messageIcon]=\"messageIcon\"\n           [refresh]=\"refresh\"\n           [move]=\"move\"\n           [close]=\"close\"\n           (onRefresh)=\"onRefresh()\"\n           (onClose)=\"onClose()\"\n           [padding]=\"padding\">\n    This is the ALL attribute card content!\n</novo-card>\n"
 
 /***/ },
 
-/***/ 842:
+/***/ 843:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-best-time [label]=\"bestLabel\" [day]=\"bestDay\" [time]=\"bestTime\"></novo-card-best-time>\n"
 
 /***/ },
 
-/***/ 843:
+/***/ 844:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-chart-donut [value]=\"donutValue\" [label]=\"donutLabel\" [color]=\"donutColor\"></novo-card-chart-donut>\n"
 
 /***/ },
 
-/***/ 844:
+/***/ 845:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-timeline [start]=\"start\" [end]=\"end\" [created]=\"created\"></novo-card-timeline>\n"
 
 /***/ },
 
-/***/ 845:
+/***/ 846:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card [config]=\"fullConfig\">\n    DEMO :)\n</novo-card>\n"

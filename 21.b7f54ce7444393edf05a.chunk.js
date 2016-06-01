@@ -1,6 +1,6 @@
 webpackJsonp([21],{
 
-/***/ 831:
+/***/ 832:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56,11 +56,11 @@ webpackJsonp([21],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(171);
+	var _novoElements = __webpack_require__(13);
 	
-	var _CodeSnippet = __webpack_require__(831);
+	var _CodeSnippet = __webpack_require__(832);
 	
-	var _DrawerDemo = __webpack_require__(852);
+	var _DrawerDemo = __webpack_require__(853);
 	
 	var _DrawerDemo2 = _interopRequireDefault(_DrawerDemo);
 	
@@ -94,7 +94,7 @@ webpackJsonp([21],{
 
 /***/ },
 
-/***/ 852:
+/***/ 853:
 /***/ function(module, exports) {
 
 	module.exports = "<div drawer [position]=\"'left'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Left</button>\n    <div class=\"drawer-content\">\n        <h4>I am a left drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'right'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Right</button>\n    <div class=\"drawer-content\">\n        <h4>I am a right drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'right'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Right <strong>*Two*</strong></button>\n    <div class=\"drawer-content\">\n        <h4>I am *another* right drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'top'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Top</button>\n    <div class=\"drawer-content\">\n        <h4>I am a top drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'bottom'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Bottom</button>\n    <div class=\"drawer-content\">\n        <h4>I am a bottom drawer!</h4>\n    </div>\n</div>\n"

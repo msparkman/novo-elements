@@ -1,6 +1,6 @@
 webpackJsonp([19],{
 
-/***/ 831:
+/***/ 832:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56,11 +56,11 @@ webpackJsonp([19],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(171);
+	var _novoElements = __webpack_require__(13);
 	
-	var _CodeSnippet = __webpack_require__(831);
+	var _CodeSnippet = __webpack_require__(832);
 	
-	var _HeaderDemo = __webpack_require__(864);
+	var _HeaderDemo = __webpack_require__(865);
 	
 	var _HeaderDemo2 = _interopRequireDefault(_HeaderDemo);
 	
@@ -116,7 +116,7 @@ webpackJsonp([19],{
 
 /***/ },
 
-/***/ 864:
+/***/ 865:
 /***/ function(module, exports) {
 
 	module.exports = "<header title=\"John Deere\" icon=\"person\" [theme]=\"entity\">\n    <utils>\n        <util-action icon=\"flag\" (click)=\"catchEv('pin', $event)\"></util-action>\n        <util-action icon=\"refresh\" (click)=\"catchEv('refresh', $event)\"></util-action>\n        <util-action icon=\"times\" (click)=\"catchEv('close', $event)\"></util-action>\n    </utils>\n    <section>\n        Extra Info\n    </section>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>Overview</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Activity</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Email</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n"
