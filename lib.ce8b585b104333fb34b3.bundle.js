@@ -26464,70 +26464,27 @@ webpackJsonp([28],[
 	});
 	exports.NOVO_ELEMENTS_LABELS_PROVIDERS = exports.NovoLabelService = undefined;
 	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
 	var _dec, _class;
 	
 	var _core = __webpack_require__(1);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var NovoLabelService = exports.NovoLabelService = (_dec = (0, _core.Injectable)(), _dec(_class = function () {
-	    function NovoLabelService() {
-	        _classCallCheck(this, NovoLabelService);
-	    }
+	var NovoLabelService = exports.NovoLabelService = (_dec = (0, _core.Injectable)(), _dec(_class = function NovoLabelService() {
+	    _classCallCheck(this, NovoLabelService);
 	
-	    _createClass(NovoLabelService, [{
-	        key: 'filters',
-	        get: function get() {
-	            return 'Filters';
-	        }
-	    }, {
-	        key: 'clear',
-	        get: function get() {
-	            return 'Clear';
-	        }
-	    }, {
-	        key: 'emptyTableMessage',
-	        get: function get() {
-	            return 'No Matching Records';
-	        }
-	    }, {
-	        key: 'pickerError',
-	        get: function get() {
-	            return 'Oops! An error occurred.';
-	        }
-	    }, {
-	        key: 'pickerEmpty',
-	        get: function get() {
-	            return 'No results to display...';
-	        }
-	    }, {
-	        key: 'quickNoteError',
-	        get: function get() {
-	            return this.pickerError;
-	        }
-	    }, {
-	        key: 'quickNoteEmpty',
-	        get: function get() {
-	            return this.pickerEmpty;
-	        }
-	    }, {
-	        key: 'required',
-	        get: function get() {
-	            return 'Required';
-	        }
-	    }, {
-	        key: 'numberTooLarge',
-	        get: function get() {
-	            return 'Number is too large';
-	        }
-	    }]);
-	
-	    return NovoLabelService;
-	}()) || _class);
+	    this.filters = 'Filters';
+	    this.clear = 'Clear';
+	    this.emptyTableMessage = 'No Matching Records';
+	    this.pickerError = 'Oops! An error occurred.';
+	    this.pickerEmpty = 'No results to display...';
+	    this.quickNoteError = 'Oops! An error occurred.';
+	    this.quickNoteEmpty = 'No results to display...';
+	    this.required = 'Required';
+	    this.numberTooLarge = 'Number is too large';
+	}) || _class);
 	var NOVO_ELEMENTS_LABELS_PROVIDERS = exports.NOVO_ELEMENTS_LABELS_PROVIDERS = [{ provide: NovoLabelService, useClass: NovoLabelService }];
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zZXJ2aWNlcy9ub3ZvLWxhYmVsLXNlcnZpY2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQTs7OztJQUdhLGdCLFdBQUEsZ0IsV0FEWix1Qjs7Ozs7Ozs0QkFFaUI7QUFDVixtQkFBTyxTQUFQO0FBQ0g7Ozs0QkFFVztBQUNSLG1CQUFPLE9BQVA7QUFDSDs7OzRCQUV1QjtBQUNwQixtQkFBTyxxQkFBUDtBQUNIOzs7NEJBRWlCO0FBQ2QsbUJBQU8sMEJBQVA7QUFDSDs7OzRCQUVpQjtBQUNkLG1CQUFPLDBCQUFQO0FBQ0g7Ozs0QkFFb0I7QUFDakIsbUJBQU8sS0FBSyxXQUFaO0FBQ0g7Ozs0QkFFb0I7QUFDakIsbUJBQU8sS0FBSyxXQUFaO0FBQ0g7Ozs0QkFFYztBQUNYLG1CQUFPLFVBQVA7QUFDSDs7OzRCQUVvQjtBQUNqQixtQkFBTyxxQkFBUDtBQUNIOzs7OztBQUdFLElBQU0sMEVBQWlDLENBQzFDLEVBQUUsU0FBUyxnQkFBWCxFQUE2QixVQUFVLGdCQUF2QyxFQUQwQyxDQUF2QyIsImZpbGUiOiJub3ZvLWxhYmVsLXNlcnZpY2UuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL2JoL25vdm8vYXBwcy9ub3ZvLWVsZW1lbnRzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5qZWN0YWJsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5ASW5qZWN0YWJsZSgpXG5leHBvcnQgY2xhc3MgTm92b0xhYmVsU2VydmljZSB7XG4gICAgZ2V0IGZpbHRlcnMoKSB7XG4gICAgICAgIHJldHVybiAnRmlsdGVycyc7XG4gICAgfVxuXG4gICAgZ2V0IGNsZWFyKCkge1xuICAgICAgICByZXR1cm4gJ0NsZWFyJztcbiAgICB9XG5cbiAgICBnZXQgZW1wdHlUYWJsZU1lc3NhZ2UoKSB7XG4gICAgICAgIHJldHVybiAnTm8gTWF0Y2hpbmcgUmVjb3Jkcyc7XG4gICAgfVxuXG4gICAgZ2V0IHBpY2tlckVycm9yKCkge1xuICAgICAgICByZXR1cm4gJ09vcHMhIEFuIGVycm9yIG9jY3VycmVkLic7XG4gICAgfVxuXG4gICAgZ2V0IHBpY2tlckVtcHR5KCkge1xuICAgICAgICByZXR1cm4gJ05vIHJlc3VsdHMgdG8gZGlzcGxheS4uLic7XG4gICAgfVxuXG4gICAgZ2V0IHF1aWNrTm90ZUVycm9yKCkge1xuICAgICAgICByZXR1cm4gdGhpcy5waWNrZXJFcnJvcjtcbiAgICB9XG5cbiAgICBnZXQgcXVpY2tOb3RlRW1wdHkoKSB7XG4gICAgICAgIHJldHVybiB0aGlzLnBpY2tlckVtcHR5O1xuICAgIH1cblxuICAgIGdldCByZXF1aXJlZCgpIHtcbiAgICAgICAgcmV0dXJuICdSZXF1aXJlZCc7XG4gICAgfVxuXG4gICAgZ2V0IG51bWJlclRvb0xhcmdlKCkge1xuICAgICAgICByZXR1cm4gJ051bWJlciBpcyB0b28gbGFyZ2UnO1xuICAgIH1cbn1cblxuZXhwb3J0IGNvbnN0IE5PVk9fRUxFTUVOVFNfTEFCRUxTX1BST1ZJREVSUyA9IFtcbiAgICB7IHByb3ZpZGU6IE5vdm9MYWJlbFNlcnZpY2UsIHVzZUNsYXNzOiBOb3ZvTGFiZWxTZXJ2aWNlIH1cbl07XG4iXX0=
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zZXJ2aWNlcy9ub3ZvLWxhYmVsLXNlcnZpY2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7Ozs7SUFHYSxnQixXQUFBLGdCLFdBRFosdUI7OztTQUVHLE8sR0FBVSxTO1NBQ1YsSyxHQUFRLE87U0FDUixpQixHQUFvQixxQjtTQUNwQixXLEdBQWMsMEI7U0FDZCxXLEdBQWMsMEI7U0FDZCxjLEdBQWlCLDBCO1NBQ2pCLGMsR0FBaUIsMEI7U0FDakIsUSxHQUFXLFU7U0FDWCxjLEdBQWlCLHFCOztBQUdkLElBQU0sMEVBQWlDLENBQzFDLEVBQUUsU0FBUyxnQkFBWCxFQUE2QixVQUFVLGdCQUF2QyxFQUQwQyxDQUF2QyIsImZpbGUiOiJub3ZvLWxhYmVsLXNlcnZpY2UuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL2JoL25vdm8vYXBwcy9ub3ZvLWVsZW1lbnRzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5qZWN0YWJsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5ASW5qZWN0YWJsZSgpXG5leHBvcnQgY2xhc3MgTm92b0xhYmVsU2VydmljZSB7XG4gICAgZmlsdGVycyA9ICdGaWx0ZXJzJztcbiAgICBjbGVhciA9ICdDbGVhcic7XG4gICAgZW1wdHlUYWJsZU1lc3NhZ2UgPSAnTm8gTWF0Y2hpbmcgUmVjb3Jkcyc7XG4gICAgcGlja2VyRXJyb3IgPSAnT29wcyEgQW4gZXJyb3Igb2NjdXJyZWQuJztcbiAgICBwaWNrZXJFbXB0eSA9ICdObyByZXN1bHRzIHRvIGRpc3BsYXkuLi4nO1xuICAgIHF1aWNrTm90ZUVycm9yID0gJ09vcHMhIEFuIGVycm9yIG9jY3VycmVkLic7XG4gICAgcXVpY2tOb3RlRW1wdHkgPSAnTm8gcmVzdWx0cyB0byBkaXNwbGF5Li4uJztcbiAgICByZXF1aXJlZCA9ICdSZXF1aXJlZCc7XG4gICAgbnVtYmVyVG9vTGFyZ2UgPSAnTnVtYmVyIGlzIHRvbyBsYXJnZSc7XG59XG5cbmV4cG9ydCBjb25zdCBOT1ZPX0VMRU1FTlRTX0xBQkVMU19QUk9WSURFUlMgPSBbXG4gICAgeyBwcm92aWRlOiBOb3ZvTGFiZWxTZXJ2aWNlLCB1c2VDbGFzczogTm92b0xhYmVsU2VydmljZSB9XG5dO1xuIl19
 
 /***/ },
 /* 572 */,
@@ -36184,4 +36141,4 @@ webpackJsonp([28],[
 
 /***/ }
 ]);
-//# sourceMappingURL=lib.ff8bbf6ff9fdcaf13041.bundle.map
+//# sourceMappingURL=lib.ce8b585b104333fb34b3.bundle.map
