@@ -5399,10 +5399,100 @@ novo-select {
         font-weight: 500; }
     novo-select .novo-select-list:focus {
       outline: none; }
+    novo-select .novo-select-list.footer {
+      max-height: 240px;
+      min-width: 200px;
+      padding: 8px 0 0 0; }
   novo-select[disabled] {
     pointer-events: none; }
     novo-select[disabled] button {
       color: #999999; }
+  novo-select .select-footer button.footer {
+    text-transform: uppercase;
+    color: #4A89DC;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    height: 48px;
+    margin: 0;
+    padding: 10px 16px 0px 10px;
+    box-sizing: border-box;
+    border: none;
+    display: block;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 1rem; }
+    novo-select .select-footer button.footer:focus, novo-select .select-footer button.footer:hover {
+      background: #f4f4f4;
+      color: #4b4d51; }
+    novo-select .select-footer button.footer i {
+      color: #4A89DC;
+      padding-right: 10px; }
+    novo-select .select-footer button.footer span {
+      text-align: left; }
+  novo-select .select-footer div.active {
+    background: #F4F4F4;
+    width: 100%;
+    float: right;
+    padding: 5px; }
+    novo-select .select-footer div.active footer {
+      float: right; }
+    novo-select .select-footer div.active button {
+      display: inline-block;
+      border: none;
+      float: left;
+      width: auto;
+      font-weight: 500;
+      font-size: .9rem;
+      color: #ACACAC; }
+      novo-select .select-footer div.active button:hover {
+        color: #868686; }
+    novo-select .select-footer div.active button.primary {
+      color: #4A89DC; }
+      novo-select .select-footer div.active button.primary:hover {
+        color: #2363b6; }
+    novo-select .select-footer div.active input {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      color: rgba(0, 0, 0, 0.73);
+      height: 2.05rem;
+      position: relative;
+      text-align: left;
+      text-shadow: none;
+      width: 100%;
+      z-index: 1;
+      cursor: pointer;
+      text-transform: none;
+      padding-top: 10px;
+      font-size: 1rem; }
+      novo-select .select-footer div.active input.empty {
+        color: #A9A9A9; }
+      novo-select .select-footer div.active input:focus {
+        outline: none; }
+      novo-select .select-footer div.active input:hover {
+        border-bottom: 1px solid #4A89DC; }
+      novo-select .select-footer div.active input.invalid {
+        border-bottom: 1px solid #DA4453; }
 
 novo-picker {
   width: 100%;
@@ -9171,76 +9261,76 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 28px;
-      height: 28px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
       width: 30px;
       height: 30px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 33px;
-      height: 33px; }
+      width: 40px;
+      height: 40px; }
     color header .background-boxes .bb-lead {
       background: #AA6699;
-      width: 34px;
-      height: 34px; }
+      width: 30px;
+      height: 30px; }
     color header .background-boxes .bb-contact {
       background: #FFAA44;
-      width: 33px;
-      height: 33px; }
+      width: 36px;
+      height: 36px; }
     color header .background-boxes .bb-opportunity {
       background: #662255;
       width: 38px;
       height: 38px; }
     color header .background-boxes .bb-job {
       background: #BB5566;
-      width: 40px;
-      height: 40px; }
-    color header .background-boxes .bb-submission {
-      background: #778899;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-placement {
-      background: #0B344F;
-      width: 29px;
-      height: 29px; }
-    color header .background-boxes .bb-aqua {
-      background: #3BAFDA;
-      width: 42px;
-      height: 42px; }
-    color header .background-boxes .bb-ocean {
-      background: #4A89DC;
       width: 44px;
       height: 44px; }
-    color header .background-boxes .bb-mint {
-      background: #37BC9B;
+    color header .background-boxes .bb-submission {
+      background: #778899;
+      width: 27px;
+      height: 27px; }
+    color header .background-boxes .bb-placement {
+      background: #0B344F;
       width: 26px;
       height: 26px; }
-    color header .background-boxes .bb-grass {
-      background: #8CC152;
-      width: 40px;
-      height: 40px; }
-    color header .background-boxes .bb-sunflower {
-      background: #F6B042;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-bittersweet {
-      background: #EB6845;
-      width: 41px;
-      height: 41px; }
-    color header .background-boxes .bb-grapefruit {
-      background: #DA4453;
+    color header .background-boxes .bb-aqua {
+      background: #3BAFDA;
       width: 43px;
       height: 43px; }
+    color header .background-boxes .bb-ocean {
+      background: #4A89DC;
+      width: 35px;
+      height: 35px; }
+    color header .background-boxes .bb-mint {
+      background: #37BC9B;
+      width: 44px;
+      height: 44px; }
+    color header .background-boxes .bb-grass {
+      background: #8CC152;
+      width: 37px;
+      height: 37px; }
+    color header .background-boxes .bb-sunflower {
+      background: #F6B042;
+      width: 30px;
+      height: 30px; }
+    color header .background-boxes .bb-bittersweet {
+      background: #EB6845;
+      width: 39px;
+      height: 39px; }
+    color header .background-boxes .bb-grapefruit {
+      background: #DA4453;
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 28px;
-      height: 28px; }
+      width: 31px;
+      height: 31px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 26px;
-      height: 26px; }
+      width: 29px;
+      height: 29px; }
 
 color article.color-blocks {
   display: -webkit-box;
