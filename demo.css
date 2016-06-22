@@ -9259,76 +9259,76 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 27px;
-      height: 27px; }
-    color header .background-boxes .bb-candidate {
-      background: #44BB77;
-      width: 37px;
-      height: 37px; }
-    color header .background-boxes .bb-navigation {
-      background: #2F384F;
-      width: 43px;
-      height: 43px; }
-    color header .background-boxes .bb-lead {
-      background: #AA6699;
-      width: 28px;
-      height: 28px; }
-    color header .background-boxes .bb-contact {
-      background: #FFAA44;
-      width: 44px;
-      height: 44px; }
-    color header .background-boxes .bb-opportunity {
-      background: #662255;
-      width: 42px;
-      height: 42px; }
-    color header .background-boxes .bb-job {
-      background: #BB5566;
-      width: 44px;
-      height: 44px; }
-    color header .background-boxes .bb-submission {
-      background: #778899;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-placement {
-      background: #0B344F;
-      width: 45px;
-      height: 45px; }
-    color header .background-boxes .bb-aqua {
-      background: #3BAFDA;
       width: 31px;
       height: 31px; }
-    color header .background-boxes .bb-ocean {
-      background: #4A89DC;
-      width: 30px;
-      height: 30px; }
-    color header .background-boxes .bb-mint {
-      background: #37BC9B;
-      width: 42px;
-      height: 42px; }
-    color header .background-boxes .bb-grass {
-      background: #8CC152;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-sunflower {
-      background: #F6B042;
-      width: 30px;
-      height: 30px; }
-    color header .background-boxes .bb-bittersweet {
-      background: #EB6845;
+    color header .background-boxes .bb-candidate {
+      background: #44BB77;
       width: 45px;
       height: 45px; }
-    color header .background-boxes .bb-grapefruit {
-      background: #DA4453;
+    color header .background-boxes .bb-navigation {
+      background: #2F384F;
+      width: 32px;
+      height: 32px; }
+    color header .background-boxes .bb-lead {
+      background: #AA6699;
+      width: 29px;
+      height: 29px; }
+    color header .background-boxes .bb-contact {
+      background: #FFAA44;
+      width: 36px;
+      height: 36px; }
+    color header .background-boxes .bb-opportunity {
+      background: #662255;
+      width: 41px;
+      height: 41px; }
+    color header .background-boxes .bb-job {
+      background: #BB5566;
+      width: 38px;
+      height: 38px; }
+    color header .background-boxes .bb-submission {
+      background: #778899;
+      width: 38px;
+      height: 38px; }
+    color header .background-boxes .bb-placement {
+      background: #0B344F;
+      width: 38px;
+      height: 38px; }
+    color header .background-boxes .bb-aqua {
+      background: #3BAFDA;
+      width: 29px;
+      height: 29px; }
+    color header .background-boxes .bb-ocean {
+      background: #4A89DC;
+      width: 42px;
+      height: 42px; }
+    color header .background-boxes .bb-mint {
+      background: #37BC9B;
+      width: 33px;
+      height: 33px; }
+    color header .background-boxes .bb-grass {
+      background: #8CC152;
+      width: 43px;
+      height: 43px; }
+    color header .background-boxes .bb-sunflower {
+      background: #F6B042;
       width: 28px;
       height: 28px; }
+    color header .background-boxes .bb-bittersweet {
+      background: #EB6845;
+      width: 28px;
+      height: 28px; }
+    color header .background-boxes .bb-grapefruit {
+      background: #DA4453;
+      width: 42px;
+      height: 42px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 26px;
-      height: 26px; }
+      width: 37px;
+      height: 37px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 26px;
-      height: 26px; }
+      width: 37px;
+      height: 37px; }
 
 color article.color-blocks {
   display: -webkit-box;
@@ -10432,4 +10432,4 @@ form-demo .dynamic-demo-footer {
     Hopefully, I am nothing but a friendly comment. :)
 */
 
-/*# sourceMappingURL=demo.6d7ca463d40add1501f4.bundle.map*/
+/*# sourceMappingURL=demo.bf6d9f13bb2150dd52eb.bundle.map*/
