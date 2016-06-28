@@ -1,6 +1,6 @@
 webpackJsonp([20],{
 
-/***/ 1202:
+/***/ 1121:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([20],{
 
 /***/ },
 
-/***/ 582:
+/***/ 528:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -54,11 +54,11 @@ webpackJsonp([20],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(21);
+	var _novoElements = __webpack_require__(18);
 	
-	var _CodeSnippet = __webpack_require__(1202);
+	var _CodeSnippet = __webpack_require__(1121);
 	
-	var _DropdownDemo = __webpack_require__(1224);
+	var _DropdownDemo = __webpack_require__(1143);
 	
 	var _DropdownDemo2 = _interopRequireDefault(_DropdownDemo);
 	
@@ -81,7 +81,7 @@ webpackJsonp([20],{
 
 /***/ },
 
-/***/ 1224:
+/***/ 1143:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-dropdown>\n    <button type=\"button\" theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n    <list>\n        <item>Action 1</item>\n        <item>Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n<novo-dropdown side=\"right\">\n    <button type=\"button\" theme=\"icon\" icon=\"menu\" inverse></button>\n    <list>\n        <item>Action 1</item>\n        <item>Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n"

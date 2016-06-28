@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 1202:
+/***/ 1121:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1203:
+/***/ 1122:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1053,7 +1053,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 596:
+/***/ 542:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1071,21 +1071,21 @@ webpackJsonp([6],{
 	
 	var _common = __webpack_require__(6);
 	
-	var _novoElements = __webpack_require__(21);
+	var _novoElements = __webpack_require__(18);
 	
-	var _TableData = __webpack_require__(1203);
+	var _TableData = __webpack_require__(1122);
 	
-	var _CodeSnippet = __webpack_require__(1202);
+	var _CodeSnippet = __webpack_require__(1121);
 	
-	var _TableDemo = __webpack_require__(1260);
+	var _TableDemo = __webpack_require__(1179);
 	
 	var _TableDemo2 = _interopRequireDefault(_TableDemo);
 	
-	var _DetailsTableDemo = __webpack_require__(1258);
+	var _DetailsTableDemo = __webpack_require__(1177);
 	
 	var _DetailsTableDemo2 = _interopRequireDefault(_DetailsTableDemo);
 	
-	var _SelectAllTableDemo = __webpack_require__(1259);
+	var _SelectAllTableDemo = __webpack_require__(1178);
 	
 	var _SelectAllTableDemo2 = _interopRequireDefault(_SelectAllTableDemo);
 	
@@ -1269,21 +1269,21 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1258:
+/***/ 1177:
 /***/ function(module, exports) {
 
 	module.exports = "<header [ngClass]=\"color\" (click)=\"changeColor()\" tooltip=\"Click Me!\" tooltipPlacement=\"top\">\n    <div class=\"header-row\">\n        <h1><i class=\"bhi-email\"></i>Email ({{details.rows.length}})</h1>\n        <div>\n            <h5>Last Activity</h5>\n            <span>12/15/2015</span>\n        </div>\n    </div>\n    <novo-pagination *ngIf=\"details.config.paging\"\n                     [page]=\"details.config.paging.current\"\n                     [totalItems]=\"details.rows.length\"\n                     [itemsPerPage]=\"details.config.paging.itemsPerPage\"\n                     (onPageChange)=\"details.config.paging.onPageChange($event)\">\n    </novo-pagination>\n</header>\n\n<novo-table [rows]=\"details.rows\" [columns]=\"details.columns\" [config]=\"details.config\" (onTableChange)=\"details.onTableChange($event)\"></novo-table>\n"
 
 /***/ },
 
-/***/ 1259:
+/***/ 1178:
 /***/ function(module, exports) {
 
 	module.exports = "<header [ngClass]=\"color\" (click)=\"changeColor()\" bhTooltip=\"Click Me!\" bhTooltipPlacement=\"top\">\n    <div class=\"header-row\">\n        <h1><i class=\"bhi-email\"></i>Email ({{selectAll.rows.length}})</h1>\n        <div>\n            <h5>Last Activity</h5>\n            <span>12/15/2015</span>\n        </div>\n    </div>\n    <novo-pagination *ngIf=\"selectAll.config.paging\"\n                     [page]=\"selectAll.config.paging.current\"\n                     [totalItems]=\"selectAll.rows.length\"\n                     [itemsPerPage]=\"selectAll.config.paging.itemsPerPage\"\n                     (onPageChange)=\"selectAll.config.paging.onPageChange($event)\">\n    </novo-pagination>\n</header>\n\n<novo-table [rows]=\"selectAll.rows\" [columns]=\"selectAll.columns\" [config]=\"selectAll.config\" (onTableChange)=\"selectAll.onTableChange($event)\"></novo-table>\n"
 
 /***/ },
 
-/***/ 1260:
+/***/ 1179:
 /***/ function(module, exports) {
 
 	module.exports = "<header [ngClass]=\"color\" (click)=\"changeColor()\" tooltip=\"Click Me!\" tooltipPlacement=\"top\">\n    <div class=\"header-row\">\n        <h1><i class=\"bhi-email\"></i>Email ({{basic.rows.length}})</h1>\n        <div>\n            <h5>Last Activity</h5>\n            <span>12/15/2015</span>\n        </div>\n    </div>\n    <novo-pagination *ngIf=\"basic.config.paging\"\n                     [page]=\"basic.config.paging.current\"\n                     [totalItems]=\"basic.rows.length\"\n                     [itemsPerPage]=\"basic.config.paging.itemsPerPage\"\n                     (onPageChange)=\"basic.config.paging.onPageChange($event)\">\n    </novo-pagination>\n</header>\n\n<novo-table [rows]=\"basic.rows\" [columns]=\"basic.columns\" [config]=\"basic.config\" (onTableChange)=\"basic.onTableChange($event)\"></novo-table>\n"

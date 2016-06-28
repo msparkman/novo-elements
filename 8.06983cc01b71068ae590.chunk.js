@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 1202:
+/***/ 1121:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 599:
+/***/ 545:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -54,19 +54,19 @@ webpackJsonp([8],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(21);
+	var _novoElements = __webpack_require__(18);
 	
-	var _CodeSnippet = __webpack_require__(1202);
+	var _CodeSnippet = __webpack_require__(1121);
 	
-	var _TooltipOptionsDemo = __webpack_require__(1268);
+	var _TooltipOptionsDemo = __webpack_require__(1187);
 	
 	var _TooltipOptionsDemo2 = _interopRequireDefault(_TooltipOptionsDemo);
 	
-	var _TooltipPlacementDemo = __webpack_require__(1269);
+	var _TooltipPlacementDemo = __webpack_require__(1188);
 	
 	var _TooltipPlacementDemo2 = _interopRequireDefault(_TooltipPlacementDemo);
 	
-	var _TooltipTypesDemo = __webpack_require__(1270);
+	var _TooltipTypesDemo = __webpack_require__(1189);
 	
 	var _TooltipTypesDemo2 = _interopRequireDefault(_TooltipTypesDemo);
 	
@@ -90,21 +90,21 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 1268:
+/***/ 1187:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ALWAYS\" tooltipAlways=\"true\">Always Shown</span>\n<span tooltip=\"ROUNDED\" tooltipRounded=\"true\">Rounded</span>\n<span tooltip=\"NO ANIMATE\" tooltipNoAnimate=\"true\">No Animation</span>\n<span tooltip=\"BOUNCE\" tooltipBounce=\"true\">Bounce</span>\n"
 
 /***/ },
 
-/***/ 1269:
+/***/ 1188:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"left\" tooltipPosition=\"left\">Left</span>\n<span tooltip=\"right\" tooltipPosition=\"right\">Right</span>\n<span tooltip=\"top\" tooltipPosition=\"top\">Top</span>\n<span tooltip=\"bottom\" tooltipPosition=\"bottom\">Bottom</span>\n"
 
 /***/ },
 
-/***/ 1270:
+/***/ 1189:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ERROR\" tooltipType=\"error\">Error</span>\n<span tooltip=\"INFO\" tooltipType=\"info\">Info</span>\n<span tooltip=\"WARNING\" tooltipType=\"warning\">Warning</span>\n<span tooltip=\"SUCCESS\" tooltipType=\"success\">Success</span>\n"
