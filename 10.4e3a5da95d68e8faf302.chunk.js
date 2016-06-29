@@ -1,6 +1,6 @@
 webpackJsonp([10],{
 
-/***/ 1121:
+/***/ 1125:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59,21 +59,21 @@ webpackJsonp([10],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _common = __webpack_require__(6);
+	var _common = __webpack_require__(5);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(16);
 	
-	var _CodeSnippet = __webpack_require__(1121);
+	var _CodeSnippet = __webpack_require__(1125);
 	
-	var _BasicChipsDemo = __webpack_require__(1137);
+	var _BasicChipsDemo = __webpack_require__(1141);
 	
 	var _BasicChipsDemo2 = _interopRequireDefault(_BasicChipsDemo);
 	
-	var _AsyncChipsDemo = __webpack_require__(1136);
+	var _AsyncChipsDemo = __webpack_require__(1140);
 	
 	var _AsyncChipsDemo2 = _interopRequireDefault(_AsyncChipsDemo);
 	
-	var _FormattedChipsDemo = __webpack_require__(1138);
+	var _FormattedChipsDemo = __webpack_require__(1142);
 	
 	var _FormattedChipsDemo2 = _interopRequireDefault(_FormattedChipsDemo);
 	
@@ -159,21 +159,21 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 1136:
+/***/ 1140:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{avalue}}</div>\n<chips\n    [source]=\"async\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"avalue\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
 
 /***/ },
 
-/***/ 1137:
+/***/ 1141:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{value}}</div>\n<chips\n    [source]=\"static\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"value\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
 
 /***/ },
 
-/***/ 1138:
+/***/ 1142:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{fvalue}}</div>\n<chips\n    [source]=\"formatted\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"fvalue\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"

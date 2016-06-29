@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 1121:
+/***/ 1125:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -54,25 +54,25 @@ webpackJsonp([7],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _common = __webpack_require__(6);
+	var _common = __webpack_require__(5);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(16);
 	
-	var _CodeSnippet = __webpack_require__(1121);
+	var _CodeSnippet = __webpack_require__(1125);
 	
-	var _BasicPickerDemo = __webpack_require__(1167);
+	var _BasicPickerDemo = __webpack_require__(1171);
 	
 	var _BasicPickerDemo2 = _interopRequireDefault(_BasicPickerDemo);
 	
-	var _AsyncPickerDemo = __webpack_require__(1166);
+	var _AsyncPickerDemo = __webpack_require__(1170);
 	
 	var _AsyncPickerDemo2 = _interopRequireDefault(_AsyncPickerDemo);
 	
-	var _FormattedPickerDemo = __webpack_require__(1169);
+	var _FormattedPickerDemo = __webpack_require__(1173);
 	
 	var _FormattedPickerDemo2 = _interopRequireDefault(_FormattedPickerDemo);
 	
-	var _CustomPickerResultsDemo = __webpack_require__(1168);
+	var _CustomPickerResultsDemo = __webpack_require__(1172);
 	
 	var _CustomPickerResultsDemo2 = _interopRequireDefault(_CustomPickerResultsDemo);
 	
@@ -183,28 +183,28 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 1166:
+/***/ 1170:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{avalue}}</div>\n<novo-picker [config]=\"async\" [placeholder]=\"placeholder\" [(ngModel)]=\"avalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1167:
+/***/ 1171:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{value}}</div>\n<novo-picker [config]=\"static\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1168:
+/***/ 1172:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{cvalue}}</div>\n<novo-picker [config]=\"custom\" [placeholder]=\"placeholder\" [(ngModel)]=\"cvalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1169:
+/***/ 1173:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{fvalue}}</div>\n<novo-picker [config]=\"formatted\" [placeholder]=\"placeholder\" [(ngModel)]=\"fvalue\"></novo-picker>\n"

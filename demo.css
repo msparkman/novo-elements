@@ -1949,6 +1949,23 @@ novo-nav-outlet {
     novo-nav-outlet novo-nav-content.active {
       display: block; }
 
+novo-radio.vertical {
+  display: block; }
+
+novo-radio input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+novo-radio i {
+  margin-right: 5px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+  novo-radio i.bhi-checkbox-empty, novo-radio i.bhi-radio-empty {
+    color: #D2D2D2; }
+  novo-radio i.bhi-checkbox-filled, novo-radio i.bhi-radio-filled {
+    color: #4A89DC; }
+
 button[theme] {
   font-size: 1rem;
   border: none;
@@ -5389,68 +5406,73 @@ novo-select {
       novo-select .novo-select-list li.active {
         color: #4b4d51;
         font-weight: 500; }
+      novo-select .novo-select-list li.open.select-header {
+        background: #f4f4f4;
+        padding: 10px 0 0 0;
+        line-height: 28px;
+        height: 60px;
+        border-bottom: 1px solid #e9e9e9; }
     novo-select .novo-select-list:focus {
       outline: none; }
-    novo-select .novo-select-list.footer {
+    novo-select .novo-select-list.header {
       max-height: 240px;
       min-width: 200px;
-      padding: 8px 0 0 0; }
+      padding: 0; }
   novo-select[disabled] {
     pointer-events: none; }
     novo-select[disabled] button {
       color: #999999; }
-  novo-select .select-footer button.footer {
-    text-transform: uppercase;
-    color: #4A89DC;
-    position: relative;
-    text-align: left;
-    cursor: pointer;
-    height: 48px;
-    margin: 0;
-    padding: 10px 16px 0px 10px;
-    box-sizing: border-box;
-    border: none;
-    display: block;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    font-size: 1rem; }
-    novo-select .select-footer button.footer:focus, novo-select .select-footer button.footer:hover {
-      background: #f4f4f4;
-      color: #4b4d51; }
-    novo-select .select-footer button.footer i {
+  novo-select .select-header button {
+    text-transform: uppercase; }
+    novo-select .select-header button.header {
       color: #4A89DC;
-      padding-right: 10px; }
-    novo-select .select-footer button.footer span {
-      text-align: left; }
-  novo-select .select-footer div.active {
-    background: #F4F4F4;
+      position: relative;
+      text-align: left;
+      cursor: pointer;
+      height: 48px;
+      margin: 0;
+      padding: 10px 16px 0 0;
+      box-sizing: border-box;
+      border: none;
+      display: block;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      font-size: 1rem; }
+      novo-select .select-header button.header:focus, novo-select .select-header button.header:hover {
+        color: #4b4d51; }
+      novo-select .select-header button.header i {
+        color: #4A89DC;
+        padding-right: 10px; }
+      novo-select .select-header button.header span {
+        text-align: left; }
+  novo-select .select-header div.active {
     width: 100%;
     float: right;
     padding: 5px; }
-    novo-select .select-footer div.active footer {
+    novo-select .select-header div.active footer {
       float: right; }
-    novo-select .select-footer div.active button {
+    novo-select .select-header div.active button {
       display: inline-block;
       border: none;
       float: left;
       width: auto;
       font-weight: 500;
-      font-size: .9rem;
+      font-size: .8rem;
       color: #ACACAC; }
-      novo-select .select-footer div.active button:hover {
+      novo-select .select-header div.active button:hover {
         color: #868686; }
-    novo-select .select-footer div.active button.primary {
+    novo-select .select-header div.active button.primary {
       color: #4A89DC; }
-      novo-select .select-footer div.active button.primary:hover {
+      novo-select .select-header div.active button.primary:hover {
         color: #2363b6; }
-    novo-select .select-footer div.active input {
+    novo-select .select-header div.active input {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -5477,13 +5499,13 @@ novo-select {
       text-transform: none;
       padding-top: 10px;
       font-size: 1rem; }
-      novo-select .select-footer div.active input.empty {
+      novo-select .select-header div.active input.empty {
         color: #A9A9A9; }
-      novo-select .select-footer div.active input:focus {
+      novo-select .select-header div.active input:focus {
         outline: none; }
-      novo-select .select-footer div.active input:hover {
+      novo-select .select-header div.active input:hover {
         border-bottom: 1px solid #4A89DC; }
-      novo-select .select-footer div.active input.invalid {
+      novo-select .select-header div.active input.invalid {
         border-bottom: 1px solid #DA4453; }
 
 novo-picker {
@@ -9267,68 +9289,68 @@ color header {
       height: 30px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 33px;
-      height: 33px; }
-    color header .background-boxes .bb-lead {
-      background: #AA6699;
-      width: 26px;
-      height: 26px; }
-    color header .background-boxes .bb-contact {
-      background: #FFAA44;
-      width: 45px;
-      height: 45px; }
-    color header .background-boxes .bb-opportunity {
-      background: #662255;
-      width: 43px;
-      height: 43px; }
-    color header .background-boxes .bb-job {
-      background: #BB5566;
-      width: 33px;
-      height: 33px; }
-    color header .background-boxes .bb-submission {
-      background: #778899;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-placement {
-      background: #0B344F;
-      width: 35px;
-      height: 35px; }
-    color header .background-boxes .bb-aqua {
-      background: #3BAFDA;
-      width: 26px;
-      height: 26px; }
-    color header .background-boxes .bb-ocean {
-      background: #4A89DC;
-      width: 31px;
-      height: 31px; }
-    color header .background-boxes .bb-mint {
-      background: #37BC9B;
       width: 36px;
       height: 36px; }
+    color header .background-boxes .bb-lead {
+      background: #AA6699;
+      width: 41px;
+      height: 41px; }
+    color header .background-boxes .bb-contact {
+      background: #FFAA44;
+      width: 28px;
+      height: 28px; }
+    color header .background-boxes .bb-opportunity {
+      background: #662255;
+      width: 26px;
+      height: 26px; }
+    color header .background-boxes .bb-job {
+      background: #BB5566;
+      width: 34px;
+      height: 34px; }
+    color header .background-boxes .bb-submission {
+      background: #778899;
+      width: 27px;
+      height: 27px; }
+    color header .background-boxes .bb-placement {
+      background: #0B344F;
+      width: 32px;
+      height: 32px; }
+    color header .background-boxes .bb-aqua {
+      background: #3BAFDA;
+      width: 30px;
+      height: 30px; }
+    color header .background-boxes .bb-ocean {
+      background: #4A89DC;
+      width: 38px;
+      height: 38px; }
+    color header .background-boxes .bb-mint {
+      background: #37BC9B;
+      width: 44px;
+      height: 44px; }
     color header .background-boxes .bb-grass {
       background: #8CC152;
-      width: 40px;
-      height: 40px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
-      width: 43px;
-      height: 43px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
-      width: 37px;
-      height: 37px; }
+      width: 31px;
+      height: 31px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
       width: 29px;
       height: 29px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 37px;
-      height: 37px; }
+      width: 28px;
+      height: 28px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 45px;
-      height: 45px; }
+      width: 33px;
+      height: 33px; }
 
 color article.color-blocks {
   display: -webkit-box;
@@ -10427,9 +10449,12 @@ form-demo .dynamic-demo-footer {
 .example.quick-note-demo div.data {
   padding: 10px; }
 
+radio-demo .example {
+  padding: 10px; }
+
 /*
     I am used only for quick fixes that have not yet been refactored.
     Hopefully, I am nothing but a friendly comment. :)
 */
 
-/*# sourceMappingURL=demo.4646ad16f3341e372649.bundle.map*/
+/*# sourceMappingURL=demo.f6a8216af3ee9f31735c.bundle.map*/
