@@ -21037,12 +21037,12 @@ webpackJsonp([30],[
 	
 	var Radio = exports.Radio = (_dec = (0, _core.Component)({
 	    selector: 'novo-radio',
-	    inputs: ['name', 'value', 'checked', 'vertical'],
+	    inputs: ['name', 'value', 'checked', 'vertical', 'label'],
 	    outputs: ['change'],
 	    host: {
 	        '[class.vertical]': 'vertical'
 	    },
-	    template: '\n            <input [name]="name" type="radio" [checked]="checked" [attr.id]="name" #radio>\n            <label [attr.for]="name" (click)="select($event, radio)">\n                <i [ngClass]="{\'bhi-radio-empty\': !radio.checked, \'bhi-radio-filled\': radio.checked}"></i>\n                <ng-content></ng-content>\n            </label>\n    ',
+	    template: '\n            <input [name]="name" type="radio" [checked]="checked" [attr.id]="name" #radio>\n            <label [attr.for]="name" (click)="select($event, radio)">\n                <i [ngClass]="{\'bhi-radio-empty\': !radio.checked, \'bhi-radio-filled\': radio.checked}"></i>\n                {{label}}\n                <ng-content></ng-content>\n            </label>\n    ',
 	    directives: [_common.CORE_DIRECTIVES]
 	}), _dec(_class = function () {
 	    function Radio() {
@@ -21050,20 +21050,32 @@ webpackJsonp([30],[
 	
 	        this.change = new _core.EventEmitter();
 	    }
+	    // Emitter for when the value changes
+	
 	
 	    _createClass(Radio, [{
 	        key: 'select',
+	
+	
+	        /**
+	         * Handles the select of the radio button, will only change if a new radio is selected
+	         * @param event
+	         * @param radio
+	         */
 	        value: function select(event, radio) {
 	            (0, _Helpers.swallowEvent)(event);
-	            radio.checked = !radio.checked;
-	            this.change.emit(this.value);
+	            // Only change the checked state if this is a new radio, they are not toggle buttons
+	            if (!radio.checked) {
+	                radio.checked = !radio.checked;
+	                this.change.emit(this.value);
+	            }
 	        }
 	    }]);
 	
 	    return Radio;
 	}()) || _class);
 	var NOVO_RADIO_ELEMENTS = exports.NOVO_RADIO_ELEMENTS = [Radio];
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9yYWRpby9SYWRpby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUVBOzs7O0lBa0JhLEssV0FBQSxLLFdBaEJaLHFCQUFVO0FBQ1AsY0FBVSxZQURIO0FBRVAsWUFBUSxDQUFDLE1BQUQsRUFBUyxPQUFULEVBQWtCLFNBQWxCLEVBQTZCLFVBQTdCLENBRkQ7QUFHUCxhQUFTLENBQUMsUUFBRCxDQUhGO0FBSVAsVUFBTTtBQUNGLDRCQUFvQjtBQURsQixLQUpDO0FBT1AsMFdBUE87QUFjUCxnQkFBWTtBQWRMLENBQVYsQzs7OzthQWlCRyxNLEdBQXNCLHdCOzs7OzsrQkFFZixLLEVBQU8sSyxFQUFPO0FBQ2pCLHVDQUFhLEtBQWI7QUFDQSxrQkFBTSxPQUFOLEdBQWdCLENBQUMsTUFBTSxPQUF2QjtBQUNBLGlCQUFLLE1BQUwsQ0FBWSxJQUFaLENBQWlCLEtBQUssS0FBdEI7QUFDSDs7Ozs7QUFHRSxJQUFNLG9EQUFzQixDQUFDLEtBQUQsQ0FBNUIiLCJmaWxlIjoiUmFkaW8uanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCwgRXZlbnRFbWl0dGVyIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQgeyBDT1JFX0RJUkVDVElWRVMgfSBmcm9tICdAYW5ndWxhci9jb21tb24nO1xuXG5pbXBvcnQgeyBzd2FsbG93RXZlbnQgfSBmcm9tICcuLy4uLy4uL3V0aWxzL0hlbHBlcnMnO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ25vdm8tcmFkaW8nLFxuICAgIGlucHV0czogWyduYW1lJywgJ3ZhbHVlJywgJ2NoZWNrZWQnLCAndmVydGljYWwnXSxcbiAgICBvdXRwdXRzOiBbJ2NoYW5nZSddLFxuICAgIGhvc3Q6IHtcbiAgICAgICAgJ1tjbGFzcy52ZXJ0aWNhbF0nOiAndmVydGljYWwnXG4gICAgfSxcbiAgICB0ZW1wbGF0ZTogYFxuICAgICAgICAgICAgPGlucHV0IFtuYW1lXT1cIm5hbWVcIiB0eXBlPVwicmFkaW9cIiBbY2hlY2tlZF09XCJjaGVja2VkXCIgW2F0dHIuaWRdPVwibmFtZVwiICNyYWRpbz5cbiAgICAgICAgICAgIDxsYWJlbCBbYXR0ci5mb3JdPVwibmFtZVwiIChjbGljayk9XCJzZWxlY3QoJGV2ZW50LCByYWRpbylcIj5cbiAgICAgICAgICAgICAgICA8aSBbbmdDbGFzc109XCJ7J2JoaS1yYWRpby1lbXB0eSc6ICFyYWRpby5jaGVja2VkLCAnYmhpLXJhZGlvLWZpbGxlZCc6IHJhZGlvLmNoZWNrZWR9XCI+PC9pPlxuICAgICAgICAgICAgICAgIDxuZy1jb250ZW50PjwvbmctY29udGVudD5cbiAgICAgICAgICAgIDwvbGFiZWw+XG4gICAgYCxcbiAgICBkaXJlY3RpdmVzOiBbQ09SRV9ESVJFQ1RJVkVTXVxufSlcbmV4cG9ydCBjbGFzcyBSYWRpbyB7XG4gICAgY2hhbmdlOkV2ZW50RW1pdHRlciA9IG5ldyBFdmVudEVtaXR0ZXIoKTtcblxuICAgIHNlbGVjdChldmVudCwgcmFkaW8pIHtcbiAgICAgICAgc3dhbGxvd0V2ZW50KGV2ZW50KTtcbiAgICAgICAgcmFkaW8uY2hlY2tlZCA9ICFyYWRpby5jaGVja2VkO1xuICAgICAgICB0aGlzLmNoYW5nZS5lbWl0KHRoaXMudmFsdWUpO1xuICAgIH1cbn1cblxuZXhwb3J0IGNvbnN0IE5PVk9fUkFESU9fRUxFTUVOVFMgPSBbUmFkaW9dO1xuIl19
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9lbGVtZW50cy9yYWRpby9SYWRpby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUVBOzs7O0lBbUJhLEssV0FBQSxLLFdBakJaLHFCQUFVO0FBQ1AsY0FBVSxZQURIO0FBRVAsWUFBUSxDQUFDLE1BQUQsRUFBUyxPQUFULEVBQWtCLFNBQWxCLEVBQTZCLFVBQTdCLEVBQXlDLE9BQXpDLENBRkQ7QUFHUCxhQUFTLENBQUMsUUFBRCxDQUhGO0FBSVAsVUFBTTtBQUNGLDRCQUFvQjtBQURsQixLQUpDO0FBT1AscVlBUE87QUFlUCxnQkFBWTtBQWZMLENBQVYsQzs7OzthQW1CRyxNLEdBQXNCLHdCOzs7Ozs7Ozs7Ozs7OzsrQkFPZixLLEVBQU8sSyxFQUFPO0FBQ2pCLHVDQUFhLEtBQWI7O0FBRUEsZ0JBQUksQ0FBQyxNQUFNLE9BQVgsRUFBb0I7QUFDaEIsc0JBQU0sT0FBTixHQUFnQixDQUFDLE1BQU0sT0FBdkI7QUFDQSxxQkFBSyxNQUFMLENBQVksSUFBWixDQUFpQixLQUFLLEtBQXRCO0FBQ0g7QUFDSjs7Ozs7QUFHRSxJQUFNLG9EQUFzQixDQUFDLEtBQUQsQ0FBNUIiLCJmaWxlIjoiUmFkaW8uanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCwgRXZlbnRFbWl0dGVyIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQgeyBDT1JFX0RJUkVDVElWRVMgfSBmcm9tICdAYW5ndWxhci9jb21tb24nO1xuXG5pbXBvcnQgeyBzd2FsbG93RXZlbnQgfSBmcm9tICcuLy4uLy4uL3V0aWxzL0hlbHBlcnMnO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ25vdm8tcmFkaW8nLFxuICAgIGlucHV0czogWyduYW1lJywgJ3ZhbHVlJywgJ2NoZWNrZWQnLCAndmVydGljYWwnLCAnbGFiZWwnXSxcbiAgICBvdXRwdXRzOiBbJ2NoYW5nZSddLFxuICAgIGhvc3Q6IHtcbiAgICAgICAgJ1tjbGFzcy52ZXJ0aWNhbF0nOiAndmVydGljYWwnXG4gICAgfSxcbiAgICB0ZW1wbGF0ZTogYFxuICAgICAgICAgICAgPGlucHV0IFtuYW1lXT1cIm5hbWVcIiB0eXBlPVwicmFkaW9cIiBbY2hlY2tlZF09XCJjaGVja2VkXCIgW2F0dHIuaWRdPVwibmFtZVwiICNyYWRpbz5cbiAgICAgICAgICAgIDxsYWJlbCBbYXR0ci5mb3JdPVwibmFtZVwiIChjbGljayk9XCJzZWxlY3QoJGV2ZW50LCByYWRpbylcIj5cbiAgICAgICAgICAgICAgICA8aSBbbmdDbGFzc109XCJ7J2JoaS1yYWRpby1lbXB0eSc6ICFyYWRpby5jaGVja2VkLCAnYmhpLXJhZGlvLWZpbGxlZCc6IHJhZGlvLmNoZWNrZWR9XCI+PC9pPlxuICAgICAgICAgICAgICAgIHt7bGFiZWx9fVxuICAgICAgICAgICAgICAgIDxuZy1jb250ZW50PjwvbmctY29udGVudD5cbiAgICAgICAgICAgIDwvbGFiZWw+XG4gICAgYCxcbiAgICBkaXJlY3RpdmVzOiBbQ09SRV9ESVJFQ1RJVkVTXVxufSlcbmV4cG9ydCBjbGFzcyBSYWRpbyB7XG4gICAgLy8gRW1pdHRlciBmb3Igd2hlbiB0aGUgdmFsdWUgY2hhbmdlc1xuICAgIGNoYW5nZTpFdmVudEVtaXR0ZXIgPSBuZXcgRXZlbnRFbWl0dGVyKCk7XG5cbiAgICAvKipcbiAgICAgKiBIYW5kbGVzIHRoZSBzZWxlY3Qgb2YgdGhlIHJhZGlvIGJ1dHRvbiwgd2lsbCBvbmx5IGNoYW5nZSBpZiBhIG5ldyByYWRpbyBpcyBzZWxlY3RlZFxuICAgICAqIEBwYXJhbSBldmVudFxuICAgICAqIEBwYXJhbSByYWRpb1xuICAgICAqL1xuICAgIHNlbGVjdChldmVudCwgcmFkaW8pIHtcbiAgICAgICAgc3dhbGxvd0V2ZW50KGV2ZW50KTtcbiAgICAgICAgLy8gT25seSBjaGFuZ2UgdGhlIGNoZWNrZWQgc3RhdGUgaWYgdGhpcyBpcyBhIG5ldyByYWRpbywgdGhleSBhcmUgbm90IHRvZ2dsZSBidXR0b25zXG4gICAgICAgIGlmICghcmFkaW8uY2hlY2tlZCkge1xuICAgICAgICAgICAgcmFkaW8uY2hlY2tlZCA9ICFyYWRpby5jaGVja2VkO1xuICAgICAgICAgICAgdGhpcy5jaGFuZ2UuZW1pdCh0aGlzLnZhbHVlKTtcbiAgICAgICAgfVxuICAgIH1cbn1cblxuZXhwb3J0IGNvbnN0IE5PVk9fUkFESU9fRUxFTUVOVFMgPSBbUmFkaW9dO1xuIl19
 
 /***/ },
 /* 689 */
@@ -23926,4 +23938,4 @@ webpackJsonp([30],[
 
 /***/ }
 ]);
-//# sourceMappingURL=lib.c340ae5ff718af5df8cc.bundle.map
+//# sourceMappingURL=lib.51f6b5dace60948bc6bb.bundle.map
