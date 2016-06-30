@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 1125:
+/***/ 1129:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 529:
+/***/ 530:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,45 +58,45 @@ webpackJsonp([1],{
 	
 	var _novoElements = __webpack_require__(16);
 	
-	var _CodeSnippet = __webpack_require__(1125);
+	var _CodeSnippet = __webpack_require__(1129);
 	
-	var _AutocompleteFieldDemo = __webpack_require__(1149);
+	var _AutocompleteFieldDemo = __webpack_require__(1153);
 	
 	var _AutocompleteFieldDemo2 = _interopRequireDefault(_AutocompleteFieldDemo);
 	
-	var _AutocompleteFieldCustomDemo = __webpack_require__(1148);
+	var _AutocompleteFieldCustomDemo = __webpack_require__(1152);
 	
 	var _AutocompleteFieldCustomDemo2 = _interopRequireDefault(_AutocompleteFieldCustomDemo);
 	
-	var _CalendarPickerDemo = __webpack_require__(1150);
+	var _CalendarPickerDemo = __webpack_require__(1154);
 	
 	var _CalendarPickerDemo2 = _interopRequireDefault(_CalendarPickerDemo);
 	
-	var _CheckboxDemo = __webpack_require__(1151);
+	var _CheckboxDemo = __webpack_require__(1155);
 	
 	var _CheckboxDemo2 = _interopRequireDefault(_CheckboxDemo);
 	
-	var _DynamicFormDemo = __webpack_require__(1152);
+	var _DynamicFormDemo = __webpack_require__(1156);
 	
 	var _DynamicFormDemo2 = _interopRequireDefault(_DynamicFormDemo);
 	
-	var _MultiselectDemo = __webpack_require__(1153);
+	var _MultiselectDemo = __webpack_require__(1157);
 	
 	var _MultiselectDemo2 = _interopRequireDefault(_MultiselectDemo);
 	
-	var _RadioButtonsDemo = __webpack_require__(1155);
+	var _RadioButtonsDemo = __webpack_require__(1159);
 	
 	var _RadioButtonsDemo2 = _interopRequireDefault(_RadioButtonsDemo);
 	
-	var _SelectFieldDemo = __webpack_require__(1156);
+	var _SelectFieldDemo = __webpack_require__(1160);
 	
 	var _SelectFieldDemo2 = _interopRequireDefault(_SelectFieldDemo);
 	
-	var _TextInputDemo = __webpack_require__(1157);
+	var _TextInputDemo = __webpack_require__(1161);
 	
 	var _TextInputDemo2 = _interopRequireDefault(_TextInputDemo);
 	
-	var _QuickNoteInputDemo = __webpack_require__(1154);
+	var _QuickNoteInputDemo = __webpack_require__(1158);
 	
 	var _QuickNoteInputDemo2 = _interopRequireDefault(_QuickNoteInputDemo);
 	
@@ -555,70 +555,70 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 1148:
+/***/ 1152:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>Autocomplete Field With Custom Templates</form-title>\n    <form-field>\n        <form-label>States with Flags</form-label>\n        <form-input name=\"stateObjects\" type=\"picker\" [(options)]=\"autocompleteObjects\" placeholder=\"Pick a State Object\"></form-input>\n    </form-field>\n    <form-field>\n        <form-label>Deferred</form-label>\n        <form-input name=\"stateDeferredObjects\" type=\"picker\" [(options)]=\"deferredAutocompleteData\" (broadcast)=\"updateSearch($event)\" placeholder=\"Pick a Deferred State Object\"></form-input>\n    </form-field>\n</novo-form>\n"
 
 /***/ },
 
-/***/ 1149:
+/***/ 1153:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>Autocomplete Field</form-title>\n    <form-field>\n        <form-label>State</form-label>\n        <form-input name=\"state\" type=\"picker\" [(options)]=\"autocompleteFlatArrayOptions\" placeholder=\"Pick a State\"></form-input>\n    </form-field>\n\n    <form-field>\n        <form-label>State</form-label>\n        <form-input name=\"entity\" type=\"entity\" [(options)]=\"autocompleteContacts\" placeholder=\"Pick a Contact\"></form-input>\n    </form-field>\n</novo-form>\n"
 
 /***/ },
 
-/***/ 1150:
+/***/ 1154:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>Calendar Picker</form-title>\n    <form-field>\n        <form-label>Start Date</form-label>\n        <form-input name=\"startDate\" type=\"date\" inline=\"true\" placeholder=\"Please select a date\"></form-input>\n    </form-field>\n    <form-field>\n        <form-label>Start Time</form-label>\n        <form-input name=\"startTime\" type=\"time\" inline=\"true\" placeholder=\"Please select a time\"></form-input>\n    </form-field>\n    <form-field>\n        <form-label>Start Date &amp; Time</form-label>\n        <form-input name=\"startDateTime\" type=\"datetime\" inline=\"true\" placeholder=\"Please select a date and time\"></form-input>\n    </form-field>\n</novo-form>\n"
 
 /***/ },
 
-/***/ 1151:
+/***/ 1155:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>Checkboxes</form-title>\n    <form-field>\n        <!-- <form-label>Availability</form-label> -->\n        <form-input name=\"isAvailable\" label=\"Is Available?\" type=\"checkbox\" [(value)]=\"isAvailable\"></form-input>\n    </form-field>\n    <form-field>\n        <form-label>Availability</form-label>\n        <form-input name=\"shifts\" type=\"checkbox\" [options]=\"shifts\" [(value)]=\"availability\"></form-input>\n    </form-field>\n</novo-form>\n<div>I am available on {{availability}}.</div>\n"
 
 /***/ },
 
-/***/ 1152:
+/***/ 1156:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"standard\" (click)=\"form.showAllFields()\">Show All Fields</button>\n<br/>\n<br/>\n<novo-form [meta]=\"dynamic\" [data]=\"dynamicData\" #form>\n<form-title>Add Candidate</form-title>\n</novo-form>\n<div class=\"dynamic-demo-footer\">\n<button theme=\"standard\">Cancel</button>\n<button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"save(form, dynamicData)\">Save</button>\n</div>\n"
 
 /***/ },
 
-/***/ 1153:
+/***/ 1157:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>Multi-Picker Field</form-title>\n    <form-field>\n        <form-label>Locations</form-label>\n        <form-input name=\"locations\" type=\"picker\" [(options)]=\"autocompleteFlatArrayOptions\" [multiple]=\"true\" placeholder=\"Pick some states\"></form-input>\n    </form-field>\n    <form-field>\n        <form-label>Contact</form-label>\n        <form-input name=\"entity\" type=\"entity\" [(options)]=\"autocompleteContacts\" [multiple]=\"true\" placeholder=\"Pick a Contact\"></form-input>\n    </form-field>\n</novo-form>\n"
 
 /***/ },
 
-/***/ 1154:
+/***/ 1158:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>QuickNote</form-title>\n    <form-field>\n        <form-label>Note</form-label>\n        <form-input [(value)]=\"quickNote\" name=\"note\" type=\"note\" [(options)]=\"quickNoteOptions\" [references]=\"quickNoteReferences\" placeholder=\"Add a Note!\"></form-input>\n    </form-field>\n</novo-form>\n<div class=\"data\">\n    <p>Note: {{quickNote}}</p>\n    <p>References: {{quickNoteReferences | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 1155:
+/***/ 1159:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>Radio Buttons</form-title>\n    <form-field>\n        <form-label>Ready to Work?</form-label>\n        <form-input name=\"isReady\" type=\"radio\" [options]=\"yesNo\" [(value)]=\"amIReady\"></form-input>\n    </form-field>\n</novo-form>\n<div>Am I Ready? {{amIReady}}.</div>\n"
 
 /***/ },
 
-/***/ 1156:
+/***/ 1160:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>Select Field</form-title>\n    <form-field>\n        <form-label>Select</form-label>\n        <form-input name=\"status\" type=\"select\" [options]=\"statusOptions\" [(value)]=\"myStatus\" placeholder=\"Status\"></form-input>\n    </form-field>\n</novo-form>\n<div>My status is {{myStatus}}</div>\n"
 
 /***/ },
 
-/***/ 1157:
+/***/ 1161:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-form>\n    <form-title>Text Fields</form-title>\n    <form-field required>\n        <form-label>First Name</form-label>\n        <form-input name=\"firstName\" type=\"text\" placeholder=\"Jack\" [(value)]=\"firstName\"></form-input>\n    </form-field>\n    <form-field>\n        <form-label>Last Name</form-label>\n        <form-input name=\"lastName\" type=\"text\" placeholder=\"White\" [(value)]=\"lastName\"></form-input>\n    </form-field>\n</novo-form>\n<div> My name is {{firstName}} {{lastName}}</div>\n"

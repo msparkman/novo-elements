@@ -1,6 +1,6 @@
 webpackJsonp([16],{
 
-/***/ 1125:
+/***/ 1129:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([16],{
 
 /***/ },
 
-/***/ 522:
+/***/ 523:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -60,13 +60,13 @@ webpackJsonp([16],{
 	
 	var _moment2 = _interopRequireDefault(_moment);
 	
-	var _CodeSnippet = __webpack_require__(1125);
+	var _CodeSnippet = __webpack_require__(1129);
 	
-	var _CalendarDemo = __webpack_require__(1133);
+	var _CalendarDemo = __webpack_require__(1137);
 	
 	var _CalendarDemo2 = _interopRequireDefault(_CalendarDemo);
 	
-	var _TimeDemo = __webpack_require__(1134);
+	var _TimeDemo = __webpack_require__(1138);
 	
 	var _TimeDemo2 = _interopRequireDefault(_TimeDemo);
 	
@@ -96,14 +96,14 @@ webpackJsonp([16],{
 
 /***/ },
 
-/***/ 1133:
+/***/ 1137:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"calendar-demo-side-by-side\">\n    <p>\n        <label>Value One</label>\n        {{(dateOne | date) || 'N/A'}}\n\n        <label>Value Two</label>\n        {{(dateTwo | date) || 'N/A'}}\n    </p>\n    <novo-date-picker [(ngModel)]=\"dateOne\" minYear=\"2000\" maxYear=\"2020\"\n        [start]=\"start\" [end]=\"end\"></novo-date-picker>\n    <novo-date-picker [(ngModel)]=\"dateTwo\"></novo-date-picker>\n</div>\n"
 
 /***/ },
 
-/***/ 1134:
+/***/ 1138:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"calendar-demo-side-by-side\">\n    <p>\n        <label>Value</label>\n        {{(time | date:'mediumTime') || 'N/A'}}\n    </p>\n    <novo-time-picker [(ngModel)]=\"time\"></novo-time-picker>\n    <novo-time-picker [(ngModel)]=\"time\" military=\"true\"></novo-time-picker>\n</div>\n"

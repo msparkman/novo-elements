@@ -1,13 +1,13 @@
-webpackJsonp([23],{
+webpackJsonp([24],{
 
-/***/ 1197:
+/***/ 1202:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\n    <h1>Utils</h1>\n    <p>Helpful utility functions and objects.</p>\n\n    <h5>Key Codes <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/key-codes\">(source)</a></small></h5>\n    <p>List of all Key Codes to import and use, no magic strings!</p>\n\n    <h5>Deferred <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/deferred\">(source)</a></small></h5>\n    <p>Custom deferred object</p>\n\n    <h5>Outside Click <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/outside-click\">(source)</a></small></h5>\n    <p>Helper class to listen to and automatically close a component when an outside click is detected.</p>\n</div>\n"
 
 /***/ },
 
-/***/ 548:
+/***/ 550:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23,7 +23,7 @@ webpackJsonp([23],{
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var template = __webpack_require__(1197);
+	var template = __webpack_require__(1202);
 	
 	var UtilsDemo = exports.UtilsDemo = (_dec = (0, _core.Component)({
 	    selector: 'utils-demo',
@@ -36,4 +36,4 @@ webpackJsonp([23],{
 /***/ }
 
 });
-//# sourceMappingURL=23.37f39507bbfb5a7b8c17.bundle.map
+//# sourceMappingURL=24.37f39507bbfb5a7b8c17.bundle.map

@@ -1,6 +1,6 @@
 webpackJsonp([13],{
 
-/***/ 1125:
+/***/ 1129:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([13],{
 
 /***/ },
 
-/***/ 540:
+/***/ 541:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -60,13 +60,13 @@ webpackJsonp([13],{
 	
 	var _novoElements = __webpack_require__(16);
 	
-	var _CodeSnippet = __webpack_require__(1125);
+	var _CodeSnippet = __webpack_require__(1129);
 	
-	var _BasicRadio = __webpack_require__(1178);
+	var _BasicRadio = __webpack_require__(1182);
 	
 	var _BasicRadio2 = _interopRequireDefault(_BasicRadio);
 	
-	var _VerticalRadio = __webpack_require__(1179);
+	var _VerticalRadio = __webpack_require__(1183);
 	
 	var _VerticalRadio2 = _interopRequireDefault(_VerticalRadio);
 	
@@ -106,14 +106,14 @@ webpackJsonp([13],{
 
 /***/ },
 
-/***/ 1178:
+/***/ 1182:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-radio [checked]=\"false\" name=\"basic\" value=\"one\" (change)=\"onChangeBasic($event)\">Make me anything!</novo-radio>\n<novo-radio [checked]=\"true\" name=\"basic\" value=\"two\" (change)=\"onChangeBasic($event)\">I get transcluded in!</novo-radio>\n<novo-radio [checked]=\"false\" name=\"basic\" value=\"three\" (change)=\"onChangeBasic($event)\">REALLY!</novo-radio>\n"
 
 /***/ },
 
-/***/ 1179:
+/***/ 1183:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-radio vertical=\"true\" [checked]=\"false\" name=\"vertical\" value=\"one\" (change)=\"onChangeVertical($event)\">Make me anything!</novo-radio>\n<novo-radio vertical=\"true\" [checked]=\"true\" name=\"vertical\" value=\"two\" (change)=\"onChangeVertical($event)\">I get transcluded in!</novo-radio>\n<novo-radio vertical=\"true\" [checked]=\"false\" name=\"vertical\" value=\"three\" (change)=\"onChangeVertical($event)\">REALLY!</novo-radio>\n"

@@ -1,6 +1,6 @@
-webpackJsonp([20],{
+webpackJsonp([21],{
 
-/***/ 1125:
+/***/ 1129:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([20],{
 
 /***/ },
 
-/***/ 530:
+/***/ 531:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,9 +58,9 @@ webpackJsonp([20],{
 	
 	var _novoElements = __webpack_require__(16);
 	
-	var _CodeSnippet = __webpack_require__(1125);
+	var _CodeSnippet = __webpack_require__(1129);
 	
-	var _HeaderDemo = __webpack_require__(1158);
+	var _HeaderDemo = __webpack_require__(1162);
 	
 	var _HeaderDemo2 = _interopRequireDefault(_HeaderDemo);
 	
@@ -116,7 +116,7 @@ webpackJsonp([20],{
 
 /***/ },
 
-/***/ 1158:
+/***/ 1162:
 /***/ function(module, exports) {
 
 	module.exports = "<header title=\"John Deere\" icon=\"person\" [theme]=\"entity\">\n    <utils>\n        <util-action icon=\"flag\" (click)=\"catchEv('pin', $event)\"></util-action>\n        <util-action icon=\"refresh\" (click)=\"catchEv('refresh', $event)\"></util-action>\n        <util-action icon=\"times\" (click)=\"catchEv('close', $event)\"></util-action>\n    </utils>\n    <section>\n        Extra Info\n    </section>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>Overview</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Activity</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Email</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n"
@@ -124,4 +124,4 @@ webpackJsonp([20],{
 /***/ }
 
 });
-//# sourceMappingURL=20.917ced1a1e6b4a592096.bundle.map
+//# sourceMappingURL=21.917ced1a1e6b4a592096.bundle.map

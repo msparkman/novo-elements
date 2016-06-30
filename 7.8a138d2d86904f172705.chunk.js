@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 1125:
+/***/ 1129:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 537:
+/***/ 538:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,21 +58,21 @@ webpackJsonp([7],{
 	
 	var _novoElements = __webpack_require__(16);
 	
-	var _CodeSnippet = __webpack_require__(1125);
+	var _CodeSnippet = __webpack_require__(1129);
 	
-	var _BasicPickerDemo = __webpack_require__(1171);
+	var _BasicPickerDemo = __webpack_require__(1175);
 	
 	var _BasicPickerDemo2 = _interopRequireDefault(_BasicPickerDemo);
 	
-	var _AsyncPickerDemo = __webpack_require__(1170);
+	var _AsyncPickerDemo = __webpack_require__(1174);
 	
 	var _AsyncPickerDemo2 = _interopRequireDefault(_AsyncPickerDemo);
 	
-	var _FormattedPickerDemo = __webpack_require__(1173);
+	var _FormattedPickerDemo = __webpack_require__(1177);
 	
 	var _FormattedPickerDemo2 = _interopRequireDefault(_FormattedPickerDemo);
 	
-	var _CustomPickerResultsDemo = __webpack_require__(1172);
+	var _CustomPickerResultsDemo = __webpack_require__(1176);
 	
 	var _CustomPickerResultsDemo2 = _interopRequireDefault(_CustomPickerResultsDemo);
 	
@@ -183,28 +183,28 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 1170:
+/***/ 1174:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{avalue}}</div>\n<novo-picker [config]=\"async\" [placeholder]=\"placeholder\" [(ngModel)]=\"avalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1171:
+/***/ 1175:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{value}}</div>\n<novo-picker [config]=\"static\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1172:
+/***/ 1176:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{cvalue}}</div>\n<novo-picker [config]=\"custom\" [placeholder]=\"placeholder\" [(ngModel)]=\"cvalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1173:
+/***/ 1177:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{fvalue}}</div>\n<novo-picker [config]=\"formatted\" [placeholder]=\"placeholder\" [(ngModel)]=\"fvalue\"></novo-picker>\n"

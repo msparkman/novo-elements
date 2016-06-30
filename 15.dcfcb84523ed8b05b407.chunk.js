@@ -1,6 +1,6 @@
 webpackJsonp([15],{
 
-/***/ 1125:
+/***/ 1129:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([15],{
 
 /***/ },
 
-/***/ 526:
+/***/ 527:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -60,13 +60,13 @@ webpackJsonp([15],{
 	
 	var _novoElements = __webpack_require__(16);
 	
-	var _CodeSnippet = __webpack_require__(1125);
+	var _CodeSnippet = __webpack_require__(1129);
 	
-	var _DragulaDemo = __webpack_require__(1144);
+	var _DragulaDemo = __webpack_require__(1148);
 	
 	var _DragulaDemo2 = _interopRequireDefault(_DragulaDemo);
 	
-	var _DragulaModelDemo = __webpack_require__(1145);
+	var _DragulaModelDemo = __webpack_require__(1149);
 	
 	var _DragulaModelDemo2 = _interopRequireDefault(_DragulaModelDemo);
 	
@@ -128,14 +128,14 @@ webpackJsonp([15],{
 
 /***/ },
 
-/***/ 1144:
+/***/ 1148:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"wrapper\">\n    <div class=\"drag-container\" [dragula]=\"'first-bag'\">\n        <div>You can move these elements between these two containers</div>\n        <div>Moving them anywhere else isn\"t quite possible</div>\n        <div>There\"s also the possibility of moving elements around in the same container, changing their position</div>\n    </div>\n    <div class=\"drag-container\" [dragula]=\"'first-bag'\">\n        <div>This is the default use case. You only need to specify the containers you want to use</div>\n        <div>More interactive use cases lie ahead</div>\n        <div>Make sure to check out the\n            <a href=\"https://github.com/bevacqua/dragula#readme\">documentation on GitHub!</a>\n        </div>\n    </div>\n</div>\n"
 
 /***/ },
 
-/***/ 1145:
+/***/ 1149:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"wrapper\">\n    <div class=\"drag-container\" [dragula]=\"'another-bag'\" [dragulaModel]=\"many\">\n        <div *ngFor=\"let text of many\" [innerHtml]=\"text\"></div>\n    </div>\n    <div class=\"drag-container\" [dragula]=\"'another-bag'\" [dragulaModel]=\"many2\">\n        <div *ngFor=\"let text of many2\" [innerHtml]=\"text\"></div>\n    </div>\n</div>\n<div class=\"wrapper\">\n    <div class=\"drag-container\">\n        <pre>{{many | json}}</pre>\n    </div>\n    <div class=\"drag-container\">\n        <pre>{{many2 | json}}</pre>\n    </div>\n</div>\n"
