@@ -1,6 +1,6 @@
 webpackJsonp([19],{
 
-/***/ 1129:
+/***/ 1130:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([19],{
 
 /***/ },
 
-/***/ 539:
+/***/ 540:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -54,11 +54,11 @@ webpackJsonp([19],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(16);
+	var _novoElements = __webpack_require__(15);
 	
-	var _CodeSnippet = __webpack_require__(1129);
+	var _CodeSnippet = __webpack_require__(1130);
 	
-	var _PluralizeDemo = __webpack_require__(1178);
+	var _PluralizeDemo = __webpack_require__(1179);
 	
 	var _PluralizeDemo2 = _interopRequireDefault(_PluralizeDemo);
 	
@@ -82,7 +82,7 @@ webpackJsonp([19],{
 
 /***/ },
 
-/***/ 1178:
+/***/ 1179:
 /***/ function(module, exports) {
 
 	module.exports = "<p>{{'Kitty' | plural}}</p>\n<p>{{'Cat' | plural}}</p>\n"

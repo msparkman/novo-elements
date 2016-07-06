@@ -1,6 +1,6 @@
 webpackJsonp([32],{
 
-/***/ 742:
+/***/ 743:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
@@ -19,13 +19,13 @@ webpackJsonp([32],{
 	
 	var _platformBrowserDynamic = __webpack_require__(329);
 	
-	var _browser = __webpack_require__(640);
+	var _browser = __webpack_require__(641);
 	
-	var _environment = __webpack_require__(641);
+	var _environment = __webpack_require__(642);
 	
-	var _App = __webpack_require__(636);
+	var _App = __webpack_require__(637);
 	
-	__webpack_require__(742);
+	__webpack_require__(743);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -57,14 +57,14 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 744:
+/***/ 745:
 /***/ function(module, exports) {
 
 	module.exports = "<nav class=\"main-nav\" [ngClass]=\"{open: menuOpen}\">\n    <span class=\"logo\">\n        <svg [routerLink]=\"['/Home']\" data-name=\"novo-logo\" xmlns=\"http://www.w3.org/2000/svg\"\n             viewBox=\"0 0 400 400\" class=\"{% if page.url != '/' %}site-avatar{% endif %}\">\n            <defs></defs>\n            <title>NovoBranding</title>\n            <circle class=\"center-dot\" cx=\"200.18\" cy=\"197.5\" r=\"28.65\"/>\n            <path class=\"outer-ring\" d=\"M371,178.06C362,98.75,298.92,35.6,219.6,26.65a19.88,19.88,0,0,0-38.84,0c-79.32,9-142.43,72.11-151.4,151.43a19.88,19.88,0,0,0,0,38.85c9,79.32,72.07,142.47,151.4,151.43a19.88,19.88,0,0,0,38.84,0c79.32-9,142.43-72.1,151.4-151.42A19.88,19.88,0,0,0,371,178.06ZM192.56,25.72a9.25,9.25,0,0,1,1-1.18l0.26-.27a9.31,9.31,0,0,1,1.17-1l0.24-.15a9.13,9.13,0,0,1,1.22-.66l0.26-.12a9.17,9.17,0,0,1,1.49-.46l0.34-.07a8.29,8.29,0,0,1,3.32,0l0.34,0.07a9.17,9.17,0,0,1,1.49.46l0.26,0.12a9.13,9.13,0,0,1,1.22.66l0.24,0.15a9.31,9.31,0,0,1,1.17,1l0.26,0.27a9.25,9.25,0,0,1,1,1.18,9.1,9.1,0,0,1-.29,10.68h0a9.28,9.28,0,0,1-1.27,1.36l-0.42.35a9.1,9.1,0,0,1-.89.62,9.21,9.21,0,0,1-.87.47l-0.5.22a9,9,0,0,1-1.38.43l-0.34.06a8.24,8.24,0,0,1-3.3,0l-0.34-.06a9,9,0,0,1-1.38-.43l-0.5-.22a9.21,9.21,0,0,1-.87-0.47,9.1,9.1,0,0,1-.89-0.62l-0.42-.35a9.28,9.28,0,0,1-1.27-1.36h0A9.1,9.1,0,0,1,192.56,25.72ZM28.39,205.09a9.25,9.25,0,0,1-1.14-.94l-0.3-.3a9.26,9.26,0,0,1-.94-1.14l-0.16-.26a9.09,9.09,0,0,1-.65-1.19c0-.09-0.09-0.18-0.13-0.28a9.1,9.1,0,0,1-.46-1.49c0-.11,0-0.23-0.07-0.34a8.27,8.27,0,0,1,0-3.31c0-.12,0-0.23.07-0.34a9.1,9.1,0,0,1,.46-1.49c0-.1.09-0.19,0.13-0.28a9.09,9.09,0,0,1,.65-1.19l0.16-.26a9.22,9.22,0,0,1,.94-1.14l0.3-.3a9.11,9.11,0,0,1,13.2.59c0.13,0.14.25,0.29,0.37,0.44a9.22,9.22,0,0,1,1.08,1.75c0.08,0.16.15,0.33,0.22,0.49a9.08,9.08,0,0,1,.43,1.39c0,0.11,0,.23.06,0.34a8.22,8.22,0,0,1,0,3.29c0,0.11,0,.23-0.06.34a9.08,9.08,0,0,1-.43,1.39c-0.07.17-.15,0.33-0.22,0.49a9.22,9.22,0,0,1-1.08,1.75c-0.12.15-.24,0.3-0.37,0.44A9.12,9.12,0,0,1,28.39,205.09ZM200.18,374a9.21,9.21,0,1,1,9.21-9.21A9.22,9.22,0,0,1,200.18,374ZM219,357.67a19.86,19.86,0,0,0-37.59,0A161.56,161.56,0,0,1,40,216.29a19.86,19.86,0,0,0,0-37.58A161.56,161.56,0,0,1,181.38,37.32a19.86,19.86,0,0,0,37.59,0,161.56,161.56,0,0,1,141.35,141.4,19.86,19.86,0,0,0,0,37.55A161.56,161.56,0,0,1,219,357.67Zm147.84-151A9.21,9.21,0,1,1,376,197.5,9.22,9.22,0,0,1,366.81,206.7Z\"\n            />\n            <path class=\"inner-ring\" d=\"M219.76,103.11a19.86,19.86,0,0,0-39.17,0,96.4,96.4,0,0,0,0,188.78,19.86,19.86,0,0,0,39.17,0A96.4,96.4,0,0,0,219.76,103.11Zm-19.58-5.87a9.17,9.17,0,0,1,5.9,16.22l-0.25.2a9.11,9.11,0,0,1-1,.67c-0.26.16-.53,0.31-0.8,0.44l-0.55.24a8.92,8.92,0,0,1-1.35.42l-0.33.06a8.24,8.24,0,0,1-3.3,0l-0.33-.06a8.92,8.92,0,0,1-1.35-.42l-0.55-.24c-0.28-.13-0.54-0.28-0.8-0.44a9.11,9.11,0,0,1-1-.67l-0.25-.2A9.17,9.17,0,0,1,200.18,97.24ZM207.54,294a9.21,9.21,0,0,1-.61.74c-0.13.15-.27,0.29-0.41,0.43a9.25,9.25,0,0,1-1.06.87l-0.41.26a9.11,9.11,0,0,1-1.07.58l-0.31.15a9.08,9.08,0,0,1-1.47.46l-0.38.07a8.22,8.22,0,0,1-3.29,0l-0.38-.07a9.08,9.08,0,0,1-1.47-.46l-0.31-.15a9.11,9.11,0,0,1-1.07-.58l-0.41-.26a9.25,9.25,0,0,1-1.06-.87c-0.14-.14-0.27-0.29-0.41-0.43a9.08,9.08,0,0,1,.85-13.22l0.25-.2a9.11,9.11,0,0,1,1-.67c0.26-.16.53-0.31,0.8-0.44l0.55-.24a8.92,8.92,0,0,1,1.35-.42l0.33-.06a8.24,8.24,0,0,1,3.3,0l0.33,0.06a8.92,8.92,0,0,1,1.35.42l0.55,0.24c0.28,0.13.54,0.28,0.8,0.44a9.11,9.11,0,0,1,1,.67l0.25,0.2A9.06,9.06,0,0,1,207.54,294Zm11.1-12.84a19.86,19.86,0,0,0-36.92,0,85.7,85.7,0,0,1,0-167.38,19.86,19.86,0,0,0,36.92,0A85.7,85.7,0,0,1,218.63,281.19Z\"\n            />\n        </svg>\n        <svg [routerLink]=\"['/Home']\" data-name=\"bullhorn-text\" version=\"1.1\"\n            xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n            xmlns:a=\"http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/\"\n            x=\"0px\" y=\"0px\" width=\"240.2px\" height=\"48.8px\" viewBox=\"0 0 240.2 48.8\"\n            style=\"enable-background:new 0 0 240.2 48.8;\" xml:space=\"preserve\">\n            <style type=\"text/css\">\n                .st0 {\n                    fill: #FFFFFF;\n                }\n            </style>\n            <defs></defs>\n            <g>\n                <path class=\"st0\" d=\"M0,1.5c0-0.6,0.5-1.1,1.1-1.1h20c5.4,0,9.5,1.4,12.3,4.2c2.1,2.1,3.2,4.7,3.2,7.8v0.1c0,1.4-0.2,2.6-0.6,3.8\n                c-0.4,1.1-0.9,2.1-1.5,2.9c-0.6,0.8-1.3,1.6-2.1,2.2c-0.2,0.2-0.4,0.3-0.7,0.5c-0.7,0.5-0.6,1.6,0.1,1.9c1.9,0.9,3.4,1.9,4.7,3.2\n                c1.7,1.7,2.6,4.2,2.6,7.4v0.1c0,2.1-0.4,4-1.2,5.6c-0.8,1.6-2,3-3.5,4c-1.5,1.1-3.4,1.9-5.5,2.5c-2.1,0.6-4.5,0.8-7.2,0.8H1.1\n                C0.5,47.5,0,47,0,46.4V1.5z M19.4,20.3c2.7,0,4.8-0.5,6.5-1.6c1.6-1,2.4-2.6,2.4-4.8v-0.1c0-1.9-0.7-3.3-2.1-4.4\n                c-1.4-1-3.5-1.6-6.2-1.6H9.3c-0.6,0-1.1,0.5-1.1,1.1v10.2c0,0.6,0.5,1.1,1.1,1.1H19.4z M21.8,40.1c2.8,0,5-0.5,6.7-1.6\n                c1.6-1.1,2.4-2.7,2.4-4.8v-0.1c0-2-0.8-3.6-2.4-4.6c-1.6-1.1-4-1.6-7.3-1.6h-12c-0.6,0-1.1,0.5-1.1,1.1V39c0,0.6,0.5,1.1,1.1,1.1\n                H21.8z\" />\n                <path class=\"st0\" d=\"M81.3,0h5.9c0.7,0,1.3,0.6,1.3,1.3v45c0,0.7-0.6,1.3-1.3,1.3h-5.9c-0.7,0-1.3-0.6-1.3-1.3v-45\n                C80.1,0.6,80.6,0,81.3,0z\" />\n                <path class=\"st0\" d=\"M96,0h5.9c0.7,0,1.3,0.6,1.3,1.3v45c0,0.7-0.6,1.3-1.3,1.3H96c-0.7,0-1.3-0.6-1.3-1.3v-45\n                C94.8,0.6,95.3,0,96,0z\" />\n                <path class=\"st0\" d=\"M109.5,0l4,0c2.3,0,4.2,1.9,4.2,4.2v13.3c0.9-0.9,2.1-1.9,3.7-2.8c1.6-0.9,3.7-1.4,6.3-1.4c2,0,3.9,0.3,5.5,1\n                c1.6,0.7,3,1.6,4,2.8c1.1,1.2,1.9,2.7,2.5,4.4c0.6,1.7,0.9,3.6,0.9,5.6v19.1c0,0.6-0.5,1.2-1.2,1.2h-6.1c-0.6,0-1.2-0.5-1.2-1.2\n                V27.3c0-2.1-0.6-3.8-1.7-4.9c-1.2-1.2-2.7-1.7-4.5-1.7c-1.1,0-2.2,0.2-3.2,0.7c-1,0.5-1.9,1.1-2.6,1.9c-0.7,0.8-1.3,1.7-1.7,2.8\n                c-0.4,1.1-0.6,2.2-0.6,3.5v16.9c0,0.6-0.5,1.2-1.2,1.2h-6.1c-0.6,0-1.2-0.5-1.2-1.2V5.8V0z\"\n                />\n                <path class=\"st0\" d=\"M210.5,14.1h5.3c0.7,0,1.4,0.6,1.4,1.3l0.1,2.4c0.4-0.5,0.9-1,1.5-1.5c0.6-0.5,1.3-1,2.1-1.5\n                c0.8-0.5,1.8-0.8,2.8-1.1c1-0.3,2.2-0.4,3.6-0.4c4.2,0,7.4,1.2,9.5,3.7c2.2,2.5,3.3,5.8,3.3,10.1V46c0,0.8-0.7,1.5-1.5,1.5h-5.4\n                c-0.8,0-1.5-0.7-1.5-1.5V27.3c0-2.1-0.6-3.8-1.7-4.9c-1.2-1.2-2.7-1.7-4.5-1.7c-1.1,0-2.2,0.2-3.2,0.7c-1,0.5-1.9,1.1-2.6,1.9\n                c-0.7,0.8-1.3,1.7-1.7,2.8c-0.4,1.1-0.6,2.2-0.6,3.5V46c0,0.8-0.7,1.5-1.5,1.5h-5.4c-0.8,0-1.5-0.7-1.5-1.5V15.5\n                C209.1,14.7,209.7,14.1,210.5,14.1z\" />\n                <g>\n                    <path class=\"st0\" d=\"M184.5,14h5.3c0.8,0,1.4,0.6,1.4,1.4l0.1,2.8c0.4-0.5,0.9-1,1.5-1.6c0.6-0.6,1.3-1.1,2.1-1.6\n                    c0.8-0.5,1.7-0.9,2.8-1.2c1.1-0.3,2.3-0.5,3.7-0.5c0.8,0,1.5,0,2.2,0.1c0.3,0,0.5,0.1,0.8,0.2c0.6,0.2,1,0.8,0.9,1.4l-1.2,5.5\n                    c-0.1,0.7-0.8,1.1-1.5,0.9c-0.2,0-0.4-0.1-0.6-0.1c-0.6-0.1-1.3-0.1-2.1-0.1c-1.1,0-2.2,0.2-3.3,0.6c-1,0.4-1.9,0.9-2.7,1.6\n                    c-0.8,0.7-1.4,1.6-1.8,2.6c-0.5,1-0.7,2.1-0.7,3.3V46c0,0.8-0.6,1.4-1.4,1.4h-5.6c-0.8,0-1.4-0.6-1.4-1.4V15.4\n                    C183.1,14.6,183.7,14,184.5,14z\" />\n                </g>\n                <path id=\"u_1_\" class=\"st0\" d=\"M67.4,14.6c-0.7,0-1.3,0.6-1.3,1.3v16.2c0,4.4-3.2,7.4-7,7.4c-0.7,0-1.2,0-1.5,0c-3.9,0-7-3-7-7.4\n                V15.9c0-0.7-0.6-1.3-1.3-1.3H44c-0.7,0-1.3,0.6-1.3,1.3v18c0,7.8,7.2,13.3,14.7,13.3v0h0.1c0,0,0.1,0,0.1,0l0,0h1.4l0,0\n                c0,0,0.1,0,0.1,0h0.2v0c7.5-0.1,14.6-5.5,14.6-13.3v-18c0-0.7-0.6-1.3-1.3-1.3H67.4z\"\n                />\n                <g>\n                    <g>\n                        <g>\n                            <path class=\"st0\" d=\"M144,30.9c0-2.4,0.4-4.7,1.3-6.9c0.9-2.2,2.1-4,3.7-5.7c1.6-1.6,3.5-2.9,5.7-3.8c2.2-0.9,4.6-1.4,7.3-1.4\n                            c2.7,0,5.1,0.5,7.3,1.4c2.2,0.9,4.1,2.2,5.7,3.8c1.6,1.6,2.8,3.5,3.7,5.7c0.9,2.2,1.3,4.4,1.3,6.9s-0.4,4.7-1.3,6.9\n                            c-0.9,2.2-2.1,4.1-3.7,5.7c-1.6,1.6-3.5,2.9-5.7,3.9c-2.2,0.9-4.6,1.4-7.3,1.4c-2.7,0-5.1-0.5-7.3-1.4c-2.2-0.9-4.1-2.2-5.7-3.9\n                            c-1.6-1.6-2.8-3.5-3.7-5.7C144.4,35.6,144,33.3,144,30.9z M161.9,41.5c1.6,0,3-0.3,4.2-1c1.2-0.6,2.2-1.5,3-2.5\n                            c0.8-1,1.4-2.2,1.7-3.4c0.4-1.2,0.6-2.5,0.6-3.7c0-1.2-0.2-2.4-0.6-3.7c-0.4-1.3-1-2.4-1.7-3.4c-0.8-1-1.8-1.9-3-2.5\n                            c-1.2-0.6-2.6-1-4.2-1c-1.6,0-3,0.3-4.2,1c-1.2,0.6-2.2,1.5-3,2.5c-0.8,1-1.4,2.2-1.7,3.4c-0.4,1.3-0.6,2.5-0.6,3.7\n                            c0,1.2,0.2,2.5,0.6,3.7c0.4,1.2,1,2.4,1.7,3.4c0.8,1,1.8,1.9,3,2.5C158.9,41.2,160.3,41.5,161.9,41.5z\"\n                            />\n                        </g>\n                    </g>\n                </g>\n            </g>\n        </svg>\n\n        <h5 [routerLink]=\"['/Home']\">NOVO Design System</h5>\n        <span class=\"version\">v. {{version}}</span>\n        <a href=\"https://github.com/bullhorn/novo-elements\" target=\"_blank\"\n           class=\"fork-me\">Fork Me On Github</a>\n    </span>\n    <app-nav [routes]=\"appRoutes\"></app-nav>\n    <ul class=\"menu-list\">\n        <li class=\"menu-item\" [class.current]=\"router.isRouteActive(router.generate(['/Home']))\">\n            <a [routerLink]=\"['/Home']\" class=\"menu-link\">Introduction</a>\n        </li>\n\n        <li class=\"menu-section-header\">\n            <span class=\"menu-item-header\">Design</span>\n        </li>\n        <li class=\"menu-item\" *ngFor=\"let route of designRoutes\" [class.current]=\"router.isRouteActive(router.generate(['/'+route.name]))\">\n            <a [routerLink]=\"['/' + route.name]\" class=\"menu-link\">{{route.name}}</a>\n        </li>\n        <li class=\"menu-section-header\">\n            <span class=\"menu-item-header\">Components</span>\n        </li>\n        <li class=\"menu-item\" *ngFor=\"let route of componentRoutes\" [class.current]=\"router.isRouteActive(router.generate(['/'+route.name]))\">\n            <a [routerLink]=\"['/'+route.name]\" class=\"menu-link\">{{route.name}}</a>\n        </li>\n        <li class=\"menu-section-header\">\n            <span class=\"menu-item-header\">Utils</span>\n        </li>\n        <li class=\"menu-item\" *ngFor=\"let route of utilRoutes\" [class.current]=\"router.isRouteActive(router.generate(['/'+route.name]))\">\n            <a [routerLink]=\"['/'+route.name]\" class=\"menu-link\">{{route.name}}</a>\n        </li>\n        <li class=\"menu-line\"></li>\n    </ul>\n</nav>\n<main class=\"main-content\" [ngClass]=\"{open: menuOpen}\">\n    <nav class=\"responsive-nav\">\n        <button name=\"open-menu\" (click)=\"toggleMenu()\">\n            <span>&#9776;</span>\n        </button>\n        <svg data-name=\"bullhorn-text\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"\n            xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:a=\"http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/\"\n            x=\"0px\" y=\"0px\" width=\"240.2px\" height=\"48.8px\" viewBox=\"0 0 240.2 48.8\"\n            style=\"enable-background:new 0 0 240.2 48.8;\" xml:space=\"preserve\">\n            <g>\n                <path class=\"st0\" d=\"M0,1.5c0-0.6,0.5-1.1,1.1-1.1h20c5.4,0,9.5,1.4,12.3,4.2c2.1,2.1,3.2,4.7,3.2,7.8v0.1c0,1.4-0.2,2.6-0.6,3.8\n            c-0.4,1.1-0.9,2.1-1.5,2.9c-0.6,0.8-1.3,1.6-2.1,2.2c-0.2,0.2-0.4,0.3-0.7,0.5c-0.7,0.5-0.6,1.6,0.1,1.9c1.9,0.9,3.4,1.9,4.7,3.2\n            c1.7,1.7,2.6,4.2,2.6,7.4v0.1c0,2.1-0.4,4-1.2,5.6c-0.8,1.6-2,3-3.5,4c-1.5,1.1-3.4,1.9-5.5,2.5c-2.1,0.6-4.5,0.8-7.2,0.8H1.1\n            C0.5,47.5,0,47,0,46.4V1.5z M19.4,20.3c2.7,0,4.8-0.5,6.5-1.6c1.6-1,2.4-2.6,2.4-4.8v-0.1c0-1.9-0.7-3.3-2.1-4.4\n            c-1.4-1-3.5-1.6-6.2-1.6H9.3c-0.6,0-1.1,0.5-1.1,1.1v10.2c0,0.6,0.5,1.1,1.1,1.1H19.4z M21.8,40.1c2.8,0,5-0.5,6.7-1.6\n            c1.6-1.1,2.4-2.7,2.4-4.8v-0.1c0-2-0.8-3.6-2.4-4.6c-1.6-1.1-4-1.6-7.3-1.6h-12c-0.6,0-1.1,0.5-1.1,1.1V39c0,0.6,0.5,1.1,1.1,1.1\n            H21.8z\" />\n                <path class=\"st0\" d=\"M81.3,0h5.9c0.7,0,1.3,0.6,1.3,1.3v45c0,0.7-0.6,1.3-1.3,1.3h-5.9c-0.7,0-1.3-0.6-1.3-1.3v-45\n            C80.1,0.6,80.6,0,81.3,0z\" />\n                <path class=\"st0\" d=\"M96,0h5.9c0.7,0,1.3,0.6,1.3,1.3v45c0,0.7-0.6,1.3-1.3,1.3H96c-0.7,0-1.3-0.6-1.3-1.3v-45\n            C94.8,0.6,95.3,0,96,0z\" />\n                <path class=\"st0\" d=\"M109.5,0l4,0c2.3,0,4.2,1.9,4.2,4.2v13.3c0.9-0.9,2.1-1.9,3.7-2.8c1.6-0.9,3.7-1.4,6.3-1.4c2,0,3.9,0.3,5.5,1\n            c1.6,0.7,3,1.6,4,2.8c1.1,1.2,1.9,2.7,2.5,4.4c0.6,1.7,0.9,3.6,0.9,5.6v19.1c0,0.6-0.5,1.2-1.2,1.2h-6.1c-0.6,0-1.2-0.5-1.2-1.2\n            V27.3c0-2.1-0.6-3.8-1.7-4.9c-1.2-1.2-2.7-1.7-4.5-1.7c-1.1,0-2.2,0.2-3.2,0.7c-1,0.5-1.9,1.1-2.6,1.9c-0.7,0.8-1.3,1.7-1.7,2.8\n            c-0.4,1.1-0.6,2.2-0.6,3.5v16.9c0,0.6-0.5,1.2-1.2,1.2h-6.1c-0.6,0-1.2-0.5-1.2-1.2V5.8V0z\"\n                />\n                <path class=\"st0\" d=\"M210.5,14.1h5.3c0.7,0,1.4,0.6,1.4,1.3l0.1,2.4c0.4-0.5,0.9-1,1.5-1.5c0.6-0.5,1.3-1,2.1-1.5\n            c0.8-0.5,1.8-0.8,2.8-1.1c1-0.3,2.2-0.4,3.6-0.4c4.2,0,7.4,1.2,9.5,3.7c2.2,2.5,3.3,5.8,3.3,10.1V46c0,0.8-0.7,1.5-1.5,1.5h-5.4\n            c-0.8,0-1.5-0.7-1.5-1.5V27.3c0-2.1-0.6-3.8-1.7-4.9c-1.2-1.2-2.7-1.7-4.5-1.7c-1.1,0-2.2,0.2-3.2,0.7c-1,0.5-1.9,1.1-2.6,1.9\n            c-0.7,0.8-1.3,1.7-1.7,2.8c-0.4,1.1-0.6,2.2-0.6,3.5V46c0,0.8-0.7,1.5-1.5,1.5h-5.4c-0.8,0-1.5-0.7-1.5-1.5V15.5\n            C209.1,14.7,209.7,14.1,210.5,14.1z\" />\n                <g>\n                    <path class=\"st0\" d=\"M184.5,14h5.3c0.8,0,1.4,0.6,1.4,1.4l0.1,2.8c0.4-0.5,0.9-1,1.5-1.6c0.6-0.6,1.3-1.1,2.1-1.6\n                c0.8-0.5,1.7-0.9,2.8-1.2c1.1-0.3,2.3-0.5,3.7-0.5c0.8,0,1.5,0,2.2,0.1c0.3,0,0.5,0.1,0.8,0.2c0.6,0.2,1,0.8,0.9,1.4l-1.2,5.5\n                c-0.1,0.7-0.8,1.1-1.5,0.9c-0.2,0-0.4-0.1-0.6-0.1c-0.6-0.1-1.3-0.1-2.1-0.1c-1.1,0-2.2,0.2-3.3,0.6c-1,0.4-1.9,0.9-2.7,1.6\n                c-0.8,0.7-1.4,1.6-1.8,2.6c-0.5,1-0.7,2.1-0.7,3.3V46c0,0.8-0.6,1.4-1.4,1.4h-5.6c-0.8,0-1.4-0.6-1.4-1.4V15.4\n                C183.1,14.6,183.7,14,184.5,14z\" />\n                </g>\n                <path id=\"u_1_\" class=\"st0\" d=\"M67.4,14.6c-0.7,0-1.3,0.6-1.3,1.3v16.2c0,4.4-3.2,7.4-7,7.4c-0.7,0-1.2,0-1.5,0c-3.9,0-7-3-7-7.4\n            V15.9c0-0.7-0.6-1.3-1.3-1.3H44c-0.7,0-1.3,0.6-1.3,1.3v18c0,7.8,7.2,13.3,14.7,13.3v0h0.1c0,0,0.1,0,0.1,0l0,0h1.4l0,0\n            c0,0,0.1,0,0.1,0h0.2v0c7.5-0.1,14.6-5.5,14.6-13.3v-18c0-0.7-0.6-1.3-1.3-1.3H67.4z\"\n                />\n                <g>\n                    <g>\n                        <g>\n                            <path class=\"st0\" d=\"M144,30.9c0-2.4,0.4-4.7,1.3-6.9c0.9-2.2,2.1-4,3.7-5.7c1.6-1.6,3.5-2.9,5.7-3.8c2.2-0.9,4.6-1.4,7.3-1.4\n                        c2.7,0,5.1,0.5,7.3,1.4c2.2,0.9,4.1,2.2,5.7,3.8c1.6,1.6,2.8,3.5,3.7,5.7c0.9,2.2,1.3,4.4,1.3,6.9s-0.4,4.7-1.3,6.9\n                        c-0.9,2.2-2.1,4.1-3.7,5.7c-1.6,1.6-3.5,2.9-5.7,3.9c-2.2,0.9-4.6,1.4-7.3,1.4c-2.7,0-5.1-0.5-7.3-1.4c-2.2-0.9-4.1-2.2-5.7-3.9\n                        c-1.6-1.6-2.8-3.5-3.7-5.7C144.4,35.6,144,33.3,144,30.9z M161.9,41.5c1.6,0,3-0.3,4.2-1c1.2-0.6,2.2-1.5,3-2.5\n                        c0.8-1,1.4-2.2,1.7-3.4c0.4-1.2,0.6-2.5,0.6-3.7c0-1.2-0.2-2.4-0.6-3.7c-0.4-1.3-1-2.4-1.7-3.4c-0.8-1-1.8-1.9-3-2.5\n                        c-1.2-0.6-2.6-1-4.2-1c-1.6,0-3,0.3-4.2,1c-1.2,0.6-2.2,1.5-3,2.5c-0.8,1-1.4,2.2-1.7,3.4c-0.4,1.3-0.6,2.5-0.6,3.7\n                        c0,1.2,0.2,2.5,0.6,3.7c0.4,1.2,1,2.4,1.7,3.4c0.8,1,1.8,1.9,3,2.5C158.9,41.2,160.3,41.5,161.9,41.5z\"\n                            />\n                        </g>\n                    </g>\n                </g>\n            </g>\n        </svg>\n        <strong>Design System</strong>\n    </nav>\n    <router-outlet></router-outlet>\n</main>\n"
 
 /***/ },
 
-/***/ 636:
+/***/ 637:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -84,7 +84,7 @@ webpackJsonp([32],{
 	
 	var _routerDeprecated = __webpack_require__(143);
 	
-	var _novoElements = __webpack_require__(16);
+	var _novoElements = __webpack_require__(15);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -92,75 +92,75 @@ webpackJsonp([32],{
 	
 	var DemoApp = exports.DemoApp = (_dec = (0, _core.Component)({
 	    selector: 'demo-app',
-	    template: __webpack_require__(744),
+	    template: __webpack_require__(745),
 	    providers: [].concat(_toConsumableArray(_novoElements.TOAST_PROVIDERS), _toConsumableArray(_novoElements.MODAL_PROVIDERS)),
 	    directives: [_common.CORE_DIRECTIVES]
 	}), _dec2 = (0, _routerDeprecated.RouteConfig)([
 	// Base Pages (design system)
 	{ path: '/', name: 'Home', loader: function loader() {
-	        return __webpack_require__(723)('Home');
+	        return __webpack_require__(724)('Home');
 	    }, useAsDefault: true }, { path: '/composition', name: 'Composition', loader: function loader() {
-	        return __webpack_require__(725)('Layout');
+	        return __webpack_require__(726)('Layout');
 	    } }, { path: '/typography', name: 'Typography', loader: function loader() {
-	        return __webpack_require__(740)('Typography');
+	        return __webpack_require__(741)('Typography');
 	    } }, { path: '/icons', name: 'Iconography', loader: function loader() {
-	        return __webpack_require__(724)('Iconography');
+	        return __webpack_require__(725)('Iconography');
 	    } }, { path: '/color', name: 'Color', loader: function loader() {
-	        return __webpack_require__(717)('Color');
+	        return __webpack_require__(718)('Color');
 	    } },
 	
 	// Element/Component/Service/etc.. Demos
 	{ path: '/button', name: 'Button', loader: function loader() {
-	        return __webpack_require__(713)('ButtonDemo');
+	        return __webpack_require__(714)('ButtonDemo');
 	    } }, { path: '/radio', name: 'Radio', loader: function loader() {
-	        return __webpack_require__(732)('RadioDemo');
+	        return __webpack_require__(733)('RadioDemo');
 	    } }, { path: '/quick-note', name: 'QuickNote', loader: function loader() {
-	        return __webpack_require__(731)('QuickNoteDemo');
+	        return __webpack_require__(732)('QuickNoteDemo');
 	    } }, { path: '/modal', name: 'Modal', loader: function loader() {
-	        return __webpack_require__(728)('ModalDemo');
+	        return __webpack_require__(729)('ModalDemo');
 	    } }, { path: '/form', name: 'Form', loader: function loader() {
-	        return __webpack_require__(721)('FormDemo');
+	        return __webpack_require__(722)('FormDemo');
 	    } }, { path: '/toast', name: 'Toast', loader: function loader() {
-	        return __webpack_require__(738)('ToastDemo');
+	        return __webpack_require__(739)('ToastDemo');
 	    } }, { path: '/tooltip', name: 'Tooltip', loader: function loader() {
-	        return __webpack_require__(739)('TooltipDemo');
+	        return __webpack_require__(740)('TooltipDemo');
 	    } }, { path: '/cards', name: 'Cards', loader: function loader() {
-	        return __webpack_require__(715)('CardDemo');
+	        return __webpack_require__(716)('CardDemo');
 	    } }, { path: '/loading', name: 'Loading', loader: function loader() {
-	        return __webpack_require__(727)('LoadingDemo');
+	        return __webpack_require__(728)('LoadingDemo');
 	    } }, { path: '/dropdown', name: 'Dropdown', loader: function loader() {
-	        return __webpack_require__(720)('DropdownDemo');
+	        return __webpack_require__(721)('DropdownDemo');
 	    } }, { path: '/picker', name: 'Picker', loader: function loader() {
-	        return __webpack_require__(729)('PickerDemo');
+	        return __webpack_require__(730)('PickerDemo');
 	    } }, { path: '/chips', name: 'Chips', loader: function loader() {
-	        return __webpack_require__(716)('ChipsDemo');
+	        return __webpack_require__(717)('ChipsDemo');
 	    } }, { path: '/select', name: 'Select', loader: function loader() {
-	        return __webpack_require__(733)('SelectDemo');
+	        return __webpack_require__(734)('SelectDemo');
 	    } }, { path: '/tabs', name: 'Tabs', loader: function loader() {
-	        return __webpack_require__(736)('TabsDemo');
+	        return __webpack_require__(737)('TabsDemo');
 	    } }, { path: '/table', name: 'Table', loader: function loader() {
-	        return __webpack_require__(735)('TableDemo');
+	        return __webpack_require__(736)('TableDemo');
 	    } }, { path: '/list', name: 'List', loader: function loader() {
-	        return __webpack_require__(726)('ListDemo');
+	        return __webpack_require__(727)('ListDemo');
 	    } }, { path: '/header', name: 'Header', loader: function loader() {
-	        return __webpack_require__(722)('HeaderDemo');
+	        return __webpack_require__(723)('HeaderDemo');
 	    } }, { path: '/switch', name: 'Switch', loader: function loader() {
-	        return __webpack_require__(734)('SwitchDemo');
+	        return __webpack_require__(735)('SwitchDemo');
 	    } }, { path: '/drawer', name: 'Drawer', loader: function loader() {
-	        return __webpack_require__(719)('DrawerDemo');
+	        return __webpack_require__(720)('DrawerDemo');
 	    } }, { path: '/calendar', name: 'Calendar', loader: function loader() {
-	        return __webpack_require__(714)('CalendarDemo');
+	        return __webpack_require__(715)('CalendarDemo');
 	    } }, { path: '/dragula', name: 'Dragula', loader: function loader() {
-	        return __webpack_require__(718)('DragulaDemo');
+	        return __webpack_require__(719)('DragulaDemo');
 	    } }, { path: '/tiles', name: 'Tiles', loader: function loader() {
-	        return __webpack_require__(737)('TilesDemo');
+	        return __webpack_require__(738)('TilesDemo');
 	    } },
 	
 	// Utils
 	{ path: '/utils', name: 'Utils', loader: function loader() {
-	        return __webpack_require__(741)('UtilsDemo');
+	        return __webpack_require__(742)('UtilsDemo');
 	    } }, { path: '/pipes', name: 'Pipes', loader: function loader() {
-	        return __webpack_require__(730)('PipesDemo');
+	        return __webpack_require__(731)('PipesDemo');
 	    } }]), _dec(_class = _dec2(_class = function () {
 	    function DemoApp(router, toastService, view, modalService) {
 	        var _this = this;
@@ -169,7 +169,7 @@ webpackJsonp([32],{
 	
 	        this.router = router;
 	        this.menuOpen = false;
-	        this.version = ("0.1.9");
+	        this.version = ("0.1.10");
 	
 	        toastService.parentViewContainer = view;
 	        modalService.parentViewContainer = view;
@@ -212,29 +212,12 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 713:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function (namespace) {
-	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(2, function (require) {
-	      if (namespace) {
-	        resolve(__webpack_require__(522)[namespace]);
-	      } else {
-	        resolve(__webpack_require__(522));
-	      }
-	    });
-	  });
-	}
-
-/***/ },
-
 /***/ 714:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(16, function (require) {
+	    __webpack_require__.e/* nsure */(2, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(523)[namespace]);
 	      } else {
@@ -251,7 +234,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(5, function (require) {
+	    __webpack_require__.e/* nsure */(16, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(524)[namespace]);
 	      } else {
@@ -268,7 +251,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(10, function (require) {
+	    __webpack_require__.e/* nsure */(5, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(525)[namespace]);
 	      } else {
@@ -285,7 +268,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(29, function (require) {
+	    __webpack_require__.e/* nsure */(10, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(526)[namespace]);
 	      } else {
@@ -302,7 +285,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(15, function (require) {
+	    __webpack_require__.e/* nsure */(29, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(527)[namespace]);
 	      } else {
@@ -319,7 +302,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(23, function (require) {
+	    __webpack_require__.e/* nsure */(15, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(528)[namespace]);
 	      } else {
@@ -336,7 +319,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(22, function (require) {
+	    __webpack_require__.e/* nsure */(23, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(529)[namespace]);
 	      } else {
@@ -353,7 +336,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(1, function (require) {
+	    __webpack_require__.e/* nsure */(22, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(530)[namespace]);
 	      } else {
@@ -370,7 +353,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(21, function (require) {
+	    __webpack_require__.e/* nsure */(1, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(531)[namespace]);
 	      } else {
@@ -387,7 +370,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(28, function (require) {
+	    __webpack_require__.e/* nsure */(21, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(532)[namespace]);
 	      } else {
@@ -404,7 +387,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(27, function (require) {
+	    __webpack_require__.e/* nsure */(28, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(533)[namespace]);
 	      } else {
@@ -421,7 +404,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(26, function (require) {
+	    __webpack_require__.e/* nsure */(27, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(534)[namespace]);
 	      } else {
@@ -438,7 +421,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(20, function (require) {
+	    __webpack_require__.e/* nsure */(26, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(535)[namespace]);
 	      } else {
@@ -455,7 +438,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(14, function (require) {
+	    __webpack_require__.e/* nsure */(20, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(536)[namespace]);
 	      } else {
@@ -472,7 +455,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(4, function (require) {
+	    __webpack_require__.e/* nsure */(14, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(537)[namespace]);
 	      } else {
@@ -489,7 +472,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(7, function (require) {
+	    __webpack_require__.e/* nsure */(4, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(538)[namespace]);
 	      } else {
@@ -506,7 +489,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(19, function (require) {
+	    __webpack_require__.e/* nsure */(7, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(539)[namespace]);
 	      } else {
@@ -523,7 +506,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(9, function (require) {
+	    __webpack_require__.e/* nsure */(19, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(540)[namespace]);
 	      } else {
@@ -540,7 +523,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(13, function (require) {
+	    __webpack_require__.e/* nsure */(9, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(541)[namespace]);
 	      } else {
@@ -557,7 +540,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(12, function (require) {
+	    __webpack_require__.e/* nsure */(13, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(542)[namespace]);
 	      } else {
@@ -574,7 +557,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(18, function (require) {
+	    __webpack_require__.e/* nsure */(12, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(543)[namespace]);
 	      } else {
@@ -591,7 +574,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(6, function (require) {
+	    __webpack_require__.e/* nsure */(18, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(544)[namespace]);
 	      } else {
@@ -608,7 +591,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(3, function (require) {
+	    __webpack_require__.e/* nsure */(6, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(545)[namespace]);
 	      } else {
@@ -625,7 +608,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(17, function (require) {
+	    __webpack_require__.e/* nsure */(3, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(546)[namespace]);
 	      } else {
@@ -642,7 +625,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(11, function (require) {
+	    __webpack_require__.e/* nsure */(17, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(547)[namespace]);
 	      } else {
@@ -659,7 +642,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(8, function (require) {
+	    __webpack_require__.e/* nsure */(11, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(548)[namespace]);
 	      } else {
@@ -676,7 +659,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(25, function (require) {
+	    __webpack_require__.e/* nsure */(8, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(549)[namespace]);
 	      } else {
@@ -693,7 +676,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(24, function (require) {
+	    __webpack_require__.e/* nsure */(25, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(550)[namespace]);
 	      } else {
@@ -705,7 +688,24 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 637:
+/***/ 742:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function (namespace) {
+	  return new Promise(function (resolve) {
+	    __webpack_require__.e/* nsure */(24, function (require) {
+	      if (namespace) {
+	        resolve(__webpack_require__(551)[namespace]);
+	      } else {
+	        resolve(__webpack_require__(551));
+	      }
+	    });
+	  });
+	}
+
+/***/ },
+
+/***/ 638:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -732,7 +732,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 638:
+/***/ 639:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -753,7 +753,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 639:
+/***/ 640:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -769,7 +769,7 @@ webpackJsonp([32],{
 	
 	var _routerDeprecated = __webpack_require__(143);
 	
-	var _novoElements = __webpack_require__(16);
+	var _novoElements = __webpack_require__(15);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } // These are globally available services in any component or any other service
 	
@@ -783,7 +783,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 640:
+/***/ 641:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -793,7 +793,7 @@ webpackJsonp([32],{
 	});
 	exports.PLATFORM_PROVIDERS = undefined;
 	
-	var _browserDirectives = __webpack_require__(637);
+	var _browserDirectives = __webpack_require__(638);
 	
 	Object.keys(_browserDirectives).forEach(function (key) {
 	    if (key === "default") return;
@@ -805,7 +805,7 @@ webpackJsonp([32],{
 	    });
 	});
 	
-	var _browserPipes = __webpack_require__(638);
+	var _browserPipes = __webpack_require__(639);
 	
 	Object.keys(_browserPipes).forEach(function (key) {
 	    if (key === "default") return;
@@ -817,7 +817,7 @@ webpackJsonp([32],{
 	    });
 	});
 	
-	var _browserProviders = __webpack_require__(639);
+	var _browserProviders = __webpack_require__(640);
 	
 	Object.keys(_browserProviders).forEach(function (key) {
 	    if (key === "default") return;
@@ -836,7 +836,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 641:
+/***/ 642:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
