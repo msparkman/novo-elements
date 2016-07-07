@@ -19,11 +19,11 @@ webpackJsonp([32],{
 	
 	var _platformBrowserDynamic = __webpack_require__(329);
 	
-	var _browser = __webpack_require__(641);
+	var _browser = __webpack_require__(640);
 	
-	var _environment = __webpack_require__(642);
+	var _environment = __webpack_require__(641);
 	
-	var _App = __webpack_require__(637);
+	var _App = __webpack_require__(636);
 	
 	__webpack_require__(743);
 	
@@ -64,7 +64,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 637:
+/***/ 636:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -169,7 +169,7 @@ webpackJsonp([32],{
 	
 	        this.router = router;
 	        this.menuOpen = false;
-	        this.version = ("0.1.10");
+	        this.version = ("0.1.11");
 	
 	        toastService.parentViewContainer = view;
 	        modalService.parentViewContainer = view;
@@ -219,9 +219,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(2, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(523)[namespace]);
+	        resolve(__webpack_require__(522)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(523));
+	        resolve(__webpack_require__(522));
 	      }
 	    });
 	  });
@@ -236,9 +236,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(16, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(524)[namespace]);
+	        resolve(__webpack_require__(523)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(524));
+	        resolve(__webpack_require__(523));
 	      }
 	    });
 	  });
@@ -253,9 +253,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(5, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(525)[namespace]);
+	        resolve(__webpack_require__(524)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(525));
+	        resolve(__webpack_require__(524));
 	      }
 	    });
 	  });
@@ -270,9 +270,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(10, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(526)[namespace]);
+	        resolve(__webpack_require__(525)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(526));
+	        resolve(__webpack_require__(525));
 	      }
 	    });
 	  });
@@ -287,9 +287,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(29, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(527)[namespace]);
+	        resolve(__webpack_require__(526)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(527));
+	        resolve(__webpack_require__(526));
 	      }
 	    });
 	  });
@@ -304,9 +304,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(15, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(528)[namespace]);
+	        resolve(__webpack_require__(527)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(528));
+	        resolve(__webpack_require__(527));
 	      }
 	    });
 	  });
@@ -321,9 +321,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(23, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(529)[namespace]);
+	        resolve(__webpack_require__(528)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(529));
+	        resolve(__webpack_require__(528));
 	      }
 	    });
 	  });
@@ -338,9 +338,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(22, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(530)[namespace]);
+	        resolve(__webpack_require__(529)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(530));
+	        resolve(__webpack_require__(529));
 	      }
 	    });
 	  });
@@ -355,9 +355,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(1, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(531)[namespace]);
+	        resolve(__webpack_require__(530)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(531));
+	        resolve(__webpack_require__(530));
 	      }
 	    });
 	  });
@@ -372,9 +372,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(21, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(532)[namespace]);
+	        resolve(__webpack_require__(531)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(532));
+	        resolve(__webpack_require__(531));
 	      }
 	    });
 	  });
@@ -389,9 +389,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(28, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(533)[namespace]);
+	        resolve(__webpack_require__(532)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(533));
+	        resolve(__webpack_require__(532));
 	      }
 	    });
 	  });
@@ -406,9 +406,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(27, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(534)[namespace]);
+	        resolve(__webpack_require__(533)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(534));
+	        resolve(__webpack_require__(533));
 	      }
 	    });
 	  });
@@ -423,9 +423,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(26, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(535)[namespace]);
+	        resolve(__webpack_require__(534)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(535));
+	        resolve(__webpack_require__(534));
 	      }
 	    });
 	  });
@@ -440,9 +440,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(20, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(536)[namespace]);
+	        resolve(__webpack_require__(535)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(536));
+	        resolve(__webpack_require__(535));
 	      }
 	    });
 	  });
@@ -457,9 +457,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(14, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(537)[namespace]);
+	        resolve(__webpack_require__(536)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(537));
+	        resolve(__webpack_require__(536));
 	      }
 	    });
 	  });
@@ -474,9 +474,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(4, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(538)[namespace]);
+	        resolve(__webpack_require__(537)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(538));
+	        resolve(__webpack_require__(537));
 	      }
 	    });
 	  });
@@ -491,9 +491,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(7, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(539)[namespace]);
+	        resolve(__webpack_require__(538)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(539));
+	        resolve(__webpack_require__(538));
 	      }
 	    });
 	  });
@@ -508,9 +508,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(19, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(540)[namespace]);
+	        resolve(__webpack_require__(539)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(540));
+	        resolve(__webpack_require__(539));
 	      }
 	    });
 	  });
@@ -525,9 +525,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(9, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(541)[namespace]);
+	        resolve(__webpack_require__(540)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(541));
+	        resolve(__webpack_require__(540));
 	      }
 	    });
 	  });
@@ -542,9 +542,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(13, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(542)[namespace]);
+	        resolve(__webpack_require__(541)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(542));
+	        resolve(__webpack_require__(541));
 	      }
 	    });
 	  });
@@ -559,9 +559,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(12, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(543)[namespace]);
+	        resolve(__webpack_require__(542)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(543));
+	        resolve(__webpack_require__(542));
 	      }
 	    });
 	  });
@@ -576,9 +576,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(18, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(544)[namespace]);
+	        resolve(__webpack_require__(543)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(544));
+	        resolve(__webpack_require__(543));
 	      }
 	    });
 	  });
@@ -593,9 +593,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(6, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(545)[namespace]);
+	        resolve(__webpack_require__(544)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(545));
+	        resolve(__webpack_require__(544));
 	      }
 	    });
 	  });
@@ -610,9 +610,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(3, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(546)[namespace]);
+	        resolve(__webpack_require__(545)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(546));
+	        resolve(__webpack_require__(545));
 	      }
 	    });
 	  });
@@ -627,9 +627,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(17, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(547)[namespace]);
+	        resolve(__webpack_require__(546)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(547));
+	        resolve(__webpack_require__(546));
 	      }
 	    });
 	  });
@@ -644,9 +644,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(11, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(548)[namespace]);
+	        resolve(__webpack_require__(547)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(548));
+	        resolve(__webpack_require__(547));
 	      }
 	    });
 	  });
@@ -661,9 +661,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(8, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(549)[namespace]);
+	        resolve(__webpack_require__(548)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(549));
+	        resolve(__webpack_require__(548));
 	      }
 	    });
 	  });
@@ -678,9 +678,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(25, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(550)[namespace]);
+	        resolve(__webpack_require__(549)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(550));
+	        resolve(__webpack_require__(549));
 	      }
 	    });
 	  });
@@ -695,9 +695,9 @@ webpackJsonp([32],{
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(24, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(551)[namespace]);
+	        resolve(__webpack_require__(550)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(551));
+	        resolve(__webpack_require__(550));
 	      }
 	    });
 	  });
@@ -705,7 +705,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 638:
+/***/ 637:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -732,7 +732,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 639:
+/***/ 638:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -753,7 +753,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 640:
+/***/ 639:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -783,7 +783,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 641:
+/***/ 640:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -793,7 +793,7 @@ webpackJsonp([32],{
 	});
 	exports.PLATFORM_PROVIDERS = undefined;
 	
-	var _browserDirectives = __webpack_require__(638);
+	var _browserDirectives = __webpack_require__(637);
 	
 	Object.keys(_browserDirectives).forEach(function (key) {
 	    if (key === "default") return;
@@ -805,7 +805,7 @@ webpackJsonp([32],{
 	    });
 	});
 	
-	var _browserPipes = __webpack_require__(639);
+	var _browserPipes = __webpack_require__(638);
 	
 	Object.keys(_browserPipes).forEach(function (key) {
 	    if (key === "default") return;
@@ -817,7 +817,7 @@ webpackJsonp([32],{
 	    });
 	});
 	
-	var _browserProviders = __webpack_require__(640);
+	var _browserProviders = __webpack_require__(639);
 	
 	Object.keys(_browserProviders).forEach(function (key) {
 	    if (key === "default") return;
@@ -836,7 +836,7 @@ webpackJsonp([32],{
 
 /***/ },
 
-/***/ 642:
+/***/ 641:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

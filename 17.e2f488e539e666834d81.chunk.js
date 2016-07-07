@@ -40,7 +40,7 @@ webpackJsonp([17],{
 
 /***/ },
 
-/***/ 547:
+/***/ 546:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -109,9 +109,9 @@ webpackJsonp([17],{
 /***/ 1196:
 /***/ function(module, exports) {
 
-	module.exports = "<novo-tiles [options]=\"demoTiles\" (update)=\"colorSelect($event)\"></novo-tiles>\n"
+	module.exports = "<novo-tiles [options]=\"demoTiles\" (changed)=\"colorSelect($event)\" [(ngModel)]=\"value\"></novo-tiles>\n"
 
 /***/ }
 
 });
-//# sourceMappingURL=17.9ceaed24af943432f6cf.bundle.map
+//# sourceMappingURL=17.e2f488e539e666834d81.bundle.map

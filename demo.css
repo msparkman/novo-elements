@@ -4955,8 +4955,6 @@ novo-loading {
     display: block;
     border-radius: 50%;
     margin: 3px;
-    -webkit-animation: jump 1600ms infinite;
-    animation: jump 1600ms infinite;
     height: 13px;
     width: 13px; }
     novo-loading dot:nth-of-type(1) {
@@ -4970,20 +4968,100 @@ novo-loading {
     novo-loading dot:nth-of-type(5) {
       background-color: #37BC9B; }
     novo-loading dot:nth-of-type(1) {
+      -webkit-animation: jump 1600ms ease-in-out 70ms forward infinite "" "";
+      animation: jump 1600ms ease-in-out 70ms forward infinite "" "";
+      -webkit-animation-name: jump;
+      animation-name: jump;
+      -webkit-animation-duration: 1600ms;
+      animation-duration: 1600ms;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
       -webkit-animation-delay: 70ms;
-      animation-delay: 70ms; }
+      animation-delay: 70ms;
+      -webkit-animation-direction: forward;
+      animation-direction: forward;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: "";
+      animation-fill-mode: "";
+      -webkit-animation-play-state: "";
+      animation-play-state: ""; }
     novo-loading dot:nth-of-type(2) {
+      -webkit-animation: jump 1600ms ease-in-out 140ms forward infinite "" "";
+      animation: jump 1600ms ease-in-out 140ms forward infinite "" "";
+      -webkit-animation-name: jump;
+      animation-name: jump;
+      -webkit-animation-duration: 1600ms;
+      animation-duration: 1600ms;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
       -webkit-animation-delay: 140ms;
-      animation-delay: 140ms; }
+      animation-delay: 140ms;
+      -webkit-animation-direction: forward;
+      animation-direction: forward;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: "";
+      animation-fill-mode: "";
+      -webkit-animation-play-state: "";
+      animation-play-state: ""; }
     novo-loading dot:nth-of-type(3) {
+      -webkit-animation: jump 1600ms ease-in-out 210ms forward infinite "" "";
+      animation: jump 1600ms ease-in-out 210ms forward infinite "" "";
+      -webkit-animation-name: jump;
+      animation-name: jump;
+      -webkit-animation-duration: 1600ms;
+      animation-duration: 1600ms;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
       -webkit-animation-delay: 210ms;
-      animation-delay: 210ms; }
+      animation-delay: 210ms;
+      -webkit-animation-direction: forward;
+      animation-direction: forward;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: "";
+      animation-fill-mode: "";
+      -webkit-animation-play-state: "";
+      animation-play-state: ""; }
     novo-loading dot:nth-of-type(4) {
+      -webkit-animation: jump 1600ms ease-in-out 280ms forward infinite "" "";
+      animation: jump 1600ms ease-in-out 280ms forward infinite "" "";
+      -webkit-animation-name: jump;
+      animation-name: jump;
+      -webkit-animation-duration: 1600ms;
+      animation-duration: 1600ms;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
       -webkit-animation-delay: 280ms;
-      animation-delay: 280ms; }
+      animation-delay: 280ms;
+      -webkit-animation-direction: forward;
+      animation-direction: forward;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: "";
+      animation-fill-mode: "";
+      -webkit-animation-play-state: "";
+      animation-play-state: ""; }
     novo-loading dot:nth-of-type(5) {
+      -webkit-animation: jump 1600ms ease-in-out 350ms forward infinite "" "";
+      animation: jump 1600ms ease-in-out 350ms forward infinite "" "";
+      -webkit-animation-name: jump;
+      animation-name: jump;
+      -webkit-animation-duration: 1600ms;
+      animation-duration: 1600ms;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
       -webkit-animation-delay: 350ms;
-      animation-delay: 350ms; }
+      animation-delay: 350ms;
+      -webkit-animation-direction: forward;
+      animation-direction: forward;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: "";
+      animation-fill-mode: "";
+      -webkit-animation-play-state: "";
+      animation-play-state: ""; }
   novo-loading.aqua dot {
     background-color: #3BAFDA; }
   novo-loading.ocean dot {
@@ -5091,37 +5169,24 @@ novo-spinner {
       novo-spinner svg.bullhornSpinner.lavender .circleGroup circle:nth-of-type(odd) {
         fill: #a68ee1; }
     novo-spinner svg.bullhornSpinner .circleGroup circle {
-      cx: 47;
-      cy: 47;
-      r: 6;
       fill: #3D464D;
       -webkit-transform-origin: center center;
       transform-origin: center center; }
       novo-spinner svg.bullhornSpinner .circleGroup circle:nth-of-type(odd) {
         fill: #48535b; }
       novo-spinner svg.bullhornSpinner .circleGroup circle:nth-of-type(1) {
-        -webkit-animation: circle1 3400ms infinite;
-        animation: circle1 3400ms infinite;
         -webkit-animation-delay: 70ms;
         animation-delay: 70ms; }
       novo-spinner svg.bullhornSpinner .circleGroup circle:nth-of-type(2) {
-        -webkit-animation: circle2 3400ms infinite;
-        animation: circle2 3400ms infinite;
         -webkit-animation-delay: 140ms;
         animation-delay: 140ms; }
       novo-spinner svg.bullhornSpinner .circleGroup circle:nth-of-type(3) {
-        -webkit-animation: circle3 3400ms infinite;
-        animation: circle3 3400ms infinite;
         -webkit-animation-delay: 210ms;
         animation-delay: 210ms; }
       novo-spinner svg.bullhornSpinner .circleGroup circle:nth-of-type(4) {
-        -webkit-animation: circle4 3400ms infinite;
-        animation: circle4 3400ms infinite;
         -webkit-animation-delay: 280ms;
         animation-delay: 280ms; }
       novo-spinner svg.bullhornSpinner .circleGroup circle:nth-of-type(5) {
-        -webkit-animation: circle5 3400ms infinite;
-        animation: circle5 3400ms infinite;
         -webkit-animation-delay: 350ms;
         animation-delay: 350ms; }
     novo-spinner svg.bullhornSpinner.multicolor .circleGroup circle:nth-of-type(1) {
@@ -5372,7 +5437,7 @@ novo-select {
     -webkit-transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
     transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
     width: 100%;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 -1px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     font-size: 1rem;
     z-index: -1;
     opacity: 0; }
@@ -8043,7 +8108,7 @@ novo-form {
               height: 15px;
               width: 15px;
               font-size: 15px;
-              top: 13px;
+              top: 50%;
               -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
               novo-form .novo-form-container form form-field form-input address-input i.required-indicator.bhi-circle,
@@ -8372,7 +8437,7 @@ novo-form {
                 color: #DA4453;
                 height: 10px;
                 width: 10px;
-                font-size: 10px; }
+                font-size: 7px; }
               novo-form .novo-form-container form form-field form-input chips-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input quick-note-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input entity-chips-input i.required-indicator.bhi-check {
@@ -9341,76 +9406,76 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 45px;
-      height: 45px; }
+      width: 38px;
+      height: 38px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
-      width: 29px;
-      height: 29px; }
+      width: 41px;
+      height: 41px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 35px;
-      height: 35px; }
+      width: 36px;
+      height: 36px; }
     color header .background-boxes .bb-lead {
       background: #AA6699;
-      width: 35px;
-      height: 35px; }
+      width: 40px;
+      height: 40px; }
     color header .background-boxes .bb-contact {
       background: #FFAA44;
-      width: 28px;
-      height: 28px; }
+      width: 30px;
+      height: 30px; }
     color header .background-boxes .bb-opportunity {
       background: #662255;
-      width: 29px;
-      height: 29px; }
+      width: 38px;
+      height: 38px; }
     color header .background-boxes .bb-job {
       background: #BB5566;
-      width: 32px;
-      height: 32px; }
+      width: 42px;
+      height: 42px; }
     color header .background-boxes .bb-submission {
       background: #778899;
-      width: 41px;
-      height: 41px; }
+      width: 42px;
+      height: 42px; }
     color header .background-boxes .bb-placement {
       background: #0B344F;
-      width: 27px;
-      height: 27px; }
+      width: 34px;
+      height: 34px; }
     color header .background-boxes .bb-aqua {
       background: #3BAFDA;
-      width: 41px;
-      height: 41px; }
+      width: 36px;
+      height: 36px; }
     color header .background-boxes .bb-ocean {
       background: #4A89DC;
-      width: 39px;
-      height: 39px; }
+      width: 40px;
+      height: 40px; }
     color header .background-boxes .bb-mint {
       background: #37BC9B;
-      width: 28px;
-      height: 28px; }
+      width: 33px;
+      height: 33px; }
     color header .background-boxes .bb-grass {
       background: #8CC152;
-      width: 45px;
-      height: 45px; }
+      width: 30px;
+      height: 30px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
-      width: 43px;
-      height: 43px; }
+      width: 28px;
+      height: 28px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
-      width: 43px;
-      height: 43px; }
+      width: 41px;
+      height: 41px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
-      width: 28px;
-      height: 28px; }
+      width: 43px;
+      height: 43px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 44px;
-      height: 44px; }
+      width: 27px;
+      height: 27px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 28px;
-      height: 28px; }
+      width: 45px;
+      height: 45px; }
 
 color article.color-blocks {
   display: -webkit-box;
