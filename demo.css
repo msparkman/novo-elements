@@ -1611,6 +1611,9 @@ i {
     i[theme][theme="contained"].placement {
       color: #ffffff;
       background: #0B344F; }
+    i[theme][theme="contained"].note {
+      color: #ffffff;
+      background: #778899; }
     i[theme][theme="contained"].aqua {
       color: #ffffff;
       background: #3BAFDA; }
@@ -1664,6 +1667,9 @@ i {
     background: transparent; }
   i[theme][theme="entity"].placement {
     color: #0B344F;
+    background: transparent; }
+  i[theme][theme="entity"].note {
+    color: #778899;
     background: transparent; }
 
 h1 i,
@@ -2438,7 +2444,7 @@ novo-toast {
   position: relative;
   background: #0D2D42;
   color: #ffffff;
-  padding: 15px;
+  padding: 15px 15px 15px 25px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
   novo-toast.show {
     display: block; }
@@ -2488,6 +2494,10 @@ novo-toast.toast-container > .toast-icon {
   border-radius: 3px;
   margin-right: 15px; }
   novo-toast.toast-container > .toast-icon i {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
     top: 0;
     font-size: 16px;
@@ -2495,7 +2505,16 @@ novo-toast.toast-container > .toast-icon {
 
 novo-toast.toast-container .toast-content {
   float: left;
-  width: calc(100% - 47px); }
+  width: calc(100% - 47px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   novo-toast.toast-container .toast-content h5 + p {
     top: 0; }
   novo-toast.toast-container .toast-content p {
@@ -2518,8 +2537,9 @@ novo-toast .toast-content > p {
   max-width: inherit; }
   novo-toast .toast-content > p.message-only {
     top: 0;
-    font-size: 18px;
-    line-height: 22px; }
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0; }
 
 novo-toast.danger i,
 novo-toast.danger p,
@@ -2596,6 +2616,9 @@ novo-toast.submission {
 
 novo-toast.placement {
   background: #0B344F; }
+
+novo-toast.note {
+  background: #778899; }
 
 novo-toast.text {
   background: #3D464D; }
@@ -5369,7 +5392,8 @@ novo-spinner {
 novo-select {
   display: block;
   position: relative;
-  max-width: 180px;
+  width: 100%;
+  max-width: 800px;
   min-width: 180px;
   cursor: pointer;
   font-size: 1rem; }
@@ -5378,11 +5402,13 @@ novo-select {
     z-index: 2;
     max-height: 200px;
     min-width: 200px;
+    width: 100%;
+    max-width: 800px;
     width: inherit;
     overflow: auto;
     padding: 8px 0 16px;
     opacity: 1; }
-  novo-select button {
+  novo-select div[type="button"] {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5409,17 +5435,17 @@ novo-select {
     text-transform: none;
     padding: 0 10px 0 0;
     font-size: 1rem; }
-    novo-select button.empty {
+    novo-select div[type="button"].empty {
       color: #A9A9A9; }
-    novo-select button:focus, novo-select button:hover {
+    novo-select div[type="button"]:focus, novo-select div[type="button"]:hover {
       outline: none; }
-    novo-select button:hover {
+    novo-select div[type="button"]:hover {
       border-bottom: 1px solid #afb9c0; }
-    novo-select button:focus {
+    novo-select div[type="button"]:focus {
       border-bottom: 1px solid #4A89DC; }
-      novo-select button:focus i {
+      novo-select div[type="button"]:focus i {
         color: rgba(0, 0, 0, 0.73); }
-    novo-select button i {
+    novo-select div[type="button"] i {
       font-size: 0.8em;
       color: #A9A9A9; }
   novo-select .novo-select-list {
@@ -5477,7 +5503,7 @@ novo-select {
         font-weight: 500; }
       novo-select .novo-select-list li.open.select-header {
         background: #f4f4f4;
-        padding: 10px 0 0 0;
+        padding: 10px 0 0;
         line-height: 28px;
         height: 60px;
         border-bottom: 1px solid #e9e9e9; }
@@ -5489,7 +5515,7 @@ novo-select {
       padding: 0; }
   novo-select[disabled] {
     pointer-events: none; }
-    novo-select[disabled] button {
+    novo-select[disabled] div[type="button"] {
       color: #999999; }
   novo-select .select-header button {
     text-transform: uppercase; }
@@ -5533,7 +5559,7 @@ novo-select {
       float: left;
       width: auto;
       font-weight: 500;
-      font-size: .8rem;
+      font-size: 0.8rem;
       color: #ACACAC; }
       novo-select .select-header div.active button:hover {
         color: #868686; }
@@ -6581,7 +6607,7 @@ novo-time-picker {
   width: 250px;
   min-width: 250px;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 2px 7px rgba(0, 0, 0, 0.1);
   z-index: 999;
@@ -7440,6 +7466,12 @@ header.novo-header[theme="placement"] {
   header.novo-header[theme="placement"] > section.primary {
     background: #0B344F; }
 
+header.novo-header[theme="note"] {
+  background: #778899;
+  color: #fff; }
+  header.novo-header[theme="note"] > section.primary {
+    background: #778899; }
+
 header.novo-header[theme="positive"] {
   background: #4A89DC;
   color: #fff; }
@@ -7567,6 +7599,8 @@ novo-list-item {
       background: #778899; }
     novo-list-item item-avatar i.placement {
       background: #0B344F; }
+    novo-list-item item-avatar i.note {
+      background: #778899; }
   novo-list-item item-title h3 {
     font-size: 18px;
     margin: 0;
@@ -7619,6 +7653,8 @@ novo-list-item {
       color: #778899; }
     novo-list-item item-content i.placement {
       color: #0B344F; }
+    novo-list-item item-content i.note {
+      color: #778899; }
     novo-list-item item-content.vertical-list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -7913,22 +7949,24 @@ novo-pagination {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; }
-  novo-pagination novo-select button {
-    color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
-    novo-pagination novo-select button:hover {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.55); }
-      novo-pagination novo-select button:hover i {
-        opacity: 0.75;
+  novo-pagination novo-select {
+    max-width: 200px; }
+    novo-pagination novo-select div[type="button"] {
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-pagination novo-select div[type="button"]:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.55); }
+        novo-pagination novo-select div[type="button"]:hover i {
+          opacity: 0.75;
+          color: #fff; }
+      novo-pagination novo-select div[type="button"]:active, novo-pagination novo-select div[type="button"]:focus {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
+        novo-pagination novo-select div[type="button"]:active i, novo-pagination novo-select div[type="button"]:focus i {
+          opacity: 1;
+          color: #fff; }
+      novo-pagination novo-select div[type="button"] i {
+        opacity: 0.45;
         color: #fff; }
-    novo-pagination novo-select button:focus, novo-pagination novo-select button:active {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
-      novo-pagination novo-select button:focus i, novo-pagination novo-select button:active i {
-        opacity: 1;
-        color: #fff; }
-    novo-pagination novo-select button i {
-      opacity: 0.45;
-      color: #fff; }
   novo-pagination .pager {
     list-style-type: none; }
     novo-pagination .pager .page {
@@ -8070,11 +8108,11 @@ novo-form {
           novo-form .novo-form-container form form-field form-input currency-input,
           novo-form .novo-form-container form form-field form-input date-input,
           novo-form .novo-form-container form form-field form-input date-time-input,
+          novo-form .novo-form-container form form-field form-input entity-input,
           novo-form .novo-form-container form form-field form-input float-input,
           novo-form .novo-form-container form form-field form-input number-input,
           novo-form .novo-form-container form form-field form-input percent-input,
           novo-form .novo-form-container form form-field form-input picker-input,
-          novo-form .novo-form-container form form-field form-input entity-input,
           novo-form .novo-form-container form form-field form-input radio-input,
           novo-form .novo-form-container form form-field form-input select-input,
           novo-form .novo-form-container form form-field form-input text-area,
@@ -8092,11 +8130,11 @@ novo-form {
             novo-form .novo-form-container form form-field form-input currency-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input date-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input date-time-input i.required-indicator,
+            novo-form .novo-form-container form form-field form-input entity-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input float-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input number-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input percent-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input picker-input i.required-indicator,
-            novo-form .novo-form-container form form-field form-input entity-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input radio-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input select-input i.required-indicator,
             novo-form .novo-form-container form form-field form-input text-area i.required-indicator,
@@ -8116,11 +8154,11 @@ novo-form {
               novo-form .novo-form-container form form-field form-input currency-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input date-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input date-time-input i.required-indicator.bhi-circle,
+              novo-form .novo-form-container form form-field form-input entity-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input float-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input number-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input percent-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input picker-input i.required-indicator.bhi-circle,
-              novo-form .novo-form-container form form-field form-input entity-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input radio-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input select-input i.required-indicator.bhi-circle,
               novo-form .novo-form-container form form-field form-input text-area i.required-indicator.bhi-circle,
@@ -8137,11 +8175,11 @@ novo-form {
               novo-form .novo-form-container form form-field form-input currency-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input date-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input date-time-input i.required-indicator.bhi-check,
+              novo-form .novo-form-container form form-field form-input entity-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input float-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input number-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input percent-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input picker-input i.required-indicator.bhi-check,
-              novo-form .novo-form-container form form-field form-input entity-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input radio-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input select-input i.required-indicator.bhi-check,
               novo-form .novo-form-container form form-field form-input text-area i.required-indicator.bhi-check,
@@ -8159,6 +8197,8 @@ novo-form {
             novo-form .novo-form-container form form-field form-input date-input textarea,
             novo-form .novo-form-container form form-field form-input date-time-input input,
             novo-form .novo-form-container form form-field form-input date-time-input textarea,
+            novo-form .novo-form-container form form-field form-input entity-input input,
+            novo-form .novo-form-container form form-field form-input entity-input textarea,
             novo-form .novo-form-container form form-field form-input float-input input,
             novo-form .novo-form-container form form-field form-input float-input textarea,
             novo-form .novo-form-container form form-field form-input number-input input,
@@ -8167,8 +8207,6 @@ novo-form {
             novo-form .novo-form-container form form-field form-input percent-input textarea,
             novo-form .novo-form-container form form-field form-input picker-input input,
             novo-form .novo-form-container form form-field form-input picker-input textarea,
-            novo-form .novo-form-container form form-field form-input entity-input input,
-            novo-form .novo-form-container form form-field form-input entity-input textarea,
             novo-form .novo-form-container form form-field form-input radio-input input,
             novo-form .novo-form-container form form-field form-input radio-input textarea,
             novo-form .novo-form-container form form-field form-input select-input input,
@@ -8182,7 +8220,7 @@ novo-form {
             novo-form .novo-form-container form form-field form-input time-input input,
             novo-form .novo-form-container form form-field form-input time-input textarea {
               font-size: 1em;
-              background: transparent;
+              background: transparent !important;
               border: none;
               border-bottom: 1px solid #EAEAEA;
               border-radius: 0;
@@ -8206,6 +8244,8 @@ novo-form {
               novo-form .novo-form-container form form-field form-input date-input textarea:hover,
               novo-form .novo-form-container form form-field form-input date-time-input input:hover,
               novo-form .novo-form-container form form-field form-input date-time-input textarea:hover,
+              novo-form .novo-form-container form form-field form-input entity-input input:hover,
+              novo-form .novo-form-container form form-field form-input entity-input textarea:hover,
               novo-form .novo-form-container form form-field form-input float-input input:hover,
               novo-form .novo-form-container form form-field form-input float-input textarea:hover,
               novo-form .novo-form-container form form-field form-input number-input input:hover,
@@ -8214,8 +8254,6 @@ novo-form {
               novo-form .novo-form-container form form-field form-input percent-input textarea:hover,
               novo-form .novo-form-container form form-field form-input picker-input input:hover,
               novo-form .novo-form-container form form-field form-input picker-input textarea:hover,
-              novo-form .novo-form-container form form-field form-input entity-input input:hover,
-              novo-form .novo-form-container form form-field form-input entity-input textarea:hover,
               novo-form .novo-form-container form form-field form-input radio-input input:hover,
               novo-form .novo-form-container form form-field form-input radio-input textarea:hover,
               novo-form .novo-form-container form form-field form-input select-input input:hover,
@@ -8239,6 +8277,8 @@ novo-form {
               novo-form .novo-form-container form form-field form-input date-input textarea:focus,
               novo-form .novo-form-container form form-field form-input date-time-input input:focus,
               novo-form .novo-form-container form form-field form-input date-time-input textarea:focus,
+              novo-form .novo-form-container form form-field form-input entity-input input:focus,
+              novo-form .novo-form-container form form-field form-input entity-input textarea:focus,
               novo-form .novo-form-container form form-field form-input float-input input:focus,
               novo-form .novo-form-container form form-field form-input float-input textarea:focus,
               novo-form .novo-form-container form form-field form-input number-input input:focus,
@@ -8247,8 +8287,6 @@ novo-form {
               novo-form .novo-form-container form form-field form-input percent-input textarea:focus,
               novo-form .novo-form-container form form-field form-input picker-input input:focus,
               novo-form .novo-form-container form form-field form-input picker-input textarea:focus,
-              novo-form .novo-form-container form form-field form-input entity-input input:focus,
-              novo-form .novo-form-container form form-field form-input entity-input textarea:focus,
               novo-form .novo-form-container form form-field form-input radio-input input:focus,
               novo-form .novo-form-container form form-field form-input radio-input textarea:focus,
               novo-form .novo-form-container form form-field form-input select-input input:focus,
@@ -8267,11 +8305,11 @@ novo-form {
             novo-form .novo-form-container form form-field form-input currency-input textarea,
             novo-form .novo-form-container form form-field form-input date-input textarea,
             novo-form .novo-form-container form form-field form-input date-time-input textarea,
+            novo-form .novo-form-container form form-field form-input entity-input textarea,
             novo-form .novo-form-container form form-field form-input float-input textarea,
             novo-form .novo-form-container form form-field form-input number-input textarea,
             novo-form .novo-form-container form form-field form-input percent-input textarea,
             novo-form .novo-form-container form form-field form-input picker-input textarea,
-            novo-form .novo-form-container form form-field form-input entity-input textarea,
             novo-form .novo-form-container form form-field form-input radio-input textarea,
             novo-form .novo-form-container form form-field form-input select-input textarea,
             novo-form .novo-form-container form form-field form-input text-area textarea,
@@ -8280,7 +8318,10 @@ novo-form {
             novo-form .novo-form-container form form-field form-input time-input textarea {
               overflow-y: hidden !important;
               -webkit-transition: height 0;
-              transition: height 0; }
+              transition: height 0;
+              background: transparent !important; }
+          novo-form .novo-form-container form form-field form-input novo-quick-note textarea {
+            background: transparent !important; }
           novo-form .novo-form-container form form-field form-input currency-input div,
           novo-form .novo-form-container form form-field form-input percent-input div {
             display: -webkit-box;
@@ -8310,7 +8351,17 @@ novo-form {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
-            display: flex; }
+            display: flex;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+            novo-form .novo-form-container form form-field form-input date-time-input div.datetime-container .calendar {
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+              box-shadow: none;
+              border-right: 1px solid rgba(217, 218, 220, 0.5); }
+            novo-form .novo-form-container form form-field form-input date-time-input div.datetime-container novo-time-picker {
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+              box-shadow: none; }
           novo-form .novo-form-container form form-field form-input check-box,
           novo-form .novo-form-container form form-field form-input check-list > div,
           novo-form .novo-form-container form form-field form-input radio-input {
@@ -8390,15 +8441,15 @@ novo-form {
                   display: inline-block; }
           novo-form .novo-form-container form form-field form-input date-input,
           novo-form .novo-form-container form form-field form-input date-time-input,
-          novo-form .novo-form-container form form-field form-input picker-input,
           novo-form .novo-form-container form form-field form-input entity-input,
+          novo-form .novo-form-container form form-field form-input picker-input,
           novo-form .novo-form-container form form-field form-input quick-note-input,
           novo-form .novo-form-container form form-field form-input time-input {
             position: relative; }
             novo-form .novo-form-container form form-field form-input date-input > i,
             novo-form .novo-form-container form form-field form-input date-time-input > i,
-            novo-form .novo-form-container form form-field form-input picker-input > i,
             novo-form .novo-form-container form form-field form-input entity-input > i,
+            novo-form .novo-form-container form form-field form-input picker-input > i,
             novo-form .novo-form-container form form-field form-input quick-note-input > i,
             novo-form .novo-form-container form form-field form-input time-input > i {
               position: absolute;
@@ -8406,14 +8457,14 @@ novo-form {
               top: 0; }
             novo-form .novo-form-container form form-field form-input date-input input:focus + i,
             novo-form .novo-form-container form form-field form-input date-time-input input:focus + i,
-            novo-form .novo-form-container form form-field form-input picker-input input:focus + i,
             novo-form .novo-form-container form form-field form-input entity-input input:focus + i,
+            novo-form .novo-form-container form form-field form-input picker-input input:focus + i,
             novo-form .novo-form-container form form-field form-input quick-note-input input:focus + i,
             novo-form .novo-form-container form form-field form-input time-input input:focus + i {
               color: #4A89DC; }
           novo-form .novo-form-container form form-field form-input chips-input,
-          novo-form .novo-form-container form form-field form-input quick-note-input,
-          novo-form .novo-form-container form form-field form-input entity-chips-input {
+          novo-form .novo-form-container form form-field form-input entity-chips-input,
+          novo-form .novo-form-container form form-field form-input quick-note-input {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -8421,8 +8472,8 @@ novo-form {
             width: 100%;
             position: relative; }
             novo-form .novo-form-container form form-field form-input chips-input i.required-indicator,
-            novo-form .novo-form-container form form-field form-input quick-note-input i.required-indicator,
-            novo-form .novo-form-container form form-field form-input entity-chips-input i.required-indicator {
+            novo-form .novo-form-container form form-field form-input entity-chips-input i.required-indicator,
+            novo-form .novo-form-container form form-field form-input quick-note-input i.required-indicator {
               position: absolute;
               left: -25px;
               height: 15px;
@@ -8432,20 +8483,20 @@ novo-form {
               -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
               novo-form .novo-form-container form form-field form-input chips-input i.required-indicator.bhi-circle,
-              novo-form .novo-form-container form form-field form-input quick-note-input i.required-indicator.bhi-circle,
-              novo-form .novo-form-container form form-field form-input entity-chips-input i.required-indicator.bhi-circle {
+              novo-form .novo-form-container form form-field form-input entity-chips-input i.required-indicator.bhi-circle,
+              novo-form .novo-form-container form form-field form-input quick-note-input i.required-indicator.bhi-circle {
                 color: #DA4453;
                 height: 10px;
                 width: 10px;
                 font-size: 7px; }
               novo-form .novo-form-container form form-field form-input chips-input i.required-indicator.bhi-check,
-              novo-form .novo-form-container form form-field form-input quick-note-input i.required-indicator.bhi-check,
-              novo-form .novo-form-container form form-field form-input entity-chips-input i.required-indicator.bhi-check {
+              novo-form .novo-form-container form form-field form-input entity-chips-input i.required-indicator.bhi-check,
+              novo-form .novo-form-container form form-field form-input quick-note-input i.required-indicator.bhi-check {
                 color: #8CC152; }
-        novo-form .novo-form-container form form-field entity-input picker-results,
-        novo-form .novo-form-container form form-field entity-input entity-picker-results,
+        novo-form .novo-form-container form form-field entity-chips-input entity-picker-results,
         novo-form .novo-form-container form form-field entity-chips-input picker-results,
-        novo-form .novo-form-container form form-field entity-chips-input entity-picker-results {
+        novo-form .novo-form-container form form-field entity-input entity-picker-results,
+        novo-form .novo-form-container form form-field entity-input picker-results {
           position: absolute;
           left: 0;
           top: 28px;
@@ -8453,126 +8504,126 @@ novo-form {
           width: 100%;
           max-width: none;
           z-index: 10; }
-          novo-form .novo-form-container form form-field entity-input picker-results novo-list,
-          novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list,
+          novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list,
           novo-form .novo-form-container form form-field entity-chips-input picker-results novo-list,
-          novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list {
+          novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list,
+          novo-form .novo-form-container form form-field entity-input picker-results novo-list {
             max-height: 600px;
             overflow: auto; }
-            novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item,
+            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item,
             novo-form .novo-form-container form form-field entity-chips-input picker-results novo-list novo-list-item,
-            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item {
+            novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item,
+            novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item {
               -webkit-box-flex: 0;
               -webkit-flex: 0 0;
               -ms-flex: 0 0;
               flex: 0 0;
               -webkit-transition: background-color 250ms;
               transition: background-color 250ms; }
-              novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item > div,
-              novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item > div,
+              novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item > div,
               novo-form .novo-form-container form form-field entity-chips-input picker-results novo-list novo-list-item > div,
-              novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item > div {
+              novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item > div,
+              novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item > div {
                 width: 100%; }
-              novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item.active,
-              novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item.active,
+              novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item.active,
               novo-form .novo-form-container form form-field entity-chips-input picker-results novo-list novo-list-item.active,
-              novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item.active {
+              novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item.active,
+              novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item.active {
                 background-color: #e0ebf9; }
-              novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item:hover,
-              novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item:hover,
+              novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item:hover,
               novo-form .novo-form-container form form-field entity-chips-input picker-results novo-list novo-list-item:hover,
-              novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item:hover {
+              novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item:hover,
+              novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item:hover {
                 background-color: #f1f6fc; }
-              novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item item-content,
-              novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item item-content,
+              novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item item-content,
               novo-form .novo-form-container form form-field entity-chips-input picker-results novo-list novo-list-item item-content,
-              novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item item-content {
+              novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item item-content,
+              novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item item-content {
                 -webkit-flex-flow: row wrap;
                 -ms-flex-flow: row wrap;
                 flex-flow: row wrap; }
-                novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item item-content > *,
-                novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item item-content > *,
+                novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item item-content > *,
                 novo-form .novo-form-container form form-field entity-chips-input picker-results novo-list novo-list-item item-content > *,
-                novo-form .novo-form-container form form-field entity-chips-input entity-picker-results novo-list novo-list-item item-content > * {
+                novo-form .novo-form-container form form-field entity-input entity-picker-results novo-list novo-list-item item-content > *,
+                novo-form .novo-form-container form form-field entity-input picker-results novo-list novo-list-item item-content > * {
                   -webkit-box-flex: 0;
                   -webkit-flex: 0 0 33%;
                   -ms-flex: 0 0 33%;
                   flex: 0 0 33%;
                   white-space: nowrap; }
-          novo-form .novo-form-container form form-field entity-input picker-results .no-recents,
-          novo-form .novo-form-container form form-field entity-input picker-results .null-results,
-          novo-form .novo-form-container form form-field entity-input picker-results .error-results,
-          novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents,
-          novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results,
-          novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results,
-          novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents,
-          novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results,
-          novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results,
+          novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results,
           novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .no-recents,
           novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .null-results,
-          novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results {
+          novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results,
+          novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents,
+          novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results,
+          novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results,
+          novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents,
+          novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results,
+          novo-form .novo-form-container form form-field entity-input picker-results .error-results,
+          novo-form .novo-form-container form form-field entity-input picker-results .no-recents,
+          novo-form .novo-form-container form form-field entity-input picker-results .null-results {
             text-align: center;
             padding: 1em 0 4em; }
-            novo-form .novo-form-container form form-field entity-input picker-results .no-recents > i,
-            novo-form .novo-form-container form form-field entity-input picker-results .null-results > i,
-            novo-form .novo-form-container form form-field entity-input picker-results .error-results > i,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents > i,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results > i,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results > i,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents > i,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results > i,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results > i,
+            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results > i,
             novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .no-recents > i,
             novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .null-results > i,
-            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results > i {
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results > i,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents > i,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results > i,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results > i,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents > i,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results > i,
+            novo-form .novo-form-container form form-field entity-input picker-results .error-results > i,
+            novo-form .novo-form-container form form-field entity-input picker-results .no-recents > i,
+            novo-form .novo-form-container form form-field entity-input picker-results .null-results > i {
               font-size: 3em;
-              margin: .5em;
+              margin: 0.5em;
               color: rgba(0, 0, 0, 0.3); }
-            novo-form .novo-form-container form form-field entity-input picker-results .no-recents > h4,
-            novo-form .novo-form-container form form-field entity-input picker-results .no-recents > p,
-            novo-form .novo-form-container form form-field entity-input picker-results .null-results > h4,
-            novo-form .novo-form-container form form-field entity-input picker-results .null-results > p,
-            novo-form .novo-form-container form form-field entity-input picker-results .error-results > h4,
-            novo-form .novo-form-container form form-field entity-input picker-results .error-results > p,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents > h4,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents > p,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results > h4,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results > p,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results > h4,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results > p,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents > h4,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents > p,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results > h4,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results > p,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results > h4,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results > p,
+            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results > h4,
+            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results > p,
             novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .no-recents > h4,
             novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .no-recents > p,
             novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .null-results > h4,
             novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .null-results > p,
-            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results > h4,
-            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results > p {
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results > h4,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results > p,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents > h4,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents > p,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results > h4,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results > p,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results > h4,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results > p,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents > h4,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents > p,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results > h4,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results > p,
+            novo-form .novo-form-container form form-field entity-input picker-results .error-results > h4,
+            novo-form .novo-form-container form form-field entity-input picker-results .error-results > p,
+            novo-form .novo-form-container form form-field entity-input picker-results .no-recents > h4,
+            novo-form .novo-form-container form form-field entity-input picker-results .no-recents > p,
+            novo-form .novo-form-container form form-field entity-input picker-results .null-results > h4,
+            novo-form .novo-form-container form form-field entity-input picker-results .null-results > p {
               margin: 0;
               max-width: none;
               padding: 0; }
-            novo-form .novo-form-container form form-field entity-input picker-results .no-recents > h4,
-            novo-form .novo-form-container form form-field entity-input picker-results .null-results > h4,
-            novo-form .novo-form-container form form-field entity-input picker-results .error-results > h4,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents > h4,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results > h4,
-            novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results > h4,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents > h4,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results > h4,
-            novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results > h4,
+            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results > h4,
             novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .no-recents > h4,
             novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .null-results > h4,
-            novo-form .novo-form-container form form-field entity-chips-input entity-picker-results .error-results > h4 {
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .error-results > h4,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .no-recents > h4,
+            novo-form .novo-form-container form form-field entity-chips-input picker-results .null-results > h4,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .error-results > h4,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .no-recents > h4,
+            novo-form .novo-form-container form form-field entity-input entity-picker-results .null-results > h4,
+            novo-form .novo-form-container form form-field entity-input picker-results .error-results > h4,
+            novo-form .novo-form-container form form-field entity-input picker-results .no-recents > h4,
+            novo-form .novo-form-container form form-field entity-input picker-results .null-results > h4 {
               font-weight: 500; }
-          novo-form .novo-form-container form form-field entity-input picker-results section,
-          novo-form .novo-form-container form form-field entity-input entity-picker-results section,
+          novo-form .novo-form-container form form-field entity-chips-input entity-picker-results section,
           novo-form .novo-form-container form form-field entity-chips-input picker-results section,
-          novo-form .novo-form-container form form-field entity-chips-input entity-picker-results section {
+          novo-form .novo-form-container form form-field entity-input entity-picker-results section,
+          novo-form .novo-form-container form form-field entity-input picker-results section {
             box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.25);
             z-index: 9;
             position: absolute;
@@ -8591,6 +8642,8 @@ novo-form {
   novo-form[dark] .novo-form-container form form-field form-input date-input textarea,
   novo-form[dark] .novo-form-container form form-field form-input date-time-input input,
   novo-form[dark] .novo-form-container form form-field form-input date-time-input textarea,
+  novo-form[dark] .novo-form-container form form-field form-input entity-input input,
+  novo-form[dark] .novo-form-container form form-field form-input entity-input textarea,
   novo-form[dark] .novo-form-container form form-field form-input float-input input,
   novo-form[dark] .novo-form-container form form-field form-input float-input textarea,
   novo-form[dark] .novo-form-container form form-field form-input number-input input,
@@ -8599,8 +8652,6 @@ novo-form {
   novo-form[dark] .novo-form-container form form-field form-input percent-input textarea,
   novo-form[dark] .novo-form-container form form-field form-input picker-input input,
   novo-form[dark] .novo-form-container form form-field form-input picker-input textarea,
-  novo-form[dark] .novo-form-container form form-field form-input entity-input input,
-  novo-form[dark] .novo-form-container form form-field form-input entity-input textarea,
   novo-form[dark] .novo-form-container form form-field form-input text-area input,
   novo-form[dark] .novo-form-container form form-field form-input text-area textarea,
   novo-form[dark] .novo-form-container form form-field form-input text-input input,
@@ -8608,7 +8659,8 @@ novo-form {
   novo-form[dark] .novo-form-container form form-field form-input time-input input,
   novo-form[dark] .novo-form-container form form-field form-input time-input textarea {
     color: #D9DADC;
-    border-bottom: 1px solid rgba(88, 101, 111, 0.25); }
+    border-bottom: 1px solid rgba(88, 101, 111, 0.25);
+    background: transparent !important; }
     novo-form[dark] .novo-form-container form form-field form-input address-input input:focus,
     novo-form[dark] .novo-form-container form form-field form-input address-input textarea:focus,
     novo-form[dark] .novo-form-container form form-field form-input currency-input input:focus,
@@ -8617,6 +8669,8 @@ novo-form {
     novo-form[dark] .novo-form-container form form-field form-input date-input textarea:focus,
     novo-form[dark] .novo-form-container form form-field form-input date-time-input input:focus,
     novo-form[dark] .novo-form-container form form-field form-input date-time-input textarea:focus,
+    novo-form[dark] .novo-form-container form form-field form-input entity-input input:focus,
+    novo-form[dark] .novo-form-container form form-field form-input entity-input textarea:focus,
     novo-form[dark] .novo-form-container form form-field form-input float-input input:focus,
     novo-form[dark] .novo-form-container form form-field form-input float-input textarea:focus,
     novo-form[dark] .novo-form-container form form-field form-input number-input input:focus,
@@ -8625,8 +8679,6 @@ novo-form {
     novo-form[dark] .novo-form-container form form-field form-input percent-input textarea:focus,
     novo-form[dark] .novo-form-container form form-field form-input picker-input input:focus,
     novo-form[dark] .novo-form-container form form-field form-input picker-input textarea:focus,
-    novo-form[dark] .novo-form-container form form-field form-input entity-input input:focus,
-    novo-form[dark] .novo-form-container form form-field form-input entity-input textarea:focus,
     novo-form[dark] .novo-form-container form form-field form-input text-area input:focus,
     novo-form[dark] .novo-form-container form form-field form-input text-area textarea:focus,
     novo-form[dark] .novo-form-container form form-field form-input text-input input:focus,
@@ -8634,10 +8686,10 @@ novo-form {
     novo-form[dark] .novo-form-container form form-field form-input time-input input:focus,
     novo-form[dark] .novo-form-container form form-field form-input time-input textarea:focus {
       border-bottom: 1px solid #4A89DC; }
-  novo-form[dark] .novo-form-container form form-field form-input novo-select > button {
+  novo-form[dark] .novo-form-container form form-field form-input novo-select > div[type="button"] {
     color: #D9DADC;
     border-bottom: 1px solid rgba(88, 101, 111, 0.25); }
-    novo-form[dark] .novo-form-container form form-field form-input novo-select > button:focus {
+    novo-form[dark] .novo-form-container form form-field form-input novo-select > div[type="button"]:focus {
       border-bottom: 1px solid #4A89DC; }
   novo-form address-input {
     display: -webkit-box;
@@ -8677,6 +8729,35 @@ novo-form {
       -webkit-flex: 4 4 100%;
       -ms-flex: 4 4 100%;
       flex: 4 4 100%; }
+  novo-form[layout="vertical"] .novo-form-container form form-field {
+    margin-top: 2rem;
+    position: relative; }
+    novo-form[layout="vertical"] .novo-form-container form form-field form-label {
+      position: absolute;
+      top: -13px;
+      -webkit-transition: all 90ms ease-in-out;
+      transition: all 90ms ease-in-out;
+      width: 100%;
+      max-width: 390px; }
+      novo-form[layout="vertical"] .novo-form-container form form-field form-label label {
+        font-size: 0.8em;
+        font-weight: 500;
+        -webkit-transition: font-size 7ms ease-in-out;
+        transition: font-size 7ms ease-in-out; }
+    novo-form[layout="vertical"] .novo-form-container form form-field.inactive form-label {
+      -webkit-transform: translateY(26px);
+      transform: translateY(26px); }
+      novo-form[layout="vertical"] .novo-form-container form form-field.inactive form-label label {
+        font-size: 1em;
+        font-weight: 400; }
+    novo-form[layout="vertical"] .novo-form-container form form-field.inactive novo-select div[type="button"] {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+  novo-form[layout="vertical"] address-input,
+  novo-form[layout="vertical"] tiles-input {
+    margin-top: 10px; }
 
 @-webkit-keyframes iconEnter {
   0% {
@@ -8765,49 +8846,47 @@ novo-quick-note, .quick-note-wrapper {
         margin: 0 !important; }
 
 novo-tiles {
-  border-radius: .5em;
-  color: #999999;
-  margin-left: 3px; }
-  novo-tiles div.tile:nth-of-type(1) {
-    border-top-left-radius: .5em;
-    border-left: solid 2px #cccccc;
-    border-bottom-left-radius: .5em; }
-  novo-tiles div.tile:last-child {
-    border-top-right-radius: .5em;
-    border-right: solid 2px #cccccc;
-    border-bottom-right-radius: .5em; }
-  novo-tiles > div {
-    cursor: pointer;
+  display: inline-block;
+  color: #999999; }
+  novo-tiles > .tile-container {
     display: inline-block;
-    padding: 1em;
+    height: calc(2.5em + 4px);
     text-align: center;
     background-color: #f4f4f4;
-    border-top: solid 2px #cccccc;
-    border-bottom: solid 2px #cccccc;
+    border: solid 2px #cccccc;
+    border-radius: 6px;
     position: relative;
-    -webkit-transition: border-color 250ms, background-color 250ms, color 250ms;
-    transition: border-color 250ms, background-color 250ms, color 250ms;
-    margin-left: -3px; }
-    novo-tiles > div.active {
-      display: inline-block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer; }
+    novo-tiles > .tile-container .tile {
+      padding: 0 15px;
+      line-height: 2.5em;
+      height: 100%;
       z-index: 1;
-      padding: 1em calc(1em - 2px); }
-    novo-tiles > div:nth-of-type(1).active {
-      padding: 1em calc(1em - 2px) 1em 1em; }
-    novo-tiles > div label {
-      -webkit-transition: border-color 250ms, background-color 250ms, color 250ms;
-      transition: border-color 250ms, background-color 250ms, color 250ms;
+      position: relative;
       cursor: pointer; }
-      novo-tiles > div label span {
-        -webkit-transition: border-color 250ms, background-color 250ms, color 250ms;
-        transition: border-color 250ms, background-color 250ms, color 250ms;
-        cursor: pointer; }
-    novo-tiles > div.active {
-      border: solid 2px #4A89DC !important;
-      border-radius: .5em;
-      background-color: white; }
-      novo-tiles > div.active label span {
+      novo-tiles > .tile-container .tile.active {
         color: #4A89DC; }
+      novo-tiles > .tile-container .tile label {
+        cursor: pointer;
+        z-index: 1;
+        position: relative; }
+  novo-tiles span.active-indicator {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+    background: white;
+    border: 2px solid #4A89DC;
+    border-radius: 6px;
+    -webkit-transition: all 140ms ease-in-out;
+    transition: all 140ms ease-in-out; }
 
 html {
   height: 100%;
@@ -9406,72 +9485,76 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 34px;
-      height: 34px; }
+      width: 29px;
+      height: 29px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
-      width: 40px;
-      height: 40px; }
+      width: 32px;
+      height: 32px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 35px;
-      height: 35px; }
+      width: 31px;
+      height: 31px; }
     color header .background-boxes .bb-lead {
       background: #AA6699;
-      width: 36px;
-      height: 36px; }
+      width: 35px;
+      height: 35px; }
     color header .background-boxes .bb-contact {
       background: #FFAA44;
-      width: 42px;
-      height: 42px; }
-    color header .background-boxes .bb-opportunity {
-      background: #662255;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-job {
-      background: #BB5566;
-      width: 44px;
-      height: 44px; }
-    color header .background-boxes .bb-submission {
-      background: #778899;
-      width: 38px;
-      height: 38px; }
-    color header .background-boxes .bb-placement {
-      background: #0B344F;
       width: 33px;
       height: 33px; }
+    color header .background-boxes .bb-opportunity {
+      background: #662255;
+      width: 30px;
+      height: 30px; }
+    color header .background-boxes .bb-job {
+      background: #BB5566;
+      width: 38px;
+      height: 38px; }
+    color header .background-boxes .bb-submission {
+      background: #778899;
+      width: 41px;
+      height: 41px; }
+    color header .background-boxes .bb-placement {
+      background: #0B344F;
+      width: 35px;
+      height: 35px; }
+    color header .background-boxes .bb-note {
+      background: #778899;
+      width: 43px;
+      height: 43px; }
     color header .background-boxes .bb-aqua {
       background: #3BAFDA;
-      width: 39px;
-      height: 39px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-ocean {
       background: #4A89DC;
-      width: 36px;
-      height: 36px; }
+      width: 42px;
+      height: 42px; }
     color header .background-boxes .bb-mint {
       background: #37BC9B;
       width: 42px;
       height: 42px; }
     color header .background-boxes .bb-grass {
       background: #8CC152;
-      width: 35px;
-      height: 35px; }
+      width: 30px;
+      height: 30px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
       width: 38px;
       height: 38px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
-      width: 32px;
-      height: 32px; }
+      width: 36px;
+      height: 36px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
-      width: 44px;
-      height: 44px; }
+      width: 38px;
+      height: 38px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 43px;
-      height: 43px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
       width: 43px;
@@ -9596,6 +9679,8 @@ color article.color-blocks {
       background: #778899; }
     color article.color-blocks .block.placement-cb .color-square {
       background: #0B344F; }
+    color article.color-blocks .block.note-cb .color-square {
+      background: #778899; }
     color article.color-blocks .block.aqua-cb .color-square {
       background: #3BAFDA; }
     color article.color-blocks .block.ocean-cb .color-square {
@@ -9776,6 +9861,15 @@ color > header.placement {
     color: #fff; }
   color > header.placement .background-boxes {
     background: #0B344F !important; }
+
+color > header.note {
+  background: #778899 !important; }
+  color > header.note h1,
+  color > header.note h2,
+  color > header.note p {
+    color: #fff; }
+  color > header.note .background-boxes {
+    background: #778899 !important; }
 
 color > header.background {
   background: #f4f4f4; }
@@ -10551,6 +10645,10 @@ dragula-demo .handle {
 
 form-demo .example.form-demo {
   padding: 20px; }
+  form-demo .example.form-demo.dynamic {
+    padding-left: 40px; }
+  form-demo .example.form-demo.quicknote novo-quick-note {
+    border-bottom: 2px solid #e7e7e7; }
 
 form-demo .dynamic-demo-footer {
   display: -webkit-box;
@@ -10570,6 +10668,15 @@ form-demo .dynamic-demo-footer {
   padding-top: 20px; }
   form-demo .dynamic-demo-footer > button {
     margin-left: 10px; }
+
+form-demo novo-form {
+  margin: 25px 0; }
+
+form-demo .final-value {
+  color: #afafaf;
+  padding: 10px;
+  background: #f4f4f4;
+  margin-bottom: 45px; }
 
 .example.quick-note-demo div.data {
   padding: 10px; }
