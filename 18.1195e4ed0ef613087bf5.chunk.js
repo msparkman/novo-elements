@@ -60,7 +60,7 @@ webpackJsonp([18],{
 	
 	var _CodeSnippet = __webpack_require__(1131);
 	
-	var _SwitchDemo = __webpack_require__(1188);
+	var _SwitchDemo = __webpack_require__(1189);
 	
 	var _SwitchDemo2 = _interopRequireDefault(_SwitchDemo);
 	
@@ -102,7 +102,7 @@ webpackJsonp([18],{
 
 /***/ },
 
-/***/ 1188:
+/***/ 1189:
 /***/ function(module, exports) {
 
 	module.exports = "<label>Count\n    <span>{{toggleCount}}</span>\n</label>\n<label>Toggled\n    <span>{{toggledCheck}}</span>\n</label>\n<novo-switch [checked]=\"checked\" (onChange)=\"increment(); toggled($event)\"\n             data-automation-id=\"switchTest\"></novo-switch>\n<novo-switch class=\"grapefruit\"></novo-switch>\n<novo-switch disabled></novo-switch>\n"

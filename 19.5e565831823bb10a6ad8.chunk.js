@@ -58,7 +58,7 @@ webpackJsonp([19],{
 	
 	var _CodeSnippet = __webpack_require__(1131);
 	
-	var _PluralizeDemo = __webpack_require__(1180);
+	var _PluralizeDemo = __webpack_require__(1181);
 	
 	var _PluralizeDemo2 = _interopRequireDefault(_PluralizeDemo);
 	
@@ -82,7 +82,7 @@ webpackJsonp([19],{
 
 /***/ },
 
-/***/ 1180:
+/***/ 1181:
 /***/ function(module, exports) {
 
 	module.exports = "<p>{{'Kitty' | plural}}</p>\n<p>{{'Cat' | plural}}</p>\n"

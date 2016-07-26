@@ -62,7 +62,7 @@ webpackJsonp([17],{
 	
 	var _CodeSnippet = __webpack_require__(1131);
 	
-	var _TilesDemo = __webpack_require__(1197);
+	var _TilesDemo = __webpack_require__(1198);
 	
 	var _TilesDemo2 = _interopRequireDefault(_TilesDemo);
 	
@@ -106,7 +106,7 @@ webpackJsonp([17],{
 
 /***/ },
 
-/***/ 1197:
+/***/ 1198:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tiles [options]=\"demoTiles\" (changed)=\"colorSelect($event)\" [(ngModel)]=\"value\"></novo-tiles>\n"

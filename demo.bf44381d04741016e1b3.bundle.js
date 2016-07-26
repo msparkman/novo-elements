@@ -169,7 +169,7 @@ webpackJsonp([32],{
 	
 	        this.router = router;
 	        this.menuOpen = false;
-	        this.version = ("0.1.17");
+	        this.version = ("0.1.19");
 	
 	        toastService.parentViewContainer = view;
 	        modalService.parentViewContainer = view;
@@ -217,7 +217,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(2, function (require) {
+	    __webpack_require__.e/* nsure */(3, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(524)[namespace]);
 	      } else {
@@ -472,7 +472,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(4, function (require) {
+	    __webpack_require__.e/* nsure */(2, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(539)[namespace]);
 	      } else {
@@ -608,7 +608,7 @@ webpackJsonp([32],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(3, function (require) {
+	    __webpack_require__.e/* nsure */(4, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(547)[namespace]);
 	      } else {
