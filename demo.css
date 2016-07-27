@@ -2110,6 +2110,12 @@ button[theme] {
         background: #66c1e2; }
       button[theme][theme="primary"][color="pulse"]:focus {
         background: #28a5d4; }
+    button[theme][theme="primary"][color="neutral"] {
+      background: #747884; }
+      button[theme][theme="primary"][color="neutral"]:hover {
+        background: #8f929c; }
+      button[theme][theme="primary"][color="neutral"]:focus {
+        background: #686c76; }
     button[theme][theme="primary"][color="white"] {
       background: #ffffff;
       color: #4A89DC; }
@@ -2307,6 +2313,10 @@ button[theme] {
       color: #3BAFDA; }
       button[theme][theme="dialogue"][color="pulse"] i {
         color: #3BAFDA; }
+    button[theme][theme="dialogue"][color="neutral"] {
+      color: #747884; }
+      button[theme][theme="dialogue"][color="neutral"] i {
+        color: #747884; }
     button[theme][theme="dialogue"][color="aqua"] {
       color: #3BAFDA; }
       button[theme][theme="dialogue"][color="aqua"] i {
@@ -2391,6 +2401,9 @@ button[theme] {
     button[theme][theme="standard"][color="pulse"] {
       color: #ffffff;
       background: #3BAFDA; }
+    button[theme][theme="standard"][color="neutral"] {
+      color: #ffffff;
+      background: #747884; }
     button[theme][theme="standard"][color="aqua"] {
       color: #ffffff;
       background: #3BAFDA; }
@@ -2622,6 +2635,9 @@ novo-toast.note {
 
 novo-toast.text {
   background: #3D464D; }
+
+novo-toast.neutral {
+  background: #747884; }
 
 novo-toast.background {
   background: #f4f4f4; }
@@ -7544,6 +7560,12 @@ header.novo-header[theme="pulse"] {
   header.novo-header[theme="pulse"] > section.primary {
     background: #3BAFDA; }
 
+header.novo-header[theme="neutral"] {
+  background: #747884;
+  color: #fff; }
+  header.novo-header[theme="neutral"] > section.primary {
+    background: #747884; }
+
 header.novo-header[theme="light"], header.novo-header[theme="off-white"], header.novo-header[theme="white"] {
   color: #3D464D; }
 
@@ -7679,7 +7701,7 @@ novo-list-item {
 
 novo-table {
   width: 100%;
-  overflow: hidden;
+  display: block;
   overflow-x: scroll; }
 
 /* -- Material Design Table style -------------- */
@@ -9488,44 +9510,44 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-candidate {
-      background: #44BB77;
-      width: 27px;
-      height: 27px; }
-    color header .background-boxes .bb-navigation {
-      background: #2F384F;
       width: 39px;
       height: 39px; }
+    color header .background-boxes .bb-candidate {
+      background: #44BB77;
+      width: 31px;
+      height: 31px; }
+    color header .background-boxes .bb-navigation {
+      background: #2F384F;
+      width: 42px;
+      height: 42px; }
     color header .background-boxes .bb-lead {
       background: #AA6699;
-      width: 27px;
-      height: 27px; }
-    color header .background-boxes .bb-contact {
-      background: #FFAA44;
       width: 38px;
       height: 38px; }
+    color header .background-boxes .bb-contact {
+      background: #FFAA44;
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-opportunity {
       background: #662255;
-      width: 44px;
-      height: 44px; }
+      width: 29px;
+      height: 29px; }
     color header .background-boxes .bb-job {
       background: #BB5566;
       width: 32px;
       height: 32px; }
     color header .background-boxes .bb-submission {
       background: #778899;
-      width: 42px;
-      height: 42px; }
+      width: 39px;
+      height: 39px; }
     color header .background-boxes .bb-placement {
       background: #0B344F;
-      width: 27px;
-      height: 27px; }
+      width: 43px;
+      height: 43px; }
     color header .background-boxes .bb-note {
       background: #778899;
-      width: 37px;
-      height: 37px; }
+      width: 29px;
+      height: 29px; }
     color header .background-boxes .bb-aqua {
       background: #3BAFDA;
       width: 43px;
@@ -9540,28 +9562,28 @@ color header {
       height: 34px; }
     color header .background-boxes .bb-grass {
       background: #8CC152;
-      width: 38px;
-      height: 38px; }
+      width: 39px;
+      height: 39px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
-      width: 45px;
-      height: 45px; }
-    color header .background-boxes .bb-bittersweet {
-      background: #EB6845;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-grapefruit {
-      background: #DA4453;
       width: 29px;
       height: 29px; }
+    color header .background-boxes .bb-bittersweet {
+      background: #EB6845;
+      width: 26px;
+      height: 26px; }
+    color header .background-boxes .bb-grapefruit {
+      background: #DA4453;
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 34px;
-      height: 34px; }
+      width: 38px;
+      height: 38px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 33px;
-      height: 33px; }
+      width: 39px;
+      height: 39px; }
 
 color article.color-blocks {
   display: -webkit-box;
@@ -9593,7 +9615,7 @@ color article.color-blocks {
     position: relative;
     padding-top: 140px;
     margin-bottom: 95px; }
-    color article.color-blocks .block:hover .color-square, color article.color-blocks .block:focus .color-square, color article.color-blocks .block:active .color-square {
+    color article.color-blocks .block:active .color-square, color article.color-blocks .block:focus .color-square, color article.color-blocks .block:hover .color-square {
       -webkit-transform: scale(1.125);
       transform: scale(1.125); }
     color article.color-blocks .block h6 {
@@ -9647,6 +9669,8 @@ color article.color-blocks {
       background: #4A89DC; }
     color article.color-blocks .block.text-cb .color-square {
       background: #3D464D; }
+    color article.color-blocks .block.neutral-cb .color-square {
+      background: #747884; }
     color article.color-blocks .block.background-cb {
       color: #3D464D; }
       color article.color-blocks .block.background-cb h3:after {
