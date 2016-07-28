@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 1131:
+/***/ 1136:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -60,31 +60,31 @@ webpackJsonp([3],{
 	
 	var _common = __webpack_require__(5);
 	
-	var _novoElements = __webpack_require__(15);
+	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1131);
+	var _CodeSnippet = __webpack_require__(1136);
 	
-	var _PrimaryButtonDemo = __webpack_require__(1136);
+	var _PrimaryButtonDemo = __webpack_require__(1141);
 	
 	var _PrimaryButtonDemo2 = _interopRequireDefault(_PrimaryButtonDemo);
 	
-	var _DialogueButtonDemo = __webpack_require__(1133);
+	var _DialogueButtonDemo = __webpack_require__(1138);
 	
 	var _DialogueButtonDemo2 = _interopRequireDefault(_DialogueButtonDemo);
 	
-	var _HeaderButtonDemo = __webpack_require__(1134);
+	var _HeaderButtonDemo = __webpack_require__(1139);
 	
 	var _HeaderButtonDemo2 = _interopRequireDefault(_HeaderButtonDemo);
 	
-	var _IconButtonDemo = __webpack_require__(1135);
+	var _IconButtonDemo = __webpack_require__(1140);
 	
 	var _IconButtonDemo2 = _interopRequireDefault(_IconButtonDemo);
 	
-	var _StandardButtonDemo = __webpack_require__(1138);
+	var _StandardButtonDemo = __webpack_require__(1143);
 	
 	var _StandardButtonDemo2 = _interopRequireDefault(_StandardButtonDemo);
 	
-	var _SecondaryButtonDemo = __webpack_require__(1137);
+	var _SecondaryButtonDemo = __webpack_require__(1142);
 	
 	var _SecondaryButtonDemo2 = _interopRequireDefault(_SecondaryButtonDemo);
 	
@@ -132,42 +132,42 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 1133:
+/***/ 1138:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"dialogue\" icon=\"addcard\">Add Card</button>\n<div class=\"inverse-color\">\n    <button theme=\"dialogue\" icon=\"list-o\" side=\"left\" color=\"white\" inverse>Add/Remove</button>\n</div>\n<button theme=\"dialogue\" icon=\"check\" color=\"success\">Dialogue</button>\n<button theme=\"dialogue\" disabled>Dialogue</button>\n"
 
 /***/ },
 
-/***/ 1134:
+/***/ 1139:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n<button theme=\"secondary\" icon=\"convert\" inverse>Convert</button>\n<button theme=\"secondary\" icon=\"convert\" inverse disabled>Convert</button>\n"
 
 /***/ },
 
-/***/ 1135:
+/***/ 1140:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"icon\" icon=\"print\" inverse></button>\n<button theme=\"icon\" icon=\"print\" inverse disabled></button>\n"
 
 /***/ },
 
-/***/ 1136:
+/***/ 1141:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"primary\" icon=\"next\">Next</button>\n<button theme=\"primary\" [color]=\"negativeColor\" icon=\"times\">Cancel</button>\n<button theme=\"primary\" color=\"success\" icon=\"check\">Save</button>\n<button theme=\"primary\" color=\"warning\" icon=\"caution-o\">Caution</button>\n<button theme=\"primary\" color=\"pulse\" icon=\"next\" disabled>Submit</button>\n"
 
 /***/ },
 
-/***/ 1137:
+/***/ 1142:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\">Secondary</button>\n<button theme=\"secondary\" disabled>Secondary</button>\n\n"
 
 /***/ },
 
-/***/ 1138:
+/***/ 1143:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"standard\">Standard</button>\n<button theme=\"standard\" color=\"light\">Standard</button>\n<button theme=\"standard\" color=\"light\" disabled>Standard</button>\n"

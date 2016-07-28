@@ -1,6 +1,6 @@
 webpackJsonp([11],{
 
-/***/ 1131:
+/***/ 1136:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 549:
+/***/ 550:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,15 +58,15 @@ webpackJsonp([11],{
 	
 	var _common = __webpack_require__(5);
 	
-	var _novoElements = __webpack_require__(15);
+	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1131);
+	var _CodeSnippet = __webpack_require__(1136);
 	
-	var _ToastDemo = __webpack_require__(1199);
+	var _ToastDemo = __webpack_require__(1205);
 	
 	var _ToastDemo2 = _interopRequireDefault(_ToastDemo);
 	
-	var _ToastServiceDemo = __webpack_require__(1200);
+	var _ToastServiceDemo = __webpack_require__(1206);
 	
 	var _ToastServiceDemo2 = _interopRequireDefault(_ToastServiceDemo);
 	
@@ -168,14 +168,14 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 1199:
+/***/ 1205:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"fake-card\">\n    <header title=\"John Deere\" icon=\"person\" theme=\"contact\">\n        <utils>\n            <util-action icon=\"flag\"></util-action>\n            <util-action icon=\"refresh\"></util-action>\n            <util-action icon=\"times\"></util-action>\n        </utils>\n    </header>\n    <novo-toast theme=\"danger\" title=\"Save Failed\" message=\"Oops! Looks like you're missing some required fields\"\n                icon=\"caution\" position=\"growlTopRight\"></novo-toast>\n    <div class=\"content\">\n        <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n            do eiusmod tempor incididunt ut labore et dolore\n            magna aliqua. Ut enim ad minim veniam, quis nostrud\n            exercitation ullamco laboris nisi ut aliquip ex ea\n            commodo consequat. Duis aute irure dolor in reprehenderit\n            in voluptate velit esse cillum dolore eu fugiat nulla\n            pariatur. Excepteur sint occaecat cupidatat non proident,\n            sunt in culpa qui officia deserunt mollit anim id\n            est laborum.\n        </p>\n    </div>\n</div>\n"
 
 /***/ },
 
-/***/ 1200:
+/***/ 1206:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"dialogue\" color=\"success\" icon=\"coffee\" (click)=\"toastToggled('top')\" data-automation-id=\"toast-trigger\">Fixed Top</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"check\" (click)=\"toastToggled('bottom')\">Fixed Bottom</button>\n<button theme=\"dialogue\" color=\"negative\" icon=\"times\" (click)=\"toastToggled('growlTopRight')\">Growl: Top Right</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"coffee\" (click)=\"toastToggled('growlTopLeft')\">Growl: Top Left</button>\n<button theme=\"dialogue\" color=\"negative\" icon=\"times\" (click)=\"toastToggled('growlBottomRight')\">Growl: Bottom Right</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"coffee\" (click)=\"toastToggled('growlBottomLeft')\">Growl: Bottom Left</button>\n"

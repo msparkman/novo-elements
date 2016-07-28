@@ -1,6 +1,6 @@
-webpackJsonp([22],{
+webpackJsonp([23],{
 
-/***/ 1131:
+/***/ 1136:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -54,11 +54,11 @@ webpackJsonp([22],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(15);
+	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1131);
+	var _CodeSnippet = __webpack_require__(1136);
 	
-	var _DropdownDemo = __webpack_require__(1153);
+	var _DropdownDemo = __webpack_require__(1158);
 	
 	var _DropdownDemo2 = _interopRequireDefault(_DropdownDemo);
 	
@@ -81,7 +81,7 @@ webpackJsonp([22],{
 
 /***/ },
 
-/***/ 1153:
+/***/ 1158:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-dropdown>\n    <button type=\"button\" theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n    <list>\n        <item>Action 1</item>\n        <item>Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n<novo-dropdown side=\"right\">\n    <button type=\"button\" theme=\"icon\" icon=\"menu\" inverse></button>\n    <list>\n        <item>Action 1</item>\n        <item>Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n"
@@ -89,4 +89,4 @@ webpackJsonp([22],{
 /***/ }
 
 });
-//# sourceMappingURL=22.a8998da38a8e826910ea.bundle.map
+//# sourceMappingURL=23.a8998da38a8e826910ea.bundle.map

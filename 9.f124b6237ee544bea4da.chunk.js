@@ -1,6 +1,6 @@
 webpackJsonp([9],{
 
-/***/ 1131:
+/***/ 1136:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56,19 +56,19 @@ webpackJsonp([9],{
 	
 	var _common = __webpack_require__(5);
 	
-	var _novoElements = __webpack_require__(15);
+	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1131);
+	var _CodeSnippet = __webpack_require__(1136);
 	
-	var _BasicQuickNote = __webpack_require__(1182);
+	var _BasicQuickNote = __webpack_require__(1187);
 	
 	var _BasicQuickNote2 = _interopRequireDefault(_BasicQuickNote);
 	
-	var _CustomQuickNote = __webpack_require__(1183);
+	var _CustomQuickNote = __webpack_require__(1188);
 	
 	var _CustomQuickNote2 = _interopRequireDefault(_CustomQuickNote);
 	
-	var _CustomQuickNoteResults = __webpack_require__(1184);
+	var _CustomQuickNoteResults = __webpack_require__(1189);
 	
 	var _CustomQuickNoteResults2 = _interopRequireDefault(_CustomQuickNoteResults);
 	
@@ -224,21 +224,21 @@ webpackJsonp([9],{
 
 /***/ },
 
-/***/ 1182:
+/***/ 1187:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note\" [references]=\"references\" [placeholder]=\"placeholder\" [config]=\"config\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note}}</p>\n    <p>References: {{references | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 1183:
+/***/ 1188:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note2\" [references]=\"references2\" [placeholder]=\"placeholder\" [config]=\"custom\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note2}}</p>\n    <p>References: {{references2 | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 1184:
+/***/ 1189:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note3\" [references]=\"references3\" [placeholder]=\"placeholder\" [config]=\"custom2\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note3}}</p>\n    <p>References: {{references3 | json}}</p>\n</div>\n"
