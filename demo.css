@@ -1614,6 +1614,9 @@ i {
     i[theme][theme="contained"].note {
       color: #ffffff;
       background: #778899; }
+    i[theme][theme="contained"].task {
+      color: #ffffff;
+      background: #3D464D; }
     i[theme][theme="contained"].aqua {
       color: #ffffff;
       background: #3BAFDA; }
@@ -1670,6 +1673,9 @@ i {
     background: transparent; }
   i[theme][theme="entity"].note {
     color: #778899;
+    background: transparent; }
+  i[theme][theme="entity"].task {
+    color: #3D464D;
     background: transparent; }
 
 h1 i,
@@ -2632,6 +2638,9 @@ novo-toast.placement {
 
 novo-toast.note {
   background: #778899; }
+
+novo-toast.task {
+  background: #3D464D; }
 
 novo-toast.text {
   background: #3D464D; }
@@ -7488,6 +7497,12 @@ header.novo-header[theme="note"] {
   header.novo-header[theme="note"] > section.primary {
     background: #778899; }
 
+header.novo-header[theme="task"] {
+  background: #3D464D;
+  color: #fff; }
+  header.novo-header[theme="task"] > section.primary {
+    background: #3D464D; }
+
 header.novo-header[theme="positive"] {
   background: #4A89DC;
   color: #fff; }
@@ -7623,6 +7638,8 @@ novo-list-item {
       background: #0B344F; }
     novo-list-item item-avatar i.note {
       background: #778899; }
+    novo-list-item item-avatar i.task {
+      background: #3D464D; }
   novo-list-item item-title h3 {
     font-size: 18px;
     margin: 0;
@@ -7677,6 +7694,8 @@ novo-list-item {
       color: #0B344F; }
     novo-list-item item-content i.note {
       color: #778899; }
+    novo-list-item item-content i.task {
+      color: #3D464D; }
     novo-list-item item-content.vertical-list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -10113,76 +10132,80 @@ color header {
       height: 29px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
-      width: 32px;
-      height: 32px; }
+      width: 44px;
+      height: 44px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 35px;
-      height: 35px; }
-    color header .background-boxes .bb-lead {
-      background: #AA6699;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-contact {
-      background: #FFAA44;
-      width: 42px;
-      height: 42px; }
-    color header .background-boxes .bb-opportunity {
-      background: #662255;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-job {
-      background: #BB5566;
-      width: 41px;
-      height: 41px; }
-    color header .background-boxes .bb-submission {
-      background: #778899;
-      width: 45px;
-      height: 45px; }
-    color header .background-boxes .bb-placement {
-      background: #0B344F;
-      width: 35px;
-      height: 35px; }
-    color header .background-boxes .bb-note {
-      background: #778899;
-      width: 35px;
-      height: 35px; }
-    color header .background-boxes .bb-aqua {
-      background: #3BAFDA;
       width: 37px;
       height: 37px; }
-    color header .background-boxes .bb-ocean {
-      background: #4A89DC;
-      width: 40px;
-      height: 40px; }
-    color header .background-boxes .bb-mint {
-      background: #37BC9B;
-      width: 40px;
-      height: 40px; }
-    color header .background-boxes .bb-grass {
-      background: #8CC152;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-sunflower {
-      background: #F6B042;
+    color header .background-boxes .bb-lead {
+      background: #AA6699;
+      width: 39px;
+      height: 39px; }
+    color header .background-boxes .bb-contact {
+      background: #FFAA44;
+      width: 37px;
+      height: 37px; }
+    color header .background-boxes .bb-opportunity {
+      background: #662255;
+      width: 27px;
+      height: 27px; }
+    color header .background-boxes .bb-job {
+      background: #BB5566;
+      width: 26px;
+      height: 26px; }
+    color header .background-boxes .bb-submission {
+      background: #778899;
       width: 31px;
       height: 31px; }
+    color header .background-boxes .bb-placement {
+      background: #0B344F;
+      width: 36px;
+      height: 36px; }
+    color header .background-boxes .bb-note {
+      background: #778899;
+      width: 30px;
+      height: 30px; }
+    color header .background-boxes .bb-task {
+      background: #3D464D;
+      width: 29px;
+      height: 29px; }
+    color header .background-boxes .bb-aqua {
+      background: #3BAFDA;
+      width: 26px;
+      height: 26px; }
+    color header .background-boxes .bb-ocean {
+      background: #4A89DC;
+      width: 36px;
+      height: 36px; }
+    color header .background-boxes .bb-mint {
+      background: #37BC9B;
+      width: 45px;
+      height: 45px; }
+    color header .background-boxes .bb-grass {
+      background: #8CC152;
+      width: 43px;
+      height: 43px; }
+    color header .background-boxes .bb-sunflower {
+      background: #F6B042;
+      width: 41px;
+      height: 41px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
-      width: 38px;
-      height: 38px; }
+      width: 34px;
+      height: 34px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
-      width: 33px;
-      height: 33px; }
+      width: 27px;
+      height: 27px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 32px;
-      height: 32px; }
+      width: 29px;
+      height: 29px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 32px;
-      height: 32px; }
+      width: 30px;
+      height: 30px; }
 
 color article.color-blocks {
   display: -webkit-box;
@@ -10307,6 +10330,8 @@ color article.color-blocks {
       background: #0B344F; }
     color article.color-blocks .block.note-cb .color-square {
       background: #778899; }
+    color article.color-blocks .block.task-cb .color-square {
+      background: #3D464D; }
     color article.color-blocks .block.aqua-cb .color-square {
       background: #3BAFDA; }
     color article.color-blocks .block.ocean-cb .color-square {
@@ -10496,6 +10521,15 @@ color > header.note {
     color: #fff; }
   color > header.note .background-boxes {
     background: #778899 !important; }
+
+color > header.task {
+  background: #3D464D !important; }
+  color > header.task h1,
+  color > header.task h2,
+  color > header.task p {
+    color: #fff; }
+  color > header.task .background-boxes {
+    background: #3D464D !important; }
 
 color > header.background {
   background: #f4f4f4; }
