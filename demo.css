@@ -2026,7 +2026,7 @@ button[theme] {
       -ms-flex-pack: justify;
       justify-content: space-between; }
     button[theme][theme="primary"][icon] {
-      padding: 5px 5px 5px 15px; }
+      padding: 6px 5px 6px 15px; }
       button[theme][theme="primary"][icon] i {
         background: rgba(0, 0, 0, 0.15);
         padding: 5px;
@@ -2187,7 +2187,6 @@ button[theme] {
       button[theme][theme="primary"][color="lavender"]:focus {
         background: #8666d7; }
   button[theme][theme="secondary"] {
-    min-width: 110px;
     text-align: left;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -7721,8 +7720,43 @@ novo-list-item {
 
 novo-table {
   width: 100%;
-  display: block;
-  overflow-x: scroll; }
+  display: block; }
+  novo-table > header novo-table-header {
+    padding: 10px; }
+  novo-table > header div.header-actions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    novo-table > header div.header-actions > novo-pagination {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      novo-table > header div.header-actions > novo-pagination > h5 {
+        margin-left: 0; }
+    novo-table > header div.header-actions > novo-table-actions {
+      padding: 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      novo-table > header div.header-actions > novo-table-actions > * {
+        margin-right: 10px; }
+        novo-table > header div.header-actions > novo-table-actions > *:last-child {
+          margin-right: 0; }
+  novo-table > .table-container {
+    overflow-x: scroll;
+    width: 100%;
+    display: block; }
 
 /* -- Material Design Table style -------------- */
 .table {
@@ -7744,9 +7778,21 @@ novo-table {
       text-align: left;
       padding: 1.2rem;
       vertical-align: middle;
-      border-top: 0;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
+      .table > tbody > tr > td.checkbox,
+      .table > tbody > tr > th.checkbox,
+      .table > thead > tr > td.checkbox,
+      .table > thead > tr > th.checkbox,
+      .table > tfoot > tr > td.checkbox,
+      .table > tfoot > tr > th.checkbox {
+        text-align: center;
+        padding-bottom: 15px; }
+    .table > tbody > tr.table-selection-row,
+    .table > thead > tr.table-selection-row,
+    .table > tfoot > tr.table-selection-row {
+      background-color: #2F384F !important;
+      color: #ffffff; }
   .table > thead > tr > th:nth-of-type(1) .th-group novo-dropdown.column-filters .dropdown-container {
     left: -80px; }
   .table > thead > tr th:first-child novo-dropdown .dropdown-container {
@@ -7758,6 +7804,7 @@ novo-table {
     color: #757575;
     vertical-align: bottom;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
     padding: 0.75rem;
     border-right: 1px solid #F4F4F4; }
     .table > thead > tr > th.over {
@@ -7891,13 +7938,6 @@ novo-table {
               color: #9b9b9b; }
             .table > thead > tr > th .th-group .th-title .table-sort-icons.desc i.bhi-arrow-up {
               color: #4A89DC; }
-  .table > colgroup + thead > tr:first-child > td,
-  .table > colgroup + thead > tr:first-child > th,
-  .table > thead:first-child > tr:first-child > td,
-  .table > thead:first-child > tr:first-child > th,
-  .table > caption + thead > tr:first-child > td,
-  .table > caption + thead > tr:first-child > th {
-    border-top: 0; }
   .table > tbody + tbody {
     border-top: 1px solid rgba(0, 0, 0, 0.12); }
   .table .table {
@@ -7913,6 +7953,12 @@ novo-table {
     margin: 40px 0;
     vertical-align: middle;
     text-transform: uppercase; }
+  .table check-box .check-box-group {
+    color: #999999; }
+    .table check-box .check-box-group.checked {
+      color: #3399DD; }
+    .table check-box .check-box-group .bhi-checkbox-indeterminate {
+      color: #3399DD; }
 
 .table-condensed > tbody > tr > td,
 .table-condensed > tbody > tr > th,
@@ -7963,6 +8009,600 @@ novo-table[dark] .table-striped.table-details > tbody tr:nth-of-type(4n+2),
 novo-table[dark] .table-striped.table-details > tbody tr:nth-of-type(4n+1) {
   background-color: rgba(244, 244, 244, 0.04); }
 
+novo-table[theme="aqua"] > header {
+  background: #3BAFDA;
+  color: #fff; }
+  novo-table[theme="aqua"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="aqua"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="aqua"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="aqua"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="aqua"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="aqua"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="ocean"] > header {
+  background: #4A89DC;
+  color: #fff; }
+  novo-table[theme="ocean"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="ocean"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="ocean"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="ocean"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="ocean"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="ocean"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="mint"] > header {
+  background: #37BC9B;
+  color: #fff; }
+  novo-table[theme="mint"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="mint"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="mint"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="mint"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="mint"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="mint"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="grass"] > header {
+  background: #8CC152;
+  color: #fff; }
+  novo-table[theme="grass"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="grass"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="grass"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="grass"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="grass"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="grass"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="sunflower"] > header {
+  background: #F6B042;
+  color: #fff; }
+  novo-table[theme="sunflower"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="sunflower"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="sunflower"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="sunflower"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="sunflower"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="sunflower"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="bittersweet"] > header {
+  background: #EB6845;
+  color: #fff; }
+  novo-table[theme="bittersweet"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="bittersweet"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="bittersweet"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="bittersweet"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="bittersweet"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="bittersweet"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="grapefruit"] > header {
+  background: #DA4453;
+  color: #fff; }
+  novo-table[theme="grapefruit"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="grapefruit"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="grapefruit"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="grapefruit"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="grapefruit"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="grapefruit"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="carnation"] > header {
+  background: #D770AD;
+  color: #fff; }
+  novo-table[theme="carnation"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="carnation"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="carnation"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="carnation"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="carnation"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="carnation"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="lavender"] > header {
+  background: #967ADC;
+  color: #fff; }
+  novo-table[theme="lavender"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="lavender"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="lavender"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="lavender"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="lavender"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="lavender"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="company"] > header {
+  background: #3399DD;
+  color: #fff; }
+  novo-table[theme="company"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="company"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="company"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="company"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="company"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="company"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="candidate"] > header {
+  background: #44BB77;
+  color: #fff; }
+  novo-table[theme="candidate"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="candidate"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="candidate"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="candidate"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="candidate"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="candidate"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="navigation"] > header {
+  background: #2F384F;
+  color: #fff; }
+  novo-table[theme="navigation"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="navigation"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="navigation"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="navigation"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="navigation"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="navigation"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="lead"] > header {
+  background: #AA6699;
+  color: #fff; }
+  novo-table[theme="lead"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="lead"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="lead"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="lead"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="lead"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="lead"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="contact"] > header {
+  background: #FFAA44;
+  color: #fff; }
+  novo-table[theme="contact"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="contact"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="contact"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="contact"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="contact"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="contact"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="opportunity"] > header {
+  background: #662255;
+  color: #fff; }
+  novo-table[theme="opportunity"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="opportunity"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="opportunity"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="opportunity"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="opportunity"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="opportunity"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="job"] > header {
+  background: #BB5566;
+  color: #fff; }
+  novo-table[theme="job"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="job"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="job"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="job"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="job"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="job"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="submission"] > header {
+  background: #778899;
+  color: #fff; }
+  novo-table[theme="submission"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="submission"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="submission"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="submission"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="submission"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="submission"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="placement"] > header {
+  background: #0B344F;
+  color: #fff; }
+  novo-table[theme="placement"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="placement"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="placement"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="placement"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="placement"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="placement"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="note"] > header {
+  background: #747884;
+  color: #fff; }
+  novo-table[theme="note"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="note"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="note"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="note"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="note"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="note"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="task"] > header {
+  background: #747884;
+  color: #fff; }
+  novo-table[theme="task"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="task"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="task"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="task"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="task"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="task"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="positive"] > header {
+  background: #4A89DC;
+  color: #fff; }
+  novo-table[theme="positive"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="positive"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="positive"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="positive"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="positive"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="positive"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="success"] > header {
+  background: #8CC152;
+  color: #fff; }
+  novo-table[theme="success"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="success"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="success"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="success"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="success"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="success"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="negative"] > header {
+  background: #DA4453;
+  color: #fff; }
+  novo-table[theme="negative"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="negative"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="negative"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="negative"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="negative"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="negative"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="warning"] > header {
+  background: #F6B042;
+  color: #fff; }
+  novo-table[theme="warning"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="warning"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="warning"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="warning"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="warning"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="warning"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="background"] > header {
+  background: #f4f4f4;
+  color: #fff; }
+  novo-table[theme="background"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="background"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="background"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="background"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="background"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="background"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="black"] > header {
+  background: #000000;
+  color: #fff; }
+  novo-table[theme="black"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="black"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="black"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="black"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="black"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="black"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="white"] > header {
+  background: #ffffff;
+  color: #fff; }
+  novo-table[theme="white"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="white"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="white"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="white"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="white"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="white"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="grey"] > header {
+  background: #999999;
+  color: #fff; }
+  novo-table[theme="grey"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="grey"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="grey"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="grey"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="grey"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="grey"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="off-white"] > header {
+  background: #f4f4f4;
+  color: #fff; }
+  novo-table[theme="off-white"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="off-white"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="off-white"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="off-white"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="off-white"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="off-white"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="dark"] > header {
+  background: #3D464D;
+  color: #fff; }
+  novo-table[theme="dark"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="dark"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="dark"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="dark"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="dark"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="dark"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="light"] > header {
+  background: #D9DADC;
+  color: #fff; }
+  novo-table[theme="light"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="light"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="light"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="light"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="light"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="light"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="pulse"] > header {
+  background: #3BAFDA;
+  color: #fff; }
+  novo-table[theme="pulse"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="pulse"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="pulse"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="pulse"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="pulse"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="pulse"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
+novo-table[theme="neutral"] > header {
+  background: #747884;
+  color: #fff; }
+  novo-table[theme="neutral"] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[theme="neutral"] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[theme="neutral"] > header novo-pagination .page {
+      color: #ffffff; }
+    novo-table[theme="neutral"] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[theme="neutral"] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[theme="neutral"] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
 th.dragging {
   opacity: 0.4; }
 
@@ -7974,14 +8614,10 @@ novo-pagination {
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  background: rgba(0, 0, 0, 0.15);
-  padding: 10px;
-  color: #fff; }
+  padding: 10px; }
   novo-pagination > * {
-    margin: auto 5px;
-    color: #fff; }
+    margin: auto 5px; }
   novo-pagination h5.rows {
-    color: #fff;
     padding: 0;
     font-size: 12px;
     opacity: 0.75;
@@ -7992,23 +8628,14 @@ novo-pagination {
     -ms-flex: 1;
     flex: 1; }
   novo-pagination novo-select {
-    max-width: 200px; }
-    novo-pagination novo-select div[type="button"] {
-      color: #fff;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
-      novo-pagination novo-select div[type="button"]:hover {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.55); }
-        novo-pagination novo-select div[type="button"]:hover i {
-          opacity: 0.75;
-          color: #fff; }
-      novo-pagination novo-select div[type="button"]:active, novo-pagination novo-select div[type="button"]:focus {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
-        novo-pagination novo-select div[type="button"]:active i, novo-pagination novo-select div[type="button"]:focus i {
-          opacity: 1;
-          color: #fff; }
-      novo-pagination novo-select div[type="button"] i {
-        opacity: 0.45;
-        color: #fff; }
+    max-width: 100px;
+    min-width: 100px; }
+    novo-pagination novo-select div[type="button"]:hover i {
+      opacity: 0.75; }
+    novo-pagination novo-select div[type="button"]:active i, novo-pagination novo-select div[type="button"]:focus i {
+      opacity: 1; }
+    novo-pagination novo-select div[type="button"] i {
+      opacity: 0.45; }
   novo-pagination .pager {
     list-style-type: none; }
     novo-pagination .pager .page {
@@ -8018,10 +8645,13 @@ novo-pagination {
       border-radius: 2px;
       text-align: center;
       list-style-type: none;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #3399DD; }
+      novo-pagination .pager .page:last-child {
+        padding-right: 0; }
     novo-pagination .pager .page.active {
-      background-color: rgba(255, 255, 255, 0.2);
-      color: #fff; }
+      color: #3399DD;
+      background-color: #f4f4f4; }
 
 .gu-mirror {
   position: fixed !important;
@@ -10143,84 +10773,84 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 35px;
-      height: 35px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
-      width: 29px;
-      height: 29px; }
+      width: 37px;
+      height: 37px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 32px;
-      height: 32px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-lead {
       background: #AA6699;
-      width: 43px;
-      height: 43px; }
+      width: 30px;
+      height: 30px; }
     color header .background-boxes .bb-contact {
       background: #FFAA44;
       width: 37px;
       height: 37px; }
     color header .background-boxes .bb-opportunity {
       background: #662255;
-      width: 32px;
-      height: 32px; }
+      width: 43px;
+      height: 43px; }
     color header .background-boxes .bb-job {
       background: #BB5566;
-      width: 26px;
-      height: 26px; }
+      width: 30px;
+      height: 30px; }
     color header .background-boxes .bb-submission {
       background: #778899;
-      width: 36px;
-      height: 36px; }
+      width: 28px;
+      height: 28px; }
     color header .background-boxes .bb-placement {
       background: #0B344F;
-      width: 26px;
-      height: 26px; }
+      width: 41px;
+      height: 41px; }
     color header .background-boxes .bb-note {
       background: #747884;
-      width: 26px;
-      height: 26px; }
+      width: 34px;
+      height: 34px; }
     color header .background-boxes .bb-task {
       background: #747884;
-      width: 44px;
-      height: 44px; }
+      width: 34px;
+      height: 34px; }
     color header .background-boxes .bb-aqua {
       background: #3BAFDA;
-      width: 38px;
-      height: 38px; }
+      width: 44px;
+      height: 44px; }
     color header .background-boxes .bb-ocean {
       background: #4A89DC;
       width: 28px;
       height: 28px; }
     color header .background-boxes .bb-mint {
       background: #37BC9B;
-      width: 42px;
-      height: 42px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-grass {
       background: #8CC152;
-      width: 36px;
-      height: 36px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
-      width: 39px;
-      height: 39px; }
+      width: 41px;
+      height: 41px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
-      width: 38px;
-      height: 38px; }
+      width: 27px;
+      height: 27px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
-      width: 33px;
-      height: 33px; }
+      width: 27px;
+      height: 27px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 43px;
-      height: 43px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 28px;
-      height: 28px; }
+      width: 45px;
+      height: 45px; }
 
 color article.color-blocks {
   display: -webkit-box;
@@ -11177,50 +11807,15 @@ loading-demo div.example {
 loading-demo novo-loading {
   cursor: pointer; }
 
-table-demo .example.table-demo header {
-  width: 100%;
-  background: #3BAFDA;
-  -webkit-transition: background 340ms ease-in-out;
-  transition: background 340ms ease-in-out; }
-  table-demo .example.table-demo header .header-row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: #fff;
-    padding: 20px;
-    font-size: 11px; }
-    table-demo .example.table-demo header .header-row h1 {
-      font-size: 1.5em;
-      color: #fff; }
-    table-demo .example.table-demo header .header-row h5 {
-      color: #fff;
-      opacity: 0.75; }
-    table-demo .example.table-demo header .header-row div {
-      text-align: right; }
-  table-demo .example.table-demo header.blue {
-    background: #4A89DC; }
-  table-demo .example.table-demo header.green {
-    background: #8CC152; }
-  table-demo .example.table-demo header.yellow {
-    background: #F6B042; }
-  table-demo .example.table-demo header.orange {
-    background: #EB6845; }
-  table-demo .example.table-demo header.red {
-    background: #DA4453; }
-  table-demo .example.table-demo header.purple {
-    background: #967ADC; }
-
-table-demo .example.table-demo novo-table {
-  height: 100%; }
+.demo-custom-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 calendar-demo .example.calendar-demo {
   padding: 20px;
