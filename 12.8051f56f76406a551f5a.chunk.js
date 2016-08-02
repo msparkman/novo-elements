@@ -1,6 +1,6 @@
 webpackJsonp([12],{
 
-/***/ 1136:
+/***/ 1140:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62,13 +62,13 @@ webpackJsonp([12],{
 	
 	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1136);
+	var _CodeSnippet = __webpack_require__(1140);
 	
-	var _BasicSelectDemo = __webpack_require__(1192);
+	var _BasicSelectDemo = __webpack_require__(1196);
 	
 	var _BasicSelectDemo2 = _interopRequireDefault(_BasicSelectDemo);
 	
-	var _LongSelectDemo = __webpack_require__(1193);
+	var _LongSelectDemo = __webpack_require__(1197);
 	
 	var _LongSelectDemo2 = _interopRequireDefault(_LongSelectDemo);
 	
@@ -115,14 +115,14 @@ webpackJsonp([12],{
 
 /***/ },
 
-/***/ 1192:
+/***/ 1196:
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span> {{value}}</label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\"\n                 [(ngModel)]=\"value\"></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">Disabled State</span>\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\"\n                 [(ngModel)]=\"value\" disabled></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">No Model With Header</span>\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [headerConfig]=\"headerConfig\"></novo-select>\n</div>\n"
 
 /***/ },
 
-/***/ 1193:
+/***/ 1197:
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span>{{state}}</label>\n    <novo-select [options]=\"states\" [placeholder]=\"placeholder\" [(ngModel)]=\"state\"></novo-select>\n</div>\n"

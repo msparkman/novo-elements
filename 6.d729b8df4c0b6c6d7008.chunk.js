@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 1136:
+/***/ 1140:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 551:
+/***/ 552:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56,21 +56,21 @@ webpackJsonp([6],{
 	
 	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1136);
+	var _CodeSnippet = __webpack_require__(1140);
 	
-	var _TooltipOptionsDemo = __webpack_require__(1208);
+	var _TooltipOptionsDemo = __webpack_require__(1213);
 	
 	var _TooltipOptionsDemo2 = _interopRequireDefault(_TooltipOptionsDemo);
 	
-	var _TooltipPlacementDemo = __webpack_require__(1209);
+	var _TooltipPlacementDemo = __webpack_require__(1214);
 	
 	var _TooltipPlacementDemo2 = _interopRequireDefault(_TooltipPlacementDemo);
 	
-	var _TooltipAlignDemo = __webpack_require__(1207);
+	var _TooltipAlignDemo = __webpack_require__(1212);
 	
 	var _TooltipAlignDemo2 = _interopRequireDefault(_TooltipAlignDemo);
 	
-	var _TooltipTypesDemo = __webpack_require__(1210);
+	var _TooltipTypesDemo = __webpack_require__(1215);
 	
 	var _TooltipTypesDemo2 = _interopRequireDefault(_TooltipTypesDemo);
 	
@@ -95,28 +95,28 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1207:
+/***/ 1212:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"bottom-left\" tooltipPosition=\"bottom-left\">Bottom Left</span>\n<span tooltip=\"bottom-right\" tooltipPosition=\"bottom-right\">Bottom Right</span>\n<span tooltip=\"top-left\" tooltipPosition=\"top-left\">Top Left</span>\n<span tooltip=\"top-right\" tooltipPosition=\"top-right\">Top Right</span>\n"
 
 /***/ },
 
-/***/ 1208:
+/***/ 1213:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ALWAYS\" tooltipAlways=\"true\">Always Shown</span>\n<span tooltip=\"ROUNDED\" tooltipRounded=\"true\">Rounded</span>\n<span tooltip=\"NO ANIMATE\" tooltipNoAnimate=\"true\">No Animation</span>\n<span tooltip=\"BOUNCE\" tooltipBounce=\"true\">Bounce</span>\n"
 
 /***/ },
 
-/***/ 1209:
+/***/ 1214:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"left\" tooltipPosition=\"left\">Left</span>\n<span tooltip=\"right\" tooltipPosition=\"right\">Right</span>\n<span tooltip=\"top\" tooltipPosition=\"top\">Top</span>\n<span tooltip=\"bottom\" tooltipPosition=\"bottom\">Bottom</span>\n"
 
 /***/ },
 
-/***/ 1210:
+/***/ 1215:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ERROR\" tooltipType=\"error\">Error</span>\n<span tooltip=\"INFO\" tooltipType=\"info\">Info</span>\n<span tooltip=\"WARNING\" tooltipType=\"warning\">Warning</span>\n<span tooltip=\"SUCCESS\" tooltipType=\"success\">Success</span>\n"

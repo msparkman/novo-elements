@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 1136:
+/***/ 1140:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,21 +58,21 @@ webpackJsonp([8],{
 	
 	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1136);
+	var _CodeSnippet = __webpack_require__(1140);
 	
-	var _BasicPickerDemo = __webpack_require__(1183);
+	var _BasicPickerDemo = __webpack_require__(1187);
 	
 	var _BasicPickerDemo2 = _interopRequireDefault(_BasicPickerDemo);
 	
-	var _AsyncPickerDemo = __webpack_require__(1182);
+	var _AsyncPickerDemo = __webpack_require__(1186);
 	
 	var _AsyncPickerDemo2 = _interopRequireDefault(_AsyncPickerDemo);
 	
-	var _FormattedPickerDemo = __webpack_require__(1185);
+	var _FormattedPickerDemo = __webpack_require__(1189);
 	
 	var _FormattedPickerDemo2 = _interopRequireDefault(_FormattedPickerDemo);
 	
-	var _CustomPickerResultsDemo = __webpack_require__(1184);
+	var _CustomPickerResultsDemo = __webpack_require__(1188);
 	
 	var _CustomPickerResultsDemo2 = _interopRequireDefault(_CustomPickerResultsDemo);
 	
@@ -183,28 +183,28 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 1182:
+/***/ 1186:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{avalue}}</div>\n<novo-picker [config]=\"async\" [placeholder]=\"placeholder\" [(ngModel)]=\"avalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1183:
+/***/ 1187:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{value}}</div>\n<novo-picker [config]=\"static\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1184:
+/***/ 1188:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{cvalue}}</div>\n<novo-picker [config]=\"custom\" [placeholder]=\"placeholder\" [(ngModel)]=\"cvalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1185:
+/***/ 1189:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{fvalue}}</div>\n<novo-picker [config]=\"formatted\" [placeholder]=\"placeholder\" [(ngModel)]=\"fvalue\"></novo-picker>\n"
