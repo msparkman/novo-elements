@@ -50,6 +50,8 @@ webpackJsonp([24],{
 	});
 	exports.DropdownDemo = undefined;
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _dec, _class;
 	
 	var _core = __webpack_require__(1);
@@ -72,21 +74,32 @@ webpackJsonp([24],{
 	    selector: 'dropdown-demo',
 	    template: template,
 	    directives: [_novoElements.NOVO_DROPDOWN_ELEMENTS, _novoElements.NOVO_BUTTON_ELEMENTS, _CodeSnippet.CodeSnippet]
-	}), _dec(_class = function DropdownDemo() {
-	    _classCallCheck(this, DropdownDemo);
+	}), _dec(_class = function () {
+	    function DropdownDemo() {
+	        _classCallCheck(this, DropdownDemo);
 	
-	    this.DropdownDemoTpl = _DropdownDemo2.default;
-	}) || _class);
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZHJvcGRvd24vRHJvcGRvd25EZW1vLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUVBOzs7Ozs7OztBQUVBLElBQU0saWpCQUFOOztJQW1CYSxZLFdBQUEsWSxXQUxaLHFCQUFVO0FBQ1AsY0FBVSxlQURIO0FBRVAsY0FBVSxRQUZIO0FBR1AsZ0JBQVk7QUFITCxDQUFWLEMsZ0JBTUcsd0JBQWM7QUFBQTs7QUFDVixTQUFLLGVBQUw7QUFDSCxDIiwiZmlsZSI6IkRyb3Bkb3duRGVtby5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvbm92by1kZXYvbGlicy9ub3ZvLWVsZW1lbnRzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQgeyBOT1ZPX0RST1BET1dOX0VMRU1FTlRTLCBOT1ZPX0JVVFRPTl9FTEVNRU5UUyB9IGZyb20gJy4vLi4vLi4vLi4vc3JjL25vdm8tZWxlbWVudHMnO1xuaW1wb3J0IHsgQ29kZVNuaXBwZXQgfSBmcm9tICcuLi8uLi9lbGVtZW50cy9jb2Rlc25pcHBldC9Db2RlU25pcHBldCc7XG5cbmltcG9ydCBEcm9wZG93bkRlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvRHJvcGRvd25EZW1vLmh0bWwnO1xuXG5jb25zdCB0ZW1wbGF0ZSA9IGBcbjxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cbiAgICA8aDE+RHJvcGRvd24gPHNtYWxsPjxhIHRhcmdldD1cIl9ibGFua1wiIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20vYnVsbGhvcm4vbm92by1lbGVtZW50cy90cmVlL21hc3Rlci9zcmMvZWxlbWVudHMvZHJvcGRvd25cIj4oc291cmNlKTwvYT48L3NtYWxsPjwvaDE+XG4gICAgPHA+RHJvcGRvd24gYWxsb3cgdXNlcnMgdG8gdGFrZSBhbiBhY3Rpb24gYnkgc2VsZWN0aW5nIGZyb20gYSBsaXN0IG9mIGNob2ljZXMgcmV2ZWFsZWQgdXBvbiBvcGVuaW5nIGEgdGVtcG9yYXJ5IG1lbnUuPC9wPlxuXG4gICAgPGgyPlR5cGVzPC9oMj5cblxuICAgIDxoNT5Ecm9wZG93biBNZW51PC9oNT5cbiAgICA8cD5UaGlzIGlzIGEgc2ltcGxlIGRyb3Bkb3duIG1lbnUuPC9wPlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGRyb3Bkb3duLWRlbW9cIj4ke0Ryb3Bkb3duRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIkRyb3Bkb3duRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuPC9kaXY+XG5gO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ2Ryb3Bkb3duLWRlbW8nLFxuICAgIHRlbXBsYXRlOiB0ZW1wbGF0ZSxcbiAgICBkaXJlY3RpdmVzOiBbTk9WT19EUk9QRE9XTl9FTEVNRU5UUywgTk9WT19CVVRUT05fRUxFTUVOVFMsIENvZGVTbmlwcGV0XVxufSlcbmV4cG9ydCBjbGFzcyBEcm9wZG93bkRlbW8ge1xuICAgIGNvbnN0cnVjdG9yKCkge1xuICAgICAgICB0aGlzLkRyb3Bkb3duRGVtb1RwbCA9IERyb3Bkb3duRGVtb1RwbDtcbiAgICB9XG59XG4iXX0=
+	        this.DropdownDemoTpl = _DropdownDemo2.default;
+	    }
+	
+	    _createClass(DropdownDemo, [{
+	        key: 'clickMe',
+	        value: function clickMe(data) {
+	            console.log('CLICKED!', data); // eslint-disable-line
+	        }
+	    }]);
+	
+	    return DropdownDemo;
+	}()) || _class);
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZHJvcGRvd24vRHJvcGRvd25EZW1vLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBRUE7Ozs7Ozs7O0FBRUEsSUFBTSxpakJBQU47O0lBbUJhLFksV0FBQSxZLFdBTFoscUJBQVU7QUFDUCxjQUFVLGVBREg7QUFFUCxjQUFVLFFBRkg7QUFHUCxnQkFBWTtBQUhMLENBQVYsQztBQU1HLDRCQUFjO0FBQUE7O0FBQ1YsYUFBSyxlQUFMO0FBQ0g7Ozs7Z0NBRU8sSSxFQUFNO0FBQ1Ysb0JBQVEsR0FBUixDQUFZLFVBQVosRUFBd0IsSUFBeEIsRUFEVSxDQUNxQjtBQUNsQyIsImZpbGUiOiJEcm9wZG93bkRlbW8uanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHsgTk9WT19EUk9QRE9XTl9FTEVNRU5UUywgTk9WT19CVVRUT05fRUxFTUVOVFMgfSBmcm9tICcuLy4uLy4uLy4uL3NyYy9ub3ZvLWVsZW1lbnRzJztcbmltcG9ydCB7IENvZGVTbmlwcGV0IH0gZnJvbSAnLi4vLi4vZWxlbWVudHMvY29kZXNuaXBwZXQvQ29kZVNuaXBwZXQnO1xuXG5pbXBvcnQgRHJvcGRvd25EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL0Ryb3Bkb3duRGVtby5odG1sJztcblxuY29uc3QgdGVtcGxhdGUgPSBgXG48ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gICAgPGgxPkRyb3Bkb3duIDxzbWFsbD48YSB0YXJnZXQ9XCJfYmxhbmtcIiBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL2J1bGxob3JuL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL2Ryb3Bkb3duXCI+KHNvdXJjZSk8L2E+PC9zbWFsbD48L2gxPlxuICAgIDxwPkRyb3Bkb3duIGFsbG93IHVzZXJzIHRvIHRha2UgYW4gYWN0aW9uIGJ5IHNlbGVjdGluZyBmcm9tIGEgbGlzdCBvZiBjaG9pY2VzIHJldmVhbGVkIHVwb24gb3BlbmluZyBhIHRlbXBvcmFyeSBtZW51LjwvcD5cblxuICAgIDxoMj5UeXBlczwvaDI+XG5cbiAgICA8aDU+RHJvcGRvd24gTWVudTwvaDU+XG4gICAgPHA+VGhpcyBpcyBhIHNpbXBsZSBkcm9wZG93biBtZW51LjwvcD5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBkcm9wZG93bi1kZW1vXCI+JHtEcm9wZG93bkRlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJEcm9wZG93bkRlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbjwvZGl2PlxuYDtcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdkcm9wZG93bi1kZW1vJyxcbiAgICB0ZW1wbGF0ZTogdGVtcGxhdGUsXG4gICAgZGlyZWN0aXZlczogW05PVk9fRFJPUERPV05fRUxFTUVOVFMsIE5PVk9fQlVUVE9OX0VMRU1FTlRTLCBDb2RlU25pcHBldF1cbn0pXG5leHBvcnQgY2xhc3MgRHJvcGRvd25EZW1vIHtcbiAgICBjb25zdHJ1Y3RvcigpIHtcbiAgICAgICAgdGhpcy5Ecm9wZG93bkRlbW9UcGwgPSBEcm9wZG93bkRlbW9UcGw7XG4gICAgfVxuXG4gICAgY2xpY2tNZShkYXRhKSB7XG4gICAgICAgIGNvbnNvbGUubG9nKCdDTElDS0VEIScsIGRhdGEpOyAvLyBlc2xpbnQtZGlzYWJsZS1saW5lXG4gICAgfVxufVxuIl19
 
 /***/ },
 
 /***/ 1162:
 /***/ function(module, exports) {
 
-	module.exports = "<novo-dropdown>\n    <button type=\"button\" theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n    <list>\n        <item>Action 1</item>\n        <item>Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n<novo-dropdown side=\"right\">\n    <button type=\"button\" theme=\"icon\" icon=\"menu\" inverse></button>\n    <list>\n        <item>Action 1</item>\n        <item>Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n"
+	module.exports = "<novo-dropdown>\n    <button type=\"button\" theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n    <list>\n        <item (action)=\"clickMe()\">Action 1</item>\n        <item (action)=\"clickMe('WITH DATA')\">Action 2</item>\n        <item [disabled]=\"true\" (action)=\"clickMe()\">Action 3</item>\n    </list>\n</novo-dropdown>\n<novo-dropdown side=\"right\">\n    <button type=\"button\" theme=\"icon\" icon=\"menu\" inverse></button>\n    <list>\n        <item>Action 1</item>\n        <item>Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n"
 
 /***/ }
 
 });
-//# sourceMappingURL=24.a8998da38a8e826910ea.bundle.map
+//# sourceMappingURL=24.ed8e6694670b4bbb41de.bundle.map

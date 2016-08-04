@@ -6036,14 +6036,12 @@ novo-dropdown {
   novo-dropdown.active .dropdown-container {
     max-height: 500px;
     overflow: auto;
-    padding: 8px 0 16px;
     z-index: 2;
     border-radius: 2px;
     top: 100%;
     margin-top: 5px; }
   novo-dropdown .dropdown-container {
     background-color: white;
-    cursor: pointer;
     list-style: none;
     line-height: 26px;
     overflow: hidden;
@@ -6077,7 +6075,8 @@ novo-dropdown {
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      color: #63666c; }
+      color: #63666c;
+      cursor: pointer; }
       novo-dropdown .dropdown-container list item span {
         display: inline-block; }
       novo-dropdown .dropdown-container list item i {
@@ -6092,6 +6091,9 @@ novo-dropdown {
       novo-dropdown .dropdown-container list item.active {
         color: #4b4d51;
         font-weight: 500; }
+      novo-dropdown .dropdown-container list item.disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
   novo-dropdown[side=left] {
     display: -webkit-box;
     display: -webkit-flex;
@@ -10773,84 +10775,84 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 37px;
-      height: 37px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
-      width: 40px;
-      height: 40px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 38px;
-      height: 38px; }
+      width: 40px;
+      height: 40px; }
     color header .background-boxes .bb-lead {
       background: #AA6699;
-      width: 31px;
-      height: 31px; }
-    color header .background-boxes .bb-contact {
-      background: #FFAA44;
       width: 38px;
       height: 38px; }
-    color header .background-boxes .bb-opportunity {
-      background: #662255;
-      width: 40px;
-      height: 40px; }
-    color header .background-boxes .bb-job {
-      background: #BB5566;
+    color header .background-boxes .bb-contact {
+      background: #FFAA44;
       width: 45px;
       height: 45px; }
-    color header .background-boxes .bb-submission {
-      background: #778899;
-      width: 39px;
-      height: 39px; }
-    color header .background-boxes .bb-placement {
-      background: #0B344F;
-      width: 30px;
-      height: 30px; }
-    color header .background-boxes .bb-note {
-      background: #747884;
-      width: 43px;
-      height: 43px; }
-    color header .background-boxes .bb-task {
-      background: #747884;
-      width: 43px;
-      height: 43px; }
-    color header .background-boxes .bb-aqua {
-      background: #3BAFDA;
-      width: 33px;
-      height: 33px; }
-    color header .background-boxes .bb-ocean {
-      background: #4A89DC;
-      width: 30px;
-      height: 30px; }
-    color header .background-boxes .bb-mint {
-      background: #37BC9B;
+    color header .background-boxes .bb-opportunity {
+      background: #662255;
+      width: 28px;
+      height: 28px; }
+    color header .background-boxes .bb-job {
+      background: #BB5566;
       width: 40px;
       height: 40px; }
+    color header .background-boxes .bb-submission {
+      background: #778899;
+      width: 40px;
+      height: 40px; }
+    color header .background-boxes .bb-placement {
+      background: #0B344F;
+      width: 31px;
+      height: 31px; }
+    color header .background-boxes .bb-note {
+      background: #747884;
+      width: 34px;
+      height: 34px; }
+    color header .background-boxes .bb-task {
+      background: #747884;
+      width: 45px;
+      height: 45px; }
+    color header .background-boxes .bb-aqua {
+      background: #3BAFDA;
+      width: 45px;
+      height: 45px; }
+    color header .background-boxes .bb-ocean {
+      background: #4A89DC;
+      width: 44px;
+      height: 44px; }
+    color header .background-boxes .bb-mint {
+      background: #37BC9B;
+      width: 43px;
+      height: 43px; }
     color header .background-boxes .bb-grass {
       background: #8CC152;
-      width: 36px;
-      height: 36px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
-      width: 39px;
-      height: 39px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
       width: 30px;
       height: 30px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
-      width: 31px;
-      height: 31px; }
+      width: 32px;
+      height: 32px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 26px;
-      height: 26px; }
+      width: 40px;
+      height: 40px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 41px;
-      height: 41px; }
+      width: 31px;
+      height: 31px; }
 
 color article.color-blocks {
   display: -webkit-box;
