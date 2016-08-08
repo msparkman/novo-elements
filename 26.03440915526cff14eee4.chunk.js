@@ -1,6 +1,6 @@
-webpackJsonp([25],{
+webpackJsonp([26],{
 
-/***/ 1140:
+/***/ 1144:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,9 +58,9 @@ webpackJsonp([25],{
 	
 	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1140);
+	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _DrawerDemo = __webpack_require__(1161);
+	var _DrawerDemo = __webpack_require__(1165);
 	
 	var _DrawerDemo2 = _interopRequireDefault(_DrawerDemo);
 	
@@ -94,7 +94,7 @@ webpackJsonp([25],{
 
 /***/ },
 
-/***/ 1161:
+/***/ 1165:
 /***/ function(module, exports) {
 
 	module.exports = "<div drawer [position]=\"'left'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Left</button>\n    <div class=\"drawer-content\">\n        <h4>I am a left drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'right'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Right</button>\n    <div class=\"drawer-content\">\n        <h4>I am a right drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'right'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Right <strong>*Two*</strong></button>\n    <div class=\"drawer-content\">\n        <h4>I am *another* right drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'top'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Top</button>\n    <div class=\"drawer-content\">\n        <h4>I am a top drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'bottom'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Bottom</button>\n    <div class=\"drawer-content\">\n        <h4>I am a bottom drawer!</h4>\n    </div>\n</div>\n"
@@ -102,4 +102,4 @@ webpackJsonp([25],{
 /***/ }
 
 });
-//# sourceMappingURL=25.03440915526cff14eee4.bundle.map
+//# sourceMappingURL=26.03440915526cff14eee4.bundle.map

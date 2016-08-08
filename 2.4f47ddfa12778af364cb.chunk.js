@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 1140:
+/***/ 1144:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 541:
+/***/ 542:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,29 +58,29 @@ webpackJsonp([2],{
 	
 	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1140);
+	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _ModalAddDemo = __webpack_require__(1180);
+	var _ModalAddDemo = __webpack_require__(1185);
 	
 	var _ModalAddDemo2 = _interopRequireDefault(_ModalAddDemo);
 	
-	var _ModalEditDemo = __webpack_require__(1182);
+	var _ModalEditDemo = __webpack_require__(1187);
 	
 	var _ModalEditDemo2 = _interopRequireDefault(_ModalEditDemo);
 	
-	var _ModalErrorDemo = __webpack_require__(1183);
+	var _ModalErrorDemo = __webpack_require__(1188);
 	
 	var _ModalErrorDemo2 = _interopRequireDefault(_ModalErrorDemo);
 	
-	var _ModalCustomDemo = __webpack_require__(1181);
+	var _ModalCustomDemo = __webpack_require__(1186);
 	
 	var _ModalCustomDemo2 = _interopRequireDefault(_ModalCustomDemo);
 	
-	var _ModalSuccessDemo = __webpack_require__(1184);
+	var _ModalSuccessDemo = __webpack_require__(1189);
 	
 	var _ModalSuccessDemo2 = _interopRequireDefault(_ModalSuccessDemo);
 	
-	var _ModalWarningDemo = __webpack_require__(1185);
+	var _ModalWarningDemo = __webpack_require__(1190);
 	
 	var _ModalWarningDemo2 = _interopRequireDefault(_ModalWarningDemo);
 	
@@ -273,42 +273,42 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 1180:
+/***/ 1185:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-modal>\n    <header title=\"Add Contact\" icon=\"person\" theme=\"contact\">\n        <utils>\n            <util-action icon=\"times\" (click)=\"toggleClose($event)\"></util-action>\n        </utils>\n    </header>\n    <section>\n        <novo-form>\n            <form-field>\n                <form-label>First Name</form-label>\n                <form-input name=\"firstName\" type=\"text\" placeholder=\"Jack\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Last Name</form-label>\n                <form-input name=\"lastName\" type=\"text\" placeholder=\"White\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Email</form-label>\n                <form-input name=\"email\" type=\"text\" placeholder=\"jwhite@gmail.com\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Title</form-label>\n                <form-input name=\"title\" type=\"text\" placeholder=\"Operations Manager\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Current Company</form-label>\n                <form-input name=\"company\" type=\"text\" placeholder=\"Amazon\"></form-input>\n            </form-field>\n        </novo-form>\n    </section>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"close()\">Save</button>\n</novo-modal>\n"
 
 /***/ },
 
-/***/ 1181:
+/***/ 1186:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"custom\" icon=\"trending-up\">\n    <h1>I have a trending icon!</h1>\n    <h4>This notification type allows for any Bullhorn Icon</h4>\n    <button theme=\"primary\" icon=\"check\" (click)=\"close()\">Sweet.</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 1182:
+/***/ 1187:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-modal>\n    <header title=\"John Deere\" icon=\"candidate\" theme=\"candidate\">\n        <utils>\n            <util-action icon=\"times\" (click)=\"toggleClose($event)\"></util-action>\n        </utils>\n    </header>\n    <section>\n        <novo-form>\n            <form-field>\n                <form-label>Status</form-label>\n                <form-input name=\"status\" type=\"select\" [options]=\"statusOptions\" placeholder=\"Status\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Start Date</form-label>\n                <form-input name=\"startDate\" type=\"date\" inline=\"true\" placeholder=\"Please select a date\"></form-input>\n            </form-field>\n        </novo-form>\n    </section>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"close()\">Save</button>\n</novo-modal>\n"
 
 /***/ },
 
-/***/ 1183:
+/***/ 1188:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"error\">\n    <h1>Sorry, something went wrong.</h1>\n    <h4>You did not have 1.21 gigawatts of power.</h4>\n    <button theme=\"primary\" icon=\"refresh-o\" (click)=\"close()\">Refresh this page</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 1184:
+/***/ 1189:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"success\">\n    <h1>Woooo!</h1>\n    <h4>You did something awesome!</h4>\n    <button theme=\"primary\" icon=\"check\" (click)=\"close()\">I'm awesome</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 1185:
+/***/ 1190:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"warning\">\n    <h1>This action will delete 25 records.</h1>\n    <h4>Are you sure you wish to continue?</h4>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"negative\" icon=\"delete\" (click)=\"close()\">Delete</button>\n</novo-notification>\n"

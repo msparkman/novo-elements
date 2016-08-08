@@ -1,6 +1,6 @@
 webpackJsonp([9],{
 
-/***/ 1140:
+/***/ 1144:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([9],{
 
 /***/ },
 
-/***/ 544:
+/***/ 545:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,17 +58,17 @@ webpackJsonp([9],{
 	
 	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1140);
+	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _BasicQuickNote = __webpack_require__(1191);
+	var _BasicQuickNote = __webpack_require__(1196);
 	
 	var _BasicQuickNote2 = _interopRequireDefault(_BasicQuickNote);
 	
-	var _CustomQuickNote = __webpack_require__(1192);
+	var _CustomQuickNote = __webpack_require__(1197);
 	
 	var _CustomQuickNote2 = _interopRequireDefault(_CustomQuickNote);
 	
-	var _CustomQuickNoteResults = __webpack_require__(1193);
+	var _CustomQuickNoteResults = __webpack_require__(1198);
 	
 	var _CustomQuickNoteResults2 = _interopRequireDefault(_CustomQuickNoteResults);
 	
@@ -224,21 +224,21 @@ webpackJsonp([9],{
 
 /***/ },
 
-/***/ 1191:
+/***/ 1196:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note\" [references]=\"references\" [placeholder]=\"placeholder\" [config]=\"config\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note}}</p>\n    <p>References: {{references | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 1192:
+/***/ 1197:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note2\" [references]=\"references2\" [placeholder]=\"placeholder\" [config]=\"custom\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note2}}</p>\n    <p>References: {{references2 | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 1193:
+/***/ 1198:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note3\" [references]=\"references3\" [placeholder]=\"placeholder\" [config]=\"custom2\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note3}}</p>\n    <p>References: {{references3 | json}}</p>\n</div>\n"

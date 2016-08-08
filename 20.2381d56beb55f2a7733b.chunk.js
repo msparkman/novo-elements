@@ -1,6 +1,6 @@
 webpackJsonp([20],{
 
-/***/ 1140:
+/***/ 1144:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([20],{
 
 /***/ },
 
-/***/ 547:
+/***/ 548:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56,9 +56,9 @@ webpackJsonp([20],{
 	
 	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1140);
+	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _BasicSlide = __webpack_require__(1198);
+	var _BasicSlide = __webpack_require__(1203);
 	
 	var _BasicSlide2 = _interopRequireDefault(_BasicSlide);
 	
@@ -81,7 +81,7 @@ webpackJsonp([20],{
 
 /***/ },
 
-/***/ 1198:
+/***/ 1203:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-slider [slides]=\"2\">\n    <div slide=\"1\">\n        SLIDE #1\n    </div>\n    <div slide=\"2\">\n        SLIDE #2\n    </div>\n</novo-slider>\n"

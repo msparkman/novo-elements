@@ -1,6 +1,6 @@
 webpackJsonp([17],{
 
-/***/ 1140:
+/***/ 1144:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([17],{
 
 /***/ },
 
-/***/ 552:
+/***/ 553:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63,9 +63,9 @@ webpackJsonp([17],{
 	
 	var _novoElements = __webpack_require__(14);
 	
-	var _CodeSnippet = __webpack_require__(1140);
+	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _TipWellDemo = __webpack_require__(1209);
+	var _TipWellDemo = __webpack_require__(1214);
 	
 	var _TipWellDemo2 = _interopRequireDefault(_TipWellDemo);
 	
@@ -101,7 +101,7 @@ webpackJsonp([17],{
 
 /***/ },
 
-/***/ 1209:
+/***/ 1214:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\"></novo-tip-well>\n"

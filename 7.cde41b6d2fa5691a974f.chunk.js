@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 1140:
+/***/ 1144:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,7 +40,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 1141:
+/***/ 1145:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1053,7 +1053,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 549:
+/***/ 550:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1075,19 +1075,19 @@ webpackJsonp([7],{
 	
 	var _TableExtras = __webpack_require__(260);
 	
-	var _TableData = __webpack_require__(1141);
+	var _TableData = __webpack_require__(1145);
 	
-	var _CodeSnippet = __webpack_require__(1140);
+	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _TableDemo = __webpack_require__(1202);
+	var _TableDemo = __webpack_require__(1207);
 	
 	var _TableDemo2 = _interopRequireDefault(_TableDemo);
 	
-	var _DetailsTableDemo = __webpack_require__(1200);
+	var _DetailsTableDemo = __webpack_require__(1205);
 	
 	var _DetailsTableDemo2 = _interopRequireDefault(_DetailsTableDemo);
 	
-	var _SelectAllTableDemo = __webpack_require__(1201);
+	var _SelectAllTableDemo = __webpack_require__(1206);
 	
 	var _SelectAllTableDemo2 = _interopRequireDefault(_SelectAllTableDemo);
 	
@@ -1292,21 +1292,21 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 1200:
+/***/ 1205:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [rows]=\"details.rows\" [columns]=\"details.columns\" [config]=\"details.config\" (onTableChange)=\"details.onTableChange($event)\"></novo-table>\n"
 
 /***/ },
 
-/***/ 1201:
+/***/ 1206:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [rows]=\"selectAll.rows\" [columns]=\"selectAll.columns\" [config]=\"selectAll.config\" (onTableChange)=\"selectAll.onTableChange($event)\" #table>\n    <novo-table-actions>\n        <button theme=\"secondary\" (click)=\"singleAction()\">Click Me!</button>\n        <novo-dropdown side=\"right\" *ngIf=\"table.selected.length\">\n            <button theme=\"primary\" icon=\"collapse\" inverse>{{table.selected.length}} Selected</button>\n            <list>\n                <item (action)=\"selectedAction('action 1')\">Action 1</item>\n                <item (action)=\"selectedAction('action 2')\">Action 2</item>\n                <item (action)=\"selectedAction('action 3')\" disabled=\"true\">Action 3</item>\n            </list>\n        </novo-dropdown>\n    </novo-table-actions>\n</novo-table>\n"
 
 /***/ },
 
-/***/ 1202:
+/***/ 1207:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [theme]=\"theme\" [rows]=\"basic.rows\" [columns]=\"basic.columns\" [config]=\"basic.config\" (onTableChange)=\"basic.onTableChange($event)\">\n    <novo-table-header class=\"demo-custom-header\">\n        TEST :)\n        <button theme=\"secondary\" (click)=\"changeTheme()\">Change Theme!</button>\n    </novo-table-header>\n</novo-table>\n"
