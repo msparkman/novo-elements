@@ -175,7 +175,7 @@ webpackJsonp([35],{
 	
 	        this.router = router;
 	        this.menuOpen = false;
-	        this.version = ("0.2.16");
+	        this.version = ("0.2.17");
 	
 	        toastService.parentViewContainer = view;
 	        modalService.parentViewContainer = view;
