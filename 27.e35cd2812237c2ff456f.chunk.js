@@ -1,6 +1,6 @@
 webpackJsonp([27],{
 
-/***/ 1223:
+/***/ 1224:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\n    <h1>Utils</h1>\n    <p>Helpful utility functions and objects.</p>\n\n    <h5>Key Codes\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/key-codes\">(source)</a></small>\n    </h5>\n    <p>List of all Key Codes to import and use, no magic strings!</p>\n\n    <h5>Deferred\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/deferred\">(source)</a></small>\n    </h5>\n    <p>Custom deferred object</p>\n\n    <h5>Outside Click\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/outside-click\">(source)</a></small>\n    </h5>\n    <p>Helper class to listen to and automatically close a component when an outside click is detected.</p>\n</div>\n"
@@ -23,7 +23,7 @@ webpackJsonp([27],{
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var template = __webpack_require__(1223);
+	var template = __webpack_require__(1224);
 	
 	var UtilsDemo = exports.UtilsDemo = (_dec = (0, _core.Component)({
 	    selector: 'utils-demo',

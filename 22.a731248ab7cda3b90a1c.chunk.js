@@ -60,7 +60,7 @@ webpackJsonp([22],{
 	
 	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _ListDemo = __webpack_require__(1182);
+	var _ListDemo = __webpack_require__(1183);
 	
 	var _ListDemo2 = _interopRequireDefault(_ListDemo);
 	
@@ -221,7 +221,7 @@ webpackJsonp([22],{
 
 /***/ },
 
-/***/ 1182:
+/***/ 1183:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-list direction=\"vertical\">\n\n        <novo-list-item *ngFor=\"let item of pulseItems\">\n            <item-avatar [icon]=\"item.type\"></item-avatar>\n            <item-title>{{item.name}}</item-title>\n            <item-content direction=\"vertical\">\n                <p>\n                    <i *ngIf=\"item.icon.name\" class=\"{{item.icon.name}} {{item.icon.sentiment}}\"></i>\n                    {{item.comment}}\n                </p>\n                <span>\n                    <i class=\"bhi-clock\"></i>\n                    {{item.timeAgo | date: 'shortTime'}}\n                </span>\n            </item-content>\n            <item-end>\n                <i class=\"bhi-next\"></i>\n            </item-end>\n        </novo-list-item>\n\n    </novo-list>\n</header>\n"

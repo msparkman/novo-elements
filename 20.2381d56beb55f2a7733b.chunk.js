@@ -58,7 +58,7 @@ webpackJsonp([20],{
 	
 	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _BasicSlide = __webpack_require__(1203);
+	var _BasicSlide = __webpack_require__(1204);
 	
 	var _BasicSlide2 = _interopRequireDefault(_BasicSlide);
 	
@@ -81,7 +81,7 @@ webpackJsonp([20],{
 
 /***/ },
 
-/***/ 1203:
+/***/ 1204:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-slider [slides]=\"2\">\n    <div slide=\"1\">\n        SLIDE #1\n    </div>\n    <div slide=\"2\">\n        SLIDE #2\n    </div>\n</novo-slider>\n"

@@ -5431,7 +5431,6 @@ novo-select {
     max-width: 800px;
     width: inherit;
     overflow: auto;
-    padding: 8px 0 16px;
     opacity: 1; }
   novo-select div[type="button"] {
     display: -webkit-box;
@@ -6472,6 +6471,27 @@ input[type=calendar] {
       font-size: 1em;
       font-weight: 300;
       padding: 10px; }
+  .calendar .calendar-range {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row; }
+    .calendar .calendar-range span {
+      text-align: center;
+      margin: auto;
+      text-transform: uppercase;
+      line-height: 2.5em;
+      width: 50%;
+      border-bottom: 2px solid transparent;
+      color: #999999;
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+    .calendar .calendar-range .active {
+      color: #4A89DC;
+      border-bottom: 2px solid #4A89DC; }
   .calendar .calendar-header {
     width: 100%;
     border-collapse: collapse;
@@ -6580,24 +6600,44 @@ input[type=calendar] {
     .calendar .calendar-content td:hover .day {
       cursor: pointer;
       box-shadow: inset 0 0 0 2px #4A89DC; }
+    .calendar .calendar-content td.filler button {
+      background: #4A89DC;
+      color: #fff;
+      height: 30px;
+      width: 100%;
+      border-radius: 0; }
+    .calendar .calendar-content td.filler + .selected button,
+    .calendar .calendar-content td.startfill button,
+    .calendar .calendar-content td.startfill + .selected button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      width: 100%; }
+      .calendar .calendar-content td.filler + .selected button .day,
+      .calendar .calendar-content td.startfill button .day,
+      .calendar .calendar-content td.startfill + .selected button .day {
+        box-shadow: 0; }
+    .calendar .calendar-content td.startfill button {
+      border-radius: 50%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: none !important; }
     .calendar .calendar-content td.selected .day {
       background: #4A89DC;
       color: #fff; }
-      .calendar .calendar-content td.selected .day:after {
-        content: ' ';
-        background: #9DBEFF;
-        position: absolute;
-        border-radius: 50%;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        -webkit-animation: 360ms select ease-in-out;
-        animation: 360ms select ease-in-out; }
-    .calendar .calendar-content td.today .day {
+    .calendar .calendar-content td.today .day:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-15px);
+      transform: translateX(-15px);
+      border-radius: 100%;
+      width: 100%;
+      height: 100%;
+      max-width: 30px;
+      margin: 0 auto;
       box-shadow: inset 0 0 0 2px #D9DADC; }
-    .calendar .calendar-content td.today.selected .day {
+    .calendar .calendar-content td.today.selected .day:after, .calendar .calendar-content td.today.filler .day:after {
       box-shadow: inset 0 0 0 2px #9DBEFF; }
   .calendar .calendar-footer {
     width: 100%;
@@ -7754,7 +7794,7 @@ novo-table {
         novo-table > header div.header-actions > novo-table-actions > *:last-child {
           margin-right: 0; }
   novo-table > .table-container {
-    overflow-x: scroll;
+    overflow-x: auto;
     width: 100%;
     display: block; }
 
@@ -7830,7 +7870,8 @@ novo-table {
         color: #4A89DC; }
       .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container {
         right: -15px;
-        min-width: 230px; }
+        min-width: 230px;
+        overflow-x: hidden; }
         .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container list item.filter-search {
           padding: 10px 0;
           width: 100%;
@@ -7882,6 +7923,29 @@ novo-table {
             .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container list item.filter-search input:focus {
               outline: none;
               border-bottom: 2px solid #4A89DC; }
+        .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container {
+          position: absolute;
+          top: 0;
+          left: 100%;
+          height: 100%;
+          min-height: 200px;
+          width: 100%;
+          background: #fff;
+          -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out; }
+          .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container > div {
+            color: #4A89DC;
+            line-height: 3em;
+            font-size: .9em;
+            padding-left: 5px; }
+          .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container.active {
+            left: 0; }
+          .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container novo-date-picker .calendar {
+            width: 100%;
+            height: 100%;
+            box-shadow: none; }
+            .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container novo-date-picker .calendar .calendar-top {
+              display: none; }
       .table > thead > tr > th .th-group .th-title {
         display: -webkit-box;
         display: -webkit-flex;
@@ -8898,6 +8962,7 @@ novo-form {
               border-radius: 0;
               outline: none;
               height: 2rem;
+              line-height: 2em;
               width: 100%;
               margin: 0;
               padding: 0;
@@ -9402,8 +9467,10 @@ novo-form {
       -ms-flex: 4 4 100%;
       flex: 4 4 100%; }
   novo-form[layout="vertical"] .novo-form-container form form-field {
-    margin-top: 2rem;
+    margin-top: 2.2rem;
     position: relative; }
+    novo-form[layout="vertical"] .novo-form-container form form-field:first-of-type {
+      margin-top: 0; }
     novo-form[layout="vertical"] .novo-form-container form form-field form-label {
       position: absolute;
       top: -13px;
@@ -10826,84 +10893,84 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 37px;
-      height: 37px; }
+      width: 28px;
+      height: 28px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
-      width: 36px;
-      height: 36px; }
+      width: 33px;
+      height: 33px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 42px;
-      height: 42px; }
+      width: 35px;
+      height: 35px; }
     color header .background-boxes .bb-lead {
       background: #AA6699;
-      width: 42px;
-      height: 42px; }
+      width: 39px;
+      height: 39px; }
     color header .background-boxes .bb-contact {
       background: #FFAA44;
-      width: 40px;
-      height: 40px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-opportunity {
       background: #662255;
-      width: 27px;
-      height: 27px; }
+      width: 43px;
+      height: 43px; }
     color header .background-boxes .bb-job {
       background: #BB5566;
       width: 30px;
       height: 30px; }
     color header .background-boxes .bb-submission {
       background: #778899;
-      width: 36px;
-      height: 36px; }
+      width: 30px;
+      height: 30px; }
     color header .background-boxes .bb-placement {
       background: #0B344F;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-note {
-      background: #747884;
-      width: 39px;
-      height: 39px; }
-    color header .background-boxes .bb-task {
-      background: #747884;
-      width: 44px;
-      height: 44px; }
-    color header .background-boxes .bb-aqua {
-      background: #3BAFDA;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-ocean {
-      background: #4A89DC;
       width: 33px;
       height: 33px; }
-    color header .background-boxes .bb-mint {
-      background: #37BC9B;
-      width: 30px;
-      height: 30px; }
-    color header .background-boxes .bb-grass {
-      background: #8CC152;
+    color header .background-boxes .bb-note {
+      background: #747884;
+      width: 31px;
+      height: 31px; }
+    color header .background-boxes .bb-task {
+      background: #747884;
+      width: 29px;
+      height: 29px; }
+    color header .background-boxes .bb-aqua {
+      background: #3BAFDA;
       width: 27px;
       height: 27px; }
-    color header .background-boxes .bb-sunflower {
-      background: #F6B042;
-      width: 30px;
-      height: 30px; }
-    color header .background-boxes .bb-bittersweet {
-      background: #EB6845;
+    color header .background-boxes .bb-ocean {
+      background: #4A89DC;
       width: 39px;
       height: 39px; }
+    color header .background-boxes .bb-mint {
+      background: #37BC9B;
+      width: 39px;
+      height: 39px; }
+    color header .background-boxes .bb-grass {
+      background: #8CC152;
+      width: 44px;
+      height: 44px; }
+    color header .background-boxes .bb-sunflower {
+      background: #F6B042;
+      width: 31px;
+      height: 31px; }
+    color header .background-boxes .bb-bittersweet {
+      background: #EB6845;
+      width: 44px;
+      height: 44px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
       width: 38px;
       height: 38px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 37px;
-      height: 37px; }
+      width: 44px;
+      height: 44px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 39px;
-      height: 39px; }
+      width: 45px;
+      height: 45px; }
 
 color article.color-blocks {
   display: -webkit-box;

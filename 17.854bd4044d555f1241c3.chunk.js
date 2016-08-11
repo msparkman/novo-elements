@@ -65,7 +65,7 @@ webpackJsonp([17],{
 	
 	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _TipWellDemo = __webpack_require__(1214);
+	var _TipWellDemo = __webpack_require__(1215);
 	
 	var _TipWellDemo2 = _interopRequireDefault(_TipWellDemo);
 	
@@ -101,7 +101,7 @@ webpackJsonp([17],{
 
 /***/ },
 
-/***/ 1214:
+/***/ 1215:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\"></novo-tip-well>\n"

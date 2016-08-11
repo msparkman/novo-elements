@@ -60,23 +60,23 @@ webpackJsonp([4],{
 	
 	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _TooltipOptionsDemo = __webpack_require__(1218);
+	var _TooltipOptionsDemo = __webpack_require__(1219);
 	
 	var _TooltipOptionsDemo2 = _interopRequireDefault(_TooltipOptionsDemo);
 	
-	var _TooltipPlacementDemo = __webpack_require__(1219);
+	var _TooltipPlacementDemo = __webpack_require__(1220);
 	
 	var _TooltipPlacementDemo2 = _interopRequireDefault(_TooltipPlacementDemo);
 	
-	var _TooltipAlignDemo = __webpack_require__(1217);
+	var _TooltipAlignDemo = __webpack_require__(1218);
 	
 	var _TooltipAlignDemo2 = _interopRequireDefault(_TooltipAlignDemo);
 	
-	var _TooltipTypesDemo = __webpack_require__(1221);
+	var _TooltipTypesDemo = __webpack_require__(1222);
 	
 	var _TooltipTypesDemo2 = _interopRequireDefault(_TooltipTypesDemo);
 	
-	var _TooltipToggleDemo = __webpack_require__(1220);
+	var _TooltipToggleDemo = __webpack_require__(1221);
 	
 	var _TooltipToggleDemo2 = _interopRequireDefault(_TooltipToggleDemo);
 	
@@ -115,35 +115,35 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1217:
+/***/ 1218:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"bottom-left\" tooltipPosition=\"bottom-left\">Bottom Left</span>\n<span tooltip=\"bottom-right\" tooltipPosition=\"bottom-right\">Bottom Right</span>\n<span tooltip=\"top-left\" tooltipPosition=\"top-left\">Top Left</span>\n<span tooltip=\"top-right\" tooltipPosition=\"top-right\">Top Right</span>\n"
 
 /***/ },
 
-/***/ 1218:
+/***/ 1219:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ALWAYS\" tooltipAlways=\"true\">Always Shown</span>\n<span tooltip=\"ROUNDED\" tooltipRounded=\"true\">Rounded</span>\n<span tooltip=\"NO ANIMATE\" tooltipNoAnimate=\"true\">No Animation</span>\n<span tooltip=\"BOUNCE\" tooltipBounce=\"true\">Bounce</span>\n"
 
 /***/ },
 
-/***/ 1219:
+/***/ 1220:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"left\" tooltipPosition=\"left\">Left</span>\n<span tooltip=\"right\" tooltipPosition=\"right\">Right</span>\n<span tooltip=\"top\" tooltipPosition=\"top\">Top</span>\n<span tooltip=\"bottom\" tooltipPosition=\"bottom\">Bottom</span>\n"
 
 /***/ },
 
-/***/ 1220:
+/***/ 1221:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"I HAVE A TOOLTIP!\" [tooltipActive]=\"tooltipActive\">\n    <span *ngIf=\"tooltipActive\">My tooltip can display!</span>\n    <span *ngIf=\"!tooltipActive\">My tooltip is disabled!</span>\n</span>\n<button theme=\"secondary\" (click)=\"toggleTooltip()\">Toggle</button>\n"
 
 /***/ },
 
-/***/ 1221:
+/***/ 1222:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ERROR\" tooltipType=\"error\">Error</span>\n<span tooltip=\"INFO\" tooltipType=\"info\">Info</span>\n<span tooltip=\"WARNING\" tooltipType=\"warning\">Warning</span>\n<span tooltip=\"SUCCESS\" tooltipType=\"success\">Success</span>\n"

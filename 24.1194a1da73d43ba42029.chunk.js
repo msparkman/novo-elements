@@ -58,7 +58,7 @@ webpackJsonp([24],{
 	
 	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _BasicEditorDemo = __webpack_require__(1167);
+	var _BasicEditorDemo = __webpack_require__(1168);
 	
 	var _BasicEditorDemo2 = _interopRequireDefault(_BasicEditorDemo);
 	
@@ -82,7 +82,7 @@ webpackJsonp([24],{
 
 /***/ },
 
-/***/ 1167:
+/***/ 1168:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-editor [(ngModel)]=\"editorValue\"></novo-editor>\n\n<p>Value:</p>\n<p [innerHtml]=\"editorValue\"></p>\n"

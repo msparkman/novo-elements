@@ -60,19 +60,19 @@ webpackJsonp([8],{
 	
 	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _BasicPickerDemo = __webpack_require__(1192);
+	var _BasicPickerDemo = __webpack_require__(1193);
 	
 	var _BasicPickerDemo2 = _interopRequireDefault(_BasicPickerDemo);
 	
-	var _AsyncPickerDemo = __webpack_require__(1191);
+	var _AsyncPickerDemo = __webpack_require__(1192);
 	
 	var _AsyncPickerDemo2 = _interopRequireDefault(_AsyncPickerDemo);
 	
-	var _FormattedPickerDemo = __webpack_require__(1194);
+	var _FormattedPickerDemo = __webpack_require__(1195);
 	
 	var _FormattedPickerDemo2 = _interopRequireDefault(_FormattedPickerDemo);
 	
-	var _CustomPickerResultsDemo = __webpack_require__(1193);
+	var _CustomPickerResultsDemo = __webpack_require__(1194);
 	
 	var _CustomPickerResultsDemo2 = _interopRequireDefault(_CustomPickerResultsDemo);
 	
@@ -183,28 +183,28 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 1191:
+/***/ 1192:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{avalue}}</div>\n<novo-picker [config]=\"async\" [placeholder]=\"placeholder\" [(ngModel)]=\"avalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1192:
+/***/ 1193:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{value}}</div>\n<novo-picker [config]=\"static\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1193:
+/***/ 1194:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{cvalue}}</div>\n<novo-picker [config]=\"custom\" [placeholder]=\"placeholder\" [(ngModel)]=\"cvalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 1194:
+/***/ 1195:
 /***/ function(module, exports) {
 
 	module.exports = "<div>Selected Value: {{fvalue}}</div>\n<novo-picker [config]=\"formatted\" [placeholder]=\"placeholder\" [(ngModel)]=\"fvalue\"></novo-picker>\n"

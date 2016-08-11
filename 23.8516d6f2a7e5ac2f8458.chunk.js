@@ -60,7 +60,7 @@ webpackJsonp([23],{
 	
 	var _CodeSnippet = __webpack_require__(1144);
 	
-	var _HeaderDemo = __webpack_require__(1178);
+	var _HeaderDemo = __webpack_require__(1179);
 	
 	var _HeaderDemo2 = _interopRequireDefault(_HeaderDemo);
 	
@@ -116,7 +116,7 @@ webpackJsonp([23],{
 
 /***/ },
 
-/***/ 1178:
+/***/ 1179:
 /***/ function(module, exports) {
 
 	module.exports = "<header title=\"John Deere\" icon=\"person\" [theme]=\"entity\">\n    <utils>\n        <util-action icon=\"flag\" (click)=\"catchEv('pin', $event)\"></util-action>\n        <util-action icon=\"refresh\" (click)=\"catchEv('refresh', $event)\"></util-action>\n        <util-action icon=\"times\" (click)=\"catchEv('close', $event)\"></util-action>\n    </utils>\n    <section>\n        Extra Info\n    </section>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>Overview</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Activity</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Email</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n"

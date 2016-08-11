@@ -175,7 +175,7 @@ webpackJsonp([35],{
 	
 	        this.router = router;
 	        this.menuOpen = false;
-	        this.version = ("0.2.17");
+	        this.version = ("0.2.18");
 	
 	        toastService.parentViewContainer = view;
 	        modalService.parentViewContainer = view;
@@ -240,7 +240,7 @@ webpackJsonp([35],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(16, function (require) {
+	    __webpack_require__.e/* nsure */(11, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(527)[namespace]);
 	      } else {
@@ -308,7 +308,7 @@ webpackJsonp([35],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(15, function (require) {
+	    __webpack_require__.e/* nsure */(16, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(531)[namespace]);
 	      } else {
@@ -478,7 +478,7 @@ webpackJsonp([35],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(14, function (require) {
+	    __webpack_require__.e/* nsure */(15, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(541)[namespace]);
 	      } else {
@@ -563,7 +563,7 @@ webpackJsonp([35],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(13, function (require) {
+	    __webpack_require__.e/* nsure */(14, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(546)[namespace]);
 	      } else {
@@ -580,7 +580,7 @@ webpackJsonp([35],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(12, function (require) {
+	    __webpack_require__.e/* nsure */(13, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(547)[namespace]);
 	      } else {
@@ -699,7 +699,7 @@ webpackJsonp([35],{
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
-	    __webpack_require__.e/* nsure */(11, function (require) {
+	    __webpack_require__.e/* nsure */(12, function (require) {
 	      if (namespace) {
 	        resolve(__webpack_require__(554)[namespace]);
 	      } else {
