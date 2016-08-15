@@ -6493,6 +6493,8 @@ input[type=calendar] {
     .calendar .calendar-range .active {
       color: #4A89DC;
       border-bottom: 2px solid #4A89DC; }
+    .calendar .calendar-range + .calendar-header {
+      border-top: 1px solid #F0F0F0; }
   .calendar .calendar-header {
     width: 100%;
     border-collapse: collapse;
@@ -6501,18 +6503,24 @@ input[type=calendar] {
     cursor: default;
     border-bottom: 1px solid #F0F0F0; }
     .calendar .calendar-header .previous {
-      border-bottom: 4px solid transparent;
-      border-top: 4px solid transparent;
-      border-right: 4px solid #aaa;
+      width: 30px;
+      height: 15px;
       display: inline-block;
-      height: 0;
-      vertical-align: middle;
-      width: 0; }
-      .calendar .calendar-header .previous:hover {
+      cursor: pointer; }
+      .calendar .calendar-header .previous:after {
+        content: '';
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid transparent;
+        border-right: 4px solid #aaa;
+        display: inline-block;
+        height: 0;
+        vertical-align: middle;
+        width: 0; }
+      .calendar .calendar-header .previous:hover:after {
         border-right: 4px solid #4A89DC;
         cursor: pointer; }
     .calendar .calendar-header .heading {
-      width: 80%;
+      width: calc(100% - 70px);
       display: inline-block;
       vertical-align: middle;
       color: #4A89DC;
@@ -6532,14 +6540,20 @@ input[type=calendar] {
           color: #fff;
           cursor: pointer; }
     .calendar .calendar-header .next {
-      border-bottom: 4px solid transparent;
-      border-top: 4px solid transparent;
-      border-left: 4px solid #aaa;
+      width: 30px;
+      height: 15px;
       display: inline-block;
-      height: 0;
-      vertical-align: middle;
-      width: 0; }
-      .calendar .calendar-header .next:hover {
+      cursor: pointer; }
+      .calendar .calendar-header .next:before {
+        content: '';
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid transparent;
+        border-left: 4px solid #aaa;
+        display: inline-block;
+        height: 0;
+        vertical-align: middle;
+        width: 0; }
+      .calendar .calendar-header .next:hover:before {
         opacity: 1;
         border-left: 4px solid #4A89DC;
         cursor: pointer; }
@@ -7938,7 +7952,8 @@ novo-table {
             color: #4A89DC;
             line-height: 3em;
             font-size: .9em;
-            padding-left: 5px; }
+            padding-left: 5px;
+            cursor: pointer; }
           .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container.active {
             left: 0; }
           .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container novo-date-picker .calendar {
@@ -10237,18 +10252,31 @@ novo-slider {
         opacity: 1; }
 
 novo-tip-well {
-  width: 100%;
-  min-height: 3em;
+  display: inline-block;
   margin: 1em 0 1em; }
   novo-tip-well > div {
+    display: inline-block;
     border-radius: .25em;
     background-color: #f4f4f4;
     color: #3D464D;
     padding: 1em;
     text-align: right; }
-    novo-tip-well > div > p {
-      width: 100%;
-      text-align: left; }
+    novo-tip-well > div > div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      novo-tip-well > div > div > i {
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        text-align: center;
+        margin-top: .3em;
+        margin-right: 10px; }
+      novo-tip-well > div > div > p {
+        width: 100%;
+        max-width: 33em;
+        text-align: left; }
 
 novo-editor .cke {
   font: inherit !important;
@@ -10897,84 +10925,84 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 39px;
-      height: 39px; }
+      width: 38px;
+      height: 38px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
-      width: 28px;
-      height: 28px; }
-    color header .background-boxes .bb-navigation {
-      background: #2F384F;
-      width: 40px;
-      height: 40px; }
-    color header .background-boxes .bb-lead {
-      background: #AA6699;
-      width: 39px;
-      height: 39px; }
-    color header .background-boxes .bb-contact {
-      background: #FFAA44;
       width: 31px;
       height: 31px; }
+    color header .background-boxes .bb-navigation {
+      background: #2F384F;
+      width: 27px;
+      height: 27px; }
+    color header .background-boxes .bb-lead {
+      background: #AA6699;
+      width: 45px;
+      height: 45px; }
+    color header .background-boxes .bb-contact {
+      background: #FFAA44;
+      width: 42px;
+      height: 42px; }
     color header .background-boxes .bb-opportunity {
       background: #662255;
-      width: 45px;
-      height: 45px; }
+      width: 31px;
+      height: 31px; }
     color header .background-boxes .bb-job {
       background: #BB5566;
-      width: 41px;
-      height: 41px; }
+      width: 28px;
+      height: 28px; }
     color header .background-boxes .bb-submission {
       background: #778899;
-      width: 41px;
-      height: 41px; }
+      width: 35px;
+      height: 35px; }
     color header .background-boxes .bb-placement {
       background: #0B344F;
-      width: 45px;
-      height: 45px; }
+      width: 37px;
+      height: 37px; }
     color header .background-boxes .bb-note {
-      background: #747884;
-      width: 45px;
-      height: 45px; }
-    color header .background-boxes .bb-task {
       background: #747884;
       width: 44px;
       height: 44px; }
-    color header .background-boxes .bb-aqua {
-      background: #3BAFDA;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-ocean {
-      background: #4A89DC;
+    color header .background-boxes .bb-task {
+      background: #747884;
       width: 36px;
       height: 36px; }
+    color header .background-boxes .bb-aqua {
+      background: #3BAFDA;
+      width: 27px;
+      height: 27px; }
+    color header .background-boxes .bb-ocean {
+      background: #4A89DC;
+      width: 37px;
+      height: 37px; }
     color header .background-boxes .bb-mint {
       background: #37BC9B;
       width: 31px;
       height: 31px; }
     color header .background-boxes .bb-grass {
       background: #8CC152;
-      width: 32px;
-      height: 32px; }
+      width: 45px;
+      height: 45px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
-      width: 30px;
-      height: 30px; }
+      width: 31px;
+      height: 31px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
-      width: 33px;
-      height: 33px; }
+      width: 42px;
+      height: 42px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
-      width: 30px;
-      height: 30px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 30px;
-      height: 30px; }
+      width: 34px;
+      height: 34px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 37px;
-      height: 37px; }
+      width: 36px;
+      height: 36px; }
 
 color article.color-blocks {
   display: -webkit-box;
@@ -12086,4 +12114,4 @@ radio-demo .example {
     Hopefully, I am nothing but a friendly comment. :)
 */
 
-/*# sourceMappingURL=demo.6d24014a428cb11d12ac.bundle.map*/
+/*# sourceMappingURL=demo.645f279ba410ad2dcd94.bundle.map*/
