@@ -26,9 +26,9 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _router = __webpack_require__(262);
+	var _router = __webpack_require__(267);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -47,7 +47,7 @@ webpackJsonp([3],{
 	        modalService.parentViewContainer = viewContainerRef;
 	
 	        this.menuOpen = false;
-	        this.version = ("1.0.3");
+	        this.version = ("1.0.4");
 	
 	        this.designRoutes = router.config.filter(function (r) {
 	            return r.section === 'design';
@@ -96,7 +96,7 @@ webpackJsonp([3],{
 	});
 	exports.routing = exports.routes = undefined;
 	
-	var _router = __webpack_require__(262);
+	var _router = __webpack_require__(267);
 	
 	var _Home = __webpack_require__(737);
 	
@@ -149,7 +149,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _platformBrowser = __webpack_require__(110);
+	var _platformBrowser = __webpack_require__(111);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -191,7 +191,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _platformBrowserDynamic = __webpack_require__(388);
+	var _platformBrowserDynamic = __webpack_require__(402);
 	
 	var _novoElementsDemo = __webpack_require__(703);
 	
@@ -252,7 +252,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _platformBrowser = __webpack_require__(110);
+	var _platformBrowser = __webpack_require__(111);
 	
 	var _forms = __webpack_require__(11);
 	
@@ -264,7 +264,7 @@ webpackJsonp([3],{
 	
 	__webpack_require__(797);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -367,7 +367,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1186,7 +1186,7 @@ webpackJsonp([3],{
 	
 	var _ExtrasChartDemoDemo2 = _interopRequireDefault(_ExtrasChartDemoDemo);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1496,7 +1496,7 @@ webpackJsonp([3],{
 	
 	var _DragulaModelDemo2 = _interopRequireDefault(_DragulaModelDemo);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1774,7 +1774,7 @@ webpackJsonp([3],{
 	
 	var _MockMeta2 = _interopRequireDefault(_MockMeta);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -2170,7 +2170,7 @@ webpackJsonp([3],{
 	
 	var _HeaderDemo2 = _interopRequireDefault(_HeaderDemo);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -2517,7 +2517,7 @@ webpackJsonp([3],{
 	
 	var _ModalWarningDemo2 = _interopRequireDefault(_ModalWarningDemo);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -2777,7 +2777,7 @@ webpackJsonp([3],{
 	
 	var _CustomPickerResultsDemo2 = _interopRequireDefault(_CustomPickerResultsDemo);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -2943,7 +2943,7 @@ webpackJsonp([3],{
 	
 	var _CustomQuickNoteResults2 = _interopRequireDefault(_CustomQuickNoteResults);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4425,7 +4425,7 @@ webpackJsonp([3],{
 	
 	var _SelectAllTableDemo2 = _interopRequireDefault(_SelectAllTableDemo);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4944,7 +4944,7 @@ webpackJsonp([3],{
 	
 	var _ToastServiceDemo2 = _interopRequireDefault(_ToastServiceDemo);
 	
-	var _novoElements = __webpack_require__(18);
+	var _novoElements = __webpack_require__(35);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
