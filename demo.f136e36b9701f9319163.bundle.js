@@ -47,7 +47,7 @@ webpackJsonp([3],{
 	        modalService.parentViewContainer = viewContainerRef;
 	
 	        this.menuOpen = false;
-	        this.version = ("1.0.10");
+	        this.version = ("1.0.11");
 	
 	        this.designRoutes = router.config.filter(function (r) {
 	            return r.section === 'design';
@@ -2163,7 +2163,7 @@ webpackJsonp([3],{
 /***/ 849:
 /***/ function(module, exports) {
 
-	module.exports = "<button theme=\"secondary\" *ngIf=\"!myform.showingAllFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" *ngIf=\"!myform.showingRequiredFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form class=\"dynamic\" [controls]=\"dynamic\" [(form)]=\"dynamicForm\" #myform></novo-dynamic-form>\n<footer class=\"dynamic-demo-footer\">\n    <button (click)=\"save(myform)\" theme=\"primary\" icon=\"check\">Save</button>\n</footer>\n<div class=\"final-value\">Valid: {{myform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{myform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{myform.updatedValues | json}}</div>\n"
+	module.exports = "<button theme=\"secondary\" *ngIf=\"!myform.showingAllFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" *ngIf=\"!myform.showingRequiredFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form class=\"dynamic\" [controls]=\"dynamic\" [(form)]=\"dynamicForm\" #myform></novo-dynamic-form>\n<footer class=\"dynamic-demo-footer\">\n    <button (click)=\"save(myform)\" theme=\"primary\" icon=\"check\">Save</button>\n</footer>\n<div class=\"final-value\">Valid: {{myform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{myform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{myform.updatedValues() | json}}</div>\n"
 
 /***/ },
 
@@ -2177,7 +2177,7 @@ webpackJsonp([3],{
 /***/ 851:
 /***/ function(module, exports) {
 
-	module.exports = "<button theme=\"secondary\" (click)=\"nomyform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" (click)=\"nomyform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form layout=\"vertical\" class=\"dynamic\" [controls]=\"dynamicVertical\" [(form)]=\"dynamicVerticalForm\" #nomyform></novo-dynamic-form>\n<div class=\"final-value\">Valid: {{nomyform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{nomyform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{nomyform.updatedValues | json}}</div>\n"
+	module.exports = "<button theme=\"secondary\" (click)=\"nomyform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" (click)=\"nomyform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form layout=\"vertical\" class=\"dynamic\" [controls]=\"dynamicVertical\" [(form)]=\"dynamicVerticalForm\" #nomyform></novo-dynamic-form>\n<div class=\"final-value\">Valid: {{nomyform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{nomyform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{nomyform.updatedValues() | json}}</div>\n"
 
 /***/ },
 
@@ -5347,4 +5347,4 @@ webpackJsonp([3],{
 /***/ }
 
 });
-//# sourceMappingURL=demo.5d601132541ab9618fee.bundle.map
+//# sourceMappingURL=demo.f136e36b9701f9319163.bundle.map
