@@ -2028,10 +2028,10 @@ button[theme] {
     min-width: 120px;
     text-align: left; }
     button[theme][theme="primary"] .flex-wrapper {
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
     button[theme][theme="primary"][icon] {
       padding: 6px 5px 6px 15px; }
       button[theme][theme="primary"][icon] i {
@@ -5664,6 +5664,13 @@ novo-picker {
     width: 100%; }
     novo-picker input:focus {
       outline: none; }
+  novo-picker i.bhi-search, novo-picker i.bhi-times {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  novo-picker i.bhi-times {
+    cursor: pointer;
+    font-size: 1.15em; }
 
 quick-note-results,
 .quick-note-results,
@@ -5852,7 +5859,11 @@ entity-chips {
   border-bottom: 1px solid #EAEAEA;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  position: relative; }
+  position: relative;
+  padding: 5px 0; }
+  chips.with-value,
+  entity-chips.with-value {
+    margin-bottom: 20px; }
   chips:hover,
   entity-chips:hover {
     border-bottom: 1px solid #afb9c0; }
@@ -5908,9 +5919,12 @@ entity-chips {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; }
-      chips chip span i:before,
-      entity-chips chip span i:before {
-        vertical-align: baseline !important; }
+      chips chip span i,
+      entity-chips chip span i {
+        font-size: 0.8em; }
+        chips chip span i:before,
+        entity-chips chip span i:before {
+          vertical-align: baseline !important; }
     chips chip i.bhi-close,
     entity-chips chip i.bhi-close {
       margin-left: 10px;
@@ -5933,7 +5947,7 @@ entity-chips {
     flex-grow: 4; }
     chips .chip-input-container input,
     entity-chips .chip-input-container input {
-      padding-top: 10px;
+      padding-top: 0;
       border: none;
       background: transparent;
       width: 100%; }
@@ -5943,6 +5957,39 @@ entity-chips {
   chips picker-results,
   entity-chips picker-results {
     top: 100%; }
+  chips novo-picker > i,
+  entity-chips novo-picker > i {
+    display: none; }
+  chips label.clear-all,
+  entity-chips label.clear-all {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+    -ms-flex: 1 100%;
+    flex: 1 100%;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    font-size: 0.8rem;
+    color: #DA4453;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    chips label.clear-all i,
+    entity-chips label.clear-all i {
+      font-size: 0.5rem;
+      padding-bottom: 2px;
+      margin-right: 5px; }
+  chips i.bhi-search,
+  entity-chips i.bhi-search {
+    position: absolute;
+    top: 5px;
+    right: 0; }
 
 chips + i,
 entity-chips + i {
@@ -7670,6 +7717,246 @@ novo-list {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row; }
+  novo-list[theme="company"] novo-list-item {
+    background: #3399DD;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="company"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="company"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="company"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="candidate"] novo-list-item {
+    background: #44BB77;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="candidate"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="candidate"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="candidate"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="navigation"] novo-list-item {
+    background: #2F384F;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="navigation"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="navigation"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="navigation"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="lead"] novo-list-item {
+    background: #AA6699;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="lead"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="lead"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="lead"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="contact"] novo-list-item {
+    background: #FFAA44;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="contact"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="contact"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="contact"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="opportunity"] novo-list-item {
+    background: #662255;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="opportunity"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="opportunity"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="opportunity"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="job"] novo-list-item {
+    background: #BB5566;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="job"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="job"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="job"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="submission"] novo-list-item {
+    background: #778899;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="submission"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="submission"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="submission"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="placement"] novo-list-item {
+    background: #0B344F;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="placement"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="placement"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="placement"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="note"] novo-list-item {
+    background: #747884;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="note"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="note"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="note"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="task"] novo-list-item {
+    background: #747884;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="task"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="task"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="task"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="positive"] novo-list-item {
+    background: #4A89DC;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="positive"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="positive"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="positive"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="success"] novo-list-item {
+    background: #8CC152;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="success"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="success"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="success"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="negative"] novo-list-item {
+    background: #DA4453;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="negative"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="negative"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="negative"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="warning"] novo-list-item {
+    background: #F6B042;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="warning"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="warning"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="warning"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="background"] novo-list-item {
+    background: #f4f4f4;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="background"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="background"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="background"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="black"] novo-list-item {
+    background: #000000;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="black"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="black"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="black"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="white"] novo-list-item {
+    background: #ffffff;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="white"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="white"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="white"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="grey"] novo-list-item {
+    background: #999999;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="grey"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="grey"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="grey"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="off-white"] novo-list-item {
+    background: #f4f4f4;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="off-white"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="off-white"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="off-white"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="dark"] novo-list-item {
+    background: #3D464D;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="dark"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="dark"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="dark"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="light"] novo-list-item {
+    background: #D9DADC;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="light"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="light"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="light"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="pulse"] novo-list-item {
+    background: #3BAFDA;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="pulse"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="pulse"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="pulse"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
+  novo-list[theme="neutral"] novo-list-item {
+    background: #747884;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    novo-list[theme="neutral"] novo-list-item i {
+      color: #fff; }
+    novo-list[theme="neutral"] novo-list-item item-title h3 {
+      color: #fff; }
+    novo-list[theme="neutral"] novo-list-item item-content > * {
+      color: rgba(255, 255, 255, 0.65); }
 
 novo-list-item {
   background: #fff;
@@ -9059,10 +9346,13 @@ novo-form, novo-dynamic-form {
                   -ms-flex: 1;
                   flex: 1;
                   position: relative; }
-                  novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-search, novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-clock, novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-calendar, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-search, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-clock, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-calendar {
+                  novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-search, novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-clock, novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-calendar, novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-times, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-search, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-clock, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-calendar, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-times {
                     position: absolute;
                     right: 0;
                     top: 0; }
+                  novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-times, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > i.bhi-times {
+                    cursor: pointer;
+                    font-size: 1.1em; }
                   novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-time-picker, novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-date-picker, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-time-picker, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-date-picker {
                     position: absolute;
                     top: 100%;
@@ -9091,10 +9381,14 @@ novo-form, novo-dynamic-form {
                     padding-bottom: 0; }
                     novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-picker.ng-touched.ng-invalid:not(.ng-pristine) > input, novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-picker.ng-touched.ng-invalid:not(.ng-pristine) > input:focus, novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-picker.ng-touched.ng-invalid:not(.ng-pristine) > input:hover, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-picker.ng-touched.ng-invalid:not(.ng-pristine) > input, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-picker.ng-touched.ng-invalid:not(.ng-pristine) > input:focus, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > novo-picker.ng-touched.ng-invalid:not(.ng-pristine) > input:hover {
                       border-bottom-color: transparent !important; }
-                  novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips novo-picker, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips novo-picker {
-                    padding-bottom: 0; }
-                    novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips novo-picker > input, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips novo-picker > input {
-                      border: none; }
+                  novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips {
+                    padding: 2px 0; }
+                    novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips novo-picker, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips novo-picker {
+                      padding-bottom: 0; }
+                      novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips novo-picker > input, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips novo-picker > input {
+                        border: none; }
+                    novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips.with-value, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container > chips.with-value {
+                      margin-bottom: 0; }
                   novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container entity-picker-results,
                   novo-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container picker-results, novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container entity-picker-results,
                   novo-dynamic-form .novo-form-container form > div.novo-form-row novo-control > div.novo-control-container > div.novo-control-input-container > div.novo-control-input > div.novo-control-input-container picker-results {
@@ -10820,84 +11114,84 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 31px;
-      height: 31px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-candidate {
       background: #44BB77;
       width: 31px;
       height: 31px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 28px;
-      height: 28px; }
+      width: 36px;
+      height: 36px; }
     color header .background-boxes .bb-lead {
       background: #AA6699;
-      width: 43px;
-      height: 43px; }
+      width: 39px;
+      height: 39px; }
     color header .background-boxes .bb-contact {
       background: #FFAA44;
-      width: 32px;
-      height: 32px; }
+      width: 42px;
+      height: 42px; }
     color header .background-boxes .bb-opportunity {
       background: #662255;
       width: 40px;
       height: 40px; }
     color header .background-boxes .bb-job {
       background: #BB5566;
-      width: 34px;
-      height: 34px; }
+      width: 28px;
+      height: 28px; }
     color header .background-boxes .bb-submission {
       background: #778899;
-      width: 45px;
-      height: 45px; }
+      width: 34px;
+      height: 34px; }
     color header .background-boxes .bb-placement {
       background: #0B344F;
-      width: 30px;
-      height: 30px; }
+      width: 41px;
+      height: 41px; }
     color header .background-boxes .bb-note {
       background: #747884;
-      width: 40px;
-      height: 40px; }
+      width: 34px;
+      height: 34px; }
     color header .background-boxes .bb-task {
       background: #747884;
-      width: 45px;
-      height: 45px; }
+      width: 36px;
+      height: 36px; }
     color header .background-boxes .bb-aqua {
       background: #3BAFDA;
-      width: 27px;
-      height: 27px; }
+      width: 29px;
+      height: 29px; }
     color header .background-boxes .bb-ocean {
       background: #4A89DC;
       width: 44px;
       height: 44px; }
     color header .background-boxes .bb-mint {
       background: #37BC9B;
-      width: 42px;
-      height: 42px; }
+      width: 33px;
+      height: 33px; }
     color header .background-boxes .bb-grass {
       background: #8CC152;
-      width: 36px;
-      height: 36px; }
+      width: 40px;
+      height: 40px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
-      width: 36px;
-      height: 36px; }
+      width: 41px;
+      height: 41px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
       width: 43px;
       height: 43px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
-      width: 34px;
-      height: 34px; }
+      width: 40px;
+      height: 40px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 42px;
-      height: 42px; }
+      width: 40px;
+      height: 40px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 43px;
-      height: 43px; }
+      width: 42px;
+      height: 42px; }
 
 color article.color-blocks {
   display: -webkit-box;
@@ -11851,6 +12145,18 @@ dragula-demo .handle {
   background-color: rgba(0, 0, 0, 0.4);
   cursor: move; }
 
+picker-demo .picker-demo {
+  padding: 10px; }
+
+picker-demo div.selected-value {
+  margin-bottom: 10px; }
+
+chips-demo .chips-demo {
+  padding: 10px; }
+
+chips-demo div.selected-value {
+  margin-bottom: 10px; }
+
 calendar-demo .example.calendar-demo {
   padding: 20px;
   display: -webkit-box;
@@ -11954,4 +12260,4 @@ form-demo .final-value {
 .pipes-demo {
   padding-left: 5px; }
 
-/*# sourceMappingURL=demo.f136e36b9701f9319163.bundle.map*/
+/*# sourceMappingURL=demo.50be3c32741a510fb49b.bundle.map*/

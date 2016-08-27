@@ -47,7 +47,7 @@ webpackJsonp([3],{
 	        modalService.parentViewContainer = viewContainerRef;
 	
 	        this.menuOpen = false;
-	        this.version = ("1.0.11");
+	        this.version = ("1.0.13");
 	
 	        this.designRoutes = router.config.filter(function (r) {
 	            return r.section === 'design';
@@ -962,7 +962,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _PrimaryButtonDemo = __webpack_require__(829);
+	var _PrimaryButtonDemo = __webpack_require__(830);
 	
 	var _PrimaryButtonDemo2 = _interopRequireDefault(_PrimaryButtonDemo);
 	
@@ -970,27 +970,31 @@ webpackJsonp([3],{
 	
 	var _DialogueButtonDemo2 = _interopRequireDefault(_DialogueButtonDemo);
 	
-	var _HeaderButtonDemo = __webpack_require__(827);
+	var _HeaderButtonDemo = __webpack_require__(828);
 	
 	var _HeaderButtonDemo2 = _interopRequireDefault(_HeaderButtonDemo);
 	
-	var _IconButtonDemo = __webpack_require__(828);
+	var _IconButtonDemo = __webpack_require__(829);
 	
 	var _IconButtonDemo2 = _interopRequireDefault(_IconButtonDemo);
 	
-	var _StandardButtonDemo = __webpack_require__(831);
+	var _StandardButtonDemo = __webpack_require__(832);
 	
 	var _StandardButtonDemo2 = _interopRequireDefault(_StandardButtonDemo);
 	
-	var _SecondaryButtonDemo = __webpack_require__(830);
+	var _SecondaryButtonDemo = __webpack_require__(831);
 	
 	var _SecondaryButtonDemo2 = _interopRequireDefault(_SecondaryButtonDemo);
+	
+	var _DynamicButtonDemo = __webpack_require__(827);
+	
+	var _DynamicButtonDemo2 = _interopRequireDefault(_DynamicButtonDemo);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var template = '\n<div class="container">\n    <h1>Button <small><a target="_blank" href="https://github.com/bullhorn/novo-elements/tree/master/src/elements/button">(source)</a></small></h1>\n    <p>A button clearly indicates a point of action for the user. Bullhorn buttons\n     come in a variety of themes, custom tailored to fit your use-case.</p>\n    \n    <h2>Themes</h2>\n    <p>\n        Bullhorn button themes were hand crafted to make your life easier.\n         Most buttons used in the Bullhorn platform should utilize a\n         <code>theme</code> attribute. Theme attributes provide access to every\n         variation of Bullhorn UX approved buttons. Depending on the theme, some\n         buttons may also utilize <code>icon</code>, <code>side</code>, and\n         <code>inverse</code> attributes. Button are divided by function into\n         four main categories: Primary, Secondary, Neutralizing, Subtractive.\n         There are also three other button types that are independent of function:\n         Dialogue, Icon, and Header.\n    </p>\n    \n    <h5>Colors</h5>\n    <p>\n        Acceptable colors include <code>Primary</code>, <code>Success</code>, <code>Warning</code>, <code>Negative</code>,\n         and <strong>all analytics colors</strong> which can be found in the color section of the style guide.\n    </p>\n    \n    <br/>\n    \n    <h5>Primary</h5>\n    <p>\n        Primary buttons are used to as primary calls-to-action. They should <strong>always</strong>\n         get an <code>icon</code> attribute. Primary buttons with a "success" color\n         <code>color="success"</code> are used for saving and will almost always contain a "check" icon.\n         Negative color primary buttons <code>color="negative"</code> are used to delete,\n         clear, or otherwise remove an extant element. Primary buttons should never have a <code>side</code> attribute.\n    </p>\n    <div class="example buttons-demo">' + _PrimaryButtonDemo2.default + '</div>\n    <code-snippet [code]="PrimaryButtonDemoTpl"></code-snippet>\n    \n    <h5>Secondary</h5>\n    <p>\n        Secondary buttons are used as an alternative Primary button or when there\n         is a second major action on a page. They usually appears only in Overview\n         and Slideout headers. This theme with an <code>inverse</code> attribute is\n         often used as the action button in dropdown menus.\n    </p>\n    <div class="example buttons-demo">' + _SecondaryButtonDemo2.default + '</div>\n    <code-snippet [code]="SecondaryButtonDemoTpl"></code-snippet>\n    <p>\n        Secondary buttons can also get an <code>inverse</code> attribute for use on a colored background.\n    </p>\n    <div class="example header buttons-demo" [ngClass]="color" (click)="changeColor()" tooltip="Click Me!" tooltipPlacement="top">' + _HeaderButtonDemo2.default + '</div>\n    <code-snippet [code]="HeaderButtonDemoTpl"></code-snippet>\n    \n    <h5>Dialogue</h5>\n    <p>\n        Similar to icon buttons, dialogue buttons require less visual dominance but often need additional helper text. Dialogue buttons\n        <em>may</em> contain <strong>any</strong> icon and a\n        <code>side</code> may be specified eg:<code>side="right"</code> to place the icon on the right or left side of the text. Dialogue buttons may also use an\n        <code>inverse</code> attribute to change its text color to white.\n    </p>\n    <div class="example buttons-demo">' + _DialogueButtonDemo2.default + '</div>\n    <code-snippet [code]="DialogueButtonDemoTpl"></code-snippet>\n    \n    <h5>Standard</h5>\n    <p>\n        Standard buttons are the most generic button style. Standard buttons by default are\n         styled identically to standard buttons with a <code>color="light"</code>\n         attribute. Typically, a standard button is used to cancel an action,\n         or to cease any additional progress. Although standard buttons <em>can</em>\n         get an <code>icon</code> attribute, they should almost never be used with an icon.\n         If your proposed design calls for a standard button with an icon, consider using\n         a different button theme, like dialogue.\n    </p>\n    <div class="example buttons-demo">' + _StandardButtonDemo2.default + '</div>\n    <code-snippet [code]="NeutralButtonDemoTpl"></code-snippet>\n    \n    <h5>Icon</h5>\n    <p>\n        The <code>icon</code> theme is used to create\n        <strong>icon-only</strong> buttons, which contain no text. They can occupy any of the four main functions but require far less visual dominance than normal buttons. Icon buttons\n        <strong>always</strong> have an <code>icon</code> attribute and can use\n        <strong>any</strong> icon. Icon buttons may also use an\n        <code>inverse</code> attribute to change its icon color to white.\n    </p>\n    <div class="example buttons-demo icons" [ngClass]="color" (click)="changeColor()" tooltip="Click Me!" tooltipPlacement="top">' + _IconButtonDemo2.default + '</div>\n    <code-snippet [code]="IconButtonDemoTpl"></code-snippet>\n</div>\n';
+	var template = '\n<div class="container">\n    <h1>Button <small><a target="_blank" href="https://github.com/bullhorn/novo-elements/tree/master/src/elements/button">(source)</a></small></h1>\n    <p>A button clearly indicates a point of action for the user. Bullhorn buttons\n     come in a variety of themes, custom tailored to fit your use-case.</p>\n\n    <h2>Themes</h2>\n    <p>\n        Bullhorn button themes were hand crafted to make your life easier.\n         Most buttons used in the Bullhorn platform should utilize a\n         <code>theme</code> attribute. Theme attributes provide access to every\n         variation of Bullhorn UX approved buttons. Depending on the theme, some\n         buttons may also utilize <code>icon</code>, <code>side</code>, and\n         <code>inverse</code> attributes. Button are divided by function into\n         four main categories: Primary, Secondary, Neutralizing, Subtractive.\n         There are also three other button types that are independent of function:\n         Dialogue, Icon, and Header.\n    </p>\n\n    <h5>Colors</h5>\n    <p>\n        Acceptable colors include <code>Primary</code>, <code>Success</code>, <code>Warning</code>, <code>Negative</code>,\n         and <strong>all analytics colors</strong> which can be found in the color section of the style guide.\n    </p>\n\n    <br/>\n\n    <h5>Primary</h5>\n    <p>\n        Primary buttons are used to as primary calls-to-action. They should <strong>always</strong>\n         get an <code>icon</code> attribute. Primary buttons with a "success" color\n         <code>color="success"</code> are used for saving and will almost always contain a "check" icon.\n         Negative color primary buttons <code>color="negative"</code> are used to delete,\n         clear, or otherwise remove an extant element. Primary buttons should never have a <code>side</code> attribute.\n    </p>\n    <div class="example buttons-demo">' + _PrimaryButtonDemo2.default + '</div>\n    <code-snippet [code]="PrimaryButtonDemoTpl"></code-snippet>\n\n    <h5>Secondary</h5>\n    <p>\n        Secondary buttons are used as an alternative Primary button or when there\n         is a second major action on a page. They usually appears only in Overview\n         and Slideout headers. This theme with an <code>inverse</code> attribute is\n         often used as the action button in dropdown menus.\n    </p>\n    <div class="example buttons-demo">' + _SecondaryButtonDemo2.default + '</div>\n    <code-snippet [code]="SecondaryButtonDemoTpl"></code-snippet>\n    <p>\n        Secondary buttons can also get an <code>inverse</code> attribute for use on a colored background.\n    </p>\n    <div class="example header buttons-demo" [ngClass]="color" (click)="changeColor()" tooltip="Click Me!" tooltipPlacement="top">' + _HeaderButtonDemo2.default + '</div>\n    <code-snippet [code]="HeaderButtonDemoTpl"></code-snippet>\n\n    <h5>Dialogue</h5>\n    <p>\n        Similar to icon buttons, dialogue buttons require less visual dominance but often need additional helper text. Dialogue buttons\n        <em>may</em> contain <strong>any</strong> icon and a\n        <code>side</code> may be specified eg:<code>side="right"</code> to place the icon on the right or left side of the text. Dialogue buttons may also use an\n        <code>inverse</code> attribute to change its text color to white.\n    </p>\n    <div class="example buttons-demo">' + _DialogueButtonDemo2.default + '</div>\n    <code-snippet [code]="DialogueButtonDemoTpl"></code-snippet>\n\n    <h5>Standard</h5>\n    <p>\n        Standard buttons are the most generic button style. Standard buttons by default are\n         styled identically to standard buttons with a <code>color="light"</code>\n         attribute. Typically, a standard button is used to cancel an action,\n         or to cease any additional progress. Although standard buttons <em>can</em>\n         get an <code>icon</code> attribute, they should almost never be used with an icon.\n         If your proposed design calls for a standard button with an icon, consider using\n         a different button theme, like dialogue.\n    </p>\n    <div class="example buttons-demo">' + _StandardButtonDemo2.default + '</div>\n    <code-snippet [code]="NeutralButtonDemoTpl"></code-snippet>\n\n    <h5>Icon</h5>\n    <p>\n        The <code>icon</code> theme is used to create\n        <strong>icon-only</strong> buttons, which contain no text. They can occupy any of the four main functions but require far less visual dominance than normal buttons. Icon buttons\n        <strong>always</strong> have an <code>icon</code> attribute and can use\n        <strong>any</strong> icon. Icon buttons may also use an\n        <code>inverse</code> attribute to change its icon color to white.\n    </p>\n    <div class="example buttons-demo icons" [ngClass]="color" (click)="changeColor()" tooltip="Click Me!" tooltipPlacement="top">' + _IconButtonDemo2.default + '</div>\n    <code-snippet [code]="IconButtonDemoTpl"></code-snippet>\n\n    <h5>Dynamic</h5>\n    <p>\n        Button parameters can be dynamically set and change at runtime.  The styles should\n        change and be applied when the values change.\n    </p>\n    <div class="example buttons-demo">' + _DynamicButtonDemo2.default + '</div>\n    <code-snippet [code]="DynamicButtonDemoTpl"></code-snippet>\n</div>\n';
 	
 	var HEADER_COLORS = ['blue', 'green', 'yellow', 'orange', 'red', 'purple'];
 	
@@ -1007,6 +1011,10 @@ webpackJsonp([3],{
 	        this.NeutralButtonDemoTpl = _StandardButtonDemo2.default;
 	        this.HeaderButtonDemoTpl = _HeaderButtonDemo2.default;
 	        this.IconButtonDemoTpl = _IconButtonDemo2.default;
+	        this.DynamicButtonDemoTpl = _DynamicButtonDemo2.default;
+	
+	        this.theme = 'primary';
+	        this.isChecked = false;
 	    }
 	
 	    _createClass(ButtonDemoComponent, [{
@@ -1021,11 +1029,17 @@ webpackJsonp([3],{
 	            var idx = HEADER_COLORS.indexOf(this.color);
 	            this.color = HEADER_COLORS[idx + 1];
 	        }
+	    }, {
+	        key: 'changeTheme',
+	        value: function changeTheme() {
+	            var i = Math.floor(Math.random() * 4);
+	            this.theme = ['primary', 'secondary', 'dialogue', 'standard', 'icon'][i];
+	        }
 	    }]);
 	
 	    return ButtonDemoComponent;
 	}()) || _class);
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvYnV0dG9uL0J1dHRvbkRlbW8uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O2tCQUFBOztBQUVBOzs7QUFEQTs7QUFFQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7Ozs7O0FBRUEsSUFBTSwwOUpBQU47O0FBeUZBLElBQU0sZ0JBQWdCLENBQUMsTUFBRCxFQUFTLE9BQVQsRUFBa0IsUUFBbEIsRUFBNEIsUUFBNUIsRUFBc0MsS0FBdEMsRUFBNkMsUUFBN0MsQ0FBdEI7O0lBTWEsbUIsV0FBQSxtQixXQUpaLHFCQUFVO0FBQ1AsY0FBVSxjQURIO0FBRVAsY0FBVTtBQUZILENBQVYsQztBQUtHLG1DQUFjO0FBQUE7O0FBQ1YsYUFBSyxvQkFBTDtBQUNBLGFBQUssc0JBQUw7QUFDQSxhQUFLLHFCQUFMO0FBQ0EsYUFBSyxvQkFBTDtBQUNBLGFBQUssbUJBQUw7QUFDQSxhQUFLLGlCQUFMO0FBQ0g7Ozs7bUNBRVU7QUFDUCxpQkFBSyxLQUFMLEdBQWEsTUFBYjtBQUNBLGlCQUFLLGFBQUwsR0FBcUIsVUFBckI7QUFDSDs7O3NDQUVhO0FBQ1YsZ0JBQUksTUFBTSxjQUFjLE9BQWQsQ0FBc0IsS0FBSyxLQUEzQixDQUFWO0FBQ0EsaUJBQUssS0FBTCxHQUFhLGNBQWMsTUFBTSxDQUFwQixDQUFiO0FBQ0giLCJmaWxlIjoiQnV0dG9uRGVtby5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvbm92by1kZXYvbGlicy9ub3ZvLWVsZW1lbnRzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gTkcyXG5pbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbi8vIEFQUFxuaW1wb3J0IFByaW1hcnlCdXR0b25EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL1ByaW1hcnlCdXR0b25EZW1vLmh0bWwnO1xuaW1wb3J0IERpYWxvZ3VlQnV0dG9uRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9EaWFsb2d1ZUJ1dHRvbkRlbW8uaHRtbCc7XG5pbXBvcnQgSGVhZGVyQnV0dG9uRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9IZWFkZXJCdXR0b25EZW1vLmh0bWwnO1xuaW1wb3J0IEljb25CdXR0b25EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL0ljb25CdXR0b25EZW1vLmh0bWwnO1xuaW1wb3J0IFN0YW5kYXJkQnV0dG9uRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9TdGFuZGFyZEJ1dHRvbkRlbW8uaHRtbCc7XG5pbXBvcnQgU2Vjb25kYXJ5QnV0dG9uRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9TZWNvbmRhcnlCdXR0b25EZW1vLmh0bWwnO1xuXG5jb25zdCB0ZW1wbGF0ZSA9IGBcbjxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cbiAgICA8aDE+QnV0dG9uIDxzbWFsbD48YSB0YXJnZXQ9XCJfYmxhbmtcIiBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL2J1bGxob3JuL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL2J1dHRvblwiPihzb3VyY2UpPC9hPjwvc21hbGw+PC9oMT5cbiAgICA8cD5BIGJ1dHRvbiBjbGVhcmx5IGluZGljYXRlcyBhIHBvaW50IG9mIGFjdGlvbiBmb3IgdGhlIHVzZXIuIEJ1bGxob3JuIGJ1dHRvbnNcbiAgICAgY29tZSBpbiBhIHZhcmlldHkgb2YgdGhlbWVzLCBjdXN0b20gdGFpbG9yZWQgdG8gZml0IHlvdXIgdXNlLWNhc2UuPC9wPlxuICAgIFxuICAgIDxoMj5UaGVtZXM8L2gyPlxuICAgIDxwPlxuICAgICAgICBCdWxsaG9ybiBidXR0b24gdGhlbWVzIHdlcmUgaGFuZCBjcmFmdGVkIHRvIG1ha2UgeW91ciBsaWZlIGVhc2llci5cbiAgICAgICAgIE1vc3QgYnV0dG9ucyB1c2VkIGluIHRoZSBCdWxsaG9ybiBwbGF0Zm9ybSBzaG91bGQgdXRpbGl6ZSBhXG4gICAgICAgICA8Y29kZT50aGVtZTwvY29kZT4gYXR0cmlidXRlLiBUaGVtZSBhdHRyaWJ1dGVzIHByb3ZpZGUgYWNjZXNzIHRvIGV2ZXJ5XG4gICAgICAgICB2YXJpYXRpb24gb2YgQnVsbGhvcm4gVVggYXBwcm92ZWQgYnV0dG9ucy4gRGVwZW5kaW5nIG9uIHRoZSB0aGVtZSwgc29tZVxuICAgICAgICAgYnV0dG9ucyBtYXkgYWxzbyB1dGlsaXplIDxjb2RlPmljb248L2NvZGU+LCA8Y29kZT5zaWRlPC9jb2RlPiwgYW5kXG4gICAgICAgICA8Y29kZT5pbnZlcnNlPC9jb2RlPiBhdHRyaWJ1dGVzLiBCdXR0b24gYXJlIGRpdmlkZWQgYnkgZnVuY3Rpb24gaW50b1xuICAgICAgICAgZm91ciBtYWluIGNhdGVnb3JpZXM6IFByaW1hcnksIFNlY29uZGFyeSwgTmV1dHJhbGl6aW5nLCBTdWJ0cmFjdGl2ZS5cbiAgICAgICAgIFRoZXJlIGFyZSBhbHNvIHRocmVlIG90aGVyIGJ1dHRvbiB0eXBlcyB0aGF0IGFyZSBpbmRlcGVuZGVudCBvZiBmdW5jdGlvbjpcbiAgICAgICAgIERpYWxvZ3VlLCBJY29uLCBhbmQgSGVhZGVyLlxuICAgIDwvcD5cbiAgICBcbiAgICA8aDU+Q29sb3JzPC9oNT5cbiAgICA8cD5cbiAgICAgICAgQWNjZXB0YWJsZSBjb2xvcnMgaW5jbHVkZSA8Y29kZT5QcmltYXJ5PC9jb2RlPiwgPGNvZGU+U3VjY2VzczwvY29kZT4sIDxjb2RlPldhcm5pbmc8L2NvZGU+LCA8Y29kZT5OZWdhdGl2ZTwvY29kZT4sXG4gICAgICAgICBhbmQgPHN0cm9uZz5hbGwgYW5hbHl0aWNzIGNvbG9yczwvc3Ryb25nPiB3aGljaCBjYW4gYmUgZm91bmQgaW4gdGhlIGNvbG9yIHNlY3Rpb24gb2YgdGhlIHN0eWxlIGd1aWRlLlxuICAgIDwvcD5cbiAgICBcbiAgICA8YnIvPlxuICAgIFxuICAgIDxoNT5QcmltYXJ5PC9oNT5cbiAgICA8cD5cbiAgICAgICAgUHJpbWFyeSBidXR0b25zIGFyZSB1c2VkIHRvIGFzIHByaW1hcnkgY2FsbHMtdG8tYWN0aW9uLiBUaGV5IHNob3VsZCA8c3Ryb25nPmFsd2F5czwvc3Ryb25nPlxuICAgICAgICAgZ2V0IGFuIDxjb2RlPmljb248L2NvZGU+IGF0dHJpYnV0ZS4gUHJpbWFyeSBidXR0b25zIHdpdGggYSBcInN1Y2Nlc3NcIiBjb2xvclxuICAgICAgICAgPGNvZGU+Y29sb3I9XCJzdWNjZXNzXCI8L2NvZGU+IGFyZSB1c2VkIGZvciBzYXZpbmcgYW5kIHdpbGwgYWxtb3N0IGFsd2F5cyBjb250YWluIGEgXCJjaGVja1wiIGljb24uXG4gICAgICAgICBOZWdhdGl2ZSBjb2xvciBwcmltYXJ5IGJ1dHRvbnMgPGNvZGU+Y29sb3I9XCJuZWdhdGl2ZVwiPC9jb2RlPiBhcmUgdXNlZCB0byBkZWxldGUsXG4gICAgICAgICBjbGVhciwgb3Igb3RoZXJ3aXNlIHJlbW92ZSBhbiBleHRhbnQgZWxlbWVudC4gUHJpbWFyeSBidXR0b25zIHNob3VsZCBuZXZlciBoYXZlIGEgPGNvZGU+c2lkZTwvY29kZT4gYXR0cmlidXRlLlxuICAgIDwvcD5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBidXR0b25zLWRlbW9cIj4ke1ByaW1hcnlCdXR0b25EZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiUHJpbWFyeUJ1dHRvbkRlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbiAgICBcbiAgICA8aDU+U2Vjb25kYXJ5PC9oNT5cbiAgICA8cD5cbiAgICAgICAgU2Vjb25kYXJ5IGJ1dHRvbnMgYXJlIHVzZWQgYXMgYW4gYWx0ZXJuYXRpdmUgUHJpbWFyeSBidXR0b24gb3Igd2hlbiB0aGVyZVxuICAgICAgICAgaXMgYSBzZWNvbmQgbWFqb3IgYWN0aW9uIG9uIGEgcGFnZS4gVGhleSB1c3VhbGx5IGFwcGVhcnMgb25seSBpbiBPdmVydmlld1xuICAgICAgICAgYW5kIFNsaWRlb3V0IGhlYWRlcnMuIFRoaXMgdGhlbWUgd2l0aCBhbiA8Y29kZT5pbnZlcnNlPC9jb2RlPiBhdHRyaWJ1dGUgaXNcbiAgICAgICAgIG9mdGVuIHVzZWQgYXMgdGhlIGFjdGlvbiBidXR0b24gaW4gZHJvcGRvd24gbWVudXMuXG4gICAgPC9wPlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGJ1dHRvbnMtZGVtb1wiPiR7U2Vjb25kYXJ5QnV0dG9uRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIlNlY29uZGFyeUJ1dHRvbkRlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbiAgICA8cD5cbiAgICAgICAgU2Vjb25kYXJ5IGJ1dHRvbnMgY2FuIGFsc28gZ2V0IGFuIDxjb2RlPmludmVyc2U8L2NvZGU+IGF0dHJpYnV0ZSBmb3IgdXNlIG9uIGEgY29sb3JlZCBiYWNrZ3JvdW5kLlxuICAgIDwvcD5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBoZWFkZXIgYnV0dG9ucy1kZW1vXCIgW25nQ2xhc3NdPVwiY29sb3JcIiAoY2xpY2spPVwiY2hhbmdlQ29sb3IoKVwiIHRvb2x0aXA9XCJDbGljayBNZSFcIiB0b29sdGlwUGxhY2VtZW50PVwidG9wXCI+JHtIZWFkZXJCdXR0b25EZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiSGVhZGVyQnV0dG9uRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuICAgIFxuICAgIDxoNT5EaWFsb2d1ZTwvaDU+XG4gICAgPHA+XG4gICAgICAgIFNpbWlsYXIgdG8gaWNvbiBidXR0b25zLCBkaWFsb2d1ZSBidXR0b25zIHJlcXVpcmUgbGVzcyB2aXN1YWwgZG9taW5hbmNlIGJ1dCBvZnRlbiBuZWVkIGFkZGl0aW9uYWwgaGVscGVyIHRleHQuIERpYWxvZ3VlIGJ1dHRvbnNcbiAgICAgICAgPGVtPm1heTwvZW0+IGNvbnRhaW4gPHN0cm9uZz5hbnk8L3N0cm9uZz4gaWNvbiBhbmQgYVxuICAgICAgICA8Y29kZT5zaWRlPC9jb2RlPiBtYXkgYmUgc3BlY2lmaWVkIGVnOjxjb2RlPnNpZGU9XCJyaWdodFwiPC9jb2RlPiB0byBwbGFjZSB0aGUgaWNvbiBvbiB0aGUgcmlnaHQgb3IgbGVmdCBzaWRlIG9mIHRoZSB0ZXh0LiBEaWFsb2d1ZSBidXR0b25zIG1heSBhbHNvIHVzZSBhblxuICAgICAgICA8Y29kZT5pbnZlcnNlPC9jb2RlPiBhdHRyaWJ1dGUgdG8gY2hhbmdlIGl0cyB0ZXh0IGNvbG9yIHRvIHdoaXRlLlxuICAgIDwvcD5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBidXR0b25zLWRlbW9cIj4ke0RpYWxvZ3VlQnV0dG9uRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIkRpYWxvZ3VlQnV0dG9uRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuICAgIFxuICAgIDxoNT5TdGFuZGFyZDwvaDU+XG4gICAgPHA+XG4gICAgICAgIFN0YW5kYXJkIGJ1dHRvbnMgYXJlIHRoZSBtb3N0IGdlbmVyaWMgYnV0dG9uIHN0eWxlLiBTdGFuZGFyZCBidXR0b25zIGJ5IGRlZmF1bHQgYXJlXG4gICAgICAgICBzdHlsZWQgaWRlbnRpY2FsbHkgdG8gc3RhbmRhcmQgYnV0dG9ucyB3aXRoIGEgPGNvZGU+Y29sb3I9XCJsaWdodFwiPC9jb2RlPlxuICAgICAgICAgYXR0cmlidXRlLiBUeXBpY2FsbHksIGEgc3RhbmRhcmQgYnV0dG9uIGlzIHVzZWQgdG8gY2FuY2VsIGFuIGFjdGlvbixcbiAgICAgICAgIG9yIHRvIGNlYXNlIGFueSBhZGRpdGlvbmFsIHByb2dyZXNzLiBBbHRob3VnaCBzdGFuZGFyZCBidXR0b25zIDxlbT5jYW48L2VtPlxuICAgICAgICAgZ2V0IGFuIDxjb2RlPmljb248L2NvZGU+IGF0dHJpYnV0ZSwgdGhleSBzaG91bGQgYWxtb3N0IG5ldmVyIGJlIHVzZWQgd2l0aCBhbiBpY29uLlxuICAgICAgICAgSWYgeW91ciBwcm9wb3NlZCBkZXNpZ24gY2FsbHMgZm9yIGEgc3RhbmRhcmQgYnV0dG9uIHdpdGggYW4gaWNvbiwgY29uc2lkZXIgdXNpbmdcbiAgICAgICAgIGEgZGlmZmVyZW50IGJ1dHRvbiB0aGVtZSwgbGlrZSBkaWFsb2d1ZS5cbiAgICA8L3A+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgYnV0dG9ucy1kZW1vXCI+JHtTdGFuZGFyZEJ1dHRvbkRlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJOZXV0cmFsQnV0dG9uRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuICAgIFxuICAgIDxoNT5JY29uPC9oNT5cbiAgICA8cD5cbiAgICAgICAgVGhlIDxjb2RlPmljb248L2NvZGU+IHRoZW1lIGlzIHVzZWQgdG8gY3JlYXRlXG4gICAgICAgIDxzdHJvbmc+aWNvbi1vbmx5PC9zdHJvbmc+IGJ1dHRvbnMsIHdoaWNoIGNvbnRhaW4gbm8gdGV4dC4gVGhleSBjYW4gb2NjdXB5IGFueSBvZiB0aGUgZm91ciBtYWluIGZ1bmN0aW9ucyBidXQgcmVxdWlyZSBmYXIgbGVzcyB2aXN1YWwgZG9taW5hbmNlIHRoYW4gbm9ybWFsIGJ1dHRvbnMuIEljb24gYnV0dG9uc1xuICAgICAgICA8c3Ryb25nPmFsd2F5czwvc3Ryb25nPiBoYXZlIGFuIDxjb2RlPmljb248L2NvZGU+IGF0dHJpYnV0ZSBhbmQgY2FuIHVzZVxuICAgICAgICA8c3Ryb25nPmFueTwvc3Ryb25nPiBpY29uLiBJY29uIGJ1dHRvbnMgbWF5IGFsc28gdXNlIGFuXG4gICAgICAgIDxjb2RlPmludmVyc2U8L2NvZGU+IGF0dHJpYnV0ZSB0byBjaGFuZ2UgaXRzIGljb24gY29sb3IgdG8gd2hpdGUuXG4gICAgPC9wPlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGJ1dHRvbnMtZGVtbyBpY29uc1wiIFtuZ0NsYXNzXT1cImNvbG9yXCIgKGNsaWNrKT1cImNoYW5nZUNvbG9yKClcIiB0b29sdGlwPVwiQ2xpY2sgTWUhXCIgdG9vbHRpcFBsYWNlbWVudD1cInRvcFwiPiR7SWNvbkJ1dHRvbkRlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJJY29uQnV0dG9uRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuPC9kaXY+XG5gO1xuXG5jb25zdCBIRUFERVJfQ09MT1JTID0gWydibHVlJywgJ2dyZWVuJywgJ3llbGxvdycsICdvcmFuZ2UnLCAncmVkJywgJ3B1cnBsZSddO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ2J1dHRvbnMtZGVtbycsXG4gICAgdGVtcGxhdGU6IHRlbXBsYXRlXG59KVxuZXhwb3J0IGNsYXNzIEJ1dHRvbkRlbW9Db21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKCkge1xuICAgICAgICB0aGlzLlByaW1hcnlCdXR0b25EZW1vVHBsID0gUHJpbWFyeUJ1dHRvbkRlbW9UcGw7XG4gICAgICAgIHRoaXMuU2Vjb25kYXJ5QnV0dG9uRGVtb1RwbCA9IFNlY29uZGFyeUJ1dHRvbkRlbW9UcGw7XG4gICAgICAgIHRoaXMuRGlhbG9ndWVCdXR0b25EZW1vVHBsID0gRGlhbG9ndWVCdXR0b25EZW1vVHBsO1xuICAgICAgICB0aGlzLk5ldXRyYWxCdXR0b25EZW1vVHBsID0gU3RhbmRhcmRCdXR0b25EZW1vVHBsO1xuICAgICAgICB0aGlzLkhlYWRlckJ1dHRvbkRlbW9UcGwgPSBIZWFkZXJCdXR0b25EZW1vVHBsO1xuICAgICAgICB0aGlzLkljb25CdXR0b25EZW1vVHBsID0gSWNvbkJ1dHRvbkRlbW9UcGw7XG4gICAgfVxuXG4gICAgbmdPbkluaXQoKSB7XG4gICAgICAgIHRoaXMuY29sb3IgPSAnYmx1ZSc7XG4gICAgICAgIHRoaXMubmVnYXRpdmVDb2xvciA9ICduZWdhdGl2ZSc7XG4gICAgfVxuXG4gICAgY2hhbmdlQ29sb3IoKSB7XG4gICAgICAgIGxldCBpZHggPSBIRUFERVJfQ09MT1JTLmluZGV4T2YodGhpcy5jb2xvcik7XG4gICAgICAgIHRoaXMuY29sb3IgPSBIRUFERVJfQ09MT1JTW2lkeCArIDFdO1xuICAgIH1cbn1cbiJdfQ==
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvYnV0dG9uL0J1dHRvbkRlbW8uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O2tCQUFBOztBQUVBOzs7QUFEQTs7QUFFQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7Ozs7Ozs7QUFFQSxJQUFNLDB3S0FBTjs7QUFpR0EsSUFBTSxnQkFBZ0IsQ0FBQyxNQUFELEVBQVMsT0FBVCxFQUFrQixRQUFsQixFQUE0QixRQUE1QixFQUFzQyxLQUF0QyxFQUE2QyxRQUE3QyxDQUF0Qjs7SUFNYSxtQixXQUFBLG1CLFdBSloscUJBQVU7QUFDUCxjQUFVLGNBREg7QUFFUCxjQUFVO0FBRkgsQ0FBVixDO0FBS0csbUNBQWM7QUFBQTs7QUFDVixhQUFLLG9CQUFMO0FBQ0EsYUFBSyxzQkFBTDtBQUNBLGFBQUsscUJBQUw7QUFDQSxhQUFLLG9CQUFMO0FBQ0EsYUFBSyxtQkFBTDtBQUNBLGFBQUssaUJBQUw7QUFDQSxhQUFLLG9CQUFMOztBQUVBLGFBQUssS0FBTCxHQUFhLFNBQWI7QUFDQSxhQUFLLFNBQUwsR0FBaUIsS0FBakI7QUFDSDs7OzttQ0FFVTtBQUNQLGlCQUFLLEtBQUwsR0FBYSxNQUFiO0FBQ0EsaUJBQUssYUFBTCxHQUFxQixVQUFyQjtBQUNIOzs7c0NBRWE7QUFDVixnQkFBSSxNQUFNLGNBQWMsT0FBZCxDQUFzQixLQUFLLEtBQTNCLENBQVY7QUFDQSxpQkFBSyxLQUFMLEdBQWEsY0FBYyxNQUFNLENBQXBCLENBQWI7QUFDSDs7O3NDQUVhO0FBQ1YsZ0JBQUksSUFBSSxLQUFLLEtBQUwsQ0FBVyxLQUFLLE1BQUwsS0FBZ0IsQ0FBM0IsQ0FBUjtBQUNBLGlCQUFLLEtBQUwsR0FBYSxDQUFDLFNBQUQsRUFBWSxXQUFaLEVBQXlCLFVBQXpCLEVBQXFDLFVBQXJDLEVBQWlELE1BQWpELEVBQXlELENBQXpELENBQWI7QUFDSCIsImZpbGUiOiJCdXR0b25EZW1vLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qZ29kaS9ub3ZvLWRldi9saWJzL25vdm8tZWxlbWVudHMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBORzJcbmltcG9ydCB7IENvbXBvbmVudCB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuLy8gQVBQXG5pbXBvcnQgUHJpbWFyeUJ1dHRvbkRlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvUHJpbWFyeUJ1dHRvbkRlbW8uaHRtbCc7XG5pbXBvcnQgRGlhbG9ndWVCdXR0b25EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL0RpYWxvZ3VlQnV0dG9uRGVtby5odG1sJztcbmltcG9ydCBIZWFkZXJCdXR0b25EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL0hlYWRlckJ1dHRvbkRlbW8uaHRtbCc7XG5pbXBvcnQgSWNvbkJ1dHRvbkRlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvSWNvbkJ1dHRvbkRlbW8uaHRtbCc7XG5pbXBvcnQgU3RhbmRhcmRCdXR0b25EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL1N0YW5kYXJkQnV0dG9uRGVtby5odG1sJztcbmltcG9ydCBTZWNvbmRhcnlCdXR0b25EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL1NlY29uZGFyeUJ1dHRvbkRlbW8uaHRtbCc7XG5pbXBvcnQgRHluYW1pY0J1dHRvbkRlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvRHluYW1pY0J1dHRvbkRlbW8uaHRtbCc7XG5cbmNvbnN0IHRlbXBsYXRlID0gYFxuPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICAgIDxoMT5CdXR0b24gPHNtYWxsPjxhIHRhcmdldD1cIl9ibGFua1wiIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20vYnVsbGhvcm4vbm92by1lbGVtZW50cy90cmVlL21hc3Rlci9zcmMvZWxlbWVudHMvYnV0dG9uXCI+KHNvdXJjZSk8L2E+PC9zbWFsbD48L2gxPlxuICAgIDxwPkEgYnV0dG9uIGNsZWFybHkgaW5kaWNhdGVzIGEgcG9pbnQgb2YgYWN0aW9uIGZvciB0aGUgdXNlci4gQnVsbGhvcm4gYnV0dG9uc1xuICAgICBjb21lIGluIGEgdmFyaWV0eSBvZiB0aGVtZXMsIGN1c3RvbSB0YWlsb3JlZCB0byBmaXQgeW91ciB1c2UtY2FzZS48L3A+XG5cbiAgICA8aDI+VGhlbWVzPC9oMj5cbiAgICA8cD5cbiAgICAgICAgQnVsbGhvcm4gYnV0dG9uIHRoZW1lcyB3ZXJlIGhhbmQgY3JhZnRlZCB0byBtYWtlIHlvdXIgbGlmZSBlYXNpZXIuXG4gICAgICAgICBNb3N0IGJ1dHRvbnMgdXNlZCBpbiB0aGUgQnVsbGhvcm4gcGxhdGZvcm0gc2hvdWxkIHV0aWxpemUgYVxuICAgICAgICAgPGNvZGU+dGhlbWU8L2NvZGU+IGF0dHJpYnV0ZS4gVGhlbWUgYXR0cmlidXRlcyBwcm92aWRlIGFjY2VzcyB0byBldmVyeVxuICAgICAgICAgdmFyaWF0aW9uIG9mIEJ1bGxob3JuIFVYIGFwcHJvdmVkIGJ1dHRvbnMuIERlcGVuZGluZyBvbiB0aGUgdGhlbWUsIHNvbWVcbiAgICAgICAgIGJ1dHRvbnMgbWF5IGFsc28gdXRpbGl6ZSA8Y29kZT5pY29uPC9jb2RlPiwgPGNvZGU+c2lkZTwvY29kZT4sIGFuZFxuICAgICAgICAgPGNvZGU+aW52ZXJzZTwvY29kZT4gYXR0cmlidXRlcy4gQnV0dG9uIGFyZSBkaXZpZGVkIGJ5IGZ1bmN0aW9uIGludG9cbiAgICAgICAgIGZvdXIgbWFpbiBjYXRlZ29yaWVzOiBQcmltYXJ5LCBTZWNvbmRhcnksIE5ldXRyYWxpemluZywgU3VidHJhY3RpdmUuXG4gICAgICAgICBUaGVyZSBhcmUgYWxzbyB0aHJlZSBvdGhlciBidXR0b24gdHlwZXMgdGhhdCBhcmUgaW5kZXBlbmRlbnQgb2YgZnVuY3Rpb246XG4gICAgICAgICBEaWFsb2d1ZSwgSWNvbiwgYW5kIEhlYWRlci5cbiAgICA8L3A+XG5cbiAgICA8aDU+Q29sb3JzPC9oNT5cbiAgICA8cD5cbiAgICAgICAgQWNjZXB0YWJsZSBjb2xvcnMgaW5jbHVkZSA8Y29kZT5QcmltYXJ5PC9jb2RlPiwgPGNvZGU+U3VjY2VzczwvY29kZT4sIDxjb2RlPldhcm5pbmc8L2NvZGU+LCA8Y29kZT5OZWdhdGl2ZTwvY29kZT4sXG4gICAgICAgICBhbmQgPHN0cm9uZz5hbGwgYW5hbHl0aWNzIGNvbG9yczwvc3Ryb25nPiB3aGljaCBjYW4gYmUgZm91bmQgaW4gdGhlIGNvbG9yIHNlY3Rpb24gb2YgdGhlIHN0eWxlIGd1aWRlLlxuICAgIDwvcD5cblxuICAgIDxici8+XG5cbiAgICA8aDU+UHJpbWFyeTwvaDU+XG4gICAgPHA+XG4gICAgICAgIFByaW1hcnkgYnV0dG9ucyBhcmUgdXNlZCB0byBhcyBwcmltYXJ5IGNhbGxzLXRvLWFjdGlvbi4gVGhleSBzaG91bGQgPHN0cm9uZz5hbHdheXM8L3N0cm9uZz5cbiAgICAgICAgIGdldCBhbiA8Y29kZT5pY29uPC9jb2RlPiBhdHRyaWJ1dGUuIFByaW1hcnkgYnV0dG9ucyB3aXRoIGEgXCJzdWNjZXNzXCIgY29sb3JcbiAgICAgICAgIDxjb2RlPmNvbG9yPVwic3VjY2Vzc1wiPC9jb2RlPiBhcmUgdXNlZCBmb3Igc2F2aW5nIGFuZCB3aWxsIGFsbW9zdCBhbHdheXMgY29udGFpbiBhIFwiY2hlY2tcIiBpY29uLlxuICAgICAgICAgTmVnYXRpdmUgY29sb3IgcHJpbWFyeSBidXR0b25zIDxjb2RlPmNvbG9yPVwibmVnYXRpdmVcIjwvY29kZT4gYXJlIHVzZWQgdG8gZGVsZXRlLFxuICAgICAgICAgY2xlYXIsIG9yIG90aGVyd2lzZSByZW1vdmUgYW4gZXh0YW50IGVsZW1lbnQuIFByaW1hcnkgYnV0dG9ucyBzaG91bGQgbmV2ZXIgaGF2ZSBhIDxjb2RlPnNpZGU8L2NvZGU+IGF0dHJpYnV0ZS5cbiAgICA8L3A+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgYnV0dG9ucy1kZW1vXCI+JHtQcmltYXJ5QnV0dG9uRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIlByaW1hcnlCdXR0b25EZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG5cbiAgICA8aDU+U2Vjb25kYXJ5PC9oNT5cbiAgICA8cD5cbiAgICAgICAgU2Vjb25kYXJ5IGJ1dHRvbnMgYXJlIHVzZWQgYXMgYW4gYWx0ZXJuYXRpdmUgUHJpbWFyeSBidXR0b24gb3Igd2hlbiB0aGVyZVxuICAgICAgICAgaXMgYSBzZWNvbmQgbWFqb3IgYWN0aW9uIG9uIGEgcGFnZS4gVGhleSB1c3VhbGx5IGFwcGVhcnMgb25seSBpbiBPdmVydmlld1xuICAgICAgICAgYW5kIFNsaWRlb3V0IGhlYWRlcnMuIFRoaXMgdGhlbWUgd2l0aCBhbiA8Y29kZT5pbnZlcnNlPC9jb2RlPiBhdHRyaWJ1dGUgaXNcbiAgICAgICAgIG9mdGVuIHVzZWQgYXMgdGhlIGFjdGlvbiBidXR0b24gaW4gZHJvcGRvd24gbWVudXMuXG4gICAgPC9wPlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGJ1dHRvbnMtZGVtb1wiPiR7U2Vjb25kYXJ5QnV0dG9uRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIlNlY29uZGFyeUJ1dHRvbkRlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbiAgICA8cD5cbiAgICAgICAgU2Vjb25kYXJ5IGJ1dHRvbnMgY2FuIGFsc28gZ2V0IGFuIDxjb2RlPmludmVyc2U8L2NvZGU+IGF0dHJpYnV0ZSBmb3IgdXNlIG9uIGEgY29sb3JlZCBiYWNrZ3JvdW5kLlxuICAgIDwvcD5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBoZWFkZXIgYnV0dG9ucy1kZW1vXCIgW25nQ2xhc3NdPVwiY29sb3JcIiAoY2xpY2spPVwiY2hhbmdlQ29sb3IoKVwiIHRvb2x0aXA9XCJDbGljayBNZSFcIiB0b29sdGlwUGxhY2VtZW50PVwidG9wXCI+JHtIZWFkZXJCdXR0b25EZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiSGVhZGVyQnV0dG9uRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuXG4gICAgPGg1PkRpYWxvZ3VlPC9oNT5cbiAgICA8cD5cbiAgICAgICAgU2ltaWxhciB0byBpY29uIGJ1dHRvbnMsIGRpYWxvZ3VlIGJ1dHRvbnMgcmVxdWlyZSBsZXNzIHZpc3VhbCBkb21pbmFuY2UgYnV0IG9mdGVuIG5lZWQgYWRkaXRpb25hbCBoZWxwZXIgdGV4dC4gRGlhbG9ndWUgYnV0dG9uc1xuICAgICAgICA8ZW0+bWF5PC9lbT4gY29udGFpbiA8c3Ryb25nPmFueTwvc3Ryb25nPiBpY29uIGFuZCBhXG4gICAgICAgIDxjb2RlPnNpZGU8L2NvZGU+IG1heSBiZSBzcGVjaWZpZWQgZWc6PGNvZGU+c2lkZT1cInJpZ2h0XCI8L2NvZGU+IHRvIHBsYWNlIHRoZSBpY29uIG9uIHRoZSByaWdodCBvciBsZWZ0IHNpZGUgb2YgdGhlIHRleHQuIERpYWxvZ3VlIGJ1dHRvbnMgbWF5IGFsc28gdXNlIGFuXG4gICAgICAgIDxjb2RlPmludmVyc2U8L2NvZGU+IGF0dHJpYnV0ZSB0byBjaGFuZ2UgaXRzIHRleHQgY29sb3IgdG8gd2hpdGUuXG4gICAgPC9wPlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGJ1dHRvbnMtZGVtb1wiPiR7RGlhbG9ndWVCdXR0b25EZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiRGlhbG9ndWVCdXR0b25EZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG5cbiAgICA8aDU+U3RhbmRhcmQ8L2g1PlxuICAgIDxwPlxuICAgICAgICBTdGFuZGFyZCBidXR0b25zIGFyZSB0aGUgbW9zdCBnZW5lcmljIGJ1dHRvbiBzdHlsZS4gU3RhbmRhcmQgYnV0dG9ucyBieSBkZWZhdWx0IGFyZVxuICAgICAgICAgc3R5bGVkIGlkZW50aWNhbGx5IHRvIHN0YW5kYXJkIGJ1dHRvbnMgd2l0aCBhIDxjb2RlPmNvbG9yPVwibGlnaHRcIjwvY29kZT5cbiAgICAgICAgIGF0dHJpYnV0ZS4gVHlwaWNhbGx5LCBhIHN0YW5kYXJkIGJ1dHRvbiBpcyB1c2VkIHRvIGNhbmNlbCBhbiBhY3Rpb24sXG4gICAgICAgICBvciB0byBjZWFzZSBhbnkgYWRkaXRpb25hbCBwcm9ncmVzcy4gQWx0aG91Z2ggc3RhbmRhcmQgYnV0dG9ucyA8ZW0+Y2FuPC9lbT5cbiAgICAgICAgIGdldCBhbiA8Y29kZT5pY29uPC9jb2RlPiBhdHRyaWJ1dGUsIHRoZXkgc2hvdWxkIGFsbW9zdCBuZXZlciBiZSB1c2VkIHdpdGggYW4gaWNvbi5cbiAgICAgICAgIElmIHlvdXIgcHJvcG9zZWQgZGVzaWduIGNhbGxzIGZvciBhIHN0YW5kYXJkIGJ1dHRvbiB3aXRoIGFuIGljb24sIGNvbnNpZGVyIHVzaW5nXG4gICAgICAgICBhIGRpZmZlcmVudCBidXR0b24gdGhlbWUsIGxpa2UgZGlhbG9ndWUuXG4gICAgPC9wPlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGJ1dHRvbnMtZGVtb1wiPiR7U3RhbmRhcmRCdXR0b25EZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiTmV1dHJhbEJ1dHRvbkRlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cblxuICAgIDxoNT5JY29uPC9oNT5cbiAgICA8cD5cbiAgICAgICAgVGhlIDxjb2RlPmljb248L2NvZGU+IHRoZW1lIGlzIHVzZWQgdG8gY3JlYXRlXG4gICAgICAgIDxzdHJvbmc+aWNvbi1vbmx5PC9zdHJvbmc+IGJ1dHRvbnMsIHdoaWNoIGNvbnRhaW4gbm8gdGV4dC4gVGhleSBjYW4gb2NjdXB5IGFueSBvZiB0aGUgZm91ciBtYWluIGZ1bmN0aW9ucyBidXQgcmVxdWlyZSBmYXIgbGVzcyB2aXN1YWwgZG9taW5hbmNlIHRoYW4gbm9ybWFsIGJ1dHRvbnMuIEljb24gYnV0dG9uc1xuICAgICAgICA8c3Ryb25nPmFsd2F5czwvc3Ryb25nPiBoYXZlIGFuIDxjb2RlPmljb248L2NvZGU+IGF0dHJpYnV0ZSBhbmQgY2FuIHVzZVxuICAgICAgICA8c3Ryb25nPmFueTwvc3Ryb25nPiBpY29uLiBJY29uIGJ1dHRvbnMgbWF5IGFsc28gdXNlIGFuXG4gICAgICAgIDxjb2RlPmludmVyc2U8L2NvZGU+IGF0dHJpYnV0ZSB0byBjaGFuZ2UgaXRzIGljb24gY29sb3IgdG8gd2hpdGUuXG4gICAgPC9wPlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGJ1dHRvbnMtZGVtbyBpY29uc1wiIFtuZ0NsYXNzXT1cImNvbG9yXCIgKGNsaWNrKT1cImNoYW5nZUNvbG9yKClcIiB0b29sdGlwPVwiQ2xpY2sgTWUhXCIgdG9vbHRpcFBsYWNlbWVudD1cInRvcFwiPiR7SWNvbkJ1dHRvbkRlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJJY29uQnV0dG9uRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuXG4gICAgPGg1PkR5bmFtaWM8L2g1PlxuICAgIDxwPlxuICAgICAgICBCdXR0b24gcGFyYW1ldGVycyBjYW4gYmUgZHluYW1pY2FsbHkgc2V0IGFuZCBjaGFuZ2UgYXQgcnVudGltZS4gIFRoZSBzdHlsZXMgc2hvdWxkXG4gICAgICAgIGNoYW5nZSBhbmQgYmUgYXBwbGllZCB3aGVuIHRoZSB2YWx1ZXMgY2hhbmdlLlxuICAgIDwvcD5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBidXR0b25zLWRlbW9cIj4ke0R5bmFtaWNCdXR0b25EZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiRHluYW1pY0J1dHRvbkRlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbjwvZGl2PlxuYDtcblxuY29uc3QgSEVBREVSX0NPTE9SUyA9IFsnYmx1ZScsICdncmVlbicsICd5ZWxsb3cnLCAnb3JhbmdlJywgJ3JlZCcsICdwdXJwbGUnXTtcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdidXR0b25zLWRlbW8nLFxuICAgIHRlbXBsYXRlOiB0ZW1wbGF0ZVxufSlcbmV4cG9ydCBjbGFzcyBCdXR0b25EZW1vQ29tcG9uZW50IHtcbiAgICBjb25zdHJ1Y3RvcigpIHtcbiAgICAgICAgdGhpcy5QcmltYXJ5QnV0dG9uRGVtb1RwbCA9IFByaW1hcnlCdXR0b25EZW1vVHBsO1xuICAgICAgICB0aGlzLlNlY29uZGFyeUJ1dHRvbkRlbW9UcGwgPSBTZWNvbmRhcnlCdXR0b25EZW1vVHBsO1xuICAgICAgICB0aGlzLkRpYWxvZ3VlQnV0dG9uRGVtb1RwbCA9IERpYWxvZ3VlQnV0dG9uRGVtb1RwbDtcbiAgICAgICAgdGhpcy5OZXV0cmFsQnV0dG9uRGVtb1RwbCA9IFN0YW5kYXJkQnV0dG9uRGVtb1RwbDtcbiAgICAgICAgdGhpcy5IZWFkZXJCdXR0b25EZW1vVHBsID0gSGVhZGVyQnV0dG9uRGVtb1RwbDtcbiAgICAgICAgdGhpcy5JY29uQnV0dG9uRGVtb1RwbCA9IEljb25CdXR0b25EZW1vVHBsO1xuICAgICAgICB0aGlzLkR5bmFtaWNCdXR0b25EZW1vVHBsID0gRHluYW1pY0J1dHRvbkRlbW9UcGw7XG5cbiAgICAgICAgdGhpcy50aGVtZSA9ICdwcmltYXJ5JztcbiAgICAgICAgdGhpcy5pc0NoZWNrZWQgPSBmYWxzZTtcbiAgICB9XG5cbiAgICBuZ09uSW5pdCgpIHtcbiAgICAgICAgdGhpcy5jb2xvciA9ICdibHVlJztcbiAgICAgICAgdGhpcy5uZWdhdGl2ZUNvbG9yID0gJ25lZ2F0aXZlJztcbiAgICB9XG5cbiAgICBjaGFuZ2VDb2xvcigpIHtcbiAgICAgICAgbGV0IGlkeCA9IEhFQURFUl9DT0xPUlMuaW5kZXhPZih0aGlzLmNvbG9yKTtcbiAgICAgICAgdGhpcy5jb2xvciA9IEhFQURFUl9DT0xPUlNbaWR4ICsgMV07XG4gICAgfVxuXG4gICAgY2hhbmdlVGhlbWUoKSB7XG4gICAgICAgIGxldCBpID0gTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpICogNCk7XG4gICAgICAgIHRoaXMudGhlbWUgPSBbJ3ByaW1hcnknLCAnc2Vjb25kYXJ5JywgJ2RpYWxvZ3VlJywgJ3N0YW5kYXJkJywgJ2ljb24nXVtpXTtcbiAgICB9XG59XG4iXX0=
 
 /***/ },
 
@@ -1039,32 +1053,39 @@ webpackJsonp([3],{
 /***/ 827:
 /***/ function(module, exports) {
 
-	module.exports = "<button theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n<button theme=\"secondary\" icon=\"convert\" inverse>Convert</button>\n<button theme=\"secondary\" icon=\"convert\" inverse disabled>Convert</button>\n"
+	module.exports = "<button [theme]=\"theme\" [icon]=\"isChecked ? 'check' : 'times'\" (click)=\"changeTheme()\">Change Theme</button>\n<novo-checkbox label=\"Checked?\" [(ngModel)]=\"isChecked\"></novo-checkbox>\n"
 
 /***/ },
 
 /***/ 828:
 /***/ function(module, exports) {
 
-	module.exports = "<button theme=\"icon\" icon=\"print\" inverse></button>\n<button theme=\"icon\" icon=\"print\" inverse disabled></button>\n"
+	module.exports = "<button theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n<button theme=\"secondary\" icon=\"convert\" inverse>Convert</button>\n<button theme=\"secondary\" icon=\"convert\" inverse disabled>Convert</button>\n"
 
 /***/ },
 
 /***/ 829:
 /***/ function(module, exports) {
 
-	module.exports = "<button theme=\"primary\" icon=\"next\">Next</button>\n<button theme=\"primary\" [color]=\"negativeColor\" icon=\"times\">Cancel</button>\n<button theme=\"primary\" color=\"success\" icon=\"check\">Save</button>\n<button theme=\"primary\" color=\"warning\" icon=\"caution-o\">Caution</button>\n<button theme=\"primary\" color=\"pulse\" icon=\"next\" disabled>Submit</button>\n"
+	module.exports = "<button theme=\"icon\" icon=\"print\" inverse></button>\n<button theme=\"icon\" icon=\"print\" inverse disabled></button>\n"
 
 /***/ },
 
 /***/ 830:
 /***/ function(module, exports) {
 
-	module.exports = "<button theme=\"secondary\">Secondary</button>\n<button theme=\"secondary\" disabled>Secondary</button>\n\n"
+	module.exports = "<button theme=\"primary\" icon=\"next\">Next</button>\n<button theme=\"primary\" [color]=\"negativeColor\" icon=\"times\">Cancel</button>\n<button theme=\"primary\" color=\"success\" icon=\"check\">Save</button>\n<button theme=\"primary\" color=\"warning\" icon=\"caution-o\">Caution</button>\n<button theme=\"primary\" color=\"pulse\" icon=\"next\" disabled>Submit</button>\n"
 
 /***/ },
 
 /***/ 831:
+/***/ function(module, exports) {
+
+	module.exports = "<button theme=\"secondary\">Secondary</button>\n<button theme=\"secondary\" disabled>Secondary</button>\n\n"
+
+/***/ },
+
+/***/ 832:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"standard\">Standard</button>\n<button theme=\"standard\" color=\"light\">Standard</button>\n<button theme=\"standard\" color=\"light\" disabled>Standard</button>\n"
@@ -1090,15 +1111,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _CalendarDemo = __webpack_require__(832);
+	var _CalendarDemo = __webpack_require__(833);
 	
 	var _CalendarDemo2 = _interopRequireDefault(_CalendarDemo);
 	
-	var _TimeDemo = __webpack_require__(834);
+	var _TimeDemo = __webpack_require__(835);
 	
 	var _TimeDemo2 = _interopRequireDefault(_TimeDemo);
 	
-	var _RangeDemo = __webpack_require__(833);
+	var _RangeDemo = __webpack_require__(834);
 	
 	var _RangeDemo2 = _interopRequireDefault(_RangeDemo);
 	
@@ -1136,21 +1157,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 832:
+/***/ 833:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"calendar-demo-side-by-side\">\n    <p>\n        <label>Value One</label>\n        {{(dateOne | date) || 'N/A'}}\n\n        <label>Value Two</label>\n        {{(dateTwo | date) || 'N/A'}}\n    </p>\n    <novo-date-picker [(ngModel)]=\"dateOne\" minYear=\"2000\" maxYear=\"2020\"\n                      [start]=\"start\" [end]=\"end\"></novo-date-picker>\n    <novo-date-picker [(ngModel)]=\"dateTwo\"></novo-date-picker>\n</div>\n"
 
 /***/ },
 
-/***/ 833:
+/***/ 834:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"calendar-demo-side-by-side\">\n    <p>\n        <label>Start date</label>\n        {{(value?.startDate | date) || 'N/A'}}\n\n        <label>End date</label>\n        {{(value?.endDate | date) || 'N/A'}}\n    </p>\n    <novo-date-picker [(ngModel)]=\"value\" range=\"true\" (onSelect)=\"range\"></novo-date-picker>\n</div>\n"
 
 /***/ },
 
-/***/ 834:
+/***/ 835:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"calendar-demo-side-by-side\">\n    <p>\n        <label>Value</label>\n        {{(time | date:'mediumTime') || 'N/A'}}\n    </p>\n    <novo-time-picker [(ngModel)]=\"time\"></novo-time-picker>\n    <novo-time-picker [(ngModel)]=\"time\" military=\"true\"></novo-time-picker>\n</div>\n"
@@ -1178,23 +1199,23 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _AttributeCardDemo = __webpack_require__(835);
+	var _AttributeCardDemo = __webpack_require__(836);
 	
 	var _AttributeCardDemo2 = _interopRequireDefault(_AttributeCardDemo);
 	
-	var _FullConfigCardDemo = __webpack_require__(839);
+	var _FullConfigCardDemo = __webpack_require__(840);
 	
 	var _FullConfigCardDemo2 = _interopRequireDefault(_FullConfigCardDemo);
 	
-	var _ExtrasTimelineDemo = __webpack_require__(838);
+	var _ExtrasTimelineDemo = __webpack_require__(839);
 	
 	var _ExtrasTimelineDemo2 = _interopRequireDefault(_ExtrasTimelineDemo);
 	
-	var _ExtrasBestTimeDemo = __webpack_require__(836);
+	var _ExtrasBestTimeDemo = __webpack_require__(837);
 	
 	var _ExtrasBestTimeDemo2 = _interopRequireDefault(_ExtrasBestTimeDemo);
 	
-	var _ExtrasChartDemoDemo = __webpack_require__(837);
+	var _ExtrasChartDemoDemo = __webpack_require__(838);
 	
 	var _ExtrasChartDemoDemo2 = _interopRequireDefault(_ExtrasChartDemoDemo);
 	
@@ -1311,35 +1332,35 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 835:
+/***/ 836:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card [title]=\"'All Attributes'\"\n           icon=\"activity\"\n           [loading]=\"loading\"\n           [message]=\"message\"\n           [messageIcon]=\"messageIcon\"\n           [refresh]=\"refresh\"\n           [move]=\"move\"\n           [close]=\"close\"\n           (onRefresh)=\"onRefresh()\"\n           (onClose)=\"onClose()\"\n           [padding]=\"padding\">\n    This is the ALL attribute card content!\n</novo-card>\n"
 
 /***/ },
 
-/***/ 836:
+/***/ 837:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-best-time [label]=\"bestLabel\" [day]=\"bestDay\" [time]=\"bestTime\"></novo-card-best-time>\n"
 
 /***/ },
 
-/***/ 837:
+/***/ 838:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-chart-donut [value]=\"donutValue\" [label]=\"donutLabel\" [color]=\"donutColor\"></novo-card-chart-donut>\n"
 
 /***/ },
 
-/***/ 838:
+/***/ 839:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-timeline [start]=\"start\" [end]=\"end\" [created]=\"created\"></novo-card-timeline>\n"
 
 /***/ },
 
-/***/ 839:
+/***/ 840:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card [config]=\"fullConfig\">\n    DEMO :)\n</novo-card>\n"
@@ -1365,15 +1386,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicChipsDemo = __webpack_require__(841);
+	var _BasicChipsDemo = __webpack_require__(842);
 	
 	var _BasicChipsDemo2 = _interopRequireDefault(_BasicChipsDemo);
 	
-	var _AsyncChipsDemo = __webpack_require__(840);
+	var _AsyncChipsDemo = __webpack_require__(841);
 	
 	var _AsyncChipsDemo2 = _interopRequireDefault(_AsyncChipsDemo);
 	
-	var _FormattedChipsDemo = __webpack_require__(842);
+	var _FormattedChipsDemo = __webpack_require__(843);
 	
 	var _FormattedChipsDemo2 = _interopRequireDefault(_FormattedChipsDemo);
 	
@@ -1456,24 +1477,24 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 840:
-/***/ function(module, exports) {
-
-	module.exports = "<div>Selected Value: {{avalue}}</div>\n<chips\n    [source]=\"async\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"avalue\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
-
-/***/ },
-
 /***/ 841:
 /***/ function(module, exports) {
 
-	module.exports = "<div>Selected Value: {{value}}</div>\n<chips\n    [source]=\"static\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"value\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
+	module.exports = "<div class=\"selected-value\">Selected Value: {{avalue}}</div>\n<chips\n    [source]=\"async\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"avalue\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
 
 /***/ },
 
 /***/ 842:
 /***/ function(module, exports) {
 
-	module.exports = "<div>Selected Value: {{fvalue}}</div>\n<chips\n    [source]=\"formatted\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"fvalue\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
+	module.exports = "<div class=\"selected-value\">Selected Value: {{value}}</div>\n<chips\n    [source]=\"static\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"value\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
+
+/***/ },
+
+/***/ 843:
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"selected-value\">Selected Value: {{fvalue}}</div>\n<chips\n    [source]=\"formatted\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"fvalue\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
 
 /***/ },
 
@@ -1500,11 +1521,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DragulaDemo = __webpack_require__(843);
+	var _DragulaDemo = __webpack_require__(844);
 	
 	var _DragulaDemo2 = _interopRequireDefault(_DragulaDemo);
 	
-	var _DragulaModelDemo = __webpack_require__(844);
+	var _DragulaModelDemo = __webpack_require__(845);
 	
 	var _DragulaModelDemo2 = _interopRequireDefault(_DragulaModelDemo);
 	
@@ -1566,14 +1587,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 843:
+/***/ 844:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"wrapper\">\n    <div class=\"drag-container\" [dragula]=\"'first-bag'\">\n        <div>You can move these elements between these two containers</div>\n        <div>Moving them anywhere else isn\"t quite possible</div>\n        <div>There\"s also the possibility of moving elements around in the same container, changing their position</div>\n    </div>\n    <div class=\"drag-container\" [dragula]=\"'first-bag'\">\n        <div>This is the default use case. You only need to specify the containers you want to use</div>\n        <div>More interactive use cases lie ahead</div>\n        <div>Make sure to check out the\n            <a href=\"https://github.com/bevacqua/dragula#readme\">documentation on GitHub!</a>\n        </div>\n    </div>\n</div>\n"
 
 /***/ },
 
-/***/ 844:
+/***/ 845:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"wrapper\">\n    <div class=\"drag-container\" [dragula]=\"'another-bag'\" [dragulaModel]=\"many\">\n        <div *ngFor=\"let text of many\" [innerHtml]=\"text\"></div>\n    </div>\n    <div class=\"drag-container\" [dragula]=\"'another-bag'\" [dragulaModel]=\"many2\">\n        <div *ngFor=\"let text of many2\" [innerHtml]=\"text\"></div>\n    </div>\n</div>\n<div class=\"wrapper\">\n    <div class=\"drag-container\">\n        <pre>{{many | json}}</pre>\n    </div>\n    <div class=\"drag-container\">\n        <pre>{{many2 | json}}</pre>\n    </div>\n</div>\n"
@@ -1599,7 +1620,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DrawerDemo = __webpack_require__(845);
+	var _DrawerDemo = __webpack_require__(846);
 	
 	var _DrawerDemo2 = _interopRequireDefault(_DrawerDemo);
 	
@@ -1632,7 +1653,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 845:
+/***/ 846:
 /***/ function(module, exports) {
 
 	module.exports = "<div drawer [position]=\"'left'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Left</button>\n    <div class=\"drawer-content\">\n        <h4>I am a left drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'right'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Right</button>\n    <div class=\"drawer-content\">\n        <h4>I am a right drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'right'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Right <strong>*Two*</strong></button>\n    <div class=\"drawer-content\">\n        <h4>I am *another* right drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'top'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Top</button>\n    <div class=\"drawer-content\">\n        <h4>I am a top drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'bottom'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Bottom</button>\n    <div class=\"drawer-content\">\n        <h4>I am a bottom drawer!</h4>\n    </div>\n</div>\n"
@@ -1658,7 +1679,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DropdownDemo = __webpack_require__(846);
+	var _DropdownDemo = __webpack_require__(847);
 	
 	var _DropdownDemo2 = _interopRequireDefault(_DropdownDemo);
 	
@@ -1691,7 +1712,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 846:
+/***/ 847:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-dropdown>\n    <button type=\"button\" theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n    <list>\n        <item (action)=\"clickMe()\">Action 1</item>\n        <item (action)=\"clickMe('WITH DATA')\">Action 2</item>\n        <item tooltip=\"Test tooltip :)\" tooltipPosition=\"right\" [disabled]=\"true\" (action)=\"clickMe()\">Action 3</item>\n    </list>\n</novo-dropdown>\n<novo-dropdown side=\"right\">\n    <button type=\"button\" theme=\"icon\" icon=\"menu\" inverse></button>\n    <list>\n        <item>Action 1</item>\n        <item tooltip=\"Test tooltip :)\" tooltipPosition=\"left\">Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n"
@@ -1715,7 +1736,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicEditorDemo = __webpack_require__(847);
+	var _BasicEditorDemo = __webpack_require__(848);
 	
 	var _BasicEditorDemo2 = _interopRequireDefault(_BasicEditorDemo);
 	
@@ -1738,7 +1759,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 847:
+/***/ 848:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-editor [(ngModel)]=\"editorValue\"></novo-editor>\n\n<p>Value:</p>\n<p [innerHtml]=\"editorValue\"></p>\n"
@@ -1766,19 +1787,19 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DynamicForm = __webpack_require__(849);
+	var _DynamicForm = __webpack_require__(850);
 	
 	var _DynamicForm2 = _interopRequireDefault(_DynamicForm);
 	
-	var _VerticalDynamicForm = __webpack_require__(851);
+	var _VerticalDynamicForm = __webpack_require__(852);
 	
 	var _VerticalDynamicForm2 = _interopRequireDefault(_VerticalDynamicForm);
 	
-	var _TextBasedControls = __webpack_require__(850);
+	var _TextBasedControls = __webpack_require__(851);
 	
 	var _TextBasedControls2 = _interopRequireDefault(_TextBasedControls);
 	
-	var _CheckBoxControls = __webpack_require__(848);
+	var _CheckBoxControls = __webpack_require__(849);
 	
 	var _CheckBoxControls2 = _interopRequireDefault(_CheckBoxControls);
 	
@@ -2153,28 +2174,28 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 848:
+/***/ 849:
 /***/ function(module, exports) {
 
 	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"checkForm\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"checkControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"checkListControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{checkForm.value | json}}</div>\n"
 
 /***/ },
 
-/***/ 849:
+/***/ 850:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\" *ngIf=\"!myform.showingAllFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" *ngIf=\"!myform.showingRequiredFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form class=\"dynamic\" [controls]=\"dynamic\" [(form)]=\"dynamicForm\" #myform></novo-dynamic-form>\n<footer class=\"dynamic-demo-footer\">\n    <button (click)=\"save(myform)\" theme=\"primary\" icon=\"check\">Save</button>\n</footer>\n<div class=\"final-value\">Valid: {{myform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{myform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{myform.updatedValues() | json}}</div>\n"
 
 /***/ },
 
-/***/ 850:
+/***/ 851:
 /***/ function(module, exports) {
 
 	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"textForm\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"textControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"emailControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"numberControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"currencyControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"floatControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"percentageControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"quickNoteControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{textForm.value | json}}</div>\n"
 
 /***/ },
 
-/***/ 851:
+/***/ 852:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\" (click)=\"nomyform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" (click)=\"nomyform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form layout=\"vertical\" class=\"dynamic\" [controls]=\"dynamicVertical\" [(form)]=\"dynamicVerticalForm\" #nomyform></novo-dynamic-form>\n<div class=\"final-value\">Valid: {{nomyform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{nomyform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{nomyform.updatedValues() | json}}</div>\n"
@@ -2202,7 +2223,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _HeaderDemo = __webpack_require__(852);
+	var _HeaderDemo = __webpack_require__(853);
 	
 	var _HeaderDemo2 = _interopRequireDefault(_HeaderDemo);
 	
@@ -2257,7 +2278,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 852:
+/***/ 853:
 /***/ function(module, exports) {
 
 	module.exports = "<header title=\"John Deere\" icon=\"person\" [theme]=\"entity\">\n    <utils>\n        <util-action icon=\"flag\" (click)=\"catchEv('pin', $event)\"></util-action>\n        <util-action icon=\"refresh\" (click)=\"catchEv('refresh', $event)\"></util-action>\n        <util-action icon=\"times\" (click)=\"catchEv('close', $event)\"></util-action>\n    </utils>\n    <section>\n        Extra Info\n    </section>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>Overview</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Activity</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Email</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n"
@@ -2283,15 +2304,19 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ListDemo = __webpack_require__(853);
+	var _ListDemo = __webpack_require__(854);
 	
 	var _ListDemo2 = _interopRequireDefault(_ListDemo);
+	
+	var _ThemedListDemo = __webpack_require__(855);
+	
+	var _ThemedListDemo2 = _interopRequireDefault(_ThemedListDemo);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var template = '\n<div class="container">\n    <h1>List / Item <small><a target="_blank" href="https://github.com/bullhorn/novo-elements/tree/master/src/elements/list">(source)</a></small></h1>\n    <p>Lists are used to display rows of information like entities or entity data\n    and appear on cards, our mobile app, and several other places across the Bullhorn platform.</p>\n\n    <h2>Basic Usage</h2>\n\n    <h5>Standard List</h5>\n    <p>This is an example of a standard list.</p>\n    <div class="example standard-list-demo">' + _ListDemo2.default + '</div>\n    <code-snippet [code]="ListDemoTpl"></code-snippet>\n</div>\n';
+	var template = '\n<div class="container">\n    <h1>List / Item <small><a target="_blank" href="https://github.com/bullhorn/novo-elements/tree/master/src/elements/list">(source)</a></small></h1>\n    <p>Lists are used to display rows of information like entities or entity data\n    and appear on cards, our mobile app, and several other places across the Bullhorn platform.</p>\n\n    <h2>Basic Usage</h2>\n\n    <h5>Standard List</h5>\n    <p>This is an example of a standard list.</p>\n    <div class="example standard-list-demo">' + _ListDemo2.default + '</div>\n    <code-snippet [code]="ListDemoTpl"></code-snippet>\n\n    <h5>Themed List</h5>\n    <p>This is an example of a themed list.</p>\n    <div class="example themed-list-demo">' + _ThemedListDemo2.default + '</div>\n    <code-snippet [code]="ThemedListDemoTpl"></code-snippet>\n</div>\n';
 	
 	var ListDemoComponent = exports.ListDemoComponent = (_dec = (0, _core.Component)({
 	    selector: 'list-demo',
@@ -2301,6 +2326,7 @@ webpackJsonp([3],{
 	        _classCallCheck(this, ListDemoComponent);
 	
 	        this.ListDemoTpl = _ListDemo2.default;
+	        this.ThemedListDemoTpl = _ThemedListDemo2.default;
 	
 	        var ONE_HOUR = 60 * 60 * 1000;
 	        /* ms */
@@ -2439,14 +2465,21 @@ webpackJsonp([3],{
 	
 	    return ListDemoComponent;
 	}()) || _class);
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvbGlzdC9MaXN0RGVtby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7a0JBQUE7O0FBRUE7OztBQURBOztBQUVBOzs7Ozs7OztBQUVBLElBQU0sbW5CQUFOOztJQW1CYSxpQixXQUFBLGlCLFdBSloscUJBQVU7QUFDUCxjQUFVLFdBREg7QUFFUCxjQUFVO0FBRkgsQ0FBVixDO0FBS0csaUNBQWM7QUFBQTs7QUFDVixhQUFLLFdBQUw7O0FBRUEsWUFBSSxXQUFXLEtBQUssRUFBTCxHQUFVLElBQXpCO0FBQ0E7QUFDQSxZQUFJLFlBQVksV0FBVyxDQUEzQjtBQUNBLFlBQUksY0FBYyxXQUFXLENBQTdCO0FBQ0EsWUFBSSxjQUFjLElBQUksSUFBSixFQUFsQjs7QUFFQSxZQUFJLGFBQWEsWUFBWSxPQUFaLEtBQXdCLFFBQXpDO0FBQ0EsWUFBSSxjQUFjLFlBQVksT0FBWixLQUF3QixTQUExQztBQUNBLFlBQUksZ0JBQWdCLFlBQVksT0FBWixLQUF3QixXQUE1Qzs7QUFFQTs7Ozs7OztBQU9BLFlBQUksZUFBZSxDQUFDO0FBQ2hCLGtCQUFNLGFBRFU7QUFFaEIseUJBQWEsVUFGRztBQUdoQix1QkFBVztBQUNQLHdCQUFRLFVBREQ7QUFFUCxzQkFBTSxZQUZDO0FBR1AseUJBQVM7QUFIRixhQUhLO0FBUWhCLGtCQUFNO0FBQ0YsMkJBQVcsT0FEVDtBQUVGLDBCQUFVLE9BRlI7QUFHRix5QkFBUyxhQUhQO0FBSUYsMEJBQVU7QUFKUjtBQVJVLFNBQUQsRUFjaEI7QUFDQyxrQkFBTSxhQURQO0FBRUMseUJBQWEsV0FGZDtBQUdDLHVCQUFXO0FBQ1Asd0JBQVEsVUFERDtBQUVQLHNCQUFNLGFBRkM7QUFHUCx5QkFBUztBQUhGLGFBSFo7QUFRQyxrQkFBTTtBQUNGLDJCQUFXLFFBRFQ7QUFFRiwwQkFBVSxPQUZSO0FBR0YseUJBQVMsUUFIUDtBQUlGLDBCQUFVO0FBSlI7QUFSUCxTQWRnQixFQTRCaEI7QUFDQyxrQkFBTSxTQURQO0FBRUMseUJBQWEsYUFGZDtBQUdDLHVCQUFXO0FBQ1Asd0JBQVEsVUFERDtBQUVQLHNCQUFNLFlBRkM7QUFHUCx5QkFBUztBQUhGLGFBSFo7QUFRQyxrQkFBTTtBQUNGLDJCQUFXLFNBRFQ7QUFFRiwwQkFBVSxNQUZSO0FBR0YseUJBQVMsU0FIUDtBQUlGLDBCQUFVO0FBSlI7QUFSUCxTQTVCZ0IsQ0FBbkI7O0FBNENBLGFBQUssVUFBTCxHQUFrQixFQUFsQjs7QUFFQSxhQUFLLFVBQUwsQ0FBZ0IsWUFBaEI7QUFDSDs7OzttQ0FFVSxJLEVBQU07QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFDYixxQ0FBZ0IsSUFBaEIsOEhBQXNCO0FBQUEsd0JBQWIsR0FBYTs7QUFDbEIsd0JBQUksT0FBTyxFQUFYOztBQUVBOzs7Ozs7Ozs7Ozs7Ozs7OztBQWlCQSx5QkFBSyxJQUFMLEdBQVksSUFBSSxJQUFKLENBQVMsT0FBckI7QUFDQSx5QkFBSyxJQUFMLEdBQVksSUFBSSxJQUFoQjtBQUNBLHlCQUFLLElBQUwsR0FBWSxFQUFaOztBQUVBLHdCQUFJLElBQUksU0FBSixDQUFjLElBQWQsS0FBdUIsWUFBM0IsRUFBeUM7QUFDckMsNkJBQUssSUFBTCxDQUFVLElBQVYsR0FBaUIsV0FBakI7QUFDSDs7QUFFRCx3QkFBSSxJQUFJLFNBQUosQ0FBYyxJQUFkLEtBQXVCLFlBQTNCLEVBQXlDO0FBQ3JDLDZCQUFLLElBQUwsQ0FBVSxJQUFWLEdBQWtCLElBQUksU0FBSixDQUFjLE1BQWQsS0FBeUIsVUFBMUIsR0FBd0MsaUJBQXhDLEdBQTRELG1CQUE3RTtBQUNIOztBQUVELHdCQUFJLElBQUksU0FBSixDQUFjLElBQWQsS0FBdUIsYUFBM0IsRUFBMEM7QUFDdEMsNkJBQUssSUFBTCxDQUFVLElBQVYsR0FBa0IsSUFBSSxTQUFKLENBQWMsTUFBZCxLQUF5QixVQUExQixHQUF3QyxrQkFBeEMsR0FBNkQsa0JBQTlFO0FBQ0g7O0FBRUQseUJBQUssSUFBTCxDQUFVLFNBQVYsR0FBc0IsSUFBSSxTQUFKLENBQWMsTUFBcEM7QUFDQSx5QkFBSyxPQUFMLEdBQWUsSUFBSSxTQUFKLENBQWMsT0FBN0I7QUFDQSx5QkFBSyxPQUFMLEdBQWUsSUFBSSxXQUFuQjs7QUFFQSx5QkFBSyxVQUFMLENBQWdCLElBQWhCLENBQXFCLElBQXJCO0FBQ0g7QUExQ1k7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQTJDaEIiLCJmaWxlIjoiTGlzdERlbW8uanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbIi8vIE5HMlxuaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG4vLyBBUFBcbmltcG9ydCBMaXN0RGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9MaXN0RGVtby5odG1sJztcblxuY29uc3QgdGVtcGxhdGUgPSBgXG48ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gICAgPGgxPkxpc3QgLyBJdGVtIDxzbWFsbD48YSB0YXJnZXQ9XCJfYmxhbmtcIiBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL2J1bGxob3JuL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL2xpc3RcIj4oc291cmNlKTwvYT48L3NtYWxsPjwvaDE+XG4gICAgPHA+TGlzdHMgYXJlIHVzZWQgdG8gZGlzcGxheSByb3dzIG9mIGluZm9ybWF0aW9uIGxpa2UgZW50aXRpZXMgb3IgZW50aXR5IGRhdGFcbiAgICBhbmQgYXBwZWFyIG9uIGNhcmRzLCBvdXIgbW9iaWxlIGFwcCwgYW5kIHNldmVyYWwgb3RoZXIgcGxhY2VzIGFjcm9zcyB0aGUgQnVsbGhvcm4gcGxhdGZvcm0uPC9wPlxuXG4gICAgPGgyPkJhc2ljIFVzYWdlPC9oMj5cblxuICAgIDxoNT5TdGFuZGFyZCBMaXN0PC9oNT5cbiAgICA8cD5UaGlzIGlzIGFuIGV4YW1wbGUgb2YgYSBzdGFuZGFyZCBsaXN0LjwvcD5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBzdGFuZGFyZC1saXN0LWRlbW9cIj4ke0xpc3REZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiTGlzdERlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbjwvZGl2PlxuYDtcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdsaXN0LWRlbW8nLFxuICAgIHRlbXBsYXRlOiB0ZW1wbGF0ZVxufSlcbmV4cG9ydCBjbGFzcyBMaXN0RGVtb0NvbXBvbmVudCB7XG4gICAgY29uc3RydWN0b3IoKSB7XG4gICAgICAgIHRoaXMuTGlzdERlbW9UcGwgPSBMaXN0RGVtb1RwbDtcblxuICAgICAgICBsZXQgT05FX0hPVVIgPSA2MCAqIDYwICogMTAwMDtcbiAgICAgICAgLyogbXMgKi9cbiAgICAgICAgbGV0IFRXT19IT1VSUyA9IE9ORV9IT1VSICogMjtcbiAgICAgICAgbGV0IFRIUkVFX0hPVVJTID0gT05FX0hPVVIgKiAzO1xuICAgICAgICBsZXQgY3VycmVudERhdGUgPSBuZXcgRGF0ZSgpO1xuXG4gICAgICAgIGxldCBvbmVIb3VyQWdvID0gY3VycmVudERhdGUuZ2V0VGltZSgpIC0gT05FX0hPVVI7XG4gICAgICAgIGxldCB0d29Ib3Vyc0FnbyA9IGN1cnJlbnREYXRlLmdldFRpbWUoKSAtIFRXT19IT1VSUztcbiAgICAgICAgbGV0IHRocmVlSG91cnNBZ28gPSBjdXJyZW50RGF0ZS5nZXRUaW1lKCkgLSBUSFJFRV9IT1VSUztcblxuICAgICAgICAvKiBcIm1vY2tSZXNwb25zZVtdXCIgc2hvdWxkIHJlcHJlc2VudCBhIFJFU1QgcmVzcG9uc2Ugd2l0aCBpbXByb3Blcmx5IGZvcm1hdHRlZCBkYXRhLlxuICAgICAgICAgLyAgVGhlIFwiYnVpbGRJdGVtcygpXCIgZnVuY3Rpb24gaXMgdGFraW5nIHRoaXMgZGF0YSBvYmplY3QgYW5kIG1hc3NhZ2luZyBpdFxuICAgICAgICAgLyAgdG8gYnVpbGQgdGhlIGxpc3QgaXRlbXMgYXBwcm9wcmlhdGVseSB2aWEgYSBuZXcgZGF0YSBvYmplY3QgXCJwdWxzZUl0ZW1zW11cIi5cbiAgICAgICAgIC8gIEluIHBhZ2UxLmh0bWwgeW91IGNhbiBzZWUgaG93IHRoZSBuZXcgb2JqZWN0IGJ1aWxkcyBhIGxpc3Qgb2YgaXRlbXMuXG4gICAgICAgICAvICAtIEBhc2liaWxpYVxuICAgICAgICAgKi9cblxuICAgICAgICBsZXQgbW9ja1Jlc3BvbnNlID0gW3tcbiAgICAgICAgICAgIHR5cGU6ICdvcHBvcnR1bml0eScsXG4gICAgICAgICAgICBkYXRlQ3JlYXRlZDogb25lSG91ckFnbyxcbiAgICAgICAgICAgIHNlbnRpbWVudDoge1xuICAgICAgICAgICAgICAgIHJhdGluZzogJ25lZ2F0aXZlJyxcbiAgICAgICAgICAgICAgICB0eXBlOiAnZW5nYWdlbWVudCcsXG4gICAgICAgICAgICAgICAgY29tbWVudDogJ05vIGVtYWlscyBpbiBsYXN0IDEwIGRheXMnXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAgdXNlcjoge1xuICAgICAgICAgICAgICAgIGZpcnN0TmFtZTogJ1N0ZXBoJyxcbiAgICAgICAgICAgICAgICBsYXN0TmFtZTogJ0N1cnJ5JyxcbiAgICAgICAgICAgICAgICBjb21wYW55OiAnV2VsbHMgRmFyZ28nLFxuICAgICAgICAgICAgICAgIGxvY2F0aW9uOiAnR29sZGVuIFN0YXRlLCBDQSdcbiAgICAgICAgICAgIH1cbiAgICAgICAgfSwge1xuICAgICAgICAgICAgdHlwZTogJ29wcG9ydHVuaXR5JyxcbiAgICAgICAgICAgIGRhdGVDcmVhdGVkOiB0d29Ib3Vyc0FnbyxcbiAgICAgICAgICAgIHNlbnRpbWVudDoge1xuICAgICAgICAgICAgICAgIHJhdGluZzogJ25lZ2F0aXZlJyxcbiAgICAgICAgICAgICAgICB0eXBlOiAncHJvYmFiaWxpdHknLFxuICAgICAgICAgICAgICAgIGNvbW1lbnQ6ICdOb3cgaGFzIGxvdyBwcm9iYWJpbGl0eSB0byBjbG9zZSdcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB1c2VyOiB7XG4gICAgICAgICAgICAgICAgZmlyc3ROYW1lOiAnTGVicm9uJyxcbiAgICAgICAgICAgICAgICBsYXN0TmFtZTogJ0phbWVzJyxcbiAgICAgICAgICAgICAgICBjb21wYW55OiAnQW1hem9uJyxcbiAgICAgICAgICAgICAgICBsb2NhdGlvbjogJ0NsZXZlbGFuZCwgT0gnXG4gICAgICAgICAgICB9XG4gICAgICAgIH0sIHtcbiAgICAgICAgICAgIHR5cGU6ICdjb21wYW55JyxcbiAgICAgICAgICAgIGRhdGVDcmVhdGVkOiB0aHJlZUhvdXJzQWdvLFxuICAgICAgICAgICAgc2VudGltZW50OiB7XG4gICAgICAgICAgICAgICAgcmF0aW5nOiAncG9zaXRpdmUnLFxuICAgICAgICAgICAgICAgIHR5cGU6ICdjb25uZWN0aW9uJyxcbiAgICAgICAgICAgICAgICBjb21tZW50OiAnTmV3IGNvbm5lY3Rpb24nXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAgdXNlcjoge1xuICAgICAgICAgICAgICAgIGZpcnN0TmFtZTogJ0RlcnJpY2snLFxuICAgICAgICAgICAgICAgIGxhc3ROYW1lOiAnUm9zZScsXG4gICAgICAgICAgICAgICAgY29tcGFueTogJ1dhbG1hcnQnLFxuICAgICAgICAgICAgICAgIGxvY2F0aW9uOiAnQ2hpY2FnbywgSUwnXG4gICAgICAgICAgICB9XG4gICAgICAgIH1dO1xuXG4gICAgICAgIHRoaXMucHVsc2VJdGVtcyA9IFtdO1xuXG4gICAgICAgIHRoaXMuYnVpbGRJdGVtcyhtb2NrUmVzcG9uc2UpO1xuICAgIH1cblxuICAgIGJ1aWxkSXRlbXMocmVzcCkge1xuICAgICAgICBmb3IgKGxldCBvYmogb2YgcmVzcCkge1xuICAgICAgICAgICAgbGV0IGl0ZW0gPSB7fTtcblxuICAgICAgICAgICAgLypcbiAgICAgICAgICAgICB8fHwgVGhpcyBpcyB0aGUgaXRlbSBzdHJ1Y3R1cmUgdG8gYmUgcHVzaGVkIHRvIHB1bHNlSXRlbXNbXSBhbmQgdXNlZFxuICAgICAgICAgICAgIHx8fCB0byBidWlsZCB0aGUgbGlzdCAmIGl0ZW1zLlxuICAgICAgICAgICAgIHxcbiAgICAgICAgICAgICB8ICAgaXRlbSA9IHtcbiAgICAgICAgICAgICB8ICAgICAgIFwibmFtZVwiOiAnJyxcbiAgICAgICAgICAgICB8ICAgICAgIFwidHlwZVwiOiAnJyxcbiAgICAgICAgICAgICB8ICAgICAgIFwiaWNvblwiOiB7XG4gICAgICAgICAgICAgfCAgICAgICAgICAgXCJuYW1lXCI6ICcnLFxuICAgICAgICAgICAgIHwgICAgICAgICAgIFwic2VudGltZW50XCI6ICcnXG4gICAgICAgICAgICAgfCAgICAgICB9LFxuICAgICAgICAgICAgIHwgICAgICAgXCJjb21tZW50XCI6ICcnLFxuICAgICAgICAgICAgIHwgICAgICAgXCJ0aW1lQWdvXCI6ICcnXG4gICAgICAgICAgICAgfCAgICB9XG4gICAgICAgICAgICAgfFxuICAgICAgICAgICAgICovXG5cbiAgICAgICAgICAgIGl0ZW0ubmFtZSA9IG9iai51c2VyLmNvbXBhbnk7XG4gICAgICAgICAgICBpdGVtLnR5cGUgPSBvYmoudHlwZTtcbiAgICAgICAgICAgIGl0ZW0uaWNvbiA9IHt9O1xuXG4gICAgICAgICAgICBpZiAob2JqLnNlbnRpbWVudC50eXBlID09PSAnY29ubmVjdGlvbicpIHtcbiAgICAgICAgICAgICAgICBpdGVtLmljb24ubmFtZSA9ICdiaGktYWRkLW8nO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICBpZiAob2JqLnNlbnRpbWVudC50eXBlID09PSAnZW5nYWdlbWVudCcpIHtcbiAgICAgICAgICAgICAgICBpdGVtLmljb24ubmFtZSA9IChvYmouc2VudGltZW50LnJhdGluZyA9PT0gJ3Bvc2l0aXZlJykgPyAnYmhpLXRyZW5kaW5nLXVwJyA6ICdiaGktdHJlbmRpbmctZG93bic7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIGlmIChvYmouc2VudGltZW50LnR5cGUgPT09ICdwcm9iYWJpbGl0eScpIHtcbiAgICAgICAgICAgICAgICBpdGVtLmljb24ubmFtZSA9IChvYmouc2VudGltZW50LnJhdGluZyA9PT0gJ3Bvc2l0aXZlJykgPyAnYmhpLWJhci1wb3NpdGl2ZScgOiAnYmhpLWJhci1uZWdhdGl2ZSc7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIGl0ZW0uaWNvbi5zZW50aW1lbnQgPSBvYmouc2VudGltZW50LnJhdGluZztcbiAgICAgICAgICAgIGl0ZW0uY29tbWVudCA9IG9iai5zZW50aW1lbnQuY29tbWVudDtcbiAgICAgICAgICAgIGl0ZW0udGltZUFnbyA9IG9iai5kYXRlQ3JlYXRlZDtcblxuICAgICAgICAgICAgdGhpcy5wdWxzZUl0ZW1zLnB1c2goaXRlbSk7XG4gICAgICAgIH1cbiAgICB9XG59XG4iXX0=
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvbGlzdC9MaXN0RGVtby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7a0JBQUE7O0FBRUE7OztBQURBOztBQUVBOzs7O0FBQ0E7Ozs7Ozs7O0FBRUEsSUFBTSxnMUJBQU47O0lBd0JhLGlCLFdBQUEsaUIsV0FKWixxQkFBVTtBQUNQLGNBQVUsV0FESDtBQUVQLGNBQVU7QUFGSCxDQUFWLEM7QUFLRyxpQ0FBYztBQUFBOztBQUNWLGFBQUssV0FBTDtBQUNBLGFBQUssaUJBQUw7O0FBRUEsWUFBSSxXQUFXLEtBQUssRUFBTCxHQUFVLElBQXpCO0FBQ0E7QUFDQSxZQUFJLFlBQVksV0FBVyxDQUEzQjtBQUNBLFlBQUksY0FBYyxXQUFXLENBQTdCO0FBQ0EsWUFBSSxjQUFjLElBQUksSUFBSixFQUFsQjs7QUFFQSxZQUFJLGFBQWEsWUFBWSxPQUFaLEtBQXdCLFFBQXpDO0FBQ0EsWUFBSSxjQUFjLFlBQVksT0FBWixLQUF3QixTQUExQztBQUNBLFlBQUksZ0JBQWdCLFlBQVksT0FBWixLQUF3QixXQUE1Qzs7QUFFQTs7Ozs7OztBQU9BLFlBQUksZUFBZSxDQUFDO0FBQ2hCLGtCQUFNLGFBRFU7QUFFaEIseUJBQWEsVUFGRztBQUdoQix1QkFBVztBQUNQLHdCQUFRLFVBREQ7QUFFUCxzQkFBTSxZQUZDO0FBR1AseUJBQVM7QUFIRixhQUhLO0FBUWhCLGtCQUFNO0FBQ0YsMkJBQVcsT0FEVDtBQUVGLDBCQUFVLE9BRlI7QUFHRix5QkFBUyxhQUhQO0FBSUYsMEJBQVU7QUFKUjtBQVJVLFNBQUQsRUFjaEI7QUFDQyxrQkFBTSxhQURQO0FBRUMseUJBQWEsV0FGZDtBQUdDLHVCQUFXO0FBQ1Asd0JBQVEsVUFERDtBQUVQLHNCQUFNLGFBRkM7QUFHUCx5QkFBUztBQUhGLGFBSFo7QUFRQyxrQkFBTTtBQUNGLDJCQUFXLFFBRFQ7QUFFRiwwQkFBVSxPQUZSO0FBR0YseUJBQVMsUUFIUDtBQUlGLDBCQUFVO0FBSlI7QUFSUCxTQWRnQixFQTRCaEI7QUFDQyxrQkFBTSxTQURQO0FBRUMseUJBQWEsYUFGZDtBQUdDLHVCQUFXO0FBQ1Asd0JBQVEsVUFERDtBQUVQLHNCQUFNLFlBRkM7QUFHUCx5QkFBUztBQUhGLGFBSFo7QUFRQyxrQkFBTTtBQUNGLDJCQUFXLFNBRFQ7QUFFRiwwQkFBVSxNQUZSO0FBR0YseUJBQVMsU0FIUDtBQUlGLDBCQUFVO0FBSlI7QUFSUCxTQTVCZ0IsQ0FBbkI7O0FBNENBLGFBQUssVUFBTCxHQUFrQixFQUFsQjs7QUFFQSxhQUFLLFVBQUwsQ0FBZ0IsWUFBaEI7QUFDSDs7OzttQ0FFVSxJLEVBQU07QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFDYixxQ0FBZ0IsSUFBaEIsOEhBQXNCO0FBQUEsd0JBQWIsR0FBYTs7QUFDbEIsd0JBQUksT0FBTyxFQUFYOztBQUVBOzs7Ozs7Ozs7Ozs7Ozs7OztBQWlCQSx5QkFBSyxJQUFMLEdBQVksSUFBSSxJQUFKLENBQVMsT0FBckI7QUFDQSx5QkFBSyxJQUFMLEdBQVksSUFBSSxJQUFoQjtBQUNBLHlCQUFLLElBQUwsR0FBWSxFQUFaOztBQUVBLHdCQUFJLElBQUksU0FBSixDQUFjLElBQWQsS0FBdUIsWUFBM0IsRUFBeUM7QUFDckMsNkJBQUssSUFBTCxDQUFVLElBQVYsR0FBaUIsV0FBakI7QUFDSDs7QUFFRCx3QkFBSSxJQUFJLFNBQUosQ0FBYyxJQUFkLEtBQXVCLFlBQTNCLEVBQXlDO0FBQ3JDLDZCQUFLLElBQUwsQ0FBVSxJQUFWLEdBQWtCLElBQUksU0FBSixDQUFjLE1BQWQsS0FBeUIsVUFBMUIsR0FBd0MsaUJBQXhDLEdBQTRELG1CQUE3RTtBQUNIOztBQUVELHdCQUFJLElBQUksU0FBSixDQUFjLElBQWQsS0FBdUIsYUFBM0IsRUFBMEM7QUFDdEMsNkJBQUssSUFBTCxDQUFVLElBQVYsR0FBa0IsSUFBSSxTQUFKLENBQWMsTUFBZCxLQUF5QixVQUExQixHQUF3QyxrQkFBeEMsR0FBNkQsa0JBQTlFO0FBQ0g7O0FBRUQseUJBQUssSUFBTCxDQUFVLFNBQVYsR0FBc0IsSUFBSSxTQUFKLENBQWMsTUFBcEM7QUFDQSx5QkFBSyxPQUFMLEdBQWUsSUFBSSxTQUFKLENBQWMsT0FBN0I7QUFDQSx5QkFBSyxPQUFMLEdBQWUsSUFBSSxXQUFuQjs7QUFFQSx5QkFBSyxVQUFMLENBQWdCLElBQWhCLENBQXFCLElBQXJCO0FBQ0g7QUExQ1k7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQTJDaEIiLCJmaWxlIjoiTGlzdERlbW8uanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbIi8vIE5HMlxuaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG4vLyBBUFBcbmltcG9ydCBMaXN0RGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9MaXN0RGVtby5odG1sJztcbmltcG9ydCBUaGVtZWRMaXN0RGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9UaGVtZWRMaXN0RGVtby5odG1sJztcblxuY29uc3QgdGVtcGxhdGUgPSBgXG48ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gICAgPGgxPkxpc3QgLyBJdGVtIDxzbWFsbD48YSB0YXJnZXQ9XCJfYmxhbmtcIiBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL2J1bGxob3JuL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL2xpc3RcIj4oc291cmNlKTwvYT48L3NtYWxsPjwvaDE+XG4gICAgPHA+TGlzdHMgYXJlIHVzZWQgdG8gZGlzcGxheSByb3dzIG9mIGluZm9ybWF0aW9uIGxpa2UgZW50aXRpZXMgb3IgZW50aXR5IGRhdGFcbiAgICBhbmQgYXBwZWFyIG9uIGNhcmRzLCBvdXIgbW9iaWxlIGFwcCwgYW5kIHNldmVyYWwgb3RoZXIgcGxhY2VzIGFjcm9zcyB0aGUgQnVsbGhvcm4gcGxhdGZvcm0uPC9wPlxuXG4gICAgPGgyPkJhc2ljIFVzYWdlPC9oMj5cblxuICAgIDxoNT5TdGFuZGFyZCBMaXN0PC9oNT5cbiAgICA8cD5UaGlzIGlzIGFuIGV4YW1wbGUgb2YgYSBzdGFuZGFyZCBsaXN0LjwvcD5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBzdGFuZGFyZC1saXN0LWRlbW9cIj4ke0xpc3REZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiTGlzdERlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cblxuICAgIDxoNT5UaGVtZWQgTGlzdDwvaDU+XG4gICAgPHA+VGhpcyBpcyBhbiBleGFtcGxlIG9mIGEgdGhlbWVkIGxpc3QuPC9wPlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIHRoZW1lZC1saXN0LWRlbW9cIj4ke1RoZW1lZExpc3REZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiVGhlbWVkTGlzdERlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbjwvZGl2PlxuYDtcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdsaXN0LWRlbW8nLFxuICAgIHRlbXBsYXRlOiB0ZW1wbGF0ZVxufSlcbmV4cG9ydCBjbGFzcyBMaXN0RGVtb0NvbXBvbmVudCB7XG4gICAgY29uc3RydWN0b3IoKSB7XG4gICAgICAgIHRoaXMuTGlzdERlbW9UcGwgPSBMaXN0RGVtb1RwbDtcbiAgICAgICAgdGhpcy5UaGVtZWRMaXN0RGVtb1RwbCA9IFRoZW1lZExpc3REZW1vVHBsO1xuXG4gICAgICAgIGxldCBPTkVfSE9VUiA9IDYwICogNjAgKiAxMDAwO1xuICAgICAgICAvKiBtcyAqL1xuICAgICAgICBsZXQgVFdPX0hPVVJTID0gT05FX0hPVVIgKiAyO1xuICAgICAgICBsZXQgVEhSRUVfSE9VUlMgPSBPTkVfSE9VUiAqIDM7XG4gICAgICAgIGxldCBjdXJyZW50RGF0ZSA9IG5ldyBEYXRlKCk7XG5cbiAgICAgICAgbGV0IG9uZUhvdXJBZ28gPSBjdXJyZW50RGF0ZS5nZXRUaW1lKCkgLSBPTkVfSE9VUjtcbiAgICAgICAgbGV0IHR3b0hvdXJzQWdvID0gY3VycmVudERhdGUuZ2V0VGltZSgpIC0gVFdPX0hPVVJTO1xuICAgICAgICBsZXQgdGhyZWVIb3Vyc0FnbyA9IGN1cnJlbnREYXRlLmdldFRpbWUoKSAtIFRIUkVFX0hPVVJTO1xuXG4gICAgICAgIC8qIFwibW9ja1Jlc3BvbnNlW11cIiBzaG91bGQgcmVwcmVzZW50IGEgUkVTVCByZXNwb25zZSB3aXRoIGltcHJvcGVybHkgZm9ybWF0dGVkIGRhdGEuXG4gICAgICAgICAvICBUaGUgXCJidWlsZEl0ZW1zKClcIiBmdW5jdGlvbiBpcyB0YWtpbmcgdGhpcyBkYXRhIG9iamVjdCBhbmQgbWFzc2FnaW5nIGl0XG4gICAgICAgICAvICB0byBidWlsZCB0aGUgbGlzdCBpdGVtcyBhcHByb3ByaWF0ZWx5IHZpYSBhIG5ldyBkYXRhIG9iamVjdCBcInB1bHNlSXRlbXNbXVwiLlxuICAgICAgICAgLyAgSW4gcGFnZTEuaHRtbCB5b3UgY2FuIHNlZSBob3cgdGhlIG5ldyBvYmplY3QgYnVpbGRzIGEgbGlzdCBvZiBpdGVtcy5cbiAgICAgICAgIC8gIC0gQGFzaWJpbGlhXG4gICAgICAgICAqL1xuXG4gICAgICAgIGxldCBtb2NrUmVzcG9uc2UgPSBbe1xuICAgICAgICAgICAgdHlwZTogJ29wcG9ydHVuaXR5JyxcbiAgICAgICAgICAgIGRhdGVDcmVhdGVkOiBvbmVIb3VyQWdvLFxuICAgICAgICAgICAgc2VudGltZW50OiB7XG4gICAgICAgICAgICAgICAgcmF0aW5nOiAnbmVnYXRpdmUnLFxuICAgICAgICAgICAgICAgIHR5cGU6ICdlbmdhZ2VtZW50JyxcbiAgICAgICAgICAgICAgICBjb21tZW50OiAnTm8gZW1haWxzIGluIGxhc3QgMTAgZGF5cydcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB1c2VyOiB7XG4gICAgICAgICAgICAgICAgZmlyc3ROYW1lOiAnU3RlcGgnLFxuICAgICAgICAgICAgICAgIGxhc3ROYW1lOiAnQ3VycnknLFxuICAgICAgICAgICAgICAgIGNvbXBhbnk6ICdXZWxscyBGYXJnbycsXG4gICAgICAgICAgICAgICAgbG9jYXRpb246ICdHb2xkZW4gU3RhdGUsIENBJ1xuICAgICAgICAgICAgfVxuICAgICAgICB9LCB7XG4gICAgICAgICAgICB0eXBlOiAnb3Bwb3J0dW5pdHknLFxuICAgICAgICAgICAgZGF0ZUNyZWF0ZWQ6IHR3b0hvdXJzQWdvLFxuICAgICAgICAgICAgc2VudGltZW50OiB7XG4gICAgICAgICAgICAgICAgcmF0aW5nOiAnbmVnYXRpdmUnLFxuICAgICAgICAgICAgICAgIHR5cGU6ICdwcm9iYWJpbGl0eScsXG4gICAgICAgICAgICAgICAgY29tbWVudDogJ05vdyBoYXMgbG93IHByb2JhYmlsaXR5IHRvIGNsb3NlJ1xuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHVzZXI6IHtcbiAgICAgICAgICAgICAgICBmaXJzdE5hbWU6ICdMZWJyb24nLFxuICAgICAgICAgICAgICAgIGxhc3ROYW1lOiAnSmFtZXMnLFxuICAgICAgICAgICAgICAgIGNvbXBhbnk6ICdBbWF6b24nLFxuICAgICAgICAgICAgICAgIGxvY2F0aW9uOiAnQ2xldmVsYW5kLCBPSCdcbiAgICAgICAgICAgIH1cbiAgICAgICAgfSwge1xuICAgICAgICAgICAgdHlwZTogJ2NvbXBhbnknLFxuICAgICAgICAgICAgZGF0ZUNyZWF0ZWQ6IHRocmVlSG91cnNBZ28sXG4gICAgICAgICAgICBzZW50aW1lbnQ6IHtcbiAgICAgICAgICAgICAgICByYXRpbmc6ICdwb3NpdGl2ZScsXG4gICAgICAgICAgICAgICAgdHlwZTogJ2Nvbm5lY3Rpb24nLFxuICAgICAgICAgICAgICAgIGNvbW1lbnQ6ICdOZXcgY29ubmVjdGlvbidcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB1c2VyOiB7XG4gICAgICAgICAgICAgICAgZmlyc3ROYW1lOiAnRGVycmljaycsXG4gICAgICAgICAgICAgICAgbGFzdE5hbWU6ICdSb3NlJyxcbiAgICAgICAgICAgICAgICBjb21wYW55OiAnV2FsbWFydCcsXG4gICAgICAgICAgICAgICAgbG9jYXRpb246ICdDaGljYWdvLCBJTCdcbiAgICAgICAgICAgIH1cbiAgICAgICAgfV07XG5cbiAgICAgICAgdGhpcy5wdWxzZUl0ZW1zID0gW107XG5cbiAgICAgICAgdGhpcy5idWlsZEl0ZW1zKG1vY2tSZXNwb25zZSk7XG4gICAgfVxuXG4gICAgYnVpbGRJdGVtcyhyZXNwKSB7XG4gICAgICAgIGZvciAobGV0IG9iaiBvZiByZXNwKSB7XG4gICAgICAgICAgICBsZXQgaXRlbSA9IHt9O1xuXG4gICAgICAgICAgICAvKlxuICAgICAgICAgICAgIHx8fCBUaGlzIGlzIHRoZSBpdGVtIHN0cnVjdHVyZSB0byBiZSBwdXNoZWQgdG8gcHVsc2VJdGVtc1tdIGFuZCB1c2VkXG4gICAgICAgICAgICAgfHx8IHRvIGJ1aWxkIHRoZSBsaXN0ICYgaXRlbXMuXG4gICAgICAgICAgICAgfFxuICAgICAgICAgICAgIHwgICBpdGVtID0ge1xuICAgICAgICAgICAgIHwgICAgICAgXCJuYW1lXCI6ICcnLFxuICAgICAgICAgICAgIHwgICAgICAgXCJ0eXBlXCI6ICcnLFxuICAgICAgICAgICAgIHwgICAgICAgXCJpY29uXCI6IHtcbiAgICAgICAgICAgICB8ICAgICAgICAgICBcIm5hbWVcIjogJycsXG4gICAgICAgICAgICAgfCAgICAgICAgICAgXCJzZW50aW1lbnRcIjogJydcbiAgICAgICAgICAgICB8ICAgICAgIH0sXG4gICAgICAgICAgICAgfCAgICAgICBcImNvbW1lbnRcIjogJycsXG4gICAgICAgICAgICAgfCAgICAgICBcInRpbWVBZ29cIjogJydcbiAgICAgICAgICAgICB8ICAgIH1cbiAgICAgICAgICAgICB8XG4gICAgICAgICAgICAgKi9cblxuICAgICAgICAgICAgaXRlbS5uYW1lID0gb2JqLnVzZXIuY29tcGFueTtcbiAgICAgICAgICAgIGl0ZW0udHlwZSA9IG9iai50eXBlO1xuICAgICAgICAgICAgaXRlbS5pY29uID0ge307XG5cbiAgICAgICAgICAgIGlmIChvYmouc2VudGltZW50LnR5cGUgPT09ICdjb25uZWN0aW9uJykge1xuICAgICAgICAgICAgICAgIGl0ZW0uaWNvbi5uYW1lID0gJ2JoaS1hZGQtbyc7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIGlmIChvYmouc2VudGltZW50LnR5cGUgPT09ICdlbmdhZ2VtZW50Jykge1xuICAgICAgICAgICAgICAgIGl0ZW0uaWNvbi5uYW1lID0gKG9iai5zZW50aW1lbnQucmF0aW5nID09PSAncG9zaXRpdmUnKSA/ICdiaGktdHJlbmRpbmctdXAnIDogJ2JoaS10cmVuZGluZy1kb3duJztcbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgaWYgKG9iai5zZW50aW1lbnQudHlwZSA9PT0gJ3Byb2JhYmlsaXR5Jykge1xuICAgICAgICAgICAgICAgIGl0ZW0uaWNvbi5uYW1lID0gKG9iai5zZW50aW1lbnQucmF0aW5nID09PSAncG9zaXRpdmUnKSA/ICdiaGktYmFyLXBvc2l0aXZlJyA6ICdiaGktYmFyLW5lZ2F0aXZlJztcbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgaXRlbS5pY29uLnNlbnRpbWVudCA9IG9iai5zZW50aW1lbnQucmF0aW5nO1xuICAgICAgICAgICAgaXRlbS5jb21tZW50ID0gb2JqLnNlbnRpbWVudC5jb21tZW50O1xuICAgICAgICAgICAgaXRlbS50aW1lQWdvID0gb2JqLmRhdGVDcmVhdGVkO1xuXG4gICAgICAgICAgICB0aGlzLnB1bHNlSXRlbXMucHVzaChpdGVtKTtcbiAgICAgICAgfVxuICAgIH1cbn1cbiJdfQ==
 
 /***/ },
 
-/***/ 853:
+/***/ 854:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-list direction=\"vertical\">\n        <novo-list-item *ngFor=\"let item of pulseItems\">\n            <item-avatar [icon]=\"item.type\"></item-avatar>\n            <item-title>{{item.name}}</item-title>\n            <item-content direction=\"vertical\">\n                <p>\n                    <i *ngIf=\"item.icon.name\" class=\"{{item.icon.name}} {{item.icon.sentiment}}\"></i>\n                    {{item.comment}}\n                </p>\n                <span>\n                    <i class=\"bhi-clock\"></i>\n                    {{item.timeAgo | date: 'shortTime'}}\n                </span>\n            </item-content>\n            <item-end>\n                <i class=\"bhi-next\"></i>\n            </item-end>\n        </novo-list-item>\n    </novo-list>\n</header>\n"
+
+/***/ },
+
+/***/ 855:
+/***/ function(module, exports) {
+
+	module.exports = "<header>\n    <novo-list theme=\"navigation\" direction=\"vertical\">\n        <novo-list-item *ngFor=\"let item of pulseItems\">\n            <item-avatar [icon]=\"item.type\"></item-avatar>\n            <item-title>{{item.name}}</item-title>\n            <item-content direction=\"vertical\">\n                <p>\n                    <i *ngIf=\"item.icon.name\" class=\"{{item.icon.name}} {{item.icon.sentiment}}\"></i>\n                    {{item.comment}}\n                </p>\n                <span>\n                    <i class=\"bhi-clock\"></i>\n                    {{item.timeAgo | date: 'shortTime'}}\n                </span>\n            </item-content>\n            <item-end>\n                <i class=\"bhi-next\"></i>\n            </item-end>\n        </novo-list-item>\n    </novo-list>\n</header>\n"
 
 /***/ },
 
@@ -2467,11 +2500,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _LoadingCircleDemo = __webpack_require__(854);
+	var _LoadingCircleDemo = __webpack_require__(856);
 	
 	var _LoadingCircleDemo2 = _interopRequireDefault(_LoadingCircleDemo);
 	
-	var _LoadingLineDemo = __webpack_require__(855);
+	var _LoadingLineDemo = __webpack_require__(857);
 	
 	var _LoadingLineDemo2 = _interopRequireDefault(_LoadingLineDemo);
 	
@@ -2494,14 +2527,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 854:
+/***/ 856:
 /***/ function(module, exports) {
 
 	module.exports = "<section>\n    <div class=\"whiteBg\">\n        <novo-spinner theme=\"multicolor\"></novo-spinner>\n    </div>\n    <div class=\"grayBg\">\n        <novo-spinner></novo-spinner>\n    </div>\n</section>\n<section>\n    <div class=\"blueBg\">\n        <novo-spinner inverse></novo-spinner>\n    </div>\n    <div class=\"darkBlueBg\">\n        <novo-spinner theme=\"bittersweet\"></novo-spinner>\n    </div>\n</section>\n"
 
 /***/ },
 
-/***/ 855:
+/***/ 857:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-loading></novo-loading>\n</header>\n<header class=\"color-container\">\n    <novo-loading inverse></novo-loading>\n</header>\n"
@@ -2529,27 +2562,27 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ModalAddDemo = __webpack_require__(856);
+	var _ModalAddDemo = __webpack_require__(858);
 	
 	var _ModalAddDemo2 = _interopRequireDefault(_ModalAddDemo);
 	
-	var _ModalEditDemo = __webpack_require__(858);
+	var _ModalEditDemo = __webpack_require__(860);
 	
 	var _ModalEditDemo2 = _interopRequireDefault(_ModalEditDemo);
 	
-	var _ModalErrorDemo = __webpack_require__(859);
+	var _ModalErrorDemo = __webpack_require__(861);
 	
 	var _ModalErrorDemo2 = _interopRequireDefault(_ModalErrorDemo);
 	
-	var _ModalCustomDemo = __webpack_require__(857);
+	var _ModalCustomDemo = __webpack_require__(859);
 	
 	var _ModalCustomDemo2 = _interopRequireDefault(_ModalCustomDemo);
 	
-	var _ModalSuccessDemo = __webpack_require__(860);
+	var _ModalSuccessDemo = __webpack_require__(862);
 	
 	var _ModalSuccessDemo2 = _interopRequireDefault(_ModalSuccessDemo);
 	
-	var _ModalWarningDemo = __webpack_require__(861);
+	var _ModalWarningDemo = __webpack_require__(863);
 	
 	var _ModalWarningDemo2 = _interopRequireDefault(_ModalWarningDemo);
 	
@@ -2736,42 +2769,42 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 856:
+/***/ 858:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-modal>\n    <header title=\"Add Contact\" icon=\"person\" theme=\"contact\">\n        <utils>\n            <util-action icon=\"times\" (click)=\"toggleClose($event)\"></util-action>\n        </utils>\n    </header>\n    <section>\n        <novo-form>\n            <form-field>\n                <form-label>First Name</form-label>\n                <form-input name=\"firstName\" type=\"text\" placeholder=\"Jack\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Last Name</form-label>\n                <form-input name=\"lastName\" type=\"text\" placeholder=\"White\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Email</form-label>\n                <form-input name=\"email\" type=\"text\" placeholder=\"jwhite@gmail.com\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Title</form-label>\n                <form-input name=\"title\" type=\"text\" placeholder=\"Operations Manager\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Current Company</form-label>\n                <form-input name=\"company\" type=\"text\" placeholder=\"Amazon\"></form-input>\n            </form-field>\n        </novo-form>\n    </section>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"close()\">Save</button>\n</novo-modal>\n"
 
 /***/ },
 
-/***/ 857:
+/***/ 859:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"custom\" icon=\"trending-up\">\n    <h1>I have a trending icon!</h1>\n    <h4>This notification type allows for any Bullhorn Icon</h4>\n    <button theme=\"primary\" icon=\"check\" (click)=\"close()\">Sweet.</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 858:
+/***/ 860:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-modal>\n    <header title=\"John Deere\" icon=\"candidate\" theme=\"candidate\">\n        <utils>\n            <util-action icon=\"times\" (click)=\"toggleClose($event)\"></util-action>\n        </utils>\n    </header>\n    <section>\n        <novo-form>\n            <form-field>\n                <form-label>Status</form-label>\n                <form-input name=\"status\" type=\"select\" [options]=\"statusOptions\" placeholder=\"Status\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Start Date</form-label>\n                <form-input name=\"startDate\" type=\"date\" inline=\"true\" placeholder=\"Please select a date\"></form-input>\n            </form-field>\n        </novo-form>\n    </section>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"close()\">Save</button>\n</novo-modal>\n"
 
 /***/ },
 
-/***/ 859:
+/***/ 861:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"error\">\n    <h1>Sorry, something went wrong.</h1>\n    <h4>You did not have 1.21 gigawatts of power.</h4>\n    <button theme=\"primary\" icon=\"refresh-o\" (click)=\"close()\">Refresh this page</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 860:
+/***/ 862:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"success\">\n    <h1>Woooo!</h1>\n    <h4>You did something awesome!</h4>\n    <button theme=\"primary\" icon=\"check\" (click)=\"close()\">I'm awesome</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 861:
+/***/ 863:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"warning\">\n    <h1>This action will delete 25 records.</h1>\n    <h4>Are you sure you wish to continue?</h4>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"negative\" icon=\"delete\" (click)=\"close()\">Delete</button>\n</novo-notification>\n"
@@ -2797,19 +2830,19 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicPickerDemo = __webpack_require__(863);
+	var _BasicPickerDemo = __webpack_require__(865);
 	
 	var _BasicPickerDemo2 = _interopRequireDefault(_BasicPickerDemo);
 	
-	var _AsyncPickerDemo = __webpack_require__(862);
+	var _AsyncPickerDemo = __webpack_require__(864);
 	
 	var _AsyncPickerDemo2 = _interopRequireDefault(_AsyncPickerDemo);
 	
-	var _FormattedPickerDemo = __webpack_require__(865);
+	var _FormattedPickerDemo = __webpack_require__(867);
 	
 	var _FormattedPickerDemo2 = _interopRequireDefault(_FormattedPickerDemo);
 	
-	var _CustomPickerResultsDemo = __webpack_require__(864);
+	var _CustomPickerResultsDemo = __webpack_require__(866);
 	
 	var _CustomPickerResultsDemo2 = _interopRequireDefault(_CustomPickerResultsDemo);
 	
@@ -2835,7 +2868,7 @@ webpackJsonp([3],{
 	    function CustomPickerResults() {
 	        _classCallCheck(this, CustomPickerResults);
 	
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(CustomPickerResults).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (CustomPickerResults.__proto__ || Object.getPrototypeOf(CustomPickerResults)).apply(this, arguments));
 	    }
 	
 	    return CustomPickerResults;
@@ -2920,31 +2953,31 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 862:
-/***/ function(module, exports) {
-
-	module.exports = "<div>Selected Value: {{avalue}}</div>\n<novo-picker [config]=\"async\" [placeholder]=\"placeholder\" [(ngModel)]=\"avalue\"></novo-picker>\n"
-
-/***/ },
-
-/***/ 863:
-/***/ function(module, exports) {
-
-	module.exports = "<div>Selected Value: {{value}}</div>\n<novo-picker [config]=\"static\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-picker>\n"
-
-/***/ },
-
 /***/ 864:
 /***/ function(module, exports) {
 
-	module.exports = "<div>Selected Value: {{cvalue}}</div>\n<novo-picker [config]=\"custom\" [placeholder]=\"placeholder\" [(ngModel)]=\"cvalue\"></novo-picker>\n"
+	module.exports = "<div class=\"selected-value\">Selected Value: {{avalue}}</div>\n<novo-picker [config]=\"async\" [placeholder]=\"placeholder\" [(ngModel)]=\"avalue\"></novo-picker>\n"
 
 /***/ },
 
 /***/ 865:
 /***/ function(module, exports) {
 
-	module.exports = "<div>Selected Value: {{fvalue}}</div>\n<novo-picker [config]=\"formatted\" [placeholder]=\"placeholder\" [(ngModel)]=\"fvalue\"></novo-picker>\n"
+	module.exports = "<div class=\"selected-value\">Selected Value: {{value}}</div>\n<novo-picker [config]=\"static\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-picker>\n"
+
+/***/ },
+
+/***/ 866:
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"selected-value\">Selected Value: {{cvalue}}</div>\n<novo-picker [config]=\"custom\" [placeholder]=\"placeholder\" [(ngModel)]=\"cvalue\"></novo-picker>\n"
+
+/***/ },
+
+/***/ 867:
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"selected-value\">Selected Value: {{fvalue}}</div>\n<novo-picker [config]=\"formatted\" [placeholder]=\"placeholder\" [(ngModel)]=\"fvalue\"></novo-picker>\n"
 
 /***/ },
 
@@ -2967,15 +3000,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicQuickNote = __webpack_require__(866);
+	var _BasicQuickNote = __webpack_require__(868);
 	
 	var _BasicQuickNote2 = _interopRequireDefault(_BasicQuickNote);
 	
-	var _CustomQuickNote = __webpack_require__(867);
+	var _CustomQuickNote = __webpack_require__(869);
 	
 	var _CustomQuickNote2 = _interopRequireDefault(_CustomQuickNote);
 	
-	var _CustomQuickNoteResults = __webpack_require__(868);
+	var _CustomQuickNoteResults = __webpack_require__(870);
 	
 	var _CustomQuickNoteResults2 = _interopRequireDefault(_CustomQuickNoteResults);
 	
@@ -3001,7 +3034,7 @@ webpackJsonp([3],{
 	    function CustomQuickNoteResults() {
 	        _classCallCheck(this, CustomQuickNoteResults);
 	
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(CustomQuickNoteResults).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (CustomQuickNoteResults.__proto__ || Object.getPrototypeOf(CustomQuickNoteResults)).apply(this, arguments));
 	    }
 	
 	    return CustomQuickNoteResults;
@@ -3124,21 +3157,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 866:
+/***/ 868:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note\" [placeholder]=\"placeholder\" [config]=\"config\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 867:
+/***/ 869:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note2\" [placeholder]=\"placeholder\" [config]=\"custom\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note2 | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 868:
+/***/ 870:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note3\" [placeholder]=\"placeholder\" [config]=\"custom2\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note3 | json}}</p>\n</div>\n"
@@ -3164,11 +3197,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicRadio = __webpack_require__(869);
+	var _BasicRadio = __webpack_require__(871);
 	
 	var _BasicRadio2 = _interopRequireDefault(_BasicRadio);
 	
-	var _VerticalRadio = __webpack_require__(870);
+	var _VerticalRadio = __webpack_require__(872);
 	
 	var _VerticalRadio2 = _interopRequireDefault(_VerticalRadio);
 	
@@ -3207,14 +3240,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 869:
+/***/ 871:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-radio [checked]=\"false\" name=\"basic\" value=\"one\" (change)=\"onChangeBasic($event)\">Make me anything!</novo-radio>\n<novo-radio [checked]=\"true\" name=\"basic\" value=\"two\" (change)=\"onChangeBasic($event)\">I get transcluded in!</novo-radio>\n<novo-radio [checked]=\"false\" name=\"basic\" value=\"three\" (change)=\"onChangeBasic($event)\">REALLY!</novo-radio>\n"
 
 /***/ },
 
-/***/ 870:
+/***/ 872:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-radio vertical=\"true\" [checked]=\"false\" name=\"vertical\" value=\"one\" (change)=\"onChangeVertical($event)\">Make me anything!</novo-radio>\n<novo-radio vertical=\"true\" [checked]=\"true\" name=\"vertical\" value=\"two\" (change)=\"onChangeVertical($event)\">I get transcluded in!</novo-radio>\n<novo-radio vertical=\"true\" [checked]=\"false\" name=\"vertical\" value=\"three\" (change)=\"onChangeVertical($event)\">REALLY!</novo-radio>\n"
@@ -3240,11 +3273,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicSelectDemo = __webpack_require__(871);
+	var _BasicSelectDemo = __webpack_require__(873);
 	
 	var _BasicSelectDemo2 = _interopRequireDefault(_BasicSelectDemo);
 	
-	var _LongSelectDemo = __webpack_require__(872);
+	var _LongSelectDemo = __webpack_require__(874);
 	
 	var _LongSelectDemo2 = _interopRequireDefault(_LongSelectDemo);
 	
@@ -3292,14 +3325,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 871:
+/***/ 873:
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span> {{value}}\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span> {{withNumbersValue}}\n    </label>\n    <novo-select [options]=\"withNumbers\" [(ngModel)]=\"withNumbersValue\"></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">Disabled State</span>\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\" disabled></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">No Model With Header</span>\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [headerConfig]=\"headerConfig\"></novo-select>\n</div>\n"
 
 /***/ },
 
-/***/ 872:
+/***/ 874:
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span>{{state}}</label>\n    <novo-select [options]=\"states\" [placeholder]=\"placeholder\" [(ngModel)]=\"state\"></novo-select>\n</div>\n"
@@ -3323,7 +3356,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicSlide = __webpack_require__(873);
+	var _BasicSlide = __webpack_require__(875);
 	
 	var _BasicSlide2 = _interopRequireDefault(_BasicSlide);
 	
@@ -3345,7 +3378,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 873:
+/***/ 875:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-slider [slides]=\"2\">\n    <div slide=\"1\">\n        SLIDE #1\n    </div>\n    <div slide=\"2\">\n        SLIDE #2\n    </div>\n</novo-slider>\n"
@@ -3371,7 +3404,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _SwitchDemo = __webpack_require__(874);
+	var _SwitchDemo = __webpack_require__(876);
 	
 	var _SwitchDemo2 = _interopRequireDefault(_SwitchDemo);
 	
@@ -3406,7 +3439,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 874:
+/***/ 876:
 /***/ function(module, exports) {
 
 	module.exports = "<label>\n    Count\n    <span>{{toggleCount}}</span>\n</label>\n<label>\n    Toggled\n    <span>{{checked}}</span>\n</label>\n<novo-switch [(ngModel)]=\"checked\" (onChange)=\"increment()\"></novo-switch>\n<novo-switch theme=\"grapefruit\"></novo-switch>\n<novo-switch disabled></novo-switch>\n"
@@ -4449,15 +4482,15 @@ webpackJsonp([3],{
 	
 	var _TableData = __webpack_require__(755);
 	
-	var _TableDemo = __webpack_require__(877);
+	var _TableDemo = __webpack_require__(879);
 	
 	var _TableDemo2 = _interopRequireDefault(_TableDemo);
 	
-	var _DetailsTableDemo = __webpack_require__(875);
+	var _DetailsTableDemo = __webpack_require__(877);
 	
 	var _DetailsTableDemo2 = _interopRequireDefault(_DetailsTableDemo);
 	
-	var _SelectAllTableDemo = __webpack_require__(876);
+	var _SelectAllTableDemo = __webpack_require__(878);
 	
 	var _SelectAllTableDemo2 = _interopRequireDefault(_SelectAllTableDemo);
 	
@@ -4484,7 +4517,7 @@ webpackJsonp([3],{
 	    function StatusCell() {
 	        _classCallCheck(this, StatusCell);
 	
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(StatusCell).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (StatusCell.__proto__ || Object.getPrototypeOf(StatusCell)).apply(this, arguments));
 	    }
 	
 	    return StatusCell;
@@ -4498,7 +4531,7 @@ webpackJsonp([3],{
 	    function ExtraDetails() {
 	        _classCallCheck(this, ExtraDetails);
 	
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(ExtraDetails).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (ExtraDetails.__proto__ || Object.getPrototypeOf(ExtraDetails)).apply(this, arguments));
 	    }
 	
 	    return ExtraDetails;
@@ -4545,6 +4578,118 @@ webpackJsonp([3],{
 	            ordering: true,
 	            filtering: true,
 	            range: true
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
+	        }, {
+	            title: 'Salary',
+	            name: 'salary',
+	            ordering: true,
+	            renderer: function renderer(object) {
+	                return '$ ' + Number(object.salary).toFixed(2);
+	            }
 	        }, {
 	            title: 'Salary',
 	            name: 'salary',
@@ -4660,25 +4805,25 @@ webpackJsonp([3],{
 	
 	    return TableDemoComponent;
 	}()) || _class3);
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvdGFibGUvVGFibGVEZW1vLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztrREFBQTs7QUFFQTs7QUFLQTs7O0FBTkE7O0FBRUE7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBRUE7Ozs7Ozs7Ozs7QUFFQSxJQUFNLDByQ0FBTjs7QUF1QkEsSUFBTSxnQkFBZ0IsQ0FBQyxNQUFELEVBQVMsT0FBVCxFQUFrQixNQUFsQixFQUEwQixPQUExQixFQUFtQyxXQUFuQyxFQUFnRCxTQUFoRCxFQUEyRCxNQUEzRCxFQUFtRSxVQUFuRSxFQUErRSxPQUEvRSxDQUF0Qjs7SUFXYSxVLFdBQUEsVSxXQVRaLHFCQUFVO0FBQ1AsY0FBVSxhQURIO0FBRVA7QUFGTyxDQUFWLEM7Ozs7Ozs7Ozs7O0lBdUJZLFksV0FBQSxZLFlBWFoscUJBQVU7QUFDUCxjQUFVLGVBREg7QUFFUDtBQUZPLENBQVYsQzs7Ozs7Ozs7Ozs7SUFrQlksa0IsV0FBQSxrQixZQUpaLHFCQUFVO0FBQ1AsY0FBVSxZQURIO0FBRVAsY0FBVTtBQUZILENBQVYsQztBQUtHLGtDQUFjO0FBQUE7O0FBQUE7O0FBQ1YsYUFBSyxZQUFMO0FBQ0EsYUFBSyxtQkFBTDtBQUNBLGFBQUsscUJBQUw7O0FBRUEsYUFBSyxnQkFBTCxHQUF3QixDQUNwQixFQUFFLE9BQU8sSUFBVCxFQUFlLE9BQU8sRUFBdEIsRUFEb0IsRUFFcEIsRUFBRSxPQUFPLElBQVQsRUFBZSxPQUFPLEVBQXRCLEVBRm9CLEVBR3BCLEVBQUUsT0FBTyxJQUFULEVBQWUsT0FBTyxFQUF0QixFQUhvQixFQUlwQixFQUFFLE9BQU8sSUFBVCxFQUFlLE9BQU8sRUFBdEIsRUFKb0IsQ0FBeEI7O0FBT0EsWUFBSSxVQUFVLENBQ1YsRUFBRSxPQUFPLE1BQVQsRUFBaUIsTUFBTSxNQUF2QixFQUErQixVQUFVLElBQXpDLEVBQStDLE1BQU0sTUFBckQsRUFBNkQsV0FBVyxJQUF4RSxFQURVLEVBRVYs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b2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbIi8vIE5HMlxuaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG4vLyBBUFBcbmltcG9ydCB7IFRhYmxlRGF0YSB9IGZyb20gJy4vVGFibGVEYXRhJztcbmltcG9ydCBUYWJsZURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvVGFibGVEZW1vLmh0bWwnO1xuaW1wb3J0IERldGFpbHNUYWJsZURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvRGV0YWlsc1RhYmxlRGVtby5odG1sJztcbmltcG9ydCBTZWxlY3RBbGxUYWJsZURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvU2VsZWN0QWxsVGFibGVEZW1vLmh0bWwnO1xuLy8gVmVuZG9yXG5pbXBvcnQgeyBEYXRlQ2VsbCwgQmFzZVJlbmRlcmVyIH0gZnJvbSAnLi8uLi8uLi8uLi8uLi9zcmMvbm92by1lbGVtZW50cyc7XG5cbmNvbnN0IHRlbXBsYXRlID0gYFxuPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICAgIDxoMT5UYWJsZSA8c21hbGw+PGEgdGFyZ2V0PVwiX2JsYW5rXCIgaHJlZj1cImh0dHBzOi8vYnVsbGhvcm4uZ2l0aHViLmlvL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL3RhYmxlXCI+KHNvdXJjZSk8L2E+PC9zbWFsbD48L2gxPlxuICAgIDxwPlRhYmxlcyBhbGxvdyB1c2VycyB0byB2aWV3IGRhdGUgaW4gYSB0YWJ1bGFyIGZvcm1hdCBhbmQgcGVyZm9ybSBhY3Rpb25zIHN1Y2ggYXMgU29ydGluZyBhbmQgRmlsdGVyaW5nLiBEaWZmZXJlbnQgY29uZmlndXJhdGlvbiBhcmUgcG9zc2libGUgZm9yIHBhZ2luYXRpb24gb3IgaW5maW5pdGUgc2Nyb2xsLiBGZWF0dXJlIHRvIGJlIGFkZGVkIGluY2x1ZGU6IEN1c3RvbSBJdGVtIFJlbmRlcmVycywgZXRjLi4uPC9wPlxuXG4gICAgPGgyPlR5cGVzPC9oMj5cblxuICAgIDxoNT5CYXNpYyBUYWJsZTwvaDU+XG4gICAgPHA+VGhpcyBpcyB0aGUgbW9zdCBiYXNpYyB0YWJsZS48L3A+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgdGFibGUtZGVtb1wiPiR7VGFibGVEZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiVGFibGVEZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG4gICAgPGg1PkRldGFpbHMgVGFibGU8L2g1PlxuICAgIDxwPlRoaXMgaGFzIGEgcm93IHJlbmRlcmVyIHRvIHNob3cgYSBuZXcgZGV0YWlscyByb3cgdGhhdCBpcyBleHBhbmRlZCB3aGVuIHlvdSBjbGljayBvbiB0aGUgYWN0aW9uIGNvbHVtbi48L3A+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgdGFibGUtZGVtb1wiPiR7RGV0YWlsc1RhYmxlRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIkRldGFpbHNUYWJsZURlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cblxuICAgIDxoNT5TZWxlY3QgQWxsIFRhYmxlIHcvIEN1c3RvbSBBY3Rpb25zPC9oNT5cbiAgICA8cD5UaGlzIGhhcyBjaGVja2JveGVzIGZvciBzZWxlY3Rpb24gd2l0aCBjdXN0b20gYWN0aW9ucy48L3A+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgdGFibGUtZGVtb1wiPiR7U2VsZWN0QWxsVGFibGVEZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiU2VsZWN0QWxsVGFibGVEZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG48L2Rpdj5cbmA7XG5cbmNvbnN0IEhFQURFUl9DT0xPUlMgPSBbJ2FxdWEnLCAnb2NlYW4nLCAnbWludCcsICdncmFzcycsICdzdW5mbG93ZXInLCAnY29tcGFueScsICdsZWFkJywgJ3Bvc2l0aXZlJywgJ2JsYWNrJ107XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnc3RhdHVzLWNlbGwnLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgIDxkaXYgY2xhc3M9XCJzdGF0dXMtY2VsbFwiPlxuICAgICAgICAgICAgPGkgY2xhc3M9XCJiaGktaW5mb1wiPjwvaT5cbiAgICAgICAgICAgIDxsYWJlbD57eyB2YWx1ZSB9fTwvbGFiZWw+XG4gICAgICAgIDwvZGl2PlxuICAgIGBcbn0pXG5leHBvcnQgY2xhc3MgU3RhdHVzQ2VsbCBleHRlbmRzIEJhc2VSZW5kZXJlciB7XG59XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnZXh0cmEtZGV0YWlscycsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPGRpdiBjbGFzcz1cImV4dHJhLWRhdGFcIj5cbiAgICAgICAgICAgIDxsYWJlbD48aSBjbGFzcz1cImJoaS1pbmZvXCI+PC9pPkRlc2NyaXB0aW9uPC9sYWJlbD5cbiAgICAgICAgICAgIDxwPnt7IGRhdGEuZGVzY3JpcHRpb24gfX08L3A+XG4gICAgICAgICAgICA8bGFiZWw+PGkgY2xhc3M9XCJiaGktaW5mb1wiPjwvaT5DYXRlZ29yaWVzPC9sYWJlbD5cbiAgICAgICAgICAgIDxwPnt7IGRhdGEuY2F0ZWdvcmllcyB9fTwvcD5cbiAgICAgICAgPC9kaXY+XG4gICAgYFxufSlcbmV4cG9ydCBjbGFzcyBFeHRyYURldGFpbHMgZXh0ZW5kcyBCYXNlUmVuZGVyZXIge1xufVxuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ3RhYmxlLWRlbW8nLFxuICAgIHRlbXBsYXRlOiB0ZW1wbGF0ZVxufSlcbmV4cG9ydCBjbGFzcyBUYWJsZURlbW9Db21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKCkge1xuICAgICAgICB0aGlzLlRhYmxlRGVtb1RwbCA9IFRhYmxlRGVtb1RwbDtcbiAgICAgICAgdGhpcy5EZXRhaWxzVGFibGVEZW1vVHBsID0gRGV0YWlsc1RhYmxlRGVtb1RwbDtcbiAgICAgICAgdGhpcy5TZWxlY3RBbGxUYWJsZURlbW9UcGwgPSBTZWxlY3RBbGxUYWJsZURlbW9UcGw7XG5cbiAgICAgICAgdGhpcy5jdXN0b21Sb3dPcHRpb25zID0gW1xuICAgICAgICAgICAgeyBsYWJlbDogJzEwJywgdmFsdWU6IDEwIH0sXG4gICAgICAgICAgICB7IGxhYmVsOiAnMjAnLCB2YWx1ZTogMjAgfSxcbiAgICAgICAgICAgIHsgbGFiZWw6ICczMCcsIHZhbHVlOiAzMCB9LFxuICAgICAgICAgICAgeyBsYWJlbDogJzQwJywgdmFsdWU6IDQwIH1cbiAgICAgICAgXTtcblxuICAgICAgICBsZXQgY29sdW1ucyA9IFtcbiAgICAgICAgICAgIHsgdGl0bGU6ICdOYW1lJywgbmFtZTogJ25hbWUnLCBvcmRlcmluZzogdHJ1ZSwgdHlwZTogJ2xpbmsnLCBmaWx0ZXJpbmc6IHRydWUgfSxcbiAgICAgICAgICAgIHsgdGl0bGU6ICdQb3NpdGlvbicsIG5hbWU6ICdwb3NpdGlvbicsIG9yZGVyaW5nOiB0cnVlLCBmaWx0ZXJpbmc6IHRydWUgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ0V4dG4uJyxcbiAgICAgICAgICAgICAgICBuYW1lOiAnZXh0JyxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZW5kZXJlcjogb2JqZWN0ID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIG9iamVjdC5leHQub2JqO1xuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgY29tcGFyZTogKHNvcnQsIHByZXZpb3VzLCBjdXJyZW50KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIGxldCBmaXJzdCA9IHByZXZpb3VzLm9iaixcbiAgICAgICAgICAgICAgICAgICAgICAgIHNlY29uZCA9IGN1cnJlbnQub2JqO1xuXG4gICAgICAgICAgICAgICAgICAgIGlmIChmaXJzdCA+IHNlY29uZCkge1xuICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIHNvcnQgPT09ICdkZXNjJyA/IC0xIDogMTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICBpZiAoZmlyc3QgPCBzZWNvbmQpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybiBzb3J0ID09PSAnYXNjJyA/IC0xIDogMTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICByZXR1cm4gMDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnU3RhcnQgZGF0ZScsXG4gICAgICAgICAgICAgICAgdHlwZTogJ2RhdGUnLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzdGFydERhdGUnLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiBEYXRlQ2VsbCxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBmaWx0ZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmFuZ2U6IHRydWVcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTYWxhcnknLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzYWxhcnknLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiAob2JqZWN0KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBgJCAke051bWJlcihvYmplY3Quc2FsYXJ5KS50b0ZpeGVkKDIpfWA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1N0YXR1cycsXG4gICAgICAgICAgICAgICAgbmFtZTogJ3N0YXR1cycsXG4gICAgICAgICAgICAgICAgb3B0aW9uczogWydOZXcgTGVhZCcsICdBY3RpdmUnLCAnQXJjaGl2ZWQnXSxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBtdWx0aXBsZTogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZW5kZXJlcjogU3RhdHVzQ2VsbCxcbiAgICAgICAgICAgICAgICBmaWx0ZXJpbmc6IHRydWVcbiAgICAgICAgICAgIH1cbiAgICAgICAgXTtcblxuICAgICAgICB0aGlzLmJhc2ljID0ge1xuICAgICAgICAgICAgY29sdW1uczogY29sdW1ucy5zbGljZSgpLFxuICAgICAgICAgICAgcm93czogVGFibGVEYXRhLnNsaWNlKCksXG4gICAgICAgICAgICBjb25maWc6IHtcbiAgICAgICAgICAgICAgICBwYWdpbmc6IHtcbiAgICAgICAgICAgICAgICAgICAgY3VycmVudDogMSxcbiAgICAgICAgICAgICAgICAgICAgaXRlbXNQZXJQYWdlOiAxMCxcbiAgICAgICAgICAgICAgICAgICAgb25QYWdlQ2hhbmdlOiBldmVudCA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgICB0aGlzLmJhc2ljLmNvbmZpZy5wYWdpbmcuY3VycmVudCA9IGV2ZW50LnBhZ2U7XG4gICAgICAgICAgICAgICAgICAgICAgICB0aGlzLmJhc2ljLmNvbmZpZy5wYWdpbmcuaXRlbXNQZXJQYWdlID0gZXZlbnQuaXRlbXNQZXJQYWdlO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgICBmaWx0ZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgc29ydGluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZXNpemluZzogdHJ1ZVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIG9uVGFibGVDaGFuZ2U6IChldmVudCkgPT4ge1xuICAgICAgICAgICAgICAgIHRoaXMuYmFzaWMucm93cyA9IGV2ZW50LnJvd3M7XG4gICAgICAgICAgICB9XG4gICAgICAgIH07XG5cbiAgICAgICAgdGhpcy5kZXRhaWxzID0ge1xuICAgICAgICAgICAgY29sdW1uczogY29sdW1ucy5zbGljZSgpLFxuICAgICAgICAgICAgcm93czogVGFibGVEYXRhLnNsaWNlKCksXG4gICAgICAgICAgICBjb25maWc6IHtcbiAgICAgICAgICAgICAgICBwYWdpbmc6IHtcbiAgICAgICAgICAgICAgICAgICAgY3VycmVudDogMSxcbiAgICAgICAgICAgICAgICAgICAgaXRlbXNQZXJQYWdlOiAxMCxcbiAgICAgICAgICAgICAgICAgICAgb25QYWdlQ2hhbmdlOiBldmVudCA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgICB0aGlzLmRldGFpbHMuY29uZmlnLnBhZ2luZy5jdXJyZW50ID0gZXZlbnQucGFnZTtcbiAgICAgICAgICAgICAgICAgICAgICAgIHRoaXMuZGV0YWlscy5jb25maWcucGFnaW5nLml0ZW1zUGVyUGFnZSA9IGV2ZW50Lml0ZW1zUGVyUGFnZTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgc29ydGluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBmaWx0ZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgb3JkZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmVzaXppbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgaGFzRGV0YWlsczogdHJ1ZSxcbiAgICAgICAgICAgICAgICBkZXRhaWxzUmVuZGVyZXI6IEV4dHJhRGV0YWlsc1xuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIG9uVGFibGVDaGFuZ2U6IChldmVudCkgPT4ge1xuICAgICAgICAgICAgICAgIHRoaXMuZGV0YWlscy5yb3dzID0gZXZlbnQucm93cztcbiAgICAgICAgICAgIH1cbiAgICAgICAgfTtcblxuICAgICAgICB0aGlzLnNlbGVjdEFsbCA9IHtcbiAgICAgICAgICAgIGNvbHVtbnM6IGNvbHVtbnMuc2xpY2UoKSxcbiAgICAgICAgICAgIHJvd3M6IFRhYmxlRGF0YS5zbGljZSgpLFxuICAgICAgICAgICAgY29uZmlnOiB7XG4gICAgICAgICAgICAgICAgcGFnaW5nOiB7XG4gICAgICAgICAgICAgICAgICAgIGN1cnJlbnQ6IDEsXG4gICAgICAgICAgICAgICAgICAgIGl0ZW1zUGVyUGFnZTogMTAsXG4gICAgICAgICAgICAgICAgICAgIG9uUGFnZUNoYW5nZTogZXZlbnQgPT4ge1xuICAgICAgICAgICAgICAgICAgICAgICAgdGhpcy5zZWxlY3RBbGwuY29uZmlnLnBhZ2luZy5jdXJyZW50ID0gZXZlbnQucGFnZTtcbiAgICAgICAgICAgICAgICAgICAgICAgIHRoaXMuc2VsZWN0QWxsLmNvbmZpZy5wYWdpbmcuaXRlbXNQZXJQYWdlID0gZXZlbnQuaXRlbXNQZXJQYWdlO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgICBzb3J0aW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIGZpbHRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZXNpemluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByb3dTZWxlY3Rpb25TdHlsZTogJ2NoZWNrYm94J1xuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIG9uVGFibGVDaGFuZ2U6IChldmVudCkgPT4ge1xuICAgICAgICAgICAgICAgIHRoaXMuc2VsZWN0QWxsLnJvd3MgPSBldmVudC5yb3dzO1xuICAgICAgICAgICAgfVxuICAgICAgICB9O1xuICAgIH1cblxuICAgIG5nT25Jbml0KCkge1xuICAgICAgICB0aGlzLnRoZW1lID0gSEVBREVSX0NPTE9SU1swXTtcbiAgICB9XG5cbiAgICBjaGFuZ2VUaGVtZSgpIHtcbiAgICAgICAgbGV0IGlkeCA9IEhFQURFUl9DT0xPUlMuaW5kZXhPZih0aGlzLnRoZW1lKTtcbiAgICAgICAgaWYgKGlkeCA9PT0gSEVBREVSX0NPTE9SUy5sZW5ndGggLSAxKSB7XG4gICAgICAgICAgICBpZHggPSAtMTtcbiAgICAgICAgfVxuICAgICAgICB0aGlzLnRoZW1lID0gSEVBREVSX0NPTE9SU1tpZHggKyAxXTtcbiAgICB9XG5cbiAgICBzaW5nbGVBY3Rpb24oKSB7XG4gICAgICAgIHdpbmRvdy5hbGVydCgnSEkhJyk7XG4gICAgfVxuXG4gICAgc2VsZWN0ZWRBY3Rpb24oYWN0aW9uKSB7XG4gICAgICAgIHdpbmRvdy5hbGVydChgWW91IGNsaWNrZWQgJHthY3Rpb259IWApO1xuICAgIH1cbn1cbiJdfQ==
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvdGFibGUvVGFibGVEZW1vLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztrREFBQTs7QUFFQTs7QUFLQTs7O0FBTkE7O0FBRUE7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBRUE7Ozs7Ozs7Ozs7QUFFQSxJQUFNLDByQ0FBTjs7QUF1QkEsSUFBTSxnQkFBZ0IsQ0FBQyxNQUFELEVBQVMsT0FBVCxFQUFrQixNQUFsQixFQUEwQixPQUExQixFQUFtQyxXQUFuQyxFQUFnRCxTQUFoRCxFQUEyRCxNQUEzRCxFQUFtRSxVQUFuRSxFQUErRSxPQUEvRSxDQUF0Qjs7SUFXYSxVLFdBQUEsVSxXQVRaLHFCQUFVO0FBQ1AsY0FBVSxhQURIO0FBRVA7QUFGTyxDQUFWLEM7Ozs7Ozs7Ozs7O0lBdUJZLFksV0FBQSxZLFlBWFoscUJBQVU7QUFDUCxjQUFVLGVBREg7QUFFUDtBQUZPLENBQVYsQzs7Ozs7Ozs7Ozs7SUFrQlksa0IsV0FBQSxrQixZQUpaLHFCQUFVO0FBQ1AsY0FBVSxZQURIO0FBRVAsY0FBVTtBQUZILENBQVYsQztBQUtHLGtDQUFjO0FBQUE7O0FBQUE7O0FBQ1YsYUFBSyxZQUFMO0FBQ0EsYUFBSyxtQkFBTDtBQUNBLGFBQUsscUJBQUw7O0FBRUEsYUFBSyxnQkFBTCxHQUF3QixDQUNwQixFQUFFLE9BQU8sSUFBVCxFQUFlLE9BQU8sRUFBdEIsRUFEb0IsRUFFcEIsRUFBRSxPQUFPLElBQVQsRUFBZSxPQUFPLEVBQXRCLEVBRm9CLEVBR3BCLEVBQUUsT0FBTyxJQUFULEVBQWUsT0FBTyxFQUF0QixFQUhvQixFQUlwQixFQUFFLE9BQU8sSUFBVCxFQUFlLE9BQU8sRUFBdEIsRUFKb0IsQ0FBeEI7O0FBT0EsWUFBSSxVQUFVLENBQ1YsRUFBRSxPQUFPLE1BQVQsRUFBaUIsTUFBTSxNQUF2QixFQUErQixVQUFVLElBQXpDLEVBQStDLE1BQU0sTUFBckQsRUFBNkQsV0FBVyxJQUF4RSxFQURVLEVBRVYs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QixPQUE3QixHQUF1QyxNQUFNLElBQTdDO0FBQ0EsK0JBQUssU0FBTCxDQUFlLE1BQWYsQ0FBc0IsTUFBdEIsQ0FBNkIsWUFBN0IsR0FBNEMsTUFBTSxZQUFsRDtBQUNIO0FBTkcsaUJBREo7QUFTSix5QkFBUyxJQVRMO0FBVUosMkJBQVcsSUFWUDtBQVdKLDBCQUFVLElBWE47QUFZSiwwQkFBVSxJQVpOO0FBYUosbUNBQW1CO0FBYmYsYUFISztBQWtCYiwyQkFBZSx1QkFBQyxLQUFELEVBQVc7QUFDdEIsdUJBQUssU0FBTCxDQUFlLElBQWYsR0FBc0IsTUFBTSxJQUE1QjtBQUNIO0FBcEJZLFNBQWpCO0FBc0JIOzs7O21DQUVVO0FBQ1AsaUJBQUssS0FBTCxHQUFhLGNBQWMsQ0FBZCxDQUFiO0FBQ0g7OztzQ0FFYTtBQUNWLGdCQUFJLE1BQU0sY0FBYyxPQUFkLENBQXNCLEtBQUssS0FBM0IsQ0FBVjtBQUNBLGdCQUFJLFFBQVEsY0FBYyxNQUFkLEdBQXVCLENBQW5DLEVBQXNDO0FBQ2xDLHNCQUFNLENBQUMsQ0FBUDtBQUNIO0FBQ0QsaUJBQUssS0FBTCxHQUFhLGNBQWMsTUFBTSxDQUFwQixDQUFiO0FBQ0g7Ozt1Q0FFYztBQUNYLG1CQUFPLEtBQVAsQ0FBYSxLQUFiO0FBQ0g7Ozt1Q0FFYyxNLEVBQVE7QUFDbkIsbUJBQU8sS0FBUCxrQkFBNEIsTUFBNUI7QUFDSCIsImZpbGUiOiJUYWJsZURlbW8uanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbIi8vIE5HMlxuaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG4vLyBBUFBcbmltcG9ydCB7IFRhYmxlRGF0YSB9IGZyb20gJy4vVGFibGVEYXRhJztcbmltcG9ydCBUYWJsZURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvVGFibGVEZW1vLmh0bWwnO1xuaW1wb3J0IERldGFpbHNUYWJsZURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvRGV0YWlsc1RhYmxlRGVtby5odG1sJztcbmltcG9ydCBTZWxlY3RBbGxUYWJsZURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvU2VsZWN0QWxsVGFibGVEZW1vLmh0bWwnO1xuLy8gVmVuZG9yXG5pbXBvcnQgeyBEYXRlQ2VsbCwgQmFzZVJlbmRlcmVyIH0gZnJvbSAnLi8uLi8uLi8uLi8uLi9zcmMvbm92by1lbGVtZW50cyc7XG5cbmNvbnN0IHRlbXBsYXRlID0gYFxuPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICAgIDxoMT5UYWJsZSA8c21hbGw+PGEgdGFyZ2V0PVwiX2JsYW5rXCIgaHJlZj1cImh0dHBzOi8vYnVsbGhvcm4uZ2l0aHViLmlvL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL3RhYmxlXCI+KHNvdXJjZSk8L2E+PC9zbWFsbD48L2gxPlxuICAgIDxwPlRhYmxlcyBhbGxvdyB1c2VycyB0byB2aWV3IGRhdGUgaW4gYSB0YWJ1bGFyIGZvcm1hdCBhbmQgcGVyZm9ybSBhY3Rpb25zIHN1Y2ggYXMgU29ydGluZyBhbmQgRmlsdGVyaW5nLiBEaWZmZXJlbnQgY29uZmlndXJhdGlvbiBhcmUgcG9zc2libGUgZm9yIHBhZ2luYXRpb24gb3IgaW5maW5pdGUgc2Nyb2xsLiBGZWF0dXJlIHRvIGJlIGFkZGVkIGluY2x1ZGU6IEN1c3RvbSBJdGVtIFJlbmRlcmVycywgZXRjLi4uPC9wPlxuXG4gICAgPGgyPlR5cGVzPC9oMj5cblxuICAgIDxoNT5CYXNpYyBUYWJsZTwvaDU+XG4gICAgPHA+VGhpcyBpcyB0aGUgbW9zdCBiYXNpYyB0YWJsZS48L3A+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgdGFibGUtZGVtb1wiPiR7VGFibGVEZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiVGFibGVEZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG4gICAgPGg1PkRldGFpbHMgVGFibGU8L2g1PlxuICAgIDxwPlRoaXMgaGFzIGEgcm93IHJlbmRlcmVyIHRvIHNob3cgYSBuZXcgZGV0YWlscyByb3cgdGhhdCBpcyBleHBhbmRlZCB3aGVuIHlvdSBjbGljayBvbiB0aGUgYWN0aW9uIGNvbHVtbi48L3A+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgdGFibGUtZGVtb1wiPiR7RGV0YWlsc1RhYmxlRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIkRldGFpbHNUYWJsZURlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cblxuICAgIDxoNT5TZWxlY3QgQWxsIFRhYmxlIHcvIEN1c3RvbSBBY3Rpb25zPC9oNT5cbiAgICA8cD5UaGlzIGhhcyBjaGVja2JveGVzIGZvciBzZWxlY3Rpb24gd2l0aCBjdXN0b20gYWN0aW9ucy48L3A+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgdGFibGUtZGVtb1wiPiR7U2VsZWN0QWxsVGFibGVEZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiU2VsZWN0QWxsVGFibGVEZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG48L2Rpdj5cbmA7XG5cbmNvbnN0IEhFQURFUl9DT0xPUlMgPSBbJ2FxdWEnLCAnb2NlYW4nLCAnbWludCcsICdncmFzcycsICdzdW5mbG93ZXInLCAnY29tcGFueScsICdsZWFkJywgJ3Bvc2l0aXZlJywgJ2JsYWNrJ107XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnc3RhdHVzLWNlbGwnLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgIDxkaXYgY2xhc3M9XCJzdGF0dXMtY2VsbFwiPlxuICAgICAgICAgICAgPGkgY2xhc3M9XCJiaGktaW5mb1wiPjwvaT5cbiAgICAgICAgICAgIDxsYWJlbD57eyB2YWx1ZSB9fTwvbGFiZWw+XG4gICAgICAgIDwvZGl2PlxuICAgIGBcbn0pXG5leHBvcnQgY2xhc3MgU3RhdHVzQ2VsbCBleHRlbmRzIEJhc2VSZW5kZXJlciB7XG59XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnZXh0cmEtZGV0YWlscycsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgPGRpdiBjbGFzcz1cImV4dHJhLWRhdGFcIj5cbiAgICAgICAgICAgIDxsYWJlbD48aSBjbGFzcz1cImJoaS1pbmZvXCI+PC9pPkRlc2NyaXB0aW9uPC9sYWJlbD5cbiAgICAgICAgICAgIDxwPnt7IGRhdGEuZGVzY3JpcHRpb24gfX08L3A+XG4gICAgICAgICAgICA8bGFiZWw+PGkgY2xhc3M9XCJiaGktaW5mb1wiPjwvaT5DYXRlZ29yaWVzPC9sYWJlbD5cbiAgICAgICAgICAgIDxwPnt7IGRhdGEuY2F0ZWdvcmllcyB9fTwvcD5cbiAgICAgICAgPC9kaXY+XG4gICAgYFxufSlcbmV4cG9ydCBjbGFzcyBFeHRyYURldGFpbHMgZXh0ZW5kcyBCYXNlUmVuZGVyZXIge1xufVxuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ3RhYmxlLWRlbW8nLFxuICAgIHRlbXBsYXRlOiB0ZW1wbGF0ZVxufSlcbmV4cG9ydCBjbGFzcyBUYWJsZURlbW9Db21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKCkge1xuICAgICAgICB0aGlzLlRhYmxlRGVtb1RwbCA9IFRhYmxlRGVtb1RwbDtcbiAgICAgICAgdGhpcy5EZXRhaWxzVGFibGVEZW1vVHBsID0gRGV0YWlsc1RhYmxlRGVtb1RwbDtcbiAgICAgICAgdGhpcy5TZWxlY3RBbGxUYWJsZURlbW9UcGwgPSBTZWxlY3RBbGxUYWJsZURlbW9UcGw7XG5cbiAgICAgICAgdGhpcy5jdXN0b21Sb3dPcHRpb25zID0gW1xuICAgICAgICAgICAgeyBsYWJlbDogJzEwJywgdmFsdWU6IDEwIH0sXG4gICAgICAgICAgICB7IGxhYmVsOiAnMjAnLCB2YWx1ZTogMjAgfSxcbiAgICAgICAgICAgIHsgbGFiZWw6ICczMCcsIHZhbHVlOiAzMCB9LFxuICAgICAgICAgICAgeyBsYWJlbDogJzQwJywgdmFsdWU6IDQwIH1cbiAgICAgICAgXTtcblxuICAgICAgICBsZXQgY29sdW1ucyA9IFtcbiAgICAgICAgICAgIHsgdGl0bGU6ICdOYW1lJywgbmFtZTogJ25hbWUnLCBvcmRlcmluZzogdHJ1ZSwgdHlwZTogJ2xpbmsnLCBmaWx0ZXJpbmc6IHRydWUgfSxcbiAgICAgICAgICAgIHsgdGl0bGU6ICdQb3NpdGlvbicsIG5hbWU6ICdwb3NpdGlvbicsIG9yZGVyaW5nOiB0cnVlLCBmaWx0ZXJpbmc6IHRydWUgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ0V4dG4uJyxcbiAgICAgICAgICAgICAgICBuYW1lOiAnZXh0JyxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZW5kZXJlcjogb2JqZWN0ID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIG9iamVjdC5leHQub2JqO1xuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgY29tcGFyZTogKHNvcnQsIHByZXZpb3VzLCBjdXJyZW50KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIGxldCBmaXJzdCA9IHByZXZpb3VzLm9iaixcbiAgICAgICAgICAgICAgICAgICAgICAgIHNlY29uZCA9IGN1cnJlbnQub2JqO1xuXG4gICAgICAgICAgICAgICAgICAgIGlmIChmaXJzdCA+IHNlY29uZCkge1xuICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIHNvcnQgPT09ICdkZXNjJyA/IC0xIDogMTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICBpZiAoZmlyc3QgPCBzZWNvbmQpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybiBzb3J0ID09PSAnYXNjJyA/IC0xIDogMTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICByZXR1cm4gMDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnU3RhcnQgZGF0ZScsXG4gICAgICAgICAgICAgICAgdHlwZTogJ2RhdGUnLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzdGFydERhdGUnLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiBEYXRlQ2VsbCxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBmaWx0ZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmFuZ2U6IHRydWVcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTYWxhcnknLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzYWxhcnknLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiAob2JqZWN0KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBgJCAke051bWJlcihvYmplY3Quc2FsYXJ5KS50b0ZpeGVkKDIpfWA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1NhbGFyeScsXG4gICAgICAgICAgICAgICAgbmFtZTogJ3NhbGFyeScsXG4gICAgICAgICAgICAgICAgb3JkZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmVuZGVyZXI6IChvYmplY3QpID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGAkICR7TnVtYmVyKG9iamVjdC5zYWxhcnkpLnRvRml4ZWQoMil9YDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnU2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBuYW1lOiAnc2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZW5kZXJlcjogKG9iamVjdCkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYCQgJHtOdW1iZXIob2JqZWN0LnNhbGFyeSkudG9GaXhlZCgyKX1gO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTYWxhcnknLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzYWxhcnknLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiAob2JqZWN0KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBgJCAke051bWJlcihvYmplY3Quc2FsYXJ5KS50b0ZpeGVkKDIpfWA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1NhbGFyeScsXG4gICAgICAgICAgICAgICAgbmFtZTogJ3NhbGFyeScsXG4gICAgICAgICAgICAgICAgb3JkZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmVuZGVyZXI6IChvYmplY3QpID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGAkICR7TnVtYmVyKG9iamVjdC5zYWxhcnkpLnRvRml4ZWQoMil9YDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnU2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBuYW1lOiAnc2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZW5kZXJlcjogKG9iamVjdCkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYCQgJHtOdW1iZXIob2JqZWN0LnNhbGFyeSkudG9GaXhlZCgyKX1gO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTYWxhcnknLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzYWxhcnknLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiAob2JqZWN0KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBgJCAke051bWJlcihvYmplY3Quc2FsYXJ5KS50b0ZpeGVkKDIpfWA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1NhbGFyeScsXG4gICAgICAgICAgICAgICAgbmFtZTogJ3NhbGFyeScsXG4gICAgICAgICAgICAgICAgb3JkZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmVuZGVyZXI6IChvYmplY3QpID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGAkICR7TnVtYmVyKG9iamVjdC5zYWxhcnkpLnRvRml4ZWQoMil9YDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnU2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBuYW1lOiAnc2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZW5kZXJlcjogKG9iamVjdCkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYCQgJHtOdW1iZXIob2JqZWN0LnNhbGFyeSkudG9GaXhlZCgyKX1gO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTYWxhcnknLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzYWxhcnknLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiAob2JqZWN0KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBgJCAke051bWJlcihvYmplY3Quc2FsYXJ5KS50b0ZpeGVkKDIpfWA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1NhbGFyeScsXG4gICAgICAgICAgICAgICAgbmFtZTogJ3NhbGFyeScsXG4gICAgICAgICAgICAgICAgb3JkZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmVuZGVyZXI6IChvYmplY3QpID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGAkICR7TnVtYmVyKG9iamVjdC5zYWxhcnkpLnRvRml4ZWQoMil9YDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnU2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBuYW1lOiAnc2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZW5kZXJlcjogKG9iamVjdCkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYCQgJHtOdW1iZXIob2JqZWN0LnNhbGFyeSkudG9GaXhlZCgyKX1gO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTYWxhcnknLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzYWxhcnknLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiAob2JqZWN0KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBgJCAke051bWJlcihvYmplY3Quc2FsYXJ5KS50b0ZpeGVkKDIpfWA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1NhbGFyeScsXG4gICAgICAgICAgICAgICAgbmFtZTogJ3NhbGFyeScsXG4gICAgICAgICAgICAgICAgb3JkZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmVuZGVyZXI6IChvYmplY3QpID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGAkICR7TnVtYmVyKG9iamVjdC5zYWxhcnkpLnRvRml4ZWQoMil9YDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnU2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBuYW1lOiAnc2FsYXJ5JyxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZW5kZXJlcjogKG9iamVjdCkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYCQgJHtOdW1iZXIob2JqZWN0LnNhbGFyeSkudG9GaXhlZCgyKX1gO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTYWxhcnknLFxuICAgICAgICAgICAgICAgIG5hbWU6ICdzYWxhcnknLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiAob2JqZWN0KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBgJCAke051bWJlcihvYmplY3Quc2FsYXJ5KS50b0ZpeGVkKDIpfWA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1NhbGFyeScsXG4gICAgICAgICAgICAgICAgbmFtZTogJ3NhbGFyeScsXG4gICAgICAgICAgICAgICAgb3JkZXJpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgcmVuZGVyZXI6IChvYmplY3QpID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGAkICR7TnVtYmVyKG9iamVjdC5zYWxhcnkpLnRvRml4ZWQoMil9YDtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnU3RhdHVzJyxcbiAgICAgICAgICAgICAgICBuYW1lOiAnc3RhdHVzJyxcbiAgICAgICAgICAgICAgICBvcHRpb25zOiBbJ05ldyBMZWFkJywgJ0FjdGl2ZScsICdBcmNoaXZlZCddLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIG11bHRpcGxlOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlbmRlcmVyOiBTdGF0dXNDZWxsLFxuICAgICAgICAgICAgICAgIGZpbHRlcmluZzogdHJ1ZVxuICAgICAgICAgICAgfVxuICAgICAgICBdO1xuXG4gICAgICAgIHRoaXMuYmFzaWMgPSB7XG4gICAgICAgICAgICBjb2x1bW5zOiBjb2x1bW5zLnNsaWNlKCksXG4gICAgICAgICAgICByb3dzOiBUYWJsZURhdGEuc2xpY2UoKSxcbiAgICAgICAgICAgIGNvbmZpZzoge1xuICAgICAgICAgICAgICAgIHBhZ2luZzoge1xuICAgICAgICAgICAgICAgICAgICBjdXJyZW50OiAxLFxuICAgICAgICAgICAgICAgICAgICBpdGVtc1BlclBhZ2U6IDEwLFxuICAgICAgICAgICAgICAgICAgICBvblBhZ2VDaGFuZ2U6IGV2ZW50ID0+IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHRoaXMuYmFzaWMuY29uZmlnLnBhZ2luZy5jdXJyZW50ID0gZXZlbnQucGFnZTtcbiAgICAgICAgICAgICAgICAgICAgICAgIHRoaXMuYmFzaWMuY29uZmlnLnBhZ2luZy5pdGVtc1BlclBhZ2UgPSBldmVudC5pdGVtc1BlclBhZ2U7XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIGZpbHRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBzb3J0aW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlc2l6aW5nOiB0cnVlXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAgb25UYWJsZUNoYW5nZTogKGV2ZW50KSA9PiB7XG4gICAgICAgICAgICAgICAgdGhpcy5iYXNpYy5yb3dzID0gZXZlbnQucm93cztcbiAgICAgICAgICAgIH1cbiAgICAgICAgfTtcblxuICAgICAgICB0aGlzLmRldGFpbHMgPSB7XG4gICAgICAgICAgICBjb2x1bW5zOiBjb2x1bW5zLnNsaWNlKCksXG4gICAgICAgICAgICByb3dzOiBUYWJsZURhdGEuc2xpY2UoKSxcbiAgICAgICAgICAgIGNvbmZpZzoge1xuICAgICAgICAgICAgICAgIHBhZ2luZzoge1xuICAgICAgICAgICAgICAgICAgICBjdXJyZW50OiAxLFxuICAgICAgICAgICAgICAgICAgICBpdGVtc1BlclBhZ2U6IDEwLFxuICAgICAgICAgICAgICAgICAgICBvblBhZ2VDaGFuZ2U6IGV2ZW50ID0+IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHRoaXMuZGV0YWlscy5jb25maWcucGFnaW5nLmN1cnJlbnQgPSBldmVudC5wYWdlO1xuICAgICAgICAgICAgICAgICAgICAgICAgdGhpcy5kZXRhaWxzLmNvbmZpZy5wYWdpbmcuaXRlbXNQZXJQYWdlID0gZXZlbnQuaXRlbXNQZXJQYWdlO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgICBzb3J0aW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIGZpbHRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBvcmRlcmluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICByZXNpemluZzogdHJ1ZSxcbiAgICAgICAgICAgICAgICBoYXNEZXRhaWxzOiB0cnVlLFxuICAgICAgICAgICAgICAgIGRldGFpbHNSZW5kZXJlcjogRXh0cmFEZXRhaWxzXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAgb25UYWJsZUNoYW5nZTogKGV2ZW50KSA9PiB7XG4gICAgICAgICAgICAgICAgdGhpcy5kZXRhaWxzLnJvd3MgPSBldmVudC5yb3dzO1xuICAgICAgICAgICAgfVxuICAgICAgICB9O1xuXG4gICAgICAgIHRoaXMuc2VsZWN0QWxsID0ge1xuICAgICAgICAgICAgY29sdW1uczogY29sdW1ucy5zbGljZSgpLFxuICAgICAgICAgICAgcm93czogVGFibGVEYXRhLnNsaWNlKCksXG4gICAgICAgICAgICBjb25maWc6IHtcbiAgICAgICAgICAgICAgICBwYWdpbmc6IHtcbiAgICAgICAgICAgICAgICAgICAgY3VycmVudDogMSxcbiAgICAgICAgICAgICAgICAgICAgaXRlbXNQZXJQYWdlOiAxMCxcbiAgICAgICAgICAgICAgICAgICAgb25QYWdlQ2hhbmdlOiBldmVudCA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgICB0aGlzLnNlbGVjdEFsbC5jb25maWcucGFnaW5nLmN1cnJlbnQgPSBldmVudC5wYWdlO1xuICAgICAgICAgICAgICAgICAgICAgICAgdGhpcy5zZWxlY3RBbGwuY29uZmlnLnBhZ2luZy5pdGVtc1BlclBhZ2UgPSBldmVudC5pdGVtc1BlclBhZ2U7XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIHNvcnRpbmc6IHRydWUsXG4gICAgICAgICAgICAgICAgZmlsdGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIG9yZGVyaW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJlc2l6aW5nOiB0cnVlLFxuICAgICAgICAgICAgICAgIHJvd1NlbGVjdGlvblN0eWxlOiAnY2hlY2tib3gnXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAgb25UYWJsZUNoYW5nZTogKGV2ZW50KSA9PiB7XG4gICAgICAgICAgICAgICAgdGhpcy5zZWxlY3RBbGwucm93cyA9IGV2ZW50LnJvd3M7XG4gICAgICAgICAgICB9XG4gICAgICAgIH07XG4gICAgfVxuXG4gICAgbmdPbkluaXQoKSB7XG4gICAgICAgIHRoaXMudGhlbWUgPSBIRUFERVJfQ09MT1JTWzBdO1xuICAgIH1cblxuICAgIGNoYW5nZVRoZW1lKCkge1xuICAgICAgICBsZXQgaWR4ID0gSEVBREVSX0NPTE9SUy5pbmRleE9mKHRoaXMudGhlbWUpO1xuICAgICAgICBpZiAoaWR4ID09PSBIRUFERVJfQ09MT1JTLmxlbmd0aCAtIDEpIHtcbiAgICAgICAgICAgIGlkeCA9IC0xO1xuICAgICAgICB9XG4gICAgICAgIHRoaXMudGhlbWUgPSBIRUFERVJfQ09MT1JTW2lkeCArIDFdO1xuICAgIH1cblxuICAgIHNpbmdsZUFjdGlvbigpIHtcbiAgICAgICAgd2luZG93LmFsZXJ0KCdISSEnKTtcbiAgICB9XG5cbiAgICBzZWxlY3RlZEFjdGlvbihhY3Rpb24pIHtcbiAgICAgICAgd2luZG93LmFsZXJ0KGBZb3UgY2xpY2tlZCAke2FjdGlvbn0hYCk7XG4gICAgfVxufVxuIl19
 
 /***/ },
 
-/***/ 875:
+/***/ 877:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [rows]=\"details.rows\" [columns]=\"details.columns\" [config]=\"details.config\" (onTableChange)=\"details.onTableChange($event)\"></novo-table>\n"
 
 /***/ },
 
-/***/ 876:
+/***/ 878:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [rows]=\"selectAll.rows\" [columns]=\"selectAll.columns\" [config]=\"selectAll.config\" (onTableChange)=\"selectAll.onTableChange($event)\" #table>\n    <novo-table-actions>\n        <button theme=\"secondary\" (click)=\"singleAction()\">Click Me!</button>\n        <novo-dropdown side=\"right\" *ngIf=\"table.selected.length\">\n            <button theme=\"primary\" icon=\"collapse\" inverse>{{table.selected.length}} Selected</button>\n            <list>\n                <item (action)=\"selectedAction('action 1')\">Action 1</item>\n                <item (action)=\"selectedAction('action 2')\">Action 2</item>\n                <item (action)=\"selectedAction('action 3')\" disabled=\"true\">Action 3</item>\n            </list>\n        </novo-dropdown>\n    </novo-table-actions>\n</novo-table>\n"
 
 /***/ },
 
-/***/ 877:
+/***/ 879:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [theme]=\"theme\" [rows]=\"basic.rows\" [columns]=\"basic.columns\" [config]=\"basic.config\" (onTableChange)=\"basic.onTableChange($event)\">\n    <novo-table-header class=\"demo-custom-header\">\n        TEST :)\n        <button theme=\"secondary\" (click)=\"changeTheme()\">Change Theme!</button>\n    </novo-table-header>\n</novo-table>\n"
@@ -4704,23 +4849,23 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ButtonTabDemo = __webpack_require__(878);
+	var _ButtonTabDemo = __webpack_require__(880);
 	
 	var _ButtonTabDemo2 = _interopRequireDefault(_ButtonTabDemo);
 	
-	var _ColorDemo = __webpack_require__(879);
+	var _ColorDemo = __webpack_require__(881);
 	
 	var _ColorDemo2 = _interopRequireDefault(_ColorDemo);
 	
-	var _RouterDemo = __webpack_require__(880);
+	var _RouterDemo = __webpack_require__(882);
 	
 	var _RouterDemo2 = _interopRequireDefault(_RouterDemo);
 	
-	var _VerticalDemo = __webpack_require__(881);
+	var _VerticalDemo = __webpack_require__(883);
 	
 	var _VerticalDemo2 = _interopRequireDefault(_VerticalDemo);
 	
-	var _WhiteDemo = __webpack_require__(882);
+	var _WhiteDemo = __webpack_require__(884);
 	
 	var _WhiteDemo2 = _interopRequireDefault(_WhiteDemo);
 	
@@ -4762,35 +4907,35 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 878:
+/***/ 880:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"color\">\n    <novo-nav theme=\"color\" [outlet]=\"buttonTab\" type=\"button-bar\">\n        <novo-tab-button>Button 1</novo-tab-button>\n        <novo-tab-button>Button 2</novo-tab-button>\n        <novo-tab-button>Button 3</novo-tab-button>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #buttonTab>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 3 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n\n<header>\n    <novo-nav theme=\"white\" [outlet]=\"buttonTabWhite\" type=\"button-bar\">\n        <novo-tab-button>Button 1</novo-tab-button>\n        <novo-tab-button>Button 2</novo-tab-button>\n        <novo-tab-button>Button 3</novo-tab-button>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #buttonTabWhite>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 3 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 879:
+/***/ 881:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab>\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #colornav>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 880:
+/***/ 882:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"white\" router>\n        <novo-tab-link>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab-link>\n        <novo-tab-link>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab-link>\n    </novo-nav>\n</header>\n"
 
 /***/ },
 
-/***/ 881:
+/***/ 883:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-nav theme=\"white\" [outlet]=\"colorVert\" direction=\"vertical\">\n    <novo-tab>\n        <span>\n            <i class=\"bhi-person\"></i>Tab 1</span>\n    </novo-tab>\n    <novo-tab>\n        <span>\n            <i class=\"bhi-person\"></i>Tab 2</span>\n    </novo-tab>\n</novo-nav>\n\n<novo-nav-outlet #colorVert>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n\n        <p>\n            Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,\n            Portland keffiyeh aesthetic food truck sriracha cornhole\n            single-origin coffee church-key roof party. Leggings\n            ethical McSweeney's, normcore you probably haven't\n            heard of them Marfa organic squid. Slow-carb 90's\n            ennui Godard pug asymmetrical, narwhal VHS Tonx High\n            Life. Retro dreamcatcher synth Godard pickled Etsy\n            jean shorts beard, pour-over fanny pack mumblecore.\n            Quinoa retro aesthetic polaroid, Williamsburg American\n            Apparel plaid small batch. Blue Bottle Vice fanny\n            pack, Williamsburg roof party Wes Anderson mlkshk\n            seitan brunch before they sold out lo-fi XOXO tofu\n            scenester small batch.\n        </p>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n\n        <p>\n            Synth polaroid bitters chillwave pickled.\n        </p>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 882:
+/***/ 884:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"white\" [outlet]=\"whitenav\">\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab>\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #whitenav>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
@@ -4816,7 +4961,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TilesDemo = __webpack_require__(883);
+	var _TilesDemo = __webpack_require__(885);
 	
 	var _TilesDemo2 = _interopRequireDefault(_TilesDemo);
 	
@@ -4859,7 +5004,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 883:
+/***/ 885:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tiles [options]=\"demoTiles\" (onChange)=\"colorSelect($event)\" [(ngModel)]=\"value\"></novo-tiles>\n"
@@ -4885,15 +5030,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TipWellDemo = __webpack_require__(884);
+	var _TipWellDemo = __webpack_require__(886);
 	
 	var _TipWellDemo2 = _interopRequireDefault(_TipWellDemo);
 	
-	var _TipWellNoButtonDemo = __webpack_require__(886);
+	var _TipWellNoButtonDemo = __webpack_require__(888);
 	
 	var _TipWellNoButtonDemo2 = _interopRequireDefault(_TipWellNoButtonDemo);
 	
-	var _TipWellIconDemo = __webpack_require__(885);
+	var _TipWellIconDemo = __webpack_require__(887);
 	
 	var _TipWellIconDemo2 = _interopRequireDefault(_TipWellIconDemo);
 	
@@ -4930,21 +5075,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 884:
+/***/ 886:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\"></novo-tip-well>"
 
 /***/ },
 
-/***/ 885:
+/***/ 887:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\" icon=\"info\" button=\"false\"></novo-tip-well>"
 
 /***/ },
 
-/***/ 886:
+/***/ 888:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\" button=\"false\"></novo-tip-well>\n"
@@ -4972,11 +5117,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ToastDemo = __webpack_require__(887);
+	var _ToastDemo = __webpack_require__(889);
 	
 	var _ToastDemo2 = _interopRequireDefault(_ToastDemo);
 	
-	var _ToastServiceDemo = __webpack_require__(888);
+	var _ToastServiceDemo = __webpack_require__(890);
 	
 	var _ToastServiceDemo2 = _interopRequireDefault(_ToastServiceDemo);
 	
@@ -5076,14 +5221,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 887:
+/***/ 889:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"fake-card\">\n    <header title=\"John Deere\" icon=\"person\" theme=\"contact\">\n        <utils>\n            <util-action icon=\"flag\"></util-action>\n            <util-action icon=\"refresh\"></util-action>\n            <util-action icon=\"times\"></util-action>\n        </utils>\n    </header>\n    <novo-toast theme=\"danger\" title=\"Save Failed\" message=\"Oops! Looks like you're missing some required fields\"\n                icon=\"caution\" position=\"growlTopRight\"></novo-toast>\n    <div class=\"content\">\n        <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n            do eiusmod tempor incididunt ut labore et dolore\n            magna aliqua. Ut enim ad minim veniam, quis nostrud\n            exercitation ullamco laboris nisi ut aliquip ex ea\n            commodo consequat. Duis aute irure dolor in reprehenderit\n            in voluptate velit esse cillum dolore eu fugiat nulla\n            pariatur. Excepteur sint occaecat cupidatat non proident,\n            sunt in culpa qui officia deserunt mollit anim id\n            est laborum.\n        </p>\n    </div>\n</div>\n"
 
 /***/ },
 
-/***/ 888:
+/***/ 890:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"dialogue\" color=\"success\" icon=\"coffee\" (click)=\"toastToggled('top')\" data-automation-id=\"toast-trigger\">Fixed Top</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"check\" (click)=\"toastToggled('bottom')\">Fixed Bottom</button>\n<button theme=\"dialogue\" color=\"negative\" icon=\"times\" (click)=\"toastToggled('growlTopRight')\">Growl: Top Right</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"coffee\" (click)=\"toastToggled('growlTopLeft')\">Growl: Top Left</button>\n<button theme=\"dialogue\" color=\"negative\" icon=\"times\" (click)=\"toastToggled('growlBottomRight')\">Growl: Bottom Right</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"coffee\" (click)=\"toastToggled('growlBottomLeft')\">Growl: Bottom Left</button>\n"
@@ -5109,23 +5254,23 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TooltipOptionsDemo = __webpack_require__(890);
+	var _TooltipOptionsDemo = __webpack_require__(892);
 	
 	var _TooltipOptionsDemo2 = _interopRequireDefault(_TooltipOptionsDemo);
 	
-	var _TooltipPlacementDemo = __webpack_require__(891);
+	var _TooltipPlacementDemo = __webpack_require__(893);
 	
 	var _TooltipPlacementDemo2 = _interopRequireDefault(_TooltipPlacementDemo);
 	
-	var _TooltipAlignDemo = __webpack_require__(889);
+	var _TooltipAlignDemo = __webpack_require__(891);
 	
 	var _TooltipAlignDemo2 = _interopRequireDefault(_TooltipAlignDemo);
 	
-	var _TooltipTypesDemo = __webpack_require__(893);
+	var _TooltipTypesDemo = __webpack_require__(895);
 	
 	var _TooltipTypesDemo2 = _interopRequireDefault(_TooltipTypesDemo);
 	
-	var _TooltipToggleDemo = __webpack_require__(892);
+	var _TooltipToggleDemo = __webpack_require__(894);
 	
 	var _TooltipToggleDemo2 = _interopRequireDefault(_TooltipToggleDemo);
 	
@@ -5161,42 +5306,42 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 889:
+/***/ 891:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"bottom-left\" tooltipPosition=\"bottom-left\">Bottom Left</span>\n<span tooltip=\"bottom-right\" tooltipPosition=\"bottom-right\">Bottom Right</span>\n<span tooltip=\"top-left\" tooltipPosition=\"top-left\">Top Left</span>\n<span tooltip=\"top-right\" tooltipPosition=\"top-right\">Top Right</span>\n"
 
 /***/ },
 
-/***/ 890:
+/***/ 892:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ALWAYS\" tooltipAlways=\"true\">Always Shown</span>\n<span tooltip=\"ROUNDED\" tooltipRounded=\"true\">Rounded</span>\n<span tooltip=\"NO ANIMATE\" tooltipNoAnimate=\"true\">No Animation</span>\n<span tooltip=\"BOUNCE\" tooltipBounce=\"true\">Bounce</span>\n"
 
 /***/ },
 
-/***/ 891:
+/***/ 893:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"left\" tooltipPosition=\"left\">Left</span>\n<span tooltip=\"right\" tooltipPosition=\"right\">Right</span>\n<span tooltip=\"top\" tooltipPosition=\"top\">Top</span>\n<span tooltip=\"bottom\" tooltipPosition=\"bottom\">Bottom</span>\n"
 
 /***/ },
 
-/***/ 892:
+/***/ 894:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"I HAVE A TOOLTIP!\" [tooltipActive]=\"tooltipActive\">\n    <span *ngIf=\"tooltipActive\">My tooltip can display!</span>\n    <span *ngIf=\"!tooltipActive\">My tooltip is disabled!</span>\n</span>\n<button theme=\"secondary\" (click)=\"toggleTooltip()\">Toggle</button>\n"
 
 /***/ },
 
-/***/ 893:
+/***/ 895:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ERROR\" tooltipType=\"error\">Error</span>\n<span tooltip=\"INFO\" tooltipType=\"info\">Info</span>\n<span tooltip=\"WARNING\" tooltipType=\"warning\">Warning</span>\n<span tooltip=\"SUCCESS\" tooltipType=\"success\">Success</span>\n"
 
 /***/ },
 
-/***/ 894:
+/***/ 896:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"design container\">\n    <div>\n        <h1 class=\"title\">Introduction</h1>\n        <h2 class=\"sub-title\">Crafted amid Complexity</h2>\n\n        <p class=\"description\">\n            Enterprise software is highly complex and demands a\n            high level of flexibility. Design offers clarity and enables us to make\n            deep, powerful connections.\n        </p>\n    </div>\n    <img src=\"assets/images/IntroPageHeaderImage.svg\" alt=\"\"/>\n</header>\n\n<section class=\"design container\">\n    <h5>A NEW STANDARD</h5>\n    <p>Elegance in utility helps to create a system for humans, not robots. We strive not just to empower users but to delight them in the process.</p>\n\n    <h5>INSIGHTS AT SCALE</h5>\n    <p>Vast data reservoirs need a finely tuned system to surface the critical information right when it is needed, no matter the scale or setting.</p>\n\n    <h5>POWER IN FLEXIBILITY</h5>\n    <p>Users have vastly differing needs and goals. By identifying key commonalities and themes, we provide a strong experience for all.</p>\n\n    <article class=\"jump-to code\">\n        <i class=\"bhi-link\"></i>\n        <span>Are you a developer and what to skip right to the code?<br><a href=\"#\" routerLink=\"Buttons\">View Components here</a></span>\n    </article>\n\n    <article class=\"jump-to brand\">\n        <i class=\"bhi-link\"></i>\n        <span>Looking for the Bullhorn corporate brand guidelines? <br/><a href=\"https://brandfolder.com/bullhorn\" target=\"_blank\">Bullhorn Brand Folder</a></span>\n    </article>\n</section>\n"
@@ -5222,7 +5367,7 @@ webpackJsonp([3],{
 	
 	var Home = exports.Home = (_dec = (0, _core.Component)({
 	    selector: 'home',
-	    template: __webpack_require__(894)
+	    template: __webpack_require__(896)
 	}), _dec(_class = function Home() {
 	    _classCallCheck(this, Home);
 	}) || _class);
@@ -5283,7 +5428,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _PluralizeDemo = __webpack_require__(895);
+	var _PluralizeDemo = __webpack_require__(897);
 	
 	var _PluralizeDemo2 = _interopRequireDefault(_PluralizeDemo);
 	
@@ -5305,14 +5450,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 895:
+/***/ 897:
 /***/ function(module, exports) {
 
 	module.exports = "<p>{{'Kitty' | plural}}</p>\n<p>{{'Cat' | plural}}</p>\n"
 
 /***/ },
 
-/***/ 896:
+/***/ 898:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\n    <h1>Utils</h1>\n    <p>Helpful utility functions and objects.</p>\n\n    <h5>Key Codes\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/key-codes\">(source)</a></small>\n    </h5>\n    <p>List of all Key Codes to import and use, no magic strings!</p>\n\n    <h5>Deferred\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/deferred\">(source)</a></small>\n    </h5>\n    <p>Custom deferred object</p>\n\n    <h5>Outside Click\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/outside-click\">(source)</a></small>\n    </h5>\n    <p>Helper class to listen to and automatically close a component when an outside click is detected.</p>\n</div>\n"
@@ -5338,7 +5483,7 @@ webpackJsonp([3],{
 	
 	var UtilsDemoComponent = exports.UtilsDemoComponent = (_dec = (0, _core.Component)({
 	    selector: 'utils-demo',
-	    template: __webpack_require__(896)
+	    template: __webpack_require__(898)
 	}), _dec(_class = function UtilsDemoComponent() {
 	    _classCallCheck(this, UtilsDemoComponent);
 	}) || _class);
@@ -5347,4 +5492,4 @@ webpackJsonp([3],{
 /***/ }
 
 });
-//# sourceMappingURL=demo.f136e36b9701f9319163.bundle.map
+//# sourceMappingURL=demo.50be3c32741a510fb49b.bundle.map
