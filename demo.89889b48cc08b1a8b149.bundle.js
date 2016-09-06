@@ -47,7 +47,7 @@ webpackJsonp([3],{
 	        modalService.parentViewContainer = viewContainerRef;
 	
 	        this.menuOpen = false;
-	        this.version = ("1.0.22");
+	        this.version = ("1.0.23");
 	
 	        this.designRoutes = router.config.filter(function (r) {
 	            return r.section === 'design';
