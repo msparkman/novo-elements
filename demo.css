@@ -9157,6 +9157,91 @@ novo-check-list {
       novo-check-list [class*="-group"] label span {
         display: inline-block; }
 
+novo-file-input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  novo-file-input .file-output-group {
+    width: 100%; }
+    novo-file-input .file-output-group .file-item {
+      background-color: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15), 0 2px 10px rgba(0, 0, 0, 0.09);
+      margin-bottom: 15px;
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 4px 12px;
+      width: 100%; }
+      novo-file-input .file-output-group .file-item label {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+      novo-file-input .file-output-group .file-item button {
+        font-size: 1.4rem;
+        width: 42px;
+        height: 42px;
+        padding: 4px;
+        color: #999999; }
+      novo-file-input .file-output-group .file-item button:hover,
+      novo-file-input .file-output-group .file-item button:focus,
+      novo-file-input .file-output-group .file-item button.active {
+        background: none;
+        color: #4A89DC; }
+  novo-file-input .file-input-group {
+    cursor: pointer;
+    width: 100%; }
+    novo-file-input .file-input-group input[type="file"] {
+      opacity: 0;
+      position: absolute;
+      width: 100% !important;
+      height: 100% !important;
+      cursor: pointer; }
+    novo-file-input .file-input-group:hover label, novo-file-input .file-input-group.active label {
+      border: 2px dashed #4A89DC; }
+    novo-file-input .file-input-group.disabled {
+      opacity: 0.3;
+      pointer-events: none; }
+    novo-file-input .file-input-group label {
+      color: #999999;
+      margin-left: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      border: 2px dashed #999999;
+      padding: 15px;
+      cursor: pointer;
+      pointer-events: none;
+      /*This for FF*/ }
+      novo-file-input .file-input-group label strong {
+        color: #4A89DC; }
+      novo-file-input .file-input-group label small {
+        margin-top: 7px; }
+
 novo-form, novo-dynamic-form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11117,84 +11202,84 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 29px;
-      height: 29px; }
-    color header .background-boxes .bb-candidate {
-      background: #44BB77;
       width: 35px;
       height: 35px; }
+    color header .background-boxes .bb-candidate {
+      background: #44BB77;
+      width: 29px;
+      height: 29px; }
     color header .background-boxes .bb-navigation {
       background: #2F384F;
-      width: 37px;
-      height: 37px; }
-    color header .background-boxes .bb-lead {
-      background: #AA6699;
       width: 34px;
       height: 34px; }
+    color header .background-boxes .bb-lead {
+      background: #AA6699;
+      width: 32px;
+      height: 32px; }
     color header .background-boxes .bb-contact {
       background: #FFAA44;
-      width: 27px;
-      height: 27px; }
+      width: 37px;
+      height: 37px; }
     color header .background-boxes .bb-opportunity {
       background: #662255;
-      width: 36px;
-      height: 36px; }
+      width: 38px;
+      height: 38px; }
     color header .background-boxes .bb-job {
       background: #BB5566;
       width: 29px;
       height: 29px; }
     color header .background-boxes .bb-submission {
       background: #778899;
-      width: 38px;
-      height: 38px; }
-    color header .background-boxes .bb-placement {
-      background: #0B344F;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-note {
-      background: #747884;
       width: 26px;
       height: 26px; }
+    color header .background-boxes .bb-placement {
+      background: #0B344F;
+      width: 41px;
+      height: 41px; }
+    color header .background-boxes .bb-note {
+      background: #747884;
+      width: 31px;
+      height: 31px; }
     color header .background-boxes .bb-task {
       background: #747884;
-      width: 32px;
-      height: 32px; }
+      width: 36px;
+      height: 36px; }
     color header .background-boxes .bb-aqua {
       background: #3BAFDA;
-      width: 33px;
-      height: 33px; }
+      width: 26px;
+      height: 26px; }
     color header .background-boxes .bb-ocean {
       background: #4A89DC;
-      width: 33px;
-      height: 33px; }
-    color header .background-boxes .bb-mint {
-      background: #37BC9B;
-      width: 35px;
-      height: 35px; }
-    color header .background-boxes .bb-grass {
-      background: #8CC152;
-      width: 43px;
-      height: 43px; }
-    color header .background-boxes .bb-sunflower {
-      background: #F6B042;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-bittersweet {
-      background: #EB6845;
-      width: 43px;
-      height: 43px; }
-    color header .background-boxes .bb-grapefruit {
-      background: #DA4453;
-      width: 43px;
-      height: 43px; }
-    color header .background-boxes .bb-carnation {
-      background: #D770AD;
-      width: 44px;
-      height: 44px; }
-    color header .background-boxes .bb-lavender {
-      background: #967ADC;
       width: 30px;
       height: 30px; }
+    color header .background-boxes .bb-mint {
+      background: #37BC9B;
+      width: 34px;
+      height: 34px; }
+    color header .background-boxes .bb-grass {
+      background: #8CC152;
+      width: 42px;
+      height: 42px; }
+    color header .background-boxes .bb-sunflower {
+      background: #F6B042;
+      width: 45px;
+      height: 45px; }
+    color header .background-boxes .bb-bittersweet {
+      background: #EB6845;
+      width: 40px;
+      height: 40px; }
+    color header .background-boxes .bb-grapefruit {
+      background: #DA4453;
+      width: 44px;
+      height: 44px; }
+    color header .background-boxes .bb-carnation {
+      background: #D770AD;
+      width: 34px;
+      height: 34px; }
+    color header .background-boxes .bb-lavender {
+      background: #967ADC;
+      width: 43px;
+      height: 43px; }
 
 color article.color-blocks {
   display: -webkit-box;
@@ -12263,4 +12348,4 @@ form-demo .final-value {
 .pipes-demo {
   padding-left: 5px; }
 
-/*# sourceMappingURL=demo.89889b48cc08b1a8b149.bundle.map*/
+/*# sourceMappingURL=demo.5ec518956141f91adbda.bundle.map*/

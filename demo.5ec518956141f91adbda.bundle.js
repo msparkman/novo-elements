@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 821:
+/***/ 823:
 /***/ function(module, exports) {
 
 	module.exports = "<nav class=\"main-nav\" [ngClass]=\"{open: menuOpen}\">\n    <span class=\"logo\">\n        <svg routerLink=\"Home\" data-name=\"novo-logo\" xmlns=\"http://www.w3.org/2000/svg\"\n             viewBox=\"0 0 400 400\" class=\"{% if page.url != '/' %}site-avatar{% endif %}\">\n            <defs></defs>\n            <title>NovoBranding</title>\n            <circle class=\"center-dot\" cx=\"200.18\" cy=\"197.5\" r=\"28.65\"/>\n            <path class=\"outer-ring\" d=\"M371,178.06C362,98.75,298.92,35.6,219.6,26.65a19.88,19.88,0,0,0-38.84,0c-79.32,9-142.43,72.11-151.4,151.43a19.88,19.88,0,0,0,0,38.85c9,79.32,72.07,142.47,151.4,151.43a19.88,19.88,0,0,0,38.84,0c79.32-9,142.43-72.1,151.4-151.42A19.88,19.88,0,0,0,371,178.06ZM192.56,25.72a9.25,9.25,0,0,1,1-1.18l0.26-.27a9.31,9.31,0,0,1,1.17-1l0.24-.15a9.13,9.13,0,0,1,1.22-.66l0.26-.12a9.17,9.17,0,0,1,1.49-.46l0.34-.07a8.29,8.29,0,0,1,3.32,0l0.34,0.07a9.17,9.17,0,0,1,1.49.46l0.26,0.12a9.13,9.13,0,0,1,1.22.66l0.24,0.15a9.31,9.31,0,0,1,1.17,1l0.26,0.27a9.25,9.25,0,0,1,1,1.18,9.1,9.1,0,0,1-.29,10.68h0a9.28,9.28,0,0,1-1.27,1.36l-0.42.35a9.1,9.1,0,0,1-.89.62,9.21,9.21,0,0,1-.87.47l-0.5.22a9,9,0,0,1-1.38.43l-0.34.06a8.24,8.24,0,0,1-3.3,0l-0.34-.06a9,9,0,0,1-1.38-.43l-0.5-.22a9.21,9.21,0,0,1-.87-0.47,9.1,9.1,0,0,1-.89-0.62l-0.42-.35a9.28,9.28,0,0,1-1.27-1.36h0A9.1,9.1,0,0,1,192.56,25.72ZM28.39,205.09a9.25,9.25,0,0,1-1.14-.94l-0.3-.3a9.26,9.26,0,0,1-.94-1.14l-0.16-.26a9.09,9.09,0,0,1-.65-1.19c0-.09-0.09-0.18-0.13-0.28a9.1,9.1,0,0,1-.46-1.49c0-.11,0-0.23-0.07-0.34a8.27,8.27,0,0,1,0-3.31c0-.12,0-0.23.07-0.34a9.1,9.1,0,0,1,.46-1.49c0-.1.09-0.19,0.13-0.28a9.09,9.09,0,0,1,.65-1.19l0.16-.26a9.22,9.22,0,0,1,.94-1.14l0.3-.3a9.11,9.11,0,0,1,13.2.59c0.13,0.14.25,0.29,0.37,0.44a9.22,9.22,0,0,1,1.08,1.75c0.08,0.16.15,0.33,0.22,0.49a9.08,9.08,0,0,1,.43,1.39c0,0.11,0,.23.06,0.34a8.22,8.22,0,0,1,0,3.29c0,0.11,0,.23-0.06.34a9.08,9.08,0,0,1-.43,1.39c-0.07.17-.15,0.33-0.22,0.49a9.22,9.22,0,0,1-1.08,1.75c-0.12.15-.24,0.3-0.37,0.44A9.12,9.12,0,0,1,28.39,205.09ZM200.18,374a9.21,9.21,0,1,1,9.21-9.21A9.22,9.22,0,0,1,200.18,374ZM219,357.67a19.86,19.86,0,0,0-37.59,0A161.56,161.56,0,0,1,40,216.29a19.86,19.86,0,0,0,0-37.58A161.56,161.56,0,0,1,181.38,37.32a19.86,19.86,0,0,0,37.59,0,161.56,161.56,0,0,1,141.35,141.4,19.86,19.86,0,0,0,0,37.55A161.56,161.56,0,0,1,219,357.67Zm147.84-151A9.21,9.21,0,1,1,376,197.5,9.22,9.22,0,0,1,366.81,206.7Z\"\n            />\n            <path class=\"inner-ring\" d=\"M219.76,103.11a19.86,19.86,0,0,0-39.17,0,96.4,96.4,0,0,0,0,188.78,19.86,19.86,0,0,0,39.17,0A96.4,96.4,0,0,0,219.76,103.11Zm-19.58-5.87a9.17,9.17,0,0,1,5.9,16.22l-0.25.2a9.11,9.11,0,0,1-1,.67c-0.26.16-.53,0.31-0.8,0.44l-0.55.24a8.92,8.92,0,0,1-1.35.42l-0.33.06a8.24,8.24,0,0,1-3.3,0l-0.33-.06a8.92,8.92,0,0,1-1.35-.42l-0.55-.24c-0.28-.13-0.54-0.28-0.8-0.44a9.11,9.11,0,0,1-1-.67l-0.25-.2A9.17,9.17,0,0,1,200.18,97.24ZM207.54,294a9.21,9.21,0,0,1-.61.74c-0.13.15-.27,0.29-0.41,0.43a9.25,9.25,0,0,1-1.06.87l-0.41.26a9.11,9.11,0,0,1-1.07.58l-0.31.15a9.08,9.08,0,0,1-1.47.46l-0.38.07a8.22,8.22,0,0,1-3.29,0l-0.38-.07a9.08,9.08,0,0,1-1.47-.46l-0.31-.15a9.11,9.11,0,0,1-1.07-.58l-0.41-.26a9.25,9.25,0,0,1-1.06-.87c-0.14-.14-0.27-0.29-0.41-0.43a9.08,9.08,0,0,1,.85-13.22l0.25-.2a9.11,9.11,0,0,1,1-.67c0.26-.16.53-0.31,0.8-0.44l0.55-.24a8.92,8.92,0,0,1,1.35-.42l0.33-.06a8.24,8.24,0,0,1,3.3,0l0.33,0.06a8.92,8.92,0,0,1,1.35.42l0.55,0.24c0.28,0.13.54,0.28,0.8,0.44a9.11,9.11,0,0,1,1,.67l0.25,0.2A9.06,9.06,0,0,1,207.54,294Zm11.1-12.84a19.86,19.86,0,0,0-36.92,0,85.7,85.7,0,0,1,0-167.38,19.86,19.86,0,0,0,36.92,0A85.7,85.7,0,0,1,218.63,281.19Z\"\n            />\n        </svg>\n        <svg routerLink=\"Home\" data-name=\"bullhorn-text\" version=\"1.1\"\n            xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n            xmlns:a=\"http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/\"\n            x=\"0px\" y=\"0px\" width=\"240.2px\" height=\"48.8px\" viewBox=\"0 0 240.2 48.8\"\n            style=\"enable-background:new 0 0 240.2 48.8;\" xml:space=\"preserve\">\n            <style type=\"text/css\">\n                .st0 {\n                    fill: #FFFFFF;\n                }\n            </style>\n            <defs></defs>\n            <g>\n                <path class=\"st0\" d=\"M0,1.5c0-0.6,0.5-1.1,1.1-1.1h20c5.4,0,9.5,1.4,12.3,4.2c2.1,2.1,3.2,4.7,3.2,7.8v0.1c0,1.4-0.2,2.6-0.6,3.8\n                c-0.4,1.1-0.9,2.1-1.5,2.9c-0.6,0.8-1.3,1.6-2.1,2.2c-0.2,0.2-0.4,0.3-0.7,0.5c-0.7,0.5-0.6,1.6,0.1,1.9c1.9,0.9,3.4,1.9,4.7,3.2\n                c1.7,1.7,2.6,4.2,2.6,7.4v0.1c0,2.1-0.4,4-1.2,5.6c-0.8,1.6-2,3-3.5,4c-1.5,1.1-3.4,1.9-5.5,2.5c-2.1,0.6-4.5,0.8-7.2,0.8H1.1\n                C0.5,47.5,0,47,0,46.4V1.5z M19.4,20.3c2.7,0,4.8-0.5,6.5-1.6c1.6-1,2.4-2.6,2.4-4.8v-0.1c0-1.9-0.7-3.3-2.1-4.4\n                c-1.4-1-3.5-1.6-6.2-1.6H9.3c-0.6,0-1.1,0.5-1.1,1.1v10.2c0,0.6,0.5,1.1,1.1,1.1H19.4z M21.8,40.1c2.8,0,5-0.5,6.7-1.6\n                c1.6-1.1,2.4-2.7,2.4-4.8v-0.1c0-2-0.8-3.6-2.4-4.6c-1.6-1.1-4-1.6-7.3-1.6h-12c-0.6,0-1.1,0.5-1.1,1.1V39c0,0.6,0.5,1.1,1.1,1.1\n                H21.8z\" />\n                <path class=\"st0\" d=\"M81.3,0h5.9c0.7,0,1.3,0.6,1.3,1.3v45c0,0.7-0.6,1.3-1.3,1.3h-5.9c-0.7,0-1.3-0.6-1.3-1.3v-45\n                C80.1,0.6,80.6,0,81.3,0z\" />\n                <path class=\"st0\" d=\"M96,0h5.9c0.7,0,1.3,0.6,1.3,1.3v45c0,0.7-0.6,1.3-1.3,1.3H96c-0.7,0-1.3-0.6-1.3-1.3v-45\n                C94.8,0.6,95.3,0,96,0z\" />\n                <path class=\"st0\" d=\"M109.5,0l4,0c2.3,0,4.2,1.9,4.2,4.2v13.3c0.9-0.9,2.1-1.9,3.7-2.8c1.6-0.9,3.7-1.4,6.3-1.4c2,0,3.9,0.3,5.5,1\n                c1.6,0.7,3,1.6,4,2.8c1.1,1.2,1.9,2.7,2.5,4.4c0.6,1.7,0.9,3.6,0.9,5.6v19.1c0,0.6-0.5,1.2-1.2,1.2h-6.1c-0.6,0-1.2-0.5-1.2-1.2\n                V27.3c0-2.1-0.6-3.8-1.7-4.9c-1.2-1.2-2.7-1.7-4.5-1.7c-1.1,0-2.2,0.2-3.2,0.7c-1,0.5-1.9,1.1-2.6,1.9c-0.7,0.8-1.3,1.7-1.7,2.8\n                c-0.4,1.1-0.6,2.2-0.6,3.5v16.9c0,0.6-0.5,1.2-1.2,1.2h-6.1c-0.6,0-1.2-0.5-1.2-1.2V5.8V0z\"\n                />\n                <path class=\"st0\" d=\"M210.5,14.1h5.3c0.7,0,1.4,0.6,1.4,1.3l0.1,2.4c0.4-0.5,0.9-1,1.5-1.5c0.6-0.5,1.3-1,2.1-1.5\n                c0.8-0.5,1.8-0.8,2.8-1.1c1-0.3,2.2-0.4,3.6-0.4c4.2,0,7.4,1.2,9.5,3.7c2.2,2.5,3.3,5.8,3.3,10.1V46c0,0.8-0.7,1.5-1.5,1.5h-5.4\n                c-0.8,0-1.5-0.7-1.5-1.5V27.3c0-2.1-0.6-3.8-1.7-4.9c-1.2-1.2-2.7-1.7-4.5-1.7c-1.1,0-2.2,0.2-3.2,0.7c-1,0.5-1.9,1.1-2.6,1.9\n                c-0.7,0.8-1.3,1.7-1.7,2.8c-0.4,1.1-0.6,2.2-0.6,3.5V46c0,0.8-0.7,1.5-1.5,1.5h-5.4c-0.8,0-1.5-0.7-1.5-1.5V15.5\n                C209.1,14.7,209.7,14.1,210.5,14.1z\" />\n                <g>\n                    <path class=\"st0\" d=\"M184.5,14h5.3c0.8,0,1.4,0.6,1.4,1.4l0.1,2.8c0.4-0.5,0.9-1,1.5-1.6c0.6-0.6,1.3-1.1,2.1-1.6\n                    c0.8-0.5,1.7-0.9,2.8-1.2c1.1-0.3,2.3-0.5,3.7-0.5c0.8,0,1.5,0,2.2,0.1c0.3,0,0.5,0.1,0.8,0.2c0.6,0.2,1,0.8,0.9,1.4l-1.2,5.5\n                    c-0.1,0.7-0.8,1.1-1.5,0.9c-0.2,0-0.4-0.1-0.6-0.1c-0.6-0.1-1.3-0.1-2.1-0.1c-1.1,0-2.2,0.2-3.3,0.6c-1,0.4-1.9,0.9-2.7,1.6\n                    c-0.8,0.7-1.4,1.6-1.8,2.6c-0.5,1-0.7,2.1-0.7,3.3V46c0,0.8-0.6,1.4-1.4,1.4h-5.6c-0.8,0-1.4-0.6-1.4-1.4V15.4\n                    C183.1,14.6,183.7,14,184.5,14z\" />\n                </g>\n                <path id=\"u_1_\" class=\"st0\" d=\"M67.4,14.6c-0.7,0-1.3,0.6-1.3,1.3v16.2c0,4.4-3.2,7.4-7,7.4c-0.7,0-1.2,0-1.5,0c-3.9,0-7-3-7-7.4\n                V15.9c0-0.7-0.6-1.3-1.3-1.3H44c-0.7,0-1.3,0.6-1.3,1.3v18c0,7.8,7.2,13.3,14.7,13.3v0h0.1c0,0,0.1,0,0.1,0l0,0h1.4l0,0\n                c0,0,0.1,0,0.1,0h0.2v0c7.5-0.1,14.6-5.5,14.6-13.3v-18c0-0.7-0.6-1.3-1.3-1.3H67.4z\"\n                />\n                <g>\n                    <g>\n                        <g>\n                            <path class=\"st0\" d=\"M144,30.9c0-2.4,0.4-4.7,1.3-6.9c0.9-2.2,2.1-4,3.7-5.7c1.6-1.6,3.5-2.9,5.7-3.8c2.2-0.9,4.6-1.4,7.3-1.4\n                            c2.7,0,5.1,0.5,7.3,1.4c2.2,0.9,4.1,2.2,5.7,3.8c1.6,1.6,2.8,3.5,3.7,5.7c0.9,2.2,1.3,4.4,1.3,6.9s-0.4,4.7-1.3,6.9\n                            c-0.9,2.2-2.1,4.1-3.7,5.7c-1.6,1.6-3.5,2.9-5.7,3.9c-2.2,0.9-4.6,1.4-7.3,1.4c-2.7,0-5.1-0.5-7.3-1.4c-2.2-0.9-4.1-2.2-5.7-3.9\n                            c-1.6-1.6-2.8-3.5-3.7-5.7C144.4,35.6,144,33.3,144,30.9z M161.9,41.5c1.6,0,3-0.3,4.2-1c1.2-0.6,2.2-1.5,3-2.5\n                            c0.8-1,1.4-2.2,1.7-3.4c0.4-1.2,0.6-2.5,0.6-3.7c0-1.2-0.2-2.4-0.6-3.7c-0.4-1.3-1-2.4-1.7-3.4c-0.8-1-1.8-1.9-3-2.5\n                            c-1.2-0.6-2.6-1-4.2-1c-1.6,0-3,0.3-4.2,1c-1.2,0.6-2.2,1.5-3,2.5c-0.8,1-1.4,2.2-1.7,3.4c-0.4,1.3-0.6,2.5-0.6,3.7\n                            c0,1.2,0.2,2.5,0.6,3.7c0.4,1.2,1,2.4,1.7,3.4c0.8,1,1.8,1.9,3,2.5C158.9,41.2,160.3,41.5,161.9,41.5z\"\n                            />\n                        </g>\n                    </g>\n                </g>\n            </g>\n        </svg>\n\n        <h5 routerLink=\"Home\">NOVO Design System</h5>\n        <span class=\"version\">v. {{version}}</span>\n        <a href=\"https://github.com/bullhorn/novo-elements\" target=\"_blank\"\n           class=\"fork-me\">Fork Me On Github</a>\n    </span>\n    <ul class=\"menu-list\">\n        <li class=\"menu-item\" routerLinkActive=\"current\" [routerLinkActiveOptions]=\"{exact: true}\">\n            <a routerLink=\"/home\" class=\"menu-link\">Introduction</a>\n        </li>\n\n        <li class=\"menu-section-header\">\n            <span class=\"menu-item-header\">Design</span>\n        </li>\n        <li class=\"menu-item\" *ngFor=\"let route of designRoutes\" routerLinkActive=\"current\" [routerLinkActiveOptions]=\"{exact: true}\">\n            <a [routerLink]=\"route.path\" class=\"menu-link\">{{route.title}}</a>\n        </li>\n        <li class=\"menu-section-header\">\n            <span class=\"menu-item-header\">Components</span>\n        </li>\n        <li class=\"menu-item\" *ngFor=\"let route of componentRoutes\" routerLinkActive=\"current\" [routerLinkActiveOptions]=\"{exact: true}\">\n            <a [routerLink]=\"route.path\" class=\"menu-link\">{{route.title}}</a>\n        </li>\n        <li class=\"menu-section-header\">\n            <span class=\"menu-item-header\">Utils</span>\n        </li>\n        <li class=\"menu-item\" *ngFor=\"let route of utilRoutes\" routerLinkActive=\"current\" [routerLinkActiveOptions]=\"{exact: true}\">\n            <a [routerLink]=\"route.path\" class=\"menu-link\">{{route.title}}</a>\n        </li>\n        <li class=\"menu-line\"></li>\n    </ul>\n</nav>\n<main class=\"main-content\" [ngClass]=\"{open: menuOpen}\">\n    <nav class=\"responsive-nav\">\n        <button name=\"open-menu\" (click)=\"toggleMenu()\">\n            <span>&#9776;</span>\n        </button>\n        <svg data-name=\"bullhorn-text\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"\n            xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:a=\"http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/\"\n            x=\"0px\" y=\"0px\" width=\"240.2px\" height=\"48.8px\" viewBox=\"0 0 240.2 48.8\"\n            style=\"enable-background:new 0 0 240.2 48.8;\" xml:space=\"preserve\">\n            <g>\n                <path class=\"st0\" d=\"M0,1.5c0-0.6,0.5-1.1,1.1-1.1h20c5.4,0,9.5,1.4,12.3,4.2c2.1,2.1,3.2,4.7,3.2,7.8v0.1c0,1.4-0.2,2.6-0.6,3.8\n            c-0.4,1.1-0.9,2.1-1.5,2.9c-0.6,0.8-1.3,1.6-2.1,2.2c-0.2,0.2-0.4,0.3-0.7,0.5c-0.7,0.5-0.6,1.6,0.1,1.9c1.9,0.9,3.4,1.9,4.7,3.2\n            c1.7,1.7,2.6,4.2,2.6,7.4v0.1c0,2.1-0.4,4-1.2,5.6c-0.8,1.6-2,3-3.5,4c-1.5,1.1-3.4,1.9-5.5,2.5c-2.1,0.6-4.5,0.8-7.2,0.8H1.1\n            C0.5,47.5,0,47,0,46.4V1.5z M19.4,20.3c2.7,0,4.8-0.5,6.5-1.6c1.6-1,2.4-2.6,2.4-4.8v-0.1c0-1.9-0.7-3.3-2.1-4.4\n            c-1.4-1-3.5-1.6-6.2-1.6H9.3c-0.6,0-1.1,0.5-1.1,1.1v10.2c0,0.6,0.5,1.1,1.1,1.1H19.4z M21.8,40.1c2.8,0,5-0.5,6.7-1.6\n            c1.6-1.1,2.4-2.7,2.4-4.8v-0.1c0-2-0.8-3.6-2.4-4.6c-1.6-1.1-4-1.6-7.3-1.6h-12c-0.6,0-1.1,0.5-1.1,1.1V39c0,0.6,0.5,1.1,1.1,1.1\n            H21.8z\" />\n                <path class=\"st0\" d=\"M81.3,0h5.9c0.7,0,1.3,0.6,1.3,1.3v45c0,0.7-0.6,1.3-1.3,1.3h-5.9c-0.7,0-1.3-0.6-1.3-1.3v-45\n            C80.1,0.6,80.6,0,81.3,0z\" />\n                <path class=\"st0\" d=\"M96,0h5.9c0.7,0,1.3,0.6,1.3,1.3v45c0,0.7-0.6,1.3-1.3,1.3H96c-0.7,0-1.3-0.6-1.3-1.3v-45\n            C94.8,0.6,95.3,0,96,0z\" />\n                <path class=\"st0\" d=\"M109.5,0l4,0c2.3,0,4.2,1.9,4.2,4.2v13.3c0.9-0.9,2.1-1.9,3.7-2.8c1.6-0.9,3.7-1.4,6.3-1.4c2,0,3.9,0.3,5.5,1\n            c1.6,0.7,3,1.6,4,2.8c1.1,1.2,1.9,2.7,2.5,4.4c0.6,1.7,0.9,3.6,0.9,5.6v19.1c0,0.6-0.5,1.2-1.2,1.2h-6.1c-0.6,0-1.2-0.5-1.2-1.2\n            V27.3c0-2.1-0.6-3.8-1.7-4.9c-1.2-1.2-2.7-1.7-4.5-1.7c-1.1,0-2.2,0.2-3.2,0.7c-1,0.5-1.9,1.1-2.6,1.9c-0.7,0.8-1.3,1.7-1.7,2.8\n            c-0.4,1.1-0.6,2.2-0.6,3.5v16.9c0,0.6-0.5,1.2-1.2,1.2h-6.1c-0.6,0-1.2-0.5-1.2-1.2V5.8V0z\"\n                />\n                <path class=\"st0\" d=\"M210.5,14.1h5.3c0.7,0,1.4,0.6,1.4,1.3l0.1,2.4c0.4-0.5,0.9-1,1.5-1.5c0.6-0.5,1.3-1,2.1-1.5\n            c0.8-0.5,1.8-0.8,2.8-1.1c1-0.3,2.2-0.4,3.6-0.4c4.2,0,7.4,1.2,9.5,3.7c2.2,2.5,3.3,5.8,3.3,10.1V46c0,0.8-0.7,1.5-1.5,1.5h-5.4\n            c-0.8,0-1.5-0.7-1.5-1.5V27.3c0-2.1-0.6-3.8-1.7-4.9c-1.2-1.2-2.7-1.7-4.5-1.7c-1.1,0-2.2,0.2-3.2,0.7c-1,0.5-1.9,1.1-2.6,1.9\n            c-0.7,0.8-1.3,1.7-1.7,2.8c-0.4,1.1-0.6,2.2-0.6,3.5V46c0,0.8-0.7,1.5-1.5,1.5h-5.4c-0.8,0-1.5-0.7-1.5-1.5V15.5\n            C209.1,14.7,209.7,14.1,210.5,14.1z\" />\n                <g>\n                    <path class=\"st0\" d=\"M184.5,14h5.3c0.8,0,1.4,0.6,1.4,1.4l0.1,2.8c0.4-0.5,0.9-1,1.5-1.6c0.6-0.6,1.3-1.1,2.1-1.6\n                c0.8-0.5,1.7-0.9,2.8-1.2c1.1-0.3,2.3-0.5,3.7-0.5c0.8,0,1.5,0,2.2,0.1c0.3,0,0.5,0.1,0.8,0.2c0.6,0.2,1,0.8,0.9,1.4l-1.2,5.5\n                c-0.1,0.7-0.8,1.1-1.5,0.9c-0.2,0-0.4-0.1-0.6-0.1c-0.6-0.1-1.3-0.1-2.1-0.1c-1.1,0-2.2,0.2-3.3,0.6c-1,0.4-1.9,0.9-2.7,1.6\n                c-0.8,0.7-1.4,1.6-1.8,2.6c-0.5,1-0.7,2.1-0.7,3.3V46c0,0.8-0.6,1.4-1.4,1.4h-5.6c-0.8,0-1.4-0.6-1.4-1.4V15.4\n                C183.1,14.6,183.7,14,184.5,14z\" />\n                </g>\n                <path id=\"u_1_\" class=\"st0\" d=\"M67.4,14.6c-0.7,0-1.3,0.6-1.3,1.3v16.2c0,4.4-3.2,7.4-7,7.4c-0.7,0-1.2,0-1.5,0c-3.9,0-7-3-7-7.4\n            V15.9c0-0.7-0.6-1.3-1.3-1.3H44c-0.7,0-1.3,0.6-1.3,1.3v18c0,7.8,7.2,13.3,14.7,13.3v0h0.1c0,0,0.1,0,0.1,0l0,0h1.4l0,0\n            c0,0,0.1,0,0.1,0h0.2v0c7.5-0.1,14.6-5.5,14.6-13.3v-18c0-0.7-0.6-1.3-1.3-1.3H67.4z\"\n                />\n                <g>\n                    <g>\n                        <g>\n                            <path class=\"st0\" d=\"M144,30.9c0-2.4,0.4-4.7,1.3-6.9c0.9-2.2,2.1-4,3.7-5.7c1.6-1.6,3.5-2.9,5.7-3.8c2.2-0.9,4.6-1.4,7.3-1.4\n                        c2.7,0,5.1,0.5,7.3,1.4c2.2,0.9,4.1,2.2,5.7,3.8c1.6,1.6,2.8,3.5,3.7,5.7c0.9,2.2,1.3,4.4,1.3,6.9s-0.4,4.7-1.3,6.9\n                        c-0.9,2.2-2.1,4.1-3.7,5.7c-1.6,1.6-3.5,2.9-5.7,3.9c-2.2,0.9-4.6,1.4-7.3,1.4c-2.7,0-5.1-0.5-7.3-1.4c-2.2-0.9-4.1-2.2-5.7-3.9\n                        c-1.6-1.6-2.8-3.5-3.7-5.7C144.4,35.6,144,33.3,144,30.9z M161.9,41.5c1.6,0,3-0.3,4.2-1c1.2-0.6,2.2-1.5,3-2.5\n                        c0.8-1,1.4-2.2,1.7-3.4c0.4-1.2,0.6-2.5,0.6-3.7c0-1.2-0.2-2.4-0.6-3.7c-0.4-1.3-1-2.4-1.7-3.4c-0.8-1-1.8-1.9-3-2.5\n                        c-1.2-0.6-2.6-1-4.2-1c-1.6,0-3,0.3-4.2,1c-1.2,0.6-2.2,1.5-3,2.5c-0.8,1-1.4,2.2-1.7,3.4c-0.4,1.3-0.6,2.5-0.6,3.7\n                        c0,1.2,0.2,2.5,0.6,3.7c0.4,1.2,1,2.4,1.7,3.4c0.8,1,1.8,1.9,3,2.5C158.9,41.2,160.3,41.5,161.9,41.5z\"\n                            />\n                        </g>\n                    </g>\n                </g>\n            </g>\n        </svg>\n        <strong>Design System</strong>\n    </nav>\n    <router-outlet></router-outlet>\n</main>\n"
@@ -34,7 +34,7 @@ webpackJsonp([3],{
 	
 	var DemoComponent = exports.DemoComponent = (_dec = (0, _core.Component)({
 	    selector: 'demo-app',
-	    template: __webpack_require__(821)
+	    template: __webpack_require__(823)
 	}), _dec(_class = function () {
 	    function DemoComponent(router, viewContainerRef, toaster, modalService) {
 	        var _this = this;
@@ -47,7 +47,7 @@ webpackJsonp([3],{
 	        modalService.parentViewContainer = viewContainerRef;
 	
 	        this.menuOpen = false;
-	        this.version = ("1.0.25");
+	        this.version = ("1.0.26");
 	
 	        this.designRoutes = router.config.filter(function (r) {
 	            return r.section === 'design';
@@ -125,7 +125,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 819:
+/***/ 821:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
@@ -256,7 +256,7 @@ webpackJsonp([3],{
 	
 	var _platformBrowser = __webpack_require__(97);
 	
-	var _forms = __webpack_require__(11);
+	var _forms = __webpack_require__(10);
 	
 	var _App = __webpack_require__(727);
 	
@@ -274,7 +274,7 @@ webpackJsonp([3],{
 	
 	var _PipesDemo = __webpack_require__(443);
 	
-	__webpack_require__(819);
+	__webpack_require__(821);
 	
 	var _novoElements = __webpack_require__(35);
 	
@@ -353,7 +353,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 822:
+/***/ 824:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"design container\" [ngClass]=\"color\">\n    <div>\n        <h1 class=\"title\">Color</h1>\n        <h2 class=\"sub-title\">Efficient and expressive</h2>\n        <p class=\"description\">Our colors are bold, fresh, and approachable. They are expressive and delightful, but selected with usability and accessibility in mind.</p>\n    </div>\n    <div class=\"background-boxes\">\n        <div class=\"bb-lead\" (mouseover)=\"changeColor('lead')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-contact\" (mouseover)=\"changeColor('contact')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-company\" (mouseover)=\"changeColor('company')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-candidate\" (mouseover)=\"changeColor('candidate')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-opportunity\" (mouseover)=\"changeColor('opportunity')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-job\" (mouseover)=\"changeColor('job')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-placement\" (mouseover)=\"changeColor('placement')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-grapefruit\" (mouseover)=\"changeColor('grapefruit')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-bittersweet\" (mouseover)=\"changeColor('bittersweet')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-sunflower\" (mouseover)=\"changeColor('sunflower')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-grass\" (mouseover)=\"changeColor('grass')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-mint\" (mouseover)=\"changeColor('mint')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-aqua\" (mouseover)=\"changeColor('aqua')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-ocean\" (mouseover)=\"changeColor('ocean')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-carnation\" (mouseover)=\"changeColor('carnation')\" (mouseout)=\"changeColor('background')\"></div>\n        <div class=\"bb-lavender\" (mouseover)=\"changeColor('lavender')\" (mouseout)=\"changeColor('background')\"></div>\n    </div>\n</header>\n<section class=\"design container\">\n    <h2>Primary Colors</h2>\n    <p>These are the base colors of the application.</p>\n\n    <article class=\"color-blocks primary-colors\">\n        <div *ngFor=\"let color of primaryColors\" class=\"block {{color.name}}-cb\">\n            <div class=\"color-square\" (click)=\"copyLink(color)\"></div>\n            <h3 class=\"color-text\" (click)=\"copyLink(color)\"><span>#</span>{{color.hex}}</h3>\n            <h6>{{color.name}}</h6>\n            <span class=\"vars\" *ngFor=\"let variable of color.variables\">${{variable}}</span>\n        </div>\n    </article>\n\n    <h2>Entity Colors</h2>\n    <p>This bold palette uses carefully balanced colors to distinguish entities from one another.</p>\n\n    <article class=\"color-blocks entity-colors\">\n        <div *ngFor=\"let color of entityColors\" class=\"block {{color.name}}-cb\">\n            <div class=\"color-square\" (click)=\"copyLink(color)\"></div>\n            <h3 class=\"color-text\" (click)=\"copyLink(color)\"><span>#</span>{{color.hex}}</h3>\n            <h6>{{color.name}}</h6>\n            <span class=\"vars\" *ngFor=\"let variable of color.variables\">${{variable}}</span>\n        </div>\n    </article>\n\n    <h2>Analytics Colors</h2>\n    <p>This palette features vibrant, bold colors for use in data visualization.</p>\n\n    <article class=\"color-blocks analytics-colors\">\n        <div *ngFor=\"let color of analyticsColors\" class=\"block {{color.name}}-cb\">\n            <div class=\"color-square\" (click)=\"copyLink(color)\"></div>\n            <h3 class=\"color-text\" (click)=\"copyLink(color)\"><span>#</span>{{color.hex}}</h3>\n            <h6>{{color.name}}</h6>\n            <span class=\"vars\" *ngFor=\"let variable of color.variables\">${{variable}}</span>\n        </div>\n    </article>\n</section>\n"
@@ -385,7 +385,7 @@ webpackJsonp([3],{
 	
 	var ColorComponent = exports.ColorComponent = (_dec = (0, _core.Component)({
 	    selector: 'color',
-	    template: __webpack_require__(822)
+	    template: __webpack_require__(824)
 	}), _dec(_class = function () {
 	    function ColorComponent(toaster) {
 	        _classCallCheck(this, ColorComponent);
@@ -529,7 +529,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 823:
+/***/ 825:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"design container\">\n    <div>\n        <h1 class=\"title\">Composition</h1>\n        <h2 class=\"sub-title\">A universal language</h2>\n        <p class=\"description\">\n            Comprehensive design principles and language helps maintain\n            usability and a sense of harmony across a large family\n            of products. Consistency and common elements greatly\n            reduce the user effort requred to learn a new interface.\n        </p>\n    </div>\n    <img src=\"assets/images/CompositionPageIcon.svg\" alt=\"\"/>\n</header>\n\n<section class=\"design container\">\n    <h2>Mainframe</h2>\n    <p>\n        The Mainframe refers to the permanently fixed portions of\n        the application that never change. It contains the primary\n        navigation and core functions.\n    </p>\n\n    <aside class=\"design-principle\" style=\"margin-top: 60px;\">\n        <h6>Design Principles:\n            <span>Hierarchy &amp; Unity</span>\n        </h6>\n        <p>\n            Unity implies relation through proximity, size, and color.\n            Making elements clearly distinct or unified helps\n            create a strong visual hierarchy. This is important\n            because it helps to easily differentiate the level\n            of importance between different elements, and controls\n            a user's cognitive flow.\n        </p>\n    </aside>\n\n    <article>\n        <h5>Top Frame</h5>\n        <p>\n            The top frame contains key functions (Find, Add) and navigation\n            to the Resource Center and to User Profile options.\n        </p>\n        <img src=\"assets/images/LayoutMainframeTopFrame.svg\" alt=\"mainframe\"/>\n    </article>\n\n    <article>\n        <h5>Bowling Alley</h5>\n        <p>\n            The bowling alley is where all active items are displayed, allowing\n            users to easily shift between them.\n        </p>\n        <img class=\"bowling-alley\" src=\"assets/images/LayoutMainframeBowlingAlley.svg\" alt=\"bowling alley\"/>\n    </article>\n\n    <article>\n        <h5>Menu</h5>\n        <p>\n            The menu functions as the primary navigation for the application.\n            It contains links to every list, the dashboard, admin\n            functions, tools, and third-party applications. The\n            items on the menu can be toggled, grouped, and organized\n            however the user wishes.\n        </p>\n        <img class=\"menu\" src=\"assets/images/LayoutMainframeMenu.svg\" alt=\"menu\"/>\n    </article>\n\n    <h2>Headers</h2>\n    <p>\n        Headers hold key information and controls for a page. They serve\n        as a wayfinding marker to help the user understand context\n        and easily access important actions.\n    </p>\n\n    <article>\n        <h5>Overviews &amp; Slideouts</h5>\n        <p>\n            Overview and Slideout headers are dominant features which focus\n            the user's attention to the context of a particular\n            record and contains key information on the left,\n            and actions on the right. These headers inherit the\n            color of the entity type.\n        </p>\n        <img src=\"assets/images/LayoutMainframeHeaderOverview.svg\" alt=\"overview header\"/>\n    </article>\n\n    <article>\n        <h5>List Headers</h5>\n        <p>\n            List headers contain the filter and column controls for the list\n            and the primary actions. They are fixed so that results\n            can eaily be modified and actioned regardless of\n            scrolling position.\n        </p>\n        <img src=\"assets/images/LayoutMainframeHeaderList.svg\" alt=\"list header\"/>\n    </article>\n\n    <aside class=\"design-principle\">\n        <h6>Design Principles:\n            <span>Navigation &amp; Consistency</span>\n        </h6>\n        <p>A consistent navigation structure allows users to master\n            an interface much more quickly, as they know that\n            certain functions are always in the same place. We\n            use headers to provide quick access to key functions\n            and aid findability of data in a complex system.\n        </p>\n    </aside>\n\n    <article>\n        <h5>Add &amp; Edit Pages</h5>\n        <p>\n            The headers of Add and Edit pages generally serve as a simple\n            visual element to help provide context.\n        </p>\n        <img src=\"assets/images/LayoutMainframeHeaderEditPage.svg\" alt=\"add page header\"/>\n    </article>\n\n    <h2>Cards</h2>\n    <p>\n        Essential to our design paradigm, cards are independent blocks\n        of information. They can contain text, tables, and data\n        visualizations. They offer a curated view of data. Bringing\n        the most pertinent information to the forefont, they\n        allow users to scan large amounts of data quickly.\n    </p>\n\n    <article>\n        <h5>Basic Structure</h5>\n        <p>\n            Cards have a header which contains the card title and the card\n            controls. The controls can vary depending on card\n            type, gut generally include move, refresh, configure,\n            and remove. The content area has padding by default\n            but can also run edge-to-edge. Pulse cards have a\n            special icon next to the title.\n        </p>\n        <img src=\"assets/images/LayoutMainframeCardsNPSCard.svg\" alt=\"card\"/>\n    </article>\n\n    <aside class=\"design-principle\">\n        <h6>Design Principle:\n            <span>Cards</span>\n        </h6>\n        <p>\n            The card system scales easily, both in individual size\n            and in groups. Because of this, cards are essential\n            to our design language. Cards balance and align very\n            easily, promoting findability. These handy little\n            containers also provide a contextually relevant home\n            for all content.\n        </p>\n        <div class=\"hint\">\n            <span>\n                <i class=\"bhi-idea\"></i>\n                <strong>Hint: </strong>This is a great place for third-party\n                developers to fit into the Bullhorn system.\n            </span>\n            <a class=\"link\" routerLink=\"/cards\">\n                <i class=\"bhi-link\"></i>\n                <strong>Are you a developer?</strong> Check out card\n                markup and documentation here\n            </a>\n        </div>\n    </aside>\n\n    <article>\n        <h5>Dashboard &amp; Overviews</h5>\n        <p>\n            Dashboards and Records Overviews are the primary home for our\n            cards. They offer a customizable workspace to arrange\n            and configure to most appropriately fit the user's\n            needs. Cards have a fixed height, but mildly flexible\n            width. They can also be expanded to full-screen.\n            The \"add card\" control is always located in the top\n            right, to be consistent with the placement of action\n            buttons on tables and lists.\n        </p>\n        <img class=\"dashboard\" src=\"assets/images/LayoutMainframeCardsDashboard.svg\" alt=\"dashboard cards\"/>\n    </article>\n\n    <article>\n        <h5>Slideouts and Mobile</h5>\n        <p>\n            Cards are so flexible, they also work well in a mobile setting.\n            They help users to easily scan chunks of information\n            and find what they need.\n        </p>\n        <img class=\"mobile\" src=\"assets/images/LayoutMobileCard.svg\" alt=\"mobile cards\"/>\n    </article>\n</section>\n"
@@ -555,7 +555,7 @@ webpackJsonp([3],{
 	
 	var CompositionComponent = exports.CompositionComponent = (_dec = (0, _core.Component)({
 	    selector: 'layout',
-	    template: __webpack_require__(823)
+	    template: __webpack_require__(825)
 	}), _dec(_class = function CompositionComponent() {
 	    _classCallCheck(this, CompositionComponent);
 	}) || _class);
@@ -563,7 +563,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 824:
+/***/ 826:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"design container\">\n    <div>\n        <h1 class=\"title\">Iconography</h1>\n        <h2 class=\"sub-title\">Certified Pixel-Perfect</h2>\n\n        <p class=\"description\">\n            Icons are used to represent an action or concept through the most simplistic imagery possible. Icons give additional context to written material, allowing the user to quickly comprehend any given concept. The icons are designed on a highly specific\n            grid to ensure maximum clarity even at a small size. Their design is friendly, human, and bold.\n        </p>\n\n        <p>\n            <a href=\"https://cdn.rawgit.com/bullhorn/bullhorn-icons/development/fonts/Bullhorn-Glyphicons.html\">Bullhorn's Icon Set</a>\n        </p>\n    </div>\n    <img src=\"assets/images/IconographyPageIcon.svg\" alt=\"\"/>\n</header>\n<section class=\"design container\">\n    <h2>Icons with Typography</h2>\n    <p>\n        An icon will always have slightly larger dimensions than text when they are paired together. This ensures that the icon is visually the same size as the text and that it scales proportionally.\n    </p>\n\n    <article>\n        <h5>Base sizing</h5>\n        <p>Icons placed next to typography should alays follow this convention.</p>\n\n        <div class=\"base-sizing\">\n            <div class=\"sizing-specs\">\n                <span>Bullhorn Glyphicons</span>\n                <span><strong>Size: </strong>1.29em</span>\n                <span><strong>Padding: </strong>.25em</span>\n                <span><strong>Border Radius: </strong>.625em</span>\n            </div>\n            <div class=\"sizing-demo\">\n                <h1><i class=\"bhi-company\"></i>Company Name</h1>\n            </div>\n        </div>\n    </article>\n\n    <article class=\"entities\">\n        <h5>Padding</h5>\n        <p>\n            Icons should have sufficient padding when followed by text.\n        </p>\n\n        <div class=\"padding\">\n            <div>\n                <h4><i class=\"bhi-circle\"></i>Alice Hughes</h4>\n                <h6><i class=\"bhi-location\"></i>Boston, MA</h6>\n                <span class=\"not-accepted\"><i class=\"bhi-close-o\"></i>I feel squished</span>\n            </div>\n            <div>\n                <h4><i class=\"bhi-circle\"></i>Alice Hughes</h4>\n                <h6><i class=\"bhi-location\"></i>Boston, MA</h6>\n                <span class=\"accepted\"><i class=\"bhi-check\"></i>Much better</span>\n            </div>\n        </div>\n    </article>\n\n    <article>\n        <h2>Entity Icons</h2>\n        <h5>Standard Entity Icons</h5>\n        <p>Used with corresponding entity color.</p>\n\n        <div class=\"example standard-icon-row\">\n            <div>\n                <i theme=\"entity\" class=\"bhi-lead lead\"></i>\n                <p>Lead</p>\n            </div>\n            <div>\n                <i theme=\"entity\" class=\"bhi-person contact\"></i>\n                <p>Contact</p>\n            </div>\n            <div>\n                <i theme=\"entity\" class=\"bhi-company company\"></i>\n                <p>Company</p>\n            </div>\n            <div>\n                <i theme=\"entity\" class=\"bhi-candidate candidate\"></i>\n                <p>Candidate</p>\n            </div>\n            <div>\n                <i theme=\"entity\" class=\"bhi-opportunity opportunity\"></i>\n                <p>Opportunity</p>\n            </div>\n            <div>\n                <i theme=\"entity\" class=\"bhi-job job\"></i>\n                <p>Job</p>\n            </div>\n            <div>\n                <i theme=\"entity\" class=\"bhi-star placement\"></i>\n                <p>Placement</p>\n            </div>\n        </div>\n        <pre><code>\n            &lt;i theme=\"entity\" class=\"bhi-lead lead\">&lt;/i&gt;\n            &lt;h6&gt;Lead&lt;/h6&gt;\n            &lt;i theme=\"entity\" class=\"bhi-person contact\"&gt;&lt;/i&gt;\n            &lt;h6&gt;Contact&lt;/h6&gt;\n            &lt;i theme=\"entity\" class=\"bhi-company company\"&gt;&lt;/i&gt;\n            &lt;h6&gt;Company&lt;/h6&gt;\n            &lt;i theme=\"entity\" class=\"bhi-candidate candidate\"&gt;&lt;/i&gt;\n            &lt;h6&gt;Candidate&lt;/h6&gt;\n            &lt;i theme=\"entity\" class=\"bhi-opportunity opportunity\"&gt;&lt;/i&gt;\n            &lt;h6&gt;Opportunity&lt;/h6&gt;\n            &lt;i theme=\"entity\" class=\"bhi-job job\"&gt;&lt;/i&gt;\n            &lt;h6&gt;Job&lt;/h6&gt;\n            &lt;i theme=\"entity\" class=\"bhi-star placement\"&gt;&lt;/i&gt;\n            &lt;h6&gt;Placement&lt;/h6&gt;\n        </code>\n        </pre>\n    </article>\n\n    <h2>Contained Icons</h2>\n    <h5>Scaling</h5>\n    <p>Make sure to scale the corner radius appropriately when enlarging or decreasing the size of the icon.</p>\n\n    <article class=\"contained-scaling\">\n        <figure>\n            <img src=\"assets/images/IconographyScalingDont.svg\" alt=\"\"/>\n            <figcaption class=\"not-accepted\"><i class=\"bhi-close-o\"></i>That doesn't look like a rectangle</figcaption>\n        </figure>\n        <figure>\n            <img src=\"assets/images/IconographyScalingDo.svg\" alt=\"\"/>\n            <figcaption class=\"accepted\"><i class=\"bhi-check\"></i>Always maintain the proportions</figcaption>\n        </figure>\n    </article>\n\n    <h5>Padding</h5>\n    <p>To preserve readability, icons should have sufficient padding from the edges of their containers. Additionally, the icons should be visually centered in their containers.</p>\n\n    <article class=\"contained-padding\">\n        <figure>\n            <img src=\"assets/images/IconographyPaddingDont.svg\" alt=\"\"/>\n            <figcaption class=\"not-accepted\"><i class=\"bhi-close-o\"></i>It's getting crowded in here</figcaption>\n        </figure>\n        <figure>\n            <img src=\"assets/images/IconographyPaddingDo.svg\" alt=\"\"/>\n            <figcaption class=\"accepted\"><i class=\"bhi-check\"></i>It's good to have some breathing room</figcaption>\n        </figure>\n    </article>\n\n    <article>\n        <h5>Examples</h5>\n\n        <div class=\"example contained-icon-row\">\n            <h1><i theme=\"contained\" class=\"bhi-lead lead\"></i>Heading One</h1>\n            <h2><i theme=\"contained\" class=\"bhi-person contact\"></i>Heading Two</h2>\n            <h3><i theme=\"contained\" class=\"bhi-company company\"></i>Heading Three</h3>\n            <h4><i theme=\"contained\" class=\"bhi-candidate candidate\"></i>Heading Four</h4>\n            <h5><i theme=\"contained\" class=\"bhi-opportunity opportunity\"></i>Heading Five</h5>\n            <h6><i theme=\"contained\" class=\"bhi-job job\"></i>Heading Six</h6>\n            <!-- <p><i theme=\"contained\" class=\"bhi-star placement\"></i>Body</p> -->\n        </div>\n        <pre><code class=\"hljs xml\">\n            &lt;h1&gt;&lt;i theme=\"contained\" class=\"bhi-lead lead\"&gt;&lt;/i&gt;Heading One&lt;/h1&gt;\n            &lt;h2&gt;&lt;i theme=\"contained\" class=\"bhi-person contact\"&gt;&lt;/i&gt;Heading Two&lt;/h2&gt;\n            &lt;h3&gt;&lt;i theme=\"contained\" class=\"bhi-company company\"&gt;&lt;/i&gt;Heading Three&lt;/h3&gt;\n            &lt;h4&gt;&lt;i theme=\"contained\" class=\"bhi-candidate candidate\"&gt;&lt;/i&gt;Heading Four&lt;/h4&gt;\n            &lt;h5&gt;&lt;i theme=\"contained\" class=\"bhi-opportunity opportunity\"&gt;&lt;/i&gt;Heading Five&lt;/h5&gt;\n            &lt;h6&gt;&lt;i theme=\"contained\" class=\"bhi-job job\"&gt;&lt;/i&gt;Heading Six&lt;/h6&gt;\n            <!-- &lt;p&gt;&lt;i theme=\"contained\" class=\"bhi-star placement\"&gt;&lt;/i&gt;Body&lt;/p&gt; -->\n        </code>\n        </pre>\n    </article>\n</section>\n"
@@ -589,7 +589,7 @@ webpackJsonp([3],{
 	
 	var IconographyComponent = exports.IconographyComponent = (_dec = (0, _core.Component)({
 	    selector: 'iconography',
-	    template: __webpack_require__(824)
+	    template: __webpack_require__(826)
 	}), _dec(_class = function IconographyComponent() {
 	    _classCallCheck(this, IconographyComponent);
 	}) || _class);
@@ -597,7 +597,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 825:
+/***/ 827:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"design container\">\n    <div>\n        <h1 class=\"title\">Typography</h1>\n        <h2 class=\"sub-title\">Roboto, not robotic.</h2>\n\n        <p class=\"description\">\n            Roboto's refined letterforms combine geometry with open, rounded features to create a structured, yet friendly typeface. It maintains a human-like quality while expressing a clean and modern aesthetic.\n        </p>\n        <a href=\"https://www.google.com/fonts/specimen/Roboto\" target=\"_blank\"><i class=\"bhi-link\"></i> Roboto Typeface on Google Fonts</a>\n    </div>\n    <img src=\"assets/images/TypographyPageIcon.svg\" alt=\"\"/>\n</header>\n\n<section class=\"design container\">\n    <aside class=\"design-principle\">\n        <h6>Design Principle: <span>Clarity</span></h6>\n        <p>Proper line length, adequate white space, and appropriate line breaks\n            are necessary to preserve readability, rhythm, and overall clarity.</p>\n    </aside>\n\n    <article class=\"line-height\">\n        <h5>Line Height</h5>\n\n        <div>\n            <p style=\"line-height: 1em;\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.\n            </p>\n\n            <p class=\"not-accepted\">\n                <i class=\"bhi-close-o\"></i>These lines are too close for comfort\n            </p>\n        </div>\n        <div>\n            <p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.\n            </p>\n\n            <p class=\"accepted\">\n                <i class=\"bhi-check\"></i>Thumbs up for great readability\n            </p>\n        </div>\n        <div>\n            <p style=\"line-height: 2.8em;\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.\n            </p>\n\n            <p class=\"not-accepted\">\n                <i class=\"bhi-close-o\"></i>I'm losing focus with all this space\n            </p>\n        </div>\n    </article>\n\n    <aside class=\"design-principle\">\n        <h6>Design Principle: <span>Balance</span></h6>\n        <p>Typographic balance is critical to readability and understanding\n            information hierarchy. The weight and size of the font helps determine\n            which element on a page receives a user’s attention first.</p>\n    </aside>\n\n    <article class=\"line-length\">\n        <h5>Line Length</h5>\n\n        <div class=\"too-short\">\n            <div class=\"ruler\">\n                <hr>\n                <span>30</span>\n\n                <p class=\"not-accepted\">\n                    <i class=\"bhi-close-o\"></i>Short lines interrupt the reader's rhythm\n                </p>\n            </div>\n            <p style=\"width: 15em;\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.\n            </p>\n        </div>\n        <div class=\"just-right\">\n            <div class=\"ruler\">\n                <hr>\n                <span>55-75</span>\n\n                <p class=\"accepted\">\n                    <i class=\"bhi-check\"></i>Optimal line length for readability\n                </p>\n            </div>\n            <p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.\n            </p>\n        </div>\n        <div class=\"too-long\">\n            <div class=\"ruler\">\n                <hr>\n                <span>100</span>\n\n                <p class=\"not-accepted\">\n                    <i class=\"bhi-close-o\"></i>Difficult to jump to the next line\n                </p>\n            </div>\n            <p style=\"width: 55em; max-width: 100%;\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor.\n            </p>\n        </div>\n    </article>\n\n    <aside class=\"imp-note\">\n        <h6><i class=\"bhi-mobile\"></i>How does this work with responsive design?</h6>\n        <p>\n            Line length is always relative to its font-size. This means that if a\n            font scales up or down in sizing (relative to its device's screen size) the\n            line length will automatically scale with it. Line length is about maintaining\n            a comfortable reading flow and rhythm from line to line.\n            <br><br>\n            <strong>When implementing</strong>, native line length will always be secondary to the width of\n            the text's container. This means that if a screen's width is smaller than\n            the text's native line length, the text will wrap early.\n        </p>\n    </aside>\n\n    <h2>Styles</h2>\n    <p>There a number of general styles that are present throughout the application. To maintain consistency, these styles should be adhered to as much as possible.</p>\n\n    <div class=\"example\">\n        <div class=\"type-group\">\n            <h1>Header 1</h1>\n            <span>Roboto</span>\n            <span><strong>Size: </strong>2.5em (35px)</span>\n            <span><strong>Weight: </strong>400</span>\n            <span><strong>Margin: </strong>0</span>\n            <span><strong>Padding: </strong>0.45em 0 0.35em</span>\n        </div>\n        <div class=\"type-group\">\n            <h2>Header 2</h2>\n            <span>Roboto</span>\n            <span><strong>Size: </strong>2em (28px)</span>\n            <span><strong>Weight: </strong>500</span>\n            <span><strong>Margin: </strong>0</span>\n            <span><strong>Padding: </strong>0.75em 0 0.3em</span>\n        </div>\n        <div class=\"type-group\">\n            <h3>Header 3</h3>\n            <span>Roboto</span>\n            <span><strong>Size: </strong>1.75em (24px)</span>\n            <span><strong>Weight: </strong>300</span>\n            <span><strong>Margin: </strong>0</span>\n            <span><strong>Padding: </strong>0.6em 0 0.4em</span>\n        </div>\n        <div class=\"type-group\">\n            <h4>Header 4</h4>\n            <span>Roboto</span>\n            <span><strong>Size: </strong>1.375em (19.25px)</span>\n            <span><strong>Weight: </strong>400</span>\n            <span><strong>Margin: </strong>0</span>\n            <span><strong>Padding: </strong>0.75em 0 0.5em</span>\n        </div>\n        <div class=\"type-group\">\n            <h5>Header 5</h5>\n            <span>Roboto</span>\n            <span><strong>Size: </strong>1.125em (15.75px)</span>\n            <span><strong>Weight: </strong>700</span>\n            <span><strong>Margin: </strong>0</span>\n            <span><strong>Padding: </strong>0.75em 0 0.25em</span>\n            <span><strong>Transform: </strong>UPPERCASE</span>\n        </div>\n        <div class=\"type-group\">\n            <h6>Header 6</h6>\n            <span>Roboto</span>\n            <span><strong>Size: </strong>1.125em (15.75px)</span>\n            <span><strong>Weight: </strong>500</span>\n            <span><strong>Margin: </strong>0</span>\n            <span><strong>Padding: </strong>0.75em 0 0.25em</span>\n        </div>\n        <div class=\"type-group\">\n            <span class=\"caption\">Caption</span>\n        </div>\n    </div>\n    <pre><code>\n        &lt;h1&gt;Heading 1&lt;/h1&gt;\n        &lt;h2&gt;Heading 2&lt;/h2&gt;\n        &lt;h3&gt;Heading 3&lt;/h3&gt;\n        &lt;h4&gt;Heading 4&lt;/h4&gt;\n        &lt;h5&gt;Heading 5&lt;/h5&gt;\n        &lt;h6&gt;Heading 6&lt;/h6&gt;\n        &lt;p&gt;\n        Body\n        &lt;/p&gt;\n        &lt;hr&gt;\n        &lt;span class=\"caption\"&gt;Caption&lt;/span&gt;</code>\n    </pre>\n</section>\n"
@@ -623,7 +623,7 @@ webpackJsonp([3],{
 	
 	var TypographyComponent = exports.TypographyComponent = (_dec = (0, _core.Component)({
 	    selector: 'typography',
-	    template: __webpack_require__(825)
+	    template: __webpack_require__(827)
 	}), _dec(_class = function TypographyComponent() {
 	    _classCallCheck(this, TypographyComponent);
 	}) || _class);
@@ -962,31 +962,31 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _PrimaryButtonDemo = __webpack_require__(830);
+	var _PrimaryButtonDemo = __webpack_require__(832);
 	
 	var _PrimaryButtonDemo2 = _interopRequireDefault(_PrimaryButtonDemo);
 	
-	var _DialogueButtonDemo = __webpack_require__(826);
+	var _DialogueButtonDemo = __webpack_require__(828);
 	
 	var _DialogueButtonDemo2 = _interopRequireDefault(_DialogueButtonDemo);
 	
-	var _HeaderButtonDemo = __webpack_require__(828);
+	var _HeaderButtonDemo = __webpack_require__(830);
 	
 	var _HeaderButtonDemo2 = _interopRequireDefault(_HeaderButtonDemo);
 	
-	var _IconButtonDemo = __webpack_require__(829);
+	var _IconButtonDemo = __webpack_require__(831);
 	
 	var _IconButtonDemo2 = _interopRequireDefault(_IconButtonDemo);
 	
-	var _StandardButtonDemo = __webpack_require__(832);
+	var _StandardButtonDemo = __webpack_require__(834);
 	
 	var _StandardButtonDemo2 = _interopRequireDefault(_StandardButtonDemo);
 	
-	var _SecondaryButtonDemo = __webpack_require__(831);
+	var _SecondaryButtonDemo = __webpack_require__(833);
 	
 	var _SecondaryButtonDemo2 = _interopRequireDefault(_SecondaryButtonDemo);
 	
-	var _DynamicButtonDemo = __webpack_require__(827);
+	var _DynamicButtonDemo = __webpack_require__(829);
 	
 	var _DynamicButtonDemo2 = _interopRequireDefault(_DynamicButtonDemo);
 	
@@ -1043,49 +1043,49 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 826:
+/***/ 828:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"dialogue\" icon=\"addcard\">Add Card</button>\n<div class=\"inverse-color\">\n    <button theme=\"dialogue\" icon=\"list-o\" side=\"left\" color=\"white\" inverse>Add/Remove</button>\n</div>\n<button theme=\"dialogue\" icon=\"check\" color=\"success\">Dialogue</button>\n<button theme=\"dialogue\" disabled>Dialogue</button>\n"
 
 /***/ },
 
-/***/ 827:
+/***/ 829:
 /***/ function(module, exports) {
 
 	module.exports = "<button [theme]=\"theme\" [icon]=\"isChecked ? 'check' : 'times'\" (click)=\"changeTheme()\">Change Theme</button>\n<novo-checkbox label=\"Checked?\" [(ngModel)]=\"isChecked\"></novo-checkbox>\n"
 
 /***/ },
 
-/***/ 828:
+/***/ 830:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n<button theme=\"secondary\" icon=\"convert\" inverse>Convert</button>\n<button theme=\"secondary\" icon=\"convert\" inverse disabled>Convert</button>\n"
 
 /***/ },
 
-/***/ 829:
+/***/ 831:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"icon\" icon=\"print\" inverse></button>\n<button theme=\"icon\" icon=\"print\" inverse disabled></button>\n"
 
 /***/ },
 
-/***/ 830:
+/***/ 832:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"primary\" icon=\"next\">Next</button>\n<button theme=\"primary\" [color]=\"negativeColor\" icon=\"times\">Cancel</button>\n<button theme=\"primary\" color=\"success\" icon=\"check\">Save</button>\n<button theme=\"primary\" color=\"warning\" icon=\"caution-o\">Caution</button>\n<button theme=\"primary\" color=\"pulse\" icon=\"next\" disabled>Submit</button>\n"
 
 /***/ },
 
-/***/ 831:
+/***/ 833:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\">Secondary</button>\n<button theme=\"secondary\" disabled>Secondary</button>\n\n"
 
 /***/ },
 
-/***/ 832:
+/***/ 834:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"standard\">Standard</button>\n<button theme=\"standard\" color=\"light\">Standard</button>\n<button theme=\"standard\" color=\"light\" disabled>Standard</button>\n"
@@ -1111,15 +1111,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _CalendarDemo = __webpack_require__(833);
+	var _CalendarDemo = __webpack_require__(835);
 	
 	var _CalendarDemo2 = _interopRequireDefault(_CalendarDemo);
 	
-	var _TimeDemo = __webpack_require__(835);
+	var _TimeDemo = __webpack_require__(837);
 	
 	var _TimeDemo2 = _interopRequireDefault(_TimeDemo);
 	
-	var _RangeDemo = __webpack_require__(834);
+	var _RangeDemo = __webpack_require__(836);
 	
 	var _RangeDemo2 = _interopRequireDefault(_RangeDemo);
 	
@@ -1157,21 +1157,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 833:
+/***/ 835:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"calendar-demo-side-by-side\">\n    <p>\n        <label>Value One</label>\n        {{(dateOne | date) || 'N/A'}}\n\n        <label>Value Two</label>\n        {{(dateTwo | date) || 'N/A'}}\n    </p>\n    <novo-date-picker [(ngModel)]=\"dateOne\" minYear=\"2000\" maxYear=\"2020\"\n                      [start]=\"start\" [end]=\"end\"></novo-date-picker>\n    <novo-date-picker [(ngModel)]=\"dateTwo\"></novo-date-picker>\n</div>\n"
 
 /***/ },
 
-/***/ 834:
+/***/ 836:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"calendar-demo-side-by-side\">\n    <p>\n        <label>Start date</label>\n        {{(value?.startDate | date) || 'N/A'}}\n\n        <label>End date</label>\n        {{(value?.endDate | date) || 'N/A'}}\n    </p>\n    <novo-date-picker [(ngModel)]=\"value\" range=\"true\" (onSelect)=\"range\"></novo-date-picker>\n</div>\n"
 
 /***/ },
 
-/***/ 835:
+/***/ 837:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"calendar-demo-side-by-side\">\n    <p>\n        <label>Value</label>\n        {{(time | date:'mediumTime') || 'N/A'}}\n    </p>\n    <novo-time-picker [(ngModel)]=\"time\"></novo-time-picker>\n    <novo-time-picker [(ngModel)]=\"time\" military=\"true\"></novo-time-picker>\n</div>\n"
@@ -1199,23 +1199,23 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _AttributeCardDemo = __webpack_require__(836);
+	var _AttributeCardDemo = __webpack_require__(838);
 	
 	var _AttributeCardDemo2 = _interopRequireDefault(_AttributeCardDemo);
 	
-	var _FullConfigCardDemo = __webpack_require__(840);
+	var _FullConfigCardDemo = __webpack_require__(842);
 	
 	var _FullConfigCardDemo2 = _interopRequireDefault(_FullConfigCardDemo);
 	
-	var _ExtrasTimelineDemo = __webpack_require__(839);
+	var _ExtrasTimelineDemo = __webpack_require__(841);
 	
 	var _ExtrasTimelineDemo2 = _interopRequireDefault(_ExtrasTimelineDemo);
 	
-	var _ExtrasBestTimeDemo = __webpack_require__(837);
+	var _ExtrasBestTimeDemo = __webpack_require__(839);
 	
 	var _ExtrasBestTimeDemo2 = _interopRequireDefault(_ExtrasBestTimeDemo);
 	
-	var _ExtrasChartDemoDemo = __webpack_require__(838);
+	var _ExtrasChartDemoDemo = __webpack_require__(840);
 	
 	var _ExtrasChartDemoDemo2 = _interopRequireDefault(_ExtrasChartDemoDemo);
 	
@@ -1332,35 +1332,35 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 836:
+/***/ 838:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card [title]=\"'All Attributes'\"\n           icon=\"activity\"\n           [loading]=\"loading\"\n           [message]=\"message\"\n           [messageIcon]=\"messageIcon\"\n           [refresh]=\"refresh\"\n           [move]=\"move\"\n           [close]=\"close\"\n           (onRefresh)=\"onRefresh()\"\n           (onClose)=\"onClose()\"\n           [padding]=\"padding\">\n    This is the ALL attribute card content!\n</novo-card>\n"
 
 /***/ },
 
-/***/ 837:
+/***/ 839:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-best-time [label]=\"bestLabel\" [day]=\"bestDay\" [time]=\"bestTime\"></novo-card-best-time>\n"
 
 /***/ },
 
-/***/ 838:
+/***/ 840:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-chart-donut [value]=\"donutValue\" [label]=\"donutLabel\" [color]=\"donutColor\"></novo-card-chart-donut>\n"
 
 /***/ },
 
-/***/ 839:
+/***/ 841:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card-timeline [start]=\"start\" [end]=\"end\" [created]=\"created\"></novo-card-timeline>\n"
 
 /***/ },
 
-/***/ 840:
+/***/ 842:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-card [config]=\"fullConfig\">\n    DEMO :)\n</novo-card>\n"
@@ -1386,15 +1386,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicChipsDemo = __webpack_require__(842);
+	var _BasicChipsDemo = __webpack_require__(844);
 	
 	var _BasicChipsDemo2 = _interopRequireDefault(_BasicChipsDemo);
 	
-	var _AsyncChipsDemo = __webpack_require__(841);
+	var _AsyncChipsDemo = __webpack_require__(843);
 	
 	var _AsyncChipsDemo2 = _interopRequireDefault(_AsyncChipsDemo);
 	
-	var _FormattedChipsDemo = __webpack_require__(843);
+	var _FormattedChipsDemo = __webpack_require__(845);
 	
 	var _FormattedChipsDemo2 = _interopRequireDefault(_FormattedChipsDemo);
 	
@@ -1477,21 +1477,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 841:
+/***/ 843:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{avalue}}</div>\n<chips\n    [source]=\"async\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"avalue\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
 
 /***/ },
 
-/***/ 842:
+/***/ 844:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{value}}</div>\n<chips\n    [source]=\"static\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"value\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
 
 /***/ },
 
-/***/ 843:
+/***/ 845:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{fvalue}}</div>\n<chips\n    [source]=\"formatted\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"fvalue\"\n    (changed)=\"onChanged($event)\">\n</chips>\n"
@@ -1521,11 +1521,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DragulaDemo = __webpack_require__(844);
+	var _DragulaDemo = __webpack_require__(846);
 	
 	var _DragulaDemo2 = _interopRequireDefault(_DragulaDemo);
 	
-	var _DragulaModelDemo = __webpack_require__(845);
+	var _DragulaModelDemo = __webpack_require__(847);
 	
 	var _DragulaModelDemo2 = _interopRequireDefault(_DragulaModelDemo);
 	
@@ -1587,14 +1587,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 844:
+/***/ 846:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"wrapper\">\n    <div class=\"drag-container\" [dragula]=\"'first-bag'\">\n        <div>You can move these elements between these two containers</div>\n        <div>Moving them anywhere else isn\"t quite possible</div>\n        <div>There\"s also the possibility of moving elements around in the same container, changing their position</div>\n    </div>\n    <div class=\"drag-container\" [dragula]=\"'first-bag'\">\n        <div>This is the default use case. You only need to specify the containers you want to use</div>\n        <div>More interactive use cases lie ahead</div>\n        <div>Make sure to check out the\n            <a href=\"https://github.com/bevacqua/dragula#readme\">documentation on GitHub!</a>\n        </div>\n    </div>\n</div>\n"
 
 /***/ },
 
-/***/ 845:
+/***/ 847:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"wrapper\">\n    <div class=\"drag-container\" [dragula]=\"'another-bag'\" [dragulaModel]=\"many\">\n        <div *ngFor=\"let text of many\" [innerHtml]=\"text\"></div>\n    </div>\n    <div class=\"drag-container\" [dragula]=\"'another-bag'\" [dragulaModel]=\"many2\">\n        <div *ngFor=\"let text of many2\" [innerHtml]=\"text\"></div>\n    </div>\n</div>\n<div class=\"wrapper\">\n    <div class=\"drag-container\">\n        <pre>{{many | json}}</pre>\n    </div>\n    <div class=\"drag-container\">\n        <pre>{{many2 | json}}</pre>\n    </div>\n</div>\n"
@@ -1620,7 +1620,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DrawerDemo = __webpack_require__(846);
+	var _DrawerDemo = __webpack_require__(848);
 	
 	var _DrawerDemo2 = _interopRequireDefault(_DrawerDemo);
 	
@@ -1653,7 +1653,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 846:
+/***/ 848:
 /***/ function(module, exports) {
 
 	module.exports = "<div drawer [position]=\"'left'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Left</button>\n    <div class=\"drawer-content\">\n        <h4>I am a left drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'right'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Right</button>\n    <div class=\"drawer-content\">\n        <h4>I am a right drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'right'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Right <strong>*Two*</strong></button>\n    <div class=\"drawer-content\">\n        <h4>I am *another* right drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'top'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Top</button>\n    <div class=\"drawer-content\">\n        <h4>I am a top drawer!</h4>\n    </div>\n</div>\n\n<div drawer [position]=\"'bottom'\" (onDrawerToggle)=\"drawerToggled($event)\">\n    <button theme=\"secondary\" drawerToggle [disabled]=\"disabled\">Show Bottom</button>\n    <div class=\"drawer-content\">\n        <h4>I am a bottom drawer!</h4>\n    </div>\n</div>\n"
@@ -1679,7 +1679,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DropdownDemo = __webpack_require__(847);
+	var _DropdownDemo = __webpack_require__(849);
 	
 	var _DropdownDemo2 = _interopRequireDefault(_DropdownDemo);
 	
@@ -1712,7 +1712,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 847:
+/***/ 849:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-dropdown>\n    <button type=\"button\" theme=\"secondary\" icon=\"collapse\" inverse>Actions</button>\n    <list>\n        <item (action)=\"clickMe()\">Action 1</item>\n        <item (action)=\"clickMe('WITH DATA')\">Action 2</item>\n        <item tooltip=\"Test tooltip :)\" tooltipPosition=\"right\" [disabled]=\"true\" (action)=\"clickMe()\">Action 3</item>\n    </list>\n</novo-dropdown>\n<novo-dropdown side=\"right\">\n    <button type=\"button\" theme=\"icon\" icon=\"menu\" inverse></button>\n    <list>\n        <item>Action 1</item>\n        <item tooltip=\"Test tooltip :)\" tooltipPosition=\"left\">Action 2</item>\n        <item>Action 3</item>\n    </list>\n</novo-dropdown>\n"
@@ -1736,7 +1736,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicEditorDemo = __webpack_require__(848);
+	var _BasicEditorDemo = __webpack_require__(850);
 	
 	var _BasicEditorDemo2 = _interopRequireDefault(_BasicEditorDemo);
 	
@@ -1759,7 +1759,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 848:
+/***/ 850:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-editor [(ngModel)]=\"editorValue\"></novo-editor>\n\n<p>Value:</p>\n<p [innerHtml]=\"editorValue\"></p>\n"
@@ -1787,21 +1787,25 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DynamicForm = __webpack_require__(850);
+	var _DynamicForm = __webpack_require__(852);
 	
 	var _DynamicForm2 = _interopRequireDefault(_DynamicForm);
 	
-	var _VerticalDynamicForm = __webpack_require__(852);
+	var _VerticalDynamicForm = __webpack_require__(855);
 	
 	var _VerticalDynamicForm2 = _interopRequireDefault(_VerticalDynamicForm);
 	
-	var _TextBasedControls = __webpack_require__(851);
+	var _TextBasedControls = __webpack_require__(854);
 	
 	var _TextBasedControls2 = _interopRequireDefault(_TextBasedControls);
 	
-	var _CheckBoxControls = __webpack_require__(849);
+	var _CheckBoxControls = __webpack_require__(851);
 	
 	var _CheckBoxControls2 = _interopRequireDefault(_CheckBoxControls);
+	
+	var _FileInputControls = __webpack_require__(853);
+	
+	var _FileInputControls2 = _interopRequireDefault(_FileInputControls);
 	
 	var _MockMeta = __webpack_require__(744);
 	
@@ -1813,7 +1817,7 @@ webpackJsonp([3],{
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var template = '\n<div class="container">\n    <h1>Forms <small><a target="_blank" href="https://github.com/bullhorn/novo-elements/tree/master/src/elements/form">(source)</a></small></h1>\n    <p>Forms use inputs and labels to submit user content. But you already knew that. What you may not know is that our forms come in two styles \'Static\' and \'Dynamic\'</p>\n    <h2>Static Form</h2>\n    <p>Static forms <code>&lt;novo-form /&gt;</code>.\n    \n    <h5>Textbox Based Controls</h5>\n    <div class="example form-demo">' + _TextBasedControls2.default + '</div>\n    <code-snippet [code]="TextBasedControlsDemoTpl"></code-snippet>\n    \n    <h5>Checkbox Controls</h5>\n    <div class="example form-demo">' + _CheckBoxControls2.default + '</div>\n    <code-snippet [code]="CheckBoxControlsDemoTpl"></code-snippet>\n    \n    <h2>Dynamic Form</h2>\n    <p>Dynamic forms are composed of one element, <code>&lt;novo-dynamic-form [controls]="controls"/&gt;</code> and allow you to pass in the controls and form and it will create the form for you.</p>\n    \n    <h5>Basic</h5>\n    <div class="example form-demo dynamic">' + _DynamicForm2.default + '</div>\n    <code-snippet [code]="DynamicFormDemoTpl"></code-snippet>\n    \n    <h5>Vertical</h5>\n    <div class="example form-demo dynamic">' + _VerticalDynamicForm2.default + '</div>\n    <code-snippet [code]="VerticalDynamicFormDemoTpl"></code-snippet>\n</div>\n';
+	var template = '\n<div class="container">\n    <h1>Forms <small><a target="_blank" href="https://github.com/bullhorn/novo-elements/tree/master/src/elements/form">(source)</a></small></h1>\n    <p>Forms use inputs and labels to submit user content. But you already knew that. What you may not know is that our forms come in two styles \'Static\' and \'Dynamic\'</p>\n    <h2>Static Form</h2>\n    <p>Static forms <code>&lt;novo-form /&gt;</code>.\n    \n    <h5>Textbox Based Controls</h5>\n    <div class="example form-demo">' + _TextBasedControls2.default + '</div>\n    <code-snippet [code]="TextBasedControlsDemoTpl"></code-snippet>\n    \n    <h5>Checkbox Controls</h5>\n    <div class="example form-demo">' + _CheckBoxControls2.default + '</div>\n    <code-snippet [code]="CheckBoxControlsDemoTpl"></code-snippet>\n\n    <h5>File Input Controls</h5>\n    <div class="example form-demo">' + _FileInputControls2.default + '</div>\n    <code-snippet [code]="FileInputControlsDemoTpl"></code-snippet>\n    \n    <h2>Dynamic Form</h2>\n    <p>Dynamic forms are composed of one element, <code>&lt;novo-dynamic-form [controls]="controls"/&gt;</code> and allow you to pass in the controls and form and it will create the form for you.</p>\n    \n    <h5>Basic</h5>\n    <div class="example form-demo dynamic">' + _DynamicForm2.default + '</div>\n    <code-snippet [code]="DynamicFormDemoTpl"></code-snippet>\n    \n    <h5>Vertical</h5>\n    <div class="example form-demo dynamic">' + _VerticalDynamicForm2.default + '</div>\n    <code-snippet [code]="VerticalDynamicFormDemoTpl"></code-snippet>\n</div>\n';
 	
 	var FormDemoComponent = exports.FormDemoComponent = (_dec = (0, _core.Component)({
 	    selector: 'form-demo',
@@ -1826,6 +1830,7 @@ webpackJsonp([3],{
 	        this.VerticalDynamicFormDemoTpl = _VerticalDynamicForm2.default;
 	        this.TextBasedControlsDemoTpl = _TextBasedControls2.default;
 	        this.CheckBoxControlsDemoTpl = _CheckBoxControls2.default;
+	        this.FileInputControlsDemoTpl = _FileInputControls2.default;
 	        // Quick note config
 	        this.quickNoteConfig = {
 	            triggers: {
@@ -1866,6 +1871,11 @@ webpackJsonp([3],{
 	        this.tilesControl = new _novoElements.TilesControl({ key: 'tiles', label: 'Tiles', options: [{ value: 'one', label: 'One' }, { value: 'two', label: 'Two' }] });
 	        this.checkForm = formUtils.toFormGroup([this.checkControl, this.checkListControl, this.tilesControl]);
 	
+	        // File input controls
+	        this.fileControl = new _novoElements.FileControl({ key: 'file', name: 'myfile', label: 'File' });
+	        this.multiFileControl = new _novoElements.FileControl({ key: 'file', name: 'myfile', label: 'Multiple Files', multiple: true });
+	        this.fileForm = formUtils.toFormGroup([this.fileControl, this.multiFileControl]);
+	
 	        // Dynamic
 	        this.dynamic = formUtils.toControls(_MockMeta2.default, '$ USD', {}, 'TOKEN');
 	        formUtils.setInitialValues(this.dynamic, { firstName: 'Initial F Name' });
@@ -1900,7 +1910,7 @@ webpackJsonp([3],{
 	    return FormDemoComponent;
 	}()) || _class);
 	Reflect.defineMetadata('design:paramtypes', [_novoElements.FormUtils], FormDemoComponent);
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvZm9ybS9Gb3JtRGVtby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7a0JBQUE7O0FBRUE7O0FBTUE7OztBQVBBOztBQUVBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFFQTs7Ozs7O0FBRUEsSUFBTSx3NENBQU47O0lBZ0NhLGlCLFdBQUEsaUIsV0FKWixxQkFBVTtBQUNQLGNBQVUsV0FESDtBQUVQLGNBQVU7QUFGSCxDQUFWLEM7QUFLRywrQkFBWSxTQUFaLEVBQWlDO0FBQUE7O0FBQzdCLGFBQUssa0JBQUw7QUFDQSxhQUFLLDBCQUFMO0FBQ0EsYUFBSyx3QkFBTDtBQUNBLGFBQUssdUJBQUw7QUFDQTtBQUNBLGFBQUssZUFBTCxHQUF1QjtBQUNuQixzQkFBVTtBQUNOLHNCQUFNLEdBREE7QUFFTiw0QkFBWSxHQUZOO0FBR04sc0JBQU07QUFIQSxhQURTO0FBTW5CLHFCQUFTO0FBQ0wsc0JBQU0sQ0FBQyxPQUFELEVBQVUsUUFBVixDQUREO0FBRUwsNEJBQVksQ0FBQyxPQUFELEVBQVUsT0FBVixDQUZQO0FBR0wsc0JBQU0sQ0FBQyxNQUFEO0FBSEQsYUFOVTtBQVduQixzQkFBVTtBQUNOLHNCQUFNLGNBQUMsTUFBRCxFQUFTLElBQVQsRUFBa0I7QUFDcEIsK0NBQXlCLE1BQXpCLEdBQWtDLEtBQUssS0FBdkM7QUFDSCxpQkFISztBQUlOLDRCQUFZLG9CQUFDLE1BQUQsRUFBUyxJQUFULEVBQWtCO0FBQzFCLCtDQUF5QixNQUF6QixHQUFrQyxLQUFLLEtBQXZDO0FBQ0gsaUJBTks7QUFPTixzQkFBTSxjQUFDLE1BQUQsRUFBUyxJQUFULEVBQWtCO0FBQ3BCLHdDQUFrQixNQUFsQixHQUEyQixLQUFLLEtBQWhDO0FBQ0g7QUFUSztBQVhTLFNBQXZCO0FBdUJBO0FBQ0EsYUFBSyxXQUFMLEdBQW1CLGlDQUFtQixFQUFFLEtBQUssTUFBUCxFQUFlLE9BQU8sVUFBdEIsRUFBbkIsQ0FBbkI7QUFDQSxhQUFLLFlBQUwsR0FBb0IsaUNBQW1CLEVBQUUsTUFBTSxPQUFSLEVBQWlCLEtBQUssT0FBdEIsRUFBK0IsT0FBTyxPQUF0QyxFQUFuQixDQUFwQjtBQUNBLGFBQUssYUFBTCxHQUFxQixpQ0FBbUIsRUFBRSxNQUFNLFFBQVIsRUFBa0IsS0FBSyxRQUF2QixFQUFpQyxPQUFPLFFBQXhDLEVBQW5CLENBQXJCO0FBQ0EsYUFBSyxlQUFMLEdBQXVCLGlDQUFtQixFQUFFLE1BQU0sVUFBUixFQUFvQixLQUFLLFVBQXpCLEVBQXFDLE9BQU8sVUFBNUMsRUFBd0QsZ0JBQWdCLE9BQXhFLEVBQW5CLENBQXZCO0FBQ0EsYUFBSyxZQUFMLEdBQW9CLGlDQUFtQixFQUFFLE1BQU0sT0FBUixFQUFpQixLQUFLLE9BQXRCLEVBQStCLE9BQU8sT0FBdEMsRUFBbkIsQ0FBcEI7QUFDQSxhQUFLLGlCQUFMLEdBQXlCLGlDQUFtQixFQUFFLE1BQU0sWUFBUixFQUFzQixLQUFLLFlBQTNCLEVBQXlDLE9BQU8sU0FBaEQsRUFBbkIsQ0FBekI7QUFDQSxhQUFLLGdCQUFMLEdBQXdCLG1DQUFxQixFQUFFLEtBQUssTUFBUCxFQUFlLE9BQU8sTUFBdEIsRUFBOEIsUUFBUSxLQUFLLGVBQTNDLEVBQXJCLENBQXhCO0FBQ0EsYUFBSyxRQUFMLEdBQWdCLFVBQVUsV0FBVixDQUFzQixDQUFDLEtBQUssV0FBTixFQUFtQixLQUFLLFlBQXhCLEVBQXNDLEtBQUssYUFBM0MsRUFBMEQsS0FBSyxlQUEvRCxFQUFnRixLQUFLLFlBQXJGLEVBQW1HLEtBQUssaUJBQXhHLEVBQTJILEtBQUssZ0JBQWhJLENBQXRCLENBQWhCOztBQUVBO0FBQ0EsYUFBSyxZQUFMLEdBQW9CLGtDQUFvQixFQUFFLEtBQUssT0FBUCxFQUFnQixPQUFPLFVBQXZCLEVBQXBCLENBQXBCO0FBQ0EsYUFBSyxnQkFBTCxHQUF3QixtQ0FBcUIsRUFBRSxLQUFLLFdBQVAsRUFBb0IsT0FBTyxZQUEzQixFQUF5QyxTQUFTLENBQUMsS0FBRCxFQUFRLEtBQVIsRUFBZSxPQUFmLENBQWxELEVBQXJCLENBQXhCO0FBQ0EsYUFBSyxZQUFMLEdBQW9CLCtCQUFpQixFQUFFLEtBQUssT0FBUCxFQUFnQixPQUFPLE9BQXZCLEVBQWdDLFNBQVMsQ0FBQyxFQUFFLE9BQU8sS0FBVCxFQUFnQixPQUFPLEtBQXZCLEVBQUQsRUFBaUMsRUFBRSxPQUFPLEtBQVQsRUFBZ0IsT0FBTyxLQUF2QixFQUFqQyxDQUF6QyxFQUFqQixDQUFwQjtBQUNBLGFBQUssU0FBTCxHQUFpQixVQUFVLFdBQVYsQ0FBc0IsQ0FBQyxLQUFLLFlBQU4sRUFBb0IsS0FBSyxnQkFBekIsRUFBMkMsS0FBSyxZQUFoRCxDQUF0QixDQUFqQjs7QUFFQTtBQUNBLGFBQUssT0FBTCxHQUFlLFVBQVUsVUFBVixxQkFBK0IsT0FBL0IsRUFBd0MsRUFBeEMsRUFBNEMsT0FBNUMsQ0FBZjtBQUNBLGtCQUFVLGdCQUFWLENBQTJCLEtBQUssT0FBaEMsRUFBeUMsRUFBRSxXQUFXLGdCQUFiLEVBQXpDO0FBQ0EsYUFBSyxXQUFMLEdBQW1CLFVBQVUsV0FBVixDQUFzQixLQUFLLE9BQTNCLENBQW5CO0FBQ0EsYUFBSyxlQUFMLEdBQXVCLFVBQVUsVUFBVixxQkFBK0IsT0FBL0IsRUFBd0MsRUFBeEMsRUFBNEMsT0FBNUMsQ0FBdkI7QUFDQSxhQUFLLG1CQUFMLEdBQTJCLFVBQVUsV0FBVixDQUFzQixLQUFLLGVBQTNCLENBQTNCO0FBQ0g7Ozs7NkJBRUksSSxFQUFNO0FBQ1AsZ0JBQUksQ0FBQyxLQUFLLE9BQVYsRUFBbUI7QUFDZixxQkFBSyxnQkFBTCxDQUFzQixJQUF0QjtBQUNILGFBRkQsTUFFTztBQUNILHNCQUFNLFFBQU4sRUFERyxDQUNjO0FBQ3BCO0FBQ0o7OztnQ0FFTztBQUNKLGlCQUFLLE9BQUwsQ0FBYSxPQUFiLENBQXFCLG1CQUFXO0FBQzVCLHdCQUFRLFVBQVIsQ0FBbUIsSUFBbkI7QUFDSCxhQUZEO0FBR0g7OztpQ0FFUSxLLEVBQU87QUFDWixvQkFBUSxHQUFSLENBQVksWUFBWixFQUEwQixLQUExQixFQURZLENBQ3NCO0FBQ3JDOzs7Ozt1RUF0RVEsaUIiLCJmaWxlIjoiRm9ybURlbW8uanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbIi8vIE5HMlxuaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG4vLyBBUFBcbmltcG9ydCBEeW5hbWljRm9ybURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvRHluYW1pY0Zvcm0uaHRtbCc7XG5pbXBvcnQgVmVydGljYWxEeW5hbWljRm9ybURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvVmVydGljYWxEeW5hbWljRm9ybS5odG1sJztcbmltcG9ydCBUZXh0QmFzZWRDb250cm9sc0RlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvVGV4dEJhc2VkQ29udHJvbHMuaHRtbCc7XG5pbXBvcnQgQ2hlY2tCb3hDb250cm9sc0RlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvQ2hlY2tCb3hDb250cm9scy5odG1sJztcbmltcG9ydCBNb2NrTWV0YSBmcm9tICcuL01vY2tNZXRhJztcbi8vIFZlbmRvclxuaW1wb3J0IHsgRm9ybVV0aWxzLCBUZXh0Qm94Q29udHJvbCwgQ2hlY2tib3hDb250cm9sLCBDaGVja0xpc3RDb250cm9sLCBRdWlja05vdGVDb250cm9sLCBUaWxlc0NvbnRyb2wgfSBmcm9tICcuLy4uLy4uLy4uLy4uL3NyYy9ub3ZvLWVsZW1lbnRzJztcblxuY29uc3QgdGVtcGxhdGUgPSBgXG48ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gICAgPGgxPkZvcm1zIDxzbWFsbD48YSB0YXJnZXQ9XCJfYmxhbmtcIiBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL2J1bGxob3JuL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL2Zvcm1cIj4oc291cmNlKTwvYT48L3NtYWxsPjwvaDE+XG4gICAgPHA+Rm9ybXMgdXNlIGlucHV0cyBhbmQgbGFiZWxzIHRvIHN1Ym1pdCB1c2VyIGNvbnRlbnQuIEJ1dCB5b3UgYWxyZWFkeSBrbmV3IHRoYXQuIFdoYXQgeW91IG1heSBub3Qga25vdyBpcyB0aGF0IG91ciBmb3JtcyBjb21lIGluIHR3byBzdHlsZXMgJ1N0YXRpYycgYW5kICdEeW5hbWljJzwvcD5cbiAgICA8aDI+U3RhdGljIEZvcm08L2gyPlxuICAgIDxwPlN0YXRpYyBmb3JtcyA8Y29kZT4mbHQ7bm92by1mb3JtIC8mZ3Q7PC9jb2RlPi5cbiAgICBcbiAgICA8aDU+VGV4dGJveCBCYXNlZCBDb250cm9sczwvaDU+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgZm9ybS1kZW1vXCI+JHtUZXh0QmFzZWRDb250cm9sc0RlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJUZXh0QmFzZWRDb250cm9sc0RlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbiAgICBcbiAgICA8aDU+Q2hlY2tib3ggQ29udHJvbHM8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtb1wiPiR7Q2hlY2tCb3hDb250cm9sc0RlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJDaGVja0JveENvbnRyb2xzRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuICAgIFxuICAgIDxoMj5EeW5hbWljIEZvcm08L2gyPlxuICAgIDxwPkR5bmFtaWMgZm9ybXMgYXJlIGNvbXBvc2VkIG9mIG9uZSBlbGVtZW50LCA8Y29kZT4mbHQ7bm92by1keW5hbWljLWZvcm0gW2NvbnRyb2xzXT1cImNvbnRyb2xzXCIvJmd0OzwvY29kZT4gYW5kIGFsbG93IHlvdSB0byBwYXNzIGluIHRoZSBjb250cm9scyBhbmQgZm9ybSBhbmQgaXQgd2lsbCBjcmVhdGUgdGhlIGZvcm0gZm9yIHlvdS48L3A+XG4gICAgXG4gICAgPGg1PkJhc2ljPC9oNT5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBmb3JtLWRlbW8gZHluYW1pY1wiPiR7RHluYW1pY0Zvcm1EZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiRHluYW1pY0Zvcm1EZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG4gICAgXG4gICAgPGg1PlZlcnRpY2FsPC9oNT5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBmb3JtLWRlbW8gZHluYW1pY1wiPiR7VmVydGljYWxEeW5hbWljRm9ybURlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJWZXJ0aWNhbER5bmFtaWNGb3JtRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuPC9kaXY+XG5gO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ2Zvcm0tZGVtbycsXG4gICAgdGVtcGxhdGU6IHRlbXBsYXRlXG59KVxuZXhwb3J0IGNsYXNzIEZvcm1EZW1vQ29tcG9uZW50IHtcbiAgICBjb25zdHJ1Y3Rvcihmb3JtVXRpbHM6Rm9ybVV0aWxzKSB7XG4gICAgICAgIHRoaXMuRHluYW1pY0Zvcm1EZW1vVHBsID0gRHluYW1pY0Zvcm1EZW1vVHBsO1xuICAgICAgICB0aGlzLlZlcnRpY2FsRHluYW1pY0Zvcm1EZW1vVHBsID0gVmVydGljYWxEeW5hbWljRm9ybURlbW9UcGw7XG4gICAgICAgIHRoaXMuVGV4dEJhc2VkQ29udHJvbHNEZW1vVHBsID0gVGV4dEJhc2VkQ29udHJvbHNEZW1vVHBsO1xuICAgICAgICB0aGlzLkNoZWNrQm94Q29udHJvbHNEZW1vVHBsID0gQ2hlY2tCb3hDb250cm9sc0RlbW9UcGw7XG4gICAgICAgIC8vIFF1aWNrIG5vdGUgY29uZmlnXG4gICAgICAgIHRoaXMucXVpY2tOb3RlQ29uZmlnID0ge1xuICAgICAgICAgICAgdHJpZ2dlcnM6IHtcbiAgICAgICAgICAgICAgICB0YWdzOiAnQCcsXG4gICAgICAgICAgICAgICAgcmVmZXJlbmNlczogJyMnLFxuICAgICAgICAgICAgICAgIGJvb3M6ICdeJ1xuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIG9wdGlvbnM6IHtcbiAgICAgICAgICAgICAgICB0YWdzOiBbJ0ZpcnN0JywgJ1NlY29uZCddLFxuICAgICAgICAgICAgICAgIHJlZmVyZW5jZXM6IFsnVGhpcmQnLCAnRm9ydGgnXSxcbiAgICAgICAgICAgICAgICBib29zOiBbJ1Rlc3QnXVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHJlbmRlcmVyOiB7XG4gICAgICAgICAgICAgICAgdGFnczogKHN5bWJvbCwgaXRlbSkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYDxhIGNsYXNzPVwidGFnXCI+JHtzeW1ib2x9JHtpdGVtLmxhYmVsfTwvYT5gO1xuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgcmVmZXJlbmNlczogKHN5bWJvbCwgaXRlbSkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYDxhIGNsYXNzPVwidGFnXCI+JHtzeW1ib2x9JHtpdGVtLmxhYmVsfTwvYT5gO1xuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgYm9vczogKHN5bWJvbCwgaXRlbSkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYDxzdHJvbmc+JHtzeW1ib2x9JHtpdGVtLmxhYmVsfTwvc3Ryb25nPmA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICB9O1xuICAgICAgICAvLyBUZXh0LWJhc2VkIENvbnRyb2xzXG4gICAgICAgIHRoaXMudGV4dENvbnRyb2wgPSBuZXcgVGV4dEJveENvbnRyb2woeyBrZXk6ICd0ZXh0JywgbGFiZWw6ICdUZXh0IEJveCcgfSk7XG4gICAgICAgIHRoaXMuZW1haWxDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ2VtYWlsJywga2V5OiAnZW1haWwnLCBsYWJlbDogJ0VtYWlsJyB9KTtcbiAgICAgICAgdGhpcy5udW1iZXJDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ251bWJlcicsIGtleTogJ251bWJlcicsIGxhYmVsOiAnTnVtYmVyJyB9KTtcbiAgICAgICAgdGhpcy5jdXJyZW5jeUNvbnRyb2wgPSBuZXcgVGV4dEJveENvbnRyb2woeyB0eXBlOiAnY3VycmVuY3knLCBrZXk6ICdjdXJyZW5jeScsIGxhYmVsOiAnQ3VycmVuY3knLCBjdXJyZW5jeUZvcm1hdDogJyQgVVNEJyB9KTtcbiAgICAgICAgdGhpcy5mbG9hdENvbnRyb2wgPSBuZXcgVGV4dEJveENvbnRyb2woeyB0eXBlOiAnZmxvYXQnLCBrZXk6ICdmbG9hdCcsIGxhYmVsOiAnRmxvYXQnIH0pO1xuICAgICAgICB0aGlzLnBlcmNlbnRhZ2VDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ3BlcmNlbnRhZ2UnLCBrZXk6ICdwZXJjZW50YWdlJywgbGFiZWw6ICdQZXJjZW50JyB9KTtcbiAgICAgICAgdGhpcy5xdWlja05vdGVDb250cm9sID0gbmV3IFF1aWNrTm90ZUNvbnRyb2woeyBrZXk6ICdub3RlJywgbGFiZWw6ICdOb3RlJywgY29uZmlnOiB0aGlzLnF1aWNrTm90ZUNvbmZpZyB9KTtcbiAgICAgICAgdGhpcy50ZXh0Rm9ybSA9IGZvcm1VdGlscy50b0Zvcm1Hcm91cChbdGhpcy50ZXh0Q29udHJvbCwgdGhpcy5lbWFpbENvbnRyb2wsIHRoaXMubnVtYmVyQ29udHJvbCwgdGhpcy5jdXJyZW5jeUNvbnRyb2wsIHRoaXMuZmxvYXRDb250cm9sLCB0aGlzLnBlcmNlbnRhZ2VDb250cm9sLCB0aGlzLnF1aWNrTm90ZUNvbnRyb2xdKTtcblxuICAgICAgICAvLyBDaGVjayBib3ggY29udHJvbHNcbiAgICAgICAgdGhpcy5jaGVja0NvbnRyb2wgPSBuZXcgQ2hlY2tib3hDb250cm9sKHsga2V5OiAnY2hlY2snLCBsYWJlbDogJ0NoZWNrYm94JyB9KTtcbiAgICAgICAgdGhpcy5jaGVja0xpc3RDb250cm9sID0gbmV3IENoZWNrTGlzdENvbnRyb2woeyBrZXk6ICdjaGVja2xpc3QnLCBsYWJlbDogJ0NoZWNrIExpc3QnLCBvcHRpb25zOiBbJ09uZScsICdUd28nLCAnVGhyZWUnXSB9KTtcbiAgICAgICAgdGhpcy50aWxlc0NvbnRyb2wgPSBuZXcgVGlsZXNDb250cm9sKHsga2V5OiAndGlsZXMnLCBsYWJlbDogJ1RpbGVzJywgb3B0aW9uczogW3sgdmFsdWU6ICdvbmUnLCBsYWJlbDogJ09uZScgfSwgeyB2YWx1ZTogJ3R3bycsIGxhYmVsOiAnVHdvJyB9XSB9KTtcbiAgICAgICAgdGhpcy5jaGVja0Zvcm0gPSBmb3JtVXRpbHMudG9Gb3JtR3JvdXAoW3RoaXMuY2hlY2tDb250cm9sLCB0aGlzLmNoZWNrTGlzdENvbnRyb2wsIHRoaXMudGlsZXNDb250cm9sXSk7XG5cbiAgICAgICAgLy8gRHluYW1pY1xuICAgICAgICB0aGlzLmR5bmFtaWMgPSBmb3JtVXRpbHMudG9Db250cm9scyhNb2NrTWV0YSwgJyQgVVNEJywge30sICdUT0tFTicpO1xuICAgICAgICBmb3JtVXRpbHMuc2V0SW5pdGlhbFZhbHVlcyh0aGlzLmR5bmFtaWMsIHsgZmlyc3ROYW1lOiAnSW5pdGlhbCBGIE5hbWUnIH0pO1xuICAgICAgICB0aGlzLmR5bmFtaWNGb3JtID0gZm9ybVV0aWxzLnRvRm9ybUdyb3VwKHRoaXMuZHluYW1pYyk7XG4gICAgICAgIHRoaXMuZHluYW1pY1ZlcnRpY2FsID0gZm9ybVV0aWxzLnRvQ29udHJvbHMoTW9ja01ldGEsICckIFVTRCcsIHt9LCAnVE9LRU4nKTtcbiAgICAgICAgdGhpcy5keW5hbWljVmVydGljYWxGb3JtID0gZm9ybVV0aWxzLnRvRm9ybUdyb3VwKHRoaXMuZHluYW1pY1ZlcnRpY2FsKTtcbiAgICB9XG5cbiAgICBzYXZlKGZvcm0pIHtcbiAgICAgICAgaWYgKCFmb3JtLmlzVmFsaWQpIHtcbiAgICAgICAgICAgIGZvcm0uc2hvd09ubHlSZXF1aXJlZCh0cnVlKTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgIGFsZXJ0KCdTQVZJTkcnKTsgLy8gZXNsaW50LWRpc2FibGUtbGluZVxuICAgICAgICB9XG4gICAgfVxuXG4gICAgY2xlYXIoKSB7XG4gICAgICAgIHRoaXMuZHluYW1pYy5mb3JFYWNoKGNvbnRyb2wgPT4ge1xuICAgICAgICAgICAgY29udHJvbC5mb3JjZUNsZWFyLmVtaXQoKTtcbiAgICAgICAgfSk7XG4gICAgfVxuXG4gICAgb25DaGFuZ2UodmFsdWUpIHtcbiAgICAgICAgY29uc29sZS5sb2coJ0kgY2hhbmdlZCEnLCB2YWx1ZSk7IC8vIGVzbGludC1kaXNhYmxlLWxpbmVcbiAgICB9XG59XG4iXX0=
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvZm9ybS9Gb3JtRGVtby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7a0JBQUE7O0FBRUE7O0FBT0E7OztBQVJBOztBQUVBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUVBOzs7Ozs7QUFFQSxJQUFNLCtqREFBTjs7SUFvQ2EsaUIsV0FBQSxpQixXQUpaLHFCQUFVO0FBQ1AsY0FBVSxXQURIO0FBRVAsY0FBVTtBQUZILENBQVYsQztBQUtHLCtCQUFZLFNBQVosRUFBaUM7QUFBQTs7QUFDN0IsYUFBSyxrQkFBTDtBQUNBLGFBQUssMEJBQUw7QUFDQSxhQUFLLHdCQUFMO0FBQ0EsYUFBSyx1QkFBTDtBQUNBLGFBQUssd0JBQUw7QUFDQTtBQUNBLGFBQUssZUFBTCxHQUF1QjtBQUNuQixzQkFBVTtBQUNOLHNCQUFNLEdBREE7QUFFTiw0QkFBWSxHQUZOO0FBR04sc0JBQU07QUFIQSxhQURTO0FBTW5CLHFCQUFTO0FBQ0wsc0JBQU0sQ0FBQyxPQUFELEVBQVUsUUFBVixDQUREO0FBRUwsNEJBQVksQ0FBQyxPQUFELEVBQVUsT0FBVixDQUZQO0FBR0wsc0JBQU0sQ0FBQyxNQUFEO0FBSEQsYUFOVTtBQVduQixzQkFBVTtBQUNOLHNCQUFNLGNBQUMsTUFBRCxFQUFTLElBQVQsRUFBa0I7QUFDcEIsK0NBQXlCLE1BQXpCLEdBQWtDLEtBQUssS0FBdkM7QUFDSCxpQkFISztBQUlOLDRCQUFZLG9CQUFDLE1BQUQsRUFBUyxJQUFULEVBQWtCO0FBQzFCLCtDQUF5QixNQUF6QixHQUFrQyxLQUFLLEtBQXZDO0FBQ0gsaUJBTks7QUFPTixzQkFBTSxjQUFDLE1BQUQsRUFBUyxJQUFULEVBQWtCO0FBQ3BCLHdDQUFrQixNQUFsQixHQUEyQixLQUFLLEtBQWhDO0FBQ0g7QUFUSztBQVhTLFNBQXZCO0FBdUJBO0FBQ0EsYUFBSyxXQUFMLEdBQW1CLGlDQUFtQixFQUFFLEtBQUssTUFBUCxFQUFlLE9BQU8sVUFBdEIsRUFBbkIsQ0FBbkI7QUFDQSxhQUFLLFlBQUwsR0FBb0IsaUNBQW1CLEVBQUUsTUFBTSxPQUFSLEVBQWlCLEtBQUssT0FBdEIsRUFBK0IsT0FBTyxPQUF0QyxFQUFuQixDQUFwQjtBQUNBLGFBQUssYUFBTCxHQUFxQixpQ0FBbUIsRUFBRSxNQUFNLFFBQVIsRUFBa0IsS0FBSyxRQUF2QixFQUFpQyxPQUFPLFFBQXhDLEVBQW5CLENBQXJCO0FBQ0EsYUFBSyxlQUFMLEdBQXVCLGlDQUFtQixFQUFFLE1BQU0sVUFBUixFQUFvQixLQUFLLFVBQXpCLEVBQXFDLE9BQU8sVUFBNUMsRUFBd0QsZ0JBQWdCLE9BQXhFLEVBQW5CLENBQXZCO0FBQ0EsYUFBSyxZQUFMLEdBQW9CLGlDQUFtQixFQUFFLE1BQU0sT0FBUixFQUFpQixLQUFLLE9BQXRCLEVBQStCLE9BQU8sT0FBdEMsRUFBbkIsQ0FBcEI7QUFDQSxhQUFLLGlCQUFMLEdBQXlCLGlDQUFtQixFQUFFLE1BQU0sWUFBUixFQUFzQixLQUFLLFlBQTNCLEVBQXlDLE9BQU8sU0FBaEQsRUFBbkIsQ0FBekI7QUFDQSxhQUFLLGdCQUFMLEdBQXdCLG1DQUFxQixFQUFFLEtBQUssTUFBUCxFQUFlLE9BQU8sTUFBdEIsRUFBOEIsUUFBUSxLQUFLLGVBQTNDLEVBQXJCLENBQXhCO0FBQ0EsYUFBSyxRQUFMLEdBQWdCLFVBQVUsV0FBVixDQUFzQixDQUFDLEtBQUssV0FBTixFQUFtQixLQUFLLFlBQXhCLEVBQXNDLEtBQUssYUFBM0MsRUFBMEQsS0FBSyxlQUEvRCxFQUFnRixLQUFLLFlBQXJGLEVBQW1HLEtBQUssaUJBQXhHLEVBQTJILEtBQUssZ0JBQWhJLENBQXRCLENBQWhCOztBQUVBO0FBQ0EsYUFBSyxZQUFMLEdBQW9CLGtDQUFvQixFQUFFLEtBQUssT0FBUCxFQUFnQixPQUFPLFVBQXZCLEVBQXBCLENBQXBCO0FBQ0EsYUFBSyxnQkFBTCxHQUF3QixtQ0FBcUIsRUFBRSxLQUFLLFdBQVAsRUFBb0IsT0FBTyxZQUEzQixFQUF5QyxTQUFTLENBQUMsS0FBRCxFQUFRLEtBQVIsRUFBZSxPQUFmLENBQWxELEVBQXJCLENBQXhCO0FBQ0EsYUFBSyxZQUFMLEdBQW9CLCtCQUFpQixFQUFFLEtBQUssT0FBUCxFQUFnQixPQUFPLE9BQXZCLEVBQWdDLFNBQVMsQ0FBQyxFQUFFLE9BQU8sS0FBVCxFQUFnQixPQUFPLEtBQXZCLEVBQUQsRUFBaUMsRUFBRSxPQUFPLEtBQVQsRUFBZ0IsT0FBTyxLQUF2QixFQUFqQyxDQUF6QyxFQUFqQixDQUFwQjtBQUNBLGFBQUssU0FBTCxHQUFpQixVQUFVLFdBQVYsQ0FBc0IsQ0FBQyxLQUFLLFlBQU4sRUFBb0IsS0FBSyxnQkFBekIsRUFBMkMsS0FBSyxZQUFoRCxDQUF0QixDQUFqQjs7QUFFQTtBQUNBLGFBQUssV0FBTCxHQUFtQiw4QkFBZ0IsRUFBRSxLQUFLLE1BQVAsRUFBZSxNQUFNLFFBQXJCLEVBQStCLE9BQU8sTUFBdEMsRUFBaEIsQ0FBbkI7QUFDQSxhQUFLLGdCQUFMLEdBQXdCLDhCQUFnQixFQUFFLEtBQUssTUFBUCxFQUFlLE1BQU0sUUFBckIsRUFBK0IsT0FBTyxnQkFBdEMsRUFBd0QsVUFBVSxJQUFsRSxFQUFoQixDQUF4QjtBQUNBLGFBQUssUUFBTCxHQUFnQixVQUFVLFdBQVYsQ0FBc0IsQ0FBQyxLQUFLLFdBQU4sRUFBbUIsS0FBSyxnQkFBeEIsQ0FBdEIsQ0FBaEI7O0FBRUE7QUFDQSxhQUFLLE9BQUwsR0FBZSxVQUFVLFVBQVYscUJBQStCLE9BQS9CLEVBQXdDLEVBQXhDLEVBQTRDLE9BQTVDLENBQWY7QUFDQSxrQkFBVSxnQkFBVixDQUEyQixLQUFLLE9BQWhDLEVBQXlDLEVBQUUsV0FBVyxnQkFBYixFQUF6QztBQUNBLGFBQUssV0FBTCxHQUFtQixVQUFVLFdBQVYsQ0FBc0IsS0FBSyxPQUEzQixDQUFuQjtBQUNBLGFBQUssZUFBTCxHQUF1QixVQUFVLFVBQVYscUJBQStCLE9BQS9CLEVBQXdDLEVBQXhDLEVBQTRDLE9BQTVDLENBQXZCO0FBQ0EsYUFBSyxtQkFBTCxHQUEyQixVQUFVLFdBQVYsQ0FBc0IsS0FBSyxlQUEzQixDQUEzQjtBQUNIOzs7OzZCQUVJLEksRUFBTTtBQUNQLGdCQUFJLENBQUMsS0FBSyxPQUFWLEVBQW1CO0FBQ2YscUJBQUssZ0JBQUwsQ0FBc0IsSUFBdEI7QUFDSCxhQUZELE1BRU87QUFDSCxzQkFBTSxRQUFOLEVBREcsQ0FDYztBQUNwQjtBQUNKOzs7Z0NBRU87QUFDSixpQkFBSyxPQUFMLENBQWEsT0FBYixDQUFxQixtQkFBVztBQUM1Qix3QkFBUSxVQUFSLENBQW1CLElBQW5CO0FBQ0gsYUFGRDtBQUdIOzs7aUNBRVEsSyxFQUFPO0FBQ1osb0JBQVEsR0FBUixDQUFZLFlBQVosRUFBMEIsS0FBMUIsRUFEWSxDQUNzQjtBQUNyQzs7Ozs7dUVBNUVRLGlCIiwiZmlsZSI6IkZvcm1EZW1vLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qZ29kaS9ub3ZvLWRldi9saWJzL25vdm8tZWxlbWVudHMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBORzJcbmltcG9ydCB7IENvbXBvbmVudCB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuLy8gQVBQXG5pbXBvcnQgRHluYW1pY0Zvcm1EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL0R5bmFtaWNGb3JtLmh0bWwnO1xuaW1wb3J0IFZlcnRpY2FsRHluYW1pY0Zvcm1EZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL1ZlcnRpY2FsRHluYW1pY0Zvcm0uaHRtbCc7XG5pbXBvcnQgVGV4dEJhc2VkQ29udHJvbHNEZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL1RleHRCYXNlZENvbnRyb2xzLmh0bWwnO1xuaW1wb3J0IENoZWNrQm94Q29udHJvbHNEZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL0NoZWNrQm94Q29udHJvbHMuaHRtbCc7XG5pbXBvcnQgRmlsZUlucHV0Q29udHJvbHNEZW1vVHBsIGZyb20gJy4vdGVtcGxhdGVzL0ZpbGVJbnB1dENvbnRyb2xzLmh0bWwnO1xuaW1wb3J0IE1vY2tNZXRhIGZyb20gJy4vTW9ja01ldGEnO1xuLy8gVmVuZG9yXG5pbXBvcnQgeyBGb3JtVXRpbHMsIFRleHRCb3hDb250cm9sLCBDaGVja2JveENvbnRyb2wsIENoZWNrTGlzdENvbnRyb2wsIEZpbGVDb250cm9sLCBRdWlja05vdGVDb250cm9sLCBUaWxlc0NvbnRyb2wgfSBmcm9tICcuLy4uLy4uLy4uLy4uL3NyYy9ub3ZvLWVsZW1lbnRzJztcblxuY29uc3QgdGVtcGxhdGUgPSBgXG48ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gICAgPGgxPkZvcm1zIDxzbWFsbD48YSB0YXJnZXQ9XCJfYmxhbmtcIiBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL2J1bGxob3JuL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL2Zvcm1cIj4oc291cmNlKTwvYT48L3NtYWxsPjwvaDE+XG4gICAgPHA+Rm9ybXMgdXNlIGlucHV0cyBhbmQgbGFiZWxzIHRvIHN1Ym1pdCB1c2VyIGNvbnRlbnQuIEJ1dCB5b3UgYWxyZWFkeSBrbmV3IHRoYXQuIFdoYXQgeW91IG1heSBub3Qga25vdyBpcyB0aGF0IG91ciBmb3JtcyBjb21lIGluIHR3byBzdHlsZXMgJ1N0YXRpYycgYW5kICdEeW5hbWljJzwvcD5cbiAgICA8aDI+U3RhdGljIEZvcm08L2gyPlxuICAgIDxwPlN0YXRpYyBmb3JtcyA8Y29kZT4mbHQ7bm92by1mb3JtIC8mZ3Q7PC9jb2RlPi5cbiAgICBcbiAgICA8aDU+VGV4dGJveCBCYXNlZCBDb250cm9sczwvaDU+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgZm9ybS1kZW1vXCI+JHtUZXh0QmFzZWRDb250cm9sc0RlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJUZXh0QmFzZWRDb250cm9sc0RlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbiAgICBcbiAgICA8aDU+Q2hlY2tib3ggQ29udHJvbHM8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtb1wiPiR7Q2hlY2tCb3hDb250cm9sc0RlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJDaGVja0JveENvbnRyb2xzRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuXG4gICAgPGg1PkZpbGUgSW5wdXQgQ29udHJvbHM8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtb1wiPiR7RmlsZUlucHV0Q29udHJvbHNEZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiRmlsZUlucHV0Q29udHJvbHNEZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG4gICAgXG4gICAgPGgyPkR5bmFtaWMgRm9ybTwvaDI+XG4gICAgPHA+RHluYW1pYyBmb3JtcyBhcmUgY29tcG9zZWQgb2Ygb25lIGVsZW1lbnQsIDxjb2RlPiZsdDtub3ZvLWR5bmFtaWMtZm9ybSBbY29udHJvbHNdPVwiY29udHJvbHNcIi8mZ3Q7PC9jb2RlPiBhbmQgYWxsb3cgeW91IHRvIHBhc3MgaW4gdGhlIGNvbnRyb2xzIGFuZCBmb3JtIGFuZCBpdCB3aWxsIGNyZWF0ZSB0aGUgZm9ybSBmb3IgeW91LjwvcD5cbiAgICBcbiAgICA8aDU+QmFzaWM8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtbyBkeW5hbWljXCI+JHtEeW5hbWljRm9ybURlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJEeW5hbWljRm9ybURlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbiAgICBcbiAgICA8aDU+VmVydGljYWw8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtbyBkeW5hbWljXCI+JHtWZXJ0aWNhbER5bmFtaWNGb3JtRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIlZlcnRpY2FsRHluYW1pY0Zvcm1EZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG48L2Rpdj5cbmA7XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnZm9ybS1kZW1vJyxcbiAgICB0ZW1wbGF0ZTogdGVtcGxhdGVcbn0pXG5leHBvcnQgY2xhc3MgRm9ybURlbW9Db21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKGZvcm1VdGlsczpGb3JtVXRpbHMpIHtcbiAgICAgICAgdGhpcy5EeW5hbWljRm9ybURlbW9UcGwgPSBEeW5hbWljRm9ybURlbW9UcGw7XG4gICAgICAgIHRoaXMuVmVydGljYWxEeW5hbWljRm9ybURlbW9UcGwgPSBWZXJ0aWNhbER5bmFtaWNGb3JtRGVtb1RwbDtcbiAgICAgICAgdGhpcy5UZXh0QmFzZWRDb250cm9sc0RlbW9UcGwgPSBUZXh0QmFzZWRDb250cm9sc0RlbW9UcGw7XG4gICAgICAgIHRoaXMuQ2hlY2tCb3hDb250cm9sc0RlbW9UcGwgPSBDaGVja0JveENvbnRyb2xzRGVtb1RwbDtcbiAgICAgICAgdGhpcy5GaWxlSW5wdXRDb250cm9sc0RlbW9UcGwgPSBGaWxlSW5wdXRDb250cm9sc0RlbW9UcGw7XG4gICAgICAgIC8vIFF1aWNrIG5vdGUgY29uZmlnXG4gICAgICAgIHRoaXMucXVpY2tOb3RlQ29uZmlnID0ge1xuICAgICAgICAgICAgdHJpZ2dlcnM6IHtcbiAgICAgICAgICAgICAgICB0YWdzOiAnQCcsXG4gICAgICAgICAgICAgICAgcmVmZXJlbmNlczogJyMnLFxuICAgICAgICAgICAgICAgIGJvb3M6ICdeJ1xuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIG9wdGlvbnM6IHtcbiAgICAgICAgICAgICAgICB0YWdzOiBbJ0ZpcnN0JywgJ1NlY29uZCddLFxuICAgICAgICAgICAgICAgIHJlZmVyZW5jZXM6IFsnVGhpcmQnLCAnRm9ydGgnXSxcbiAgICAgICAgICAgICAgICBib29zOiBbJ1Rlc3QnXVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHJlbmRlcmVyOiB7XG4gICAgICAgICAgICAgICAgdGFnczogKHN5bWJvbCwgaXRlbSkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYDxhIGNsYXNzPVwidGFnXCI+JHtzeW1ib2x9JHtpdGVtLmxhYmVsfTwvYT5gO1xuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgcmVmZXJlbmNlczogKHN5bWJvbCwgaXRlbSkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYDxhIGNsYXNzPVwidGFnXCI+JHtzeW1ib2x9JHtpdGVtLmxhYmVsfTwvYT5gO1xuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgYm9vczogKHN5bWJvbCwgaXRlbSkgPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gYDxzdHJvbmc+JHtzeW1ib2x9JHtpdGVtLmxhYmVsfTwvc3Ryb25nPmA7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICB9O1xuICAgICAgICAvLyBUZXh0LWJhc2VkIENvbnRyb2xzXG4gICAgICAgIHRoaXMudGV4dENvbnRyb2wgPSBuZXcgVGV4dEJveENvbnRyb2woeyBrZXk6ICd0ZXh0JywgbGFiZWw6ICdUZXh0IEJveCcgfSk7XG4gICAgICAgIHRoaXMuZW1haWxDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ2VtYWlsJywga2V5OiAnZW1haWwnLCBsYWJlbDogJ0VtYWlsJyB9KTtcbiAgICAgICAgdGhpcy5udW1iZXJDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ251bWJlcicsIGtleTogJ251bWJlcicsIGxhYmVsOiAnTnVtYmVyJyB9KTtcbiAgICAgICAgdGhpcy5jdXJyZW5jeUNvbnRyb2wgPSBuZXcgVGV4dEJveENvbnRyb2woeyB0eXBlOiAnY3VycmVuY3knLCBrZXk6ICdjdXJyZW5jeScsIGxhYmVsOiAnQ3VycmVuY3knLCBjdXJyZW5jeUZvcm1hdDogJyQgVVNEJyB9KTtcbiAgICAgICAgdGhpcy5mbG9hdENvbnRyb2wgPSBuZXcgVGV4dEJveENvbnRyb2woeyB0eXBlOiAnZmxvYXQnLCBrZXk6ICdmbG9hdCcsIGxhYmVsOiAnRmxvYXQnIH0pO1xuICAgICAgICB0aGlzLnBlcmNlbnRhZ2VDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ3BlcmNlbnRhZ2UnLCBrZXk6ICdwZXJjZW50YWdlJywgbGFiZWw6ICdQZXJjZW50JyB9KTtcbiAgICAgICAgdGhpcy5xdWlja05vdGVDb250cm9sID0gbmV3IFF1aWNrTm90ZUNvbnRyb2woeyBrZXk6ICdub3RlJywgbGFiZWw6ICdOb3RlJywgY29uZmlnOiB0aGlzLnF1aWNrTm90ZUNvbmZpZyB9KTtcbiAgICAgICAgdGhpcy50ZXh0Rm9ybSA9IGZvcm1VdGlscy50b0Zvcm1Hcm91cChbdGhpcy50ZXh0Q29udHJvbCwgdGhpcy5lbWFpbENvbnRyb2wsIHRoaXMubnVtYmVyQ29udHJvbCwgdGhpcy5jdXJyZW5jeUNvbnRyb2wsIHRoaXMuZmxvYXRDb250cm9sLCB0aGlzLnBlcmNlbnRhZ2VDb250cm9sLCB0aGlzLnF1aWNrTm90ZUNvbnRyb2xdKTtcblxuICAgICAgICAvLyBDaGVjayBib3ggY29udHJvbHNcbiAgICAgICAgdGhpcy5jaGVja0NvbnRyb2wgPSBuZXcgQ2hlY2tib3hDb250cm9sKHsga2V5OiAnY2hlY2snLCBsYWJlbDogJ0NoZWNrYm94JyB9KTtcbiAgICAgICAgdGhpcy5jaGVja0xpc3RDb250cm9sID0gbmV3IENoZWNrTGlzdENvbnRyb2woeyBrZXk6ICdjaGVja2xpc3QnLCBsYWJlbDogJ0NoZWNrIExpc3QnLCBvcHRpb25zOiBbJ09uZScsICdUd28nLCAnVGhyZWUnXSB9KTtcbiAgICAgICAgdGhpcy50aWxlc0NvbnRyb2wgPSBuZXcgVGlsZXNDb250cm9sKHsga2V5OiAndGlsZXMnLCBsYWJlbDogJ1RpbGVzJywgb3B0aW9uczogW3sgdmFsdWU6ICdvbmUnLCBsYWJlbDogJ09uZScgfSwgeyB2YWx1ZTogJ3R3bycsIGxhYmVsOiAnVHdvJyB9XSB9KTtcbiAgICAgICAgdGhpcy5jaGVja0Zvcm0gPSBmb3JtVXRpbHMudG9Gb3JtR3JvdXAoW3RoaXMuY2hlY2tDb250cm9sLCB0aGlzLmNoZWNrTGlzdENvbnRyb2wsIHRoaXMudGlsZXNDb250cm9sXSk7XG5cbiAgICAgICAgLy8gRmlsZSBpbnB1dCBjb250cm9sc1xuICAgICAgICB0aGlzLmZpbGVDb250cm9sID0gbmV3IEZpbGVDb250cm9sKHsga2V5OiAnZmlsZScsIG5hbWU6ICdteWZpbGUnLCBsYWJlbDogJ0ZpbGUnIH0pO1xuICAgICAgICB0aGlzLm11bHRpRmlsZUNvbnRyb2wgPSBuZXcgRmlsZUNvbnRyb2woeyBrZXk6ICdmaWxlJywgbmFtZTogJ215ZmlsZScsIGxhYmVsOiAnTXVsdGlwbGUgRmlsZXMnLCBtdWx0aXBsZTogdHJ1ZSB9KTtcbiAgICAgICAgdGhpcy5maWxlRm9ybSA9IGZvcm1VdGlscy50b0Zvcm1Hcm91cChbdGhpcy5maWxlQ29udHJvbCwgdGhpcy5tdWx0aUZpbGVDb250cm9sXSk7XG5cbiAgICAgICAgLy8gRHluYW1pY1xuICAgICAgICB0aGlzLmR5bmFtaWMgPSBmb3JtVXRpbHMudG9Db250cm9scyhNb2NrTWV0YSwgJyQgVVNEJywge30sICdUT0tFTicpO1xuICAgICAgICBmb3JtVXRpbHMuc2V0SW5pdGlhbFZhbHVlcyh0aGlzLmR5bmFtaWMsIHsgZmlyc3ROYW1lOiAnSW5pdGlhbCBGIE5hbWUnIH0pO1xuICAgICAgICB0aGlzLmR5bmFtaWNGb3JtID0gZm9ybVV0aWxzLnRvRm9ybUdyb3VwKHRoaXMuZHluYW1pYyk7XG4gICAgICAgIHRoaXMuZHluYW1pY1ZlcnRpY2FsID0gZm9ybVV0aWxzLnRvQ29udHJvbHMoTW9ja01ldGEsICckIFVTRCcsIHt9LCAnVE9LRU4nKTtcbiAgICAgICAgdGhpcy5keW5hbWljVmVydGljYWxGb3JtID0gZm9ybVV0aWxzLnRvRm9ybUdyb3VwKHRoaXMuZHluYW1pY1ZlcnRpY2FsKTtcbiAgICB9XG5cbiAgICBzYXZlKGZvcm0pIHtcbiAgICAgICAgaWYgKCFmb3JtLmlzVmFsaWQpIHtcbiAgICAgICAgICAgIGZvcm0uc2hvd09ubHlSZXF1aXJlZCh0cnVlKTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgIGFsZXJ0KCdTQVZJTkcnKTsgLy8gZXNsaW50LWRpc2FibGUtbGluZVxuICAgICAgICB9XG4gICAgfVxuXG4gICAgY2xlYXIoKSB7XG4gICAgICAgIHRoaXMuZHluYW1pYy5mb3JFYWNoKGNvbnRyb2wgPT4ge1xuICAgICAgICAgICAgY29udHJvbC5mb3JjZUNsZWFyLmVtaXQoKTtcbiAgICAgICAgfSk7XG4gICAgfVxuXG4gICAgb25DaGFuZ2UodmFsdWUpIHtcbiAgICAgICAgY29uc29sZS5sb2coJ0kgY2hhbmdlZCEnLCB2YWx1ZSk7IC8vIGVzbGludC1kaXNhYmxlLWxpbmVcbiAgICB9XG59XG4iXX0=
 
 /***/ },
 
@@ -2187,28 +2197,35 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 849:
+/***/ 851:
 /***/ function(module, exports) {
 
 	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"checkForm\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"checkControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"checkListControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"tilesControl\" (change)=\"onChange($event)\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{checkForm.value | json}}</div>\n"
 
 /***/ },
 
-/***/ 850:
+/***/ 852:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\" *ngIf=\"!myform.showingAllFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" *ngIf=\"!myform.showingRequiredFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form class=\"dynamic\" [controls]=\"dynamic\" [(form)]=\"dynamicForm\" #myform></novo-dynamic-form>\n<footer class=\"dynamic-demo-footer\">\n    <button (click)=\"save(myform)\" theme=\"primary\" icon=\"check\">Save</button>\n    <button (click)=\"clear()\" theme=\"secondary\" icon=\"check\">Clear</button>\n</footer>\n<div class=\"final-value\">Valid: {{myform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{myform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{myform.updatedValues() | json}}</div>\n"
 
 /***/ },
 
-/***/ 851:
+/***/ 853:
+/***/ function(module, exports) {
+
+	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"fileForm\" layout=\"vertical\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"fileForm\" [control]=\"fileControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"fileForm\" [control]=\"multiFileControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{fileForm.value | json}}</div>\n"
+
+/***/ },
+
+/***/ 854:
 /***/ function(module, exports) {
 
 	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"textForm\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"textControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"emailControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"numberControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"currencyControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"floatControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"percentageControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"quickNoteControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{textForm.value | json}}</div>\n"
 
 /***/ },
 
-/***/ 852:
+/***/ 855:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\" (click)=\"nomyform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" (click)=\"nomyform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form layout=\"vertical\" class=\"dynamic\" [controls]=\"dynamicVertical\" [(form)]=\"dynamicVerticalForm\" #nomyform></novo-dynamic-form>\n<div class=\"final-value\">Valid: {{nomyform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{nomyform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{nomyform.updatedValues() | json}}</div>\n"
@@ -2236,7 +2253,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _HeaderDemo = __webpack_require__(853);
+	var _HeaderDemo = __webpack_require__(856);
 	
 	var _HeaderDemo2 = _interopRequireDefault(_HeaderDemo);
 	
@@ -2291,7 +2308,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 853:
+/***/ 856:
 /***/ function(module, exports) {
 
 	module.exports = "<header title=\"John Deere\" icon=\"person\" [theme]=\"entity\">\n    <utils>\n        <util-action icon=\"flag\" (click)=\"catchEv('pin', $event)\"></util-action>\n        <util-action icon=\"refresh\" (click)=\"catchEv('refresh', $event)\"></util-action>\n        <util-action icon=\"times\" (click)=\"catchEv('close', $event)\"></util-action>\n    </utils>\n    <section>\n        Extra Info\n    </section>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>Overview</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Activity</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Email</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n"
@@ -2317,11 +2334,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ListDemo = __webpack_require__(854);
+	var _ListDemo = __webpack_require__(857);
 	
 	var _ListDemo2 = _interopRequireDefault(_ListDemo);
 	
-	var _ThemedListDemo = __webpack_require__(855);
+	var _ThemedListDemo = __webpack_require__(858);
 	
 	var _ThemedListDemo2 = _interopRequireDefault(_ThemedListDemo);
 	
@@ -2482,14 +2499,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 854:
+/***/ 857:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-list direction=\"vertical\">\n        <novo-list-item *ngFor=\"let item of pulseItems\">\n            <item-avatar [icon]=\"item.type\"></item-avatar>\n            <item-title>{{item.name}}</item-title>\n            <item-content direction=\"vertical\">\n                <p>\n                    <i *ngIf=\"item.icon.name\" class=\"{{item.icon.name}} {{item.icon.sentiment}}\"></i>\n                    {{item.comment}}\n                </p>\n                <span>\n                    <i class=\"bhi-clock\"></i>\n                    {{item.timeAgo | date: 'shortTime'}}\n                </span>\n            </item-content>\n            <item-end>\n                <i class=\"bhi-next\"></i>\n            </item-end>\n        </novo-list-item>\n    </novo-list>\n</header>\n"
 
 /***/ },
 
-/***/ 855:
+/***/ 858:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-list theme=\"navigation\" direction=\"vertical\">\n        <novo-list-item *ngFor=\"let item of pulseItems\">\n            <item-avatar [icon]=\"item.type\"></item-avatar>\n            <item-title>{{item.name}}</item-title>\n            <item-content direction=\"vertical\">\n                <p>\n                    <i *ngIf=\"item.icon.name\" class=\"{{item.icon.name}} {{item.icon.sentiment}}\"></i>\n                    {{item.comment}}\n                </p>\n                <span>\n                    <i class=\"bhi-clock\"></i>\n                    {{item.timeAgo | date: 'shortTime'}}\n                </span>\n            </item-content>\n            <item-end>\n                <i class=\"bhi-next\"></i>\n            </item-end>\n        </novo-list-item>\n    </novo-list>\n</header>\n"
@@ -2513,11 +2530,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _LoadingCircleDemo = __webpack_require__(856);
+	var _LoadingCircleDemo = __webpack_require__(859);
 	
 	var _LoadingCircleDemo2 = _interopRequireDefault(_LoadingCircleDemo);
 	
-	var _LoadingLineDemo = __webpack_require__(857);
+	var _LoadingLineDemo = __webpack_require__(860);
 	
 	var _LoadingLineDemo2 = _interopRequireDefault(_LoadingLineDemo);
 	
@@ -2540,14 +2557,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 856:
+/***/ 859:
 /***/ function(module, exports) {
 
 	module.exports = "<section>\n    <div class=\"whiteBg\">\n        <novo-spinner theme=\"multicolor\"></novo-spinner>\n    </div>\n    <div class=\"grayBg\">\n        <novo-spinner></novo-spinner>\n    </div>\n</section>\n<section>\n    <div class=\"blueBg\">\n        <novo-spinner inverse></novo-spinner>\n    </div>\n    <div class=\"darkBlueBg\">\n        <novo-spinner theme=\"bittersweet\"></novo-spinner>\n    </div>\n</section>\n"
 
 /***/ },
 
-/***/ 857:
+/***/ 860:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-loading></novo-loading>\n</header>\n<header class=\"color-container\">\n    <novo-loading inverse></novo-loading>\n</header>\n"
@@ -2575,27 +2592,27 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ModalAddDemo = __webpack_require__(858);
+	var _ModalAddDemo = __webpack_require__(861);
 	
 	var _ModalAddDemo2 = _interopRequireDefault(_ModalAddDemo);
 	
-	var _ModalEditDemo = __webpack_require__(860);
+	var _ModalEditDemo = __webpack_require__(863);
 	
 	var _ModalEditDemo2 = _interopRequireDefault(_ModalEditDemo);
 	
-	var _ModalErrorDemo = __webpack_require__(861);
+	var _ModalErrorDemo = __webpack_require__(864);
 	
 	var _ModalErrorDemo2 = _interopRequireDefault(_ModalErrorDemo);
 	
-	var _ModalCustomDemo = __webpack_require__(859);
+	var _ModalCustomDemo = __webpack_require__(862);
 	
 	var _ModalCustomDemo2 = _interopRequireDefault(_ModalCustomDemo);
 	
-	var _ModalSuccessDemo = __webpack_require__(862);
+	var _ModalSuccessDemo = __webpack_require__(865);
 	
 	var _ModalSuccessDemo2 = _interopRequireDefault(_ModalSuccessDemo);
 	
-	var _ModalWarningDemo = __webpack_require__(863);
+	var _ModalWarningDemo = __webpack_require__(866);
 	
 	var _ModalWarningDemo2 = _interopRequireDefault(_ModalWarningDemo);
 	
@@ -2782,42 +2799,42 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 858:
+/***/ 861:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-modal>\n    <header title=\"Add Contact\" icon=\"person\" theme=\"contact\">\n        <utils>\n            <util-action icon=\"times\" (click)=\"toggleClose($event)\"></util-action>\n        </utils>\n    </header>\n    <section>\n        <novo-form>\n            <form-field>\n                <form-label>First Name</form-label>\n                <form-input name=\"firstName\" type=\"text\" placeholder=\"Jack\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Last Name</form-label>\n                <form-input name=\"lastName\" type=\"text\" placeholder=\"White\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Email</form-label>\n                <form-input name=\"email\" type=\"text\" placeholder=\"jwhite@gmail.com\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Title</form-label>\n                <form-input name=\"title\" type=\"text\" placeholder=\"Operations Manager\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Current Company</form-label>\n                <form-input name=\"company\" type=\"text\" placeholder=\"Amazon\"></form-input>\n            </form-field>\n        </novo-form>\n    </section>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"close()\">Save</button>\n</novo-modal>\n"
 
 /***/ },
 
-/***/ 859:
+/***/ 862:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"custom\" icon=\"trending-up\">\n    <h1>I have a trending icon!</h1>\n    <h4>This notification type allows for any Bullhorn Icon</h4>\n    <button theme=\"primary\" icon=\"check\" (click)=\"close()\">Sweet.</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 860:
+/***/ 863:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-modal>\n    <header title=\"John Deere\" icon=\"candidate\" theme=\"candidate\">\n        <utils>\n            <util-action icon=\"times\" (click)=\"toggleClose($event)\"></util-action>\n        </utils>\n    </header>\n    <section>\n        <novo-form>\n            <form-field>\n                <form-label>Status</form-label>\n                <form-input name=\"status\" type=\"select\" [options]=\"statusOptions\" placeholder=\"Status\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Start Date</form-label>\n                <form-input name=\"startDate\" type=\"date\" inline=\"true\" placeholder=\"Please select a date\"></form-input>\n            </form-field>\n        </novo-form>\n    </section>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"close()\">Save</button>\n</novo-modal>\n"
 
 /***/ },
 
-/***/ 861:
+/***/ 864:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"error\">\n    <h1>Sorry, something went wrong.</h1>\n    <h4>You did not have 1.21 gigawatts of power.</h4>\n    <button theme=\"primary\" icon=\"refresh-o\" (click)=\"close()\">Refresh this page</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 862:
+/***/ 865:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"success\">\n    <h1>Woooo!</h1>\n    <h4>You did something awesome!</h4>\n    <button theme=\"primary\" icon=\"check\" (click)=\"close()\">I'm awesome</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 863:
+/***/ 866:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"warning\">\n    <h1>This action will delete 25 records.</h1>\n    <h4>Are you sure you wish to continue?</h4>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"negative\" icon=\"delete\" (click)=\"close()\">Delete</button>\n</novo-notification>\n"
@@ -2843,19 +2860,19 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicPickerDemo = __webpack_require__(865);
+	var _BasicPickerDemo = __webpack_require__(868);
 	
 	var _BasicPickerDemo2 = _interopRequireDefault(_BasicPickerDemo);
 	
-	var _AsyncPickerDemo = __webpack_require__(864);
+	var _AsyncPickerDemo = __webpack_require__(867);
 	
 	var _AsyncPickerDemo2 = _interopRequireDefault(_AsyncPickerDemo);
 	
-	var _FormattedPickerDemo = __webpack_require__(867);
+	var _FormattedPickerDemo = __webpack_require__(870);
 	
 	var _FormattedPickerDemo2 = _interopRequireDefault(_FormattedPickerDemo);
 	
-	var _CustomPickerResultsDemo = __webpack_require__(866);
+	var _CustomPickerResultsDemo = __webpack_require__(869);
 	
 	var _CustomPickerResultsDemo2 = _interopRequireDefault(_CustomPickerResultsDemo);
 	
@@ -2966,28 +2983,28 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 864:
+/***/ 867:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{avalue}}</div>\n<novo-picker [config]=\"async\" [placeholder]=\"placeholder\" [(ngModel)]=\"avalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 865:
+/***/ 868:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{value}}</div>\n<novo-picker [config]=\"static\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 866:
+/***/ 869:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{cvalue}}</div>\n<novo-picker [config]=\"custom\" [placeholder]=\"placeholder\" [(ngModel)]=\"cvalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 867:
+/***/ 870:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{fvalue}}</div>\n<novo-picker [config]=\"formatted\" [placeholder]=\"placeholder\" [(ngModel)]=\"fvalue\"></novo-picker>\n"
@@ -3013,15 +3030,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicQuickNote = __webpack_require__(868);
+	var _BasicQuickNote = __webpack_require__(871);
 	
 	var _BasicQuickNote2 = _interopRequireDefault(_BasicQuickNote);
 	
-	var _CustomQuickNote = __webpack_require__(869);
+	var _CustomQuickNote = __webpack_require__(872);
 	
 	var _CustomQuickNote2 = _interopRequireDefault(_CustomQuickNote);
 	
-	var _CustomQuickNoteResults = __webpack_require__(870);
+	var _CustomQuickNoteResults = __webpack_require__(873);
 	
 	var _CustomQuickNoteResults2 = _interopRequireDefault(_CustomQuickNoteResults);
 	
@@ -3170,21 +3187,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 868:
+/***/ 871:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note\" [placeholder]=\"placeholder\" [config]=\"config\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 869:
+/***/ 872:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note2\" [placeholder]=\"placeholder\" [config]=\"custom\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note2 | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 870:
+/***/ 873:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note3\" [placeholder]=\"placeholder\" [config]=\"custom2\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note3 | json}}</p>\n</div>\n"
@@ -3210,11 +3227,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicRadio = __webpack_require__(871);
+	var _BasicRadio = __webpack_require__(874);
 	
 	var _BasicRadio2 = _interopRequireDefault(_BasicRadio);
 	
-	var _VerticalRadio = __webpack_require__(872);
+	var _VerticalRadio = __webpack_require__(875);
 	
 	var _VerticalRadio2 = _interopRequireDefault(_VerticalRadio);
 	
@@ -3253,14 +3270,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 871:
+/***/ 874:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-radio [checked]=\"false\" name=\"basic\" value=\"one\" (change)=\"onChangeBasic($event)\">Make me anything!</novo-radio>\n<novo-radio [checked]=\"true\" name=\"basic\" value=\"two\" (change)=\"onChangeBasic($event)\">I get transcluded in!</novo-radio>\n<novo-radio [checked]=\"false\" name=\"basic\" value=\"three\" (change)=\"onChangeBasic($event)\">REALLY!</novo-radio>\n"
 
 /***/ },
 
-/***/ 872:
+/***/ 875:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-radio vertical=\"true\" [checked]=\"false\" name=\"vertical\" value=\"one\" (change)=\"onChangeVertical($event)\">Make me anything!</novo-radio>\n<novo-radio vertical=\"true\" [checked]=\"true\" name=\"vertical\" value=\"two\" (change)=\"onChangeVertical($event)\">I get transcluded in!</novo-radio>\n<novo-radio vertical=\"true\" [checked]=\"false\" name=\"vertical\" value=\"three\" (change)=\"onChangeVertical($event)\">REALLY!</novo-radio>\n"
@@ -3286,11 +3303,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicSelectDemo = __webpack_require__(873);
+	var _BasicSelectDemo = __webpack_require__(876);
 	
 	var _BasicSelectDemo2 = _interopRequireDefault(_BasicSelectDemo);
 	
-	var _LongSelectDemo = __webpack_require__(874);
+	var _LongSelectDemo = __webpack_require__(877);
 	
 	var _LongSelectDemo2 = _interopRequireDefault(_LongSelectDemo);
 	
@@ -3338,14 +3355,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 873:
+/***/ 876:
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span> {{value}}\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span> {{withNumbersValue}}\n    </label>\n    <novo-select [options]=\"withNumbers\" [(ngModel)]=\"withNumbersValue\"></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">Disabled State</span>\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\" disabled></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">No Model With Header</span>\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [headerConfig]=\"headerConfig\"></novo-select>\n</div>\n"
 
 /***/ },
 
-/***/ 874:
+/***/ 877:
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span>{{state}}</label>\n    <novo-select [options]=\"states\" [placeholder]=\"placeholder\" [(ngModel)]=\"state\"></novo-select>\n</div>\n"
@@ -3369,7 +3386,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicSlide = __webpack_require__(875);
+	var _BasicSlide = __webpack_require__(878);
 	
 	var _BasicSlide2 = _interopRequireDefault(_BasicSlide);
 	
@@ -3391,7 +3408,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 875:
+/***/ 878:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-slider [slides]=\"2\">\n    <div slide=\"1\">\n        SLIDE #1\n    </div>\n    <div slide=\"2\">\n        SLIDE #2\n    </div>\n</novo-slider>\n"
@@ -3417,7 +3434,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _SwitchDemo = __webpack_require__(876);
+	var _SwitchDemo = __webpack_require__(879);
 	
 	var _SwitchDemo2 = _interopRequireDefault(_SwitchDemo);
 	
@@ -3452,7 +3469,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 876:
+/***/ 879:
 /***/ function(module, exports) {
 
 	module.exports = "<label>\n    Count\n    <span>{{toggleCount}}</span>\n</label>\n<label>\n    Toggled\n    <span>{{checked}}</span>\n</label>\n<novo-switch [(ngModel)]=\"checked\" (onChange)=\"increment()\"></novo-switch>\n<novo-switch theme=\"grapefruit\"></novo-switch>\n<novo-switch disabled></novo-switch>\n"
@@ -4495,15 +4512,15 @@ webpackJsonp([3],{
 	
 	var _TableData = __webpack_require__(755);
 	
-	var _TableDemo = __webpack_require__(879);
+	var _TableDemo = __webpack_require__(882);
 	
 	var _TableDemo2 = _interopRequireDefault(_TableDemo);
 	
-	var _DetailsTableDemo = __webpack_require__(877);
+	var _DetailsTableDemo = __webpack_require__(880);
 	
 	var _DetailsTableDemo2 = _interopRequireDefault(_DetailsTableDemo);
 	
-	var _SelectAllTableDemo = __webpack_require__(878);
+	var _SelectAllTableDemo = __webpack_require__(881);
 	
 	var _SelectAllTableDemo2 = _interopRequireDefault(_SelectAllTableDemo);
 	
@@ -4710,21 +4727,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 877:
+/***/ 880:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [rows]=\"details.rows\" [columns]=\"details.columns\" [config]=\"details.config\" (onTableChange)=\"details.onTableChange($event)\"></novo-table>\n"
 
 /***/ },
 
-/***/ 878:
+/***/ 881:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [rows]=\"selectAll.rows\" [columns]=\"selectAll.columns\" [config]=\"selectAll.config\" (onTableChange)=\"selectAll.onTableChange($event)\" #table>\n    <novo-table-actions>\n        <button theme=\"secondary\" (click)=\"singleAction()\">Click Me!</button>\n        <novo-dropdown side=\"right\" *ngIf=\"table.selected.length\">\n            <button theme=\"primary\" icon=\"collapse\" inverse>{{table.selected.length}} Selected</button>\n            <list>\n                <item (action)=\"selectedAction('action 1')\">Action 1</item>\n                <item (action)=\"selectedAction('action 2')\">Action 2</item>\n                <item (action)=\"selectedAction('action 3')\" disabled=\"true\">Action 3</item>\n            </list>\n        </novo-dropdown>\n    </novo-table-actions>\n</novo-table>\n"
 
 /***/ },
 
-/***/ 879:
+/***/ 882:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [theme]=\"theme\" [rows]=\"basic.rows\" [columns]=\"basic.columns\" [config]=\"basic.config\" (onTableChange)=\"basic.onTableChange($event)\">\n    <novo-table-header class=\"demo-custom-header\">\n        TEST :)\n        <button theme=\"secondary\" (click)=\"changeTheme()\">Change Theme!</button>\n    </novo-table-header>\n</novo-table>\n"
@@ -4750,23 +4767,23 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ButtonTabDemo = __webpack_require__(880);
+	var _ButtonTabDemo = __webpack_require__(883);
 	
 	var _ButtonTabDemo2 = _interopRequireDefault(_ButtonTabDemo);
 	
-	var _ColorDemo = __webpack_require__(881);
+	var _ColorDemo = __webpack_require__(884);
 	
 	var _ColorDemo2 = _interopRequireDefault(_ColorDemo);
 	
-	var _RouterDemo = __webpack_require__(882);
+	var _RouterDemo = __webpack_require__(885);
 	
 	var _RouterDemo2 = _interopRequireDefault(_RouterDemo);
 	
-	var _VerticalDemo = __webpack_require__(883);
+	var _VerticalDemo = __webpack_require__(886);
 	
 	var _VerticalDemo2 = _interopRequireDefault(_VerticalDemo);
 	
-	var _WhiteDemo = __webpack_require__(884);
+	var _WhiteDemo = __webpack_require__(887);
 	
 	var _WhiteDemo2 = _interopRequireDefault(_WhiteDemo);
 	
@@ -4808,35 +4825,35 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 880:
+/***/ 883:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"color\">\n    <novo-nav theme=\"color\" [outlet]=\"buttonTab\" type=\"button-bar\">\n        <novo-tab-button>Button 1</novo-tab-button>\n        <novo-tab-button>Button 2</novo-tab-button>\n        <novo-tab-button>Button 3</novo-tab-button>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #buttonTab>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 3 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n\n<header>\n    <novo-nav theme=\"white\" [outlet]=\"buttonTabWhite\" type=\"button-bar\">\n        <novo-tab-button>Button 1</novo-tab-button>\n        <novo-tab-button>Button 2</novo-tab-button>\n        <novo-tab-button>Button 3</novo-tab-button>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #buttonTabWhite>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 3 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 881:
+/***/ 884:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab>\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #colornav>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 882:
+/***/ 885:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"white\" router>\n        <novo-tab-link>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab-link>\n        <novo-tab-link>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab-link>\n    </novo-nav>\n</header>\n"
 
 /***/ },
 
-/***/ 883:
+/***/ 886:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-nav theme=\"white\" [outlet]=\"colorVert\" direction=\"vertical\">\n    <novo-tab>\n        <span>\n            <i class=\"bhi-person\"></i>Tab 1</span>\n    </novo-tab>\n    <novo-tab>\n        <span>\n            <i class=\"bhi-person\"></i>Tab 2</span>\n    </novo-tab>\n</novo-nav>\n\n<novo-nav-outlet #colorVert>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n\n        <p>\n            Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,\n            Portland keffiyeh aesthetic food truck sriracha cornhole\n            single-origin coffee church-key roof party. Leggings\n            ethical McSweeney's, normcore you probably haven't\n            heard of them Marfa organic squid. Slow-carb 90's\n            ennui Godard pug asymmetrical, narwhal VHS Tonx High\n            Life. Retro dreamcatcher synth Godard pickled Etsy\n            jean shorts beard, pour-over fanny pack mumblecore.\n            Quinoa retro aesthetic polaroid, Williamsburg American\n            Apparel plaid small batch. Blue Bottle Vice fanny\n            pack, Williamsburg roof party Wes Anderson mlkshk\n            seitan brunch before they sold out lo-fi XOXO tofu\n            scenester small batch.\n        </p>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n\n        <p>\n            Synth polaroid bitters chillwave pickled.\n        </p>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 884:
+/***/ 887:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"white\" [outlet]=\"whitenav\">\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab>\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #whitenav>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
@@ -4862,7 +4879,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TilesDemo = __webpack_require__(885);
+	var _TilesDemo = __webpack_require__(888);
 	
 	var _TilesDemo2 = _interopRequireDefault(_TilesDemo);
 	
@@ -4905,7 +4922,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 885:
+/***/ 888:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tiles [options]=\"demoTiles\" (onChange)=\"colorSelect($event)\" [(ngModel)]=\"value\"></novo-tiles>\n"
@@ -4931,15 +4948,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TipWellDemo = __webpack_require__(886);
+	var _TipWellDemo = __webpack_require__(889);
 	
 	var _TipWellDemo2 = _interopRequireDefault(_TipWellDemo);
 	
-	var _TipWellNoButtonDemo = __webpack_require__(888);
+	var _TipWellNoButtonDemo = __webpack_require__(891);
 	
 	var _TipWellNoButtonDemo2 = _interopRequireDefault(_TipWellNoButtonDemo);
 	
-	var _TipWellIconDemo = __webpack_require__(887);
+	var _TipWellIconDemo = __webpack_require__(890);
 	
 	var _TipWellIconDemo2 = _interopRequireDefault(_TipWellIconDemo);
 	
@@ -4976,21 +4993,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 886:
+/***/ 889:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\"></novo-tip-well>"
 
 /***/ },
 
-/***/ 887:
+/***/ 890:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\" icon=\"info\" button=\"false\"></novo-tip-well>"
 
 /***/ },
 
-/***/ 888:
+/***/ 891:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\" button=\"false\"></novo-tip-well>\n"
@@ -5018,11 +5035,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ToastDemo = __webpack_require__(889);
+	var _ToastDemo = __webpack_require__(892);
 	
 	var _ToastDemo2 = _interopRequireDefault(_ToastDemo);
 	
-	var _ToastServiceDemo = __webpack_require__(890);
+	var _ToastServiceDemo = __webpack_require__(893);
 	
 	var _ToastServiceDemo2 = _interopRequireDefault(_ToastServiceDemo);
 	
@@ -5122,14 +5139,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 889:
+/***/ 892:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"fake-card\">\n    <header title=\"John Deere\" icon=\"person\" theme=\"contact\">\n        <utils>\n            <util-action icon=\"flag\"></util-action>\n            <util-action icon=\"refresh\"></util-action>\n            <util-action icon=\"times\"></util-action>\n        </utils>\n    </header>\n    <novo-toast theme=\"danger\" title=\"Save Failed\" message=\"Oops! Looks like you're missing some required fields\"\n                icon=\"caution\" position=\"growlTopRight\"></novo-toast>\n    <div class=\"content\">\n        <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n            do eiusmod tempor incididunt ut labore et dolore\n            magna aliqua. Ut enim ad minim veniam, quis nostrud\n            exercitation ullamco laboris nisi ut aliquip ex ea\n            commodo consequat. Duis aute irure dolor in reprehenderit\n            in voluptate velit esse cillum dolore eu fugiat nulla\n            pariatur. Excepteur sint occaecat cupidatat non proident,\n            sunt in culpa qui officia deserunt mollit anim id\n            est laborum.\n        </p>\n    </div>\n</div>\n"
 
 /***/ },
 
-/***/ 890:
+/***/ 893:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"dialogue\" color=\"success\" icon=\"coffee\" (click)=\"toastToggled('top')\" data-automation-id=\"toast-trigger\">Fixed Top</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"check\" (click)=\"toastToggled('bottom')\">Fixed Bottom</button>\n<button theme=\"dialogue\" color=\"negative\" icon=\"times\" (click)=\"toastToggled('growlTopRight')\">Growl: Top Right</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"coffee\" (click)=\"toastToggled('growlTopLeft')\">Growl: Top Left</button>\n<button theme=\"dialogue\" color=\"negative\" icon=\"times\" (click)=\"toastToggled('growlBottomRight')\">Growl: Bottom Right</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"coffee\" (click)=\"toastToggled('growlBottomLeft')\">Growl: Bottom Left</button>\n"
@@ -5155,23 +5172,23 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TooltipOptionsDemo = __webpack_require__(892);
+	var _TooltipOptionsDemo = __webpack_require__(895);
 	
 	var _TooltipOptionsDemo2 = _interopRequireDefault(_TooltipOptionsDemo);
 	
-	var _TooltipPlacementDemo = __webpack_require__(893);
+	var _TooltipPlacementDemo = __webpack_require__(896);
 	
 	var _TooltipPlacementDemo2 = _interopRequireDefault(_TooltipPlacementDemo);
 	
-	var _TooltipAlignDemo = __webpack_require__(891);
+	var _TooltipAlignDemo = __webpack_require__(894);
 	
 	var _TooltipAlignDemo2 = _interopRequireDefault(_TooltipAlignDemo);
 	
-	var _TooltipTypesDemo = __webpack_require__(895);
+	var _TooltipTypesDemo = __webpack_require__(898);
 	
 	var _TooltipTypesDemo2 = _interopRequireDefault(_TooltipTypesDemo);
 	
-	var _TooltipToggleDemo = __webpack_require__(894);
+	var _TooltipToggleDemo = __webpack_require__(897);
 	
 	var _TooltipToggleDemo2 = _interopRequireDefault(_TooltipToggleDemo);
 	
@@ -5207,42 +5224,42 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 891:
+/***/ 894:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"bottom-left\" tooltipPosition=\"bottom-left\">Bottom Left</span>\n<span tooltip=\"bottom-right\" tooltipPosition=\"bottom-right\">Bottom Right</span>\n<span tooltip=\"top-left\" tooltipPosition=\"top-left\">Top Left</span>\n<span tooltip=\"top-right\" tooltipPosition=\"top-right\">Top Right</span>\n"
 
 /***/ },
 
-/***/ 892:
+/***/ 895:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ALWAYS\" tooltipAlways=\"true\">Always Shown</span>\n<span tooltip=\"ROUNDED\" tooltipRounded=\"true\">Rounded</span>\n<span tooltip=\"NO ANIMATE\" tooltipNoAnimate=\"true\">No Animation</span>\n<span tooltip=\"BOUNCE\" tooltipBounce=\"true\">Bounce</span>\n"
 
 /***/ },
 
-/***/ 893:
+/***/ 896:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"left\" tooltipPosition=\"left\">Left</span>\n<span tooltip=\"right\" tooltipPosition=\"right\">Right</span>\n<span tooltip=\"top\" tooltipPosition=\"top\">Top</span>\n<span tooltip=\"bottom\" tooltipPosition=\"bottom\">Bottom</span>\n"
 
 /***/ },
 
-/***/ 894:
+/***/ 897:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"I HAVE A TOOLTIP!\" [tooltipActive]=\"tooltipActive\">\n    <span *ngIf=\"tooltipActive\">My tooltip can display!</span>\n    <span *ngIf=\"!tooltipActive\">My tooltip is disabled!</span>\n</span>\n<button theme=\"secondary\" (click)=\"toggleTooltip()\">Toggle</button>\n"
 
 /***/ },
 
-/***/ 895:
+/***/ 898:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ERROR\" tooltipType=\"error\">Error</span>\n<span tooltip=\"INFO\" tooltipType=\"info\">Info</span>\n<span tooltip=\"WARNING\" tooltipType=\"warning\">Warning</span>\n<span tooltip=\"SUCCESS\" tooltipType=\"success\">Success</span>\n"
 
 /***/ },
 
-/***/ 896:
+/***/ 899:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"design container\">\n    <div>\n        <h1 class=\"title\">Introduction</h1>\n        <h2 class=\"sub-title\">Crafted amid Complexity</h2>\n\n        <p class=\"description\">\n            Enterprise software is highly complex and demands a\n            high level of flexibility. Design offers clarity and enables us to make\n            deep, powerful connections.\n        </p>\n    </div>\n    <img src=\"assets/images/IntroPageHeaderImage.svg\" alt=\"\"/>\n</header>\n\n<section class=\"design container\">\n    <h5>A NEW STANDARD</h5>\n    <p>Elegance in utility helps to create a system for humans, not robots. We strive not just to empower users but to delight them in the process.</p>\n\n    <h5>INSIGHTS AT SCALE</h5>\n    <p>Vast data reservoirs need a finely tuned system to surface the critical information right when it is needed, no matter the scale or setting.</p>\n\n    <h5>POWER IN FLEXIBILITY</h5>\n    <p>Users have vastly differing needs and goals. By identifying key commonalities and themes, we provide a strong experience for all.</p>\n\n    <article class=\"jump-to code\">\n        <i class=\"bhi-link\"></i>\n        <span>Are you a developer and what to skip right to the code?<br><a href=\"#\" routerLink=\"Buttons\">View Components here</a></span>\n    </article>\n\n    <article class=\"jump-to brand\">\n        <i class=\"bhi-link\"></i>\n        <span>Looking for the Bullhorn corporate brand guidelines? <br/><a href=\"https://brandfolder.com/bullhorn\" target=\"_blank\">Bullhorn Brand Folder</a></span>\n    </article>\n</section>\n"
@@ -5268,7 +5285,7 @@ webpackJsonp([3],{
 	
 	var Home = exports.Home = (_dec = (0, _core.Component)({
 	    selector: 'home',
-	    template: __webpack_require__(896)
+	    template: __webpack_require__(899)
 	}), _dec(_class = function Home() {
 	    _classCallCheck(this, Home);
 	}) || _class);
@@ -5329,7 +5346,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _PluralizeDemo = __webpack_require__(897);
+	var _PluralizeDemo = __webpack_require__(900);
 	
 	var _PluralizeDemo2 = _interopRequireDefault(_PluralizeDemo);
 	
@@ -5351,14 +5368,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 897:
+/***/ 900:
 /***/ function(module, exports) {
 
 	module.exports = "<p>{{'Kitty' | plural}}</p>\n<p>{{'Cat' | plural}}</p>\n"
 
 /***/ },
 
-/***/ 898:
+/***/ 901:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\n    <h1>Utils</h1>\n    <p>Helpful utility functions and objects.</p>\n\n    <h5>Key Codes\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/key-codes\">(source)</a></small>\n    </h5>\n    <p>List of all Key Codes to import and use, no magic strings!</p>\n\n    <h5>Deferred\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/deferred\">(source)</a></small>\n    </h5>\n    <p>Custom deferred object</p>\n\n    <h5>Outside Click\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/outside-click\">(source)</a></small>\n    </h5>\n    <p>Helper class to listen to and automatically close a component when an outside click is detected.</p>\n</div>\n"
@@ -5384,7 +5401,7 @@ webpackJsonp([3],{
 	
 	var UtilsDemoComponent = exports.UtilsDemoComponent = (_dec = (0, _core.Component)({
 	    selector: 'utils-demo',
-	    template: __webpack_require__(898)
+	    template: __webpack_require__(901)
 	}), _dec(_class = function UtilsDemoComponent() {
 	    _classCallCheck(this, UtilsDemoComponent);
 	}) || _class);
@@ -5393,4 +5410,4 @@ webpackJsonp([3],{
 /***/ }
 
 });
-//# sourceMappingURL=demo.89889b48cc08b1a8b149.bundle.map
+//# sourceMappingURL=demo.5ec518956141f91adbda.bundle.map
