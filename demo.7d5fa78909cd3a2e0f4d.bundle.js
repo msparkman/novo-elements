@@ -47,7 +47,7 @@ webpackJsonp([3],{
 	        modalService.parentViewContainer = viewContainerRef;
 	
 	        this.menuOpen = false;
-	        this.version = ("1.0.27");
+	        this.version = ("1.0.28");
 	
 	        this.designRoutes = router.config.filter(function (r) {
 	            return r.section === 'design';
@@ -1787,25 +1787,29 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _DynamicForm = __webpack_require__(852);
+	var _DynamicForm = __webpack_require__(853);
 	
 	var _DynamicForm2 = _interopRequireDefault(_DynamicForm);
 	
-	var _VerticalDynamicForm = __webpack_require__(855);
+	var _VerticalDynamicForm = __webpack_require__(856);
 	
 	var _VerticalDynamicForm2 = _interopRequireDefault(_VerticalDynamicForm);
 	
-	var _TextBasedControls = __webpack_require__(854);
+	var _TextBasedControls = __webpack_require__(855);
 	
 	var _TextBasedControls2 = _interopRequireDefault(_TextBasedControls);
 	
-	var _CheckBoxControls = __webpack_require__(851);
+	var _CheckBoxControls = __webpack_require__(852);
 	
 	var _CheckBoxControls2 = _interopRequireDefault(_CheckBoxControls);
 	
-	var _FileInputControls = __webpack_require__(853);
+	var _FileInputControls = __webpack_require__(854);
 	
 	var _FileInputControls2 = _interopRequireDefault(_FileInputControls);
+	
+	var _CalendarInputControls = __webpack_require__(851);
+	
+	var _CalendarInputControls2 = _interopRequireDefault(_CalendarInputControls);
 	
 	var _MockMeta = __webpack_require__(744);
 	
@@ -1817,7 +1821,7 @@ webpackJsonp([3],{
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var template = '\n<div class="container">\n    <h1>Forms <small><a target="_blank" href="https://github.com/bullhorn/novo-elements/tree/master/src/elements/form">(source)</a></small></h1>\n    <p>Forms use inputs and labels to submit user content. But you already knew that. What you may not know is that our forms come in two styles \'Static\' and \'Dynamic\'</p>\n    <h2>Static Form</h2>\n    <p>Static forms <code>&lt;novo-form /&gt;</code>.\n    \n    <h5>Textbox Based Controls</h5>\n    <div class="example form-demo">' + _TextBasedControls2.default + '</div>\n    <code-snippet [code]="TextBasedControlsDemoTpl"></code-snippet>\n    \n    <h5>Checkbox Controls</h5>\n    <div class="example form-demo">' + _CheckBoxControls2.default + '</div>\n    <code-snippet [code]="CheckBoxControlsDemoTpl"></code-snippet>\n\n    <h5>File Input Controls</h5>\n    <div class="example form-demo">' + _FileInputControls2.default + '</div>\n    <code-snippet [code]="FileInputControlsDemoTpl"></code-snippet>\n    \n    <h2>Dynamic Form</h2>\n    <p>Dynamic forms are composed of one element, <code>&lt;novo-dynamic-form [controls]="controls"/&gt;</code> and allow you to pass in the controls and form and it will create the form for you.</p>\n    \n    <h5>Basic</h5>\n    <div class="example form-demo dynamic">' + _DynamicForm2.default + '</div>\n    <code-snippet [code]="DynamicFormDemoTpl"></code-snippet>\n    \n    <h5>Vertical</h5>\n    <div class="example form-demo dynamic">' + _VerticalDynamicForm2.default + '</div>\n    <code-snippet [code]="VerticalDynamicFormDemoTpl"></code-snippet>\n</div>\n';
+	var template = '\n<div class="container">\n    <h1>Forms <small><a target="_blank" href="https://github.com/bullhorn/novo-elements/tree/master/src/elements/form">(source)</a></small></h1>\n    <p>Forms use inputs and labels to submit user content. But you already knew that. What you may not know is that our forms come in two styles \'Static\' and \'Dynamic\'</p>\n    <h2>Static Form</h2>\n    <p>Static forms <code>&lt;novo-form /&gt;</code>.\n    \n    <h5>Textbox Based Controls</h5>\n    <div class="example form-demo">' + _TextBasedControls2.default + '</div>\n    <code-snippet [code]="TextBasedControlsDemoTpl"></code-snippet>\n    \n    <h5>Checkbox Controls</h5>\n    <div class="example form-demo">' + _CheckBoxControls2.default + '</div>\n    <code-snippet [code]="CheckBoxControlsDemoTpl"></code-snippet>\n\n    <h5>File Input Controls</h5>\n    <div class="example form-demo">' + _FileInputControls2.default + '</div>\n    <code-snippet [code]="FileInputControlsDemoTpl"></code-snippet>\n        \n    <h5>Calendar Controls</h5>\n    <div class="example form-demo">' + _CalendarInputControls2.default + '</div>\n    <code-snippet [code]="CalendarControlsDemoTpl"></code-snippet>\n    \n    <h2>Dynamic Form</h2>\n    <p>Dynamic forms are composed of one element, <code>&lt;novo-dynamic-form [controls]="controls"/&gt;</code> and allow you to pass in the controls and form and it will create the form for you.</p>\n    \n    <h5>Basic</h5>\n    <div class="example form-demo dynamic">' + _DynamicForm2.default + '</div>\n    <code-snippet [code]="DynamicFormDemoTpl"></code-snippet>\n    \n    <h5>Vertical</h5>\n    <div class="example form-demo dynamic">' + _VerticalDynamicForm2.default + '</div>\n    <code-snippet [code]="VerticalDynamicFormDemoTpl"></code-snippet>\n</div>\n';
 	
 	var FormDemoComponent = exports.FormDemoComponent = (_dec = (0, _core.Component)({
 	    selector: 'form-demo',
@@ -1831,6 +1835,8 @@ webpackJsonp([3],{
 	        this.TextBasedControlsDemoTpl = _TextBasedControls2.default;
 	        this.CheckBoxControlsDemoTpl = _CheckBoxControls2.default;
 	        this.FileInputControlsDemoTpl = _FileInputControls2.default;
+	        this.CalendarControlsDemoTpl = _CalendarInputControls2.default;
+	
 	        // Quick note config
 	        this.quickNoteConfig = {
 	            triggers: {
@@ -1876,6 +1882,12 @@ webpackJsonp([3],{
 	        this.multiFileControl = new _novoElements.FileControl({ key: 'files', name: 'myfiles', label: 'Multiple Files', multiple: true });
 	        this.fileForm = formUtils.toFormGroup([this.fileControl, this.multiFileControl]);
 	
+	        // Calendar input controls
+	        this.dateControl = new _novoElements.DateControl({ key: 'date', label: 'Date' });
+	        this.timeControl = new _novoElements.TimeControl({ key: 'time', label: 'Time' });
+	        this.dateTimeControl = new _novoElements.DateTimeControl({ key: 'dateTime', label: 'Date Time' });
+	        this.calendarForm = formUtils.toFormGroup([this.dateControl, this.timeControl, this.dateTimeControl]);
+	
 	        // Dynamic
 	        this.dynamic = formUtils.toControls(_MockMeta2.default, '$ USD', {}, 'TOKEN');
 	        formUtils.setInitialValues(this.dynamic, { firstName: 'Initial F Name' });
@@ -1910,7 +1922,7 @@ webpackJsonp([3],{
 	    return FormDemoComponent;
 	}()) || _class);
 	Reflect.defineMetadata('design:paramtypes', [_novoElements.FormUtils], FormDemoComponent);
-	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvZm9ybS9Gb3JtRGVtby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7a0JBQUE7O0FBRUE7O0FBT0E7OztBQVJBOztBQUVBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUVBOzs7Ozs7QUFFQSxJQUFNLCtqREFBTjs7SUFvQ2EsaUIsV0FBQSxpQixXQUpaLHFCQUFVO0FBQ1AsY0FBVSxXQURIO0FBRVAsY0FBVTtBQUZILENBQVYsQztBQUtHLCtCQUFZLFNBQVosRUFBaUM7QUFBQTs7QUFDN0IsYUFBSyxrQkFBTDtBQUNBLGFBQUssMEJBQUw7QUFDQSxhQUFLLHdCQUFMO0FBQ0EsYUFBSyx1QkFBTDtBQUNBLGFBQUssd0JBQUw7QUFDQTtBQUNBLGFBQUssZUFBTCxHQUF1QjtBQUNuQixzQkFBVTtBQUNOLHNCQUFNLEdBREE7QUFFTiw0QkFBWSxHQUZOO0FBR04sc0JBQU07QUFIQSxhQURTO0FBTW5CLHFCQUFTO0FBQ0wsc0JBQU0sQ0FBQyxPQUFELEVBQVUsUUFBVixDQUREO0FBRUwsNEJBQVksQ0FBQyxPQUFELEVBQVUsT0FBVixDQUZQO0FBR0wsc0JBQU0sQ0FBQyxNQUFEO0FBSEQsYUFOVTtBQVduQixzQkFBVTtBQUNOLHNCQUFNLGNBQUMsTUFBRCxFQUFTLElBQVQsRUFBa0I7QUFDcEIsK0NBQXlCLE1BQXpCLEdBQWtDLEtBQUssS0FBdkM7QUFDSCxpQkFISztBQUlOLDRCQUFZLG9CQUFDLE1BQUQsRUFBUyxJQUFULEVBQWtCO0FBQzFCLCtDQUF5QixNQUF6QixHQUFrQyxLQUFLLEtBQXZDO0FBQ0gsaUJBTks7QUFPTixzQkFBTSxjQUFDLE1BQUQsRUFBUyxJQUFULEVBQWtCO0FBQ3BCLHdDQUFrQixNQUFsQixHQUEyQixLQUFLLEtBQWhDO0FBQ0g7QUFUSztBQVhTLFNBQXZCO0FBdUJBO0FBQ0EsYUFBSyxXQUFMLEdBQW1CLGlDQUFtQixFQUFFLEtBQUssTUFB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MkIsVUFBVSxXQUFWLENBQXNCLEtBQUssZUFBM0IsQ0FBM0I7QUFDSDs7Ozs2QkFFSSxJLEVBQU07QUFDUCxnQkFBSSxDQUFDLEtBQUssT0FBVixFQUFtQjtBQUNmLHFCQUFLLGdCQUFMLENBQXNCLElBQXRCO0FBQ0gsYUFGRCxNQUVPO0FBQ0gsc0JBQU0sUUFBTixFQURHLENBQ2M7QUFDcEI7QUFDSjs7O2dDQUVPO0FBQ0osaUJBQUssT0FBTCxDQUFhLE9BQWIsQ0FBcUIsbUJBQVc7QUFDNUIsd0JBQVEsVUFBUixDQUFtQixJQUFuQjtBQUNILGFBRkQ7QUFHSDs7O2lDQUVRLEssRUFBTztBQUNaLG9CQUFRLEdBQVIsQ0FBWSxZQUFaLEVBQTBCLEtBQTFCLEVBRFksQ0FDc0I7QUFDckM7Ozs7O3VFQTVFUSxpQiIsImZpbGUiOiJGb3JtRGVtby5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamdvZGkvbm92by1kZXYvbGlicy9ub3ZvLWVsZW1lbnRzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gTkcyXG5pbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbi8vIEFQUFxuaW1wb3J0IER5bmFtaWNGb3JtRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9EeW5hbWljRm9ybS5odG1sJztcbmltcG9ydCBWZXJ0aWNhbER5bmFtaWNGb3JtRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9WZXJ0aWNhbER5bmFtaWNGb3JtLmh0bWwnO1xuaW1wb3J0IFRleHRCYXNlZENvbnRyb2xzRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9UZXh0QmFzZWRDb250cm9scy5odG1sJztcbmltcG9ydCBDaGVja0JveENvbnRyb2xzRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9DaGVja0JveENvbnRyb2xzLmh0bWwnO1xuaW1wb3J0IEZpbGVJbnB1dENvbnRyb2xzRGVtb1RwbCBmcm9tICcuL3RlbXBsYXRlcy9GaWxlSW5wdXRDb250cm9scy5odG1sJztcbmltcG9ydCBNb2NrTWV0YSBmcm9tICcuL01vY2tNZXRhJztcbi8vIFZlbmRvclxuaW1wb3J0IHsgRm9ybVV0aWxzLCBUZXh0Qm94Q29udHJvbCwgQ2hlY2tib3hDb250cm9sLCBDaGVja0xpc3RDb250cm9sLCBGaWxlQ29udHJvbCwgUXVpY2tOb3RlQ29udHJvbCwgVGlsZXNDb250cm9sIH0gZnJvbSAnLi8uLi8uLi8uLi8uLi9zcmMvbm92by1lbGVtZW50cyc7XG5cbmNvbnN0IHRlbXBsYXRlID0gYFxuPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICAgIDxoMT5Gb3JtcyA8c21hbGw+PGEgdGFyZ2V0PVwiX2JsYW5rXCIgaHJlZj1cImh0dHBzOi8vZ2l0aHViLmNvbS9idWxsaG9ybi9ub3ZvLWVsZW1lbnRzL3RyZWUvbWFzdGVyL3NyYy9lbGVtZW50cy9mb3JtXCI+KHNvdXJjZSk8L2E+PC9zbWFsbD48L2gxPlxuICAgIDxwPkZvcm1zIHVzZSBpbnB1dHMgYW5kIGxhYmVscyB0byBzdWJtaXQgdXNlciBjb250ZW50LiBCdXQgeW91IGFscmVhZHkga25ldyB0aGF0LiBXaGF0IHlvdSBtYXkgbm90IGtub3cgaXMgdGhhdCBvdXIgZm9ybXMgY29tZSBpbiB0d28gc3R5bGVzICdTdGF0aWMnIGFuZCAnRHluYW1pYyc8L3A+XG4gICAgPGgyPlN0YXRpYyBGb3JtPC9oMj5cbiAgICA8cD5TdGF0aWMgZm9ybXMgPGNvZGU+Jmx0O25vdm8tZm9ybSAvJmd0OzwvY29kZT4uXG4gICAgXG4gICAgPGg1PlRleHRib3ggQmFzZWQgQ29udHJvbHM8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtb1wiPiR7VGV4dEJhc2VkQ29udHJvbHNEZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiVGV4dEJhc2VkQ29udHJvbHNEZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG4gICAgXG4gICAgPGg1PkNoZWNrYm94IENvbnRyb2xzPC9oNT5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBmb3JtLWRlbW9cIj4ke0NoZWNrQm94Q29udHJvbHNEZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiQ2hlY2tCb3hDb250cm9sc0RlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cblxuICAgIDxoNT5GaWxlIElucHV0IENvbnRyb2xzPC9oNT5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBmb3JtLWRlbW9cIj4ke0ZpbGVJbnB1dENvbnRyb2xzRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIkZpbGVJbnB1dENvbnRyb2xzRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuICAgIFxuICAgIDxoMj5EeW5hbWljIEZvcm08L2gyPlxuICAgIDxwPkR5bmFtaWMgZm9ybXMgYXJlIGNvbXBvc2VkIG9mIG9uZSBlbGVtZW50LCA8Y29kZT4mbHQ7bm92by1keW5hbWljLWZvcm0gW2NvbnRyb2xzXT1cImNvbnRyb2xzXCIvJmd0OzwvY29kZT4gYW5kIGFsbG93IHlvdSB0byBwYXNzIGluIHRoZSBjb250cm9scyBhbmQgZm9ybSBhbmQgaXQgd2lsbCBjcmVhdGUgdGhlIGZvcm0gZm9yIHlvdS48L3A+XG4gICAgXG4gICAgPGg1PkJhc2ljPC9oNT5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBmb3JtLWRlbW8gZHluYW1pY1wiPiR7RHluYW1pY0Zvcm1EZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiRHluYW1pY0Zvcm1EZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG4gICAgXG4gICAgPGg1PlZlcnRpY2FsPC9oNT5cbiAgICA8ZGl2IGNsYXNzPVwiZXhhbXBsZSBmb3JtLWRlbW8gZHluYW1pY1wiPiR7VmVydGljYWxEeW5hbWljRm9ybURlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJWZXJ0aWNhbER5bmFtaWNGb3JtRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuPC9kaXY+XG5gO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ2Zvcm0tZGVtbycsXG4gICAgdGVtcGxhdGU6IHRlbXBsYXRlXG59KVxuZXhwb3J0IGNsYXNzIEZvcm1EZW1vQ29tcG9uZW50IHtcbiAgICBjb25zdHJ1Y3Rvcihmb3JtVXRpbHM6Rm9ybVV0aWxzKSB7XG4gICAgICAgIHRoaXMuRHluYW1pY0Zvcm1EZW1vVHBsID0gRHluYW1pY0Zvcm1EZW1vVHBsO1xuICAgICAgICB0aGlzLlZlcnRpY2FsRHluYW1pY0Zvcm1EZW1vVHBsID0gVmVydGljYWxEeW5hbWljRm9ybURlbW9UcGw7XG4gICAgICAgIHRoaXMuVGV4dEJhc2VkQ29udHJvbHNEZW1vVHBsID0gVGV4dEJhc2VkQ29udHJvbHNEZW1vVHBsO1xuICAgICAgICB0aGlzLkNoZWNrQm94Q29udHJvbHNEZW1vVHBsID0gQ2hlY2tCb3hDb250cm9sc0RlbW9UcGw7XG4gICAgICAgIHRoaXMuRmlsZUlucHV0Q29udHJvbHNEZW1vVHBsID0gRmlsZUlucHV0Q29udHJvbHNEZW1vVHBsO1xuICAgICAgICAvLyBRdWljayBub3RlIGNvbmZpZ1xuICAgICAgICB0aGlzLnF1aWNrTm90ZUNvbmZpZyA9IHtcbiAgICAgICAgICAgIHRyaWdnZXJzOiB7XG4gICAgICAgICAgICAgICAgdGFnczogJ0AnLFxuICAgICAgICAgICAgICAgIHJlZmVyZW5jZXM6ICcjJyxcbiAgICAgICAgICAgICAgICBib29zOiAnXidcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICBvcHRpb25zOiB7XG4gICAgICAgICAgICAgICAgdGFnczogWydGaXJzdCcsICdTZWNvbmQnXSxcbiAgICAgICAgICAgICAgICByZWZlcmVuY2VzOiBbJ1RoaXJkJywgJ0ZvcnRoJ10sXG4gICAgICAgICAgICAgICAgYm9vczogWydUZXN0J11cbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICByZW5kZXJlcjoge1xuICAgICAgICAgICAgICAgIHRhZ3M6IChzeW1ib2wsIGl0ZW0pID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGA8YSBjbGFzcz1cInRhZ1wiPiR7c3ltYm9sfSR7aXRlbS5sYWJlbH08L2E+YDtcbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIHJlZmVyZW5jZXM6IChzeW1ib2wsIGl0ZW0pID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGA8YSBjbGFzcz1cInRhZ1wiPiR7c3ltYm9sfSR7aXRlbS5sYWJlbH08L2E+YDtcbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIGJvb3M6IChzeW1ib2wsIGl0ZW0pID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGA8c3Ryb25nPiR7c3ltYm9sfSR7aXRlbS5sYWJlbH08L3N0cm9uZz5gO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH1cbiAgICAgICAgfTtcbiAgICAgICAgLy8gVGV4dC1iYXNlZCBDb250cm9sc1xuICAgICAgICB0aGlzLnRleHRDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsga2V5OiAndGV4dCcsIGxhYmVsOiAnVGV4dCBCb3gnIH0pO1xuICAgICAgICB0aGlzLmVtYWlsQ29udHJvbCA9IG5ldyBUZXh0Qm94Q29udHJvbCh7IHR5cGU6ICdlbWFpbCcsIGtleTogJ2VtYWlsJywgbGFiZWw6ICdFbWFpbCcgfSk7XG4gICAgICAgIHRoaXMubnVtYmVyQ29udHJvbCA9IG5ldyBUZXh0Qm94Q29udHJvbCh7IHR5cGU6ICdudW1iZXInLCBrZXk6ICdudW1iZXInLCBsYWJlbDogJ051bWJlcicgfSk7XG4gICAgICAgIHRoaXMuY3VycmVuY3lDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ2N1cnJlbmN5Jywga2V5OiAnY3VycmVuY3knLCBsYWJlbDogJ0N1cnJlbmN5JywgY3VycmVuY3lGb3JtYXQ6ICckIFVTRCcgfSk7XG4gICAgICAgIHRoaXMuZmxvYXRDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ2Zsb2F0Jywga2V5OiAnZmxvYXQnLCBsYWJlbDogJ0Zsb2F0JyB9KTtcbiAgICAgICAgdGhpcy5wZXJjZW50YWdlQ29udHJvbCA9IG5ldyBUZXh0Qm94Q29udHJvbCh7IHR5cGU6ICdwZXJjZW50YWdlJywga2V5OiAncGVyY2VudGFnZScsIGxhYmVsOiAnUGVyY2VudCcgfSk7XG4gICAgICAgIHRoaXMucXVpY2tOb3RlQ29udHJvbCA9IG5ldyBRdWlja05vdGVDb250cm9sKHsga2V5OiAnbm90ZScsIGxhYmVsOiAnTm90ZScsIGNvbmZpZzogdGhpcy5xdWlja05vdGVDb25maWcgfSk7XG4gICAgICAgIHRoaXMudGV4dEZvcm0gPSBmb3JtVXRpbHMudG9Gb3JtR3JvdXAoW3RoaXMudGV4dENvbnRyb2wsIHRoaXMuZW1haWxDb250cm9sLCB0aGlzLm51bWJlckNvbnRyb2wsIHRoaXMuY3VycmVuY3lDb250cm9sLCB0aGlzLmZsb2F0Q29udHJvbCwgdGhpcy5wZXJjZW50YWdlQ29udHJvbCwgdGhpcy5xdWlja05vdGVDb250cm9sXSk7XG5cbiAgICAgICAgLy8gQ2hlY2sgYm94IGNvbnRyb2xzXG4gICAgICAgIHRoaXMuY2hlY2tDb250cm9sID0gbmV3IENoZWNrYm94Q29udHJvbCh7IGtleTogJ2NoZWNrJywgbGFiZWw6ICdDaGVja2JveCcgfSk7XG4gICAgICAgIHRoaXMuY2hlY2tMaXN0Q29udHJvbCA9IG5ldyBDaGVja0xpc3RDb250cm9sKHsga2V5OiAnY2hlY2tsaXN0JywgbGFiZWw6ICdDaGVjayBMaXN0Jywgb3B0aW9uczogWydPbmUnLCAnVHdvJywgJ1RocmVlJ10gfSk7XG4gICAgICAgIHRoaXMudGlsZXNDb250cm9sID0gbmV3IFRpbGVzQ29udHJvbCh7IGtleTogJ3RpbGVzJywgbGFiZWw6ICdUaWxlcycsIG9wdGlvbnM6IFt7IHZhbHVlOiAnb25lJywgbGFiZWw6ICdPbmUnIH0sIHsgdmFsdWU6ICd0d28nLCBsYWJlbDogJ1R3bycgfV0gfSk7XG4gICAgICAgIHRoaXMuY2hlY2tGb3JtID0gZm9ybVV0aWxzLnRvRm9ybUdyb3VwKFt0aGlzLmNoZWNrQ29udHJvbCwgdGhpcy5jaGVja0xpc3RDb250cm9sLCB0aGlzLnRpbGVzQ29udHJvbF0pO1xuXG4gICAgICAgIC8vIEZpbGUgaW5wdXQgY29udHJvbHNcbiAgICAgICAgdGhpcy5maWxlQ29udHJvbCA9IG5ldyBGaWxlQ29udHJvbCh7IGtleTogJ2ZpbGUnLCBuYW1lOiAnbXlmaWxlJywgbGFiZWw6ICdGaWxlJyB9KTtcbiAgICAgICAgdGhpcy5tdWx0aUZpbGVDb250cm9sID0gbmV3IEZpbGVDb250cm9sKHsga2V5OiAnZmlsZXMnLCBuYW1lOiAnbXlmaWxlcycsIGxhYmVsOiAnTXVsdGlwbGUgRmlsZXMnLCBtdWx0aXBsZTogdHJ1ZSB9KTtcbiAgICAgICAgdGhpcy5maWxlRm9ybSA9IGZvcm1VdGlscy50b0Zvcm1Hcm91cChbdGhpcy5maWxlQ29udHJvbCwgdGhpcy5tdWx0aUZpbGVDb250cm9sXSk7XG5cbiAgICAgICAgLy8gRHluYW1pY1xuICAgICAgICB0aGlzLmR5bmFtaWMgPSBmb3JtVXRpbHMudG9Db250cm9scyhNb2NrTWV0YSwgJyQgVVNEJywge30sICdUT0tFTicpO1xuICAgICAgICBmb3JtVXRpbHMuc2V0SW5pdGlhbFZhbHVlcyh0aGlzLmR5bmFtaWMsIHsgZmlyc3ROYW1lOiAnSW5pdGlhbCBGIE5hbWUnIH0pO1xuICAgICAgICB0aGlzLmR5bmFtaWNGb3JtID0gZm9ybVV0aWxzLnRvRm9ybUdyb3VwKHRoaXMuZHluYW1pYyk7XG4gICAgICAgIHRoaXMuZHluYW1pY1ZlcnRpY2FsID0gZm9ybVV0aWxzLnRvQ29udHJvbHMoTW9ja01ldGEsICckIFVTRCcsIHt9LCAnVE9LRU4nKTtcbiAgICAgICAgdGhpcy5keW5hbWljVmVydGljYWxGb3JtID0gZm9ybVV0aWxzLnRvRm9ybUdyb3VwKHRoaXMuZHluYW1pY1ZlcnRpY2FsKTtcbiAgICB9XG5cbiAgICBzYXZlKGZvcm0pIHtcbiAgICAgICAgaWYgKCFmb3JtLmlzVmFsaWQpIHtcbiAgICAgICAgICAgIGZvcm0uc2hvd09ubHlSZXF1aXJlZCh0cnVlKTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgIGFsZXJ0KCdTQVZJTkcnKTsgLy8gZXNsaW50LWRpc2FibGUtbGluZVxuICAgICAgICB9XG4gICAgfVxuXG4gICAgY2xlYXIoKSB7XG4gICAgICAgIHRoaXMuZHluYW1pYy5mb3JFYWNoKGNvbnRyb2wgPT4ge1xuICAgICAgICAgICAgY29udHJvbC5mb3JjZUNsZWFyLmVtaXQoKTtcbiAgICAgICAgfSk7XG4gICAgfVxuXG4gICAgb25DaGFuZ2UodmFsdWUpIHtcbiAgICAgICAgY29uc29sZS5sb2coJ0kgY2hhbmdlZCEnLCB2YWx1ZSk7IC8vIGVzbGludC1kaXNhYmxlLWxpbmVcbiAgICB9XG59XG4iXX0=
+	//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8vcGFnZXMvZWxlbWVudHMvZm9ybS9Gb3JtRGVtby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7a0JBQUE7O0FBRUE7O0FBUUE7OztBQVRBOztBQUVBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBRUE7Ozs7OztBQUtBLElBQU0sK3ZEQUFOOztJQXdDYSxpQixXQUFBLGlCLFdBSloscUJBQVU7QUFDUCxjQUFVLFdBREg7QUFFUCxjQUFVO0FBRkgsQ0FBVixDO0FBS0csK0JBQVksU0FBWixFQUFpQztBQUFBOztBQUM3QixhQUFLLGtCQUFMO0FBQ0EsYUFBSywwQkFBTDtBQUNBLGFBQUssd0JBQUw7QUFDQSxhQUFLLHVCQUFMO0FBQ0EsYUFBSyx3QkFBTDtBQUNBLGFBQUssdUJBQUw7O0FBRUE7QUFDQSxhQUFLLGVBQUwsR0FBdUI7QUFDbkIsc0JBQVU7QUFDTixzQkFBTSxHQURBO0FBRU4sNEJBQVksR0FGTjtBQUdOLHNCQUFNO0FBSEEsYUFEUztBQU1uQixxQkFBUztBQUNMLHNCQUFNLENBQUMsT0FBRCxFQUFVLFFBQVYsQ0FERDtBQUVMLDRCQUFZLENBQUMsT0FBRCxFQUFVLE9BQVYsQ0FGUDtBQUdMLHNCQUFNLENBQUMsTUFBRDtBQUhELGFBTlU7QUFXbkIsc0JBQVU7QUFDTixzQkFBTSxjQUFDLE1BQUQsRUFBUyxJQUFULEVBQWtCO0FBQ3BCLCtDQUF5QixNQUF6QixHQUFrQyxLQUFLLEtBQXZDO0FBQ0gsaUJBSEs7QUFJTiw0QkFBWSxvQkFBQyxNQUFELEVBQVMsSUFBVCxFQUFrQjtBQUMxQiwrQ0FBeUIsTUFBekIsR0FBa0MsS0FBSyxLQUF2QztBQUNILGlCQU5LO0FBT04sc0JBQU0sY0FBQyxNQUFELEVBQVMsSUFBVCxFQUFrQjtBQUNwQix3Q0FBa0IsTUFBbEIsR0FBMkIsS0FBSyxLQUFoQztBQUNIO0FBVEs7QUFYUyxTQUF2QjtBQXVCQTtBQUNBLGFBQUssV0FBTCxH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S0FBSyxXQUFOLEVBQW1CLEtBQUssV0FBeEIsRUFBcUMsS0FBSyxlQUExQyxDQUF0QixDQUFwQjs7QUFFQTtBQUNBLGFBQUssT0FBTCxHQUFlLFVBQVUsVUFBVixxQkFBK0IsT0FBL0IsRUFBd0MsRUFBeEMsRUFBNEMsT0FBNUMsQ0FBZjtBQUNBLGtCQUFVLGdCQUFWLENBQTJCLEtBQUssT0FBaEMsRUFBeUMsRUFBRSxXQUFXLGdCQUFiLEVBQXpDO0FBQ0EsYUFBSyxXQUFMLEdBQW1CLFVBQVUsV0FBVixDQUFzQixLQUFLLE9BQTNCLENBQW5CO0FBQ0EsYUFBSyxlQUFMLEdBQXVCLFVBQVUsVUFBVixxQkFBK0IsT0FBL0IsRUFBd0MsRUFBeEMsRUFBNEMsT0FBNUMsQ0FBdkI7QUFDQSxhQUFLLG1CQUFMLEdBQTJCLFVBQVUsV0FBVixDQUFzQixLQUFLLGVBQTNCLENBQTNCO0FBQ0g7Ozs7NkJBRUksSSxFQUFNO0FBQ1AsZ0JBQUksQ0FBQyxLQUFLLE9BQVYsRUFBbUI7QUFDZixxQkFBSyxnQkFBTCxDQUFzQixJQUF0QjtBQUNILGFBRkQsTUFFTztBQUNILHNCQUFNLFFBQU4sRUFERyxDQUNjO0FBQ3BCO0FBQ0o7OztnQ0FFTztBQUNKLGlCQUFLLE9BQUwsQ0FBYSxPQUFiLENBQXFCLG1CQUFXO0FBQzVCLHdCQUFRLFVBQVIsQ0FBbUIsSUFBbkI7QUFDSCxhQUZEO0FBR0g7OztpQ0FFUSxLLEVBQU87QUFDWixvQkFBUSxHQUFSLENBQVksWUFBWixFQUEwQixLQUExQixFQURZLENBQ3NCO0FBQ3JDOzs7Ozt1RUFwRlEsaUIiLCJmaWxlIjoiRm9ybURlbW8uanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pnb2RpL25vdm8tZGV2L2xpYnMvbm92by1lbGVtZW50cyIsInNvdXJjZXNDb250ZW50IjpbIi8vIE5HMlxuaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG4vLyBBUFBcbmltcG9ydCBEeW5hbWljRm9ybURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvRHluYW1pY0Zvcm0uaHRtbCc7XG5pbXBvcnQgVmVydGljYWxEeW5hbWljRm9ybURlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvVmVydGljYWxEeW5hbWljRm9ybS5odG1sJztcbmltcG9ydCBUZXh0QmFzZWRDb250cm9sc0RlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvVGV4dEJhc2VkQ29udHJvbHMuaHRtbCc7XG5pbXBvcnQgQ2hlY2tCb3hDb250cm9sc0RlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvQ2hlY2tCb3hDb250cm9scy5odG1sJztcbmltcG9ydCBGaWxlSW5wdXRDb250cm9sc0RlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvRmlsZUlucHV0Q29udHJvbHMuaHRtbCc7XG5pbXBvcnQgQ2FsZW5kYXJDb250cm9sc0RlbW9UcGwgZnJvbSAnLi90ZW1wbGF0ZXMvQ2FsZW5kYXJJbnB1dENvbnRyb2xzLmh0bWwnO1xuaW1wb3J0IE1vY2tNZXRhIGZyb20gJy4vTW9ja01ldGEnO1xuLy8gVmVuZG9yXG5pbXBvcnQge1xuICAgIEZvcm1VdGlscywgVGV4dEJveENvbnRyb2wsIENoZWNrYm94Q29udHJvbCwgQ2hlY2tMaXN0Q29udHJvbCwgRmlsZUNvbnRyb2wsXG4gICAgUXVpY2tOb3RlQ29udHJvbCwgVGlsZXNDb250cm9sLCBEYXRlQ29udHJvbCwgVGltZUNvbnRyb2wsIERhdGVUaW1lQ29udHJvbFxufSBmcm9tICcuLy4uLy4uLy4uLy4uL3NyYy9ub3ZvLWVsZW1lbnRzJztcblxuY29uc3QgdGVtcGxhdGUgPSBgXG48ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gICAgPGgxPkZvcm1zIDxzbWFsbD48YSB0YXJnZXQ9XCJfYmxhbmtcIiBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL2J1bGxob3JuL25vdm8tZWxlbWVudHMvdHJlZS9tYXN0ZXIvc3JjL2VsZW1lbnRzL2Zvcm1cIj4oc291cmNlKTwvYT48L3NtYWxsPjwvaDE+XG4gICAgPHA+Rm9ybXMgdXNlIGlucHV0cyBhbmQgbGFiZWxzIHRvIHN1Ym1pdCB1c2VyIGNvbnRlbnQuIEJ1dCB5b3UgYWxyZWFkeSBrbmV3IHRoYXQuIFdoYXQgeW91IG1heSBub3Qga25vdyBpcyB0aGF0IG91ciBmb3JtcyBjb21lIGluIHR3byBzdHlsZXMgJ1N0YXRpYycgYW5kICdEeW5hbWljJzwvcD5cbiAgICA8aDI+U3RhdGljIEZvcm08L2gyPlxuICAgIDxwPlN0YXRpYyBmb3JtcyA8Y29kZT4mbHQ7bm92by1mb3JtIC8mZ3Q7PC9jb2RlPi5cbiAgICBcbiAgICA8aDU+VGV4dGJveCBCYXNlZCBDb250cm9sczwvaDU+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgZm9ybS1kZW1vXCI+JHtUZXh0QmFzZWRDb250cm9sc0RlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJUZXh0QmFzZWRDb250cm9sc0RlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbiAgICBcbiAgICA8aDU+Q2hlY2tib3ggQ29udHJvbHM8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtb1wiPiR7Q2hlY2tCb3hDb250cm9sc0RlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJDaGVja0JveENvbnRyb2xzRGVtb1RwbFwiPjwvY29kZS1zbmlwcGV0PlxuXG4gICAgPGg1PkZpbGUgSW5wdXQgQ29udHJvbHM8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtb1wiPiR7RmlsZUlucHV0Q29udHJvbHNEZW1vVHBsfTwvZGl2PlxuICAgIDxjb2RlLXNuaXBwZXQgW2NvZGVdPVwiRmlsZUlucHV0Q29udHJvbHNEZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG4gICAgICAgIFxuICAgIDxoNT5DYWxlbmRhciBDb250cm9sczwvaDU+XG4gICAgPGRpdiBjbGFzcz1cImV4YW1wbGUgZm9ybS1kZW1vXCI+JHtDYWxlbmRhckNvbnRyb2xzRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIkNhbGVuZGFyQ29udHJvbHNEZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG4gICAgXG4gICAgPGgyPkR5bmFtaWMgRm9ybTwvaDI+XG4gICAgPHA+RHluYW1pYyBmb3JtcyBhcmUgY29tcG9zZWQgb2Ygb25lIGVsZW1lbnQsIDxjb2RlPiZsdDtub3ZvLWR5bmFtaWMtZm9ybSBbY29udHJvbHNdPVwiY29udHJvbHNcIi8mZ3Q7PC9jb2RlPiBhbmQgYWxsb3cgeW91IHRvIHBhc3MgaW4gdGhlIGNvbnRyb2xzIGFuZCBmb3JtIGFuZCBpdCB3aWxsIGNyZWF0ZSB0aGUgZm9ybSBmb3IgeW91LjwvcD5cbiAgICBcbiAgICA8aDU+QmFzaWM8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtbyBkeW5hbWljXCI+JHtEeW5hbWljRm9ybURlbW9UcGx9PC9kaXY+XG4gICAgPGNvZGUtc25pcHBldCBbY29kZV09XCJEeW5hbWljRm9ybURlbW9UcGxcIj48L2NvZGUtc25pcHBldD5cbiAgICBcbiAgICA8aDU+VmVydGljYWw8L2g1PlxuICAgIDxkaXYgY2xhc3M9XCJleGFtcGxlIGZvcm0tZGVtbyBkeW5hbWljXCI+JHtWZXJ0aWNhbER5bmFtaWNGb3JtRGVtb1RwbH08L2Rpdj5cbiAgICA8Y29kZS1zbmlwcGV0IFtjb2RlXT1cIlZlcnRpY2FsRHluYW1pY0Zvcm1EZW1vVHBsXCI+PC9jb2RlLXNuaXBwZXQ+XG48L2Rpdj5cbmA7XG5cbkBDb21wb25lbnQoe1xuICAgIHNlbGVjdG9yOiAnZm9ybS1kZW1vJyxcbiAgICB0ZW1wbGF0ZTogdGVtcGxhdGVcbn0pXG5leHBvcnQgY2xhc3MgRm9ybURlbW9Db21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKGZvcm1VdGlsczpGb3JtVXRpbHMpIHtcbiAgICAgICAgdGhpcy5EeW5hbWljRm9ybURlbW9UcGwgPSBEeW5hbWljRm9ybURlbW9UcGw7XG4gICAgICAgIHRoaXMuVmVydGljYWxEeW5hbWljRm9ybURlbW9UcGwgPSBWZXJ0aWNhbER5bmFtaWNGb3JtRGVtb1RwbDtcbiAgICAgICAgdGhpcy5UZXh0QmFzZWRDb250cm9sc0RlbW9UcGwgPSBUZXh0QmFzZWRDb250cm9sc0RlbW9UcGw7XG4gICAgICAgIHRoaXMuQ2hlY2tCb3hDb250cm9sc0RlbW9UcGwgPSBDaGVja0JveENvbnRyb2xzRGVtb1RwbDtcbiAgICAgICAgdGhpcy5GaWxlSW5wdXRDb250cm9sc0RlbW9UcGwgPSBGaWxlSW5wdXRDb250cm9sc0RlbW9UcGw7XG4gICAgICAgIHRoaXMuQ2FsZW5kYXJDb250cm9sc0RlbW9UcGwgPSBDYWxlbmRhckNvbnRyb2xzRGVtb1RwbDtcblxuICAgICAgICAvLyBRdWljayBub3RlIGNvbmZpZ1xuICAgICAgICB0aGlzLnF1aWNrTm90ZUNvbmZpZyA9IHtcbiAgICAgICAgICAgIHRyaWdnZXJzOiB7XG4gICAgICAgICAgICAgICAgdGFnczogJ0AnLFxuICAgICAgICAgICAgICAgIHJlZmVyZW5jZXM6ICcjJyxcbiAgICAgICAgICAgICAgICBib29zOiAnXidcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICBvcHRpb25zOiB7XG4gICAgICAgICAgICAgICAgdGFnczogWydGaXJzdCcsICdTZWNvbmQnXSxcbiAgICAgICAgICAgICAgICByZWZlcmVuY2VzOiBbJ1RoaXJkJywgJ0ZvcnRoJ10sXG4gICAgICAgICAgICAgICAgYm9vczogWydUZXN0J11cbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICByZW5kZXJlcjoge1xuICAgICAgICAgICAgICAgIHRhZ3M6IChzeW1ib2wsIGl0ZW0pID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGA8YSBjbGFzcz1cInRhZ1wiPiR7c3ltYm9sfSR7aXRlbS5sYWJlbH08L2E+YDtcbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIHJlZmVyZW5jZXM6IChzeW1ib2wsIGl0ZW0pID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGA8YSBjbGFzcz1cInRhZ1wiPiR7c3ltYm9sfSR7aXRlbS5sYWJlbH08L2E+YDtcbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIGJvb3M6IChzeW1ib2wsIGl0ZW0pID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGA8c3Ryb25nPiR7c3ltYm9sfSR7aXRlbS5sYWJlbH08L3N0cm9uZz5gO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH1cbiAgICAgICAgfTtcbiAgICAgICAgLy8gVGV4dC1iYXNlZCBDb250cm9sc1xuICAgICAgICB0aGlzLnRleHRDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsga2V5OiAndGV4dCcsIGxhYmVsOiAnVGV4dCBCb3gnIH0pO1xuICAgICAgICB0aGlzLmVtYWlsQ29udHJvbCA9IG5ldyBUZXh0Qm94Q29udHJvbCh7IHR5cGU6ICdlbWFpbCcsIGtleTogJ2VtYWlsJywgbGFiZWw6ICdFbWFpbCcgfSk7XG4gICAgICAgIHRoaXMubnVtYmVyQ29udHJvbCA9IG5ldyBUZXh0Qm94Q29udHJvbCh7IHR5cGU6ICdudW1iZXInLCBrZXk6ICdudW1iZXInLCBsYWJlbDogJ051bWJlcicgfSk7XG4gICAgICAgIHRoaXMuY3VycmVuY3lDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ2N1cnJlbmN5Jywga2V5OiAnY3VycmVuY3knLCBsYWJlbDogJ0N1cnJlbmN5JywgY3VycmVuY3lGb3JtYXQ6ICckIFVTRCcgfSk7XG4gICAgICAgIHRoaXMuZmxvYXRDb250cm9sID0gbmV3IFRleHRCb3hDb250cm9sKHsgdHlwZTogJ2Zsb2F0Jywga2V5OiAnZmxvYXQnLCBsYWJlbDogJ0Zsb2F0JyB9KTtcbiAgICAgICAgdGhpcy5wZXJjZW50YWdlQ29udHJvbCA9IG5ldyBUZXh0Qm94Q29udHJvbCh7IHR5cGU6ICdwZXJjZW50YWdlJywga2V5OiAncGVyY2VudGFnZScsIGxhYmVsOiAnUGVyY2VudCcgfSk7XG4gICAgICAgIHRoaXMucXVpY2tOb3RlQ29udHJvbCA9IG5ldyBRdWlja05vdGVDb250cm9sKHsga2V5OiAnbm90ZScsIGxhYmVsOiAnTm90ZScsIGNvbmZpZzogdGhpcy5xdWlja05vdGVDb25maWcgfSk7XG4gICAgICAgIHRoaXMudGV4dEZvcm0gPSBmb3JtVXRpbHMudG9Gb3JtR3JvdXAoW3RoaXMudGV4dENvbnRyb2wsIHRoaXMuZW1haWxDb250cm9sLCB0aGlzLm51bWJlckNvbnRyb2wsIHRoaXMuY3VycmVuY3lDb250cm9sLCB0aGlzLmZsb2F0Q29udHJvbCwgdGhpcy5wZXJjZW50YWdlQ29udHJvbCwgdGhpcy5xdWlja05vdGVDb250cm9sXSk7XG5cbiAgICAgICAgLy8gQ2hlY2sgYm94IGNvbnRyb2xzXG4gICAgICAgIHRoaXMuY2hlY2tDb250cm9sID0gbmV3IENoZWNrYm94Q29udHJvbCh7IGtleTogJ2NoZWNrJywgbGFiZWw6ICdDaGVja2JveCcgfSk7XG4gICAgICAgIHRoaXMuY2hlY2tMaXN0Q29udHJvbCA9IG5ldyBDaGVja0xpc3RDb250cm9sKHsga2V5OiAnY2hlY2tsaXN0JywgbGFiZWw6ICdDaGVjayBMaXN0Jywgb3B0aW9uczogWydPbmUnLCAnVHdvJywgJ1RocmVlJ10gfSk7XG4gICAgICAgIHRoaXMudGlsZXNDb250cm9sID0gbmV3IFRpbGVzQ29udHJvbCh7IGtleTogJ3RpbGVzJywgbGFiZWw6ICdUaWxlcycsIG9wdGlvbnM6IFt7IHZhbHVlOiAnb25lJywgbGFiZWw6ICdPbmUnIH0sIHsgdmFsdWU6ICd0d28nLCBsYWJlbDogJ1R3bycgfV0gfSk7XG4gICAgICAgIHRoaXMuY2hlY2tGb3JtID0gZm9ybVV0aWxzLnRvRm9ybUdyb3VwKFt0aGlzLmNoZWNrQ29udHJvbCwgdGhpcy5jaGVja0xpc3RDb250cm9sLCB0aGlzLnRpbGVzQ29udHJvbF0pO1xuXG4gICAgICAgIC8vIEZpbGUgaW5wdXQgY29udHJvbHNcbiAgICAgICAgdGhpcy5maWxlQ29udHJvbCA9IG5ldyBGaWxlQ29udHJvbCh7IGtleTogJ2ZpbGUnLCBuYW1lOiAnbXlmaWxlJywgbGFiZWw6ICdGaWxlJyB9KTtcbiAgICAgICAgdGhpcy5tdWx0aUZpbGVDb250cm9sID0gbmV3IEZpbGVDb250cm9sKHsga2V5OiAnZmlsZXMnLCBuYW1lOiAnbXlmaWxlcycsIGxhYmVsOiAnTXVsdGlwbGUgRmlsZXMnLCBtdWx0aXBsZTogdHJ1ZSB9KTtcbiAgICAgICAgdGhpcy5maWxlRm9ybSA9IGZvcm1VdGlscy50b0Zvcm1Hcm91cChbdGhpcy5maWxlQ29udHJvbCwgdGhpcy5tdWx0aUZpbGVDb250cm9sXSk7XG5cbiAgICAgICAgLy8gQ2FsZW5kYXIgaW5wdXQgY29udHJvbHNcbiAgICAgICAgdGhpcy5kYXRlQ29udHJvbCA9IG5ldyBEYXRlQ29udHJvbCh7IGtleTogJ2RhdGUnLCBsYWJlbDogJ0RhdGUnIH0pO1xuICAgICAgICB0aGlzLnRpbWVDb250cm9sID0gbmV3IFRpbWVDb250cm9sKHsga2V5OiAndGltZScsIGxhYmVsOiAnVGltZScgfSk7XG4gICAgICAgIHRoaXMuZGF0ZVRpbWVDb250cm9sID0gbmV3IERhdGVUaW1lQ29udHJvbCh7IGtleTogJ2RhdGVUaW1lJywgbGFiZWw6ICdEYXRlIFRpbWUnIH0pO1xuICAgICAgICB0aGlzLmNhbGVuZGFyRm9ybSA9IGZvcm1VdGlscy50b0Zvcm1Hcm91cChbdGhpcy5kYXRlQ29udHJvbCwgdGhpcy50aW1lQ29udHJvbCwgdGhpcy5kYXRlVGltZUNvbnRyb2xdKTtcblxuICAgICAgICAvLyBEeW5hbWljXG4gICAgICAgIHRoaXMuZHluYW1pYyA9IGZvcm1VdGlscy50b0NvbnRyb2xzKE1vY2tNZXRhLCAnJCBVU0QnLCB7fSwgJ1RPS0VOJyk7XG4gICAgICAgIGZvcm1VdGlscy5zZXRJbml0aWFsVmFsdWVzKHRoaXMuZHluYW1pYywgeyBmaXJzdE5hbWU6ICdJbml0aWFsIEYgTmFtZScgfSk7XG4gICAgICAgIHRoaXMuZHluYW1pY0Zvcm0gPSBmb3JtVXRpbHMudG9Gb3JtR3JvdXAodGhpcy5keW5hbWljKTtcbiAgICAgICAgdGhpcy5keW5hbWljVmVydGljYWwgPSBmb3JtVXRpbHMudG9Db250cm9scyhNb2NrTWV0YSwgJyQgVVNEJywge30sICdUT0tFTicpO1xuICAgICAgICB0aGlzLmR5bmFtaWNWZXJ0aWNhbEZvcm0gPSBmb3JtVXRpbHMudG9Gb3JtR3JvdXAodGhpcy5keW5hbWljVmVydGljYWwpO1xuICAgIH1cblxuICAgIHNhdmUoZm9ybSkge1xuICAgICAgICBpZiAoIWZvcm0uaXNWYWxpZCkge1xuICAgICAgICAgICAgZm9ybS5zaG93T25seVJlcXVpcmVkKHRydWUpO1xuICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgYWxlcnQoJ1NBVklORycpOyAvLyBlc2xpbnQtZGlzYWJsZS1saW5lXG4gICAgICAgIH1cbiAgICB9XG5cbiAgICBjbGVhcigpIHtcbiAgICAgICAgdGhpcy5keW5hbWljLmZvckVhY2goY29udHJvbCA9PiB7XG4gICAgICAgICAgICBjb250cm9sLmZvcmNlQ2xlYXIuZW1pdCgpO1xuICAgICAgICB9KTtcbiAgICB9XG5cbiAgICBvbkNoYW5nZSh2YWx1ZSkge1xuICAgICAgICBjb25zb2xlLmxvZygnSSBjaGFuZ2VkIScsIHZhbHVlKTsgLy8gZXNsaW50LWRpc2FibGUtbGluZVxuICAgIH1cbn1cbiJdfQ==
 
 /***/ },
 
@@ -2206,32 +2218,39 @@ webpackJsonp([3],{
 /***/ 851:
 /***/ function(module, exports) {
 
-	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"checkForm\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"checkControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"checkListControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"tilesControl\" (change)=\"onChange($event)\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{checkForm.value | json}}</div>\n"
+	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"calendarForm\" layout=\"vertical\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"calendarForm\" [control]=\"dateControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"calendarForm\" [control]=\"timeControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"calendarForm\" [control]=\"dateTimeControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{calendarForm.value | json}}</div>\n"
 
 /***/ },
 
 /***/ 852:
 /***/ function(module, exports) {
 
-	module.exports = "<button theme=\"secondary\" *ngIf=\"!myform.showingAllFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" *ngIf=\"!myform.showingRequiredFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form class=\"dynamic\" [controls]=\"dynamic\" [(form)]=\"dynamicForm\" #myform></novo-dynamic-form>\n<footer class=\"dynamic-demo-footer\">\n    <button (click)=\"save(myform)\" theme=\"primary\" icon=\"check\">Save</button>\n    <button (click)=\"clear()\" theme=\"secondary\" icon=\"check\">Clear</button>\n</footer>\n<div class=\"final-value\">Valid: {{myform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{myform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{myform.updatedValues() | json}}</div>\n"
+	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"checkForm\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"checkControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"checkListControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"checkForm\" [control]=\"tilesControl\" (change)=\"onChange($event)\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{checkForm.value | json}}</div>\n"
 
 /***/ },
 
 /***/ 853:
 /***/ function(module, exports) {
 
-	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"fileForm\" layout=\"vertical\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"fileForm\" [control]=\"fileControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"fileForm\" [control]=\"multiFileControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{fileForm.value | json}}</div>\n"
+	module.exports = "<button theme=\"secondary\" *ngIf=\"!myform.showingAllFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" *ngIf=\"!myform.showingRequiredFields && !(myform.allFieldsRequired || myform.allFieldsNotRequired)\" (click)=\"myform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form class=\"dynamic\" [controls]=\"dynamic\" [(form)]=\"dynamicForm\" #myform></novo-dynamic-form>\n<footer class=\"dynamic-demo-footer\">\n    <button (click)=\"save(myform)\" theme=\"primary\" icon=\"check\">Save</button>\n    <button (click)=\"clear()\" theme=\"secondary\" icon=\"check\">Clear</button>\n</footer>\n<div class=\"final-value\">Valid: {{myform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{myform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{myform.updatedValues() | json}}</div>\n"
 
 /***/ },
 
 /***/ 854:
 /***/ function(module, exports) {
 
-	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"textForm\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"textControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"emailControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"numberControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"currencyControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"floatControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"percentageControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"quickNoteControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{textForm.value | json}}</div>\n"
+	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"fileForm\" layout=\"vertical\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"fileForm\" [control]=\"fileControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"fileForm\" [control]=\"multiFileControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{fileForm.value | json}}</div>\n"
 
 /***/ },
 
 /***/ 855:
+/***/ function(module, exports) {
+
+	module.exports = "<!--Check out the FormDemo.js for more information!-->\n<novo-form [form]=\"textForm\">\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"textControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"emailControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"numberControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"currencyControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"floatControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"percentageControl\"></novo-control>\n    </div>\n    <div class=\"novo-form-row\">\n        <novo-control [form]=\"textForm\" [control]=\"quickNoteControl\"></novo-control>\n    </div>\n</novo-form>\n<div class=\"final-value\">Value: {{textForm.value | json}}</div>\n"
+
+/***/ },
+
+/***/ 856:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"secondary\" (click)=\"nomyform.showAllFields()\">Show All Fields</button>\n<button theme=\"secondary\" (click)=\"nomyform.showOnlyRequired()\">Show Required Fields</button>\n<novo-dynamic-form layout=\"vertical\" class=\"dynamic\" [controls]=\"dynamicVertical\" [(form)]=\"dynamicVerticalForm\" #nomyform></novo-dynamic-form>\n<div class=\"final-value\">Valid: {{nomyform.isValid | json}}</div>\n<div class=\"final-value\">Values: {{nomyform.values | json}}</div>\n<div class=\"final-value\">Updated Values: {{nomyform.updatedValues() | json}}</div>\n"
@@ -2259,7 +2278,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _HeaderDemo = __webpack_require__(856);
+	var _HeaderDemo = __webpack_require__(857);
 	
 	var _HeaderDemo2 = _interopRequireDefault(_HeaderDemo);
 	
@@ -2314,7 +2333,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 856:
+/***/ 857:
 /***/ function(module, exports) {
 
 	module.exports = "<header title=\"John Deere\" icon=\"person\" [theme]=\"entity\">\n    <utils>\n        <util-action icon=\"flag\" (click)=\"catchEv('pin', $event)\"></util-action>\n        <util-action icon=\"refresh\" (click)=\"catchEv('refresh', $event)\"></util-action>\n        <util-action icon=\"times\" (click)=\"catchEv('close', $event)\"></util-action>\n    </utils>\n    <section>\n        Extra Info\n    </section>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>Overview</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Activity</span>\n        </novo-tab>\n        <novo-tab>\n            <span>Email</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n"
@@ -2340,11 +2359,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ListDemo = __webpack_require__(857);
+	var _ListDemo = __webpack_require__(858);
 	
 	var _ListDemo2 = _interopRequireDefault(_ListDemo);
 	
-	var _ThemedListDemo = __webpack_require__(858);
+	var _ThemedListDemo = __webpack_require__(859);
 	
 	var _ThemedListDemo2 = _interopRequireDefault(_ThemedListDemo);
 	
@@ -2505,14 +2524,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 857:
+/***/ 858:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-list direction=\"vertical\">\n        <novo-list-item *ngFor=\"let item of pulseItems\">\n            <item-avatar [icon]=\"item.type\"></item-avatar>\n            <item-title>{{item.name}}</item-title>\n            <item-content direction=\"vertical\">\n                <p>\n                    <i *ngIf=\"item.icon.name\" class=\"{{item.icon.name}} {{item.icon.sentiment}}\"></i>\n                    {{item.comment}}\n                </p>\n                <span>\n                    <i class=\"bhi-clock\"></i>\n                    {{item.timeAgo | date: 'shortTime'}}\n                </span>\n            </item-content>\n            <item-end>\n                <i class=\"bhi-next\"></i>\n            </item-end>\n        </novo-list-item>\n    </novo-list>\n</header>\n"
 
 /***/ },
 
-/***/ 858:
+/***/ 859:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-list theme=\"navigation\" direction=\"vertical\">\n        <novo-list-item *ngFor=\"let item of pulseItems\">\n            <item-avatar [icon]=\"item.type\"></item-avatar>\n            <item-title>{{item.name}}</item-title>\n            <item-content direction=\"vertical\">\n                <p>\n                    <i *ngIf=\"item.icon.name\" class=\"{{item.icon.name}} {{item.icon.sentiment}}\"></i>\n                    {{item.comment}}\n                </p>\n                <span>\n                    <i class=\"bhi-clock\"></i>\n                    {{item.timeAgo | date: 'shortTime'}}\n                </span>\n            </item-content>\n            <item-end>\n                <i class=\"bhi-next\"></i>\n            </item-end>\n        </novo-list-item>\n    </novo-list>\n</header>\n"
@@ -2536,11 +2555,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _LoadingCircleDemo = __webpack_require__(859);
+	var _LoadingCircleDemo = __webpack_require__(860);
 	
 	var _LoadingCircleDemo2 = _interopRequireDefault(_LoadingCircleDemo);
 	
-	var _LoadingLineDemo = __webpack_require__(860);
+	var _LoadingLineDemo = __webpack_require__(861);
 	
 	var _LoadingLineDemo2 = _interopRequireDefault(_LoadingLineDemo);
 	
@@ -2563,14 +2582,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 859:
+/***/ 860:
 /***/ function(module, exports) {
 
 	module.exports = "<section>\n    <div class=\"whiteBg\">\n        <novo-spinner theme=\"multicolor\"></novo-spinner>\n    </div>\n    <div class=\"grayBg\">\n        <novo-spinner></novo-spinner>\n    </div>\n</section>\n<section>\n    <div class=\"blueBg\">\n        <novo-spinner inverse></novo-spinner>\n    </div>\n    <div class=\"darkBlueBg\">\n        <novo-spinner theme=\"bittersweet\"></novo-spinner>\n    </div>\n</section>\n"
 
 /***/ },
 
-/***/ 860:
+/***/ 861:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-loading></novo-loading>\n</header>\n<header class=\"color-container\">\n    <novo-loading inverse></novo-loading>\n</header>\n"
@@ -2598,27 +2617,27 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ModalAddDemo = __webpack_require__(861);
+	var _ModalAddDemo = __webpack_require__(862);
 	
 	var _ModalAddDemo2 = _interopRequireDefault(_ModalAddDemo);
 	
-	var _ModalEditDemo = __webpack_require__(863);
+	var _ModalEditDemo = __webpack_require__(864);
 	
 	var _ModalEditDemo2 = _interopRequireDefault(_ModalEditDemo);
 	
-	var _ModalErrorDemo = __webpack_require__(864);
+	var _ModalErrorDemo = __webpack_require__(865);
 	
 	var _ModalErrorDemo2 = _interopRequireDefault(_ModalErrorDemo);
 	
-	var _ModalCustomDemo = __webpack_require__(862);
+	var _ModalCustomDemo = __webpack_require__(863);
 	
 	var _ModalCustomDemo2 = _interopRequireDefault(_ModalCustomDemo);
 	
-	var _ModalSuccessDemo = __webpack_require__(865);
+	var _ModalSuccessDemo = __webpack_require__(866);
 	
 	var _ModalSuccessDemo2 = _interopRequireDefault(_ModalSuccessDemo);
 	
-	var _ModalWarningDemo = __webpack_require__(866);
+	var _ModalWarningDemo = __webpack_require__(867);
 	
 	var _ModalWarningDemo2 = _interopRequireDefault(_ModalWarningDemo);
 	
@@ -2805,42 +2824,42 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 861:
+/***/ 862:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-modal>\n    <header title=\"Add Contact\" icon=\"person\" theme=\"contact\">\n        <utils>\n            <util-action icon=\"times\" (click)=\"toggleClose($event)\"></util-action>\n        </utils>\n    </header>\n    <section>\n        <novo-form>\n            <form-field>\n                <form-label>First Name</form-label>\n                <form-input name=\"firstName\" type=\"text\" placeholder=\"Jack\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Last Name</form-label>\n                <form-input name=\"lastName\" type=\"text\" placeholder=\"White\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Email</form-label>\n                <form-input name=\"email\" type=\"text\" placeholder=\"jwhite@gmail.com\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Title</form-label>\n                <form-input name=\"title\" type=\"text\" placeholder=\"Operations Manager\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Current Company</form-label>\n                <form-input name=\"company\" type=\"text\" placeholder=\"Amazon\"></form-input>\n            </form-field>\n        </novo-form>\n    </section>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"close()\">Save</button>\n</novo-modal>\n"
 
 /***/ },
 
-/***/ 862:
+/***/ 863:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"custom\" icon=\"trending-up\">\n    <h1>I have a trending icon!</h1>\n    <h4>This notification type allows for any Bullhorn Icon</h4>\n    <button theme=\"primary\" icon=\"check\" (click)=\"close()\">Sweet.</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 863:
+/***/ 864:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-modal>\n    <header title=\"John Deere\" icon=\"candidate\" theme=\"candidate\">\n        <utils>\n            <util-action icon=\"times\" (click)=\"toggleClose($event)\"></util-action>\n        </utils>\n    </header>\n    <section>\n        <novo-form>\n            <form-field>\n                <form-label>Status</form-label>\n                <form-input name=\"status\" type=\"select\" [options]=\"statusOptions\" placeholder=\"Status\"></form-input>\n            </form-field>\n            <form-field>\n                <form-label>Start Date</form-label>\n                <form-input name=\"startDate\" type=\"date\" inline=\"true\" placeholder=\"Please select a date\"></form-input>\n            </form-field>\n        </novo-form>\n    </section>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"success\" icon=\"check\" (click)=\"close()\">Save</button>\n</novo-modal>\n"
 
 /***/ },
 
-/***/ 864:
+/***/ 865:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"error\">\n    <h1>Sorry, something went wrong.</h1>\n    <h4>You did not have 1.21 gigawatts of power.</h4>\n    <button theme=\"primary\" icon=\"refresh-o\" (click)=\"close()\">Refresh this page</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 865:
+/***/ 866:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"success\">\n    <h1>Woooo!</h1>\n    <h4>You did something awesome!</h4>\n    <button theme=\"primary\" icon=\"check\" (click)=\"close()\">I'm awesome</button>\n</novo-notification>\n"
 
 /***/ },
 
-/***/ 866:
+/***/ 867:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-notification type=\"warning\">\n    <h1>This action will delete 25 records.</h1>\n    <h4>Are you sure you wish to continue?</h4>\n    <button theme=\"standard\" (click)=\"close()\">Cancel</button>\n    <button theme=\"primary\" color=\"negative\" icon=\"delete\" (click)=\"close()\">Delete</button>\n</novo-notification>\n"
@@ -2866,19 +2885,19 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicPickerDemo = __webpack_require__(868);
+	var _BasicPickerDemo = __webpack_require__(869);
 	
 	var _BasicPickerDemo2 = _interopRequireDefault(_BasicPickerDemo);
 	
-	var _AsyncPickerDemo = __webpack_require__(867);
+	var _AsyncPickerDemo = __webpack_require__(868);
 	
 	var _AsyncPickerDemo2 = _interopRequireDefault(_AsyncPickerDemo);
 	
-	var _FormattedPickerDemo = __webpack_require__(870);
+	var _FormattedPickerDemo = __webpack_require__(871);
 	
 	var _FormattedPickerDemo2 = _interopRequireDefault(_FormattedPickerDemo);
 	
-	var _CustomPickerResultsDemo = __webpack_require__(869);
+	var _CustomPickerResultsDemo = __webpack_require__(870);
 	
 	var _CustomPickerResultsDemo2 = _interopRequireDefault(_CustomPickerResultsDemo);
 	
@@ -2989,28 +3008,28 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 867:
+/***/ 868:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{avalue}}</div>\n<novo-picker [config]=\"async\" [placeholder]=\"placeholder\" [(ngModel)]=\"avalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 868:
+/***/ 869:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{value}}</div>\n<novo-picker [config]=\"static\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 869:
+/***/ 870:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{cvalue}}</div>\n<novo-picker [config]=\"custom\" [placeholder]=\"placeholder\" [(ngModel)]=\"cvalue\"></novo-picker>\n"
 
 /***/ },
 
-/***/ 870:
+/***/ 871:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"selected-value\">Selected Value: {{fvalue}}</div>\n<novo-picker [config]=\"formatted\" [placeholder]=\"placeholder\" [(ngModel)]=\"fvalue\"></novo-picker>\n"
@@ -3036,15 +3055,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicQuickNote = __webpack_require__(871);
+	var _BasicQuickNote = __webpack_require__(872);
 	
 	var _BasicQuickNote2 = _interopRequireDefault(_BasicQuickNote);
 	
-	var _CustomQuickNote = __webpack_require__(872);
+	var _CustomQuickNote = __webpack_require__(873);
 	
 	var _CustomQuickNote2 = _interopRequireDefault(_CustomQuickNote);
 	
-	var _CustomQuickNoteResults = __webpack_require__(873);
+	var _CustomQuickNoteResults = __webpack_require__(874);
 	
 	var _CustomQuickNoteResults2 = _interopRequireDefault(_CustomQuickNoteResults);
 	
@@ -3193,21 +3212,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 871:
+/***/ 872:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note\" [placeholder]=\"placeholder\" [config]=\"config\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 872:
+/***/ 873:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note2\" [placeholder]=\"placeholder\" [config]=\"custom\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note2 | json}}</p>\n</div>\n"
 
 /***/ },
 
-/***/ 873:
+/***/ 874:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-quick-note [(ngModel)]=\"note3\" [placeholder]=\"placeholder\" [config]=\"custom2\"></novo-quick-note>\n<div class=\"data\">\n    <p>Note: {{note3 | json}}</p>\n</div>\n"
@@ -3233,11 +3252,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicRadio = __webpack_require__(874);
+	var _BasicRadio = __webpack_require__(875);
 	
 	var _BasicRadio2 = _interopRequireDefault(_BasicRadio);
 	
-	var _VerticalRadio = __webpack_require__(875);
+	var _VerticalRadio = __webpack_require__(876);
 	
 	var _VerticalRadio2 = _interopRequireDefault(_VerticalRadio);
 	
@@ -3276,14 +3295,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 874:
+/***/ 875:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-radio [checked]=\"false\" name=\"basic\" value=\"one\" (change)=\"onChangeBasic($event)\">Make me anything!</novo-radio>\n<novo-radio [checked]=\"true\" name=\"basic\" value=\"two\" (change)=\"onChangeBasic($event)\">I get transcluded in!</novo-radio>\n<novo-radio [checked]=\"false\" name=\"basic\" value=\"three\" (change)=\"onChangeBasic($event)\">REALLY!</novo-radio>\n"
 
 /***/ },
 
-/***/ 875:
+/***/ 876:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-radio vertical=\"true\" [checked]=\"false\" name=\"vertical\" value=\"one\" (change)=\"onChangeVertical($event)\">Make me anything!</novo-radio>\n<novo-radio vertical=\"true\" [checked]=\"true\" name=\"vertical\" value=\"two\" (change)=\"onChangeVertical($event)\">I get transcluded in!</novo-radio>\n<novo-radio vertical=\"true\" [checked]=\"false\" name=\"vertical\" value=\"three\" (change)=\"onChangeVertical($event)\">REALLY!</novo-radio>\n"
@@ -3309,11 +3328,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicSelectDemo = __webpack_require__(876);
+	var _BasicSelectDemo = __webpack_require__(877);
 	
 	var _BasicSelectDemo2 = _interopRequireDefault(_BasicSelectDemo);
 	
-	var _LongSelectDemo = __webpack_require__(877);
+	var _LongSelectDemo = __webpack_require__(878);
 	
 	var _LongSelectDemo2 = _interopRequireDefault(_LongSelectDemo);
 	
@@ -3361,14 +3380,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 876:
+/***/ 877:
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span> {{value}}\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\"></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span> {{withNumbersValue}}\n    </label>\n    <novo-select [options]=\"withNumbers\" [(ngModel)]=\"withNumbersValue\"></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">Disabled State</span>\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [(ngModel)]=\"value\" disabled></novo-select>\n</div>\n<div>\n    <label>\n        <span class=\"caption\">No Model With Header</span>\n    </label>\n    <novo-select [options]=\"options\" [placeholder]=\"placeholder\" [headerConfig]=\"headerConfig\"></novo-select>\n</div>\n"
 
 /***/ },
 
-/***/ 877:
+/***/ 878:
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <label>\n        <span class=\"caption\">Selected Value:</span>{{state}}</label>\n    <novo-select [options]=\"states\" [placeholder]=\"placeholder\" [(ngModel)]=\"state\"></novo-select>\n</div>\n"
@@ -3392,7 +3411,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _BasicSlide = __webpack_require__(878);
+	var _BasicSlide = __webpack_require__(879);
 	
 	var _BasicSlide2 = _interopRequireDefault(_BasicSlide);
 	
@@ -3414,7 +3433,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 878:
+/***/ 879:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-slider [slides]=\"2\">\n    <div slide=\"1\">\n        SLIDE #1\n    </div>\n    <div slide=\"2\">\n        SLIDE #2\n    </div>\n</novo-slider>\n"
@@ -3440,7 +3459,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _SwitchDemo = __webpack_require__(879);
+	var _SwitchDemo = __webpack_require__(880);
 	
 	var _SwitchDemo2 = _interopRequireDefault(_SwitchDemo);
 	
@@ -3475,7 +3494,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 879:
+/***/ 880:
 /***/ function(module, exports) {
 
 	module.exports = "<label>\n    Count\n    <span>{{toggleCount}}</span>\n</label>\n<label>\n    Toggled\n    <span>{{checked}}</span>\n</label>\n<novo-switch [(ngModel)]=\"checked\" (onChange)=\"increment()\"></novo-switch>\n<novo-switch theme=\"grapefruit\"></novo-switch>\n<novo-switch disabled></novo-switch>\n"
@@ -4518,15 +4537,15 @@ webpackJsonp([3],{
 	
 	var _TableData = __webpack_require__(755);
 	
-	var _TableDemo = __webpack_require__(882);
+	var _TableDemo = __webpack_require__(883);
 	
 	var _TableDemo2 = _interopRequireDefault(_TableDemo);
 	
-	var _DetailsTableDemo = __webpack_require__(880);
+	var _DetailsTableDemo = __webpack_require__(881);
 	
 	var _DetailsTableDemo2 = _interopRequireDefault(_DetailsTableDemo);
 	
-	var _SelectAllTableDemo = __webpack_require__(881);
+	var _SelectAllTableDemo = __webpack_require__(882);
 	
 	var _SelectAllTableDemo2 = _interopRequireDefault(_SelectAllTableDemo);
 	
@@ -4733,21 +4752,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 880:
+/***/ 881:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [rows]=\"details.rows\" [columns]=\"details.columns\" [config]=\"details.config\" (onTableChange)=\"details.onTableChange($event)\"></novo-table>\n"
 
 /***/ },
 
-/***/ 881:
+/***/ 882:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [rows]=\"selectAll.rows\" [columns]=\"selectAll.columns\" [config]=\"selectAll.config\" (onTableChange)=\"selectAll.onTableChange($event)\" #table>\n    <novo-table-actions>\n        <button theme=\"secondary\" (click)=\"singleAction()\">Click Me!</button>\n        <novo-dropdown side=\"right\" *ngIf=\"table.selected.length\">\n            <button theme=\"primary\" icon=\"collapse\" inverse>{{table.selected.length}} Selected</button>\n            <list>\n                <item (action)=\"selectedAction('action 1')\">Action 1</item>\n                <item (action)=\"selectedAction('action 2')\">Action 2</item>\n                <item (action)=\"selectedAction('action 3')\" disabled=\"true\">Action 3</item>\n            </list>\n        </novo-dropdown>\n    </novo-table-actions>\n</novo-table>\n"
 
 /***/ },
 
-/***/ 882:
+/***/ 883:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-table [theme]=\"theme\" [rows]=\"basic.rows\" [columns]=\"basic.columns\" [config]=\"basic.config\" (onTableChange)=\"basic.onTableChange($event)\">\n    <novo-table-header class=\"demo-custom-header\">\n        TEST :)\n        <button theme=\"secondary\" (click)=\"changeTheme()\">Change Theme!</button>\n    </novo-table-header>\n</novo-table>\n"
@@ -4773,23 +4792,23 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ButtonTabDemo = __webpack_require__(883);
+	var _ButtonTabDemo = __webpack_require__(884);
 	
 	var _ButtonTabDemo2 = _interopRequireDefault(_ButtonTabDemo);
 	
-	var _ColorDemo = __webpack_require__(884);
+	var _ColorDemo = __webpack_require__(885);
 	
 	var _ColorDemo2 = _interopRequireDefault(_ColorDemo);
 	
-	var _RouterDemo = __webpack_require__(885);
+	var _RouterDemo = __webpack_require__(886);
 	
 	var _RouterDemo2 = _interopRequireDefault(_RouterDemo);
 	
-	var _VerticalDemo = __webpack_require__(886);
+	var _VerticalDemo = __webpack_require__(887);
 	
 	var _VerticalDemo2 = _interopRequireDefault(_VerticalDemo);
 	
-	var _WhiteDemo = __webpack_require__(887);
+	var _WhiteDemo = __webpack_require__(888);
 	
 	var _WhiteDemo2 = _interopRequireDefault(_WhiteDemo);
 	
@@ -4831,35 +4850,35 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 883:
+/***/ 884:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"color\">\n    <novo-nav theme=\"color\" [outlet]=\"buttonTab\" type=\"button-bar\">\n        <novo-tab-button>Button 1</novo-tab-button>\n        <novo-tab-button>Button 2</novo-tab-button>\n        <novo-tab-button>Button 3</novo-tab-button>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #buttonTab>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 3 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n\n<header>\n    <novo-nav theme=\"white\" [outlet]=\"buttonTabWhite\" type=\"button-bar\">\n        <novo-tab-button>Button 1</novo-tab-button>\n        <novo-tab-button>Button 2</novo-tab-button>\n        <novo-tab-button>Button 3</novo-tab-button>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #buttonTabWhite>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 3 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 884:
+/***/ 885:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"color\" [outlet]=\"colornav\" direction=\"horizontal\">\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab>\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #colornav>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 885:
+/***/ 886:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"white\" router>\n        <novo-tab-link>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab-link>\n        <novo-tab-link>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab-link>\n    </novo-nav>\n</header>\n"
 
 /***/ },
 
-/***/ 886:
+/***/ 887:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-nav theme=\"white\" [outlet]=\"colorVert\" direction=\"vertical\">\n    <novo-tab>\n        <span>\n            <i class=\"bhi-person\"></i>Tab 1</span>\n    </novo-tab>\n    <novo-tab>\n        <span>\n            <i class=\"bhi-person\"></i>Tab 2</span>\n    </novo-tab>\n</novo-nav>\n\n<novo-nav-outlet #colorVert>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n\n        <p>\n            Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,\n            Portland keffiyeh aesthetic food truck sriracha cornhole\n            single-origin coffee church-key roof party. Leggings\n            ethical McSweeney's, normcore you probably haven't\n            heard of them Marfa organic squid. Slow-carb 90's\n            ennui Godard pug asymmetrical, narwhal VHS Tonx High\n            Life. Retro dreamcatcher synth Godard pickled Etsy\n            jean shorts beard, pour-over fanny pack mumblecore.\n            Quinoa retro aesthetic polaroid, Williamsburg American\n            Apparel plaid small batch. Blue Bottle Vice fanny\n            pack, Williamsburg roof party Wes Anderson mlkshk\n            seitan brunch before they sold out lo-fi XOXO tofu\n            scenester small batch.\n        </p>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n\n        <p>\n            Synth polaroid bitters chillwave pickled.\n        </p>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
 
 /***/ },
 
-/***/ 887:
+/***/ 888:
 /***/ function(module, exports) {
 
 	module.exports = "<header>\n    <novo-nav theme=\"white\" [outlet]=\"whitenav\">\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 1</span>\n        </novo-tab>\n        <novo-tab>\n            <span>\n                <i class=\"bhi-person\"></i>Tab 2</span>\n        </novo-tab>\n    </novo-nav>\n</header>\n\n<novo-nav-outlet #whitenav>\n    <novo-nav-content>\n        <h1>Tab 1 Content</h1>\n    </novo-nav-content>\n    <novo-nav-content>\n        <h1>Tab 2 Content</h1>\n    </novo-nav-content>\n</novo-nav-outlet>\n"
@@ -4885,7 +4904,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TilesDemo = __webpack_require__(888);
+	var _TilesDemo = __webpack_require__(889);
 	
 	var _TilesDemo2 = _interopRequireDefault(_TilesDemo);
 	
@@ -4928,7 +4947,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 888:
+/***/ 889:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tiles [options]=\"demoTiles\" (onChange)=\"colorSelect($event)\" [(ngModel)]=\"value\"></novo-tiles>\n"
@@ -4954,15 +4973,15 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TipWellDemo = __webpack_require__(889);
+	var _TipWellDemo = __webpack_require__(890);
 	
 	var _TipWellDemo2 = _interopRequireDefault(_TipWellDemo);
 	
-	var _TipWellNoButtonDemo = __webpack_require__(891);
+	var _TipWellNoButtonDemo = __webpack_require__(892);
 	
 	var _TipWellNoButtonDemo2 = _interopRequireDefault(_TipWellNoButtonDemo);
 	
-	var _TipWellIconDemo = __webpack_require__(890);
+	var _TipWellIconDemo = __webpack_require__(891);
 	
 	var _TipWellIconDemo2 = _interopRequireDefault(_TipWellIconDemo);
 	
@@ -4999,21 +5018,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 889:
+/***/ 890:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\"></novo-tip-well>"
 
 /***/ },
 
-/***/ 890:
+/***/ 891:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\" icon=\"info\" button=\"false\"></novo-tip-well>"
 
 /***/ },
 
-/***/ 891:
+/***/ 892:
 /***/ function(module, exports) {
 
 	module.exports = "<novo-tip-well name=\"Demo\" [tip]=\"demoTip\" button=\"false\"></novo-tip-well>\n"
@@ -5041,11 +5060,11 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _ToastDemo = __webpack_require__(892);
+	var _ToastDemo = __webpack_require__(893);
 	
 	var _ToastDemo2 = _interopRequireDefault(_ToastDemo);
 	
-	var _ToastServiceDemo = __webpack_require__(893);
+	var _ToastServiceDemo = __webpack_require__(894);
 	
 	var _ToastServiceDemo2 = _interopRequireDefault(_ToastServiceDemo);
 	
@@ -5145,14 +5164,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 892:
+/***/ 893:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"fake-card\">\n    <header title=\"John Deere\" icon=\"person\" theme=\"contact\">\n        <utils>\n            <util-action icon=\"flag\"></util-action>\n            <util-action icon=\"refresh\"></util-action>\n            <util-action icon=\"times\"></util-action>\n        </utils>\n    </header>\n    <novo-toast theme=\"danger\" title=\"Save Failed\" message=\"Oops! Looks like you're missing some required fields\"\n                icon=\"caution\" position=\"growlTopRight\"></novo-toast>\n    <div class=\"content\">\n        <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\n            do eiusmod tempor incididunt ut labore et dolore\n            magna aliqua. Ut enim ad minim veniam, quis nostrud\n            exercitation ullamco laboris nisi ut aliquip ex ea\n            commodo consequat. Duis aute irure dolor in reprehenderit\n            in voluptate velit esse cillum dolore eu fugiat nulla\n            pariatur. Excepteur sint occaecat cupidatat non proident,\n            sunt in culpa qui officia deserunt mollit anim id\n            est laborum.\n        </p>\n    </div>\n</div>\n"
 
 /***/ },
 
-/***/ 893:
+/***/ 894:
 /***/ function(module, exports) {
 
 	module.exports = "<button theme=\"dialogue\" color=\"success\" icon=\"coffee\" (click)=\"toastToggled('top')\" data-automation-id=\"toast-trigger\">Fixed Top</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"check\" (click)=\"toastToggled('bottom')\">Fixed Bottom</button>\n<button theme=\"dialogue\" color=\"negative\" icon=\"times\" (click)=\"toastToggled('growlTopRight')\">Growl: Top Right</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"coffee\" (click)=\"toastToggled('growlTopLeft')\">Growl: Top Left</button>\n<button theme=\"dialogue\" color=\"negative\" icon=\"times\" (click)=\"toastToggled('growlBottomRight')\">Growl: Bottom Right</button>\n<button theme=\"dialogue\" color=\"primary\" icon=\"coffee\" (click)=\"toastToggled('growlBottomLeft')\">Growl: Bottom Left</button>\n"
@@ -5178,23 +5197,23 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _TooltipOptionsDemo = __webpack_require__(895);
+	var _TooltipOptionsDemo = __webpack_require__(896);
 	
 	var _TooltipOptionsDemo2 = _interopRequireDefault(_TooltipOptionsDemo);
 	
-	var _TooltipPlacementDemo = __webpack_require__(896);
+	var _TooltipPlacementDemo = __webpack_require__(897);
 	
 	var _TooltipPlacementDemo2 = _interopRequireDefault(_TooltipPlacementDemo);
 	
-	var _TooltipAlignDemo = __webpack_require__(894);
+	var _TooltipAlignDemo = __webpack_require__(895);
 	
 	var _TooltipAlignDemo2 = _interopRequireDefault(_TooltipAlignDemo);
 	
-	var _TooltipTypesDemo = __webpack_require__(898);
+	var _TooltipTypesDemo = __webpack_require__(899);
 	
 	var _TooltipTypesDemo2 = _interopRequireDefault(_TooltipTypesDemo);
 	
-	var _TooltipToggleDemo = __webpack_require__(897);
+	var _TooltipToggleDemo = __webpack_require__(898);
 	
 	var _TooltipToggleDemo2 = _interopRequireDefault(_TooltipToggleDemo);
 	
@@ -5230,42 +5249,42 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 894:
+/***/ 895:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"bottom-left\" tooltipPosition=\"bottom-left\">Bottom Left</span>\n<span tooltip=\"bottom-right\" tooltipPosition=\"bottom-right\">Bottom Right</span>\n<span tooltip=\"top-left\" tooltipPosition=\"top-left\">Top Left</span>\n<span tooltip=\"top-right\" tooltipPosition=\"top-right\">Top Right</span>\n"
 
 /***/ },
 
-/***/ 895:
+/***/ 896:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ALWAYS\" tooltipAlways=\"true\">Always Shown</span>\n<span tooltip=\"ROUNDED\" tooltipRounded=\"true\">Rounded</span>\n<span tooltip=\"NO ANIMATE\" tooltipNoAnimate=\"true\">No Animation</span>\n<span tooltip=\"BOUNCE\" tooltipBounce=\"true\">Bounce</span>\n"
 
 /***/ },
 
-/***/ 896:
+/***/ 897:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"left\" tooltipPosition=\"left\">Left</span>\n<span tooltip=\"right\" tooltipPosition=\"right\">Right</span>\n<span tooltip=\"top\" tooltipPosition=\"top\">Top</span>\n<span tooltip=\"bottom\" tooltipPosition=\"bottom\">Bottom</span>\n"
 
 /***/ },
 
-/***/ 897:
+/***/ 898:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"I HAVE A TOOLTIP!\" [tooltipActive]=\"tooltipActive\">\n    <span *ngIf=\"tooltipActive\">My tooltip can display!</span>\n    <span *ngIf=\"!tooltipActive\">My tooltip is disabled!</span>\n</span>\n<button theme=\"secondary\" (click)=\"toggleTooltip()\">Toggle</button>\n"
 
 /***/ },
 
-/***/ 898:
+/***/ 899:
 /***/ function(module, exports) {
 
 	module.exports = "<span tooltip=\"ERROR\" tooltipType=\"error\">Error</span>\n<span tooltip=\"INFO\" tooltipType=\"info\">Info</span>\n<span tooltip=\"WARNING\" tooltipType=\"warning\">Warning</span>\n<span tooltip=\"SUCCESS\" tooltipType=\"success\">Success</span>\n"
 
 /***/ },
 
-/***/ 899:
+/***/ 900:
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"design container\">\n    <div>\n        <h1 class=\"title\">Introduction</h1>\n        <h2 class=\"sub-title\">Crafted amid Complexity</h2>\n\n        <p class=\"description\">\n            Enterprise software is highly complex and demands a\n            high level of flexibility. Design offers clarity and enables us to make\n            deep, powerful connections.\n        </p>\n    </div>\n    <img src=\"assets/images/IntroPageHeaderImage.svg\" alt=\"\"/>\n</header>\n\n<section class=\"design container\">\n    <h5>A NEW STANDARD</h5>\n    <p>Elegance in utility helps to create a system for humans, not robots. We strive not just to empower users but to delight them in the process.</p>\n\n    <h5>INSIGHTS AT SCALE</h5>\n    <p>Vast data reservoirs need a finely tuned system to surface the critical information right when it is needed, no matter the scale or setting.</p>\n\n    <h5>POWER IN FLEXIBILITY</h5>\n    <p>Users have vastly differing needs and goals. By identifying key commonalities and themes, we provide a strong experience for all.</p>\n\n    <article class=\"jump-to code\">\n        <i class=\"bhi-link\"></i>\n        <span>Are you a developer and what to skip right to the code?<br><a href=\"#\" routerLink=\"Buttons\">View Components here</a></span>\n    </article>\n\n    <article class=\"jump-to brand\">\n        <i class=\"bhi-link\"></i>\n        <span>Looking for the Bullhorn corporate brand guidelines? <br/><a href=\"https://brandfolder.com/bullhorn\" target=\"_blank\">Bullhorn Brand Folder</a></span>\n    </article>\n</section>\n"
@@ -5291,7 +5310,7 @@ webpackJsonp([3],{
 	
 	var Home = exports.Home = (_dec = (0, _core.Component)({
 	    selector: 'home',
-	    template: __webpack_require__(899)
+	    template: __webpack_require__(900)
 	}), _dec(_class = function Home() {
 	    _classCallCheck(this, Home);
 	}) || _class);
@@ -5352,7 +5371,7 @@ webpackJsonp([3],{
 	
 	var _core = __webpack_require__(1);
 	
-	var _PluralizeDemo = __webpack_require__(900);
+	var _PluralizeDemo = __webpack_require__(901);
 	
 	var _PluralizeDemo2 = _interopRequireDefault(_PluralizeDemo);
 	
@@ -5374,14 +5393,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 900:
+/***/ 901:
 /***/ function(module, exports) {
 
 	module.exports = "<p>{{'Kitty' | plural}}</p>\n<p>{{'Cat' | plural}}</p>\n"
 
 /***/ },
 
-/***/ 901:
+/***/ 902:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\n    <h1>Utils</h1>\n    <p>Helpful utility functions and objects.</p>\n\n    <h5>Key Codes\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/key-codes\">(source)</a></small>\n    </h5>\n    <p>List of all Key Codes to import and use, no magic strings!</p>\n\n    <h5>Deferred\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/deferred\">(source)</a></small>\n    </h5>\n    <p>Custom deferred object</p>\n\n    <h5>Outside Click\n        <small><a target=\"_blank\" href=\"https://github.com/bullhorn/novo-elements/tree/master/src/utils/outside-click\">(source)</a></small>\n    </h5>\n    <p>Helper class to listen to and automatically close a component when an outside click is detected.</p>\n</div>\n"
@@ -5407,7 +5426,7 @@ webpackJsonp([3],{
 	
 	var UtilsDemoComponent = exports.UtilsDemoComponent = (_dec = (0, _core.Component)({
 	    selector: 'utils-demo',
-	    template: __webpack_require__(901)
+	    template: __webpack_require__(902)
 	}), _dec(_class = function UtilsDemoComponent() {
 	    _classCallCheck(this, UtilsDemoComponent);
 	}) || _class);
@@ -5416,4 +5435,4 @@ webpackJsonp([3],{
 /***/ }
 
 });
-//# sourceMappingURL=demo.305afe568027ca007c0e.bundle.map
+//# sourceMappingURL=demo.7d5fa78909cd3a2e0f4d.bundle.map
