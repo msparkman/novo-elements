@@ -1903,22 +1903,14 @@ novo-nav {
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      border-left: 2px solid #D9DADC;
-      border-right: 2px solid #D9DADC;
       -webkit-transition: all 120ms ease-in-out;
       transition: all 120ms ease-in-out; }
-      novo-nav[direction="vertical"] novo-tab:first-of-type,
-      novo-nav[direction="vertical"] novo-tab-link:first-of-type {
-        border-top-right-radius: 3px;
-        border-top-left-radius: 3px;
-        border-top: 2px solid #D9DADC; }
-      novo-nav[direction="vertical"] novo-tab:last-of-type,
-      novo-nav[direction="vertical"] novo-tab-link:last-of-type {
-        border-bottom-right-radius: 3px;
-        border-bottom-left-radius: 3px;
-        border-bottom: 2px solid #D9DADC; }
       novo-nav[direction="vertical"] novo-tab .novo-tab-link,
       novo-nav[direction="vertical"] novo-tab-link .novo-tab-link {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
         -webkit-box-flex: 1;
         -webkit-flex: 1;
         -ms-flex: 1;
@@ -1932,8 +1924,12 @@ novo-nav {
         opacity: 0.75; }
       novo-nav[direction="vertical"] novo-tab .indicator,
       novo-nav[direction="vertical"] novo-tab-link .indicator {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
         position: relative;
-        width: 2px;
+        width: 4px;
         height: 0;
         display: block;
         background: transparent;
@@ -4636,7 +4632,7 @@ novo-notification {
   margin-bottom: 1em;
   border-radius: 4px;
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.09), 0 1px 3px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 1000;
   position: relative; }
   novo-modal > button.modal-close,
   novo-notification > button.modal-close {
@@ -5430,7 +5426,7 @@ novo-select {
   font-size: 1rem; }
   novo-select.active .novo-select-list {
     position: absolute;
-    z-index: 2;
+    z-index: 1000;
     max-height: 200px;
     min-width: 200px;
     width: 100%;
@@ -5804,7 +5800,7 @@ picker-null-recent-results {
   picker-null-recent-results.active {
     max-height: 200px;
     overflow: auto;
-    z-index: 2; }
+    z-index: 1000; }
   picker-results:focus,
   .picker-results:focus,
   quick-note-results:focus,
@@ -6096,7 +6092,7 @@ novo-dropdown {
   novo-dropdown.active .dropdown-container {
     max-height: 500px;
     display: block;
-    z-index: 2;
+    z-index: 1000;
     border-radius: 2px;
     top: 100%;
     margin-top: 5px; }
@@ -8256,14 +8252,14 @@ novo-table {
           .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container > div {
             color: #4A89DC;
             line-height: 3em;
-            font-size: .9em;
+            font-size: 0.9em;
             padding-left: 5px;
             cursor: pointer; }
           .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container novo-date-picker .calendar {
             width: 100%;
             height: 100%;
             box-shadow: none;
-            padding: 0px 5px 10px; }
+            padding: 0 5px 10px; }
             .table > thead > tr > th .th-group novo-dropdown.column-filters .dropdown-container .calender-container novo-date-picker .calendar .calendar-top {
               display: none; }
       .table > thead > tr > th .th-group .th-title {
@@ -8987,6 +8983,26 @@ novo-table[theme="neutral"] > header {
       novo-table[theme="neutral"] > header novo-pagination novo-select div[type="button"] i {
         color: #ffffff !important; }
 
+novo-table[dark] > header {
+  color: #fff; }
+  novo-table[dark] > header novo-pagination {
+    background: rgba(0, 0, 0, 0.15); }
+    novo-table[dark] > header novo-pagination > * {
+      color: #ffffff;
+      opacity: 1; }
+    novo-table[dark] > header novo-pagination .page {
+      color: #ffffff; }
+      novo-table[dark] > header novo-pagination .page.active {
+        color: #FFF;
+        background: rgba(0, 0, 0, 0.15); }
+    novo-table[dark] > header novo-pagination h5.rows {
+      opacity: 0.75; }
+    novo-table[dark] > header novo-pagination novo-select div[type="button"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      novo-table[dark] > header novo-pagination novo-select div[type="button"] i {
+        color: #ffffff !important; }
+
 th.dragging {
   opacity: 0.4; }
 
@@ -9033,6 +9049,9 @@ novo-pagination {
       color: #3399DD; }
       novo-pagination .pager .page:last-child {
         padding-right: 0; }
+      novo-pagination .pager .page.disabled {
+        opacity: 0.3;
+        pointer-events: none; }
     novo-pagination .pager .page.active {
       color: #3399DD;
       background-color: #f4f4f4; }
@@ -11175,6 +11194,49 @@ button[name="open-menu"] {
   button[name="open-menu"] {
     display: block; } }
 
+home h1,
+home h5 {
+  color: #EB6845; }
+
+home section .jump-to {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border: 2px solid rgba(55, 188, 155, 0.25);
+  padding: 10px;
+  max-width: 30em;
+  border-radius: 11px;
+  margin: 25px 0 !important; }
+  home section .jump-to i {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: 1em;
+    color: #37BC9B;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    border-radius: 50%;
+    border: 2px solid #37BC9B;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center; }
+  home section .jump-to.brand {
+    border: 2px solid rgba(235, 104, 69, 0.25); }
+    home section .jump-to.brand i {
+      color: #EB6845;
+      border: 2px solid #EB6845; }
+
 color header {
   -webkit-transition: all 240ms ease-in-out;
   transition: all 240ms ease-in-out;
@@ -11236,84 +11298,84 @@ color header {
         border-radius: 50%; }
     color header .background-boxes .bb-company {
       background: #3399DD;
-      width: 45px;
-      height: 45px; }
-    color header .background-boxes .bb-candidate {
-      background: #44BB77;
-      width: 44px;
-      height: 44px; }
-    color header .background-boxes .bb-navigation {
-      background: #2F384F;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-lead {
-      background: #AA6699;
-      width: 35px;
-      height: 35px; }
-    color header .background-boxes .bb-contact {
-      background: #FFAA44;
-      width: 28px;
-      height: 28px; }
-    color header .background-boxes .bb-opportunity {
-      background: #662255;
-      width: 34px;
-      height: 34px; }
-    color header .background-boxes .bb-job {
-      background: #BB5566;
-      width: 41px;
-      height: 41px; }
-    color header .background-boxes .bb-submission {
-      background: #778899;
-      width: 40px;
-      height: 40px; }
-    color header .background-boxes .bb-placement {
-      background: #0B344F;
-      width: 33px;
-      height: 33px; }
-    color header .background-boxes .bb-note {
-      background: #747884;
-      width: 38px;
-      height: 38px; }
-    color header .background-boxes .bb-task {
-      background: #747884;
-      width: 30px;
-      height: 30px; }
-    color header .background-boxes .bb-aqua {
-      background: #3BAFDA;
-      width: 27px;
-      height: 27px; }
-    color header .background-boxes .bb-ocean {
-      background: #4A89DC;
-      width: 32px;
-      height: 32px; }
-    color header .background-boxes .bb-mint {
-      background: #37BC9B;
-      width: 40px;
-      height: 40px; }
-    color header .background-boxes .bb-grass {
-      background: #8CC152;
       width: 39px;
       height: 39px; }
+    color header .background-boxes .bb-candidate {
+      background: #44BB77;
+      width: 35px;
+      height: 35px; }
+    color header .background-boxes .bb-navigation {
+      background: #2F384F;
+      width: 37px;
+      height: 37px; }
+    color header .background-boxes .bb-lead {
+      background: #AA6699;
+      width: 32px;
+      height: 32px; }
+    color header .background-boxes .bb-contact {
+      background: #FFAA44;
+      width: 35px;
+      height: 35px; }
+    color header .background-boxes .bb-opportunity {
+      background: #662255;
+      width: 41px;
+      height: 41px; }
+    color header .background-boxes .bb-job {
+      background: #BB5566;
+      width: 37px;
+      height: 37px; }
+    color header .background-boxes .bb-submission {
+      background: #778899;
+      width: 37px;
+      height: 37px; }
+    color header .background-boxes .bb-placement {
+      background: #0B344F;
+      width: 44px;
+      height: 44px; }
+    color header .background-boxes .bb-note {
+      background: #747884;
+      width: 41px;
+      height: 41px; }
+    color header .background-boxes .bb-task {
+      background: #747884;
+      width: 44px;
+      height: 44px; }
+    color header .background-boxes .bb-aqua {
+      background: #3BAFDA;
+      width: 33px;
+      height: 33px; }
+    color header .background-boxes .bb-ocean {
+      background: #4A89DC;
+      width: 42px;
+      height: 42px; }
+    color header .background-boxes .bb-mint {
+      background: #37BC9B;
+      width: 38px;
+      height: 38px; }
+    color header .background-boxes .bb-grass {
+      background: #8CC152;
+      width: 44px;
+      height: 44px; }
     color header .background-boxes .bb-sunflower {
       background: #F6B042;
-      width: 30px;
-      height: 30px; }
+      width: 27px;
+      height: 27px; }
     color header .background-boxes .bb-bittersweet {
       background: #EB6845;
       width: 29px;
       height: 29px; }
     color header .background-boxes .bb-grapefruit {
       background: #DA4453;
-      width: 36px;
-      height: 36px; }
+      width: 31px;
+      height: 31px; }
     color header .background-boxes .bb-carnation {
       background: #D770AD;
-      width: 29px;
-      height: 29px; }
+      width: 33px;
+      height: 33px; }
     color header .background-boxes .bb-lavender {
       background: #967ADC;
-      width: 28px;
-      height: 28px; }
+      width: 39px;
+      height: 39px; }
 
 color article.color-blocks {
   display: -webkit-box;
