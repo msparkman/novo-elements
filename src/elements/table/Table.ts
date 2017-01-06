@@ -48,11 +48,11 @@ export class NovoTableHeaderElement {
                     <!-- DETAILS -->
                     <th class="row-actions" *ngIf="config.hasDetails"></th>
                     <!-- CHECKBOX -->
-                    <th class="row-actions checkbox" *ngIf="config.rowSelectionStyle === 'checkbox'">
+                    <th class="row-actions checkbox mass-action" *ngIf="config.rowSelectionStyle === 'checkbox'">
                         <novo-checkbox [(ngModel)]="master" [indeterminate]="pageSelected.length > 0 && pageSelected.length < pagedData.length" (ngModelChange)="selectPage($event)" data-automation-id="select-all-checkbox" [tooltip]="master ? labels.deselectAll : labels.selectAllOnPage" tooltipPosition="right"></novo-checkbox>
                     </th>
                     <!-- TABLE HEADERS -->
-                    <th *ngFor="let column of columns" [ngClass]="{sorted: column.sort}" [novoThOrderable]="column" (onOrderChange)="onOrderChange($event)">
+                    <th *ngFor="let column of columns" [ngClass]="{ 'mass-action': config?.rowSelectionStyle === 'checkbox', 'actions': column?.actions?.items?.length > 0, 'preview': column?.name === 'preview' }" [novoThOrderable]="column" (onOrderChange)="onOrderChange($event)">
                         <div class="th-group" [attr.data-automation-id]="column.id || column.name" *ngIf="!column.hideHeader">
                             <!-- LABEL & SORT ARROWS -->
                             <div class="th-title" [ngClass]="(config.sorting !== false && column.sorting !== false) ? 'sortable' : ''" [novoThSortable]="config" [column]="column" (onSortChange)="onSortChange($event)">
@@ -72,7 +72,7 @@ export class NovoTableHeaderElement {
                                             <span>{{ labels.filters }}</span>
                                             <button theme="dialogue" color="negative" icon="times" (click)="onFilterClear(column)" *ngIf="column.filter">{{ labels.clear }}</button>
                                         </div>
-                                        <input type="text" [attr.id]="column.name + '-input'" [novoTableFilter]="column" (onFilterChange)="onFilterKeywords($event)" [(ngModel)]="column.freetextFilter"/>
+                                        <input type="text" *ngIf="showOptionsTextInput(column)" [attr.id]="column.name + '-input'" [novoTableFilter]="column" (onFilterChange)="onFilterKeywords($event)" [(ngModel)]="column.freetextFilter"/>
                                     </item>
                                     <item [ngClass]="{ active: isFilterActive(column, option) }" *ngFor="let option of column.options" (click)="onFilterClick(column, option)" [attr.data-automation-id]="getOptionDataAutomationId(option)">
                                         {{ option?.label || option }} <i class="bhi-check" *ngIf="isFilterActive(column, option)"></i>
@@ -686,5 +686,13 @@ export class NovoTableElement implements DoCheck {
             config.filtering.options = config.filtering.originalOptions;
         }
         this.onFilterChange();
+    }
+
+    showOptionsTextInput(column) {
+        if (column.hasOwnProperty('freetextFilter')) {
+            return true;
+        } else {
+            return typeof (column.options[0].value) === 'string';
+        }
     }
 }

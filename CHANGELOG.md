@@ -1,3 +1,98 @@
+<a name="2.0.53"></a>
+## [2.0.53](https://github.com/bullhorn/novo-elements/compare/v2.0.52...v2.0.53) (2017-01-05)
+
+
+
+<a name="2.0.52"></a>
+## [2.0.52](https://github.com/bullhorn/novo-elements/compare/v2.0.51...v2.0.52) (2017-01-05)
+
+
+
+<a name="2.0.51"></a>
+## [2.0.51](https://github.com/bullhorn/novo-elements/compare/v2.0.50...v2.0.51) (2017-01-05)
+
+
+### Features
+
+* **picker:** Adding defaultOptions and minSearchLength to pickers ([271a35f](https://github.com/bullhorn/novo-elements/commit/271a35f))
+
+
+
+<a name="2.0.50"></a>
+## [2.0.50](https://github.com/bullhorn/novo-elements/compare/v2.0.49...v2.0.50) (2017-01-05)
+
+
+
+<a name="2.0.49"></a>
+## [2.0.49](https://github.com/bullhorn/novo-elements/compare/v2.0.48...v2.0.49) (2017-01-05)
+
+
+### Features
+
+* **Table:** Adding actions column header type ([#326](https://github.com/bullhorn/novo-elements/issues/326)) ([b9626f7](https://github.com/bullhorn/novo-elements/commit/b9626f7))
+
+
+
+<a name="2.0.48"></a>
+## [2.0.48](https://github.com/bullhorn/novo-elements/compare/v2.0.47...v2.0.48) (2017-01-05)
+
+
+### Bug Fixes
+
+* **pickers:** fix so does not search when no search term entered ([#324](https://github.com/bullhorn/novo-elements/issues/324)) ([85beda6](https://github.com/bullhorn/novo-elements/commit/85beda6))
+
+
+
+<a name="2.0.47"></a>
+## [2.0.47](https://github.com/bullhorn/novo-elements/compare/v2.0.46...v2.0.47) (2017-01-04)
+
+
+
+<a name="2.0.46"></a>
+## [2.0.46](https://github.com/bullhorn/novo-elements/compare/v2.0.45...v2.0.46) (2017-01-04)
+
+
+### Bug Fixes
+
+* **Table:** column filtering by options should not have text input if values are not string ([#322](https://github.com/bullhorn/novo-elements/issues/322)) ([5a3dea2](https://github.com/bullhorn/novo-elements/commit/5a3dea2))
+
+
+
+<a name="2.0.45"></a>
+## [2.0.45](https://github.com/bullhorn/novo-elements/compare/v2.0.44...v2.0.45) (2017-01-04)
+
+
+### Bug Fixes
+
+* **Table:** column filtering by options should not have text input if values are not string ([#321](https://github.com/bullhorn/novo-elements/issues/321)) ([f203bbf](https://github.com/bullhorn/novo-elements/commit/f203bbf))
+
+
+
+<a name="2.0.44"></a>
+## [2.0.44](https://github.com/bullhorn/novo-elements/compare/v2.0.43...v2.0.44) (2017-01-03)
+
+
+### Bug Fixes
+
+* **pickers:** fix for removing empty objects so they do not populate as [object Object] in multi select pickers ([#320](https://github.com/bullhorn/novo-elements/issues/320)) ([fb134e5](https://github.com/bullhorn/novo-elements/commit/fb134e5))
+
+
+
+<a name="2.0.43"></a>
+## [2.0.43](https://github.com/bullhorn/novo-elements/compare/v2.0.42...v2.0.43) (2016-12-30)
+
+
+
+<a name="2.0.42"></a>
+## [2.0.42](https://github.com/bullhorn/novo-elements/compare/v2.0.41...v2.0.42) (2016-12-30)
+
+
+
+<a name="2.0.41"></a>
+## [2.0.41](https://github.com/bullhorn/novo-elements/compare/v2.0.40...v2.0.41) (2016-12-29)
+
+
+
 <a name="2.0.40"></a>
 ## [2.0.40](https://github.com/bullhorn/novo-elements/compare/v2.0.39...v2.0.40) (2016-12-29)
 

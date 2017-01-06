@@ -58,22 +58,36 @@ export class BasePickerResults {
                     this.isStatic = true;
                     // Arrays are returned immediately
                     resolve(this.structureArray(options));
-                } else if ((options.hasOwnProperty('reject') && options.hasOwnProperty('resolve')) || Object.getPrototypeOf(options).hasOwnProperty('then')) {
-                    this.isStatic = false;
-                    // Promises (ES6 or Deferred) are resolved whenever they resolve
-                    options
-                        .then(this.structureArray.bind(this))
-                        .then(resolve, reject);
-                } else if (typeof options === 'function') {
-                    this.isStatic = false;
-                    // Promises (ES6 or Deferred) are resolved whenever they resolve
-                    options(term)
-                        .then(this.structureArray.bind(this))
-                        .then(resolve, reject);
+                } else if (term && term.length >= (this.config.minSearchLength || 1)) {
+                    if ((options.hasOwnProperty('reject') && options.hasOwnProperty('resolve')) || Object.getPrototypeOf(options).hasOwnProperty('then')) {
+                        this.isStatic = false;
+                        // Promises (ES6 or Deferred) are resolved whenever they resolve
+                        options
+                            .then(this.structureArray.bind(this))
+                            .then(resolve, reject);
+                    } else if (typeof options === 'function') {
+                        this.isStatic = false;
+                        // Promises (ES6 or Deferred) are resolved whenever they resolve
+                        options(term)
+                            .then(this.structureArray.bind(this))
+                            .then(resolve, reject);
+                    } else {
+                        // All other kinds of data are rejected
+                        reject('The data provided is not an array or a promise');
+                        throw new Error('The data provided is not an array or a promise');
+                    }
                 } else {
-                    // All other kinds of data are rejected
-                    reject('The data provided is not an array or a promise');
-                    throw new Error('The data provided is not an array or a promise');
+                    if (this.config.defaultOptions) {
+                        this.isStatic = false;
+                        if (this.config.defaultOptions instanceof Function) {
+                            resolve(this.structureArray(this.config.defaultOptions()));
+                        } else {
+                            resolve(this.structureArray(this.config.defaultOptions));
+                        }
+                    } else {
+                        // No search term gets rejected
+                        reject('No search term');
+                    }
                 }
             } else {
                 // No data gets rejected
@@ -102,6 +116,9 @@ export class BasePickerResults {
         }
         return dataArray.map((data) => {
             let value = this.config.field ? data[this.config.field] : (data.value || data);
+            if (this.config.valueFormat) {
+                value = Helpers.interpolate(this.config.valueFormat, data);
+            }
             let label = this.config.format ? Helpers.interpolate(this.config.format, data) : data.label || String(value);
             return { value, label, data };
         });
