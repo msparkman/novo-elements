@@ -43,7 +43,7 @@ export class NovoTableHeaderElement {
         </header>
         <div class="table-container">
             <table class="table table-striped dataTable" [class.table-details]="config.hasDetails" role="grid">
-            <thead *ngIf="columns.length">
+            <thead *ngIf="columns.length && (!dataProvider.isEmpty() || dataProvider.isFiltered())">
                 <tr role="row">
                     <!-- DETAILS -->
                     <th class="row-actions" *ngIf="config.hasDetails"></th>
@@ -138,12 +138,23 @@ export class NovoTableHeaderElement {
                 </template>
             </tbody>
             <!-- NO TABLE DATA PLACEHOLDER -->
-            <tbody class="table-message" *ngIf="dataProvider.isEmpty()" data-automation-id="empty-table">
+            <tbody class="table-message" *ngIf="dataProvider.isEmpty() && !dataProvider.isFiltered()" data-automation-id="empty-table">
                 <tr>
                     <td colspan="100%">
                         <div #emptymessage><ng-content select="[table-empty-message]"></ng-content></div>
-                        <div class="no-matching-records" *ngIf="emptymessage.childNodes.length == 0">
+                        <div class="table-empty-message" *ngIf="emptymessage.childNodes.length == 0">
                             <h4><i class="bhi-search-question"></i> {{ labels.emptyTableMessage }}</h4>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <!-- NO MATCHING RECORDS -->
+            <tbody class="table-message" *ngIf="dataProvider.isEmpty() && dataProvider.isFiltered()" data-automation-id="empty-table">
+                <tr>
+                    <td colspan="100%">
+                        <div #nomatchmessage><ng-content select="[table-no-matching-records-message]"></ng-content></div>
+                        <div class="no-matching-records" *ngIf="nomatchmessage.childNodes.length == 0">
+                            <h4><i class="bhi-search-question"></i> {{ labels.noMatchingRecordsMessage }}</h4>
                         </div>
                     </td>
                 </tr>
@@ -397,15 +408,15 @@ export class NovoTableElement implements DoCheck {
                         if (column.type && column.type === 'date' && column.filter.filter(fil => fil.range).length > 0) {
                             query[column.name] = column.filter.map(f => {
                                 return {
-                                    min: f.value ? new Date(f.value.startDate).getTime() : 0,
-                                    max: f.value ? new Date(f.value.endDate).getTime() : 0
+                                    min: f.value ? new Date(f.value.startDate) : 0,
+                                    max: f.value ? new Date(f.value.endDate) : 0
                                 };
                             })[0];
                         } else if (column.type && column.type === 'date') {
                             query[column.name] = column.filter.map(f => {
                                 return {
-                                    min: f.min ? Date.now() + (f.min * (24 * 60 * 60 * 1000)) : Date.now(),
-                                    max: f.max ? Date.now() + (f.max * (24 * 60 * 60 * 1000)) : Date.now()
+                                    min: f.min ? new Date(Date.now() + (f.min * (24 * 60 * 60 * 1000))) : new Date(),
+                                    max: f.max ? new Date(Date.now() + (f.max * (24 * 60 * 60 * 1000))) : new Date()
                                 };
                             })[0];
                         } else {

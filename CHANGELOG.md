@@ -1,3 +1,90 @@
+<a name="2.0.61"></a>
+## [2.0.61](https://github.com/bullhorn/novo-elements/compare/v2.0.60...v2.0.61) (2017-01-10)
+
+
+### Bug Fixes
+
+* **Form:** Fixing default sort order ([ad6fba3](https://github.com/bullhorn/novo-elements/commit/ad6fba3))
+* **Table:** Tables won't convert Dates into timestamps just in case custom functions need to know if it is a Number vs a Date ([#336](https://github.com/bullhorn/novo-elements/issues/336)) ([cf74bc8](https://github.com/bullhorn/novo-elements/commit/cf74bc8))
+
+
+### Features
+
+* **popover:** Adding a PopOver element ([aa4ebb4](https://github.com/bullhorn/novo-elements/commit/aa4ebb4))
+
+
+
+<a name="2.0.60"></a>
+## [2.0.60](https://github.com/bullhorn/novo-elements/compare/v2.0.59...v2.0.60) (2017-01-10)
+
+
+
+<a name="2.0.59"></a>
+## [2.0.59](https://github.com/bullhorn/novo-elements/compare/v2.0.58...v2.0.59) (2017-01-10)
+
+
+### Bug Fixes
+
+* **Form:** Adding validators for min/max length and more disabled CSS ([07aafd3](https://github.com/bullhorn/novo-elements/commit/07aafd3))
+
+
+
+<a name="2.0.58"></a>
+## [2.0.58](https://github.com/bullhorn/novo-elements/compare/v2.0.57...v2.0.58) (2017-01-10)
+
+
+### Bug Fixes
+
+* **Form:** Fixing dateFounded fields to be a number with maxlength at 4 ([6fcee44](https://github.com/bullhorn/novo-elements/commit/6fcee44))
+
+
+
+<a name="2.0.57"></a>
+## [2.0.57](https://github.com/bullhorn/novo-elements/compare/v2.0.56...v2.0.57) (2017-01-09)
+
+
+### Bug Fixes
+
+* **Form:** Making address.state not required ([98e47fb](https://github.com/bullhorn/novo-elements/commit/98e47fb))
+* **quicknote:** Fixing validation around quick note ([0d9c2a6](https://github.com/bullhorn/novo-elements/commit/0d9c2a6))
+
+
+
+<a name="2.0.56"></a>
+## [2.0.56](https://github.com/bullhorn/novo-elements/compare/v2.0.55...v2.0.56) (2017-01-09)
+
+
+### Bug Fixes
+
+* **DatePicker:** Selecting either month or year in Date Picker resets other value to default ([#334](https://github.com/bullhorn/novo-elements/issues/334)) ([5460cfc](https://github.com/bullhorn/novo-elements/commit/5460cfc))
+
+
+### Features
+
+* **Chips:** Adding support for Chips labels to be displayed correctly when only value passed in ([#332](https://github.com/bullhorn/novo-elements/issues/332)) ([396bbf3](https://github.com/bullhorn/novo-elements/commit/396bbf3))
+
+
+
+<a name="2.0.55"></a>
+## [2.0.55](https://github.com/bullhorn/novo-elements/compare/v2.0.54...v2.0.55) (2017-01-09)
+
+
+### Bug Fixes
+
+* **Forms:** Properly set sort order ([37c3379](https://github.com/bullhorn/novo-elements/commit/37c3379))
+
+
+### Features
+
+* **Table:** Split Empty and NoMatchingRecords States for Tables ([#330](https://github.com/bullhorn/novo-elements/issues/330)) ([7c42003](https://github.com/bullhorn/novo-elements/commit/7c42003))
+
+
+
+<a name="2.0.54"></a>
+## [2.0.54](https://github.com/bullhorn/novo-elements/compare/v2.0.53...v2.0.54) (2017-01-06)
+
+
+
 <a name="2.0.53"></a>
 ## [2.0.53](https://github.com/bullhorn/novo-elements/compare/v2.0.52...v2.0.53) (2017-01-05)
 

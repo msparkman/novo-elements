@@ -52,7 +52,17 @@ novo-form {
                             border-bottom: none !important;
                         }
                     }
-                    &.hidden {
+                    &.checklist,
+                    &.file,
+                    &.address {
+                        .ng-touched.ng-invalid:not(.ng-pristine):not(.novo-control-container) {
+                            border-bottom: none !important;
+                            &.valid-number {
+                                border-bottom: none !important;
+                            }
+                        }
+                    }
+                    & &.hidden {
                         height: 0;
                         min-height: 0;
                         opacity: 0;
@@ -64,6 +74,7 @@ novo-form {
                                 color: $light !important;
                             }
                             border-bottom-style: dashed !important;
+                            color: #D9DADC !important;
                         }
                         div[type="button"] {
                             color: $light !important;
@@ -71,6 +82,9 @@ novo-form {
                         }
                         label {
                             color: $light !important;
+                            &.clear-all {
+                                display: none;
+                            }
                         }
                         chips {
                             border-bottom: 1px dashed $light !important;
@@ -79,6 +93,10 @@ novo-form {
                             }
                             chip {
                                 opacity: 0.5;
+                                padding: 10px;
+                                .bhi-close {
+                                    display: none;
+                                }
                             }
                         }
                         .bhi-search,
@@ -87,6 +105,10 @@ novo-form {
                         }
                         i.bhi-clock,
                         i.bhi-collapse,
+                        i.bhi-radio-filled,
+                        i.bhi-radio-empty,
+                        i.bhi-checkbox-filled,
+                        i.bhi-checkbox-empty,
                         i.bhi-search,
                         i.bhi-calendar {
                             color: $light !important;
@@ -453,6 +475,7 @@ novo-form {
                                     color: $light !important;
                                 }
                                 border-bottom-style: dashed !important;
+                                color: #D9DADC !important;
                             }
                             div[type="button"] {
                                 color: $light !important;
@@ -460,6 +483,9 @@ novo-form {
                             }
                             label {
                                 color: $light !important;
+                                &.clear-all {
+                                    display: none;
+                                }
                             }
                             chips {
                                 border-bottom: 1px dashed $light !important;
@@ -468,6 +494,10 @@ novo-form {
                                 }
                                 chip {
                                     opacity: 0.5;
+                                    padding: 10px;
+                                    .bhi-close {
+                                        display: none;
+                                    }
                                 }
                             }
                             .bhi-search,
@@ -477,6 +507,10 @@ novo-form {
                             i.bhi-clock,
                             i.bhi-collapse,
                             i.bhi-search,
+                            i.bhi-radio-filled,
+                            i.bhi-radio-empty,
+                            i.bhi-checkbox-filled,
+                            i.bhi-checkbox-empty,
                             i.bhi-calendar {
                                 color: $light !important;
                             }

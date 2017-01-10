@@ -65,21 +65,21 @@ import { Helpers } from './../../utils/Helpers';
                     </div>
                     <!--Time-->
                     <div class="novo-control-input-container" *ngSwitchCase="'time'">
-                        <input [name]="control.key" type="text" [attr.id]="control.key" [placeholder]="control.placeholder" (click)="toggleActive($event);" [value]="formattedValue" readonly/>
+                        <input [formControlName]="control.key" [name]="control.key" type="text" [attr.id]="control.key" [placeholder]="control.placeholder" (click)="toggleActive($event);" [value]="formattedValue" readonly/>
                         <i (click)="toggleActive($event)" class="bhi-clock" *ngIf="!hasValue"></i>
                         <i (click)="clearValue()" class="bhi-times" *ngIf="hasValue"></i>
                         <novo-time-picker [hidden]="!active" (onSelect)="formatTimeValue($event);" [formControlName]="control.key"></novo-time-picker>
                     </div>
                     <!--Date-->
                     <div class="novo-control-input-container" *ngSwitchCase="'date'">
-                        <input [name]="control.key" type="text" [attr.id]="control.key" [placeholder]="control.placeholder" (click)="toggleActive($event);" [value]="formattedValue" readonly/>
+                        <input [formControlName]="control.key" [name]="control.key" type="text" [attr.id]="control.key" [placeholder]="control.placeholder" (click)="toggleActive($event);" [value]="formattedValue" readonly/>
                         <i (click)="toggleActive($event)" class="bhi-calendar" *ngIf="!hasValue"></i>
                         <i (click)="clearValue()" class="bhi-times" *ngIf="hasValue"></i>
                         <novo-date-picker inline="true" [hidden]="!active" (onSelect)="formatDateValue($event);" [formControlName]="control.key"></novo-date-picker>
                     </div>
                     <!--Date and Time-->
                     <div class="novo-control-input-container" *ngSwitchCase="'date-time'">
-                        <input [name]="control.key" type="text" [attr.id]="control.key" [placeholder]="control.placeholder" (click)="toggleActive($event);" [value]="formattedValue" readonly/>
+                        <input [formControlName]="control.key" [name]="control.key" type="text" [attr.id]="control.key" [placeholder]="control.placeholder" (click)="toggleActive($event);" [value]="formattedValue" readonly/>
                         <i (click)="toggleActive($event)" class="bhi-calendar" *ngIf="!hasValue"></i>
                         <i (click)="clearValue()" class="bhi-times" *ngIf="hasValue"></i>
                         <novo-date-time-picker [hidden]="!active" (onSelect)="formatDateTimeValue($event);" [formControlName]="control.key"></novo-date-time-picker>
@@ -97,6 +97,8 @@ import { Helpers } from './../../utils/Helpers';
             <!--Error Message-->
             <div class="error-message">
                 <span *ngIf="isDirty && errors?.required">{{control.label | uppercase}} is required</span>
+                <span *ngIf="isDirty && errors?.minlength">{{control.label | uppercase}} is required to be a minimum of {{ control.minlength }} characters</span>
+                <span *ngIf="isDirty && errors?.maxlength">{{control.label | uppercase}} is required to be a maximum of {{ control.maxlength }} characters</span>
                 <span *ngIf="isDirty && errors?.invalidEmail">{{control.label | uppercase}} requires a valid email (ex. abc@123.com)</span>
                 <span *ngIf="isDirty && errors?.invalidAddress">{{control.label | uppercase}} requires all fields filled out</span>
                 <span *ngIf="isDirty && (errors?.integerTooLarge || errors?.doubleTooLarge)">{{control.label | uppercase}} is too large</span>
@@ -104,7 +106,8 @@ import { Helpers } from './../../utils/Helpers';
         </div>
     `,
     host: {
-        '[class.disabled]': 'control.disabled'
+        '[class.disabled]': 'control.disabled',
+        '[class]': 'control.controlType'
     }
 })
 export class NovoControlElement extends OutsideClick implements OnInit, OnDestroy {
@@ -241,9 +244,14 @@ export class NovoControlElement extends OutsideClick implements OnInit, OnDestro
         const NUMBERS_ONLY = /[0-9]/;
         const NUMBERS_WITH_DECIMAL = /[0-9\.]/;
         let key = String.fromCharCode(event.charCode);
+        // Types
         if (this.control.subType === 'number' && !NUMBERS_ONLY.test(key)) {
             event.preventDefault();
         } else if (~['currency', 'float', 'percentage'].indexOf(this.control.subType) && !NUMBERS_WITH_DECIMAL.test(key)) {
+            event.preventDefault();
+        }
+        // Max Length
+        if (this.control.maxlength && event.target.value.length >= this.control.maxlength) {
             event.preventDefault();
         }
     }

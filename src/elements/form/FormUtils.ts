@@ -105,6 +105,10 @@ export class FormUtils {
         } else if (type === 'entitypicker' && field.multiValue) {
             type = 'entitychips';
         }
+        // Force dateFounded to be a year (gets retyped to number later with maxlength at 4)
+        if (field.name === 'dateFounded') {
+            type = 'year';
+        }
 
         return type;
     }
@@ -172,8 +176,13 @@ export class FormUtils {
             case 'percentage':
             case 'float':
             case 'number':
+            case 'year':
                 if (type === 'money') {
                     type = 'currency';
+                } else if (type === 'year') {
+                    type = 'number';
+                    controlConfig.maxlength = 4;
+                    controlConfig.minlength = 4;
                 }
                 controlConfig.type = type;
                 control = new TextBoxControl(controlConfig);
@@ -238,7 +247,12 @@ export class FormUtils {
         let fieldsets: Array<NovoFieldset> = [];
         let ranges = [];
         if (meta && meta.fields) {
-            meta.fields.sort(Helpers.sortByField('sortOrder'));
+            let fields = meta.fields.map(field => {
+                if (!field.hasOwnProperty('sortOrder')) {
+                    field.sortOrder = Number.MAX_SAFE_INTEGER - 1;
+                }
+                return field;
+            }).sort(Helpers.sortByField(['sortOrder', 'name']));
             if (meta.sectionHeaders && meta.sectionHeaders.length) {
                 meta.sectionHeaders.sort(Helpers.sortByField('sortOrder'));
                 meta.sectionHeaders.forEach((item, i) => {
@@ -277,13 +291,9 @@ export class FormUtils {
                     fieldsetIdx: 0
                 });
             }
-            let fields = meta.fields;
 
             fields.forEach(field => {
                 if (field.name !== 'id' && (field.dataSpecialization !== 'SYSTEM' || ['address', 'billingAddress', 'secondaryAddress'].indexOf(field.name) !== -1) && !field.readOnly) {
-                    if (!field.hasOwnProperty('sortOrder')) {
-                        field.sortOrder = Number.MAX_SAFE_INTEGER - 1;
-                    }
                     let control = this.getControlForField(field, http, config);
                     // Set currency format
                     if (control.subType === 'currency') {
